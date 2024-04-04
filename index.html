@@ -165,23 +165,24 @@
             </a>
          </div>
       </section>
-      <!-- contact section design -->
+      <!--contact section design-->
       <section class="contact" id="contact">
          <h2 class="heading">Contact <span>Me!</span></h2>
          <form action="https://formspree.io/f/myyrwron" method="POST">
-            <div class="input-box">
-               <input type="text" name="name" placeholder="Full Name">
-               <input type="email" name="_replyto" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-               <input type="tel" name="phone" placeholder="Mobile Number">
-               <input type="text" name="_subject" placeholder="Email Subject">
-            </div>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="text" name="_gotcha" style="display:none">
-            <input type="submit" value="Send Message" class="btn">
+             <div class="input-box">
+                 <input type="text" name="name" placeholder="Full Name" autocomplete="off">
+                 <input type="email" name="_replyto" placeholder="Email Address" autocomplete="off">
+             </div>
+             <div class="input-box">
+                 <input type="tel" name="phone" placeholder="Mobile Number" autocomplete="off">
+                 <input type="text" name="_subject" placeholder="Email Subject" autocomplete="off">
+             </div>
+             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
+             <input type="text" name="_gotcha" style="display:none">
+             <input type="submit" value="Send Message" class="btn">
          </form>
-      </section>
+     </section>
+     
       <!-- footer design -->
       <footer class="footer">
          <div class="footer-text">
@@ -196,6 +197,6 @@
       <!-- typed js -->
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <!-- custom js -->
-      <script src="js/script.js"></script>
+      <script src="script.js"></script>
    </body>
 </html>
