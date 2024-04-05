@@ -1,5 +1,0 @@
-
-require 'fileutils'
-
-FileUtils.rm('/Users/jfontenot/JeremyFontenot.github.io/JeremyFontenot.github.io/Gemfile.lock')
-git checkout <commit_hash> -- Gemfile.lock
