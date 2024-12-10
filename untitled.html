@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy C. Fontenot - IT Professional</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
-<link rel="manifest" href="/assets/images/site.webmanifest">
-    <!-- Linking the style.css from the css folder -->
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Linking the style.css from the assets/css folder -->
+    <link rel="stylesheet" href="style.css">
     <!-- Linking Boxicons for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -55,7 +50,6 @@
         
         <p>Since entering the IT field, I’ve worked on setting up servers and Active Directory for a local startup, gaining hands-on experience in system administration and network infrastructure. My goal is to combine my technical skills, passion for problem-solving, and drive for continuous learning to help organizations thrive in a technology-driven world.</p>
     </div>
-</section>
 </section>
 
 <section id="experience" class="experience">
@@ -130,7 +124,7 @@
         </div>
 </section>
 
-    <section id="education" class="education">
+<section id="education" class="education">
     <div class="container">
         <h2>Education</h2>
         <div class="education-item">
@@ -155,7 +149,26 @@
     </div>
 </section>
 
-    <section id="skills" class="skills">
+<section id="skills" class="skills">
+    <div class="container">
+        <h2>Skills & Expertise</h2>
+        <p>Here’s a snapshot of the skills and technologies I specialize in:</p>
+        
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Technical Support</h3>
+                <p>Expert in troubleshooting hardware, software, and networking issues.</p>
+            </div>
+            <div class="skill-item">
+                <h3>System Administration</h3>
+                <p>Experience managing and maintaining servers, networks, and internal systems.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Cloud Solutions</h3>
+                <p>Proficient in Microsoft Azure, AWS, and cloud infrastructure management.</p>
+            </div>
+            <div class="skill-item">
+                <section id="skills" class="skills">
     <div class="container">
         <h2>Skills & Expertise</h2>
         <p>Here’s a snapshot of the skills and technologies I specialize in:</p>
@@ -201,7 +214,7 @@
     </div>
 </section>
 
-    <section id="homelab" class="homelab">
+<section id="homelab" class="homelab">
     <div class="container">
         <h2>My Homelab</h2>
         <p>
@@ -233,7 +246,7 @@
     </div>
 </section>
 
-    <section id="certifications" class="certifications">
+<section id="certifications" class="certifications">
     <div class="container">
         <h2>Certifications</h2>
         <p>Below are the certifications I’ve earned, showcasing my expertise and dedication to IT.</p>
@@ -285,7 +298,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.credly.com/badges/5c85cb00-3e54-4f97-8e8f-2eb15c457501/public_url" class="certification-link" target="_blank">
+                <a href="https://www.credly.com/badges/b7a6d218-a8cb-4c7b-97b5-6c0041ea3d88/public_url" class="certification-link" target="_blank">
                     <div class="certification-box">
                         <img src="assets/images/comptia-a+.png" alt="CompTIA A+ ce Badge" class="cert-badge">
                         <h3>CompTIA A+ ce</h3>
@@ -294,9 +307,10 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.credly.com/badges/b7a6d218-a8cb-4c7b-97b5-6c0041ea3d88/public_url" class="certification-link" target="_blank">
+                <a href="https://www.credly.com/badges/5c85cb00-3e54-4f97-8e8f-2eb15c457501/public_url" class="certification-link" target="_blank">
                     <div class="certification-box">
-                        <img src="assets/images/comptia-server+.png" alt="CompTIA Server+ Badge" class="cert-badge">
+                        <img src="assets/images/comptia-server+.png" alt="CompTIA Server
+                                                <img src="assets/images/comptia-server+.png" alt="CompTIA Server+ Badge" class="cert-badge">
                         <h3>CompTIA Server+</h3>
                         <p>Certification demonstrating expertise in server hardware, software, installation, and troubleshooting.</p>
                     </div>
@@ -334,37 +348,37 @@
 </section>
 
 <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="submit-form.php" method="post" class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="submit-form.php" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 JeremyFontenot.tech. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jeremyfontenot" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/jeremyfontenot" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="#contact"><i class="bx bx-envelope"></i> Contact Me</a>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 JeremyFontenot.tech. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/jeremyfontenot" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/jeremyfontenot" target="_blank"><i class="bx bxl-github"></i></a>
-                <a href="#contact"><i class="bx bx-envelope"></i> Contact Me</a>
-            </div>
-        </div>
-    </footer>
+<div class="loader" id="loader"></div>
 
-    <div class="loader" id="loader"></div>
-
-    <script>
-        window.onload = function() {
-            document.getElementById('loader').style.display = 'none';
-        };
-    </script>
+<script>
+    window.onload = function() {
+        document.getElementById('loader').style.display = 'none';
+    };
+</script>
 </body>
 </html>
