@@ -1,10 +1,9 @@
 /* =================== General Section Styles =================== */
 section {
     padding: 3rem 0;
-    background-color: var(--bg-color); /* Ensure background color is set */
     margin-bottom: 2rem;
-    border-radius: 8px;
-    border-bottom: 2px solid var(--main-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 html {
@@ -27,7 +26,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: var(--text-color);
-    background-color: var(--bg-color); /* Ensure background color is set */
+    background: var(--bg-color);
 }
 
 .container {
@@ -87,10 +86,8 @@ header {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.3), rgba(107, 114, 128, 0.3));
-    background-image: url('/assets/images/glowing.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.3), rgba(107, 114, 128, 0.3)), 
+                url('assets/images/glowing.jpg') no-repeat center center/cover;
     background-size: cover; /* Ensure the image covers the entire section */
     color: var(--text-color); /* Text color from your root variable */
 }
@@ -251,7 +248,7 @@ header {
     transform: translateX(5px); /* Slide effect */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Add deeper shadow */
     background-color: var(--accent-color-2); /* Bright background on hover */
-    color: var (--bg-color); /* Ensure text is readable */
+    color: var(--bg-color); /* Ensure text is readable */
 }
 
 /* Hover effect for experience item headings */
@@ -743,7 +740,7 @@ header {
 /* =================== Section Styling =================== */
 section {
     padding: 3rem 0;
-    background-color: var(--bg-color); /* Ensure background color is set */
+    background: var(--bg-color);
     margin-bottom: 2rem;
     border-radius: 8px;
     border-bottom: 2px solid var(--main-color);
@@ -842,7 +839,7 @@ ul li strong {
 .contact-form label {
     display: block;
     font-size: 1.4rem;
-    color: var (--text-color);
+    color: var(--text-color);
     margin-bottom: 0.5rem;
 }
 
