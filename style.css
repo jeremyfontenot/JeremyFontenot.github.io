@@ -1,0 +1,492 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0A192F;
+  color: #ffffff;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+p, li, a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* UL text color */
+ul {
+  color: #00FFFF;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10,25,47,0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  color: #1ABC9C; /* Change logo color */
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #1ABC9C;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+@media (max-width: 768px) {
+  .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      background: rgba(10,25,47,0.95);
+      backdrop-filter: blur(10px);
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 0;
+      display: none;
+      border-radius: 5px;
+  }
+  .nav-links.active {
+      display: flex;
+  }
+  .hamburger {
+      display: flex;
+  }
+  .hamburger.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #0A192F; /* Match the background color of other sections */
+  animation: fadeIn 1s ease-in-out;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0); /* Remove any overlay color */
+}
+.hero-content {
+  z-index: 3;
+  text-align: center;
+  animation: fadeInContent 2s ease-in-out;
+}
+#hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  text-shadow: 0 0 10px rgba(52,152,219,0.8);
+  width: 0;
+  animation: typing 3s steps(40, end) 1s forwards, blink 0.8s infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+#hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #3498DB, #1ABC9C);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn-primary:hover, .btn-secondary:hover {
+  background: linear-gradient(45deg, #1ABC9C, #3498DB);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+section {
+  position: relative;
+  padding: 60px 20px;
+  background: none;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+section canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.overlay,
+.about-me-overlay,
+.recommended-overlay,
+.home-lab-overlay,
+.tools-overlay,
+.certifications-overlay,
+.contact-overlay,
+.experience-overlay {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  border-radius: 15px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInContent {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards */
+.card, .lab-card, .tool-card, .certification-box {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  transform-style: preserve-3d;
+}
+.card:hover, .lab-card:hover, .tool-card:hover, .certification-box:hover {
+  transform: perspective(600px) rotateY(3deg) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5), 0 0 20px rgba(52,152,219,0.9);
+}
+.card h3, .lab-card h3, .tool-card h3, .certification-box h3 {
+  color: #3498DB;
+  margin-bottom: 10px;
+}
+.card p, .lab-card p, .tool-card p, .certification-box p {
+  opacity: 0.8;
+}
+.card:hover h3, .lab-card:hover h3, .tool-card:hover h3, .certification-box:hover h3 {
+  color: #FF5733;
+}
+
+/* Ensure consistent icon size for Home Lab cards */
+.lab-card i {
+  font-size: 3rem; /* Match the size of IT tools icons */
+  margin-bottom: 10px; /* Add spacing below the icon */
+  color: #ffffff; /* Optional: Ensure consistent color */
+}
+
+/* Ensure consistent icon size for IT Tools cards */
+.tool-card i {
+  font-size: 3rem; /* Keep the same size for IT tools icons */
+  margin-bottom: 10px; /* Add spacing below the icon */
+}
+
+/* Section Specifics */
+#about-me h2,
+#recommended h2,
+#home-lab h2,
+#tools h2,
+#certifications h2,
+#contact h2,
+#experience h2 {
+  text-shadow: 2px 2px 8px rgba(255,255,255,0.4);
+}
+#about-me p,
+#recommended p,
+#home-lab p,
+#tools p,
+#contact p {
+  opacity: 0.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-me-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+  margin: 20px auto;
+  overflow: hidden;
+  animation: rotateImage 15s infinite linear;
+}
+.about-me-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes rotateImage {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  animation: zoom 0.6s;
+}
+@keyframes zoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+/* Contact Form */
+#contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3498DB;
+  border-radius: 5px;
+  background: rgba(10,25,47,0.8);
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1ABC9C;
+  outline: none;
+}
+#contact-form button {
+  align-self: center;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #3498DB, #1ABC9C);
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background 0.5s ease, box-shadow 0.3s ease;
+}
+#contact-form button:hover {
+  background: linear-gradient(45deg, #1ABC9C, #3498DB);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+#footer {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  z-index: 2;
+}
+#footer-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.footer-overlay p {
+  margin: 0;
+  font-size: 1rem;
+}
+.social-links {
+  margin-top: 10px;
+}
+.social-link {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+.social-link:hover {
+  color: #1ABC9C;
+}
+
+/* Additional Image Size Adjustments */
+.certifications-container img,
+.card .image-container img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ======================================================================
+   Horizontal Card Layout for Containers
+   This ensures card containers display their children horizontally.
+====================================================================== */
+.recommended-container,
+.experience-container,
+.lab-container,
+.tools-container,
+.certifications-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Spacing and Miscellaneous */
+p {
+  margin-bottom: 20px;
+}
+.lab-card,
+.tool-card,
+.certification-box {
+  margin-bottom: 30px;
+}
+section {
+  margin-bottom: 50px;
+}
