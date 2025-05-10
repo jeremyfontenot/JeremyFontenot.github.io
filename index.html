@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeremy Fontenot - Service Desk Technician</title>
 
+  <!-- Favicon -->
+  <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
@@ -28,6 +32,7 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#recommended">Recommended</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#home-lab">Home Lab</a></li>
           <li><a href="#tools">IT Tools</a></li>
           <li><a href="#certifications">Certifications</a></li>
@@ -60,7 +65,7 @@
     <div class="about-me-overlay">
       <h2>About Me</h2>
       <div class="about-me-img">
-        <img src="images/Avatar.svg" alt="Profile Image">
+        <img src="Images/Avatar.svg" alt="Profile Image">
       </div>
       <div class="about-me-content">
         <p>Hi, I’m Jeremy Fontenot, an IT professional with expertise in Service Desk Support, Systems Administration, and Networking. With a strong background in Active Directory, Microsoft 365, Azure, and network security, I specialize in troubleshooting, system optimization, and IT infrastructure management.</p>
@@ -89,7 +94,7 @@
         </div>
         <div class="card">
           <div class="image-container">
-            <img src="Images/my-favorite-it-tools.png" alt="IT Tools">
+            <img src="Images/my-favorite-it-tools.PNG" alt="IT Tools">
           </div>
           <h3>My Favorite IT Tools</h3>
           <p>Discover the software, hardware, and cloud services I use daily in my work and home lab.</p>
@@ -120,6 +125,18 @@
           <ul>
             <li>Administered Microsoft 365 and Azure environments, ensuring seamless operation and user access.</li>
             <li>Managed Active Directory and Group Policy configurations, enhancing security and improving system reliability.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Service Desk Representative - Team Lead</h3>
+          <p><strong>Company:</strong> Insight Global</p>
+          <p><strong>Duration:</strong> Oct. 2022 – Jan. 2024</p>
+          <ul>
+            <li>Led a team of service desk representatives, ensuring timely resolution of IT support tickets.</li>
+            <li>Streamlined ticket escalation processes, reducing resolution times by 20%.</li>
+            <li>Provided advanced troubleshooting for hardware, software, and network issues.</li>
+            <li>Trained new team members on IT support best practices and tools.</li>
+            <li>Collaborated with cross-functional teams to implement IT solutions and improve user satisfaction.</li>
           </ul>
         </div>
         <div class="card">
@@ -340,14 +357,14 @@
     <div class="contact-overlay">
       <h2>Contact Me</h2>
       <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
-      <form id="contact-form">
+      <form id="contact-form" onsubmit="return openEmailClient();">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" required>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
@@ -357,6 +374,22 @@
       </form>
     </div>
   </section>
+
+  <script>
+    function openEmailClient() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const subject = `Message from ${name}`;
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+
+      const mailtoLink = `mailto:jeremy.fontenot@jeremyfontenot.online?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+
+      return false; // Prevent the form from submitting normally
+    }
+  </script>
 
   <!-- Image Modal -->
   <div id="imageModal" class="modal">

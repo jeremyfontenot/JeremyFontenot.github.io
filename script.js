@@ -239,18 +239,3 @@ document.addEventListener("DOMContentLoaded", () => {
     retina_detect: true,
   });
 });
-
-// Request persistent storage
-navigator.storage.persist().then((granted) => {
-  if (granted) {
-    console.log("Persistent storage granted.");
-  } else {
-    console.log("Persistent storage not granted.");
-  }
-});
-
-// Check storage usage and quota
-navigator.storage.estimate().then((estimate) => {
-  console.log(`Quota: ${estimate.quota}`);
-  console.log(`Usage: ${estimate.usage}`);
-});
