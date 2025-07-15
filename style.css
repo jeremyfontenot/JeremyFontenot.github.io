@@ -490,3 +490,17 @@ p {
 section {
   margin-bottom: 50px;
 }
+
+/* Add this to style.css for a distinct resume button */
+.resume-btn {
+  background: linear-gradient(45deg, #FF5733, #FFC300);
+  color: #fff;
+  border: 2px solid #FF5733;
+  box-shadow: 0 4px 15px rgba(255,87,51,0.2);
+}
+.resume-btn:hover {
+  background: linear-gradient(45deg, #FFC300, #FF5733);
+  color: #fff;
+  border-color: #FFC300;
+  box-shadow: 0 6px 20px rgba(255,195,0,0.3);
+}
