@@ -103,6 +103,7 @@ if (img) {
   img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
+    modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
   }
 }
