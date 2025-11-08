@@ -81,4 +81,24 @@ Feel free to fork this repo, open an issue, or submit a pull request with improv
 **Jeremy Fontenot**  
 📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/jeremy-fontenot)
 
+---
+
+**Known Limitations**
+
+- GitHub Pages is a static host and does not allow configuring custom HTTP response headers. Security headers such as `X-Content-Type-Options`, `X-Frame-Options`, `Content-Security-Policy`, and fine-grained `Cache-Control` cannot be set from this repository. On a custom host you should add these headers at the server (or CDN) level.
+- Some deprecated APIs (e.g. `StorageType.persistent` and `unload` event handlers) cannot be fixed if they exist in external scripts or browser extensions; this repo includes modern helpers (`navigator.storage.persist()`, `pagehide` + `navigator.sendBeacon`) and usage examples in `script.js`.
+- Browser compatibility: `backdrop-filter` is not universally supported; we added `-webkit-backdrop-filter` for Safari.
+
+**Changelog**
+
+- 2025-11-07: Accessibility and compatibility fixes
+	- Added descriptive `alt` attributes for modal image and verified all images include `alt`.
+	- Ensured icon-only links include `aria-label` and added `rel="noopener noreferrer"` to external links.
+	- Added `autocomplete` attributes to the contact form fields (`name`, `email`, `message`).
+	- Replaced CDN load of `particles.js` with a local copy at `/js/particles.min.js`.
+	- Added compatibility helpers in `script.js`: `ensurePersistentStorage()` (uses `navigator.storage.persist()`), `onPageFinal()` (uses `pagehide`/`visibilitychange`), and `safeVibrate()`.
+	- Removed width-based CSS typing animation (use JS typewriter) to avoid animating `width` (performance) and added `-webkit-backdrop-filter` for Safari.
+	- Documented Known Limitations regarding GitHub Pages header restrictions in README.
+
+
 ```

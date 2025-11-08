@@ -240,3 +240,67 @@ document.addEventListener("DOMContentLoaded", () => {
     retina_detect: true,
   });
 });
+
+// --- Compatibility & Deprecated API helpers ---
+// Ensure persistent storage where available. This replaces older StorageType.persistent usage.
+async function ensurePersistentStorage() {
+  if ('storage' in navigator && 'persist' in navigator.storage) {
+    try {
+      const already = await navigator.storage.persisted();
+      if (already) return true;
+      const granted = await navigator.storage.persist();
+      return granted;
+    } catch (err) {
+      console.warn('StorageManager.persist failed:', err);
+      return false;
+    }
+  }
+  // No StorageManager support — caller should fallback to IndexedDB/localStorage
+  return false;
+}
+
+// Replace unload handlers with pagehide; provide a helper to register finalization handlers.
+function onPageFinal(fn) {
+  if (typeof fn !== 'function') return;
+  // pagehide is fired when the page is unloaded or put into the background
+  window.addEventListener('pagehide', fn, { passive: true });
+  // visibilitychange can be used to save state when the page becomes hidden
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') fn();
+  }, { passive: true });
+}
+
+// Safe vibrate wrapper
+function safeVibrate(pattern) {
+  if (navigator && 'vibrate' in navigator) {
+    try {
+      navigator.vibrate(pattern);
+    } catch (e) {
+      // ignore vibration errors
+    }
+  }
+}
+
+// Example: request persistent storage after a user gesture (optional)
+// You can uncomment the code below to request persistent storage after a user clicks a button.
+/*
+document.addEventListener('click', async function requestPersistentOnClick() {
+  document.removeEventListener('click', requestPersistentOnClick);
+  const granted = await ensurePersistentStorage();
+  console.log('Persistent storage granted:', granted);
+});
+*/
+
+// Example finalization usage (analytics or final state save)
+onPageFinal(() => {
+  // Example: send final analytics with navigator.sendBeacon when available
+  const payload = JSON.stringify({ event: 'page_unload', ts: Date.now() });
+  if (navigator && 'sendBeacon' in navigator) {
+    navigator.sendBeacon('/collect', payload);
+  } else {
+    // fallback: use fetch with keepalive where supported
+    try {
+      fetch('/collect', { method: 'POST', body: payload, keepalive: true }).catch(() => {});
+    } catch (e) {}
+  }
+});

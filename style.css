@@ -50,6 +50,7 @@ ul {
   left: 0;
   width: 100%;
   background: rgba(10,25,47,0.9);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 20px 30px;
   display: flex;
@@ -174,12 +175,10 @@ ul {
   overflow: hidden;
   border-right: 3px solid white;
   text-shadow: 0 0 10px rgba(52,152,219,0.8);
-  width: 0;
-  animation: typing 3s steps(40, end) 1s forwards, blink 0.8s infinite;
-}
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  /* typing animation handled by JS (typewriter) for better accessibility
+     avoid animating width/height for performance; keep caret blink only */
+  animation: blink 0.8s infinite;
+  -webkit-font-smoothing: antialiased;
 }
 @keyframes blink {
   50% { border-color: transparent; }
