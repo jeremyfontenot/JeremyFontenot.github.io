@@ -17,10 +17,14 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Inline style to ensure canvases don't intercept pointer events -->
+  <!-- Inline style to ensure canvases don't intercept pointer events by default -->
   <style>
     canvas {
       pointer-events: none;
+    }
+    /* Enable particle interactivity for Experience section canvas */
+    #experience-particles {
+      pointer-events: auto;
     }
   </style>
 </head>
@@ -28,7 +32,7 @@
   <!-- Navbar -->
   <header id="navbar">
     <div class="nav-container">
-      <h1 class="logo"><a href="#">Jeremy Fontenot</a></h1>
+      <h1 class="logo"><a href="#hero">Jeremy Fontenot</a></h1>
       <nav>
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
@@ -409,8 +413,8 @@
     <div class="footer-overlay">
       <p>&copy; 2025 Jeremy Fontenot. All rights reserved.</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/jeremyfontenot" class="social-link" target="_blank" aria-label="LinkedIn (opens in new tab)"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/jeremyfontenot" class="social-link" target="_blank" aria-label="GitHub (opens in new tab)"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </footer>
