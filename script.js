@@ -143,7 +143,7 @@ function initExperienceParticles(containerId) {
 /* Initialize all canvases consistently; special-case Experience */
 window.addEventListener('load', () => {
   const ids = [
-    'hero-particles','about-me-particles','recommended-particles',
+    'hero-particles','about-me-particles',
     /* 'experience-particles' handled below */, 'home-lab-particles',
     'tools-particles','certifications-particles','contact-particles','footer-particles'
   ];

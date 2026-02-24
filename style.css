@@ -375,14 +375,25 @@ section {
 /* Icon sizing for cards */
 .lab-card i, .tool-card i { font-size: 3rem; margin-bottom: 10px; color: var(--white); }
 
+/* Certification badge images */
+.cert-badge {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Section headings & overlays */
-#about-me h2, #recommended h2, #home-lab h2, #tools h2, #certifications h2, #contact h2, #experience h2 {
+#about-me h2, #home-lab h2, #tools h2, #certifications h2, #contact h2, #experience h2 {
   text-shadow: 0 0 14px rgba(26,224,215,0.22);
 }
 
 /* Overlay content containers (centered width) */
 .overlay,
-.about-me-overlay, .recommended-overlay, .home-lab-overlay,
+.about-me-overlay, .home-lab-overlay,
 .tools-overlay, .certifications-overlay, .contact-overlay, .experience-overlay, .hero-overlay {
   position: relative; z-index: 2; padding: 50px; border-radius: 15px;
   background: transparent;
@@ -423,7 +434,6 @@ section {
 /* ----------------
    6) Grids for card sections (auto-fit; centered last row)
    ---------------- */
-.recommended-container,
 .experience-container,
 .lab-container,
 .tools-container,
@@ -435,7 +445,6 @@ section {
   justify-content: center;
 }
 
-.recommended-container > *,
 .experience-container > *,
 .lab-container > *,
 .tools-container > *,
@@ -528,7 +537,7 @@ section canvas, #footer-particles {
   z-index: 0 !important;
   pointer-events: none !important;
 }
-.hero-overlay, .about-me-overlay, .recommended-overlay, .experience-overlay,
+.hero-overlay, .about-me-overlay, .experience-overlay,
 .home-lab-overlay, .tools-overlay, .certifications-overlay, .contact-overlay, .footer-overlay {
   position: relative; z-index: 2; pointer-events: auto;
 }
@@ -691,8 +700,9 @@ a, button,
 .logo a img,
 .logo a svg {
   display: block;
-  height: auto;
-  width: clamp(120px, 10vw, 160px); /* brand min-size honored */
+  height: 48px;
+  width: auto;
+  max-width: 200px;
 }
 .logo a:hover picture img,
 .logo a:hover picture svg {
