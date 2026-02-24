@@ -2,38 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
   <title>Jeremy Fontenot - Service Desk Technician</title>
+  <meta name="description" content="Innovative, technical, and trustworthy IT support. Explore my work, tools, certifications, and contact options.">
 
   <!-- Favicon -->
-  <link rel="icon" href="Images/favicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="Images/favicon_io/favicon-128x128.png" type="image/png">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
+  <!-- Brand Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+
   <!-- Font Awesome (local copy) -->
-  <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-  <!-- External CSS -->
+  <!-- Site CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Inline style to ensure canvases don't intercept pointer events by default -->
+
+  <!-- Optional Open Graph for better link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jeremy Fontenot – Service Desk Technician">
+  <meta property="og:description" content="Innovative, technical, and trustworthy IT support. Explore my work, tools, and certifications.">
+  <meta property="og:url" content="https://jeremyfontenot.online/">
+  <meta property="og:image" content="https://jeremyfontenot.online/Images/og-image.jpg">
+
+  <!-- Canvases shouldn't block clicks by default -->
   <style>
-    canvas {
-      pointer-events: none;
-    }
-    /* Enable particle interactivity for Experience section canvas */
-    #experience-particles {
-      pointer-events: auto;
-    }
+    canvas { pointer-events: none; }
+    /* Enable interactivity for Experience section canvas */
+    #experience-particles { pointer-events: auto; }
   </style>
 </head>
 <body>
+  <!-- Accessible skip link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   <!-- Navbar -->
   <header id="navbar">
     <div class="nav-container">
-      <h1 class="logo"><a href="#hero">Jeremy Fontenot</a></h1>
-      <nav>
+      <h1 class="logo"><a href="#hero"><img src="Images/Primary Logo_NB.png" alt="Jeremy Fontenot Logo"></a></h1>
+      <nav aria-label="Primary">
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about-me">About Me</a></li>
@@ -45,386 +56,407 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <canvas id="hero-particles"></canvas>
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h1 id="hero-title">Welcome to My Digital Space</h1>
-        <p id="hero-subtitle">I'm Jeremy, a Service Desk Technician passionate about technology &amp; problem-solving.</p>
-        <a href="#recommended" class="btn-primary">Explore My Work</a>
-      </div>
-    </div>
-  </section>
+  <!-- Main content wrapper for skip link target -->
+  <main id="main">
 
-  <!-- About Me Section -->
-  <section id="about-me">
-    <canvas id="about-me-particles"></canvas>
-    <div class="about-me-overlay">
-      <h2>About Me</h2>
-      <div class="about-me-img">
-        <img src="Images/Avatar.svg" alt="Profile Image">
+    <!-- Hero Section -->
+    <section id="hero" aria-labelledby="hero-title">
+      <canvas id="hero-particles"></canvas>
+      <div class="hero-banner">
+        <img src="Images/Hero Banner.svg" alt="Hero Banner" class="hero-banner-img">
       </div>
-      <div class="about-me-content">
-        <p>Hi, I’m Jeremy Fontenot, an IT professional with expertise in Service Desk Support, Systems Administration, and Networking. With a strong background in Active Directory, Microsoft 365, Azure, and network security, I specialize in troubleshooting, system optimization, and IT infrastructure management.</p>
-        <p>I hold an A.S. in Computer Science - Database Administration and completed the Information Security and Administration Program with a 4.00 GPA. My certifications include CompTIA A+, Server+, ITF+, Microsoft Azure Fundamentals, MTA (Windows Server, Networking, Security), Linux Essentials, and Google IT Support.</p>
-        <p>Beyond my professional work, I’ve built an enterprise-grade home lab, featuring a Dell R710 virtualization host running ESXi for Active Directory, web hosting, and security monitoring, with secure networking, dynamic DNS, and VPN solutions.</p>
-        <p>I’m passionate about technology, security, and automation, always exploring new tools and refining my skills to solve complex IT challenges. Whether it’s troubleshooting an issue, designing a network, or optimizing systems, I strive to deliver efficient, practical solutions.</p>
-        <p>Feel free to connect with me or explore my projects to learn more!</p>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Innovative • Technical • Trustworthy</span>
+          <h1 id="hero-title">Welcome to My Digital Space</h1>
+          <p id="hero-subtitle">I'm Jeremy, a Service Desk Technician passionate about technology & problem-solving.</p>
+          <a href="#recommended" class="btn-primary">Explore My Work</a>
+        </div>
       </div>
-      <a href="#contact" class="btn-primary">Get in Touch</a>
-      <a href="Images/Jeremy_Fontenot_ATS_Resume.pdf" class="btn-primary" download>
-        <i class="fa-solid fa-download"></i> Download Resume
-      </a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Recommended Section -->
-  <section id="recommended">
-    <canvas id="recommended-particles"></canvas>
-    <div class="recommended-overlay">
-      <h2>Recommended for You</h2>
-      <div class="recommended-container">
-        <div class="card">
-          <div class="image-container">
-            <img src="Images/home-network-diagram1.svg" alt="Home Network Diagram">
+    <!-- About Me Section -->
+    <section id="about-me" aria-labelledby="about-title">
+      <canvas id="about-me-particles"></canvas>
+      <div class="about-me-overlay">
+        <h2 id="about-title">About Me</h2>
+        <div class="about-me-img">
+          <img src="Images/Avatar.png" alt="Profile image of Jeremy Fontenot">
+        </div>
+        <div class="about-me-content">
+          <p>Hi, I’m Jeremy Fontenot, an IT professional with expertise in Service Desk Support, Systems Administration, and Networking. With a strong background in Active Directory, Microsoft 365, Azure, and network security, I specialize in troubleshooting, system optimization, and IT infrastructure management.</p>
+          <p>I hold an A.S. in Computer Science - Database Administration and completed the Information Security and Administration Program with a 4.00 GPA. My certifications include CompTIA A+, Server+, ITF+, Microsoft Azure Fundamentals, MTA (Windows Server, Networking, Security), Linux Essentials, and Google IT Support.</p>
+          <p>Beyond my professional work, I’ve built an enterprise-grade home lab, featuring a Dell R710 virtualization host running ESXi for Active Directory, web hosting, and security monitoring, with secure networking, dynamic DNS, and VPN solutions.</p>
+          <p>I’m passionate about technology, security, and automation, always exploring new tools and refining my skills to solve complex IT challenges. Whether it’s troubleshooting an issue, designing a network, or optimizing systems, I strive to deliver efficient, practical solutions.</p>
+          <p>Feel free to connect with me or explore my projects to learn more!</p>
+        </div>
+        <a href="#contact" class="btn-primary cta-contact">Get in Touch</a>
+        <a href="Images/Jeremy_Fontenot_ATS_Resume.pdf" class="btn-primary resume-btn cta-resume" download>
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Download Résumé
+        </a>
+      </div>
+    </section>
+
+    <!-- Recommended Section -->
+    <section id="recommended" aria-labelledby="rec-title">
+      <canvas id="recommended-particles"></canvas>
+      <div class="recommended-overlay">
+        <h2 id="rec-title">Recommended for You</h2>
+        <div class="recommended-container">
+          <div class="card">
+            <div class="image-container">
+              <img src="Images/home-network-diagram1.svg" alt="Home Network Diagram">
+            </div>
+            <h3>Enterprise-Grade Home Lab</h3>
+            <p>Explore how I built a virtualized enterprise environment using VMware ESXi, Windows Server, and pfSense.</p>
+            <a href="#home-lab" class="btn-secondary">Read More</a>
           </div>
-          <h3>Enterprise-Grade Home Lab</h3>
-          <p>Explore how I built a virtualized enterprise environment using VMware ESXi, Windows Server, and pfSense.</p>
-          <a href="#home-lab" class="btn-secondary">Read More</a>
-        </div>
-        <div class="card">
-          <div class="image-container">
-            <img src="Images/my-favorite-it-tools.PNG" alt="IT Tools">
+          <div class="card">
+            <div class="image-container">
+              <img src="Images/my-favorite-it-tools.PNG" alt="IT Tools grid">
+            </div>
+            <h3>My Favorite IT Tools</h3>
+            <p>Discover the software, hardware, and cloud services I use daily in my work and home lab.</p>
+            <a href="#tools" class="btn-secondary">Explore</a>
           </div>
-          <h3>My Favorite IT Tools</h3>
-          <p>Discover the software, hardware, and cloud services I use daily in my work and home lab.</p>
-          <a href="#tools" class="btn-secondary">Explore</a>
-        </div>
-        <div class="card">
-          <div class="image-container">
-            <img src="Images/certifications.png" alt="Certifications &amp; Achievements">
+          <div class="card">
+            <div class="image-container">
+              <img src="Images/certifications.png" alt="Certifications and achievements collage">
+            </div>
+            <h3>Certifications & Achievements</h3>
+            <p>Showcasing my IT certifications, including CompTIA, Microsoft, Cisco, and Linux certifications.</p>
+            <a href="#certifications" class="btn-secondary">See More</a>
           </div>
-          <h3>Certifications &amp; Achievements</h3>
-          <p>Showcasing my IT certifications, including CompTIA, Microsoft, Cisco, and Linux certifications.</p>
-          <a href="#certifications" class="btn-secondary">See More</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <canvas id="experience-particles"></canvas>
-    <div class="experience-overlay">
-      <h2>Experience</h2>
-      <div class="experience-container">
-        <div class="card">
-          <h3>Service Desk Technician</h3>
-          <p><strong>Company:</strong> Logicalis</p>
-          <p><strong>Duration:</strong> April 2024 – Present</p>
-          <ul>
-            <li>Administered Microsoft 365 and Azure environments, ensuring seamless operation and user access.</li>
-            <li>Managed Active Directory and Group Policy configurations, enhancing security and improving system reliability.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Service Desk Representative - Team Lead</h3>
-          <p><strong>Company:</strong> Insight Global</p>
-          <p><strong>Duration:</strong> Oct. 2022 – Jan. 2024</p>
-          <ul>
-            <li>Led a team of service desk representatives, ensuring timely resolution of IT support tickets.</li>
-            <li>Streamlined ticket escalation processes, reducing resolution times by 20%.</li>
-            <li>Provided advanced troubleshooting for hardware, software, and network issues.</li>
-            <li>Trained new team members on IT support best practices and tools.</li>
-            <li>Collaborated with cross-functional teams to implement IT solutions and improve user satisfaction.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>IT Technician</h3>
-          <p><strong>Company:</strong> Completeful Technologies LLC</p>
-          <p><strong>Duration:</strong> Feb. 2022 – June 2022</p>
-          <ul>
-            <li>Configured and maintained Windows and Linux servers to support critical business operations.</li>
-            <li>Optimized Active Directory infrastructure and Group Policies to improve network functionality and security.</li>
-            <li>Supported end-users with tailored solutions, increasing operational efficiency and reliability.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Technical Support (Contract)</h3>
-          <p><strong>Company:</strong> Hughes Network Services</p>
-          <p><strong>Duration:</strong> Sept. 2021 – Feb. 2022</p>
-          <ul>
-            <li>Diagnosed and resolved network connectivity issues for residential and small-business customers.</li>
-            <li>Maintained secure IP network configurations, ensuring reliable service availability.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Help Desk Technician, Work Study</h3>
-          <p><strong>Company:</strong> Remington College</p>
-          <p><strong>Duration:</strong> Dec. 2019 – April 2021</p>
-          <ul>
-            <li>Provided technical support for students and faculty, ensuring seamless operation of hardware and software systems.</li>
-            <li>Assisted with the configuration of campus-wide IT resources, contributing to smooth daily operations.</li>
-          </ul>
+    <!-- Experience Section -->
+    <section id="experience" aria-labelledby="exp-title">
+      <canvas id="experience-particles"></canvas>
+      <div class="experience-overlay">
+        <h2 id="exp-title">Experience</h2>
+        <div class="experience-container">
+          <div class="card">
+            <h3>Service Desk Technician</h3>
+            <p><strong>Company:</strong> Logicalis</p>
+            <p><strong>Duration:</strong> April 2024 – Present</p>
+            <ul>
+              <li>Administered Microsoft 365 and Azure environments, ensuring seamless operation and user access.</li>
+              <li>Managed Active Directory and Group Policy configurations, enhancing security and improving system reliability.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Service Desk Representative - Team Lead</h3>
+            <p><strong>Company:</strong> Insight Global</p>
+            <p><strong>Duration:</strong> Oct. 2022 – Jan. 2024</p>
+            <ul>
+              <li>Led a team of service desk representatives, ensuring timely resolution of IT support tickets.</li>
+              <li>Streamlined ticket escalation processes, reducing resolution times by 20%.</li>
+              <li>Provided advanced troubleshooting for hardware, software, and network issues.</li>
+              <li>Trained new team members on IT support best practices and tools.</li>
+              <li>Collaborated with cross-functional teams to implement IT solutions and improve user satisfaction.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>IT Technician</h3>
+            <p><strong>Company:</strong> Completeful Technologies LLC</p>
+            <p><strong>Duration:</strong> Feb. 2022 – June 2022</p>
+            <ul>
+              <li>Configured and maintained Windows and Linux servers to support critical business operations.</li>
+              <li>Optimized Active Directory infrastructure and Group Policies to improve network functionality and security.</li>
+              <li>Supported end-users with tailored solutions, increasing operational efficiency and reliability.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Technical Support (Contract)</h3>
+            <p><strong>Company:</strong> Hughes Network Services</p>
+            <p><strong>Duration:</strong> Sept. 2021 – Feb. 2022</p>
+            <ul>
+              <li>Diagnosed and resolved network connectivity issues for residential and small-business customers.</li>
+              <li>Maintained secure IP network configurations, ensuring reliable service availability.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Help Desk Technician, Work Study</h3>
+            <p><strong>Company:</strong> Remington College</p>
+            <p><strong>Duration:</strong> Dec. 2019 – April 2021</p>
+            <ul>
+              <li>Provided technical support for students and faculty, ensuring seamless operation of hardware and software systems.</li>
+              <li>Assisted with the configuration of campus-wide IT resources, contributing to smooth daily operations.</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Home Lab Section -->
-  <section id="home-lab">
-    <canvas id="home-lab-particles"></canvas>
-    <div class="home-lab-overlay">
-      <h2>My Enterprise-Grade Home Lab</h2>
-      <p>My home lab is designed to simulate a real-world enterprise IT environment, allowing me to practice system administration, networking, security, and virtualization.</p>
-      <div class="lab-container">
-        <div class="lab-card">
-          <i class="fa-solid fa-server"></i>
-          <h3>Hardware</h3>
-          <ul>
-            <li><strong>Hypervisor:</strong> VMware ESXi 6 running on a Dell R710</li>
-            <li><strong>Storage:</strong> 750GB local storage (HDD/SSD)</li>
-            <li><strong>RAM:</strong> 24GB (Optimized for multiple VMs)</li>
-            <li><strong>Networking:</strong> TP-Link Archer AX1800 in AP mode</li>
-            <li><strong>Firewall:</strong> pfSense for traffic control &amp; security</li>
-          </ul>
-        </div>
-        <div class="lab-card">
-          <i class="fa-solid fa-network-wired"></i>
-          <h3>Virtualization</h3>
-          <ul>
-            <li><strong>Hypervisor:</strong> VMware ESXi hosting multiple virtual machines</li>
-            <li><strong>Windows Server 2022 (AD-SERVER):</strong> Primary Domain Controller for authentication</li>
-            <li><strong>Linux VM (RHEL 9):</strong> Used for system administration &amp; scripting</li>
-            <li><strong>Web Proxy VM:</strong> Reverse Proxy for secure web routing (Apache/Nginx)</li>
-            <li><strong>Monitoring &amp; Security VM:</strong> Logs, network monitoring (Zabbix, Wazuh, Graylog)</li>
-            <li><strong>Test VM:</strong> Sandbox environment for experimenting with OS &amp; software</li>
-          </ul>
-        </div>
-        <div class="lab-card">
-          <i class="fas fa-shield-alt"></i>
-          <h3>Networking &amp; Security</h3>
-          <ul>
-            <li><strong>pfSense Firewall:</strong> Controls WAN/LAN traffic, VLAN segmentation</li>
-            <li><strong>Active Directory:</strong> <code>ad.jeremyfontenot.online</code> domain for authentication</li>
-            <li><strong>DNS Server:</strong> Windows Server 2022 as the primary DNS resolver</li>
-            <li><strong>VLANs:</strong> Configured for separating different network zones</li>
-            <li><strong>VPN:</strong> Secure remote access (OpenVPN or WireGuard)</li>
-            <li><strong>Intrusion Detection:</strong> Suricata/Snort integration with pfSense</li>
-          </ul>
-        </div>
-        <div class="lab-card">
-          <i class="fa-solid fa-flask"></i>
-          <h3>Learning &amp; Experimentation</h3>
-          <ul>
-            <li><strong>Windows Server Administration:</strong> Active Directory, GPO, DNS, DHCP</li>
-            <li><strong>Linux Management:</strong> Bash scripting, automation, and security hardening</li>
-            <li><strong>Networking:</strong> VLANs, firewall rules, packet analysis (Wireshark, Nmap)</li>
-            <li><strong>Cloud Services:</strong> AWS &amp; Azure hybrid infrastructure integration</li>
-            <li><strong>Security Testing:</strong> Running penetration testing tools in a safe lab environment</li>
-            <li><strong>Virtualization Experiments:</strong> Testing different hypervisors (Proxmox, nested ESXi)</li>
-          </ul>
-        </div>
+    <!-- Home Lab Section -->
+    <section id="home-lab" aria-labelledby="lab-title">
+  <canvas id="home-lab-particles"></canvas>
+  <div class="home-lab-overlay">
+    <h2 id="lab-title">My Microsoft 365 Personal Cloud Lab</h2>
+    <p>
+      This lab showcases how I design, secure, and automate a modern cloud-first environment using
+      Microsoft 365 services. All runbooks, notes, and architecture diagrams live in my SharePoint
+      site for easy versioning and collaboration.
+    </p>
+    <div class="lab-container">
+      <div class="lab-card">
+        <i class="fa-solid fa-id-card-clip" aria-hidden="true"></i>
+        <h3>Entra ID (Azure AD)</h3>
+        <ul>
+          <li><strong>Identity:</strong> Users, groups, roles, and custom security groups</li>
+          <li><strong>Access:</strong> Conditional Access, MFA, and identity protection</li>
+          <li><strong>Apps:</strong> Enterprise app SSO and app registrations</li>
+        </ul>
+      </div>
+      <div class="lab-card">
+        <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+        <h3>Intune (Endpoint Management)</h3>
+        <ul>
+          <li><strong>Devices:</strong> Windows enrollment, compliance policies</li>
+          <li><strong>Config:</strong> Settings catalog, security baselines, Win32 apps</li>
+          <li><strong>Update:</strong> Feature/quality updates and autopatch concepts</li>
+        </ul>
+      </div>
+      <div class="lab-card">
+        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+        <h3>SharePoint Online</h3>
+        <ul>
+          <li><strong>Sites & Pages:</strong> Team site for documentation and runbooks</li>
+          <li><strong>Libraries:</strong> Versioned diagrams, exports, and templates</li>
+          <li><strong>Permissions:</strong> Least-privilege with role-based access</li>
+        </ul>
+      </div>
+      <div class="lab-card">
+        <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+        <h3>OneDrive for Business</h3>
+        <ul>
+          <li><strong>Sync:</strong> Cross-device file access and known folder move</li>
+          <li><strong>Sharing:</strong> Secure links with expiration and review</li>
+          <li><strong>Backup:</strong> Version history & file restore testing</li>
+        </ul>
+      </div>
+      <div class="lab-card">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <h3>Exchange Online</h3>
+        <ul>
+          <li><strong>Mail flow:</strong> Connectors, accepted domains, DKIM/DMARC</li>
+          <li><strong>Protection:</strong> Anti-spam/anti-phish policies</li>
+          <li><strong>Hygiene:</strong> Safe links/attachments scenarios</li>
+        </ul>
+      </div>
+      <div class="lab-card">
+        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+        <h3>Microsoft Teams</h3>
+        <ul>
+          <li><strong>Teams/Channels:</strong> Structure for projects and operations</li>
+          <li><strong>Governance:</strong> Naming, templates, and lifecycle</li>
+          <li><strong>Apps:</strong> Tabs, bots, and approvals integration</li>
+        </ul>
+      </div>
+      <div class="lab-card">
+        <i class="fa-solid fa-robot" aria-hidden="true"></i>
+        <h3>Power Automate & Apps</h3>
+        <ul>
+          <li><strong>Flows:</strong> Ticket triage, alerts, and notifications</li>
+          <li><strong>Apps:</strong> Lightweight inventory/requests apps</li>
+          <li><strong>Data:</strong> SharePoint/Dataverse connectors</li>
+        </ul>
+      </div>
+      <div class="lab-card">
+        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+        <h3>Defender & Compliance</h3>
+        <ul>
+          <li><strong>Defender:</strong> MDO and device security concepts</li>
+          <li><strong>DLP:</strong> Sensitivity labels & data loss policies</li>
+          <li><strong>Audit:</strong> Alerts and unified activity search</li>
+        </ul>
       </div>
     </div>
-  </section>
+    <a href="https://jeremyfontenot.sharepoint.com/sites/M365-Documentation" class="btn-primary" target="_blank" rel="noopener noreferrer">View full documentation</a>
+  </div>
+</section>
 
-  <!-- IT Tools Section -->
-  <section id="tools">
-    <canvas id="tools-particles"></canvas>
-    <div class="tools-overlay">
-      <h2>My Favorite IT Tools</h2>
-      <p>These are the tools I use for system administration, networking, and security.</p>
-      <div class="tools-container">
-        <div class="tool-card">
-          <i class="fa-brands fa-windows fa-3x"></i>
-          <h3>Windows Server &amp; Active Directory</h3>
-          <p>Managing enterprise environments with AD, GPOs, and authentication.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-brands fa-linux fa-3x"></i>
-          <h3>Linux Administration</h3>
-          <p>Using RHEL 9 and Ubuntu for system management, scripting, and automation.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-solid fa-terminal fa-3x"></i>
-          <h3>PowerShell &amp; Bash Scripting</h3>
-          <p>Automating system tasks, configurations, and administrative processes.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-solid fa-shield-halved fa-3x"></i>
-          <h3>pfSense Firewall</h3>
-          <p>Configuring firewall rules, VLANs, VPNs, and network segmentation.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-solid fa-network-wired fa-3x"></i>
-          <h3>Wireshark</h3>
-          <p>Packet analysis for troubleshooting, security auditing, and protocol inspection.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-          <h3>Nmap</h3>
-          <p>Network scanning and vulnerability assessments for security analysis.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-solid fa-server fa-3x"></i>
-          <h3>VMware ESXi</h3>
-          <p>Hosting virtual machines for enterprise-grade IT lab environments.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-brands fa-docker fa-3x"></i>
-          <h3>Docker &amp; Kubernetes</h3>
-          <p>Containerized application management and orchestration.</p>
-        </div>
-        <div class="tool-card">
-          <i class="fa-brands fa-aws fa-3x"></i>
-          <h3>AWS &amp; Azure</h3>
-          <p>Cloud computing, hosting, and infrastructure-as-a-service (IaaS).</p>
+    <!-- IT Tools Section -->
+    <section id="tools" aria-labelledby="tools-title">
+      <canvas id="tools-particles"></canvas>
+      <div class="tools-overlay">
+        <h2 id="tools-title">My Favorite IT Tools</h2>
+        <p>These are the tools I use for system administration, networking, and security.</p>
+        <div class="tools-container">
+          <div class="tool-card">
+            <i class="fa-brands fa-windows fa-3x" aria-hidden="true"></i>
+            <h3>Windows Server &amp; Active Directory</h3>
+            <p>Managing enterprise environments with AD, GPOs, and authentication.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-brands fa-linux fa-3x" aria-hidden="true"></i>
+            <h3>Linux Administration</h3>
+            <p>Using RHEL 9 and Ubuntu for system management, scripting, and automation.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-terminal fa-3x" aria-hidden="true"></i>
+            <h3>PowerShell &amp; Bash Scripting</h3>
+            <p>Automating system tasks, configurations, and administrative processes.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-shield-halved fa-3x" aria-hidden="true"></i>
+            <h3>pfSense Firewall</h3>
+            <p>Configuring firewall rules, VLANs, VPNs, and network segmentation.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-network-wired fa-3x" aria-hidden="true"></i>
+            <h3>Wireshark</h3>
+            <p>Packet analysis for troubleshooting, security auditing, and protocol inspection.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-magnifying-glass fa-3x" aria-hidden="true"></i>
+            <h3>Nmap</h3>
+            <p>Network scanning and vulnerability assessments for security analysis.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-server fa-3x" aria-hidden="true"></i>
+            <h3>VMware ESXi</h3>
+            <p>Hosting virtual machines for enterprise-grade IT lab environments.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-brands fa-docker fa-3x" aria-hidden="true"></i>
+            <h3>Docker &amp; Kubernetes</h3>
+            <p>Containerized application management and orchestration.</p>
+          </div>
+          <div class="tool-card">
+            <i class="fa-brands fa-aws fa-3x" aria-hidden="true"></i>
+            <h3>AWS &amp; Azure</h3>
+            <p>Cloud computing, hosting, and infrastructure-as-a-service (IaaS).</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="certifications">
-    <canvas id="certifications-particles"></canvas>
-    <div class="certifications-overlay">
-      <h2>Certifications &amp; Achievements</h2>
-      <p>Below are the certifications I’ve earned, showcasing my expertise and dedication to IT.</p>
-      <div class="certifications-container">
-        <div class="certification-box">
-          <img src="Images/Jeremy_Chant_Fontenot_WCITP1_thumb.png" alt="WCITP1 Certificate Thumbnail" class="cert-badge">
-          <h3>World Class IT Professional (WCITP1)</h3>
-          <p>Awarded by My Computer Career for exemplary academic performance in IT Security and Administration.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/microsoft-azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals Badge" class="cert-badge">
-          <h3>Microsoft Certified: Azure Fundamentals</h3>
-          <p>Validates foundational knowledge in cloud computing, Azure services, security, and compliance.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/mta-networking.png" alt="MTA: Networking Fundamentals Badge" class="cert-badge">
-          <h3>MTA: Networking Fundamentals</h3>
-          <p>Demonstrates proficiency in basic networking concepts, TCP/IP, DNS, DHCP, and routing.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/mta-windows-server.png" alt="MTA: Windows Server Administration Badge" class="cert-badge">
-          <h3>MTA: Windows Server Administration</h3>
-          <p>Validates knowledge in Windows Server installation, Active Directory, and server management.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/mta-security.png" alt="MTA: Security Fundamentals Badge" class="cert-badge">
-          <h3>MTA: Security Fundamentals</h3>
-          <p>Demonstrates understanding of security concepts, network security, and access controls.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/comptia-itf+.png" alt="CompTIA IT Fundamentals (ITF+) Badge" class="cert-badge">
-          <h3>CompTIA IT Fundamentals (ITF+)</h3>
-          <p>Certifies essential IT skills, including basic computing, troubleshooting, and system management.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/comptia-a+.png" alt="CompTIA A+ Badge" class="cert-badge">
-          <h3>CompTIA A+</h3>
-          <p>Industry-standard certification for hardware, software troubleshooting, and IT support skills.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/comptia-server+.png" alt="CompTIA Server+ Badge" class="cert-badge">
-          <h3>CompTIA Server+</h3>
-          <p>Validates knowledge of server architecture, storage, security, and disaster recovery.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/cisco.png" alt="Introduction to Cybersecurity by Cisco Badge" class="cert-badge">
-          <h3>Introduction to Cybersecurity</h3>
-          <p>Fundamental cybersecurity concepts, covering network security, threat protection, and encryption.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/linux-essentials.png" alt="Linux Essentials Badge" class="cert-badge">
-          <h3>Linux Essentials</h3>
-          <p>Demonstrates foundational Linux skills, command-line proficiency, and open-source knowledge.</p>
-        </div>
-        <div class="certification-box">
-          <img src="Images/google-it-support.png" alt="Google IT Support Badge" class="cert-badge">
-          <h3>Google IT Support</h3>
-          <p>Provides knowledge in troubleshooting, networking, system administration, and security.</p>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications" aria-labelledby="certs-title">
+      <canvas id="certifications-particles"></canvas>
+      <div class="certifications-overlay">
+        <h2 id="certs-title">Certifications &amp; Achievements</h2>
+        <p>Below are the certifications I’ve earned, showcasing my expertise and dedication to IT.</p>
+        <div class="certifications-container">
+          <div class="certification-box">
+            <img src="Images/Jeremy_Chant_Fontenot_WCITP1_thumb.png" alt="World Class IT Professional (WCITP1) certificate thumbnail" class="cert-badge">
+            <h3>World Class IT Professional (WCITP1)</h3>
+            <p>Awarded by My Computer Career for exemplary academic performance in IT Security and Administration.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/microsoft-azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals badge" class="cert-badge">
+            <h3>Microsoft Certified: Azure Fundamentals</h3>
+            <p>Validates foundational knowledge in cloud computing, Azure services, security, and compliance.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/mta-networking.png" alt="MTA: Networking Fundamentals badge" class="cert-badge">
+            <h3>MTA: Networking Fundamentals</h3>
+            <p>Demonstrates proficiency in basic networking concepts, TCP/IP, DNS, DHCP, and routing.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/mta-windows-server.png" alt="MTA: Windows Server Administration badge" class="cert-badge">
+            <h3>MTA: Windows Server Administration</h3>
+            <p>Validates knowledge in Windows Server installation, Active Directory, and server management.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/mta-security.png" alt="MTA: Security Fundamentals badge" class="cert-badge">
+            <h3>MTA: Security Fundamentals</h3>
+            <p>Demonstrates understanding of security concepts, network security, and access controls.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/comptia-itf+.png" alt="CompTIA IT Fundamentals (ITF+) badge" class="cert-badge">
+            <h3>CompTIA IT Fundamentals (ITF+)</h3>
+            <p>Certifies essential IT skills, including basic computing, troubleshooting, and system management.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/comptia-a+.png" alt="CompTIA A+ badge" class="cert-badge">
+            <h3>CompTIA A+</h3>
+            <p>Industry-standard certification for hardware, software troubleshooting, and IT support skills.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/comptia-server+.png" alt="CompTIA Server+ badge" class="cert-badge">
+            <h3>CompTIA Server+</h3>
+            <p>Validates knowledge of server architecture, storage, security, and disaster recovery.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/cisco.png" alt="Introduction to Cybersecurity by Cisco badge" class="cert-badge">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Fundamental cybersecurity concepts, covering network security, threat protection, and encryption.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/linux-essentials.png" alt="Linux Essentials badge" class="cert-badge">
+            <h3>Linux Essentials</h3>
+            <p>Demonstrates foundational Linux skills, command-line proficiency, and open-source knowledge.</p>
+          </div>
+          <div class="certification-box">
+            <img src="Images/google-it-support.png" alt="Google IT Support badge" class="cert-badge">
+            <h3>Google IT Support</h3>
+            <p>Provides knowledge in troubleshooting, networking, system administration, and security.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <canvas id="contact-particles"></canvas>
-    <div class="contact-overlay">
-      <h2>Contact Me</h2>
-      <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
-      <form id="contact-form" onsubmit="return openEmailClient();">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" autocomplete="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" autocomplete="off" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <script>
-    function openEmailClient() {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      const subject = `Message from ${name}`;
-      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
-
-      const mailtoLink = `mailto:jeremy.fontenot@jeremyfontenot.online?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoLink;
-
-      return false; // Prevent the form from submitting normally
-    }
-  </script>
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-title">
+      <canvas id="contact-particles"></canvas>
+      <div class="contact-overlay">
+        <h2 id="contact-title">Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+        <!-- Removed inline onsubmit; handled in script.js -->
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" autocomplete="off" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- Image Modal -->
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
+  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="caption">
+    <span class="close" aria-label="Close modal">×</span>
     <img class="modal-content" id="modalImage" alt="Enlarged image">
     <div id="caption"></div>
   </div>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer id="footer">
     <canvas id="footer-particles"></canvas>
     <div class="footer-overlay">
-      <p>&copy; 2025 Jeremy Fontenot. All rights reserved.</p>
+      <p>© 2025 Jeremy Fontenot. All rights reserved.</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
   </footer>
 
-  <!-- External JavaScript -->
-  <!-- Old (CDN) -->
-  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
-
-  <!-- New (local copy) -->
-  <script src="/js/particles.min.js"></script>
+  <!-- JS -->
+  <script src="js/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

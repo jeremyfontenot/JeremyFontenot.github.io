@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0F17"/>
+      <stop offset="100%" stop-color="#091A28"/>
+    </linearGradient>
+
+    <!-- Soft vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="60%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- Sphere glass gradient -->
+    <radialGradient id="sphereGrad" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#C4FFFF" stop-opacity="0.25"/>
+      <stop offset="45%" stop-color="#9FEFFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0E2A47" stop-opacity="0.35"/>
+    </radialGradient>
+
+    <!-- Ring gradient -->
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E2A47"/>
+      <stop offset="45%" stop-color="#5F7A95"/>
+      <stop offset="100%" stop-color="#C4FFFF"/>
+    </linearGradient>
+
+    <!-- Cyan glow -->
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 1 1 0 0
+                0 1 1 0 0
+                0 0 0 0.8 0" result="cyanGlow"/>
+      <feMerge>
+        <feMergeNode in="cyanGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- White glow -->
+    <filter id="glowWhite" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bgGrad)"/>
+  <rect width="1024" height="1024" fill="url(#vignette)"/>
+
+  <!-- Neon hex network -->
+  <g stroke="#27E1D0" stroke-width="2" fill="none" opacity="0.7" filter="url(#glowCyan)">
+    <polygon points="160,200 220,165 280,200 280,270 220,305 160,270"/>
+    <polygon points="300,140 360,105 420,140 420,210 360,245 300,210"/>
+    <polygon points="630,180 690,145 750,180 750,250 690,285 630,250"/>
+    <polygon points="740,320 800,285 860,320 860,390 800,425 740,390"/>
+    <polygon points="170,720 230,685 290,720 290,790 230,825 170,790"/>
+    <polygon points="320,820 380,785 440,820 440,890 380,925 320,890"/>
+    <polygon points="640,760 700,725 760,760 760,830 700,865 640,830"/>
+    <line x1="280" y1="235" x2="300" y2="210"/>
+    <line x1="420" y1="175" x2="630" y2="215"/>
+    <line x1="750" y1="250" x2="740" y2="320"/>
+    <line x1="290" y1="755" x2="320" y2="820"/>
+    <line x1="440" y1="855" x2="640" y2="795"/>
+  </g>
+
+  <!-- HUD lines / digital traces -->
+  <g stroke="#00F6FF" stroke-width="1.5" opacity="0.55" filter="url(#glowCyan)">
+    <line x1="120" y1="120" x2="240" y2="120"/>
+    <line x1="784" y1="140" x2="904" y2="140"/>
+    <line x1="120" y1="900" x2="240" y2="900"/>
+    <line x1="784" y1="880" x2="904" y2="880"/>
+    <line x1="80" y1="512" x2="180" y2="512"/>
+    <line x1="844" y1="512" x2="944" y2="512"/>
+  </g>
+
+  <!-- Particle specks -->
+  <g fill="#4FF1DF" opacity="0.4">
+    <circle cx="140" cy="360" r="2"/>
+    <circle cx="260" cy="420" r="1.5"/>
+    <circle cx="760" cy="380" r="2"/>
+    <circle cx="860" cy="460" r="1.5"/>
+    <circle cx="520" cy="120" r="1.5"/>
+    <circle cx="520" cy="900" r="1.5"/>
+  </g>
+
+  <!-- Glass sphere -->
+  <g>
+    <circle cx="512" cy="512" r="260" fill="url(#sphereGrad)" stroke="#00C8E0" stroke-opacity="0.35" stroke-width="2"/>
+    <circle cx="512" cy="512" r="260" fill="none" stroke="#00C8E0" stroke-opacity="0.25" stroke-width="4" filter="url(#glowCyan)"/>
+  </g>
+
+  <!-- Light rings -->
+  <g fill="none" stroke="url(#ringGrad)" stroke-width="6" opacity="0.85" filter="url(#glowCyan)">
+    <circle cx="512" cy="512" r="190"/>
+    <circle cx="512" cy="512" r="220" stroke-width="3" opacity="0.6"/>
+    <ellipse cx="512" cy="512" rx="260" ry="110" stroke-width="3" opacity="0.45"/>
+  </g>
+
+  <!-- Lens flares -->
+  <g filter="url(#glowWhite)">
+    <circle cx="380" cy="360" r="8" fill="#C4FFFF"/>
+    <circle cx="380" cy="360" r="20" fill="#C4FFFF" opacity="0.25"/>
+    <circle cx="660" cy="680" r="6" fill="#C4FFFF"/>
+    <circle cx="660" cy="680" r="16" fill="#C4FFFF" opacity="0.2"/>
+  </g>
+
+  <!-- JF text -->
+  <g filter="url(#glowWhite)">
+    <text x="512" y="560"
+      text-anchor="middle"
+      font-family="Montserrat, Arial, sans-serif"
+      font-size="200"
+      font-weight="700"
+      fill="#FFFFFF"
+      letter-spacing="6">JF</text>
+  </g>
+
+  <!-- Subtle HUD strings -->
+  <g fill="#00C8EA" opacity="0.5" font-family="Orbitron, Arial, sans-serif" font-size="14">
+    <text x="120" y="170">SYS:OK 00A4C8</text>
+    <text x="760" y="210">NODE 7F-A2</text>
+    <text x="140" y="860">LINK 0xC4FFFF</text>
+    <text x="760" y="820">GRID:ACTIVE</text>
+  </g>
+</svg>
