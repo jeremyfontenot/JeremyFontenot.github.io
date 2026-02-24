@@ -518,6 +518,20 @@ section {
 #footer-particles { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .footer-overlay p { margin: 0; font-size: 1rem; color: var(--slate); }
 
+/* Footer banner image */
+.footer-banner {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.4;
+}
+
 /* Social icons (LinkedIn & GitHub) */
 .social-links { margin-top: 12px; }
 .social-link {
