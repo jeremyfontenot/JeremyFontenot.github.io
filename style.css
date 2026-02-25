@@ -366,9 +366,14 @@ section {
 }
 
 .card h3, .lab-card h3, .tool-card h3, .certification-box h3 {
-  color: var(--white);
+  color: var(--neon-aqua);
   margin-bottom: 10px;
-  text-shadow: 0 0 10px rgba(26,224,215,0.18);
+  text-shadow: 0 0 10px rgba(26,224,215,0.35);
+  transition: color var(--t-med), text-shadow var(--t-med);
+}
+.card:hover h3, .lab-card:hover h3, .tool-card:hover h3, .certification-box:hover h3 {
+  color: var(--electric);
+  text-shadow: 0 0 20px rgba(0,123,255,0.5);
 }
 .card p, .lab-card p, .tool-card p, .certification-box p { color: var(--slate); }
 
