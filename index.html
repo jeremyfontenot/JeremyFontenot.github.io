@@ -43,8 +43,12 @@
   <!-- Navbar -->
   <header id="navbar">
     <div class="nav-container">
-      <h1 class="logo"><a href="#hero"><img src="Images/Primary Logo_NB.png" alt="Jeremy Fontenot Logo"></a></h1>
-      <nav aria-label="Primary">
+      <h1 class="logo">
+        <a href="#hero">
+          <img src="Images/Primary Logo_NB.png" alt="Jeremy Fontenot Logo" class="site-logo">
+        </a>
+      </h1>
+      <nav id="primary-nav" aria-label="Primary">
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about-me">About Me</a></li>
@@ -166,91 +170,91 @@
 
     <!-- Home Lab Section -->
     <section id="home-lab" aria-labelledby="lab-title">
-  <canvas id="home-lab-particles"></canvas>
-  <div class="home-lab-overlay">
-    <h2 id="lab-title">My Microsoft 365 Personal Cloud Lab</h2>
-    <p>
-      This lab showcases how I design, secure, and automate a modern cloud-first environment using
-      Microsoft 365 services. All runbooks, notes, and architecture diagrams live in my SharePoint
-      site for easy versioning and collaboration.
-    </p>
-    <div class="lab-container">
-      <div class="lab-card">
-        <i class="fa-solid fa-id-card-clip" aria-hidden="true"></i>
-        <h3>Entra ID (Azure AD)</h3>
-        <ul>
-          <li><strong>Identity:</strong> Users, groups, roles, and custom security groups</li>
-          <li><strong>Access:</strong> Conditional Access, MFA, and identity protection</li>
-          <li><strong>Apps:</strong> Enterprise app SSO and app registrations</li>
-        </ul>
+      <canvas id="home-lab-particles"></canvas>
+      <div class="home-lab-overlay">
+        <h2 id="lab-title">My Microsoft 365 Personal Cloud Lab</h2>
+        <p>
+          This lab showcases how I design, secure, and automate a modern cloud-first environment using
+          Microsoft 365 services. All runbooks, notes, and architecture diagrams live in my SharePoint
+          site for easy versioning and collaboration.
+        </p>
+        <div class="lab-container">
+          <div class="lab-card">
+            <i class="fa-solid fa-id-card-clip" aria-hidden="true"></i>
+            <h3>Entra ID (Azure AD)</h3>
+            <ul>
+              <li><strong>Identity:</strong> Users, groups, roles, and custom security groups</li>
+              <li><strong>Access:</strong> Conditional Access, MFA, and identity protection</li>
+              <li><strong>Apps:</strong> Enterprise app SSO and app registrations</li>
+            </ul>
+          </div>
+          <div class="lab-card">
+            <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+            <h3>Intune (Endpoint Management)</h3>
+            <ul>
+              <li><strong>Devices:</strong> Windows enrollment, compliance policies</li>
+              <li><strong>Config:</strong> Settings catalog, security baselines, Win32 apps</li>
+              <li><strong>Update:</strong> Feature/quality updates and autopatch concepts</li>
+            </ul>
+          </div>
+          <div class="lab-card">
+            <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+            <h3>SharePoint Online</h3>
+            <ul>
+              <li><strong>Sites & Pages:</strong> Team site for documentation and runbooks</li>
+              <li><strong>Libraries:</strong> Versioned diagrams, exports, and templates</li>
+              <li><strong>Permissions:</strong> Least-privilege with role-based access</li>
+            </ul>
+          </div>
+          <div class="lab-card">
+            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+            <h3>OneDrive for Business</h3>
+            <ul>
+              <li><strong>Sync:</strong> Cross-device file access and known folder move</li>
+              <li><strong>Sharing:</strong> Secure links with expiration and review</li>
+              <li><strong>Backup:</strong> Version history & file restore testing</li>
+            </ul>
+          </div>
+          <div class="lab-card">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <h3>Exchange Online</h3>
+            <ul>
+              <li><strong>Mail flow:</strong> Connectors, accepted domains, DKIM/DMARC</li>
+              <li><strong>Protection:</strong> Anti-spam/anti-phish policies</li>
+              <li><strong>Hygiene:</strong> Safe links/attachments scenarios</li>
+            </ul>
+          </div>
+          <div class="lab-card">
+            <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+            <h3>Microsoft Teams</h3>
+            <ul>
+              <li><strong>Teams/Channels:</strong> Structure for projects and operations</li>
+              <li><strong>Governance:</strong> Naming, templates, and lifecycle</li>
+              <li><strong>Apps:</strong> Tabs, bots, and approvals integration</li>
+            </ul>
+          </div>
+          <div class="lab-card">
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            <h3>Power Automate & Apps</h3>
+            <ul>
+              <li><strong>Flows:</strong> Ticket triage, alerts, and notifications</li>
+              <li><strong>Apps:</strong> Lightweight inventory/requests apps</li>
+              <li><strong>Data:</strong> SharePoint/Dataverse connectors</li>
+            </ul>
+          </div>
+          <div class="lab-card">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            <h3>Defender & Compliance</h3>
+            <ul>
+              <li><strong>Defender:</strong> MDO and device security concepts</li>
+              <li><strong>DLP:</strong> Sensitivity labels & data loss policies</li>
+              <li><strong>Audit:</strong> Alerts and unified activity search</li>
+            </ul>
+          </div>
+        </div>
+        <a href="https://jeremyfontenot.sharepoint.com/sites/M365-Documentation" class="btn-primary" target="_blank" rel="noopener noreferrer">View full documentation</a>
       </div>
-      <div class="lab-card">
-        <i class="fa-solid fa-laptop" aria-hidden="true"></i>
-        <h3>Intune (Endpoint Management)</h3>
-        <ul>
-          <li><strong>Devices:</strong> Windows enrollment, compliance policies</li>
-          <li><strong>Config:</strong> Settings catalog, security baselines, Win32 apps</li>
-          <li><strong>Update:</strong> Feature/quality updates and autopatch concepts</li>
-        </ul>
-      </div>
-      <div class="lab-card">
-        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
-        <h3>SharePoint Online</h3>
-        <ul>
-          <li><strong>Sites & Pages:</strong> Team site for documentation and runbooks</li>
-          <li><strong>Libraries:</strong> Versioned diagrams, exports, and templates</li>
-          <li><strong>Permissions:</strong> Least-privilege with role-based access</li>
-        </ul>
-      </div>
-      <div class="lab-card">
-        <i class="fa-solid fa-cloud" aria-hidden="true"></i>
-        <h3>OneDrive for Business</h3>
-        <ul>
-          <li><strong>Sync:</strong> Cross-device file access and known folder move</li>
-          <li><strong>Sharing:</strong> Secure links with expiration and review</li>
-          <li><strong>Backup:</strong> Version history & file restore testing</li>
-        </ul>
-      </div>
-      <div class="lab-card">
-        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-        <h3>Exchange Online</h3>
-        <ul>
-          <li><strong>Mail flow:</strong> Connectors, accepted domains, DKIM/DMARC</li>
-          <li><strong>Protection:</strong> Anti-spam/anti-phish policies</li>
-          <li><strong>Hygiene:</strong> Safe links/attachments scenarios</li>
-        </ul>
-      </div>
-      <div class="lab-card">
-        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
-        <h3>Microsoft Teams</h3>
-        <ul>
-          <li><strong>Teams/Channels:</strong> Structure for projects and operations</li>
-          <li><strong>Governance:</strong> Naming, templates, and lifecycle</li>
-          <li><strong>Apps:</strong> Tabs, bots, and approvals integration</li>
-        </ul>
-      </div>
-      <div class="lab-card">
-        <i class="fa-solid fa-robot" aria-hidden="true"></i>
-        <h3>Power Automate & Apps</h3>
-        <ul>
-          <li><strong>Flows:</strong> Ticket triage, alerts, and notifications</li>
-          <li><strong>Apps:</strong> Lightweight inventory/requests apps</li>
-          <li><strong>Data:</strong> SharePoint/Dataverse connectors</li>
-        </ul>
-      </div>
-      <div class="lab-card">
-        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-        <h3>Defender & Compliance</h3>
-        <ul>
-          <li><strong>Defender:</strong> MDO and device security concepts</li>
-          <li><strong>DLP:</strong> Sensitivity labels & data loss policies</li>
-          <li><strong>Audit:</strong> Alerts and unified activity search</li>
-        </ul>
-      </div>
-    </div>
-    <a href="https://jeremyfontenot.sharepoint.com/sites/M365-Documentation" class="btn-primary" target="_blank" rel="noopener noreferrer">View full documentation</a>
-  </div>
-</section>
+    </section>
 
     <!-- IT Tools Section -->
     <section id="tools" aria-labelledby="tools-title">
