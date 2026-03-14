@@ -193,7 +193,7 @@ section {
 }
 #navbar .logo .site-logo {
   display: block;
-  width: clamp(220px, 24vw, 340px);
+  width: clamp(160px, 17vw, 240px);
   height: auto;
   max-width: 100%;
   object-fit: contain;
@@ -266,11 +266,12 @@ section {
 }
 
 @media (max-width: 1100px) {
-  .nav-links { gap: 14px; }
-  #navbar .logo .site-logo { width: clamp(200px, 28vw, 300px); }
+  .nav-links { gap: 8px; }
+  .nav-links a { padding: 8px 8px; font-size: 0.9rem; }
+  #navbar .logo .site-logo { width: clamp(130px, 16vw, 200px); }
 }
-@media (max-width: 768px) {
-  #navbar .logo .site-logo { width: 210px; }
+@media (max-width: 960px) {
+  #navbar .logo .site-logo { width: 180px; }
 
   .nav-links {
     position: absolute;
@@ -294,6 +295,9 @@ section {
   .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
   .hamburger.active span:nth-child(2) { opacity: 0; }
   .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+}
+@media (max-width: 768px) {
+  #navbar .logo .site-logo { width: 160px; }
 }
 
 /* ----------------
@@ -329,7 +333,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  /* Reserve space for the scroll cue so it doesn't crowd the CTA. */
+  padding: 50px 50px 120px;
   background: transparent;
 }
 .hero-content {
@@ -372,11 +377,19 @@ section {
 /* Scroll indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;
+  bottom: clamp(14px, 3.5vh, 30px);
   left: 50%;
   transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   z-index: 5;
+  opacity: 0.9;
   animation: scrollBounce 2s ease-in-out infinite;
+}
+.scroll-indicator:hover,
+.scroll-indicator:focus-visible {
+  opacity: 1;
 }
 .scroll-indicator span {
   display: block;
@@ -787,6 +800,12 @@ a, button,
    ---------------- */
 @media (max-width: 960px) {
   #hero { height: auto; padding-top: 96px; padding-bottom: 96px; }
+}
+@media (max-height: 720px) {
+  .scroll-indicator { display: none; }
+}
+@media (pointer: coarse) {
+  .scroll-indicator { display: none; }
 }
 @media (max-width: 720px) {
   #hero-title {
