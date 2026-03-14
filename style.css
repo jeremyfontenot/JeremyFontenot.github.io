@@ -625,6 +625,18 @@ section {
   flex: 0 1 260px;
 }
 
+/* Architecture diagram */
+.lab-diagram {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 28px auto 36px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--glow-aqua-soft);
+}
+
 /* ----------------
    7) Modal
    ---------------- */

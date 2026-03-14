@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" role="img"
+     aria-labelledby="diag-title diag-desc">
+
+  <title id="diag-title">Microsoft 365 Personal Cloud Lab Architecture</title>
+  <desc id="diag-desc">Architecture diagram showing eight Microsoft 365 services — Entra ID, Intune, Exchange Online, SharePoint Online, OneDrive for Business, Microsoft Teams, Power Platform, and Defender &amp; Compliance — all within a single Microsoft 365 tenant.</desc>
+
+  <!-- ── Background ── -->
+  <rect width="900" height="450" rx="14" fill="#02060A"/>
+  <rect x="1" y="1" width="898" height="448" rx="13" fill="none" stroke="#1AE0D7" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- ── Diagram title ── -->
+  <text x="450" y="34" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="15" font-weight="700"
+        fill="#1AE0D7" letter-spacing="2">MICROSOFT 365 PERSONAL CLOUD LAB</text>
+
+  <!-- ── Tenant boundary ── -->
+  <rect x="14" y="47" width="872" height="393" rx="10"
+        fill="rgba(10,42,67,0.22)" stroke="#1AE0D7" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="28" y="66"
+        font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700"
+        fill="#1AE0D7" letter-spacing="2.5">MICROSOFT 365 TENANT</text>
+
+  <!-- ═══════════════════════════════════
+       ROW 1  (y start = 77, height = 150)
+       Card centres-x: 127 | 342 | 557 | 772
+       ═══════════════════════════════════ -->
+
+  <!-- ── Card 1 · Entra ID ── -->
+  <rect x="25"  y="77" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#007BFF" stroke-width="1.5"/>
+  <circle cx="127" cy="107" r="18" fill="rgba(0,123,255,0.18)" stroke="#007BFF" stroke-width="1.5"/>
+  <text x="127" y="113" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">EI</text>
+  <text x="127" y="140" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Entra ID</text>
+  <line x1="82"  y1="147" x2="172" y2="147" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="127" y="161" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Users · Groups · Roles</text>
+  <text x="127" y="175" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Conditional Access · MFA</text>
+  <text x="127" y="189" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">App Registrations · SSO</text>
+  <text x="127" y="203" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Identity Protection</text>
+
+  <!-- ── Card 2 · Intune ── -->
+  <rect x="240" y="77" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#007BFF" stroke-width="1.5"/>
+  <circle cx="342" cy="107" r="18" fill="rgba(0,123,255,0.18)" stroke="#007BFF" stroke-width="1.5"/>
+  <text x="342" y="113" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">IN</text>
+  <text x="342" y="140" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Intune</text>
+  <line x1="297" y1="147" x2="387" y2="147" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="342" y="161" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Device Enrollment</text>
+  <text x="342" y="175" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Compliance Policies</text>
+  <text x="342" y="189" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Security Baselines</text>
+  <text x="342" y="203" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Win32 App Deployment</text>
+
+  <!-- ── Card 3 · Exchange Online ── -->
+  <rect x="455" y="77" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#007BFF" stroke-width="1.5"/>
+  <circle cx="557" cy="107" r="18" fill="rgba(0,123,255,0.18)" stroke="#007BFF" stroke-width="1.5"/>
+  <text x="557" y="113" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">EX</text>
+  <text x="557" y="140" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Exchange Online</text>
+  <line x1="512" y1="147" x2="602" y2="147" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="557" y="161" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Mailboxes · Mail Flow</text>
+  <text x="557" y="175" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">DKIM · DMARC · SPF</text>
+  <text x="557" y="189" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Anti-spam · Anti-phish</text>
+  <text x="557" y="203" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Safe Links · Attachments</text>
+
+  <!-- ── Card 4 · SharePoint Online ── -->
+  <rect x="670" y="77" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#007BFF" stroke-width="1.5"/>
+  <circle cx="772" cy="107" r="18" fill="rgba(0,123,255,0.18)" stroke="#007BFF" stroke-width="1.5"/>
+  <text x="772" y="113" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">SP</text>
+  <text x="772" y="140" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">SharePoint Online</text>
+  <line x1="727" y1="147" x2="817" y2="147" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="772" y="161" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Sites · Pages · Libraries</text>
+  <text x="772" y="175" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Runbooks · Diagrams</text>
+  <text x="772" y="189" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Role-based Permissions</text>
+  <text x="772" y="203" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Versioning · Templates</text>
+
+  <!-- ═══════════════════════════════════
+       ROW 2  (y start = 240, height = 150)
+       Card centres-x: 127 | 342 | 557 | 772
+       ═══════════════════════════════════ -->
+
+  <!-- ── Card 5 · OneDrive for Business ── -->
+  <rect x="25"  y="240" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#1AE0D7" stroke-width="1.5"/>
+  <circle cx="127" cy="270" r="18" fill="rgba(26,224,215,0.14)" stroke="#1AE0D7" stroke-width="1.5"/>
+  <text x="127" y="276" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">OD</text>
+  <text x="127" y="303" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">OneDrive for Business</text>
+  <line x1="60"  y1="310" x2="194" y2="310" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="127" y="324" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Known Folder Move</text>
+  <text x="127" y="338" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Secure Sharing Links</text>
+  <text x="127" y="352" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Version History &amp; Restore</text>
+  <text x="127" y="366" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Cross-device Sync</text>
+
+  <!-- ── Card 6 · Microsoft Teams ── -->
+  <rect x="240" y="240" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#1AE0D7" stroke-width="1.5"/>
+  <circle cx="342" cy="270" r="18" fill="rgba(26,224,215,0.14)" stroke="#1AE0D7" stroke-width="1.5"/>
+  <text x="342" y="276" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">TE</text>
+  <text x="342" y="303" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Microsoft Teams</text>
+  <line x1="280" y1="310" x2="404" y2="310" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="342" y="324" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Teams · Channels</text>
+  <text x="342" y="338" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Meeting Policies</text>
+  <text x="342" y="352" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Governance · Lifecycle</text>
+  <text x="342" y="366" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Apps · Bots · Approvals</text>
+
+  <!-- ── Card 7 · Power Platform ── -->
+  <rect x="455" y="240" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#1AE0D7" stroke-width="1.5"/>
+  <circle cx="557" cy="270" r="18" fill="rgba(26,224,215,0.14)" stroke="#1AE0D7" stroke-width="1.5"/>
+  <text x="557" y="276" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">PP</text>
+  <text x="557" y="303" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Power Platform</text>
+  <line x1="495" y1="310" x2="619" y2="310" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="557" y="324" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Automate · Flows · Alerts</text>
+  <text x="557" y="338" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Power Apps (inventory)</text>
+  <text x="557" y="352" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">SharePoint Connectors</text>
+  <text x="557" y="366" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Dataverse Integration</text>
+
+  <!-- ── Card 8 · Defender &amp; Compliance ── -->
+  <rect x="670" y="240" width="204" height="150" rx="8"
+        fill="#050F1A" stroke="#1AE0D7" stroke-width="1.5"/>
+  <circle cx="772" cy="270" r="18" fill="rgba(26,224,215,0.14)" stroke="#1AE0D7" stroke-width="1.5"/>
+  <text x="772" y="276" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1AE0D7">DC</text>
+  <text x="772" y="303" text-anchor="middle"
+        font-family="Montserrat,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Defender &amp; Compliance</text>
+  <line x1="700" y1="310" x2="844" y2="310" stroke="#1AE0D7" stroke-width="0.7" opacity="0.5"/>
+  <text x="772" y="324" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">MDO · Device Security</text>
+  <text x="772" y="338" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Sensitivity Labels · DLP</text>
+  <text x="772" y="352" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Audit · Alerts</text>
+  <text x="772" y="366" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Activity Search</text>
+
+  <!-- ── Bottom legend ── -->
+  <rect x="25"  y="404" width="14" height="14" rx="3" fill="rgba(0,123,255,0.18)"   stroke="#007BFF" stroke-width="1.5"/>
+  <text x="44"  y="415" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Identity &amp; Endpoint</text>
+  <rect x="185" y="404" width="14" height="14" rx="3" fill="rgba(26,224,215,0.14)" stroke="#1AE0D7" stroke-width="1.5"/>
+  <text x="204" y="415" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#9BA3AE">Collaboration &amp; Security</text>
+  <text x="450" y="415" text-anchor="middle"
+        font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(155,163,174,0.6)"
+        letter-spacing="1">jeremyfontenot.online</text>
+
+</svg>
