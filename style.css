@@ -541,6 +541,32 @@ section {
 }
 .card p, .lab-card p, .tool-card p, .certification-box p { color: var(--slate); }
 
+.card ul, .lab-card ul, .tool-card ul, .certification-box ul {
+  margin: 14px 0 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.card li, .lab-card li, .tool-card li, .certification-box li {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 1.15rem;
+  color: var(--slate);
+}
+
+.card li:last-child, .lab-card li:last-child, .tool-card li:last-child, .certification-box li:last-child {
+  margin-bottom: 0;
+}
+
+.card li::before, .lab-card li::before, .tool-card li::before, .certification-box li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--neon-aqua);
+}
+
 /* Icon sizing for cards */
 .lab-card i, .tool-card i {
   font-size: 3rem;
