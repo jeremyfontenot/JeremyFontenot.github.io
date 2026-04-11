@@ -9,13 +9,14 @@
    ---------------- */
 :root {
   /* Brand colors */
-  --deep-space: #02060A;   /* base background */
-  --cyber-blue: #0A2A43;   /* elevated surface */
-  --neon-aqua:  #1AE0D7;   /* primary accent / glow */
-  --electric:   #007BFF;   /* secondary accent */
-  --white:      #FFFFFF;
-  --slate:      #9BA3AE;   /* body text */
-  --border:     rgba(26,224,215,0.18);
+  --deep-space: #0F172A;   /* base background (brand primary) */
+  --cyber-blue: #1E293B;   /* elevated surface (brand secondary) */
+  --neon-aqua:  #38BDF8;   /* primary accent (brand accent) */
+  --electric:   #0EA5E9;   /* secondary accent (brand highlight) */
+  --brand-magenta: #FF2DA6; /* interaction accent */
+  --white:      #F1F5F9;
+  --slate:      #94A3B8;   /* body text (brand tertiary) */
+  --border:     rgba(56,189,248,0.18);
 
   /* Typography */
   --font-body:   "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
@@ -238,11 +239,11 @@ section {
   transition: width var(--t-med);
 }
 .nav-links a:hover {
-  color: var(--neon-aqua);
+  color: var(--brand-magenta);
   background: rgba(10,42,67,0.35);
-  border-color: var(--border);
+  border-color: var(--brand-magenta);
 }
-.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover::after { width: 100%; background: var(--brand-magenta); }
 .nav-links a.active,
 .nav-links a[aria-current="page"] {
   border-color: var(--electric);
@@ -593,7 +594,7 @@ section {
 /* Overlay containers */
 .overlay,
 .about-me-overlay, .home-lab-overlay,
-.tools-overlay, .certifications-overlay, .contact-overlay, .experience-overlay, .hero-overlay {
+.tools-overlay, .certifications-overlay, .contact-overlay, .experience-overlay, .hero-overlay, .projects-overlay {
   position: relative;
   z-index: 2;
   border-radius: 15px;
@@ -636,7 +637,8 @@ section {
 .experience-container,
 .lab-container,
 .tools-container,
-.certifications-container {
+.certifications-container,
+.projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -647,8 +649,77 @@ section {
 .experience-container > *,
 .lab-container > *,
 .tools-container > *,
-.certifications-container > * {
+.certifications-container > *,
+.projects-container > * {
   flex: 0 1 260px;
+}
+
+/* Projects cards */
+.project-card {
+  background: linear-gradient(180deg, rgba(30,41,59,0.38), rgba(15,23,42,0.26));
+  padding: 22px;
+  color: var(--white);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--inner-soft);
+  backdrop-filter: blur(6px);
+  transition: transform var(--t-med), box-shadow var(--t-med), border-color var(--t-med), background var(--t-med);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56,189,248,0.4);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45), 0 0 16px rgba(56,189,248,0.25);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.project-header i {
+  font-size: 1.2rem;
+  color: var(--neon-aqua);
+}
+
+.project-type {
+  font-family: var(--font-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--neon-aqua);
+  margin: 4px 0 12px;
+}
+
+.project-description {
+  color: var(--slate);
+  margin-bottom: 14px;
+}
+
+.project-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.highlight {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: var(--r-sm);
+  border: 1px solid rgba(56,189,248,0.35);
+  color: var(--neon-aqua);
+  background: rgba(56,189,248,0.1);
+  font-size: 0.82rem;
+}
+
+@media (min-width: 1200px) {
+  .projects-container > .project-card {
+    flex: 0 1 calc(33.333% - 14px);
+  }
 }
 
 /* Architecture diagram */

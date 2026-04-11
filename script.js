@@ -27,7 +27,7 @@ function onResize(cb) {
 /* -----------------------
    1) Particles — unified canvas version (brand palette + ResizeObserver)
    ----------------------- */
-const BRAND_COLORS = ['#1AE0D7', '#007BFF', '#0A2A43', '#FFFFFF']; // neon aqua, electric blue, cyber blue, white
+const BRAND_COLORS = ['#38BDF8', '#0EA5E9', '#1E293B', '#F1F5F9']; // brand accent palette
 
 function initCanvasParticles(canvasId, opts = {}) {
   const canvas = document.getElementById(canvasId);
@@ -144,7 +144,7 @@ function initExperienceParticles(containerId) {
 window.addEventListener('load', () => {
   const ids = [
     'hero-particles','about-me-particles',
-    /* 'experience-particles' handled below */, 'home-lab-particles',
+    /* 'experience-particles' handled below */, 'home-lab-particles','projects-particles',
     'tools-particles','certifications-particles','contact-particles','footer-particles'
   ];
   ids.forEach(id => initCanvasParticles(id, { count: 90, speed: 0.9 }));
