@@ -12,7 +12,6 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="env-badge" aria-label="Site focus label">Identity Focus</div>
         <div class="container">
             <a href="#" class="logo-nav"><img src="./Images/logos/logo_horizontal_web_1600x800.png" alt="Jeremy Fontenot Logo"></a>
             <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
@@ -546,12 +545,6 @@
             const robotsMeta = document.querySelector('meta[name="robots"]');
             if (robotsMeta) {
                 robotsMeta.setAttribute('content', SITE_CONFIG.robots);
-            }
-
-            const envBadge = document.querySelector('.env-badge');
-            if (envBadge) {
-                envBadge.textContent = SITE_CONFIG.label;
-                envBadge.setAttribute('aria-label', `Site focus label: ${SITE_CONFIG.label}`);
             }
 
             const heroTagline = document.querySelector('.hero-tagline');
