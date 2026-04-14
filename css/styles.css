@@ -47,6 +47,7 @@ nav {
 }
 
 .env-badge {
+    display: none !important;
     position: absolute;
     top: -0.65rem;
     right: 1rem;
