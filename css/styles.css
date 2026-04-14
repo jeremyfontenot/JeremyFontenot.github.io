@@ -165,7 +165,7 @@ nav .container {
 /* Hero Section */
 .hero {
     background: var(--gradient-primary);
-    background-image: url('./images/social_media/personal_website_banner_1920x480.png');
+    background-image: url('../Images/social_media/personal_website_banner_1920x480.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -608,7 +608,7 @@ section h2::after {
     right: -70px;
     width: 320px;
     height: 320px;
-    background-image: url('../images/logos/primary_logo_web_1200.png');
+    background-image: url('../Images/logos/primary_logo_web_1200.png');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.11;
