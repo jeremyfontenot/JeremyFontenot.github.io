@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Architecture and Topology</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        h2 { margin-top: 1.5rem; }
+        ul { line-height: 1.7; }
+        .meta { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code { background: #e2e8f0; padding: 0.1rem 0.3rem; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Architecture and Topology</h1>
+        <p><a href="./index.html">Back to Home Lab Documentation Hub</a></p>
+
+        <div class="meta">
+            <p><strong>Lab Domain:</strong> <code>ad.jeremyfontenot.online</code></p>
+            <p><strong>Host Platform:</strong> Proxmox on Dell R710</p>
+            <p><strong>Edge Security:</strong> pfSense + IDS/IPS (Suricata/Snort)</p>
+            <p><strong>Primary Goal:</strong> Simulate enterprise-grade identity, network, and security operations</p>
+        </div>
+
+        <h2>Logical Topology</h2>
+        <ul>
+            <li>Edge network ingress enters through TP-Link router and pfSense boundary.</li>
+            <li>Management and server workloads are segmented to limit lateral movement.</li>
+            <li>Domain services are centralized in Windows Server 2022 Active Directory.</li>
+            <li>Linux services (RHEL 9, Apache, Nginx) are isolated for controlled exposure tests.</li>
+        </ul>
+
+        <h2>Design Principles</h2>
+        <ul>
+            <li>Segmentation first: explicit trust boundaries between workloads.</li>
+            <li>Least privilege: identity and policy assignments scoped by role.</li>
+            <li>Observability by default: all critical hosts emit logs/metrics.</li>
+            <li>Repeatability: infrastructure changes are documented and validated.</li>
+        </ul>
+
+        <h2>Validation Evidence</h2>
+        <ul>
+            <li>Connectivity tests between permitted zones succeed.</li>
+            <li>Blocked paths remain denied under firewall policy review.</li>
+            <li>Service health and telemetry visible in monitoring stack.</li>
+        </ul>
+    </main>
+</body>
+</html>

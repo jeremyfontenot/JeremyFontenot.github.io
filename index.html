@@ -1,495 +1,639 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0">
-  <title>Jeremy Fontenot – Microsoft 365 IT Professional | Portfolio</title>
-  <meta name="description" content="Jeremy Fontenot is a Microsoft 365 IT professional specializing in Entra ID, Intune, Exchange Online, and modern workplace automation. View my portfolio, certifications, and cloud lab.">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon-32x32.png?v=20260314c" sizes="32x32">
-  <link rel="icon" type="image/png" href="favicon-16x16.png?v=20260314c" sizes="16x16">
-  <link rel="shortcut icon" type="image/png" href="favicon-32x32.png?v=20260314c">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260314c" sizes="180x180">
-  <link rel="manifest" href="site.webmanifest?v=20260314c">
-
-  <!-- Brand Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (local copy) -->
-  <link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-  <!-- Site CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://jeremyfontenot.online/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Jeremy Fontenot – Microsoft 365 IT Professional">
-  <meta property="og:description" content="Cloud-first IT professional specializing in Microsoft 365, Entra ID, Intune, and modern workplace automation.">
-  <meta property="og:url" content="https://jeremyfontenot.online/">
-  <meta property="og:image" content="https://jeremyfontenot.online/Images/og-image.jpg">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jeremy Fontenot – Microsoft 365 IT Professional">
-  <meta name="twitter:description" content="Cloud-first IT professional specializing in Microsoft 365, Entra ID, Intune, and modern workplace automation.">
-  <meta name="twitter:image" content="https://jeremyfontenot.online/Images/og-image.jpg">
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jeremy Fontenot",
-    "url": "https://jeremyfontenot.online/",
-    "jobTitle": "IT Professional",
-    "description": "Cloud-first IT professional specializing in Microsoft 365 administration, Entra ID, Intune, Exchange Online, and modern workplace automation.",
-    "sameAs": [
-      "https://www.linkedin.com/in/jeremyfontenot",
-      "https://github.com/jeremyfontenot"
-    ]
-  }
-  </script>
-
-  <!-- Canvases shouldn't block clicks by default -->
-  <style>
-    canvas { pointer-events: none; }
-    /* Enable interactivity for Experience section canvas */
-    #experience-particles { pointer-events: auto; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Jeremy Fontenot - Production Site</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logos/favicon_64x64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./images/logos/favicon_128x128.png">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-  <!-- Accessible skip link -->
-  <a href="#main" class="skip-link">Skip to main content</a>
-
-  <!-- Navbar -->
-  <header id="navbar">
-    <div class="nav-container">
-      <h1 class="logo">
-        <a href="#hero">
-          <img src="Images/brand/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot Logo" class="site-logo">
-        </a>
-      </h1>
-      <nav id="primary-nav" aria-label="Primary">
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#home-lab">Home Lab</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#tools">IT Tools</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Main content wrapper for skip link target -->
-  <main id="main">
+<body data-environment="production">
+    <!-- Navigation -->
+    <nav>
+        <div class="env-badge" aria-label="Environment label">Production</div>
+        <div class="container">
+            <a href="#" class="logo-nav"><img src="./images/logos/logo_horizontal_web_1600x800.png" alt="Jeremy Fontenot Logo"></a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#brand">Brand</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="hero" aria-labelledby="hero-title">
-      <canvas id="hero-particles"></canvas>
-      <div class="hero-banner">
-        <img src="Images/Hero Banner.svg" alt="Hero Banner" class="hero-banner-img">
-      </div>
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <span class="hero-eyebrow">Innovative • Technical • Trustworthy</span>
-          <h1 id="hero-title">Welcome to My Digital Space</h1>
-          <p id="hero-subtitle">I'm Jeremy, a Service Desk Technician passionate about technology & problem-solving.</p>
-          <a href="#experience" class="btn-primary btn-hero">Explore My Work</a>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <p class="hero-tagline">● PRODUCTION • LIVE • VERIFIED</p>
+                    <h1>Cloud-First <span class="hero-highlight">IT Professional</span> Building Tomorrow's Workplace</h1>
+                    <p>Specializing in Entra ID, Intune, Exchange Online, and identity-driven security operations. 10+ certifications • Personal M365 cloud lab • Cloud + security focused.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-label="Primary brand mark">
+                    <img src="./images/logos/primary_logo_web_1200.png" alt="Jeremy Fontenot primary logo" class="hero-main-logo">
+                </div>
+            </div>
         </div>
-        <a href="#about-me" class="scroll-indicator" aria-label="Scroll to About Me section">
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about-me" aria-labelledby="about-title">
-      <canvas id="about-me-particles"></canvas>
-      <div class="about-me-overlay">
-        <h2 id="about-title">About Me</h2>
-        <div class="about-me-img">
-          <img src="Images/Avatar.png" alt="Profile image of Jeremy Fontenot">
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Cloud-First IT Professional</h3>
+                <p>I combine support-grounded troubleshooting with cloud-first architecture thinking to build systems that are reliable, secure, and efficient.</p>
+                <p>Hi, I'm Jeremy Fontenot — a cloud-first IT professional focused on Microsoft 365 administration, identity management, and modern workplace automation. I specialize in designing secure, efficient environments using Entra ID, Intune, Exchange Online, SharePoint, and the Power Platform.</p>
+                
+                <h3 style="margin-top: 1.5rem;">Cloud Lab & Technical Expertise</h3>
+                <p>I maintain an enterprise-grade M365 Personal Cloud Lab where I design, secure, and automate modern identity and collaboration solutions. All infrastructure configuration performed exclusively through PowerShell and Microsoft Graph APIs—demonstrating hands-on expertise with:</p>
+                <ul style="margin-top: 1rem; margin-bottom: 1.5rem; color: var(--slate); line-height: 1.8;">
+                    <li style="margin-bottom: 0.5rem;">• Microsoft Graph SDK usage for users, groups, Conditional Access, Intune, and SharePoint automation</li>
+                    <li style="margin-bottom: 0.5rem;">• Exchange Online administration (shared mailboxes, permissions, auditing, provisioning)</li>
+                    <li style="margin-bottom: 0.5rem;">• Teams provisioning and channel management via Graph-based automation</li>
+                    <li style="margin-bottom: 0.5rem;">• Intune policy creation, compliance enforcement, and device update orchestration</li>
+                    <li style="margin-bottom: 0.5rem;">• Conditional Access policies for zero-trust security implementation</li>
+                    <li style="margin-bottom: 0.5rem;">• Tenant hygiene procedures (automated cleanup of Teams, M365 Groups, role assignments)</li>
+                    <li style="margin-bottom: 0.5rem;">• Idempotent scripting patterns with enterprise-grade error handling and validation</li>
+                </ul>
+                
+                <h3 style="margin-top: 1.5rem;">Education</h3>
+                <ul style="margin-top: 1rem; margin-bottom: 1.5rem; color: var(--slate); line-height: 1.8; list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.8rem;">• <strong>Associate of Science (A.S.)</strong> in Computer Science – Database Administration</li>
+                    <li style="margin-bottom: 0.8rem;">• <strong>Information Security and Administration Program</strong> (MyComputerCareer) — 4.00 GPA</li>
+                </ul>
+
+                <h3 style="margin-top: 1.5rem;">Certifications</h3>
+                <p>I hold 10+ industry certifications across Microsoft, CompTIA, and Linux domains.</p>
+                <p><a href="#certifications" class="about-cert-cta">View all certifications & achievements</a></p>
+            </div>
+            <div class="about-image">
+                <img src="./images/certifications/here_is_my_picture.png" alt="Jeremy Fontenot">
+            </div>
         </div>
-        <div class="about-me-content">
-                    <p>Hi, I’m Jeremy Fontenot — a cloud-first IT professional focused on Microsoft 365 administration, identity management, and modern workplace automation. I specialize in designing secure, efficient environments using Entra ID, Intune, Exchange Online, SharePoint, and the Power Platform.</p>
-          <p>I hold an A.S. in Computer Science – Database Administration and completed the Information Security and Administration Program with a 4.00 GPA. My certifications span CompTIA A+, Server+, ITF+, Microsoft Azure Fundamentals, MTA (Windows Server, Networking, Security), Linux Essentials, and Google IT Support.</p>
-          <p>Outside of work, I maintain a personal Microsoft 365 cloud lab where I design, secure, and automate modern identity and collaboration solutions — from Entra Conditional Access and Intune compliance policies to Exchange mail security and Power Automate workflows. All runbooks and architecture docs are versioned in SharePoint.</p>
-          <p>I’m driven by technology, security, and automation — constantly exploring cloud-first approaches to tackle real-world IT challenges. Whether it’s tightening identity access, building automated workflows, or hardening an M365 tenant, I prioritize practical, secure outcomes.</p>
-        </div>
-        <a href="#contact" class="btn-primary cta-contact">Get in Touch</a>
-        <a href="Images/Jeremy_Fontenot_ATS_Resume.pdf" class="btn-primary resume-btn cta-resume" download>
-          <i class="fa-solid fa-download" aria-hidden="true"></i> Download Résumé
-        </a>
-      </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" aria-labelledby="exp-title">
-      <canvas id="experience-particles"></canvas>
-      <div class="experience-overlay">
-        <h2 id="exp-title">Experience</h2>
-        <div class="experience-container">
-          <div class="card">
-            <h3>Service Desk Technician</h3>
-            <p><strong>Company:</strong> Logicalis</p>
-            <p><strong>Duration:</strong> April 2024 – Present</p>
-            <ul>
-              <li>Administered Microsoft 365 and Azure environments, ensuring seamless operation and user access.</li>
-              <li>Managed Active Directory and Group Policy configurations, enhancing security and improving system reliability.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Service Desk Representative - Team Lead</h3>
-            <p><strong>Company:</strong> Insight Global</p>
-            <p><strong>Duration:</strong> Oct. 2022 – Jan. 2024</p>
-            <ul>
-              <li>Led a team of service desk representatives, ensuring timely resolution of IT support tickets.</li>
-              <li>Streamlined ticket escalation processes, reducing resolution times by 20%.</li>
-              <li>Provided advanced troubleshooting for hardware, software, and network issues.</li>
-              <li>Trained new team members on IT support best practices and tools.</li>
-              <li>Collaborated with cross-functional teams to implement IT solutions and improve user satisfaction.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>IT Technician</h3>
-            <p><strong>Company:</strong> Completeful Technologies LLC</p>
-            <p><strong>Duration:</strong> Feb. 2022 – June 2022</p>
-            <ul>
-              <li>Configured and maintained Windows and Linux servers to support critical business operations.</li>
-              <li>Optimized Active Directory infrastructure and Group Policies to improve network functionality and security.</li>
-              <li>Supported end-users with tailored solutions, increasing operational efficiency and reliability.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Technical Support (Contract)</h3>
-            <p><strong>Company:</strong> Hughes Network Services</p>
-            <p><strong>Duration:</strong> Sept. 2021 – Feb. 2022</p>
-            <ul>
-              <li>Diagnosed and resolved network connectivity issues for residential and small-business customers.</li>
-              <li>Maintained secure IP network configurations, ensuring reliable service availability.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Help Desk Technician, Work Study</h3>
-            <p><strong>Company:</strong> Remington College</p>
-            <p><strong>Duration:</strong> Dec. 2019 – April 2021</p>
-            <ul>
-              <li>Provided technical support for students and faculty, ensuring seamless operation of hardware and software systems.</li>
-              <li>Assisted with the configuration of campus-wide IT resources, contributing to smooth daily operations.</li>
-            </ul>
-          </div>
+    <section class="experience" id="experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="content">
+                    <h4>Service Desk Technician</h4>
+                    <div class="company">Logicalis</div>
+                    <div class="date">April 2024 – Present</div>
+                    <ul>
+                        <li>Administer Microsoft 365 and Azure environments</li>
+                        <li>Manage Active Directory and Group Policy</li>
+                        <li>Provide advanced technical troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="content">
+                    <h4>Service Desk Representative – Team Lead</h4>
+                    <div class="company">Insight Global</div>
+                    <div class="date">October 2022 – January 2024</div>
+                    <ul>
+                        <li>Led service desk team and mentored staff</li>
+                        <li>Reduced ticket resolution time by 20%</li>
+                        <li>Provided advanced troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="content">
+                    <h4>IT Technician</h4>
+                    <div class="company">Completeful Technologies LLC</div>
+                    <div class="date">February 2022 – June 2022</div>
+                    <ul>
+                        <li>Maintained Windows and Linux servers</li>
+                        <li>Optimized Active Directory and Group Policy</li>
+                        <li>Supported critical infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="content">
+                    <h4>Technical Support (Contract)</h4>
+                    <div class="company">Hughes Network Services</div>
+                    <div class="date">September 2021 – February 2022</div>
+                    <ul>
+                        <li>Resolved network connectivity issues</li>
+                        <li>Maintained secure network configurations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="content">
+                    <h4>Help Desk Technician (Work Study)</h4>
+                    <div class="company">Remington College</div>
+                    <div class="date">December 2019 – April 2021</div>
+                    <ul>
+                        <li>Provided technical support to students and faculty</li>
+                        <li>Maintained campus IT systems</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Home Lab Section -->
-    <section id="home-lab" aria-labelledby="lab-title">
-      <canvas id="home-lab-particles"></canvas>
-      <div class="home-lab-overlay">
-        <h2 id="lab-title">My Microsoft 365 Personal Cloud Lab</h2>
-        <p>
-          This lab showcases how I design, secure, and automate a modern cloud-first environment using
-          Microsoft 365 services. All runbooks, notes, and architecture diagrams live in my SharePoint
-          site for easy versioning and collaboration.
-        </p>
-
-        <!-- M365 Cloud Lab Architecture Diagram -->
-        <img
-          src="Images/m365-architecture.svg"
-          alt="Architecture diagram of the Microsoft 365 personal cloud lab showing Entra ID, Intune, Exchange Online, SharePoint Online, OneDrive for Business, Microsoft Teams, Power Platform, and Defender and Compliance within a single tenant"
-          class="lab-diagram">
-
-        <div class="lab-container">
-          <div class="tool-card">
-            <i class="fa-solid fa-id-card-clip fa-3x" aria-hidden="true"></i>
-            <h3>Entra ID (Azure AD)</h3>
-            <p>Identity and access management for users, groups, Conditional Access, MFA, and enterprise app SSO.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-laptop fa-3x" aria-hidden="true"></i>
-            <h3>Intune (Endpoint Management)</h3>
-            <p>Device enrollment, compliance policies, security baselines, Win32 app deployment, and update governance.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-share-nodes fa-3x" aria-hidden="true"></i>
-            <h3>SharePoint Online</h3>
-            <p>Team sites for runbooks and documentation, versioned libraries, and role-based permission management.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-cloud fa-3x" aria-hidden="true"></i>
-            <h3>OneDrive for Business</h3>
-            <p>Secure sync, controlled sharing, and restore testing with version history across managed endpoints.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-envelope fa-3x" aria-hidden="true"></i>
-            <h3>Exchange Online</h3>
-            <p>Mail flow and domain security using DKIM/DMARC/SPF, anti-phish policy tuning, and safe link controls.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-people-group fa-3x" aria-hidden="true"></i>
-            <h3>Microsoft Teams</h3>
-            <p>Team structure, channel governance, policy configuration, and collaboration app integration.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-robot fa-3x" aria-hidden="true"></i>
-            <h3>Power Automate &amp; Apps</h3>
-            <p>Workflow automation for alerts and requests, plus lightweight apps connected to SharePoint and Dataverse.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-shield-halved fa-3x" aria-hidden="true"></i>
-            <h3>Defender &amp; Compliance</h3>
-            <p>Threat protection, DLP and sensitivity labels, and unified auditing for secure M365 operations.</p>
-          </div>
-        </div>
-        <a href="https://jeremyfontenot.sharepoint.com/sites/M365-Documentation" class="btn-primary" target="_blank" rel="noopener noreferrer">View full documentation</a>
-      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" aria-labelledby="projects-title">
-      <canvas id="projects-particles"></canvas>
-      <div class="projects-overlay">
-        <h2 id="projects-title">Projects</h2>
-        <p>Featured projects that demonstrate my cloud administration, infrastructure, and branding capabilities.</p>
-        <div class="projects-container">
-          <div class="project-card">
-            <div class="project-header">
-              <i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-              <h3>Microsoft 365 Personal Cloud Lab</h3>
+    <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Enterprise-Grade Home Lab</h3>
+                </div>
+                <div class="project-body">
+                    <span class="project-category">Infrastructure & Virtualization</span>
+                    <p class="project-desc">A professional learning environment simulating real-world enterprise IT infrastructure. Features virtualization on Dell R710 hardware, Windows Server 2022 Active Directory, pfSense firewall segmentation, security monitoring with Zabbix/Wazuh/Graylog, and hybrid-ready cloud integration patterns.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">Proxmox</span>
+                        <span class="tech-tag">Active Directory</span>
+                        <span class="tech-tag">pfSense</span>
+                        <span class="tech-tag">Security Monitoring</span>
+                        <span class="tech-tag">Networking</span>
+                        <span class="tech-tag">Linux/Windows Admin</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="./docs/home-lab/index.html" target="_blank" rel="noopener noreferrer">Open Home Lab Documentation</a>
+                        <a class="project-link project-link-secondary" href="./docs/home-lab/index.html#stack" target="_blank" rel="noopener noreferrer">View Hardware & Stack</a>
+                    </div>
+                </div>
             </div>
-            <p class="project-type">Cloud Administration &amp; Security</p>
-            <p class="project-description">A personal Microsoft 365 lab environment built to practice production-style tenant administration, identity governance, endpoint management, and security operations.</p>
-            <div class="project-highlights">
-              <span class="highlight">Entra ID</span>
-              <span class="highlight">Intune</span>
-              <span class="highlight">Exchange Online</span>
-              <span class="highlight">SharePoint Online</span>
-              <span class="highlight">Defender</span>
-              <span class="highlight">Automation</span>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Microsoft 365 Personal Cloud Lab</h3>
+                </div>
+                <div class="project-body">
+                    <span class="project-category">Cloud Administration & Security</span>
+                    <p class="project-desc"><strong>Enterprise-scale M365 lab</strong> built on Microsoft 365 Business Premium (tenant: jeremyfontenot.online). Demonstrates complete identity, access, Exchange, Teams, Intune, and SharePoint automation using PowerShell and Microsoft Graph APIs exclusively. Configured Conditional Access (MFA enforcement), Intune compliance policies, shared mailbox provisioning, Teams with channels, and security baselines—all deployed with idempotent PowerShell scripts. Documentation has been preserved locally in the M365 archive for long-term access.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">Microsoft Graph</span>
+                        <span class="tech-tag">PowerShell 7</span>
+                        <span class="tech-tag">Entra ID</span>
+                        <span class="tech-tag">Intune</span>
+                        <span class="tech-tag">Exchange Online</span>
+                        <span class="tech-tag">Conditional Access</span>
+                        <span class="tech-tag">SharePoint Online</span>
+                        <span class="tech-tag">Teams</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="project-card">
-            <div class="project-header">
-              <i class="fa-solid fa-server" aria-hidden="true"></i>
-              <h3>Enterprise-Grade Home Lab</h3>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>M365 Lab Documentation</h3>
+                </div>
+                <div class="project-body">
+                    <span class="project-category">Cloud Administration & Documentation</span>
+                    <p class="project-desc">Comprehensive, interview-ready documentation of M365 Personal Cloud Lab implementation. Includes lab architecture overview, security posture analysis, admin skills demonstrated (Microsoft Graph SDK, Exchange Online, Teams provisioning, Intune policy creation, Conditional Access, tenant automation), and complete PowerShell module inventory. Preserved as a local archive for long-term access.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">Microsoft Graph</span>
+                        <span class="tech-tag">Documentation</span>
+                        <span class="tech-tag">Architecture</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="./docs/m365-documentation-archive/index.html" target="_blank" rel="noopener noreferrer">Open M365 Archive</a>
+                        <a class="project-link project-link-secondary" href="./docs/m365-documentation-archive/html/Start-Here.html" target="_blank" rel="noopener noreferrer">Open Start Here</a>
+                        <a class="project-link project-link-secondary" href="./docs/m365-documentation-archive/Lab-Portfolio.pdf" target="_blank" rel="noopener noreferrer">Open Lab Portfolio PDF</a>
+                    </div>
+                </div>
             </div>
-            <p class="project-type">Infrastructure &amp; Virtualization</p>
-            <p class="project-description">A hybrid infrastructure lab focused on virtualization, networking, and secure service delivery to model enterprise support scenarios.</p>
-            <div class="project-highlights">
-              <span class="highlight">VMware ESXi</span>
-              <span class="highlight">Windows Server</span>
-              <span class="highlight">Linux</span>
-              <span class="highlight">Networking</span>
-              <span class="highlight">Security</span>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Brand Guide Archive</h3>
+                </div>
+                <div class="project-body">
+                    <span class="project-category">Branding & Documentation</span>
+                    <p class="project-desc">Archived SharePoint Brand Guide pages exported to local HTML to preserve standards, logo guidance, and asset references after subscription changes.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">SharePoint Online</span>
+                        <span class="tech-tag">PnP PowerShell</span>
+                        <span class="tech-tag">HTML Archive</span>
+                        <span class="tech-tag">Brand Standards</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="./docs/brandguide-archive/index.html" target="_blank" rel="noopener noreferrer">Open Brand Guide Archive</a>
+                        <a class="project-link project-link-secondary" href="./docs/brandguide-archive/html/BrandGuideHome.html" target="_blank" rel="noopener noreferrer">Open Archived Home</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="project-card">
-            <div class="project-header">
-              <i class="fa-solid fa-palette" aria-hidden="true"></i>
-              <h3>Personal Brand Identity</h3>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>PowerShell Script Validation Docs</h3>
+                </div>
+                <div class="project-body">
+                    <span class="project-category">Automation Governance & Documentation</span>
+                    <p class="project-desc">Centralized documentation for validated scripts across your M365 and PowerShell folders, including syntax-check results, per-source summaries, and website-hosted script copies where available.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">PowerShell Parser</span>
+                        <span class="tech-tag">Validation Report</span>
+                        <span class="tech-tag">CSV Export</span>
+                        <span class="tech-tag">Script Library</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="./docs/script-documentation/index.html" target="_blank" rel="noopener noreferrer">Open Script Documentation</a>
+                        <a class="project-link project-link-secondary" href="./docs/script-documentation/validation-results.csv" target="_blank" rel="noopener noreferrer">Download Validation CSV</a>
+                    </div>
+                </div>
             </div>
-            <p class="project-type">Brand Design &amp; Visual System</p>
-            <p class="project-description">A complete brand identity with color standards, logo family, profile graphics, and social templates designed for consistent professional presentation.</p>
-            <div class="project-highlights">
-              <span class="highlight">Brand Colors</span>
-              <span class="highlight">Logo System</span>
-              <span class="highlight">Social Assets</span>
-              <span class="highlight">Documentation</span>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Final Branding Project</h3>
+                </div>
+                <div class="project-body">
+                    <span class="project-category">Brand Assets Repository</span>
+                    <p class="project-desc">Master source of approved logos, social media graphics, templates, and production-ready exports for the Jeremy Fontenot brand system.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">Logo System</span>
+                        <span class="tech-tag">Social Media Kit</span>
+                        <span class="tech-tag">Templates</span>
+                        <span class="tech-tag">Design Assets</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="file:///C:/Users/jeremyfontenot/brand_assets" target="_blank" rel="noopener noreferrer">Open Local Brand Assets</a>
+                        <a class="project-link project-link-secondary" href="./docs/brandguide-archive/index.html" target="_blank" rel="noopener noreferrer">View Local Documentation</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- IT Tools Section -->
-    <section id="tools" aria-labelledby="tools-title">
-      <canvas id="tools-particles"></canvas>
-      <div class="tools-overlay">
-        <h2 id="tools-title">My Favorite IT Tools</h2>
-        <p>These are the cloud and Microsoft 365 tools I use for modern IT administration and automation.</p>
-        <div class="tools-container">
-          <div class="tool-card">
-            <i class="fa-brands fa-microsoft fa-3x" aria-hidden="true"></i>
-            <h3>Microsoft 365 Admin Center</h3>
-            <p>Central hub for managing users, licenses, services, and organizational settings.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-cloud fa-3x" aria-hidden="true"></i>
-            <h3>Azure Portal &amp; Entra ID</h3>
-            <p>Managing cloud resources, identity, conditional access, and authentication policies.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-terminal fa-3x" aria-hidden="true"></i>
-            <h3>PowerShell for M365</h3>
-            <p>Automating Microsoft 365 and Azure tasks with scripts and modules.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-laptop fa-3x" aria-hidden="true"></i>
-            <h3>Microsoft Intune</h3>
-            <p>Endpoint management, device compliance, app deployment, and security policies.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-envelope fa-3x" aria-hidden="true"></i>
-            <h3>Exchange Online Admin</h3>
-            <p>Managing mailboxes, mail flow, message security, and compliance policies.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-share-nodes fa-3x" aria-hidden="true"></i>
-            <h3>SharePoint Online</h3>
-            <p>Building collaboration sites, document libraries, and knowledge management systems.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-people-group fa-3x" aria-hidden="true"></i>
-            <h3>Microsoft Teams Admin</h3>
-            <p>Managing teams, channels, policies, governance, and communication compliance.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-robot fa-3x" aria-hidden="true"></i>
-            <h3>Power Platform</h3>
-            <p>Creating automated workflows with Power Automate and custom apps with Power Apps.</p>
-          </div>
-          <div class="tool-card">
-            <i class="fa-solid fa-shield-halved fa-3x" aria-hidden="true"></i>
-            <h3>Microsoft Defender &amp; Compliance</h3>
-            <p>Security monitoring, threat protection, DLP policies, and compliance management.</p>
-          </div>
+    <!-- Brand Section -->
+    <section class="brand" id="brand">
+        <h2>Brand System Highlights</h2>
+        <p class="brand-intro">A curated set of core identity assets used across this site. For complete files, exports, and templates, open the full Brand Guide archive.</p>
+        <div class="brand-grid">
+            <article class="brand-card">
+                <img src="./images/logos/primary_logo_web_1200.png" alt="Primary logo preview" class="brand-preview">
+                <h3>Primary Logo</h3>
+                <p>Default mark for hero usage, profile presentation, and brand-forward sections.</p>
+            </article>
+            <article class="brand-card">
+                <img src="./images/logos/logo_horizontal_web_1600x800.png" alt="Horizontal logo preview" class="brand-preview">
+                <h3>Horizontal Logo</h3>
+                <p>Preferred for navigation bars, headers, and narrow horizontal placements.</p>
+            </article>
+            <article class="brand-card">
+                <img src="./images/logos/logo_stacked_web_1024.png" alt="Stacked logo preview" class="brand-preview brand-preview-stacked">
+                <h3>Stacked Logo</h3>
+                <p>Optimized for square placements, social profile contexts, and badge-style elements.</p>
+            </article>
+            <article class="brand-card">
+                <img src="./images/social_media/personal_website_banner_1920x480.png" alt="Website banner preview" class="brand-preview">
+                <h3>Website Banner</h3>
+                <p>Hero background visual direction for consistent brand voice and atmosphere.</p>
+            </article>
+            <article class="brand-card">
+                <img src="./images/logos/favicon_128x128.png" alt="Favicon preview" class="brand-preview brand-preview-icon">
+                <h3>Favicon / Icon</h3>
+                <p>Compact identity mark used in browser tabs and platform-level surfaces.</p>
+            </article>
         </div>
-      </div>
+        <div class="brand-actions">
+            <a class="project-link" href="./docs/brandguide-archive/index.html" target="_blank" rel="noopener noreferrer">Open Full Brand Guide Archive</a>
+            <a class="project-link project-link-secondary" href="file:///C:/Users/jeremyfontenot/brand_assets" target="_blank" rel="noopener noreferrer">Open Complete Local Brand Assets</a>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+        <h2>Technical Toolkit</h2>
+        <div class="tools-container">
+            <div class="tool-category">
+                <h3>Cloud & Administration</h3>
+                <div class="tool-list">
+                    <div class="tool-item">
+                        <p>Microsoft 365</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Azure & Entra ID</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Intune MDM</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Exchange Online</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>SharePoint Online</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Conditional Access</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-category">
+                <h3>PowerShell & APIs</h3>
+                <div class="tool-list">
+                    <div class="tool-item">
+                        <p>Microsoft Graph SDK</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>PowerShell 7+</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>ExchangeOnlineManagement</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>MicrosoftTeams Module</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>SPO PowerShell</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Graph REST APIs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-category">
+                <h3>Infrastructure & Networking</h3>
+                <div class="tool-list">
+                    <div class="tool-item">
+                        <p>Active Directory</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Windows Server</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>pfSense</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>VMware ESXi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-category">
+                <h3>Scripting & Automation</h3>
+                <div class="tool-list">
+                    <div class="tool-item">
+                        <p>PowerShell</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Power Automate</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Bash</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-category">
+                <h3>Security & Monitoring</h3>
+                <div class="tool-list">
+                    <div class="tool-item">
+                        <p>Wireshark</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Nmap</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Wazuh</p>
+                    </div>
+                    <div class="tool-item">
+                        <p>Graylog</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications" aria-labelledby="certs-title">
-      <canvas id="certifications-particles"></canvas>
-      <div class="certifications-overlay">
-        <h2 id="certs-title">Certifications &amp; Achievements</h2>
-        <p>Below are the certifications I’ve earned, showcasing my expertise and dedication to IT.</p>
-        <div class="certifications-container">
-          <div class="certification-box">
-            <img src="Images/Jeremy_Chant_Fontenot_WCITP1_thumb.png" alt="World Class IT Professional (WCITP1) certificate thumbnail" class="cert-badge">
-            <h3>World Class IT Professional (WCITP1)</h3>
-            <p>Awarded by My Computer Career for exemplary academic performance in IT Security and Administration.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/microsoft-azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals badge" class="cert-badge">
-            <h3>Microsoft Certified: Azure Fundamentals</h3>
-            <p>Validates foundational knowledge in cloud computing, Azure services, security, and compliance.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/mta-networking.png" alt="MTA: Networking Fundamentals badge" class="cert-badge">
-            <h3>MTA: Networking Fundamentals</h3>
-            <p>Demonstrates proficiency in basic networking concepts, TCP/IP, DNS, DHCP, and routing.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/mta-windows-server.png" alt="MTA: Windows Server Administration badge" class="cert-badge">
-            <h3>MTA: Windows Server Administration</h3>
-            <p>Validates knowledge in Windows Server installation, Active Directory, and server management.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/mta-security.png" alt="MTA: Security Fundamentals badge" class="cert-badge">
-            <h3>MTA: Security Fundamentals</h3>
-            <p>Demonstrates understanding of security concepts, network security, and access controls.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/comptia-itf+.png" alt="CompTIA IT Fundamentals (ITF+) badge" class="cert-badge">
-            <h3>CompTIA IT Fundamentals (ITF+)</h3>
-            <p>Certifies essential IT skills, including basic computing, troubleshooting, and system management.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/comptia-a+.png" alt="CompTIA A+ badge" class="cert-badge">
-            <h3>CompTIA A+</h3>
-            <p>Industry-standard certification for hardware, software troubleshooting, and IT support skills.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/comptia-server+.png" alt="CompTIA Server+ badge" class="cert-badge">
-            <h3>CompTIA Server+</h3>
-            <p>Validates knowledge of server architecture, storage, security, and disaster recovery.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/cisco.png" alt="Introduction to Cybersecurity by Cisco badge" class="cert-badge">
-            <h3>Introduction to Cybersecurity</h3>
-            <p>Fundamental cybersecurity concepts, covering network security, threat protection, and encryption.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/linux-essentials.png" alt="Linux Essentials badge" class="cert-badge">
-            <h3>Linux Essentials</h3>
-            <p>Demonstrates foundational Linux skills, command-line proficiency, and open-source knowledge.</p>
-          </div>
-          <div class="certification-box">
-            <img src="Images/google-it-support.png" alt="Google IT Support badge" class="cert-badge">
-            <h3>Google IT Support</h3>
-            <p>Provides knowledge in troubleshooting, networking, system administration, and security.</p>
-          </div>
+    <section class="certifications" id="certifications">
+        <h2>Certifications & Achievements</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <img class="cert-badge-image" src="./images/certifications/badges/Jeremy_Chant_Fontenot_WCITP1_thumb_web.png" alt="World Class IT Professional badge">
+                <p class="cert-title">World Class IT Professional</p>
+                <p class="cert-provider">MyComputerCareer</p>
+            </div>
+            <div class="cert-item">
+                <img class="cert-badge-image" src="./images/certifications/badges/microsoft-azure-fundamentals.png" alt="Azure Fundamentals badge">
+                <p class="cert-title">Microsoft Certified: Azure Fundamentals</p>
+                <p class="cert-provider">Microsoft</p>
+            </div>
+            <a class="cert-item cert-link" href="https://www.credly.com/badges/ed5a8406-ac3c-452e-b16a-7391121a9017/public_url" target="_blank" rel="noopener noreferrer">
+                <img class="cert-badge-image" src="./images/certifications/badges/comptia-a+.png" alt="CompTIA A+ badge">
+                <p class="cert-title">CompTIA A+</p>
+                <p class="cert-provider">CompTIA</p>
+            </a>
+            <div class="cert-item">
+                <img class="cert-badge-image" src="./images/certifications/badges/comptia-server+.png" alt="CompTIA Server+ badge">
+                <p class="cert-title">CompTIA Server+</p>
+                <p class="cert-provider">CompTIA</p>
+            </div>
+            <a class="cert-item cert-link" href="https://www.credly.com/badges/e507d3b8-ea86-41e0-850a-13125c605600/public_url" target="_blank" rel="noopener noreferrer">
+                <img class="cert-badge-image" src="./images/certifications/badges/comptia-itf+.png" alt="CompTIA ITF+ badge">
+                <p class="cert-title">CompTIA ITF+</p>
+                <p class="cert-provider">CompTIA</p>
+            </a>
+            <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-networking-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
+                <img class="cert-badge-image" src="./images/certifications/badges/mta-networking.png" alt="MTA Networking Fundamentals badge">
+                <p class="cert-title">MTA: Networking Fundamentals</p>
+                <p class="cert-provider">Microsoft</p>
+            </a>
+            <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-windows-server-administration-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
+                <img class="cert-badge-image" src="./images/certifications/badges/mta-windows-server.png" alt="MTA Windows Server Administration Fundamentals badge">
+                <p class="cert-title">MTA: Windows Server Administration</p>
+                <p class="cert-provider">Microsoft</p>
+            </a>
+            <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-security-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
+                <img class="cert-badge-image" src="./images/certifications/badges/mta-security.png" alt="MTA Security Fundamentals badge">
+                <p class="cert-title">MTA: Security Fundamentals</p>
+                <p class="cert-provider">Microsoft</p>
+            </a>
+            <a class="cert-item cert-link" href="https://www.credly.com/badges/612a8588-58c0-46f3-b68c-c10de91dcbdc/public_url" target="_blank" rel="noopener noreferrer">
+                <img class="cert-badge-image" src="./images/certifications/badges/cisco.png" alt="Introduction to Cybersecurity badge">
+                <p class="cert-title">Introduction to Cybersecurity</p>
+                <p class="cert-provider">Cisco</p>
+            </a>
+            <div class="cert-item">
+                <img class="cert-badge-image" src="./images/certifications/badges/linux-essentials.png" alt="Linux Essentials badge">
+                <p class="cert-title">Linux Essentials</p>
+                <p class="cert-provider">Linux Professional Institute (LPI)</p>
+            </div>
+            <div class="cert-item">
+                <img class="cert-badge-image" src="./images/certifications/badges/google-it-support.png" alt="Google IT Support Specialist badge">
+                <p class="cert-title">Google IT Support Specialist</p>
+                <p class="cert-provider">Google</p>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" aria-labelledby="contact-title">
-      <canvas id="contact-particles"></canvas>
-      <div class="contact-overlay">
-        <h2 id="contact-title">Contact Me</h2>
-        <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
-        <!-- Removed inline onsubmit; handled in script.js -->
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" autocomplete="off" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Send Message</button>
+    <section class="contact" id="contact">
+        <h2>Let's Connect</h2>
+        <p class="contact-intro">If you need a cloud-focused IT professional who blends support, automation, and security — let's connect.</p>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message</button>
         </form>
-      </div>
     </section>
-  </main>
 
-  <!-- Image Modal -->
-  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="caption">
-    <span class="close" aria-label="Close modal">×</span>
-    <img class="modal-content" id="modalImage" alt="Enlarged image">
-    <div id="caption"></div>
-  </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Jeremy Fontenot. All rights reserved.</p>
+            <div class="footer-divider"></div>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/jeremyfontenot" target="_blank">LinkedIn</a>
+                <a href="https://github.com/jeremyfontenot" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <canvas id="footer-particles"></canvas>
-    <img src="Images/Email Sig_Footer.png" alt="Jeremy Fontenot Footer Banner" class="footer-banner">
-    <div class="footer-overlay">
-      <p>© 2026 Jeremy Fontenot. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
-          <i class="fab fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/jeremyfontenot" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
+    <script>
+        const SITE_ENV = 'production';
+        const ENVIRONMENTS = {
+            production: {
+                label: 'Production',
+                title: 'Jeremy Fontenot - Production Site',
+                tagline: '● PRODUCTION • LIVE • VERIFIED',
+                robots: 'index, follow'
+            },
+            staging: {
+                label: 'Staging',
+                title: 'Jeremy Fontenot - Staging Test Site',
+                tagline: '● STAGING • PRE-PRODUCTION • QA',
+                robots: 'noindex, nofollow, noarchive, nosnippet'
+            },
+            uat: {
+                label: 'UAT',
+                title: 'Jeremy Fontenot - UAT Site',
+                tagline: '● UAT • BUSINESS VALIDATION • SIGN-OFF',
+                robots: 'noindex, nofollow, noarchive, nosnippet'
+            },
+            dev: {
+                label: 'Dev',
+                title: 'Jeremy Fontenot - Dev Site',
+                tagline: '● DEVELOPMENT • IN PROGRESS • UNSTABLE',
+                robots: 'noindex, nofollow, noarchive, nosnippet'
+            }
+        };
 
-  <!-- JS -->
-  <script src="js/particles.min.js"></script>
-  <script src="script.js"></script>
+        const envConfig = ENVIRONMENTS[SITE_ENV] || ENVIRONMENTS.production;
+        document.body.setAttribute('data-environment', SITE_ENV);
+        document.title = envConfig.title;
+
+        const robotsMeta = document.querySelector('meta[name="robots"]');
+        if (robotsMeta) {
+            robotsMeta.setAttribute('content', envConfig.robots);
+        }
+
+        const envBadge = document.querySelector('.env-badge');
+        if (envBadge) {
+            envBadge.textContent = envConfig.label;
+            envBadge.setAttribute('aria-label', `Environment label: ${envConfig.label}`);
+        }
+
+        const heroTagline = document.querySelector('.hero-tagline');
+        if (heroTagline) {
+            heroTagline.textContent = envConfig.tagline;
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // For demo: show success message
+            alert(`Thanks ${name}! Your message has been received. We'll get back to you at ${email} soon.`);
+            event.target.reset();
+        }
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(15, 23, 42, 0.98)';
+            } else {
+                nav.style.background = 'rgba(15, 23, 42, 0.95)';
+            }
+        });
+    </script>
 </body>
 </html>

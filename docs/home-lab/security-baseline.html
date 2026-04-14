@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Security Baseline</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        ul { line-height: 1.7; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Security Baseline and Hardening</h1>
+        <p><a href="./index.html">Back to Home Lab Documentation Hub</a></p>
+
+        <h2>Baseline Controls</h2>
+        <ul>
+            <li>Host patch management and vulnerability remediation cadence.</li>
+            <li>Service minimization to reduce exposed attack surface.</li>
+            <li>Firewall policy based on deny-by-default and explicit allow rules.</li>
+            <li>Administrative account separation for privileged tasks.</li>
+        </ul>
+
+        <h2>Threat Detection Stack</h2>
+        <ul>
+            <li>Suricata/Snort for network intrusion signals.</li>
+            <li>Wazuh for endpoint security telemetry and integrity monitoring.</li>
+            <li>Graylog for central log search, triage, and retention workflows.</li>
+        </ul>
+
+        <h2>Hardening Validation</h2>
+        <ul>
+            <li>Unauthorized ports and services are closed or monitored.</li>
+            <li>Critical logs are centralized and timestamp-consistent.</li>
+            <li>Alerting triggers for high-risk events are tested quarterly.</li>
+        </ul>
+    </main>
+</body>
+</html>

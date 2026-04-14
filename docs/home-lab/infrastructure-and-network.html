@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Infrastructure and Network</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 960px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        ul { line-height: 1.75; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .meta { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Infrastructure and Network</h1>
+        <p><a href="./index.html">Back to Home Lab Overview</a></p>
+        <div class="meta">
+            <p><strong>Primary Node:</strong> Dell R710</p>
+            <p><strong>Capacity:</strong> 24 GB RAM, 750 GB storage</p>
+            <p><strong>Domain:</strong> ad.jeremyfontenot.online</p>
+            <p><strong>Edge Device:</strong> TP-Link Archer AX1800</p>
+        </div>
+
+        <h2>Virtualization and Host Platform</h2>
+        <ul>
+            <li>Proxmox used for VM lifecycle, isolation, and segmentation.</li>
+            <li>Workloads include Windows Server 2022 and RHEL 9 systems.</li>
+            <li>Service stack supports Apache and Nginx hosting scenarios.</li>
+        </ul>
+
+        <h2>Identity and Core Services</h2>
+        <ul>
+            <li>Windows Server 2022 Active Directory for user/group policy testing.</li>
+            <li>Domain-joined server workflows aligned to enterprise administration practices.</li>
+            <li>Cross-platform administration across Linux and Windows servers.</li>
+        </ul>
+
+        <h2>Network and Security Controls</h2>
+        <ul>
+            <li>pfSense for routing policy, segmentation, and firewall rule validation.</li>
+            <li>Suricata and Snort for IDS/IPS traffic visibility and alerting.</li>
+            <li>Network-focused testing for service exposure and least-privilege paths.</li>
+        </ul>
+    </main>
+</body>
+</html>

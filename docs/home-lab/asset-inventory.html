@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Asset Inventory</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+        th, td { border: 1px solid #e2e8f0; padding: 8px; text-align: left; }
+        th { background: #f1f5f9; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Asset Inventory</h1>
+        <p><a href="./index.html">Back to Home Lab Documentation Hub</a></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Asset</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Hardware</td><td>Dell R710</td><td>Primary virtualization host</td><td>Active</td></tr>
+                <tr><td>Network</td><td>TP-Link Archer AX1800</td><td>Edge routing/wireless</td><td>Active</td></tr>
+                <tr><td>Virtualization</td><td>Proxmox</td><td>VM platform</td><td>Active</td></tr>
+                <tr><td>Identity</td><td>Windows Server 2022 AD</td><td>Domain services</td><td>Active</td></tr>
+                <tr><td>Security</td><td>pfSense</td><td>Firewall and segmentation</td><td>Active</td></tr>
+                <tr><td>Monitoring</td><td>Zabbix</td><td>System monitoring</td><td>Active</td></tr>
+                <tr><td>Monitoring</td><td>Wazuh</td><td>Security telemetry</td><td>Active</td></tr>
+                <tr><td>Logging</td><td>Graylog</td><td>Centralized log analysis</td><td>Active</td></tr>
+                <tr><td>Web Services</td><td>Apache/Nginx</td><td>Service testing</td><td>Active</td></tr>
+                <tr><td>IDS/IPS</td><td>Suricata/Snort</td><td>Network detection</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
