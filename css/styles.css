@@ -684,7 +684,7 @@ section h2::after {
 }
 
 .project-card:nth-child(even):hover h3 {
-    color: var(--sky-blue);
+    color: #e6f7ff;
 }
 
 .project-header {
@@ -695,6 +695,10 @@ section h2::after {
     align-items: flex-end;
     position: relative;
     overflow: hidden;
+}
+
+.project-card:hover .project-header::after {
+    opacity: 1;
 }
 
 .project-header::before {
@@ -708,11 +712,21 @@ section h2::after {
     border-radius: 50%;
 }
 
+.project-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(6, 11, 25, 0.18) 0%, rgba(6, 11, 25, 0.42) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .project-header h3 {
     font-size: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 .project-body {
