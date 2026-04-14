@@ -12,7 +12,7 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="env-badge" aria-label="Brand values label">Brand Values</div>
+        <div class="env-badge" aria-label="Site focus label">Identity Focus</div>
         <div class="container">
             <a href="#" class="logo-nav"><img src="./Images/logos/logo_horizontal_web_1600x800.png" alt="Jeremy Fontenot Logo"></a>
             <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
@@ -38,7 +38,7 @@
         <div class="container">
             <div class="hero-layout">
                 <div class="hero-content">
-                    <p class="hero-tagline">● BRAND VALUES • TRUST • CLARITY</p>
+                    <p class="hero-tagline">● IDENTITY • SECURITY • CLARITY</p>
                     <h1>Cloud-First <span class="hero-highlight">IT Professional</span> Building Tomorrow's Workplace</h1>
                     <p>Specializing in Entra ID, Intune, Exchange Online, and identity-driven security operations. 10+ certifications • Personal M365 cloud lab • Cloud + security focused.</p>
                     <div class="cta-buttons">
@@ -535,9 +535,9 @@
 
         <script>
             const SITE_CONFIG = {
-                label: 'Brand Values',
+                label: 'Identity Focus',
                 title: 'Jeremy Fontenot - Portfolio Site',
-                tagline: '● BRAND VALUES • TRUST • CLARITY',
+                tagline: '● IDENTITY • SECURITY • CLARITY',
                 robots: 'index, follow'
             };
 
@@ -551,7 +551,7 @@
             const envBadge = document.querySelector('.env-badge');
             if (envBadge) {
                 envBadge.textContent = SITE_CONFIG.label;
-                envBadge.setAttribute('aria-label', `Brand values label: ${SITE_CONFIG.label}`);
+                envBadge.setAttribute('aria-label', `Site focus label: ${SITE_CONFIG.label}`);
             }
 
             const heroTagline = document.querySelector('.hero-tagline');
