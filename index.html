@@ -24,6 +24,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#architecture">Information Architecture</a></li>
                 <li><a href="#brand">Brand</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#certifications">Certifications</a></li>
@@ -288,6 +289,39 @@
                         <a class="project-link project-link-secondary" href="./docs/brandguide-archive/index.html" target="_blank" rel="noopener noreferrer">View Local Documentation</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture" class="section architecture-section">
+        <div class="container">
+            <h2>Information Architecture</h2>
+
+            <p>
+                This site is structured as a single-page portfolio with modular documentation hubs.
+                The homepage acts as a central navigation layer, linking to dedicated archives for
+                lab environments, Microsoft 365 documentation, branding systems, and script validation.
+            </p>
+
+            <div class="architecture-content">
+                <div class="architecture-viewport">
+                    <div id="architecture-canvas" class="architecture-canvas">
+                        <svg id="architecture-lines" class="architecture-lines">
+                            <g id="line-layer"></g>
+                            <g id="particle-layer"></g>
+                        </svg>
+                    </div>
+                </div>
+                <div id="arch-inspector" class="arch-inspector">
+                    <div class="arch-inspector-header">
+                        <span class="arch-inspector-header-title">Inspector</span>
+                        <button id="arch-inspector-hide" class="arch-inspector-toggle" type="button" aria-label="Hide inspector">Hide</button>
+                    </div>
+                    <div id="arch-inspector-body" class="arch-inspector-body">
+                        Click a node to inspect details
+                    </div>
+                </div>
+                <button id="arch-inspector-show" class="arch-inspector-show" type="button" aria-label="Show inspector">Show Inspector</button>
             </div>
         </div>
     </section>
@@ -596,6 +630,383 @@
                     nav.style.background = window.scrollY > 50 ? 'rgba(15, 23, 42, 0.98)' : 'rgba(15, 23, 42, 0.95)';
                 }
             });
+        </script>
+
+        <script>
+        let scale = 1;
+        let offsetX = 0;
+        let offsetY = 0;
+        let particleIntervals = [];
+
+        const canvas = document.getElementById("architecture-canvas");
+
+        function updateTransform() {
+            canvas.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+        }
+
+        document.addEventListener("wheel", (e) => {
+            if (!e.ctrlKey) return;
+            if (!e.target.closest(".architecture-viewport")) return;
+
+            e.preventDefault();
+
+            const delta = -e.deltaY * 0.001;
+            scale = Math.min(Math.max(0.6, scale + delta), 1.8);
+
+            updateTransform();
+        }, { passive: false });
+
+        let isDragging = false;
+        let startX, startY;
+
+        canvas.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            startX = e.clientX - offsetX;
+            startY = e.clientY - offsetY;
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (!isDragging) return;
+
+            offsetX = e.clientX - startX;
+            offsetY = e.clientY - startY;
+
+            updateTransform();
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+        });
+
+function renderDiagram() {
+            const svg = document.getElementById("architecture-lines");
+            particleIntervals.forEach(timerId => clearInterval(timerId));
+            particleIntervals = [];
+
+            canvas.querySelectorAll(".arch-card").forEach(card => card.remove());
+            svg.innerHTML = `
+                <g id="line-layer"></g>
+                <g id="particle-layer"></g>
+            `;
+
+            const lineLayer = document.getElementById("line-layer");
+            const particleLayer = document.getElementById("particle-layer");
+
+    const nodes = [
+        { id: "root", label: "Jeremy Fontenot Site" },
+        { id: "shell", label: "index.html" },
+
+        { id: "hero", label: "Hero", desc: "Landing entry point and primary branding section." },
+        { id: "about", label: "About", desc: "Professional summary and technical background." },
+        { id: "exp", label: "Experience", desc: "Career timeline and technical roles." },
+        { id: "projects", label: "Projects", desc: "Core system integrations and documentation hubs.", highlight: true },
+
+        { id: "brand", label: "Brand", desc: "Visual identity system and assets." },
+        { id: "tools", label: "Tools", desc: "Operational utilities and workflows." },
+        { id: "certs", label: "Certifications", desc: "Professional certifications and credentials." },
+        { id: "contact", label: "Contact", desc: "Communication entry point and forms." }
+    ];
+
+    const levels = {
+        root: 0,
+        shell: 1,
+
+        hero: 2,
+        about: 2,
+        exp: 2,
+        projects: 2,
+
+        brand: 3,
+        tools: 3,
+        certs: 3,
+        contact: 3
+    };
+
+    function layoutNodes(nodes) {
+        const levelMap = {};
+
+        nodes.forEach(n => {
+            const level = levels[n.id] || 0;
+            if (!levelMap[level]) levelMap[level] = [];
+            levelMap[level].push(n);
+        });
+
+        const verticalSpacing = 140;
+        const horizontalSpacing = 160;
+
+        Object.keys(levelMap).forEach(level => {
+            const row = levelMap[level];
+            const y = 60 + level * verticalSpacing;
+
+            row.forEach((node, index) => {
+                const totalWidth = row.length * horizontalSpacing;
+                const startX = (800 - totalWidth) / 2;
+
+                node.x = startX + index * horizontalSpacing;
+                node.y = y;
+            });
+        });
+
+        return nodes;
+    }
+
+    layoutNodes(nodes);
+
+    const connections = [
+        ["root", "shell"],
+
+        ["shell", "hero"],
+        ["shell", "about"],
+        ["shell", "exp"],
+        ["shell", "projects"],
+
+        ["shell", "brand"],
+        ["shell", "tools"],
+        ["shell", "certs"],
+        ["shell", "contact"]
+    ];
+
+    const graph = {};
+
+    connections.forEach(([from, to]) => {
+        if (!graph[from]) graph[from] = [];
+        graph[from].push(to);
+    });
+
+    function getConnectedNodes(startId) {
+        const visited = new Set();
+        const result = new Set();
+
+        function dfs(node) {
+            if (!graph[node]) return;
+
+            for (const next of graph[node]) {
+                if (!visited.has(next)) {
+                    visited.add(next);
+                    result.add(next);
+                    dfs(next);
+                }
+            }
+        }
+
+        visited.add(startId);
+        dfs(startId);
+
+        return result;
+    }
+
+    nodes.forEach(node => {
+        const el = document.createElement("div");
+        el.className = "arch-card";
+        if (node.highlight) el.classList.add("highlight");
+
+        el.textContent = node.label;
+        el.style.left = node.x + "px";
+        el.style.top = node.y + "px";
+
+        canvas.appendChild(el);
+
+        el.addEventListener("mouseenter", () => {
+            document.querySelectorAll(".arch-line").forEach(l => {
+                l.classList.remove("highlight");
+            });
+
+            if (node.id === "projects") {
+                document.querySelectorAll(".arch-line").forEach(l => {
+                    l.classList.add("highlight");
+                });
+            }
+        });
+
+        el.addEventListener("mouseleave", () => {
+            document.querySelectorAll(".arch-line").forEach(l => {
+                l.classList.remove("highlight");
+            });
+        });
+
+        el.addEventListener("click", (e) => {
+            e.stopPropagation();
+
+            const canvas = document.getElementById("architecture-canvas");
+            const inspector = document.getElementById("arch-inspector-body");
+
+            inspector.innerHTML = `
+                <strong>${node.label}</strong><br/><br/>
+                ${node.desc || "No metadata available"}
+            `;
+
+            // toggle lock
+            const isLocked = canvas.classList.contains("arch-locked");
+
+            // reset everything first
+            document.querySelectorAll(".arch-card").forEach(c => {
+                c.classList.remove("focused");
+            });
+
+            document.querySelectorAll(".arch-line").forEach(l => {
+                l.classList.remove("focused");
+            });
+
+            if (!isLocked) {
+                canvas.classList.add("arch-locked");
+
+                el.classList.add("focused");
+
+                const connected = getConnectedNodes(node.id);
+
+                document.querySelectorAll(".arch-line").forEach(l => {
+                    const isRelated = l.dataset.from === node.id || l.dataset.to === node.id;
+                    if (isRelated) {
+                        l.classList.add("focused");
+                    }
+                });
+
+            } else {
+                canvas.classList.remove("arch-locked");
+            }
+        });
+    });
+
+    document.getElementById("architecture-canvas").addEventListener("click", () => {
+        const canvas = document.getElementById("architecture-canvas");
+
+        canvas.classList.remove("arch-locked");
+
+        document.querySelectorAll(".arch-card").forEach(c => {
+            c.classList.remove("focused");
+        });
+
+        document.querySelectorAll(".arch-line").forEach(l => {
+            l.classList.remove("focused");
+        });
+    });
+
+
+    function connect(a, b, highlight = false) {
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+        const startX = a.x + 60;
+        const startY = a.y + 30;
+
+        const endX = b.x + 60;
+        const endY = b.y;
+
+        // control points for smooth curve
+        const controlY = (startY + endY) / 2;
+
+        const d = `
+        M ${startX},${startY}
+        C ${startX},${controlY}
+          ${endX},${controlY}
+          ${endX},${endY}
+    `;
+
+        path.setAttribute("d", d);
+        path.setAttribute("class", highlight ? "arch-line highlight" : "arch-line");
+        path.dataset.from = a.id;
+        path.dataset.to = b.id;
+
+        lineLayer.appendChild(path);
+
+        const timerId = setInterval(() => {
+            const shouldHighlight = path.classList.contains("highlight");
+            createParticle(path, shouldHighlight);
+        }, 900);
+
+        particleIntervals.push(timerId);
+    }
+
+    function createParticle(path, highlight = false) {
+        const particle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+
+        particle.setAttribute("r", "3");
+        particle.setAttribute("class", highlight ? "flow-particle highlight" : "flow-particle");
+
+        particleLayer.appendChild(particle);
+
+        const length = path.getTotalLength();
+        let progress = 0;
+
+        function animate() {
+            progress += 1.2;
+
+            if (progress > length) {
+                particle.remove();
+                return;
+            }
+
+            const point = path.getPointAtLength(progress);
+
+            particle.setAttribute("cx", point.x);
+            particle.setAttribute("cy", point.y);
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    }
+
+    const nodeMap = Object.fromEntries(nodes.map(n => [n.id, n]));
+
+    connections.forEach(([from, to]) => {
+        connect(nodeMap[from], nodeMap[to], to === "projects");
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderDiagram();
+
+    const architectureSection = document.getElementById("architecture");
+    const inspector = document.getElementById("arch-inspector");
+    const hideInspectorButton = document.getElementById("arch-inspector-hide");
+    const showInspectorButton = document.getElementById("arch-inspector-show");
+    let inspectorManuallyHidden = false;
+
+    function isArchitectureSectionVisible() {
+        if (!architectureSection) return false;
+
+        const rect = architectureSection.getBoundingClientRect();
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        return rect.top < viewportHeight * 0.85 && rect.bottom > viewportHeight * 0.2;
+    }
+
+    function syncInspectorVisibility() {
+        if (!inspector || !showInspectorButton) return;
+
+        const inArchitectureView = isArchitectureSectionVisible();
+
+        if (!inArchitectureView) {
+            inspector.classList.add("is-hidden");
+            showInspectorButton.classList.remove("is-visible");
+            return;
+        }
+
+        if (inspectorManuallyHidden) {
+            inspector.classList.add("is-hidden");
+            showInspectorButton.classList.add("is-visible");
+        } else {
+            inspector.classList.remove("is-hidden");
+            showInspectorButton.classList.remove("is-visible");
+        }
+    }
+
+    if (inspector && hideInspectorButton && showInspectorButton) {
+        hideInspectorButton.addEventListener("click", () => {
+            inspectorManuallyHidden = true;
+            syncInspectorVisibility();
+        });
+
+        showInspectorButton.addEventListener("click", () => {
+            inspectorManuallyHidden = false;
+            syncInspectorVisibility();
+        });
+
+        window.addEventListener("scroll", syncInspectorVisibility, { passive: true });
+        window.addEventListener("resize", syncInspectorVisibility);
+        syncInspectorVisibility();
+    }
+});
         </script>
 
 </body>
