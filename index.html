@@ -45,6 +45,20 @@
                         <a href="#projects" class="btn btn-primary">Explore My Work</a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
+                    <div class="hero-proof" aria-label="Key highlights">
+                        <div class="hero-proof-item">
+                            <span class="hero-proof-value">10+</span>
+                            <span class="hero-proof-label">Certifications</span>
+                        </div>
+                        <div class="hero-proof-item">
+                            <span class="hero-proof-value">5+</span>
+                            <span class="hero-proof-label">Core Platforms</span>
+                        </div>
+                        <div class="hero-proof-item">
+                            <span class="hero-proof-value">24/7</span>
+                            <span class="hero-proof-label">Lab Visibility</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-visual" aria-label="Primary brand mark">
                     <img src="./Images/logos/primary_logo_web_1200.png" alt="Jeremy Fontenot primary logo" class="hero-main-logo">
@@ -167,6 +181,7 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <h2>Featured Projects</h2>
+        <p class="section-intro projects-intro">Selected systems and documentation hubs, organized around outcomes rather than raw file dumps.</p>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-header">
@@ -174,6 +189,7 @@
                 </div>
                 <div class="project-body">
                     <span class="project-category">Infrastructure & Virtualization</span>
+                    <div class="project-impact">Outcome: layered routing, monitoring, and IDS/IPS in a single enterprise-style lab.</div>
                     <p class="project-desc">A Dell R710-based enterprise lab environment built on Proxmox VE as the primary hypervisor. Workloads include Windows Server 2022 Active Directory and RHEL 9 systems, with pfSense handling routing and firewall policy, Suricata/Snort providing IDS/IPS coverage, and Zabbix/Wazuh/Graylog supporting centralized monitoring and log analysis.</p>
                     <div class="tech-list">
                         <span class="tech-tag">Proxmox VE</span>
@@ -196,6 +212,7 @@
                 </div>
                 <div class="project-body">
                     <span class="project-category">Cloud Administration & Security</span>
+                    <div class="project-impact">Outcome: fully automated tenant provisioning, access control, and compliance enforcement.</div>
                     <p class="project-desc"><strong>Enterprise-scale M365 lab</strong> built on Microsoft 365 Business Premium (tenant: jeremyfontenot.online). Demonstrates complete identity, access, Exchange, Teams, Intune, and SharePoint automation using PowerShell and Microsoft Graph APIs exclusively. Configured Conditional Access (MFA enforcement), Intune compliance policies, shared mailbox provisioning, Teams with channels, and security baselines—all deployed with idempotent PowerShell scripts. Documentation has been preserved locally in the M365 archive for long-term access.</p>
                     <div class="tech-list">
                         <span class="tech-tag">Microsoft Graph</span>
@@ -216,6 +233,7 @@
                 </div>
                 <div class="project-body">
                     <span class="project-category">Cloud Administration & Documentation</span>
+                    <div class="project-impact">Outcome: interview-ready archive with architecture, governance, and module inventory.</div>
                     <p class="project-desc">Comprehensive, interview-ready documentation of M365 Personal Cloud Lab implementation. Includes lab architecture overview, security posture analysis, admin skills demonstrated (Microsoft Graph SDK, Exchange Online, Teams provisioning, Intune policy creation, Conditional Access, tenant automation), and complete PowerShell module inventory. Preserved as a local archive for long-term access.</p>
                     <div class="tech-list">
                         <span class="tech-tag">PowerShell</span>
@@ -237,6 +255,7 @@
                 </div>
                 <div class="project-body">
                     <span class="project-category">Branding & Documentation</span>
+                    <div class="project-impact">Outcome: preserved brand standards and assets after platform changes.</div>
                     <p class="project-desc">Archived SharePoint Brand Guide pages exported to local HTML to preserve standards, logo guidance, and asset references after subscription changes.</p>
                     <div class="tech-list">
                         <span class="tech-tag">SharePoint Online</span>
@@ -257,6 +276,7 @@
                 </div>
                 <div class="project-body">
                     <span class="project-category">Automation Governance & Documentation</span>
+                    <div class="project-impact">Outcome: centralized syntax validation and source inventory for script governance.</div>
                     <p class="project-desc">Centralized documentation for validated scripts across your M365 and PowerShell folders, including syntax-check results, per-source summaries, and website-hosted script copies where available.</p>
                     <div class="tech-list">
                         <span class="tech-tag">PowerShell Parser</span>
@@ -277,6 +297,7 @@
                 </div>
                 <div class="project-body">
                     <span class="project-category">Brand Assets Repository</span>
+                    <div class="project-impact">Outcome: production-ready asset system for logo, social, and template exports.</div>
                     <p class="project-desc">Master source of approved logos, social media graphics, templates, and production-ready exports for the Jeremy Fontenot brand system.</p>
                     <div class="tech-list">
                         <span class="tech-tag">Logo System</span>
@@ -637,8 +658,60 @@
         let offsetX = 0;
         let offsetY = 0;
         let particleIntervals = [];
+        let currentLevel = "main";
+        let currentNode = null;
 
         const canvas = document.getElementById("architecture-canvas");
+
+        const projectsData = {
+            "home-lab": {
+                title: "Home Lab",
+                desc: "Lab environment infrastructure, topology, security baseline, and operations documentation.",
+                icon: "🏗️",
+                links: [
+                    { label: "Infrastructure Overview", href: "./docs/home-lab/index.html" },
+                    { label: "Architecture & Topology", href: "./docs/home-lab/architecture-and-topology.html" },
+                    { label: "Identity & Access", href: "./docs/home-lab/identity-and-access.html" },
+                    { label: "Security Baseline", href: "./docs/home-lab/security-baseline.html" },
+                    { label: "Monitoring & Logging", href: "./docs/home-lab/monitoring-and-logging.html" },
+                    { label: "Backup & Disaster Recovery", href: "./docs/home-lab/backup-and-disaster-recovery.html" }
+                ]
+            },
+            "m365-docs": {
+                title: "M365 Automation",
+                desc: "Microsoft 365 cloud infrastructure, automation workflows, and architectural documentation.",
+                icon: "☁️",
+                links: [
+                    { label: "Architecture Overview", href: "./docs/m365-documentation-archive/index.html" },
+                    { label: "Automation Workflows", href: "./docs/m365-documentation-archive/aspx/Automation.aspx" },
+                    { label: "Artifacts & Index", href: "./docs/m365-documentation-archive/aspx/Artifacts-Index.aspx" },
+                    { label: "Architecture Details", href: "./docs/m365-documentation-archive/aspx/Architecture.aspx" }
+                ]
+            },
+            "scripts": {
+                title: "Script Documentation",
+                desc: "Comprehensive library of PowerShell and automation scripts with validation reports.",
+                icon: "⚙️",
+                links: [
+                    { label: "Script Library", href: "./docs/script-documentation/index.html" },
+                    { label: "Validation Results", href: "./docs/script-documentation/validation-results.json" },
+                    { label: "M365 Automation Scripts", href: "./docs/script-documentation/library/m365-automation/" },
+                    { label: "Cloud Lab Scripts", href: "./docs/script-documentation/library/m365-cloud-lab-scripts/" }
+                ]
+            },
+            "brand": {
+                title: "Brand Guide",
+                desc: "Complete brand identity system with logos, color palettes, and design guidelines.",
+                icon: "🎨",
+                links: [
+                    { label: "Brand Guide Archive", href: "./docs/brandguide-archive/index.html" },
+                    { label: "Home", href: "./docs/brandguide-archive/html/Home.html" },
+                    { label: "Brand Guidelines", href: "./docs/brandguide-archive/html/Brand-Guidelines.html" },
+                    { label: "Logos", href: "./docs/brandguide-archive/html/Logos.html" },
+                    { label: "Social Media Kit", href: "./docs/brandguide-archive/html/SocialMediaKit.html" }
+                ]
+            }
+        };
 
         function updateTransform() {
             canvas.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
@@ -731,8 +804,24 @@ function renderDiagram() {
             levelMap[level].push(n);
         });
 
-        const verticalSpacing = 140;
-        const horizontalSpacing = 160;
+        // Responsive spacing based on viewport width
+        const viewportWidth = canvas.offsetWidth || window.innerWidth;
+        const isMobile = viewportWidth < 600;
+        const isTablet = viewportWidth < 1024;
+        
+        let horizontalSpacing = 160;
+        let verticalSpacing = 140;
+        let canvasWidth = 800;
+
+        if (isMobile) {
+            horizontalSpacing = 100;
+            verticalSpacing = 180;
+            canvasWidth = Math.max(viewportWidth - 40, 300);
+        } else if (isTablet) {
+            horizontalSpacing = 130;
+            verticalSpacing = 160;
+            canvasWidth = viewportWidth - 60;
+        }
 
         Object.keys(levelMap).forEach(level => {
             const row = levelMap[level];
@@ -740,7 +829,7 @@ function renderDiagram() {
 
             row.forEach((node, index) => {
                 const totalWidth = row.length * horizontalSpacing;
-                const startX = (800 - totalWidth) / 2;
+                const startX = (canvasWidth - totalWidth) / 2;
 
                 node.x = startX + index * horizontalSpacing;
                 node.y = y;
@@ -830,6 +919,113 @@ function renderDiagram() {
             const canvas = document.getElementById("architecture-canvas");
             const inspector = document.getElementById("arch-inspector-body");
 
+            // Check if this is the Projects node and we're on main level
+            if (node.id === "projects" && currentLevel === "main") {
+                // Switch to projects drill-down view
+                currentLevel = "projects";
+                currentNode = node;
+
+                // Clear canvas and render projects
+                canvas.querySelectorAll(".arch-card").forEach(card => card.remove());
+                
+                inspector.innerHTML = `
+                    <strong>Projects & Documentation</strong><br/><br/>
+                    Select a project hub to view detailed documentation and structure.
+                `;
+
+                // Create project cards
+                const projectKeys = Object.keys(projectsData);
+                const projectCount = projectKeys.length;
+                const viewportWidth = canvas.clientWidth || canvas.offsetWidth || window.innerWidth;
+                const viewportHeight = canvas.clientHeight || canvas.offsetHeight || 600;
+                const isMobile = window.innerWidth < 600;
+                const isTablet = window.innerWidth < 1024;
+                const centerX = viewportWidth / 2;
+                const centerY = Math.max(320, viewportHeight * 0.38);
+                const angle = (2 * Math.PI) / projectCount;
+                const radius = isMobile ? Math.min(132, viewportWidth * 0.22) : isTablet ? Math.min(180, viewportWidth * 0.24) : 220;
+                const cardWidth = isMobile ? Math.max(120, Math.min(145, Math.floor((viewportWidth - 48) / 2))) : isTablet ? 160 : 176;
+                const mobileGridGap = 16;
+                const mobileGridTop = Math.max(170, Math.round(viewportHeight * 0.18));
+                const mobileGridLeft = Math.max(16, Math.round((viewportWidth - (cardWidth * 2 + mobileGridGap)) / 2));
+                const mobileGridRows = [0, 1].map(row => mobileGridTop + row * 116);
+
+                projectKeys.forEach((key, idx) => {
+                    const project = projectsData[key];
+                    const x = isMobile
+                        ? mobileGridLeft + (idx % 2) * (cardWidth + mobileGridGap)
+                        : centerX + radius * Math.cos(idx * angle - Math.PI / 2) - cardWidth / 2;
+                    const y = isMobile
+                        ? mobileGridRows[Math.floor(idx / 2)]
+                        : centerY + radius * Math.sin(idx * angle - Math.PI / 2) - 24;
+
+                    const projectCard = document.createElement("div");
+                    projectCard.className = "arch-card project-card-drill";
+                    projectCard.textContent = `${project.icon} ${project.title}`;
+                    projectCard.style.left = x + "px";
+                    projectCard.style.top = y + "px";
+                    projectCard.style.width = cardWidth + "px";
+                    projectCard.style.whiteSpace = "normal";
+                    projectCard.dataset.projectKey = key;
+
+                    projectCard.addEventListener("click", (evt) => {
+                        evt.stopPropagation();
+                        
+                        // Show project details in inspector
+                        const projectData = projectsData[key];
+                        let linksHtml = "<div style='max-height: 400px; overflow-y: auto;'>";
+                        
+                        linksHtml += `<strong>${projectData.icon} ${projectData.title}</strong><br/><br/>`;
+                        linksHtml += `<p style='font-size: 0.85rem; color: #a0b5cf; margin-bottom: 1rem;'>${projectData.desc}</p>`;
+                        linksHtml += "<div style='border-top: 1px solid rgba(56,189,248,0.2); padding-top: 0.8rem;'>";
+                        linksHtml += "<p style='font-size: 0.8rem; font-weight: 600; margin-bottom: 0.6rem; color: #38bdf8;'>Documentation:</p>";
+                        
+                        projectData.links.forEach(link => {
+                            linksHtml += `<a href="${link.href}" target="_blank" rel="noopener noreferrer" style='display: block; padding: 0.5rem 0.8rem; margin-bottom: 0.4rem; background: rgba(56,189,248,0.08); border-left: 2px solid #0ea5e9; color: #38bdf8; text-decoration: none; border-radius: 4px; font-size: 0.85rem; transition: all 0.2s;'>→ ${link.label}</a>`;
+                        });
+                        
+                        linksHtml += "</div></div>";
+                        inspector.innerHTML = linksHtml;
+
+                        // Highlight this project card
+                        document.querySelectorAll(".project-card-drill").forEach(c => c.classList.remove("focused"));
+                        projectCard.classList.add("focused");
+                    });
+
+                    canvas.appendChild(projectCard);
+                });
+
+                // Add back button/indicator
+                const backCard = document.createElement("div");
+                backCard.className = "arch-card back-card";
+                backCard.textContent = "← Back to Main";
+                backCard.style.width = "140px";
+                backCard.style.left = isMobile
+                    ? Math.max(16, Math.round((viewportWidth - 140) / 2)) + "px"
+                    : Math.round(centerX - 70) + "px";
+                backCard.style.top = isMobile
+                    ? Math.max(112, mobileGridTop - 76) + "px"
+                    : Math.max(24, Math.round(centerY - radius - 64)) + "px";
+
+                backCard.addEventListener("click", (evt) => {
+                    evt.stopPropagation();
+                    currentLevel = "main";
+                    currentNode = null;
+                    renderDiagram();
+                });
+
+                canvas.appendChild(backCard);
+
+                canvas.classList.add("arch-locked");
+                return;
+            }
+
+            // If we're in projects view and clicking something else, go back
+            if (currentLevel === "projects" && node.id !== "projects") {
+                return;
+            }
+
+            // Standard node click for main level
             inspector.innerHTML = `
                 <strong>${node.label}</strong><br/><br/>
                 ${node.desc || "No metadata available"}
@@ -869,6 +1065,14 @@ function renderDiagram() {
 
     document.getElementById("architecture-canvas").addEventListener("click", () => {
         const canvas = document.getElementById("architecture-canvas");
+
+        // If we're in projects view, return to main
+        if (currentLevel === "projects") {
+            currentLevel = "main";
+            currentNode = null;
+            renderDiagram();
+            return;
+        }
 
         canvas.classList.remove("arch-locked");
 
