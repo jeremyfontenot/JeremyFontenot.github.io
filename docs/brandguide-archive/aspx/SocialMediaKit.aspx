@@ -1,24 +1,55 @@
-﻿<%@ Assembly Name="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%> <%@ Page Language="C#" Inherits="Microsoft.SharePoint.WebControls.ClientSidePage"       %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
-<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,ClientSideApplicationId,PageLayoutType,CanvasContent1,BannerImageUrl,BannerImageOffset,PromotedState,FirstPublishedDate,LayoutWebpartsContent,_TopicHeader,_SPSitePageFlags,_SPAssetFolderId,_SPCallToAction,_SPCollaborators,_SPAuthoringMetadata,_SPHiddenHighlightsMetadata"><xml>
-<mso:CustomDocumentProperties>
-<mso:PageLayoutType msdt:dt="string">Article</mso:PageLayoutType>
-<mso:CanvasContent1 msdt:dt="string">&lt;div&gt;&lt;div data-sp-canvascontrol=&quot;&quot; data-sp-canvasdataversion=&quot;1.0&quot; data-sp-controldata=&quot;&amp;#123;&amp;quot;position&amp;quot;&amp;#58;&amp;#123;&amp;quot;layoutIndex&amp;quot;&amp;#58;1,&amp;quot;zoneIndex&amp;quot;&amp;#58;1,&amp;quot;zoneId&amp;quot;&amp;#58;&amp;quot;89929775-3be2-4196-8484-230d94b71ab3&amp;quot;,&amp;quot;sectionIndex&amp;quot;&amp;#58;1,&amp;quot;sectionFactor&amp;quot;&amp;#58;12,&amp;quot;controlIndex&amp;quot;&amp;#58;1&amp;#125;,&amp;quot;id&amp;quot;&amp;#58;&amp;quot;10c7a22e-69a2-414e-8c6f-93552b1e8aa6&amp;quot;,&amp;quot;controlType&amp;quot;&amp;#58;3,&amp;quot;isFromSectionTemplate&amp;quot;&amp;#58;false,&amp;quot;addedFromPersistedData&amp;quot;&amp;#58;true,&amp;quot;webPartId&amp;quot;&amp;#58;&amp;quot;f92bf067-bc19-489e-a556-7fe95f508720&amp;quot;,&amp;quot;reservedHeight&amp;quot;&amp;#58;746,&amp;quot;reservedWidth&amp;quot;&amp;#58;1188&amp;#125;&quot;&gt;&lt;div data-sp-webpart=&quot;&quot; data-sp-webpartdataversion=&quot;1.0&quot; data-sp-webpartdata=&quot;&amp;#123;&amp;quot;id&amp;quot;&amp;#58;&amp;quot;f92bf067-bc19-489e-a556-7fe95f508720&amp;quot;,&amp;quot;instanceId&amp;quot;&amp;#58;&amp;quot;10c7a22e-69a2-414e-8c6f-93552b1e8aa6&amp;quot;,&amp;quot;title&amp;quot;&amp;#58;&amp;quot;Document library&amp;quot;,&amp;quot;description&amp;quot;&amp;#58;&amp;quot;Show a document library from this site.&amp;quot;,&amp;quot;audiences&amp;quot;&amp;#58;[],&amp;quot;hideOn&amp;quot;&amp;#58;&amp;#123;&amp;quot;mobile&amp;quot;&amp;#58;false&amp;#125;,&amp;quot;serverProcessedContent&amp;quot;&amp;#58;&amp;#123;&amp;quot;htmlStrings&amp;quot;&amp;#58;&amp;#123;&amp;#125;,&amp;quot;searchablePlainTexts&amp;quot;&amp;#58;&amp;#123;&amp;quot;listTitle&amp;quot;&amp;#58;&amp;quot;Approved Imagery&amp;quot;&amp;#125;,&amp;quot;imageSources&amp;quot;&amp;#58;&amp;#123;&amp;#125;,&amp;quot;links&amp;quot;&amp;#58;&amp;#123;&amp;#125;&amp;#125;,&amp;quot;dynamicDataPaths&amp;quot;&amp;#58;&amp;#123;&amp;#125;,&amp;quot;dynamicDataValues&amp;quot;&amp;#58;&amp;#123;&amp;quot;filterBy&amp;quot;&amp;#58;&amp;#123;&amp;#125;&amp;#125;,&amp;quot;dataVersion&amp;quot;&amp;#58;&amp;quot;1.0&amp;quot;,&amp;quot;properties&amp;quot;&amp;#58;&amp;#123;&amp;quot;isDocumentLibrary&amp;quot;&amp;#58;true,&amp;quot;selectedListId&amp;quot;&amp;#58;&amp;quot;8e6be676-6538-4505-a394-91c9d9221e07&amp;quot;,&amp;quot;selectedListUrl&amp;quot;&amp;#58;&amp;quot;/sites/BrandGuide/Approved Imagery&amp;quot;,&amp;quot;webRelativeListUrl&amp;quot;&amp;#58;&amp;quot;/Approved Imagery&amp;quot;,&amp;quot;selectedViewId&amp;quot;&amp;#58;&amp;quot;be6b70ca-79d9-41e0-bac3-5fe41ed4d4d4&amp;quot;&amp;#125;,&amp;quot;containsDynamicDataSource&amp;quot;&amp;#58;true&amp;#125;&quot;&gt;&lt;div data-sp-componentid=&quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;&gt;&lt;/div&gt;&lt;div data-sp-htmlproperties=&quot;&quot;&gt;&lt;div data-sp-prop-name=&quot;listTitle&quot; data-sp-searchableplaintext=&quot;true&quot;&gt;Approved Imagery&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-sp-canvascontrol=&quot;&quot; data-sp-canvasdataversion=&quot;1.0&quot; data-sp-controldata=&quot;&amp;#123;&amp;quot;controlType&amp;quot;&amp;#58;0,&amp;quot;pageSettingsSlice&amp;quot;&amp;#58;&amp;#123;&amp;quot;isDefaultDescription&amp;quot;&amp;#58;true,&amp;quot;isAIGeneratedDescription&amp;quot;&amp;#58;false,&amp;quot;isDefaultThumbnail&amp;quot;&amp;#58;true,&amp;quot;isSpellCheckEnabled&amp;quot;&amp;#58;true,&amp;quot;globalRichTextStylingVersion&amp;quot;&amp;#58;0,&amp;quot;rtePageSettings&amp;quot;&amp;#58;&amp;#123;&amp;quot;contentVersion&amp;quot;&amp;#58;4,&amp;quot;indentationVersion&amp;quot;&amp;#58;1&amp;#125;,&amp;quot;isEmailReady&amp;quot;&amp;#58;false,&amp;quot;webPartsPageSettings&amp;quot;&amp;#58;&amp;#123;&amp;quot;isTitleHeadingLevelsEnabled&amp;quot;&amp;#58;false,&amp;quot;isLowQualityImagePlaceholderEnabled&amp;quot;&amp;#58;false&amp;#125;&amp;#125;&amp;#125;&quot;&gt;&lt;/div&gt;&lt;/div&gt;</mso:CanvasContent1>
-<mso:BannerImageUrl msdt:dt="string">https://jeremyfontenot.sharepoint.com/_layouts/15/images/sitepagethumbnail.png, https://jeremyfontenot.sharepoint.com/_layouts/15/images/sitepagethumbnail.png</mso:BannerImageUrl>
-<mso:_SPAuthoringMetadata msdt:dt="string">{&quot;SessionId&quot;:&quot;f8c6b344-e8eb-4d1e-9ebc-965ec0c898d0&quot;,&quot;SequenceId&quot;:70,&quot;FluidContainerCustomId&quot;:&quot;29b9641e-5f8b-46d6-8dfb-ec4da2769547&quot;,&quot;IsSingleUserSession&quot;:true,&quot;ClientOperation&quot;:4,&quot;RestoreTo&quot;:&quot;&quot;,&quot;RestoredFrom&quot;:&quot;&quot;}</mso:_SPAuthoringMetadata>
-<mso:ContentTypeId msdt:dt="string">0x0101009D1CB255DA76424F860D91F20E6C4118</mso:ContentTypeId>
-<mso:ClientSideApplicationId msdt:dt="string">{b6917cb1-93a0-4b97-a84d-7cf49975d4ec}</mso:ClientSideApplicationId>
-<mso:LayoutWebpartsContent msdt:dt="string">&lt;div&gt;&lt;/div&gt;</mso:LayoutWebpartsContent>
-<mso:PromotedState msdt:dt="string">0</mso:PromotedState>
-<mso:CoAuth_AuthoringSchemaFeatureVersions msdt:dt="string">[{&quot;Name&quot;:&quot;PagesFluidVersion&quot;,&quot;Version&quot;:&quot;2.12&quot;},{&quot;Name&quot;:&quot;AppType&quot;,&quot;Version&quot;:&quot;Pages&quot;},{&quot;Name&quot;:&quot;ZoneReflowStrategy&quot;,&quot;Version&quot;:&quot;On&quot;},{&quot;Name&quot;:&quot;ZoneThemeIndex&quot;,&quot;Version&quot;:&quot;On&quot;},{&quot;Name&quot;:&quot;DynamicContent&quot;,&quot;Version&quot;:&quot;Off&quot;},{&quot;Name&quot;:&quot;AIContextStore&quot;,&quot;Version&quot;:&quot;Off&quot;},{&quot;Name&quot;:&quot;HideOn&quot;,&quot;Version&quot;:&quot;On&quot;},{&quot;Name&quot;:&quot;PageThumbnailGettyMetadataEnabled&quot;,&quot;Version&quot;:&quot;On&quot;},{&quot;Name&quot;:&quot;AIGeneratedDescription&quot;,&quot;Version&quot;:&quot;On&quot;}]</mso:CoAuth_AuthoringSchemaFeatureVersions>
-<mso:PRTDocumentId msdt:dt="string">9cc27636-64de-4903-b9bb-6cbe10efbc8a</mso:PRTDocumentId>
-<mso:PRTTenantId msdt:dt="string">3!1!2</mso:PRTTenantId>
-<mso:PRTWebSocketUrl msdt:dt="string">https://centralus0-0.pushfp.svc.ms/fluid</mso:PRTWebSocketUrl>
-<mso:PRTUniqueId msdt:dt="string">d3009813-bf2b-4311-b460-93f15dfbdc3c</mso:PRTUniqueId>
-<mso:PRTSubscriptionExpiration msdt:dt="string">2026-03-29T11:46:20.0163608Z</mso:PRTSubscriptionExpiration>
-<mso:_SPCollaborators msdt:dt="string">[{&quot;UserId&quot;:6,&quot;DisplayName&quot;:&quot;jeremy fontenot&quot;,&quot;LoginName&quot;:&quot;jeremyfontenot@jeremyfontenot.online&quot;}]</mso:_SPCollaborators>
-<mso:_TopicHeader msdt:dt="string"></mso:_TopicHeader>
-<mso:_AuthorByline msdt:dt="string"></mso:_AuthorByline>
-</mso:CustomDocumentProperties>
-</xml></SharePoint:CTFieldRefs><![endif]-->
-<title>SocialMediaKit</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialMediaKit</title>
+    <style>
+        body { font-family: Segoe UI, Arial, sans-serif; margin: 0; padding: 2rem; background: #f8fafc; color: #0f172a; }
+        main { max-width: 960px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 2rem; }
+        h1 { margin-top: 0; }
+        .meta { margin-bottom: 1.25rem; color: #475569; font-size: 0.95rem; }
+        .meta a { color: #0369a1; text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        .offline-panel { margin: 1.25rem 0 1.5rem; padding: 1rem 1.1rem; border: 1px solid #bfdbfe; background: #eff6ff; border-radius: 8px; }
+        .offline-panel h2 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+        .offline-panel p { margin: 0 0 0.75rem; color: #334155; }
+        .offline-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.85rem; }
+        .offline-links a { display: inline-block; padding: 0.42rem 0.68rem; border: 1px solid #93c5fd; border-radius: 6px; background: #fff; color: #0c4a6e; text-decoration: none; font-size: 0.9rem; }
+        .offline-links a:hover { background: #dbeafe; }
+        .preview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.65rem; }
+        .preview-grid a { display: block; border: 1px solid #cbd5e1; border-radius: 8px; padding: 0.5rem; background: #fff; text-decoration: none; color: #0f172a; }
+        .preview-grid img { width: 100%; height: auto; border-radius: 5px; background: #e2e8f0; }
+        .preview-grid span { display: block; margin-top: 0.45rem; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>SocialMediaKit</h1>
+        <div class="meta">Original page: SharePoint tenant unavailable (offline archive mode).</div>
+        <div class="meta"></div>
+        <hr>
+        <section class="offline-panel" aria-label="Social media assets">
+            <h2>Social Media Assets (Local)</h2>
+            <p>Download or preview local social banner assets from the repository.</p>
+            <div class="offline-links">
+                <a href="../../../Images/social_media/linkedin_cover_1584x396.png" target="_blank" rel="noopener noreferrer">LinkedIn Cover (1584x396 PNG)</a>
+                <a href="../../../Images/social_media/twitter_cover_1500x500.png" target="_blank" rel="noopener noreferrer">X/Twitter Cover (1500x500 PNG)</a>
+                <a href="../../../Images/social_media/personal_website_banner_1920x480.avif" target="_blank" rel="noopener noreferrer">Website Banner (1920x480 AVIF)</a>
+                <a href="../../../Images/social_media/personal_website_banner_1920x480.png" target="_blank" rel="noopener noreferrer">Website Banner (1920x480 PNG)</a>
+            </div>
+            <div class="preview-grid">
+                <a href="../../../Images/social_media/linkedin_cover_1584x396.png" target="_blank" rel="noopener noreferrer">
+                    <img src="../../../Images/social_media/linkedin_cover_1584x396.png" alt="LinkedIn cover preview">
+                    <span>LinkedIn Cover</span>
+                </a>
+                <a href="../../../Images/social_media/twitter_cover_1500x500.png" target="_blank" rel="noopener noreferrer">
+                    <img src="../../../Images/social_media/twitter_cover_1500x500.png" alt="Twitter cover preview">
+                    <span>X/Twitter Cover</span>
+                </a>
+            </div>
+        </section>
+        <div><div data-sp-canvascontrol="" data-sp-canvasdataversion="1.0" data-sp-controldata="&#123;&quot;position&quot;&#58;&#123;&quot;layoutIndex&quot;&#58;1,&quot;zoneIndex&quot;&#58;1,&quot;zoneId&quot;&#58;&quot;89929775-3be2-4196-8484-230d94b71ab3&quot;,&quot;sectionIndex&quot;&#58;1,&quot;sectionFactor&quot;&#58;12,&quot;controlIndex&quot;&#58;1&#125;,&quot;id&quot;&#58;&quot;10c7a22e-69a2-414e-8c6f-93552b1e8aa6&quot;,&quot;controlType&quot;&#58;3,&quot;isFromSectionTemplate&quot;&#58;false,&quot;addedFromPersistedData&quot;&#58;true,&quot;webPartId&quot;&#58;&quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;,&quot;reservedHeight&quot;&#58;746,&quot;reservedWidth&quot;&#58;1188&#125;"><div data-sp-webpart="" data-sp-webpartdataversion="1.0" data-sp-webpartdata="&#123;&quot;id&quot;&#58;&quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;,&quot;instanceId&quot;&#58;&quot;10c7a22e-69a2-414e-8c6f-93552b1e8aa6&quot;,&quot;title&quot;&#58;&quot;Document library&quot;,&quot;description&quot;&#58;&quot;Show a document library from this site.&quot;,&quot;audiences&quot;&#58;[],&quot;hideOn&quot;&#58;&#123;&quot;mobile&quot;&#58;false&#125;,&quot;serverProcessedContent&quot;&#58;&#123;&quot;htmlStrings&quot;&#58;&#123;&#125;,&quot;searchablePlainTexts&quot;&#58;&#123;&quot;listTitle&quot;&#58;&quot;Approved Imagery&quot;&#125;,&quot;imageSources&quot;&#58;&#123;&#125;,&quot;links&quot;&#58;&#123;&#125;&#125;,&quot;dynamicDataPaths&quot;&#58;&#123;&#125;,&quot;dynamicDataValues&quot;&#58;&#123;&quot;filterBy&quot;&#58;&#123;&#125;&#125;,&quot;dataVersion&quot;&#58;&quot;1.0&quot;,&quot;properties&quot;&#58;&#123;&quot;isDocumentLibrary&quot;&#58;true,&quot;selectedListId&quot;&#58;&quot;8e6be676-6538-4505-a394-91c9d9221e07&quot;,&quot;selectedListUrl&quot;&#58;&quot;/sites/BrandGuide/Approved Imagery&quot;,&quot;webRelativeListUrl&quot;&#58;&quot;/Approved Imagery&quot;,&quot;selectedViewId&quot;&#58;&quot;be6b70ca-79d9-41e0-bac3-5fe41ed4d4d4&quot;&#125;,&quot;containsDynamicDataSource&quot;&#58;true&#125;"><div data-sp-componentid="f92bf067-bc19-489e-a556-7fe95f508720"></div><div data-sp-htmlproperties=""><div data-sp-prop-name="listTitle" data-sp-searchableplaintext="true">Approved Imagery</div></div></div></div><div data-sp-canvascontrol="" data-sp-canvasdataversion="1.0" data-sp-controldata="&#123;&quot;controlType&quot;&#58;0,&quot;pageSettingsSlice&quot;&#58;&#123;&quot;isDefaultDescription&quot;&#58;true,&quot;isAIGeneratedDescription&quot;&#58;false,&quot;isDefaultThumbnail&quot;&#58;true,&quot;isSpellCheckEnabled&quot;&#58;true,&quot;globalRichTextStylingVersion&quot;&#58;0,&quot;rtePageSettings&quot;&#58;&#123;&quot;contentVersion&quot;&#58;4,&quot;indentationVersion&quot;&#58;1&#125;,&quot;isEmailReady&quot;&#58;false,&quot;webPartsPageSettings&quot;&#58;&#123;&quot;isTitleHeadingLevelsEnabled&quot;&#58;false,&quot;isLowQualityImagePlaceholderEnabled&quot;&#58;false&#125;&#125;&#125;"></div></div>
+    </main>
+</body>
+</html>
