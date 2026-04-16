@@ -1,7 +1,7 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-$workspace = "C:\Users\jeremyfontenot\copilot_site"
+$workspace = (Split-Path -Parent $PSScriptRoot)
 Set-Location -LiteralPath $workspace
 
 $roots = @(
