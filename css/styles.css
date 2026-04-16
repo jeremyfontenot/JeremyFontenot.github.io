@@ -1592,6 +1592,34 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .architecture-viewport {
+        height: 720px;
+    }
+
+    .arch-inspector {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: auto;
+        bottom: 1rem;
+        width: auto;
+        max-height: min(44vh, 340px);
+        z-index: 2001;
+    }
+
+    .arch-inspector-body {
+        max-height: calc(min(44vh, 340px) - 58px);
+        overflow-y: auto;
+    }
+
+    .arch-inspector-show {
+        right: 1rem;
+        bottom: 1rem;
+        top: auto;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         top: 0.45rem;
@@ -1829,26 +1857,6 @@ footer {
 
     .project-impact {
         font-size: 0.88rem;
-    }
-
-    .architecture-viewport {
-        height: 720px;
-    }
-
-    .arch-inspector {
-        position: absolute;
-        left: 1rem;
-        right: 1rem;
-        top: auto;
-        bottom: 1rem;
-        width: auto;
-        max-height: min(44vh, 340px);
-        z-index: 2001;
-    }
-
-    .arch-inspector-body {
-        max-height: calc(min(44vh, 340px) - 58px);
-        overflow-y: auto;
     }
 }
 

@@ -1015,13 +1015,14 @@ function renderDiagram() {
                 const viewportRect = viewportElement?.getBoundingClientRect();
                 const isMobile = window.innerWidth < 600;
                 const isTablet = window.innerWidth < 1024;
+                const isCompactArchitecture = window.innerWidth < 1024;
                 const hiddenTop = Math.max(0, -Math.round(viewportRect?.top || 0));
                 const topGutter = isMobile ? 24 : (isTablet ? 104 : 116);
                 const topSafeY = Math.min(viewportHeight - 220, hiddenTop + topGutter);
                 const inspectorPanel = document.getElementById("arch-inspector");
                 const inspectorVisible = Boolean(inspectorPanel && !inspectorPanel.classList.contains("is-hidden") && !isMobile);
                 const inspectorReservedWidth = inspectorVisible
-                    ? Math.round((isTablet ? 0.72 : 0.82) * inspectorPanel.offsetWidth) + 20
+                    ? (isCompactArchitecture ? 0 : Math.round((isTablet ? 0.72 : 0.82) * inspectorPanel.offsetWidth) + 20)
                     : 0;
                 const sidePadding = isMobile ? 16 : isTablet ? 34 : 52;
                 const safeLeft = sidePadding;
