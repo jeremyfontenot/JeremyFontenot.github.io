@@ -332,6 +332,7 @@
                             <g id="particle-layer"></g>
                         </svg>
                     </div>
+                    <button id="arch-back-control" class="arch-back-control" type="button" aria-label="Back to main architecture">← Back to Main</button>
                 </div>
                 <div id="arch-inspector" class="arch-inspector">
                     <div class="arch-inspector-header">
@@ -662,6 +663,12 @@
         let currentNode = null;
 
         const canvas = document.getElementById("architecture-canvas");
+        const backControl = document.getElementById("arch-back-control");
+
+        function setBackControlVisibility(isVisible) {
+            if (!backControl) return;
+            backControl.classList.toggle("is-visible", Boolean(isVisible));
+        }
 
         const projectsData = {
             "home-lab": {
@@ -733,6 +740,7 @@
         let startX, startY;
 
         canvas.addEventListener("mousedown", (e) => {
+            if (currentLevel === "projects") return;
             isDragging = true;
             startX = e.clientX - offsetX;
             startY = e.clientY - offsetY;
@@ -753,8 +761,13 @@
 
 function renderDiagram() {
             const svg = document.getElementById("architecture-lines");
+            const isProjectsMode = currentLevel === "projects";
             particleIntervals.forEach(timerId => clearInterval(timerId));
             particleIntervals = [];
+            canvas.style.minHeight = isProjectsMode ? `${Math.max(600, canvas.closest(".architecture-viewport")?.clientHeight || 600)}px` : "600px";
+            canvas.classList.remove("projects-mode");
+            canvas.classList.remove("arch-locked");
+            setBackControlVisibility(false);
 
             canvas.querySelectorAll(".arch-card").forEach(card => card.remove());
             svg.innerHTML = `
@@ -764,6 +777,39 @@ function renderDiagram() {
 
             const lineLayer = document.getElementById("line-layer");
             const particleLayer = document.getElementById("particle-layer");
+
+    function getNodeAnchor(node, position) {
+        const width = node.element ? node.element.offsetWidth : 120;
+        const height = node.element ? node.element.offsetHeight : 30;
+        const x = (typeof node.x === "number" ? node.x : 0) + width / 2;
+
+        if (position === "bottom") {
+            return { x, y: (typeof node.y === "number" ? node.y : 0) + height };
+        }
+
+        return { x, y: typeof node.y === "number" ? node.y : 0 };
+    }
+
+    function drawDrillLine(start, end) {
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        const controlY = (start.y + end.y) / 2;
+        const d = `
+        M ${start.x},${start.y}
+        C ${start.x},${controlY}
+          ${end.x},${controlY}
+          ${end.x},${end.y}
+    `;
+
+        path.setAttribute("d", d);
+        path.setAttribute("class", "arch-line highlight project-drill");
+        lineLayer.appendChild(path);
+
+        const timerId = setInterval(() => {
+            createParticle(path, true);
+        }, 720);
+
+        particleIntervals.push(timerId);
+    }
 
     const nodes = [
         { id: "root", label: "Jeremy Fontenot Site" },
@@ -894,6 +940,7 @@ function renderDiagram() {
         el.style.top = node.y + "px";
 
         canvas.appendChild(el);
+        node.element = el;
 
         el.addEventListener("mouseenter", () => {
             document.querySelectorAll(".arch-line").forEach(l => {
@@ -925,7 +972,32 @@ function renderDiagram() {
                 currentLevel = "projects";
                 currentNode = node;
 
+                const activeViewport = canvas.closest(".architecture-viewport");
+                if (activeViewport) {
+                    const headerOffset = 112;
+                    activeViewport.scrollIntoView({ behavior: "smooth", block: "start" });
+                    window.setTimeout(() => {
+                        const rect = activeViewport.getBoundingClientRect();
+                        const delta = rect.top - headerOffset;
+                        if (Math.abs(delta) > 6) {
+                            window.scrollBy({ top: delta, behavior: "smooth" });
+                        }
+                    }, 120);
+                }
+
+                // Reset zoom/pan for a predictable centered drill-down layout.
+                scale = 1;
+                offsetX = 0;
+                offsetY = 0;
+                updateTransform();
+
                 // Clear canvas and render projects
+                canvas.classList.remove("arch-locked");
+                canvas.classList.add("projects-mode");
+                particleIntervals.forEach(timerId => clearInterval(timerId));
+                particleIntervals = [];
+                lineLayer.innerHTML = "";
+                particleLayer.innerHTML = "";
                 canvas.querySelectorAll(".arch-card").forEach(card => card.remove());
                 
                 inspector.innerHTML = `
@@ -936,28 +1008,114 @@ function renderDiagram() {
                 // Create project cards
                 const projectKeys = Object.keys(projectsData);
                 const projectCount = projectKeys.length;
-                const viewportWidth = canvas.clientWidth || canvas.offsetWidth || window.innerWidth;
-                const viewportHeight = canvas.clientHeight || canvas.offsetHeight || 600;
+                const viewportElement = canvas.closest(".architecture-viewport");
+                const viewportWidth = viewportElement?.clientWidth || canvas.clientWidth || canvas.offsetWidth || window.innerWidth;
+                const viewportHeight = viewportElement?.clientHeight || canvas.clientHeight || canvas.offsetHeight || 600;
+                canvas.style.minHeight = `${Math.max(600, viewportHeight)}px`;
+                const viewportRect = viewportElement?.getBoundingClientRect();
                 const isMobile = window.innerWidth < 600;
                 const isTablet = window.innerWidth < 1024;
-                const centerX = viewportWidth / 2;
-                const centerY = Math.max(320, viewportHeight * 0.38);
+                const hiddenTop = Math.max(0, -Math.round(viewportRect?.top || 0));
+                const topGutter = isMobile ? 24 : (isTablet ? 104 : 116);
+                const topSafeY = Math.min(viewportHeight - 220, hiddenTop + topGutter);
+                const inspectorPanel = document.getElementById("arch-inspector");
+                const inspectorVisible = Boolean(inspectorPanel && !inspectorPanel.classList.contains("is-hidden") && !isMobile);
+                const inspectorReservedWidth = inspectorVisible
+                    ? Math.round((isTablet ? 0.72 : 0.82) * inspectorPanel.offsetWidth) + 20
+                    : 0;
+                const sidePadding = isMobile ? 16 : isTablet ? 34 : 52;
+                const safeLeft = sidePadding;
+                const safeRight = Math.max(sidePadding, viewportWidth - sidePadding - inspectorReservedWidth);
+                const safeWidth = Math.max(260, safeRight - safeLeft);
+                const centerX = safeLeft + safeWidth / 2;
+                const centerY = isMobile ? Math.max(250, viewportHeight * 0.36) : isTablet ? Math.max(300, viewportHeight * 0.42) : Math.max(320, viewportHeight * 0.44);
                 const angle = (2 * Math.PI) / projectCount;
-                const radius = isMobile ? Math.min(132, viewportWidth * 0.22) : isTablet ? Math.min(180, viewportWidth * 0.24) : 220;
+                const radius = isMobile ? Math.min(132, safeWidth * 0.28) : isTablet ? Math.min(168, safeWidth * 0.33) : Math.min(212, safeWidth * 0.36);
                 const cardWidth = isMobile ? Math.max(120, Math.min(145, Math.floor((viewportWidth - 48) / 2))) : isTablet ? 160 : 176;
+                const cardHeight = isMobile ? 74 : 80;
+                const horizontalSpread = isTablet
+                    ? Math.min(300, Math.max(246, safeWidth * 0.36))
+                    : Math.min(430, Math.max(340, safeWidth * 0.42));
+                const topSpread = isTablet ? 236 : 286;
+                const bottomSpread = isTablet ? 250 : 306;
                 const mobileGridGap = 16;
                 const mobileGridTop = Math.max(170, Math.round(viewportHeight * 0.18));
                 const mobileGridLeft = Math.max(16, Math.round((viewportWidth - (cardWidth * 2 + mobileGridGap)) / 2));
                 const mobileGridRows = [0, 1].map(row => mobileGridTop + row * 116);
+                const drillLayout = [];
+                const sideRowY = Math.round(centerY - cardHeight / 2);
+                const minScriptGap = isTablet ? 188 : 236;
+                const bottomPadding = 20;
+                const backControlReserve = isMobile ? 76 : 84;
+                const maxScriptY = viewportHeight - cardHeight - backControlReserve - bottomPadding;
+                const scriptRowY = Math.min(maxScriptY, sideRowY + minScriptGap);
+
+                const diamondSlots = !isMobile ? {
+                    "home-lab": {
+                        x: Math.round(centerX - cardWidth / 2),
+                        y: Math.round(Math.max(140, centerY - topSpread - cardHeight))
+                    },
+                    "brand": {
+                        x: Math.round(Math.max(safeLeft, centerX - horizontalSpread - cardWidth)),
+                        y: Math.round(centerY - cardHeight / 2)
+                    },
+                    "m365-docs": {
+                        x: Math.round(Math.min(safeRight - cardWidth, centerX + horizontalSpread)),
+                        y: Math.round(centerY - cardHeight / 2)
+                    },
+                    "scripts": {
+                        x: Math.round(centerX - cardWidth / 2),
+                        y: Math.round(scriptRowY)
+                    }
+                } : null;
+
+                if (diamondSlots) {
+                    const topSafe = Math.max(topSafeY + 8, isTablet ? 146 : 136);
+                    const bottomSafe = 18;
+
+                    let minY = Math.min(
+                        diamondSlots["home-lab"].y,
+                        diamondSlots.brand.y,
+                        diamondSlots["m365-docs"].y,
+                        diamondSlots.scripts.y
+                    );
+
+                    let maxY = Math.max(
+                        diamondSlots.brand.y + cardHeight,
+                        diamondSlots["m365-docs"].y + cardHeight,
+                        diamondSlots.scripts.y + cardHeight
+                    );
+
+                    let shiftY = 0;
+
+                    if (minY < topSafe) {
+                        shiftY += topSafe - minY;
+                    }
+
+                    if (maxY + shiftY > viewportHeight - bottomSafe) {
+                        shiftY -= (maxY + shiftY) - (viewportHeight - bottomSafe);
+                    }
+
+                    if (shiftY !== 0) {
+                        Object.keys(diamondSlots).forEach((slotKey) => {
+                            diamondSlots[slotKey].y = Math.round(diamondSlots[slotKey].y + shiftY);
+                        });
+                    }
+                }
 
                 projectKeys.forEach((key, idx) => {
                     const project = projectsData[key];
-                    const x = isMobile
+                    const radialX = centerX + radius * Math.cos(idx * angle - Math.PI / 2) - cardWidth / 2;
+                    const radialY = centerY + radius * Math.sin(idx * angle - Math.PI / 2) - 14;
+                    const rawX = isMobile
                         ? mobileGridLeft + (idx % 2) * (cardWidth + mobileGridGap)
-                        : centerX + radius * Math.cos(idx * angle - Math.PI / 2) - cardWidth / 2;
+                        : (diamondSlots && diamondSlots[key] ? diamondSlots[key].x : radialX);
+                    const x = isMobile
+                        ? rawX
+                        : Math.max(safeLeft, Math.min(safeRight - cardWidth, rawX));
                     const y = isMobile
                         ? mobileGridRows[Math.floor(idx / 2)]
-                        : centerY + radius * Math.sin(idx * angle - Math.PI / 2) - 24;
+                        : (diamondSlots && diamondSlots[key] ? diamondSlots[key].y : radialY);
 
                     const projectCard = document.createElement("div");
                     projectCard.className = "arch-card project-card-drill";
@@ -965,6 +1123,7 @@ function renderDiagram() {
                     projectCard.style.left = x + "px";
                     projectCard.style.top = y + "px";
                     projectCard.style.width = cardWidth + "px";
+                    projectCard.style.minHeight = cardHeight + "px";
                     projectCard.style.whiteSpace = "normal";
                     projectCard.dataset.projectKey = key;
 
@@ -993,30 +1152,45 @@ function renderDiagram() {
                     });
 
                     canvas.appendChild(projectCard);
+                    drillLayout.push({ key, x, y, card: projectCard, isAboveHub: y < centerY });
                 });
 
-                // Add back button/indicator
-                const backCard = document.createElement("div");
-                backCard.className = "arch-card back-card";
-                backCard.textContent = "← Back to Main";
-                backCard.style.width = "140px";
-                backCard.style.left = isMobile
-                    ? Math.max(16, Math.round((viewportWidth - 140) / 2)) + "px"
-                    : Math.round(centerX - 70) + "px";
-                backCard.style.top = isMobile
-                    ? Math.max(112, mobileGridTop - 76) + "px"
-                    : Math.max(24, Math.round(centerY - radius - 64)) + "px";
+                if (!isMobile) {
+                    const hub = { x: centerX, y: centerY };
+                    const hubDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                    hubDot.setAttribute("cx", String(hub.x));
+                    hubDot.setAttribute("cy", String(hub.y));
+                    hubDot.setAttribute("r", "5");
+                    hubDot.setAttribute("class", "flow-particle highlight project-hub-dot");
+                    particleLayer.appendChild(hubDot);
 
-                backCard.addEventListener("click", (evt) => {
-                    evt.stopPropagation();
-                    currentLevel = "main";
-                    currentNode = null;
-                    renderDiagram();
-                });
+                    drillLayout.forEach(item => {
+                        const projectCardHeight = item.card.offsetHeight || cardHeight;
+                        const projectCardWidth = item.card.offsetWidth || cardWidth;
+                        const cardCenterX = item.x + cardWidth / 2;
+                        const cardCenterY = item.y + projectCardHeight / 2;
 
-                canvas.appendChild(backCard);
+                        let targetX = cardCenterX;
+                        let targetY = cardCenterY;
 
-                canvas.classList.add("arch-locked");
+                        const dx = cardCenterX - hub.x;
+                        const dy = cardCenterY - hub.y;
+
+                        if (Math.abs(dx) > Math.abs(dy) * 1.15) {
+                            targetX = dx > 0 ? item.x : item.x + projectCardWidth;
+                            targetY = cardCenterY;
+                        } else {
+                            targetX = cardCenterX;
+                            targetY = dy > 0 ? item.y : item.y + projectCardHeight;
+                        }
+
+                        drawDrillLine(
+                            { x: hub.x, y: hub.y },
+                            { x: targetX, y: targetY }
+                        );
+                    });
+                }
+                setBackControlVisibility(true);
                 return;
             }
 
@@ -1089,11 +1263,12 @@ function renderDiagram() {
     function connect(a, b, highlight = false) {
         const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
-        const startX = a.x + 60;
-        const startY = a.y + 30;
-
-        const endX = b.x + 60;
-        const endY = b.y;
+        const start = getNodeAnchor(a, "bottom");
+        const end = getNodeAnchor(b, "top");
+        const startX = start.x;
+        const startY = start.y;
+        const endX = end.x;
+        const endY = end.y;
 
         // control points for smooth curve
         const controlY = (startY + endY) / 2;
@@ -1160,6 +1335,16 @@ function renderDiagram() {
 document.addEventListener("DOMContentLoaded", () => {
     renderDiagram();
 
+    if (backControl) {
+        backControl.addEventListener("click", (evt) => {
+            evt.stopPropagation();
+            if (currentLevel !== "projects") return;
+            currentLevel = "main";
+            currentNode = null;
+            renderDiagram();
+        });
+    }
+
     const architectureSection = document.getElementById("architecture");
     const inspector = document.getElementById("arch-inspector");
     const hideInspectorButton = document.getElementById("arch-inspector-hide");
@@ -1210,6 +1395,17 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("resize", syncInspectorVisibility);
         syncInspectorVisibility();
     }
+
+    let resizeRenderTimer = null;
+    window.addEventListener("resize", () => {
+        if (resizeRenderTimer) {
+            clearTimeout(resizeRenderTimer);
+        }
+
+        resizeRenderTimer = setTimeout(() => {
+            renderDiagram();
+        }, 120);
+    });
 });
         </script>
 

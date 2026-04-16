@@ -1376,6 +1376,12 @@ footer {
     filter: drop-shadow(0 0 6px rgba(232, 11, 130, 0.6));
 }
 
+.arch-line.project-drill {
+    stroke-width: 2.2;
+    stroke-dasharray: 7 5;
+    opacity: 0.9;
+}
+
 .flow-particle {
     fill: rgba(56, 189, 248, 0.9);
     filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.6));
@@ -1386,6 +1392,10 @@ footer {
     fill: rgba(232, 11, 130, 1);
     filter: drop-shadow(0 0 6px rgba(232, 11, 130, 0.8));
     animation: particleGlowWarm 0.9s ease-in-out infinite;
+}
+
+.project-hub-dot {
+    filter: drop-shadow(0 0 10px rgba(232, 11, 130, 0.95));
 }
 
 @keyframes particleGlow {
@@ -1434,12 +1444,21 @@ footer {
 
 /* Click-to-focus system */
 .arch-locked .arch-card {
-    opacity: 0.2;
-    transform: scale(0.96);
+    opacity: 1;
+    transform: none;
 }
 
 .arch-locked .arch-line {
-    opacity: 0.1;
+    opacity: 1;
+}
+
+.architecture-canvas.projects-mode .arch-card {
+    opacity: 1 !important;
+    transform: none;
+}
+
+.architecture-canvas.projects-mode .arch-line {
+    opacity: 1 !important;
 }
 
 /* Focused node */
@@ -1539,6 +1558,37 @@ footer {
 
 .arch-inspector-show:hover {
     box-shadow: 0 10px 24px rgba(14, 165, 233, 0.24);
+}
+
+.arch-back-control {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: 120;
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #e2e8f0;
+    font-size: 0.83rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border-radius: 999px;
+    padding: 0.58rem 0.9rem;
+    box-shadow: 0 10px 22px rgba(2, 6, 23, 0.34);
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.arch-back-control:hover {
+    box-shadow: 0 14px 26px rgba(2, 6, 23, 0.44);
+}
+
+.arch-back-control.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
 /* Responsive */
@@ -1782,13 +1832,23 @@ footer {
     }
 
     .architecture-viewport {
-        height: 620px;
+        height: 720px;
     }
 
     .arch-inspector {
-        width: min(300px, calc(100vw - 2rem));
-        right: 10px;
-        top: 90px;
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: auto;
+        bottom: 1rem;
+        width: auto;
+        max-height: min(44vh, 340px);
+        z-index: 2001;
+    }
+
+    .arch-inspector-body {
+        max-height: calc(min(44vh, 340px) - 58px);
+        overflow-y: auto;
     }
 }
 
@@ -1867,18 +1927,32 @@ footer {
     }
 
     .arch-inspector {
-        width: calc(100vw - 2rem);
+        position: absolute;
+        left: 1rem;
         right: 1rem;
         top: auto;
         bottom: 1rem;
-        max-height: 400px;
+        width: auto;
+        max-height: min(42vh, 320px);
         z-index: 2001;
+    }
+
+    .arch-inspector-body {
+        max-height: calc(min(42vh, 320px) - 58px);
+        overflow-y: auto;
     }
 
     .arch-inspector-show {
         right: 1rem;
         bottom: 1rem;
         top: auto;
+    }
+
+    .arch-back-control {
+        left: 12px;
+        top: 12px;
+        font-size: 0.76rem;
+        padding: 0.5rem 0.78rem;
     }
 }
 
@@ -2030,15 +2104,21 @@ footer {
     }
 
     .arch-inspector {
-        width: calc(100vw - 1.5rem);
+        left: 0.75rem;
         right: 0.75rem;
         bottom: 0.75rem;
-        max-height: 360px;
+        width: auto;
+        max-height: min(40vh, 300px);
     }
 
     .arch-inspector-show {
         right: 0.75rem;
         bottom: 0.75rem;
+    }
+
+    .arch-back-control {
+        left: 10px;
+        top: 10px;
     }
 }
 
@@ -2171,14 +2251,17 @@ footer {
     }
 
     .arch-inspector {
-        width: calc(100vw - 1rem);
+        left: 0.5rem;
         right: 0.5rem;
         bottom: 0.5rem;
-        max-height: 340px;
+        width: auto;
+        max-height: min(40vh, 300px);
     }
 
     .arch-inspector-body {
         padding: 0.85rem;
+        max-height: calc(min(40vh, 300px) - 58px);
+        overflow-y: auto;
     }
 }
 
@@ -2255,6 +2338,7 @@ footer {
 
 .architecture-section {
     position: relative;
+    scroll-margin-top: 110px;
     background:
         radial-gradient(circle at 12% 10%, rgba(56, 189, 248, 0.08) 0, rgba(56, 189, 248, 0) 32%),
         linear-gradient(155deg, #f8fbff 0%, #eef4ff 58%, #eaf2ff 100%);
@@ -2533,6 +2617,11 @@ footer {
     transform: translateY(-3px) !important;
 }
 
+.back-card-floating {
+    z-index: 35;
+    box-shadow: 0 12px 28px rgba(2, 6, 23, 0.42), 0 0 0 1px rgba(148, 163, 184, 0.25) !important;
+}
+
 @keyframes slideInZoom {
     from {
         opacity: 0;
@@ -2616,7 +2705,7 @@ footer {
 /* Diagram Canvas */
 .architecture-viewport {
     width: 100%;
-    height: 740px;
+    height: 760px;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
