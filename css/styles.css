@@ -203,7 +203,7 @@ textarea:focus-visible {
     background-image: url('../Images/social_media/personal_website_banner_1920x480.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: var(--white);
     padding: 170px 2rem 108px;
     margin-top: 30px;
@@ -1146,6 +1146,11 @@ section h2::after {
     color: var(--navy);
 }
 
+.tool-item-wide p {
+    font-size: 0.9rem;
+    line-height: 1.25;
+}
+
 /* Certifications Section */
 .certifications {
     background: var(--white);
@@ -1207,10 +1212,11 @@ section h2::after {
     object-fit: contain;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
-    padding: 0.35rem;
+    padding: 0.45rem;
     margin: 0 auto 1rem;
     display: block;
     border: 1px solid rgba(148, 163, 184, 0.3);
+    filter: brightness(1.04) contrast(1.04) saturate(1.02);
 }
 
 .cert-title {
