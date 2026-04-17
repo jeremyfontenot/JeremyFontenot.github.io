@@ -2910,3 +2910,125 @@ footer {
     background: linear-gradient(135deg, #e80b82, #ff1a8f);
     border-color: rgba(255, 26, 143, 0.6);
 }
+
+/* Layered hierarchy enhancements (CSS-only) */
+section {
+    padding: clamp(76px, 9.2vw, 104px) 2rem;
+}
+
+.hero .hero-content {
+    position: relative;
+}
+
+.hero .hero-content::before,
+.brand h2::before,
+.contact h2::before {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gray-blue);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    border-radius: 999px;
+    padding: 0.28rem 0.6rem;
+}
+
+.hero .hero-content::before {
+    content: 'Core Narrative';
+    margin-bottom: 0.8rem;
+}
+
+.brand {
+    position: relative;
+    margin-top: clamp(26px, 4.4vw, 56px);
+    padding-top: clamp(96px, 11vw, 136px);
+    border-top: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.brand::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0.65) 50%, rgba(56, 189, 248, 0) 100%);
+    pointer-events: none;
+}
+
+.brand h2::before {
+    content: 'Proof & Validation';
+    margin-bottom: 0.55rem;
+    background: rgba(11, 16, 32, 0.05);
+}
+
+.tools,
+.certifications {
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.projects {
+    box-shadow: inset 0 1px 0 rgba(56, 189, 248, 0.22), inset 0 -1px 0 rgba(56, 189, 248, 0.16);
+}
+
+.projects h2 {
+    font-size: clamp(2.2rem, 4.8vw, 3.1rem);
+}
+
+.projects .section-intro {
+    font-size: 1.08rem;
+    max-width: 68ch;
+}
+
+.architecture-section {
+    border-top: 1px solid rgba(148, 163, 184, 0.25);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.architecture-section h2 {
+    margin-bottom: 2.45rem;
+}
+
+.architecture-section h2::after {
+    width: 84px;
+}
+
+.contact {
+    margin-top: clamp(26px, 4.4vw, 56px);
+    padding-top: clamp(98px, 11vw, 138px);
+    border-top: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.contact h2::before {
+    content: 'Conversion';
+    margin-bottom: 0.55rem;
+    color: #cfe9ff;
+    border-color: rgba(56, 189, 248, 0.45);
+    background: rgba(56, 189, 248, 0.1);
+}
+
+@media (max-width: 768px) {
+    .brand::before {
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .hero .hero-content::before,
+    .brand h2::before,
+    .contact h2::before {
+        font-size: 0.66rem;
+        letter-spacing: 0.11em;
+    }
+
+    .brand,
+    .contact {
+        margin-top: clamp(20px, 4vw, 34px);
+        padding-top: clamp(84px, 10vw, 108px);
+    }
+
+    .projects h2 {
+        font-size: clamp(2.05rem, 4.9vw, 2.45rem);
+    }
+}
