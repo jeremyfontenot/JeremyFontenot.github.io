@@ -517,8 +517,7 @@ body::after {
 }
 
 main,
-footer,
-nav {
+footer {
     position: relative;
     z-index: 1;
 }
@@ -2638,8 +2637,9 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        top: 0.45rem;
-        width: calc(100% - 1rem);
+        top: 0;
+        left: 0;
+        width: 100%;
         padding: 0.65rem 0.8rem;
     }
 
