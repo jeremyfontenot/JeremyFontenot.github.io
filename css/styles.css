@@ -1159,18 +1159,8 @@ section h2::after {
 }
 
 .timeline::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 9px;
-    height: auto;
-    background: linear-gradient(180deg, rgba(255, 26, 143, 0.34) 0%, rgba(56, 189, 248, 0.3) 100%);
-    filter: blur(3px);
-    opacity: 0.75;
-    pointer-events: none;
+    content: none;
+    display: none;
 }
 
 .timeline-item {
