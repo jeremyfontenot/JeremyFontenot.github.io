@@ -3986,7 +3986,17 @@ section {
 
 .tools,
 .certifications {
+    position: relative;
+    isolation: isolate;
     border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.tools::before,
+.tools::after,
+.certifications::before,
+.certifications::after {
+    content: none !important;
+    display: none !important;
 }
 
 .projects {
