@@ -57,16 +57,16 @@ body {
 /* Navigation */
 nav {
     position: fixed;
-    top: 0.8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1720px, calc(100% - 1rem));
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
     background: rgba(11, 16, 32, 0.88);
     backdrop-filter: blur(10px);
     padding: 0.85rem 1rem;
     z-index: 1000;
     border: 1px solid rgba(148, 163, 184, 0.34);
-    border-radius: 14px;
+    border-radius: 0 0 14px 14px;
     box-shadow: 0 16px 36px rgba(11, 16, 32, 0.3);
 }
 
@@ -3026,7 +3026,7 @@ footer {
 
 @media (max-width: 420px) {
     nav {
-        width: calc(100% - 0.75rem);
+        width: 100%;
         padding: 0.55rem 0.65rem;
     }
 
@@ -3199,8 +3199,7 @@ footer {
 
 @media (max-width: 390px) {
     nav {
-        width: calc(100% - 0.5rem);
-        top: 0.35rem;
+        width: 100%;
         padding: 0.5rem 0.55rem;
     }
 
