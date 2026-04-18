@@ -1,7 +1,7 @@
 const SITE_CONFIG = {
     label: 'Identity Focus',
-    title: 'Jeremy Fontenot - Portfolio Site',
-    tagline: '● IDENTITY • SECURITY • CLARITY',
+    title: 'Jeremy Fontenot | Cloud-First IT Professional | Microsoft 365, Entra ID, Intune',
+    tagline: 'Cloud-First IT Professional Designing Secure Microsoft 365 Environments',
     robots: 'index, follow'
 };
 
