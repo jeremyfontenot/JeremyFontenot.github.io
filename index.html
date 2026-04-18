@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,12 @@
     <meta property="og:description" content="Cloud-first IT professional specializing in Microsoft 365, Entra ID, Intune, Exchange Online, and identity-driven security operations.">
     <meta property="og:image" content="./Images/logos/primary_logo_web_1200.png">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:url" content="https://jeremyfontenot.online">
+    <link rel="canonical" href="https://jeremyfontenot.online/">
     <title>Jeremy Fontenot | Cloud-First IT Professional | Microsoft 365, Entra ID, Intune</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./Images/logos/favicon_64x64.png">
     <link rel="icon" type="image/png" sizes="128x128" href="./Images/logos/favicon_128x128.png">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -48,6 +49,15 @@
     <main id="main-content">
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-particles" aria-hidden="true">
+            <span class="hero-particle hero-particle-1"></span>
+            <span class="hero-particle hero-particle-2"></span>
+            <span class="hero-particle hero-particle-3"></span>
+            <span class="hero-particle hero-particle-4"></span>
+            <span class="hero-particle hero-particle-5"></span>
+            <span class="hero-particle hero-particle-6"></span>
+            <span class="hero-particle hero-particle-7"></span>
+        </div>
         <div class="container">
             <div class="hero-layout">
                 <div class="hero-content">
@@ -55,8 +65,13 @@
                     <h1>Cloud-First <span class="hero-highlight">IT Professional</span> Building Tomorrow's Workplace</h1>
                     <p>Specializing in Entra ID, Intune, Exchange Online, and identity-driven security operations. 10+ certifications • Personal M365 cloud lab • Cloud + security focused.</p>
                     <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary">Explore My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="./docs/m365-documentation-archive/Lab-Portfolio.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                    </div>
+                    <div class="hero-live-stats" aria-label="Live stats">
+                        <div class="hero-live-stat"><span class="hero-live-stat-value" data-target="15">15+</span> Projects</div>
+                        <div class="hero-live-stat"><span class="hero-live-stat-value" data-target="5">5+</span> Certifications</div>
+                        <div class="hero-live-stat">Enterprise Lab Built</div>
                     </div>
                     <div class="hero-proof" aria-label="Key highlights">
                         <div class="hero-proof-item">
@@ -75,7 +90,9 @@
                     <p class="system-note">Built as a modular, identity-driven portfolio system reflecting enterprise IT architecture principles.</p>
                 </div>
                 <div class="hero-visual" aria-label="Primary brand mark">
-                    <img loading="lazy" decoding="async" src="./Images/logos/primary_logo_web_1200.png" alt="Jeremy Fontenot primary logo" class="hero-main-logo">
+                    <div class="hero-card">
+                        <img loading="lazy" decoding="async" src="./Images/logos/primary_logo_web_1200.png" alt="Jeremy Fontenot primary logo" class="hero-main-logo">
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,44 +103,42 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <h3>Cloud-First IT Professional</h3>
-                <p>I design and automate secure Microsoft 365 environments focused on identity governance, endpoint management, and modern workplace operations.</p>
-                <p>I'm Jeremy Fontenot, an IT professional specializing in Entra ID, Intune, Exchange Online, and Microsoft Graph automation.</p>
-                
-                <h3 class="about-subheading">Cloud Lab & Technical Expertise</h3>
-                <p>I maintain an enterprise-grade M365 personal cloud lab where I design, secure, and automate modern identity and collaboration solutions.</p>
+                <p class="about-intro">Cloud-first IT professional building secure, scalable systems with identity-first automation.</p>
+                <div class="about-blocks" aria-label="About Jeremy">
+                    <article class="about-block">
+                        <h3><span class="about-icon" aria-hidden="true"></span>Who I Am</h3>
+                        <p>I'm Jeremy Fontenot, an IT professional connecting infrastructure operations with cloud administration for reliable outcomes.</p>
+                    </article>
 
-                <h4 class="about-category">Identity &amp; Access</h4>
-                <ul class="about-list">
-                    <li>Microsoft Graph SDK usage for users, groups, and Conditional Access automation</li>
-                    <li>Conditional Access baseline design aligned to zero-trust controls and administrative risk reduction</li>
-                </ul>
+                    <article class="about-block">
+                        <h3><span class="about-icon" aria-hidden="true"></span>What I Do</h3>
+                        <p>I design and automate Microsoft 365 environments using <span class="keyword-highlight">Azure</span>, <span class="keyword-highlight">AD</span>/Entra ID, Intune, Exchange Online, and Graph workflows.</p>
+                    </article>
 
-                <h4 class="about-category">Endpoint Management</h4>
-                <ul class="about-list">
-                    <li>Intune policy creation, compliance enforcement, and update orchestration with validation checkpoints</li>
-                </ul>
+                    <article class="about-block">
+                        <h3><span class="about-icon" aria-hidden="true"></span>What I Specialize In</h3>
+                        <ul class="about-icon-list">
+                            <li>Identity architecture and governance across <span class="keyword-highlight">Azure</span> and <span class="keyword-highlight">AD</span></li>
+                            <li>Policy-based access and endpoint compliance controls</li>
+                            <li>Tenant automation, validation, and repeatable runbooks</li>
+                            <li>Hands-on <span class="keyword-highlight">Networking</span> and platform integration</li>
+                        </ul>
+                    </article>
 
-                <h4 class="about-category">Automation &amp; Operations</h4>
-                <ul class="about-list">
-                    <li>Exchange Online administration including shared mailboxes, permissions, auditing, and standardized provisioning workflows</li>
-                    <li>Teams provisioning and channel lifecycle management through Graph-integrated automation patterns</li>
-                    <li>Tenant hygiene routines for cleanup of Teams, M365 Groups, and role-assignment drift</li>
-                    <li>Idempotent scripting patterns with enterprise-grade error handling, logging, and rollback-aware execution paths</li>
-                </ul>
-                
-                <h3 class="about-subheading">Education</h3>
-                <ul class="about-education-list">
-                    <li><strong>Remington College</strong> - A.S. Computer Science (Database Administration), Honors, 3.84 GPA</li>
-                    <li><strong>MyComputerCareer</strong> - Information Security and Administration Program, 4.00 GPA</li>
-                </ul>
+                    <article class="about-block">
+                        <h3><span class="about-icon" aria-hidden="true"></span>Current Focus</h3>
+                        <ul class="about-icon-list">
+                            <li>Expanding enterprise lab scenarios for identity hardening</li>
+                            <li>Building practical cloud governance and incident-readiness blueprints</li>
+                            <li>Deepening <span class="keyword-highlight">Security</span> operations with monitoring and response workflows</li>
+                        </ul>
+                    </article>
+                </div>
 
-                <h3 style="margin-top: 1.5rem;">Certifications</h3>
-                <p>I hold 10+ industry certifications across Microsoft, CompTIA, and Linux domains.</p>
                 <p><a href="#certifications" class="about-cert-cta">View all certifications & achievements</a></p>
             </div>
             <div class="about-image">
-                <img loading="lazy" decoding="async" src="./Images/certifications/here_is_my_picture.png" alt="Jeremy Fontenot">
+                <img loading="lazy" decoding="async" src="./Images/certifications/profile image.png" alt="Jeremy Fontenot">
             </div>
         </div>
     </section>
@@ -133,7 +148,7 @@
         <h2>Core Skills</h2>
         <p class="section-intro">A practical skillset built through production support, cloud administration, and repeatable automation in enterprise-style environments.</p>
         <div class="skills-grid">
-            <article class="skills-card">
+            <article class="skills-card" tabindex="0">
                 <h3>Identity & Access Security</h3>
                 <ul>
                     <li>Entra ID user, group, and role administration</li>
@@ -141,8 +156,17 @@
                     <li>MFA enforcement and identity hygiene procedures</li>
                     <li>Privileged access control and least-privilege alignment</li>
                 </ul>
+                <div class="skills-tools" aria-label="Tools used in identity and access security">
+                    <span class="skills-tools-label">Tools used</span>
+                    <div class="skills-tools-list">
+                        <span class="skills-tool">Entra ID</span>
+                        <span class="skills-tool">Azure</span>
+                        <span class="skills-tool">PowerShell</span>
+                        <span class="skills-tool">Microsoft Graph</span>
+                    </div>
+                </div>
             </article>
-            <article class="skills-card">
+            <article class="skills-card" tabindex="0">
                 <h3>Microsoft 365 Administration</h3>
                 <ul>
                     <li>Exchange Online mailbox provisioning and permissions</li>
@@ -150,8 +174,17 @@
                     <li>Teams and SharePoint administration at tenant scope</li>
                     <li>Service health monitoring and issue triage workflows</li>
                 </ul>
+                <div class="skills-tools" aria-label="Tools used in Microsoft 365 administration">
+                    <span class="skills-tools-label">Tools used</span>
+                    <div class="skills-tools-list">
+                        <span class="skills-tool">Exchange Online</span>
+                        <span class="skills-tool">Intune</span>
+                        <span class="skills-tool">Teams Admin</span>
+                        <span class="skills-tool">SharePoint</span>
+                    </div>
+                </div>
             </article>
-            <article class="skills-card">
+            <article class="skills-card" tabindex="0">
                 <h3>Automation & Scripting</h3>
                 <ul>
                     <li>PowerShell 7 automation with reusable modules</li>
@@ -159,8 +192,17 @@
                     <li>Idempotent runbooks with structured error handling</li>
                     <li>Validation-driven script governance and reporting</li>
                 </ul>
+                <div class="skills-tools" aria-label="Tools used in automation and scripting">
+                    <span class="skills-tools-label">Tools used</span>
+                    <div class="skills-tools-list">
+                        <span class="skills-tool">PowerShell 7</span>
+                        <span class="skills-tool">Graph SDK</span>
+                        <span class="skills-tool">GitHub</span>
+                        <span class="skills-tool">VS Code</span>
+                    </div>
+                </div>
             </article>
-            <article class="skills-card">
+            <article class="skills-card" tabindex="0">
                 <h3>Infrastructure & Operations</h3>
                 <ul>
                     <li>Hybrid lab architecture using Proxmox and Windows Server</li>
@@ -168,6 +210,15 @@
                     <li>Monitoring and log visibility with Wazuh, Zabbix, and Graylog</li>
                     <li>Incident troubleshooting and root-cause-oriented resolution</li>
                 </ul>
+                <div class="skills-tools" aria-label="Tools used in infrastructure and operations">
+                    <span class="skills-tools-label">Tools used</span>
+                    <div class="skills-tools-list">
+                        <span class="skills-tool">Proxmox</span>
+                        <span class="skills-tool">Windows Server</span>
+                        <span class="skills-tool">Zabbix</span>
+                        <span class="skills-tool">Wazuh</span>
+                    </div>
+                </div>
             </article>
         </div>
     </section>
@@ -177,12 +228,18 @@
         <h2>Featured Projects</h2>
         <p class="section-intro projects-intro">Selected systems and documentation hubs, organized around outcomes rather than raw file dumps.</p>
         <div class="projects-grid">
-            <div class="project-card">
+            <div class="project-card project-card-flagship">
                 <div class="project-header">
+                    <span class="project-priority-badge">Flagship</span>
                     <h3>Enterprise-Grade Home Lab Infrastructure</h3>
                 </div>
                 <div class="project-body">
                     <span class="project-category">Infrastructure & Virtualization</span>
+                    <div class="project-quick-tags" aria-label="Key capabilities">
+                        <span class="project-quick-tag">Active Directory</span>
+                        <span class="project-quick-tag">Networking</span>
+                        <span class="project-quick-tag">Automation</span>
+                    </div>
                     <div class="project-impact">Outcome: layered routing, monitoring, and IDS/IPS in a single enterprise-style lab.</div>
                     <p class="project-desc">A Dell R710-based enterprise lab environment built on Proxmox VE as the primary hypervisor. Workloads include Windows Server 2022 Active Directory and RHEL 9 systems, with pfSense handling routing and firewall policy, Suricata/Snort providing IDS/IPS coverage, and Zabbix/Wazuh/Graylog supporting centralized monitoring and log analysis.</p>
                     <div class="tech-list">
@@ -195,17 +252,23 @@
                     </div>
                     <div class="project-links">
                         <a class="project-link" href="./docs/home-lab/index.html" target="_blank" rel="noopener noreferrer">Open Home Lab Documentation</a>
+                        <a class="project-link project-link-architecture" href="#architecture">View Architecture</a>
                         <a class="project-link project-link-secondary" href="./docs/home-lab/index.html#stack" target="_blank" rel="noopener noreferrer">View Hardware & Stack</a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card project-card-featured">
                 <div class="project-header">
+                    <span class="project-priority-badge">Featured</span>
                     <h3>Microsoft 365 Personal Cloud Lab</h3>
                 </div>
                 <div class="project-body">
                     <span class="project-category">Cloud Administration & Security</span>
+                    <div class="project-quick-tags" aria-label="Key capabilities">
+                        <span class="project-quick-tag">Active Directory</span>
+                        <span class="project-quick-tag">Automation</span>
+                    </div>
                     <div class="project-impact">Outcome: fully automated tenant provisioning, access control, and compliance enforcement.</div>
                     <p class="project-desc"><strong>Enterprise-scale M365 lab</strong> built on Microsoft 365 Business Premium (tenant: jeremyfontenot.online). Demonstrates complete identity, access, Exchange, Teams, Intune, and SharePoint automation using PowerShell and Microsoft Graph APIs exclusively. Configured Conditional Access (MFA enforcement), Intune compliance policies, shared mailbox provisioning, Teams with channels, and security baselines—all deployed with idempotent PowerShell scripts. Documentation has been preserved locally in the M365 archive for long-term access.</p>
                     <div class="tech-list">
@@ -218,6 +281,9 @@
                         <span class="tech-tag">SharePoint Online</span>
                         <span class="tech-tag">Teams</span>
                     </div>
+                    <div class="project-links">
+                        <a class="project-link" href="#architecture">View Architecture</a>
+                    </div>
                 </div>
             </div>
 
@@ -227,6 +293,9 @@
                 </div>
                 <div class="project-body">
                     <span class="project-category">Cloud Administration & Documentation</span>
+                    <div class="project-quick-tags" aria-label="Key capabilities">
+                        <span class="project-quick-tag">Automation</span>
+                    </div>
                     <div class="project-impact">Outcome: interview-ready archive with architecture, governance, and module inventory.</div>
                     <p class="project-desc">Comprehensive, interview-ready documentation of M365 Personal Cloud Lab implementation. Includes lab architecture overview, security posture analysis, admin skills demonstrated (Microsoft Graph SDK, Exchange Online, Teams provisioning, Intune policy creation, Conditional Access, tenant automation), and complete PowerShell module inventory. Preserved as a local archive for long-term access.</p>
                     <div class="tech-list">
@@ -237,6 +306,7 @@
                     </div>
                     <div class="project-links">
                         <a class="project-link" href="./docs/m365-documentation-archive/index.html" target="_blank" rel="noopener noreferrer">Open M365 Archive</a>
+                        <a class="project-link project-link-architecture" href="#architecture">View Architecture</a>
                         <a class="project-link project-link-secondary" href="./docs/m365-documentation-archive/html/Start-Here.html" target="_blank" rel="noopener noreferrer">Open Start Here</a>
                         <a class="project-link project-link-secondary" href="./docs/m365-documentation-archive/Lab-Portfolio.pdf" target="_blank" rel="noopener noreferrer">Open Lab Portfolio PDF</a>
                     </div>
@@ -259,6 +329,7 @@
                     </div>
                     <div class="project-links">
                         <a class="project-link" href="./docs/brandguide-archive/index.html" target="_blank" rel="noopener noreferrer">Open Brand Guide Archive</a>
+                        <a class="project-link project-link-architecture" href="#architecture">View Architecture</a>
                         <a class="project-link project-link-secondary" href="./docs/brandguide-archive/html/BrandGuideHome.html" target="_blank" rel="noopener noreferrer">Open Archived Home</a>
                     </div>
                 </div>
@@ -277,6 +348,9 @@
                         <li><strong>Focus:</strong> UI/UX, branding system design, information architecture</li>
                         <li><strong>Outcome:</strong> enterprise-grade internal communication and identity platform</li>
                     </ul>
+                    <div class="project-links">
+                        <a class="project-link project-link-architecture" href="#architecture">View Architecture</a>
+                    </div>
                 </div>
             </div>
 
@@ -296,6 +370,7 @@
                     </div>
                     <div class="project-links">
                         <a class="project-link" href="./docs/script-documentation/index.html" target="_blank" rel="noopener noreferrer">Open Script Documentation</a>
+                        <a class="project-link project-link-architecture" href="#architecture">View Architecture</a>
                         <a class="project-link project-link-secondary" href="./docs/script-documentation/validation-results.csv" target="_blank" rel="noopener noreferrer">Download Validation CSV</a>
                     </div>
                 </div>
@@ -317,6 +392,7 @@
                     </div>
                     <div class="project-links">
                         <a class="project-link" href="./docs/brandguide-archive/html/Documentation.html" target="_blank" rel="noopener noreferrer">Open Asset Documentation</a>
+                        <a class="project-link project-link-architecture" href="#architecture">View Architecture</a>
                         <a class="project-link project-link-secondary" href="./docs/brandguide-archive/index.html" target="_blank" rel="noopener noreferrer">View Brand Guide Archive</a>
                     </div>
                 </div>
@@ -326,7 +402,8 @@
 
     <section id="architecture" class="section architecture-section">
         <div class="container">
-            <h2>Information Architecture</h2>
+            <p class="architecture-kicker">Information Architecture</p>
+            <h2>Enterprise System Design Overview</h2>
 
             <p>
                 This site is structured as a single-page portfolio with modular documentation hubs.
@@ -341,7 +418,20 @@
                             <g id="line-layer"></g>
                             <g id="particle-layer"></g>
                         </svg>
+                        <div id="arch-node-popup" class="arch-node-popup" role="status" aria-live="polite" aria-hidden="true"></div>
                     </div>
+                    <aside class="architecture-legend" aria-label="Architecture legend">
+                        <div class="architecture-legend-header">
+                            <span class="architecture-legend-title">Legend</span>
+                            <span id="arch-legend-mode" class="architecture-legend-mode">Main Map</span>
+                        </div>
+                        <ul class="architecture-legend-list">
+                            <li><span class="legend-swatch legend-swatch-node" aria-hidden="true"></span> Node</li>
+                            <li><span class="legend-swatch legend-swatch-path" aria-hidden="true"></span> Path</li>
+                            <li><span class="legend-swatch legend-swatch-traced" aria-hidden="true"></span> Active Trace</li>
+                            <li><span class="legend-swatch legend-swatch-popup" aria-hidden="true"></span> Click Detail Popup</li>
+                        </ul>
+                    </aside>
                     <button id="arch-back-control" class="arch-back-control" type="button" aria-label="Back to main architecture">← Back to Main</button>
                 </div>
                 <div id="arch-inspector" class="arch-inspector">
@@ -365,6 +455,7 @@
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="content">
+                    <span class="role-chip role-chip-admin">⚙ Admin</span>
                     <h4>Service Desk Technician</h4>
                     <div class="company">Logicalis</div>
                     <div class="date">April 2024 – Present</div>
@@ -373,12 +464,18 @@
                         <li>Manage Active Directory and Group Policy configurations to standardize user access and reduce repeat incidents</li>
                         <li>Resolve escalated technical issues through structured troubleshooting, root-cause analysis, and clear stakeholder communication</li>
                     </ul>
+                    <p class="impact-title">Impact</p>
+                    <ul class="impact-list">
+                        <li>Supported X+ users across multi-client environments and daily service operations</li>
+                        <li>Reduced repeat incident volume by standardizing identity and policy workflows</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="content">
+                    <span class="role-chip role-chip-support">🛠 Support</span>
                     <h4>Service Desk Representative – Team Lead</h4>
                     <div class="company">Insight Global</div>
                     <div class="date">October 2022 – January 2024</div>
@@ -387,12 +484,18 @@
                         <li>Reduced average ticket resolution time by 20% through process cleanup, queue discipline, and faster routing decisions</li>
                         <li>Handled high-impact incidents requiring cross-team coordination and rapid technical resolution</li>
                     </ul>
+                    <p class="impact-title">Impact</p>
+                    <ul class="impact-list">
+                        <li>Reduced average ticket resolution time by 20% through process and queue optimization</li>
+                        <li>Supported X+ users by leading escalations and improving team triage quality</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="content">
+                    <span class="role-chip role-chip-admin">⚙ Admin</span>
                     <h4>IT Technician</h4>
                     <div class="company">Completeful Technologies LLC</div>
                     <div class="date">February 2022 – June 2022</div>
@@ -401,18 +504,10 @@
                         <li>Improved Active Directory and Group Policy posture to strengthen policy consistency and endpoint governance</li>
                         <li>Supported critical infrastructure services and responded quickly to service-affecting outages</li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="content">
-                    <h4>Technical Support (Contract)</h4>
-                    <div class="company">Hughes Network Services</div>
-                    <div class="date">September 2021 – February 2022</div>
-                    <ul>
-                        <li>Resolved network connectivity incidents across varied edge environments with strong first-contact troubleshooting</li>
-                        <li>Maintained secure network configurations aligned to operational standards and service stability targets</li>
+                    <p class="impact-title">Impact</p>
+                    <ul class="impact-list">
+                        <li>Supported X+ users through reliable server and endpoint operations</li>
+                        <li>Improved AD and GPO consistency to strengthen security and governance posture</li>
                     </ul>
                 </div>
             </div>
@@ -420,12 +515,37 @@
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="content">
+                    <span class="role-chip role-chip-security">🛡 Security</span>
+                    <h4>Technical Support (Contract)</h4>
+                    <div class="company">Hughes Network Services</div>
+                    <div class="date">September 2021 – February 2022</div>
+                    <ul>
+                        <li>Resolved network connectivity incidents across varied edge environments with strong first-contact troubleshooting</li>
+                        <li>Maintained secure network configurations aligned to operational standards and service stability targets</li>
+                    </ul>
+                    <p class="impact-title">Impact</p>
+                    <ul class="impact-list">
+                        <li>Resolved X+ connectivity incidents through fast first-contact troubleshooting</li>
+                        <li>Strengthened network security posture with standards-aligned configuration practices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="content">
+                    <span class="role-chip role-chip-support">🛠 Support</span>
                     <h4>Help Desk Technician (Work Study)</h4>
                     <div class="company">Remington College</div>
                     <div class="date">December 2019 – April 2021</div>
                     <ul>
                         <li>Provided frontline IT support to students and faculty while maintaining a high standard of customer communication</li>
                         <li>Maintained campus IT systems and lab endpoints to preserve instructional uptime and classroom readiness</li>
+                    </ul>
+                    <p class="impact-title">Impact</p>
+                    <ul class="impact-list">
+                        <li>Supported X+ students and faculty in frontline campus IT operations</li>
+                        <li>Improved classroom readiness through consistent lab endpoint maintenance</li>
                     </ul>
                 </div>
             </div>
@@ -472,107 +592,64 @@
     <!-- Tools Section -->
     <section class="tools" id="tools">
         <h2>Technical Toolkit</h2>
+        <p class="section-intro tools-intro">Operational capability map grouped by system domain, with practical usage indicators from day-to-day engineering work. Proficiency rubric: Foundational, Working, Advanced, Expert.</p>
         <div class="tools-container">
-            <div class="tool-category">
-                <h3>Cloud & Administration</h3>
-                <div class="tool-list">
-                    <div class="tool-item">
-                        <p>Microsoft 365</p>
+            <div class="tool-system-grid">
+                <article class="tool-category">
+                    <h3>Identity &amp; Access</h3>
+                    <p class="tool-category-intro">Directory governance, access control, and policy-backed identity operations.</p>
+                    <div class="tool-list">
+                        <div class="tool-capability">
+                            <div class="tool-capability-head"><span>Active Directory (AD)</span><span class="tool-level">Advanced</span></div>
+                            <div class="tool-meter"><span style="--level: 92%"></span></div>
+                        </div>
+                        <div class="tool-capability">
+                            <div class="tool-capability-head"><span>Azure AD / Entra ID</span><span class="tool-level">Advanced</span></div>
+                            <div class="tool-meter"><span style="--level: 88%"></span></div>
+                        </div>
                     </div>
-                    <div class="tool-item">
-                        <p>Azure & Entra ID</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Intune MDM</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Exchange Online</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>SharePoint Online</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Conditional Access</p>
-                    </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="tool-category">
-                <h3>PowerShell & APIs</h3>
-                <div class="tool-list">
-                    <div class="tool-item">
-                        <p>Microsoft Graph SDK</p>
+                <article class="tool-category">
+                    <h3>Networking</h3>
+                    <p class="tool-category-intro">Segmentation, perimeter controls, and routing/firewall operations in lab and support contexts.</p>
+                    <div class="tool-list">
+                        <div class="tool-capability">
+                            <div class="tool-capability-head"><span>VLAN Design</span><span class="tool-level">Working</span></div>
+                            <div class="tool-meter"><span style="--level: 78%"></span></div>
+                        </div>
+                        <div class="tool-capability">
+                            <div class="tool-capability-head"><span>pfSense</span><span class="tool-level">Advanced</span></div>
+                            <div class="tool-meter"><span style="--level: 84%"></span></div>
+                        </div>
                     </div>
-                    <div class="tool-item">
-                        <p>PowerShell 7+</p>
-                    </div>
-                    <div class="tool-item tool-item-wide">
-                        <p>Exchange Online Management</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>MicrosoftTeams Module</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>SPO PowerShell</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Graph REST APIs</p>
-                    </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="tool-category">
-                <h3>Infrastructure & Networking</h3>
-                <div class="tool-list">
-                    <div class="tool-item">
-                        <p>Active Directory</p>
+                <article class="tool-category">
+                    <h3>Automation</h3>
+                    <p class="tool-category-intro">Repeatable scripts and workflow automation for administration, validation, and governance tasks.</p>
+                    <div class="tool-list">
+                        <div class="tool-capability">
+                            <div class="tool-capability-head"><span>PowerShell</span><span class="tool-level">Expert</span></div>
+                            <div class="tool-meter"><span style="--level: 94%"></span></div>
+                        </div>
+                        <div class="tool-capability">
+                            <div class="tool-capability-head"><span>Bash</span><span class="tool-level">Working</span></div>
+                            <div class="tool-meter"><span style="--level: 72%"></span></div>
+                        </div>
                     </div>
-                    <div class="tool-item">
-                        <p>Windows Server</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>pfSense</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>VMware ESXi</p>
-                    </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="tool-category">
-                <h3>Scripting & Automation</h3>
-                <div class="tool-list">
-                    <div class="tool-item">
-                        <p>PowerShell</p>
+                <article class="tool-category">
+                    <h3>Virtualization</h3>
+                    <p class="tool-category-intro">Host lifecycle, VM orchestration, and platform reliability for enterprise-style lab environments.</p>
+                    <div class="tool-list">
+                        <div class="tool-capability">
+                            <div class="tool-capability-head"><span>Proxmox VE</span><span class="tool-level">Advanced</span></div>
+                            <div class="tool-meter"><span style="--level: 86%"></span></div>
+                        </div>
                     </div>
-                    <div class="tool-item">
-                        <p>Power Automate</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Bash</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Python</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tool-category">
-                <h3>Security & Monitoring</h3>
-                <div class="tool-list">
-                    <div class="tool-item">
-                        <p>Wireshark</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Nmap</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Wazuh</p>
-                    </div>
-                    <div class="tool-item">
-                        <p>Graylog</p>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -580,58 +657,64 @@
     <!-- Certifications Section -->
     <section class="certifications" id="certifications">
         <h2>Certifications & Achievements</h2>
+        <div class="cert-filter-bar" role="group" aria-label="Filter certifications">
+            <button type="button" class="cert-filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="cert-filter-btn" data-filter="security" aria-pressed="false">Security</button>
+            <button type="button" class="cert-filter-btn" data-filter="networking" aria-pressed="false">Networking</button>
+            <button type="button" class="cert-filter-btn" data-filter="cloud" aria-pressed="false">Cloud</button>
+        </div>
         <div class="cert-grid">
-            <div class="cert-item">
+            <div class="cert-item" data-cert-categories="cloud" data-cert-authority="MyComputerCareer" data-cert-year="See credential">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/Jeremy_Chant_Fontenot_WCITP1_thumb_web.png" alt="World Class IT Professional badge">
                 <p class="cert-title">World Class IT Professional</p>
                 <p class="cert-provider">MyComputerCareer</p>
             </div>
-            <div class="cert-item">
+            <div class="cert-item" data-cert-categories="cloud" data-cert-authority="Microsoft" data-cert-year="See credential">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/microsoft-azure-fundamentals.png" alt="Azure Fundamentals badge">
                 <p class="cert-title">Microsoft Certified: Azure Fundamentals</p>
                 <p class="cert-provider">Microsoft</p>
             </div>
-            <a class="cert-item cert-link" href="https://www.credly.com/badges/ed5a8406-ac3c-452e-b16a-7391121a9017/public_url" target="_blank" rel="noopener noreferrer">
+            <a class="cert-item cert-link" data-cert-categories="security,networking" data-cert-authority="CompTIA" data-cert-year="See credential" href="https://www.credly.com/badges/ed5a8406-ac3c-452e-b16a-7391121a9017/public_url" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/comptia-a+.png" alt="CompTIA A+ badge">
                 <p class="cert-title">CompTIA A+</p>
                 <p class="cert-provider">CompTIA</p>
             </a>
-            <div class="cert-item">
+            <div class="cert-item" data-cert-categories="cloud" data-cert-authority="CompTIA" data-cert-year="See credential">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/comptia-server+.png" alt="CompTIA Server+ badge">
                 <p class="cert-title">CompTIA Server+</p>
                 <p class="cert-provider">CompTIA</p>
             </div>
-            <a class="cert-item cert-link" href="https://www.credly.com/badges/e507d3b8-ea86-41e0-850a-13125c605600/public_url" target="_blank" rel="noopener noreferrer">
+            <a class="cert-item cert-link" data-cert-categories="networking" data-cert-authority="CompTIA" data-cert-year="See credential" href="https://www.credly.com/badges/e507d3b8-ea86-41e0-850a-13125c605600/public_url" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/comptia-itf+.png" alt="CompTIA ITF+ badge">
                 <p class="cert-title">CompTIA ITF+</p>
                 <p class="cert-provider">CompTIA</p>
             </a>
-            <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-networking-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
+            <a class="cert-item cert-link" data-cert-categories="networking" data-cert-authority="Microsoft" data-cert-year="See credential" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-networking-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/mta-networking.png" alt="MTA Networking Fundamentals badge">
                 <p class="cert-title">MTA: Networking Fundamentals</p>
                 <p class="cert-provider">Microsoft</p>
             </a>
-            <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-windows-server-administration-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
+            <a class="cert-item cert-link" data-cert-categories="cloud" data-cert-authority="Microsoft" data-cert-year="See credential" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-windows-server-administration-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/mta-windows-server.png" alt="MTA Windows Server Administration Fundamentals badge">
                 <p class="cert-title">MTA: Windows Server Administration</p>
                 <p class="cert-provider">Microsoft</p>
             </a>
-            <a class="cert-item cert-link" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-security-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
+            <a class="cert-item cert-link" data-cert-categories="security" data-cert-authority="Microsoft" data-cert-year="See credential" href="https://learn.microsoft.com/en-us/users/jeremyfontenot-5624/credentials/certification-o-/mta-security-fundamentals?tab=credentials-tab" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/mta-security.png" alt="MTA Security Fundamentals badge">
                 <p class="cert-title">MTA: Security Fundamentals</p>
                 <p class="cert-provider">Microsoft</p>
             </a>
-            <a class="cert-item cert-link" href="https://www.credly.com/badges/612a8588-58c0-46f3-b68c-c10de91dcbdc/public_url" target="_blank" rel="noopener noreferrer">
+            <a class="cert-item cert-link" data-cert-categories="security" data-cert-authority="Cisco" data-cert-year="See credential" href="https://www.credly.com/badges/612a8588-58c0-46f3-b68c-c10de91dcbdc/public_url" target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/cisco.png" alt="Introduction to Cybersecurity badge">
                 <p class="cert-title">Introduction to Cybersecurity</p>
                 <p class="cert-provider">Cisco</p>
             </a>
-            <div class="cert-item">
+            <div class="cert-item" data-cert-categories="security" data-cert-authority="Linux Professional Institute (LPI)" data-cert-year="See credential">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/linux-essentials.png" alt="Linux Essentials badge">
                 <p class="cert-title">Linux Essentials</p>
                 <p class="cert-provider">Linux Professional Institute (LPI)</p>
             </div>
-            <div class="cert-item">
+            <div class="cert-item" data-cert-categories="networking" data-cert-authority="Google" data-cert-year="See credential">
                 <img loading="lazy" decoding="async" class="cert-badge-image" src="./Images/certifications/badges/google-it-support.png" alt="Google IT Support Specialist badge">
                 <p class="cert-title">Google IT Support Specialist</p>
                 <p class="cert-provider">Google</p>
@@ -643,6 +726,12 @@
     <section class="contact" id="contact">
         <h2>Let's Connect</h2>
         <p class="contact-intro">If your team needs stronger Microsoft 365 operations, identity security, or automation-ready administration, let's connect.</p>
+        <p class="contact-hook">Open to IT Support, SysAdmin, and Security Roles.</p>
+        <div class="contact-quick-actions" aria-label="Quick contact actions">
+            <a href="mailto:jeremy@jeremyfontenot.online" class="btn btn-primary">Email</a>
+            <a href="https://linkedin.com/in/jeremyfontenot" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="./docs/m365-documentation-archive/Lab-Portfolio.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Resume Download</a>
+        </div>
         <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -675,763 +764,9 @@
         </div>
     </footer>
 
-        <script src="./script.js" defer></script>
-
-        <script>
-        let scale = 1;
-        let offsetX = 0;
-        let offsetY = 0;
-        let particleIntervals = [];
-        let currentLevel = "main";
-        let currentNode = null;
-
-        const canvas = document.getElementById("architecture-canvas");
-        const backControl = document.getElementById("arch-back-control");
-
-        function setBackControlVisibility(isVisible) {
-            if (!backControl) return;
-            backControl.classList.toggle("is-visible", Boolean(isVisible));
-        }
-
-        const projectsData = {
-            "home-lab": {
-                title: "Home Lab",
-                desc: "Lab environment infrastructure, topology, security baseline, and operations documentation.",
-                icon: "🏗️",
-                links: [
-                    { label: "Infrastructure Overview", href: "./docs/home-lab/index.html" },
-                    { label: "Architecture & Topology", href: "./docs/home-lab/architecture-and-topology.html" },
-                    { label: "Identity & Access", href: "./docs/home-lab/identity-and-access.html" },
-                    { label: "Security Baseline", href: "./docs/home-lab/security-baseline.html" },
-                    { label: "Monitoring & Logging", href: "./docs/home-lab/monitoring-and-logging.html" },
-                    { label: "Backup & Disaster Recovery", href: "./docs/home-lab/backup-and-disaster-recovery.html" }
-                ]
-            },
-            "m365-docs": {
-                title: "M365 Automation",
-                desc: "Microsoft 365 cloud infrastructure, automation workflows, and architectural documentation.",
-                icon: "☁️",
-                links: [
-                    { label: "Architecture Overview", href: "./docs/m365-documentation-archive/index.html" },
-                    { label: "Automation Workflows", href: "./docs/m365-documentation-archive/aspx/Automation.aspx" },
-                    { label: "Artifacts & Index", href: "./docs/m365-documentation-archive/aspx/Artifacts-Index.aspx" },
-                    { label: "Architecture Details", href: "./docs/m365-documentation-archive/aspx/Architecture.aspx" }
-                ]
-            },
-            "scripts": {
-                title: "Script Documentation",
-                desc: "Comprehensive library of PowerShell and automation scripts with validation reports.",
-                icon: "⚙️",
-                links: [
-                    { label: "Script Library", href: "./docs/script-documentation/index.html" },
-                    { label: "Validation Results", href: "./docs/script-documentation/validation-results.json" },
-                    { label: "M365 Automation Scripts", href: "./scripts/docs/script-documentation/library/m365-automation/index.html" },
-                    { label: "Cloud Lab Scripts", href: "./scripts/docs/script-documentation/library/m365-cloud-lab-scripts/index.html" }
-                ]
-            },
-            "brand": {
-                title: "Brand Guide",
-                desc: "Complete brand identity system with logos, color palettes, and design guidelines.",
-                icon: "🎨",
-                links: [
-                    { label: "Brand Guide Archive", href: "./docs/brandguide-archive/index.html" },
-                    { label: "Home", href: "./docs/brandguide-archive/html/Home.html" },
-                    { label: "Brand Guidelines", href: "./docs/brandguide-archive/html/Brand-Guidelines.html" },
-                    { label: "Logos", href: "./docs/brandguide-archive/html/Logos.html" },
-                    { label: "Social Media Kit", href: "./docs/brandguide-archive/html/SocialMediaKit.html" }
-                ]
-            }
-        };
-
-        function updateTransform() {
-            canvas.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-        }
-
-        document.addEventListener("wheel", (e) => {
-            if (!e.ctrlKey) return;
-            if (!e.target.closest(".architecture-viewport")) return;
-
-            e.preventDefault();
-
-            const delta = -e.deltaY * 0.001;
-            scale = Math.min(Math.max(0.6, scale + delta), 1.8);
-
-            updateTransform();
-        }, { passive: false });
-
-        let isDragging = false;
-        let startX, startY;
-
-        canvas.addEventListener("mousedown", (e) => {
-            if (currentLevel === "projects") return;
-            isDragging = true;
-            startX = e.clientX - offsetX;
-            startY = e.clientY - offsetY;
-        });
-
-        document.addEventListener("mousemove", (e) => {
-            if (!isDragging) return;
-
-            offsetX = e.clientX - startX;
-            offsetY = e.clientY - startY;
-
-            updateTransform();
-        });
-
-        document.addEventListener("mouseup", () => {
-            isDragging = false;
-        });
-
-function renderDiagram() {
-            const svg = document.getElementById("architecture-lines");
-            const isProjectsMode = currentLevel === "projects";
-            particleIntervals.forEach(timerId => clearInterval(timerId));
-            particleIntervals = [];
-            canvas.style.minHeight = isProjectsMode ? `${Math.max(600, canvas.closest(".architecture-viewport")?.clientHeight || 600)}px` : "600px";
-            canvas.classList.remove("projects-mode");
-            canvas.classList.remove("arch-locked");
-            setBackControlVisibility(false);
-
-            canvas.querySelectorAll(".arch-card").forEach(card => card.remove());
-            svg.innerHTML = `
-                <g id="line-layer"></g>
-                <g id="particle-layer"></g>
-            `;
-
-            const lineLayer = document.getElementById("line-layer");
-            const particleLayer = document.getElementById("particle-layer");
-
-    function getNodeAnchor(node, position) {
-        const width = node.element ? node.element.offsetWidth : 120;
-        const height = node.element ? node.element.offsetHeight : 30;
-        const x = (typeof node.x === "number" ? node.x : 0) + width / 2;
-
-        if (position === "bottom") {
-            return { x, y: (typeof node.y === "number" ? node.y : 0) + height };
-        }
-
-        return { x, y: typeof node.y === "number" ? node.y : 0 };
-    }
-
-    function drawDrillLine(start, end) {
-        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        const controlY = (start.y + end.y) / 2;
-        const d = `
-        M ${start.x},${start.y}
-        C ${start.x},${controlY}
-          ${end.x},${controlY}
-          ${end.x},${end.y}
-    `;
-
-        path.setAttribute("d", d);
-        path.setAttribute("class", "arch-line highlight project-drill");
-        lineLayer.appendChild(path);
-
-        const timerId = setInterval(() => {
-            createParticle(path, true);
-        }, 720);
-
-        particleIntervals.push(timerId);
-    }
-
-    const nodes = [
-        { id: "root", label: "Jeremy Fontenot Site" },
-        { id: "shell", label: "index.html" },
-
-        { id: "hero", label: "Landing", desc: "Landing entry point and primary branding section." },
-        { id: "about", label: "About", desc: "Professional summary and technical background." },
-        { id: "exp", label: "Experience", desc: "Career timeline and technical roles." },
-        { id: "projects", label: "Projects", desc: "Core system integrations and documentation hubs.", highlight: true },
-
-        { id: "brand", label: "Brand", desc: "Visual identity system and assets." },
-        { id: "tools", label: "Tools", desc: "Operational utilities and workflows." },
-        { id: "certs", label: "Certifications", desc: "Professional certifications and credentials." },
-        { id: "contact", label: "Contact", desc: "Communication entry point and forms." }
-    ];
-
-    const levels = {
-        root: 0,
-        shell: 1,
-
-        hero: 2,
-        about: 2,
-        exp: 2,
-        projects: 2,
-
-        brand: 3,
-        tools: 3,
-        certs: 3,
-        contact: 3
-    };
-
-    function layoutNodes(nodes) {
-        const levelMap = {};
-
-        nodes.forEach(n => {
-            const level = levels[n.id] || 0;
-            if (!levelMap[level]) levelMap[level] = [];
-            levelMap[level].push(n);
-        });
-
-        // Responsive spacing based on viewport width
-        const viewportWidth = canvas.offsetWidth || window.innerWidth;
-        const isMobile = viewportWidth < 600;
-        const isTablet = viewportWidth < 1024;
-        
-        let horizontalSpacing = 160;
-        let verticalSpacing = 140;
-        let canvasWidth = 800;
-
-        if (isMobile) {
-            horizontalSpacing = 100;
-            verticalSpacing = 180;
-            canvasWidth = Math.max(viewportWidth - 40, 300);
-        } else if (isTablet) {
-            horizontalSpacing = 130;
-            verticalSpacing = 160;
-            canvasWidth = viewportWidth - 60;
-        }
-
-        Object.keys(levelMap).forEach(level => {
-            const row = levelMap[level];
-            const y = 60 + level * verticalSpacing;
-
-            row.forEach((node, index) => {
-                const totalWidth = row.length * horizontalSpacing;
-                const startX = (canvasWidth - totalWidth) / 2;
-
-                node.x = startX + index * horizontalSpacing;
-                node.y = y;
-            });
-        });
-
-        return nodes;
-    }
-
-    layoutNodes(nodes);
-
-    const connections = [
-        ["root", "shell"],
-
-        ["shell", "hero"],
-        ["shell", "about"],
-        ["shell", "exp"],
-        ["shell", "projects"],
-
-        ["shell", "brand"],
-        ["shell", "tools"],
-        ["shell", "certs"],
-        ["shell", "contact"]
-    ];
-
-    const graph = {};
-
-    connections.forEach(([from, to]) => {
-        if (!graph[from]) graph[from] = [];
-        graph[from].push(to);
-    });
-
-    function getConnectedNodes(startId) {
-        const visited = new Set();
-        const result = new Set();
-
-        function dfs(node) {
-            if (!graph[node]) return;
-
-            for (const next of graph[node]) {
-                if (!visited.has(next)) {
-                    visited.add(next);
-                    result.add(next);
-                    dfs(next);
-                }
-            }
-        }
-
-        visited.add(startId);
-        dfs(startId);
-
-        return result;
-    }
-
-    nodes.forEach(node => {
-        const el = document.createElement("div");
-        el.className = "arch-card";
-        if (node.highlight) el.classList.add("highlight");
-
-        el.textContent = node.label;
-        el.style.left = node.x + "px";
-        el.style.top = node.y + "px";
-
-        canvas.appendChild(el);
-        node.element = el;
-
-        el.addEventListener("mouseenter", () => {
-            document.querySelectorAll(".arch-line").forEach(l => {
-                l.classList.remove("highlight");
-            });
-
-            if (node.id === "projects") {
-                document.querySelectorAll(".arch-line").forEach(l => {
-                    l.classList.add("highlight");
-                });
-            }
-        });
-
-        el.addEventListener("mouseleave", () => {
-            document.querySelectorAll(".arch-line").forEach(l => {
-                l.classList.remove("highlight");
-            });
-        });
-
-        el.addEventListener("click", (e) => {
-            e.stopPropagation();
-
-            const canvas = document.getElementById("architecture-canvas");
-            const inspector = document.getElementById("arch-inspector-body");
-
-            // Check if this is the Projects node and we're on main level
-            if (node.id === "projects" && currentLevel === "main") {
-                // Switch to projects drill-down view
-                currentLevel = "projects";
-                currentNode = node;
-
-                const activeViewport = canvas.closest(".architecture-viewport");
-                if (activeViewport) {
-                    const headerOffset = 112;
-                    activeViewport.scrollIntoView({ behavior: "smooth", block: "start" });
-                    window.setTimeout(() => {
-                        const rect = activeViewport.getBoundingClientRect();
-                        const delta = rect.top - headerOffset;
-                        if (Math.abs(delta) > 6) {
-                            window.scrollBy({ top: delta, behavior: "smooth" });
-                        }
-                    }, 120);
-                }
-
-                // Reset zoom/pan for a predictable centered drill-down layout.
-                scale = 1;
-                offsetX = 0;
-                offsetY = 0;
-                updateTransform();
-
-                // Clear canvas and render projects
-                canvas.classList.remove("arch-locked");
-                canvas.classList.add("projects-mode");
-                particleIntervals.forEach(timerId => clearInterval(timerId));
-                particleIntervals = [];
-                lineLayer.innerHTML = "";
-                particleLayer.innerHTML = "";
-                canvas.querySelectorAll(".arch-card").forEach(card => card.remove());
-                
-                inspector.innerHTML = `
-                    <strong>Projects & Documentation</strong><br/><br/>
-                    Select a project hub to view detailed documentation and structure.
-                `;
-
-                // Create project cards
-                const projectKeys = Object.keys(projectsData);
-                const projectCount = projectKeys.length;
-                const viewportElement = canvas.closest(".architecture-viewport");
-                const viewportWidth = viewportElement?.clientWidth || canvas.clientWidth || canvas.offsetWidth || window.innerWidth;
-                const viewportHeight = viewportElement?.clientHeight || canvas.clientHeight || canvas.offsetHeight || 600;
-                canvas.style.minHeight = `${Math.max(600, viewportHeight)}px`;
-                const viewportRect = viewportElement?.getBoundingClientRect();
-                const isMobile = window.innerWidth < 600;
-                const isTablet = window.innerWidth < 1024;
-                const isCompactArchitecture = window.innerWidth < 1024;
-                const hiddenTop = Math.max(0, -Math.round(viewportRect?.top || 0));
-                const topGutter = isMobile ? 24 : (isTablet ? 104 : 116);
-                const topSafeY = Math.min(viewportHeight - 220, hiddenTop + topGutter);
-                const inspectorPanel = document.getElementById("arch-inspector");
-                const inspectorVisible = Boolean(inspectorPanel && !inspectorPanel.classList.contains("is-hidden") && !isMobile);
-                const inspectorReservedWidth = inspectorVisible
-                    ? (isCompactArchitecture ? 0 : Math.round((isTablet ? 0.72 : 0.82) * inspectorPanel.offsetWidth) + 20)
-                    : 0;
-                const sidePadding = isMobile ? 16 : isTablet ? 34 : 52;
-                const safeLeft = sidePadding;
-                const safeRight = Math.max(sidePadding, viewportWidth - sidePadding - inspectorReservedWidth);
-                const safeWidth = Math.max(260, safeRight - safeLeft);
-                const centerX = safeLeft + safeWidth / 2;
-                const centerY = isMobile ? Math.max(250, viewportHeight * 0.36) : isTablet ? Math.max(300, viewportHeight * 0.42) : Math.max(320, viewportHeight * 0.44);
-                const angle = (2 * Math.PI) / projectCount;
-                const radius = isMobile ? Math.min(132, safeWidth * 0.28) : isTablet ? Math.min(168, safeWidth * 0.33) : Math.min(212, safeWidth * 0.36);
-                const cardWidth = isMobile ? Math.max(120, Math.min(145, Math.floor((viewportWidth - 48) / 2))) : isTablet ? 160 : 176;
-                const cardHeight = isMobile ? 74 : 80;
-                const horizontalSpread = isTablet
-                    ? Math.min(300, Math.max(246, safeWidth * 0.36))
-                    : Math.min(430, Math.max(340, safeWidth * 0.42));
-                const topSpread = isTablet ? 236 : 286;
-                const bottomSpread = isTablet ? 250 : 306;
-                const mobileGridGap = 16;
-                const mobileGridTop = Math.max(170, Math.round(viewportHeight * 0.18));
-                const mobileGridLeft = Math.max(16, Math.round((viewportWidth - (cardWidth * 2 + mobileGridGap)) / 2));
-                const mobileGridRows = [0, 1].map(row => mobileGridTop + row * 116);
-                const drillLayout = [];
-                const sideRowY = Math.round(centerY - cardHeight / 2);
-                const minScriptGap = isTablet ? 188 : 236;
-                const bottomPadding = 20;
-                const backControlReserve = isMobile ? 76 : 84;
-                const maxScriptY = viewportHeight - cardHeight - backControlReserve - bottomPadding;
-                const scriptRowY = Math.min(maxScriptY, sideRowY + minScriptGap);
-
-                const diamondSlots = !isMobile ? {
-                    "home-lab": {
-                        x: Math.round(centerX - cardWidth / 2),
-                        y: Math.round(Math.max(140, centerY - topSpread - cardHeight))
-                    },
-                    "brand": {
-                        x: Math.round(Math.max(safeLeft, centerX - horizontalSpread - cardWidth)),
-                        y: Math.round(centerY - cardHeight / 2)
-                    },
-                    "m365-docs": {
-                        x: Math.round(Math.min(safeRight - cardWidth, centerX + horizontalSpread)),
-                        y: Math.round(centerY - cardHeight / 2)
-                    },
-                    "scripts": {
-                        x: Math.round(centerX - cardWidth / 2),
-                        y: Math.round(scriptRowY)
-                    }
-                } : null;
-
-                if (diamondSlots) {
-                    const topSafe = Math.max(topSafeY + 8, isTablet ? 146 : 136);
-                    const bottomSafe = 18;
-
-                    let minY = Math.min(
-                        diamondSlots["home-lab"].y,
-                        diamondSlots.brand.y,
-                        diamondSlots["m365-docs"].y,
-                        diamondSlots.scripts.y
-                    );
-
-                    let maxY = Math.max(
-                        diamondSlots.brand.y + cardHeight,
-                        diamondSlots["m365-docs"].y + cardHeight,
-                        diamondSlots.scripts.y + cardHeight
-                    );
-
-                    let shiftY = 0;
-
-                    if (minY < topSafe) {
-                        shiftY += topSafe - minY;
-                    }
-
-                    if (maxY + shiftY > viewportHeight - bottomSafe) {
-                        shiftY -= (maxY + shiftY) - (viewportHeight - bottomSafe);
-                    }
-
-                    if (shiftY !== 0) {
-                        Object.keys(diamondSlots).forEach((slotKey) => {
-                            diamondSlots[slotKey].y = Math.round(diamondSlots[slotKey].y + shiftY);
-                        });
-                    }
-                }
-
-                projectKeys.forEach((key, idx) => {
-                    const project = projectsData[key];
-                    const radialX = centerX + radius * Math.cos(idx * angle - Math.PI / 2) - cardWidth / 2;
-                    const radialY = centerY + radius * Math.sin(idx * angle - Math.PI / 2) - 14;
-                    const rawX = isMobile
-                        ? mobileGridLeft + (idx % 2) * (cardWidth + mobileGridGap)
-                        : (diamondSlots && diamondSlots[key] ? diamondSlots[key].x : radialX);
-                    const x = isMobile
-                        ? rawX
-                        : Math.max(safeLeft, Math.min(safeRight - cardWidth, rawX));
-                    const y = isMobile
-                        ? mobileGridRows[Math.floor(idx / 2)]
-                        : (diamondSlots && diamondSlots[key] ? diamondSlots[key].y : radialY);
-
-                    const projectCard = document.createElement("div");
-                    projectCard.className = "arch-card project-card-drill";
-                    projectCard.textContent = `${project.icon} ${project.title}`;
-                    projectCard.style.left = x + "px";
-                    projectCard.style.top = y + "px";
-                    projectCard.style.width = cardWidth + "px";
-                    projectCard.style.minHeight = cardHeight + "px";
-                    projectCard.style.whiteSpace = "normal";
-                    projectCard.dataset.projectKey = key;
-
-                    projectCard.addEventListener("click", (evt) => {
-                        evt.stopPropagation();
-                        
-                        // Show project details in inspector
-                        const projectData = projectsData[key];
-                        let linksHtml = "<div style='max-height: 400px; overflow-y: auto;'>";
-                        
-                        linksHtml += `<strong>${projectData.icon} ${projectData.title}</strong><br/><br/>`;
-                        linksHtml += `<p style='font-size: 0.85rem; color: #a0b5cf; margin-bottom: 1rem;'>${projectData.desc}</p>`;
-                        linksHtml += "<div style='border-top: 1px solid rgba(56,189,248,0.2); padding-top: 0.8rem;'>";
-                        linksHtml += "<p style='font-size: 0.8rem; font-weight: 600; margin-bottom: 0.6rem; color: #38bdf8;'>Documentation:</p>";
-                        
-                        projectData.links.forEach(link => {
-                            linksHtml += `<a href="${link.href}" target="_blank" rel="noopener noreferrer" style='display: block; padding: 0.5rem 0.8rem; margin-bottom: 0.4rem; background: rgba(56,189,248,0.08); border-left: 2px solid #0ea5e9; color: #38bdf8; text-decoration: none; border-radius: 4px; font-size: 0.85rem; transition: all 0.2s;'>→ ${link.label}</a>`;
-                        });
-                        
-                        linksHtml += "</div></div>";
-                        inspector.innerHTML = linksHtml;
-
-                        // Highlight this project card
-                        document.querySelectorAll(".project-card-drill").forEach(c => c.classList.remove("focused"));
-                        projectCard.classList.add("focused");
-                    });
-
-                    canvas.appendChild(projectCard);
-                    drillLayout.push({ key, x, y, card: projectCard, isAboveHub: y < centerY });
-                });
-
-                if (!isMobile) {
-                    const hub = { x: centerX, y: centerY };
-                    const hubDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                    hubDot.setAttribute("cx", String(hub.x));
-                    hubDot.setAttribute("cy", String(hub.y));
-                    hubDot.setAttribute("r", "5");
-                    hubDot.setAttribute("class", "flow-particle highlight project-hub-dot");
-                    particleLayer.appendChild(hubDot);
-
-                    drillLayout.forEach(item => {
-                        const projectCardHeight = item.card.offsetHeight || cardHeight;
-                        const projectCardWidth = item.card.offsetWidth || cardWidth;
-                        const cardCenterX = item.x + cardWidth / 2;
-                        const cardCenterY = item.y + projectCardHeight / 2;
-
-                        let targetX = cardCenterX;
-                        let targetY = cardCenterY;
-
-                        const dx = cardCenterX - hub.x;
-                        const dy = cardCenterY - hub.y;
-
-                        if (Math.abs(dx) > Math.abs(dy) * 1.15) {
-                            targetX = dx > 0 ? item.x : item.x + projectCardWidth;
-                            targetY = cardCenterY;
-                        } else {
-                            targetX = cardCenterX;
-                            targetY = dy > 0 ? item.y : item.y + projectCardHeight;
-                        }
-
-                        drawDrillLine(
-                            { x: hub.x, y: hub.y },
-                            { x: targetX, y: targetY }
-                        );
-                    });
-                }
-                setBackControlVisibility(true);
-                return;
-            }
-
-            // If we're in projects view and clicking something else, go back
-            if (currentLevel === "projects" && node.id !== "projects") {
-                return;
-            }
-
-            // Standard node click for main level
-            inspector.innerHTML = `
-                <strong>${node.label}</strong><br/><br/>
-                ${node.desc || "No metadata available"}
-            `;
-
-            // toggle lock
-            const isLocked = canvas.classList.contains("arch-locked");
-
-            // reset everything first
-            document.querySelectorAll(".arch-card").forEach(c => {
-                c.classList.remove("focused");
-            });
-
-            document.querySelectorAll(".arch-line").forEach(l => {
-                l.classList.remove("focused");
-            });
-
-            if (!isLocked) {
-                canvas.classList.add("arch-locked");
-
-                el.classList.add("focused");
-
-                const connected = getConnectedNodes(node.id);
-
-                document.querySelectorAll(".arch-line").forEach(l => {
-                    const isRelated = l.dataset.from === node.id || l.dataset.to === node.id;
-                    if (isRelated) {
-                        l.classList.add("focused");
-                    }
-                });
-
-            } else {
-                canvas.classList.remove("arch-locked");
-            }
-        });
-    });
-
-    document.getElementById("architecture-canvas").addEventListener("click", () => {
-        const canvas = document.getElementById("architecture-canvas");
-
-        // If we're in projects view, return to main
-        if (currentLevel === "projects") {
-            currentLevel = "main";
-            currentNode = null;
-            renderDiagram();
-            return;
-        }
-
-        canvas.classList.remove("arch-locked");
-
-        document.querySelectorAll(".arch-card").forEach(c => {
-            c.classList.remove("focused");
-        });
-
-        document.querySelectorAll(".arch-line").forEach(l => {
-            l.classList.remove("focused");
-        });
-    });
-
-
-    function connect(a, b, highlight = false) {
-        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-
-        const start = getNodeAnchor(a, "bottom");
-        const end = getNodeAnchor(b, "top");
-        const startX = start.x;
-        const startY = start.y;
-        const endX = end.x;
-        const endY = end.y;
-
-        // control points for smooth curve
-        const controlY = (startY + endY) / 2;
-
-        const d = `
-        M ${startX},${startY}
-        C ${startX},${controlY}
-          ${endX},${controlY}
-          ${endX},${endY}
-    `;
-
-        path.setAttribute("d", d);
-        path.setAttribute("class", highlight ? "arch-line highlight" : "arch-line");
-        path.dataset.from = a.id;
-        path.dataset.to = b.id;
-
-        lineLayer.appendChild(path);
-
-        const timerId = setInterval(() => {
-            const shouldHighlight = path.classList.contains("highlight");
-            createParticle(path, shouldHighlight);
-        }, 900);
-
-        particleIntervals.push(timerId);
-    }
-
-    function createParticle(path, highlight = false) {
-        const particle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-
-        particle.setAttribute("r", "3");
-        particle.setAttribute("class", highlight ? "flow-particle highlight" : "flow-particle");
-
-        particleLayer.appendChild(particle);
-
-        const length = path.getTotalLength();
-        let progress = 0;
-
-        function animate() {
-            progress += 1.2;
-
-            if (progress > length) {
-                particle.remove();
-                return;
-            }
-
-            const point = path.getPointAtLength(progress);
-
-            particle.setAttribute("cx", point.x);
-            particle.setAttribute("cy", point.y);
-
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-    }
-
-    const nodeMap = Object.fromEntries(nodes.map(n => [n.id, n]));
-
-    connections.forEach(([from, to]) => {
-        connect(nodeMap[from], nodeMap[to], to === "projects");
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    renderDiagram();
-
-    if (backControl) {
-        backControl.addEventListener("click", (evt) => {
-            evt.stopPropagation();
-            if (currentLevel !== "projects") return;
-            currentLevel = "main";
-            currentNode = null;
-            renderDiagram();
-        });
-    }
-
-    const architectureSection = document.getElementById("architecture");
-    const inspector = document.getElementById("arch-inspector");
-    const hideInspectorButton = document.getElementById("arch-inspector-hide");
-    const showInspectorButton = document.getElementById("arch-inspector-show");
-    let inspectorManuallyHidden = false;
-
-    function isArchitectureSectionVisible() {
-        if (!architectureSection) return false;
-
-        const rect = architectureSection.getBoundingClientRect();
-        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-        return rect.top < viewportHeight * 0.85 && rect.bottom > viewportHeight * 0.2;
-    }
-
-    function syncInspectorVisibility() {
-        if (!inspector || !showInspectorButton) return;
-
-        const inArchitectureView = isArchitectureSectionVisible();
-
-        if (!inArchitectureView) {
-            inspector.classList.add("is-hidden");
-            showInspectorButton.classList.remove("is-visible");
-            return;
-        }
-
-        if (inspectorManuallyHidden) {
-            inspector.classList.add("is-hidden");
-            showInspectorButton.classList.add("is-visible");
-        } else {
-            inspector.classList.remove("is-hidden");
-            showInspectorButton.classList.remove("is-visible");
-        }
-    }
-
-    if (inspector && hideInspectorButton && showInspectorButton) {
-        hideInspectorButton.addEventListener("click", () => {
-            inspectorManuallyHidden = true;
-            syncInspectorVisibility();
-        });
-
-        showInspectorButton.addEventListener("click", () => {
-            inspectorManuallyHidden = false;
-            syncInspectorVisibility();
-        });
-
-        window.addEventListener("scroll", syncInspectorVisibility, { passive: true });
-        window.addEventListener("resize", syncInspectorVisibility);
-        syncInspectorVisibility();
-    }
-
-    let resizeRenderTimer = null;
-    window.addEventListener("resize", () => {
-        if (resizeRenderTimer) {
-            clearTimeout(resizeRenderTimer);
-        }
-
-        resizeRenderTimer = setTimeout(() => {
-            renderDiagram();
-        }, 120);
-    });
-});
-        </script>
+    <script src="./script.min.js" defer></script>
+    <script src="./architecture.min.js" defer></script>
 
 </body>
 </html>
+

@@ -17,8 +17,90 @@ if (heroTagline) {
     heroTagline.textContent = SITE_CONFIG.tagline;
 }
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // Respect reduced-motion preferences while keeping smooth navigation for most users.
-const smoothBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+const smoothBehavior = prefersReducedMotion ? 'auto' : 'smooth';
+
+const heroVisual = document.querySelector('.hero-visual');
+const heroMainLogo = document.querySelector('.hero-main-logo');
+const supportsHoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+if (heroVisual && heroMainLogo && !prefersReducedMotion && supportsHoverPointer) {
+    const maxTilt = 11;
+
+    heroVisual.addEventListener('pointermove', (event) => {
+        const rect = heroVisual.getBoundingClientRect();
+        const relativeX = (event.clientX - rect.left) / rect.width;
+        const relativeY = (event.clientY - rect.top) / rect.height;
+
+        const tiltY = (relativeX - 0.5) * (maxTilt * 2);
+        const tiltX = (0.5 - relativeY) * (maxTilt * 2);
+
+        heroMainLogo.style.setProperty('--tilt-x', `${tiltX.toFixed(2)}deg`);
+        heroMainLogo.style.setProperty('--tilt-y', `${tiltY.toFixed(2)}deg`);
+    });
+
+    const resetTilt = () => {
+        heroMainLogo.style.setProperty('--tilt-x', '0deg');
+        heroMainLogo.style.setProperty('--tilt-y', '0deg');
+    };
+
+    heroVisual.addEventListener('pointerleave', resetTilt);
+    heroVisual.addEventListener('pointercancel', resetTilt);
+}
+
+const heroLiveStats = document.querySelectorAll('.hero-live-stat-value[data-target]');
+if (heroLiveStats.length > 0) {
+    const animateStatValue = (node) => {
+        const target = Number.parseInt(node.dataset.target || '0', 10);
+        if (!Number.isFinite(target) || target <= 0) {
+            return;
+        }
+
+        const suffix = node.textContent.trim().replace(/[\d\s]/g, '') || '+';
+        if (prefersReducedMotion) {
+            node.textContent = `${target}${suffix}`;
+            return;
+        }
+
+        const duration = 1100;
+        const startTime = performance.now();
+
+        const updateFrame = (now) => {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            const value = Math.max(1, Math.round(target * easedProgress));
+            node.textContent = `${value}${suffix}`;
+
+            if (progress < 1) {
+                window.requestAnimationFrame(updateFrame);
+            }
+        };
+
+        window.requestAnimationFrame(updateFrame);
+    };
+
+    const triggerStats = () => {
+        heroLiveStats.forEach((node) => animateStatValue(node));
+    };
+
+    const heroSection = document.getElementById('home');
+    if (heroSection && 'IntersectionObserver' in window && !prefersReducedMotion) {
+        const heroObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    triggerStats();
+                    observer.disconnect();
+                }
+            });
+        }, { threshold: 0.42 });
+
+        heroObserver.observe(heroSection);
+    } else {
+        triggerStats();
+    }
+}
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function onAnchorClick(e) {
@@ -60,6 +142,65 @@ if (navToggle && navLinks) {
 
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
+
+const certFilterButtons = document.querySelectorAll('.cert-filter-btn[data-filter]');
+const certItems = document.querySelectorAll('.cert-grid .cert-item');
+
+if (certItems.length > 0) {
+    certItems.forEach((item) => {
+        if (!item.querySelector('.cert-verified-badge')) {
+            const verifiedBadge = document.createElement('span');
+            verifiedBadge.className = 'cert-verified-badge';
+            verifiedBadge.textContent = 'Verified';
+            item.appendChild(verifiedBadge);
+        }
+
+        const authority = item.dataset.certAuthority || item.querySelector('.cert-provider')?.textContent?.trim() || 'Issuing Authority';
+        const year = item.dataset.certYear || 'See credential';
+
+        if (!item.querySelector('.cert-hover-meta')) {
+            const hoverMeta = document.createElement('div');
+            hoverMeta.className = 'cert-hover-meta';
+            hoverMeta.innerHTML = `
+                <span class="cert-hover-label">Issuing Authority</span>
+                <span class="cert-hover-value">${authority}</span>
+                <span class="cert-hover-label">Year</span>
+                <span class="cert-hover-value">${year}</span>
+            `;
+            item.appendChild(hoverMeta);
+        }
+    });
+}
+
+if (certFilterButtons.length > 0 && certItems.length > 0) {
+    const setCertFilter = (filter) => {
+        certFilterButtons.forEach((button) => {
+            const isActive = button.dataset.filter === filter;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+
+        certItems.forEach((item) => {
+            const categories = (item.dataset.certCategories || '')
+                .toLowerCase()
+                .split(',')
+                .map((entry) => entry.trim())
+                .filter(Boolean);
+
+            const shouldShow = filter === 'all' || categories.includes(filter);
+            item.classList.toggle('is-hidden', !shouldShow);
+        });
+    };
+
+    certFilterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const selected = button.dataset.filter || 'all';
+            setCertFilter(selected);
+        });
+    });
+
+    setCertFilter('all');
+}
 
 if (contactForm && formStatus) {
     contactForm.addEventListener('submit', (event) => {

@@ -15,6 +15,12 @@ This repository contains the source for my personal website and its published Gi
 
 ## Local Workflow
 
+Build minified frontend assets before publishing:
+
+```powershell
+pwsh -File .\scripts\build-minified-assets.ps1
+```
+
 The site is promoted from this source folder into the GitHub Pages repository with:
 
 ```powershell
