@@ -476,6 +476,16 @@ textarea:focus-visible {
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.01em;
+    background: rgba(11, 16, 32, 0.52);
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    white-space: nowrap;
+}
+
+.hero-live-stat-value {
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-right: 0.2rem;
+}
 
 /* Global consistency and performance reinforcement */
 :root {
@@ -560,16 +570,6 @@ nav {
         transition: none !important;
         transform: none !important;
     }
-}
-    background: rgba(11, 16, 32, 0.52);
-    border: 1px solid rgba(148, 163, 184, 0.28);
-    white-space: nowrap;
-}
-
-.hero-live-stat-value {
-    color: #ffffff;
-    font-family: 'Space Grotesk', sans-serif;
-    margin-right: 0.2rem;
 }
 
 .hero-proof {
