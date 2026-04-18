@@ -6,10 +6,12 @@
     display: inline-block;
     filter: none;
     color: var(--sky-blue);
-    transition: color 0.2s;
+    fill: currentColor;
+    transition: color 0.2s, fill 0.2s;
 }
 .footer-links a:hover img.social-icon {
     color: var(--tangerine);
+    fill: var(--tangerine);
 }
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
