@@ -2459,28 +2459,6 @@ footer {
     }
 }
 
-@keyframes particleGlow {
-    0%, 100% {
-        filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.6));
-        r: 3;
-    }
-    50% {
-        filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.9));
-        r: 4;
-    }
-}
-
-@keyframes particleGlowWarm {
-    0%, 100% {
-        filter: drop-shadow(0 0 6px rgba(232, 11, 130, 0.8));
-        r: 3;
-    }
-    50% {
-        filter: drop-shadow(0 0 10px rgba(232, 11, 130, 1));
-        r: 4;
-    }
-}
-
 /* Click-to-focus system */
 .arch-locked .arch-card {
     opacity: 1;
@@ -3481,88 +3459,6 @@ footer {
     }
 }
 
-.architecture-section {
-    position: relative;
-    scroll-margin-top: 110px;
-    background:
-        radial-gradient(circle at 12% 10%, rgba(56, 189, 248, 0.08) 0, rgba(56, 189, 248, 0) 32%),
-        linear-gradient(155deg, #f8fbff 0%, #eef4ff 58%, #eaf2ff 100%);
-    overflow: hidden;
-}
-
-.architecture-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.06) 0, transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(14, 165, 233, 0.05) 0, transparent 45%);
-    pointer-events: none;
-    z-index: 0;
-}
-
-.architecture-section > * {
-    position: relative;
-    z-index: 1;
-}
-
-.architecture-section h2 {
-    color: var(--navy);
-    animation: fadeInDown 0.7s ease 0.1s both;
-}
-
-.architecture-section .container > p {
-    max-width: 78ch;
-    margin: 0 auto 1.4rem;
-    color: var(--slate);
-    text-align: center;
-    animation: fadeInUp 0.7s ease 0.2s both;
-}
-
-.architecture-content::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 14% 10%, rgba(56, 189, 248, 0.08), transparent 38%),
-        radial-gradient(circle at 86% 90%, rgba(14, 165, 233, 0.05), transparent 45%);
-    pointer-events: none;
-    z-index: 1;
-}
-
-.architecture-content::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, transparent 0%, rgba(56, 189, 248, 0.03) 50%, transparent 100%);
-    pointer-events: none;
-    opacity: 0;
-    animation: shimmer 3s ease-in-out infinite;
-    z-index: 1;
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 @keyframes shimmer {
     0%, 100% {
         opacity: 0;
@@ -3718,25 +3614,6 @@ footer {
 /* Dimmed state (we’ll use this in JS next step) */
 .arch-dim {
     opacity: 0.25;
-}
-
-.arch-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-}
-
-.arch-card:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 0 28px rgba(56, 189, 248, 0.45), 0 10px 30px rgba(0, 0, 0, 0.3);
-    border-color: rgba(56, 189, 248, 0.6);
-}
-
-.arch-card:hover::before {
-    opacity: 1;
 }
 
 .project-card-drill {
