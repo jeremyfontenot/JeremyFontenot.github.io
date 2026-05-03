@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Identity and Access</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        ul { line-height: 1.7; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .callout { background: #f1f5f9; border-left: 4px solid #0ea5e9; padding: 10px 12px; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Identity and Access Management</h1>
+        <p><a href="./index.html">Back to Home Lab Documentation Hub</a></p>
+
+        <p class="callout">Scope: user lifecycle, group-based authorization, delegated admin boundaries, and policy validation in AD.</p>
+
+        <h2>Identity Lifecycle Process</h2>
+        <ul>
+            <li>Provision: create user, assign baseline groups, enforce password policy.</li>
+            <li>Modify: role transitions update group membership and access rights.</li>
+            <li>Deprovision: disable account, remove privileged groups, archive metadata.</li>
+        </ul>
+
+        <h2>Access Control Model</h2>
+        <ul>
+            <li>Group-based assignment preferred over direct user permissions.</li>
+            <li>Privileged groups are separated from standard operational groups.</li>
+            <li>Administrative tasks are delegated where possible for auditability.</li>
+        </ul>
+
+        <h2>Validation Checklist</h2>
+        <ul>
+            <li>New user receives only expected resource access.</li>
+            <li>Role change updates effective access within defined SLA window.</li>
+            <li>Deprovisioned accounts cannot authenticate to domain resources.</li>
+        </ul>
+    </main>
+</body>
+</html>

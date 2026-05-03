@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise-Grade Home Lab Documentation</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f8fafc;
+            color: #0f172a;
+        }
+
+        .wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem 3rem;
+        }
+
+        .panel {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .meta-item {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 0.75rem;
+        }
+
+        code {
+            background: #e2e8f0;
+            border-radius: 4px;
+            padding: 0.1rem 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="panel">
+            <h1>Enterprise-Grade Home Lab</h1>
+            <p>A professional learning environment simulating real-world enterprise IT infrastructure, including virtualization, identity services, perimeter security, and centralized observability.</p>
+            <p><strong>Documentation set restored and expanded.</strong> Use the links below for detailed infrastructure and operations pages.</p>
+            <ul>
+                <li><a href="../../curated/web/infrastructure-and-network.html">Infrastructure and Network</a></li>
+                <li><a href="../../curated/web/operations-and-monitoring.html">Operations and Monitoring</a></li>
+                <li><a href="../../curated/web/architecture-and-topology.html">Architecture and Topology</a></li>
+                <li><a href="../../curated/web/identity-and-access.html">Identity and Access Management</a></li>
+                <li><a href="../../curated/web/security-baseline.html">Security Baseline and Hardening</a></li>
+                <li><a href="../../curated/web/monitoring-and-logging.html">Monitoring and Logging Strategy</a></li>
+                <li><a href="../../curated/web/operations-runbook.html">Operations Runbook</a></li>
+                <li><a href="../../curated/web/backup-and-disaster-recovery.html">Backup and Disaster Recovery</a></li>
+                <li><a href="../../curated/web/change-management-and-validation.html">Change Management and Validation</a></li>
+                <li><a href="../../curated/web/asset-inventory.html">Asset Inventory</a></li>
+                <li><a href="../../curated/web/validation-report.html">Validation Report</a></li>
+            </ul>
+        </div>
+
+        <div class="panel" id="stack">
+            <h2>Infrastructure Snapshot</h2>
+            <div class="meta-grid">
+                <div class="meta-item"><strong>Domain</strong><br>ad.jeremyfontenot.online</div>
+                <div class="meta-item"><strong>Primary Hardware</strong><br>Dell R710</div>
+                <div class="meta-item"><strong>Memory</strong><br>24 GB RAM</div>
+                <div class="meta-item"><strong>Storage</strong><br>750 GB</div>
+                <div class="meta-item"><strong>Edge Router</strong><br>TP-Link Archer AX1800</div>
+                <div class="meta-item"><strong>Platform</strong><br>Proxmox virtualization</div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Key Technologies</h2>
+            <ul>
+                <li>Proxmox for VM lifecycle and infrastructure segmentation</li>
+                <li>Windows Server 2022 Active Directory for identity and policy management</li>
+                <li>RHEL 9 workloads for Linux administration and service hosting</li>
+                <li>pfSense firewall for routing, segmentation, and perimeter controls</li>
+                <li>Apache and Nginx for internal and external web service scenarios</li>
+                <li>Suricata and Snort for IDS/IPS-focused traffic inspection</li>
+                <li>Zabbix, Wazuh, and Graylog for monitoring, detection, and centralized logging</li>
+            </ul>
+        </div>
+
+        <div class="panel">
+            <h2>Operational Scope</h2>
+            <ul>
+                <li>Active Directory user/group lifecycle simulation</li>
+                <li>Network design, VLAN concepts, and firewall rule testing</li>
+                <li>Linux and Windows server hardening workflows</li>
+                <li>Security event visibility and log analysis pipelines</li>
+                <li>Cloud integration readiness for Microsoft 365 and hybrid identity patterns</li>
+            </ul>
+        </div>
+
+        <div class="panel">
+            <h2>Documentation Goals</h2>
+            <ul>
+                <li>Demonstrate enterprise-style architecture decisions in a personal lab context</li>
+                <li>Capture repeatable build and validation steps for interview walkthroughs</li>
+                <li>Maintain a living portfolio of infrastructure, security, and automation practice</li>
+            </ul>
+            <p>Primary source assets are maintained alongside your project repositories and referenced by this site.</p>
+        </div>
+
+        <div class="panel">
+            <h2>Documentation Governance</h2>
+            <ul>
+                <li>Update change records for all impactful topology, security, or identity modifications.</li>
+                <li>Re-run validation after documentation edits and major lab changes.</li>
+                <li>Keep inventory and runbooks synchronized with deployed infrastructure state.</li>
+                <li>Store supporting scripts and artifacts in source-controlled repositories.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

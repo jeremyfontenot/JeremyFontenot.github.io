@@ -1,0 +1,43 @@
+:root {
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --accent-primary: #38BDF8;
+  --accent-secondary: #0EA5E9;
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --effect-glow: rgba(56, 189, 248, 0.6);
+  --effect-grid-hex: rgba(56, 189, 248, 0.3);
+
+  --font-primary: "Inter", sans-serif;
+  --font-code: "Roboto Mono", monospace;
+
+  --logo-min-icon-size: 64px;
+  --logo-min-full-size: 120px;
+  --logo-clear-space: 20px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+.brand-surface {
+  background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.button-primary {
+  background-color: var(--accent-secondary);
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+.glow {
+  box-shadow: 0 0 15px var(--effect-glow);
+}
+
+.code, code, pre {
+  font-family: var(--font-code);
+}

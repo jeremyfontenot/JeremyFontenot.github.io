@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Search | Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .search-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .search-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 2rem;
+        }
+
+        .search-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #00eaff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .search-input-wrapper {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #00eaff;
+            background: rgba(0, 234, 255, 0.05);
+            color: #fff;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: inherit;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 20px rgba(0, 234, 255, 0.3);
+            background: rgba(0, 234, 255, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.25rem;
+            border: 2px solid #a78bfa;
+            background: rgba(167, 139, 250, 0.1);
+            color: #a78bfa;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #a78bfa;
+            color: #0a0e27;
+            box-shadow: 0 0 20px rgba(167, 139, 250, 0.3);
+        }
+
+        .results-info {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .docs-results {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .doc-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 234, 255, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .doc-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #00eaff;
+            box-shadow: 0 8px 32px rgba(0, 234, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .doc-category {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: rgba(167, 139, 250, 0.2);
+            color: #a78bfa;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+
+        .doc-category.archive {
+            background: rgba(236, 72, 153, 0.2);
+            color: #ec4899;
+        }
+
+        .doc-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #00eaff;
+        }
+
+        .doc-path {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.75rem;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+
+        .doc-excerpt {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .doc-excerpt em {
+            background: rgba(0, 234, 255, 0.2);
+            color: #00eaff;
+            font-style: normal;
+            padding: 0 0.3rem;
+            border-radius: 4px;
+        }
+
+        .doc-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 234, 255, 0.1);
+            color: #00eaff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 234, 255, 0.3);
+        }
+
+        .doc-link:hover {
+            background: rgba(0, 234, 255, 0.2);
+            box-shadow: 0 0 10px rgba(0, 234, 255, 0.2);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .empty-state svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #00eaff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            gap: 1rem;
+        }
+
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(0, 234, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 234, 255, 0.2);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00eaff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .search-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .search-input-wrapper {
+                width: 100%;
+                min-width: auto;
+            }
+
+            .filter-buttons {
+                width: 100%;
+            }
+
+            .doc-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Portfolio</div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#skills">Skills</a></li>
+            <li><a href="../#projects">Projects</a></li>
+            <li><a href="../#experience">Experience</a></li>
+            <li><a href="../#certifications">Certifications</a></li>
+            <li><a href="./index.html">Documentation</a></li>
+            <li><a href="../#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <a href="./index.html" class="back-link">← Back to Documentation Hub</a>
+
+        <div class="search-header">
+            <h1>Documentation Search</h1>
+            <p>Search across all portfolio documentation</p>
+        </div>
+
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="searchInput" 
+                    placeholder="Search documentation... (keywords, skills, projects)"
+                    autocomplete="off"
+                >
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="skills">Skills</button>
+                <button class="filter-btn" data-filter="projects">Projects</button>
+                <button class="filter-btn" data-filter="architecture">Architecture</button>
+                <button class="filter-btn" data-filter="scripts">Scripts</button>
+                <button class="filter-btn" data-filter="experience">Experience</button>
+                <button class="filter-btn" data-filter="certifications">Certs</button>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number" id="totalDocs">16</div>
+                <div class="stat-label">Total Documents</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="resultCount">0</div>
+                <div class="stat-label">Results Found</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="folderCount">1</div>
+                <div class="stat-label">Folders Indexed</div>
+            </div>
+        </div>
+
+        <div class="results-info">
+            <span id="resultsText">Type to search documentation...</span>
+        </div>
+
+        <div class="docs-results" id="resultsContainer"></div>
+    </div>
+
+    <script>
+        // Documentation index with metadata
+        const docsIndex = [
+            {
+                title: 'Cloud Administration',
+                category: 'skills',
+                path: 'skills/cloud.html',
+                mdPath: 'skills/cloud.md',
+                folder: 'docs',
+                content: 'Administration of Microsoft 365, Azure, and cloud identity systems with a focus on automation and governance. Microsoft 365 administration, Exchange Online, Teams provisioning, SharePoint Online, Entra ID'
+            },
+            {
+                title: 'Automation & PowerShell',
+                category: 'skills',
+                path: 'skills/automation.html',
+                mdPath: 'skills/automation.md',
+                folder: 'docs',
+                content: 'PowerShell scripting for infrastructure automation, M365, and endpoint management'
+            },
+            {
+                title: 'Identity Management',
+                category: 'skills',
+                path: 'skills/identity.html',
+                mdPath: 'skills/identity.md',
+                folder: 'docs',
+                content: 'Entra ID (Azure AD), Active Directory, identity governance, conditional access, and hybrid identity scenarios'
+            },
+            {
+                title: 'Endpoint Management',
+                category: 'skills',
+                path: 'skills/endpoint.html',
+                mdPath: 'skills/endpoint.md',
+                folder: 'docs',
+                content: 'Intune device management, Windows 11 deployment, endpoint protection, and device compliance'
+            },
+            {
+                title: 'Infrastructure & Monitoring',
+                category: 'skills',
+                path: 'skills/infrastructure.html',
+                mdPath: 'skills/infrastructure.md',
+                folder: 'docs',
+                content: 'Infrastructure as code, virtualization, Proxmox, Windows Server, Linux, monitoring with Zabbix and Wazuh'
+            },
+            {
+                title: 'Cloud Monitoring',
+                category: 'skills',
+                path: 'skills/monitoring.html',
+                mdPath: 'skills/monitoring.md',
+                folder: 'docs',
+                content: 'Application Insights, Log Analytics, Azure Monitor, security monitoring, alerting'
+            },
+            {
+                title: 'Home Lab Infrastructure',
+                category: 'projects',
+                path: 'projects/home-lab.html',
+                mdPath: 'projects/home-lab.md',
+                folder: 'docs',
+                content: 'Enterprise-grade home lab with Dell R710, Proxmox VE, Windows Server 2022 AD DS, RHEL 9, pfSense, Wazuh, and Zabbix'
+            },
+            {
+                title: 'Microsoft 365 Lab',
+                category: 'projects',
+                path: 'projects/m365-lab.html',
+                mdPath: 'projects/m365-lab.md',
+                folder: 'docs',
+                content: 'Microsoft 365 Business Premium lab with Exchange Online, Teams, SharePoint, and Entra ID'
+            },
+            {
+                title: 'Home Lab Architecture',
+                category: 'architecture',
+                path: 'architecture/home-lab-architecture.html',
+                mdPath: 'architecture/home-lab-architecture.md',
+                folder: 'docs',
+                content: 'Architecture design for Dell R710 enterprise lab with virtualization, networking, and monitoring'
+            },
+            {
+                title: 'Microsoft 365 Architecture',
+                category: 'architecture',
+                path: 'architecture/m365-architecture.html',
+                mdPath: 'architecture/m365-architecture.md',
+                folder: 'docs',
+                content: 'Cloud architecture for Microsoft 365 hybrid deployment with Entra ID and governance'
+            },
+            {
+                title: 'PowerShell Scripts',
+                category: 'scripts',
+                path: 'scripts/script-documentation.html',
+                mdPath: 'scripts/script-documentation.md',
+                folder: 'docs',
+                content: 'Documentation for PowerShell automation scripts including M365, Azure, and infrastructure management'
+            },
+            {
+                title: 'Validation & Testing',
+                category: 'scripts',
+                path: 'scripts/validation.html',
+                mdPath: 'scripts/validation.md',
+                folder: 'docs',
+                content: 'Testing and validation procedures for infrastructure, automation, and cloud configurations'
+            },
+            {
+                title: 'Professional Experience',
+                category: 'experience',
+                path: 'experience/experience.html',
+                mdPath: 'experience/experience.md',
+                folder: 'docs',
+                content: 'IT professional experience in cloud administration, infrastructure management, and automation'
+            },
+            {
+                title: 'Certifications',
+                category: 'certifications',
+                path: 'certifications/certifications.html',
+                mdPath: 'certifications/certifications.md',
+                folder: 'docs',
+                content: 'Professional certifications including Microsoft, CompTIA, Cisco, and Google Cloud'
+            },
+            {
+                title: 'Brand Guide',
+                category: 'branding',
+                path: 'brand-guide/branding.html',
+                mdPath: 'brand-guide/branding.md',
+                folder: 'docs',
+                content: 'Portfolio brand identity, design principles, color schemes, and visual guidelines'
+            },
+            {
+                title: 'Documentation Hub',
+                category: 'documentation',
+                path: 'index.html',
+                mdPath: 'index.md',
+                folder: 'docs',
+                content: 'Central documentation hub with links to all portfolio documentation sections and resources'
+            }
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('resultsContainer');
+        const resultsText = document.getElementById('resultsText');
+        const resultCount = document.getElementById('resultCount');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        let currentFilter = 'all';
+
+        // Initialize
+        renderResults([]);
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            performSearch(query);
+        });
+
+        // Filter functionality
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                performSearch(searchInput.value.toLowerCase().trim());
+            });
+        });
+
+        function performSearch(query) {
+            if (!query) {
+                renderResults([]);
+                resultsText.textContent = 'Type to search documentation...';
+                return;
+            }
+
+            let results = docsIndex.filter(doc => {
+                const matchesQuery = 
+                    doc.title.toLowerCase().includes(query) ||
+                    doc.content.toLowerCase().includes(query) ||
+                    doc.category.toLowerCase().includes(query);
+                
+                const matchesFilter = currentFilter === 'all' || doc.category === currentFilter;
+                
+                return matchesQuery && matchesFilter;
+            });
+
+            renderResults(results);
+            resultCount.textContent = results.length;
+            resultsText.textContent = `Found ${results.length} document${results.length !== 1 ? 's' : ''} matching "${query}"`;
+        }
+
+        function renderResults(results) {
+            if (results.length === 0 && searchInput.value) {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <p><strong>No results found</strong></p>
+                        <p style="font-size: 0.9rem;">Try different keywords or browse categories</p>
+                    </div>
+                `;
+                return;
+            }
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '';
+                return;
+            }
+
+            resultsContainer.innerHTML = results.map(doc => `
+                <div class="doc-card">
+                    <span class="doc-category ${doc.folder === 'archive' ? 'archive' : ''}">${doc.category}</span>
+                    <div class="doc-title">${doc.title}</div>
+                    <div class="doc-path">${doc.folder}/${doc.mdPath}</div>
+                    <div class="doc-excerpt">${doc.content}</div>
+                    <div class="doc-footer">
+                        <a href="${doc.path}" class="doc-link">
+                            View Document
+                            <span>→</span>
+                        </a>
+                        <span style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">📄 ${doc.folder}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Navbar toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', navLinks.classList.contains('is-open'));
+            });
+
+            // Close menu when link clicked
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('is-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

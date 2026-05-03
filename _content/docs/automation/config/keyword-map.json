@@ -1,0 +1,36 @@
+{
+    "brand": "curated/brandguide",
+
+    "Scripts": "curated/script-documentation",
+    "script": "curated/script-documentation",
+    "Automation": "curated/script-documentation",
+    "Power": "curated/script-documentation",
+    "Cleanup": "curated/script-documentation",
+
+    "Home": "curated/home-lab",
+    "Lab": "curated/home-lab",
+    "Setup": "curated/home-lab",
+    "Artifacts": "curated/home-lab",
+
+    "architecture": "curated/architecture",
+    "identity": "curated/identity",
+    "security": "curated/security",
+    "validation": "curated/security",
+
+    "Exchange": "curated/exchange-online",
+    "Online": "curated/exchange-online",
+    "Platform": "curated/exchange-online",
+
+    "Endpoint": "curated/endpoint-management",
+    "Intune": "curated/endpoint-management",
+    "Conditional": "curated/endpoint-management",
+
+    "Overview": "curated/overview",
+    "management": "curated/overview",
+
+    "Portfolio": "curated/portfolio",
+
+    ".ps1": "curated/scripts",
+    ".aspx": "curated/web",
+    ".html": "curated/web"
+}

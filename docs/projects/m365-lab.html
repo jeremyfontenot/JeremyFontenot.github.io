@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M365 Personal Cloud Lab | Documentation</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="section">
+  <div class="container">
+
+    <p class="doc-nav"><a href="index.html">← Back to Projects</a></p>
+
+    <h1>M365 Personal Cloud Lab</h1>
+    <p class="lead">
+      A fully automated Microsoft 365 Business Premium environment built using PowerShell‑only
+      administration across Microsoft Graph, Exchange Online, Teams, Intune, and SharePoint.
+      Designed as a historical case study demonstrating enterprise‑grade identity, security,
+      automation, and documentation practices.
+    </p>
+
+    <hr>
+
+    <h2>Lab Architecture Overview</h2>
+    <p><strong>Tenant:</strong> jeremyfontenot.online</p>
+    <p><strong>Documentation Site:</strong> https://jeremyfontenot.sharepoint.com/sites/M365-Documentation</p>
+
+    <ul>
+      <li><strong>Users:</strong> user1@jeremyfontenot.online, user2@jeremyfontenot.online</li>
+      <li><strong>Security Group:</strong> Lab‑Security‑Users</li>
+      <li><strong>M365 Group / Team:</strong> Lab‑M365‑Group (General, IT‑Operations)</li>
+      <li><strong>Shared Mailbox:</strong> labshared@jeremyfontenot.online</li>
+      <li><strong>Conditional Access:</strong> Require MFA for All Users</li>
+      <li><strong>Intune:</strong> Win10 Compliance Baseline + Update Ring</li>
+      <li><strong>SharePoint:</strong> Communication site for documentation</li>
+    </ul>
+
+    <hr>
+
+    <h2>Security Posture Summary</h2>
+    <ul>
+      <li>MFA enforced for all users via a single Conditional Access policy.</li>
+      <li>Non‑default directory roles removed; least‑privilege maintained.</li>
+      <li>Shared mailbox auditing enabled.</li>
+      <li>Intune compliance requires password + idle lock.</li>
+      <li>Automated Windows Update Ring with defined active hours.</li>
+      <li>SharePoint documentation site isolated with clean permissions.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Admin Skills Demonstrated</h2>
+    <ul>
+      <li>Microsoft Graph SDK (users, groups, CA, Intune, SharePoint file upload)</li>
+      <li>Exchange Online PowerShell (shared mailbox, permissions, auditing)</li>
+      <li>Teams provisioning via Graph (team + channels)</li>
+      <li>Intune policy creation and assignment</li>
+      <li>SharePoint Online site creation and content automation</li>
+      <li>Conditional Access configuration</li>
+      <li>Tenant hygiene and idempotent scripting patterns</li>
+    </ul>
+
+    <hr>
+
+    <h2>Resume‑Ready Summary</h2>
+    <p>
+      Built a complete Microsoft 365 Business Premium lab using PowerShell only:
+      automated identity, access, Exchange, Teams, Intune, and SharePoint; enforced MFA;
+      created shared mailbox and Teams structure; deployed baseline device policies; and
+      produced structured documentation artifacts.
+    </p>
+
+    <hr>
+
+    <h2>PowerShell Modules Used</h2>
+    <ul>
+      <li>Microsoft.Graph</li>
+      <li>ExchangeOnlineManagement</li>
+      <li>MicrosoftTeams</li>
+      <li>Microsoft.Online.SharePoint.PowerShell</li>
+    </ul>
+
+  </div>
+</body>
+</html>

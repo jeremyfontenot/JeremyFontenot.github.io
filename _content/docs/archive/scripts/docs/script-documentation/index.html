@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Script Validation Documentation</title>
+<style>body{font-family:Segoe UI,Tahoma,sans-serif;background:#f8fafc;color:#0f172a;margin:0;padding:24px}main{max-width:1200px;margin:0 auto}table{width:100%;border-collapse:collapse;background:#fff;margin-top:16px}th,td{border:1px solid #e2e8f0;padding:8px;text-align:left;font-size:14px}th{background:#e2e8f0}.ok{color:#047857;font-weight:600}.bad{color:#b91c1c;font-weight:600}.card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:16px;margin-bottom:12px}a{color:#0369a1;text-decoration:none}a:hover{text-decoration:underline}</style></head><body><main>
+<h1>Script Validation Documentation</h1><div class='card'><p>Total scripts: <strong>1337</strong></p><p>Syntax valid: <strong>1335</strong></p><p>Syntax issues: <strong>2</strong></p><p>Not copied (offline/unavailable): <strong>0</strong></p><p>Artifacts: <a href='./validation-results.json'>validation-results.json</a> | <a href='./validation-results.csv'>validation-results.csv</a></p></div>
+<div class='card'><h2>Summary by Source</h2><table><thead><tr><th>Source</th><th>Total</th><th>Valid</th><th>Invalid</th></tr></thead><tbody>
+<tr><td>m365-automation</td><td>5</td><td class='ok'>5</td><td class='bad'>0</td></tr>
+<tr><td>m365-cloud-lab-scripts</td><td>8</td><td class='ok'>8</td><td class='bad'>0</td></tr>
+<tr><td>m365-scripts</td><td>4</td><td class='ok'>4</td><td class='bad'>0</td></tr>
+<tr><td>powershell</td><td>788</td><td class='ok'>786</td><td class='bad'>2</td></tr>
+<tr><td>scriptpack</td><td>8</td><td class='ok'>8</td><td class='bad'>0</td></tr>
+<tr><td>scripts</td><td>2</td><td class='ok'>2</td><td class='bad'>0</td></tr>
+<tr><td>windows-powershell</td><td>522</td><td class='ok'>522</td><td class='bad'>0</td></tr>
+</tbody></table></div>
+<div class='card'><h2>Invalid Scripts</h2><table><thead><tr><th>Source</th><th>Relative Path</th><th>Errors</th><th>Website Copy</th></tr></thead><tbody>
+<tr><td>powershell</td><td>Modules\Selenium\3.0.1\SeleniumClasses.ps1</td><td>20:36 Unable to find type [OpenQA.Selenium.Remote.RemoteWebDriver].</td><td><a href='./library/powershell/Modules/Selenium/3.0.1/SeleniumClasses.ps1'>Modules\Selenium\3.0.1\SeleniumClasses.ps1</a></td></tr>
+<tr><td>powershell</td><td>Modules\WindowsCompatibility\1.0.0\WindowsCompatibility.psm1</td><td>5:17 The specified namespace in the &#39;using&#39; statement contains invalid characters.</td><td><a href='./library/powershell/Modules/WindowsCompatibility/1.0.0/WindowsCompatibility.psm1'>Modules\WindowsCompatibility\1.0.0\WindowsCompatibility.psm1</a></td></tr>
+</tbody></table></div>
+<div class='card'><h2>Library Paths</h2><ul>
+<li><a href='./library/m365-cloud-lab-scripts/'>library/m365-cloud-lab-scripts/</a></li>
+<li><a href='./library/windows-powershell/'>library/windows-powershell/</a></li>
+<li><a href='./library/powershell/'>library/powershell/</a></li>
+<li><a href='./library/m365-automation/'>library/m365-automation/</a></li>
+<li><a href='./library/m365-scripts/'>library/m365-scripts/</a></li>
+<li><a href='./library/scripts/'>library/scripts/</a></li>
+<li><a href='./library/scriptpack/'>library/scriptpack/</a></li>
+</ul></div>
+</main></body></html>

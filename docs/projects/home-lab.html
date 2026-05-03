@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Home Lab Infrastructure | Documentation</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="section">
+  <div class="container">
+
+    <p class="doc-nav"><a href="index.html">← Back to Projects</a></p>
+
+    <h1>Enterprise‑Grade Home Lab Infrastructure</h1>
+    <p class="lead">
+      A Dell R710‑based enterprise lab environment built on Proxmox VE as the primary hypervisor,
+      with Windows Server 2022 AD DS, RHEL 9, pfSense routing, and full monitoring via Wazuh and Zabbix.
+    </p>
+
+    <hr>
+
+    <h2>Executive Summary</h2>
+    <p>
+      This Home Lab replicates a modern enterprise environment using virtualization, identity,
+      security monitoring, and network segmentation. It supports Active Directory, Linux services,
+      endpoint management, SIEM, monitoring, and cloud‑connected workloads.
+    </p>
+
+    <ul>
+      <li><strong>Hypervisor:</strong> Proxmox VE</li>
+      <li><strong>Firewall:</strong> pfSense</li>
+      <li><strong>Directory Services:</strong> Windows Server 2022 AD DS</li>
+      <li><strong>Linux Services:</strong> RHEL 9</li>
+      <li><strong>Monitoring:</strong> Wazuh, Zabbix</li>
+      <li><strong>Endpoints:</strong> Windows 11 (Intune test devices)</li>
+    </ul>
+
+    <hr>
+
+    <h2>Architecture Diagram</h2>
+
+<pre>
+[Internet]
+   |
+[pfSense Firewall]
+   |
+[Proxmox VE Host]
+   |--- Windows Server 2022 (Active Directory Domain Services)
+   |--- RHEL 9 (Linux Services)
+   |--- Wazuh Manager (Security Monitoring)
+   |--- Zabbix Server (Infrastructure Monitoring)
+   |--- Windows 11 (Intune Test Endpoint)
+</pre>
+
+    <hr>
+
+    <h2>Evidence Excerpts</h2>
+
+    <blockquote>
+      “A Dell R710-based enterprise lab environment built on Proxmox VE as the primary hypervisor…”
+    </blockquote>
+
+    <blockquote>
+      “Windows Server 2022 Active Directory and RHEL 9 systems, with pfSense handling routing and firewall policy…”
+    </blockquote>
+
+    <blockquote>
+      “Wazuh and Zabbix provide full-stack monitoring and security visibility across the environment…”
+    </blockquote>
+
+    <hr>
+
+    <h2>Technical Validation</h2>
+    <ul>
+      <li>Implements real enterprise identity and security architecture</li>
+      <li>Supports hybrid cloud testing with Microsoft 365 and Azure</li>
+      <li>Provides a safe environment for automation and scripting development</li>
+      <li>Includes full monitoring and SIEM visibility</li>
+      <li>Replicates modern enterprise segmentation and access control</li>
+    </ul>
+
+  </div>
+</body>
+</html>

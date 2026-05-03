@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Lab Architecture | Documentation</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="section">
+  <div class="container">
+
+    <p class="doc-nav"><a href="index.html">← Back to Architecture</a></p>
+
+    <h1>Enterprise Home Lab Architecture</h1>
+    <p class="lead">
+      A Dell R710‑based enterprise lab environment built on Proxmox VE as the primary hypervisor,
+      with Windows Server 2022 AD DS, RHEL 9, pfSense routing, Suricata/Snort IDS/IPS, and full
+      monitoring via Wazuh, Zabbix, and Graylog.
+    </p>
+
+    <hr>
+
+    <h2>Core Architecture</h2>
+    <ul>
+      <li><strong>Hypervisor:</strong> Proxmox VE</li>
+      <li><strong>Firewall:</strong> pfSense</li>
+      <li><strong>IDS/IPS:</strong> Suricata / Snort</li>
+      <li><strong>Directory Services:</strong> Windows Server 2022 AD DS</li>
+      <li><strong>Linux Services:</strong> RHEL 9</li>
+      <li><strong>Monitoring:</strong> Wazuh, Zabbix, Graylog</li>
+    </ul>
+
+    <hr>
+
+    <h2>Architecture Diagram</h2>
+<pre>
+[Internet]
+   |
+[pfSense Firewall]
+   |
+[Proxmox VE Host]
+   |--- Windows Server 2022 (Active Directory)
+   |--- RHEL 9 (Linux Services)
+   |--- Suricata/Snort (IDS/IPS)
+   |--- Wazuh Manager (Security Monitoring)
+   |--- Zabbix Server (Infrastructure Monitoring)
+   |--- Graylog (Log Aggregation)
+</pre>
+
+    <hr>
+
+    <h2>Evidence Excerpts</h2>
+    <blockquote>
+      “A Dell R710-based enterprise lab environment built on Proxmox VE as the primary hypervisor…”
+    </blockquote>
+    <blockquote>
+      “pfSense handling routing and firewall policy, Suricata/Snort providing IDS/IPS coverage…”
+    </blockquote>
+    <blockquote>
+      “Zabbix/Wazuh/Graylog supporting centralized monitoring and log analysis…”
+    </blockquote>
+
+  </div>
+</body>
+</html>

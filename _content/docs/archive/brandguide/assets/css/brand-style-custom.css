@@ -1,0 +1,164 @@
+/* =========================================================
+   JF Branding – custom.css
+   Palette taken from your logo (colors preserved):
+   - Navy / space blue:   #0F1827, #101A30, #0A1322
+   - Electric blue:       #1EBAFF
+   - Cyan / teal accent:  #29F0E3
+   - Text on dark:        #FFFFFF
+   Notes:
+   • No dependency on SharePoint internal class names.
+   • Mostly class-based (opt‑in). Safe to apply broadly.
+   • Prefer tenant theming for global UI chrome; use this
+     for page sections, blocks, and components.
+   ========================================================= */
+
+/* ---------- CSS Variables (palette & tokens) ---------- */
+:root{
+  --jf-navy-1:#0F1827;   /* darkest */
+  --jf-navy-2:#101A30;
+  --jf-navy-3:#0A1322;   /* deep block bg */
+  --jf-blue:#1EBAFF;     /* electric */
+  --jf-cyan:#29F0E3;     /* accent */
+  --jf-text:#FFFFFF;     /* text on dark */
+  --jf-muted:#C8C8C8;    /* subtle text on dark */
+  --jf-radius:10px;
+  --jf-gap:18px;
+  --jf-shadow:0 8px 22px rgba(0,0,0,.28);
+  --jf-shadow-sm:0 4px 12px rgba(0,0,0,.22);
+}
+
+/* ---------- Global link defaults (gentle enhancement) ---------- */
+a{
+  color: var(--jf-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover, a:focus{
+  color: var(--jf-cyan);
+  text-decoration-thickness: 2px;
+}
+
+/* ---------- Utility: text & background helpers ---------- */
+.text-primary{ color: var(--jf-blue) !important; }
+.text-accent { color: var(--jf-cyan) !important; }
+.text-muted  { color: var(--jf-muted) !important; }
+.text-invert { color: var(--jf-text) !important; }
+
+.bg-navy-1{ background: var(--jf-navy-1) !important; color: var(--jf-text); }
+.bg-navy-2{ background: var(--jf-navy-2) !important; color: var(--jf-text); }
+.bg-navy-3{ background: var(--jf-navy-3) !important; color: var(--jf-text); }
+
+.rounded   { border-radius: var(--jf-radius) !important; }
+.shadow    { box-shadow: var(--jf-shadow) !important; }
+.shadow-sm { box-shadow: var(--jf-shadow-sm) !important; }
+.p-0{padding:0}.p-2{padding:.5rem}.p-3{padding:.75rem}.p-4{padding:1rem}
+.mt-0{margin-top:0}.mb-0{margin-bottom:0}.my-2{margin-top:.5rem;margin-bottom:.5rem}
+
+/* ---------- Section blocks (opt‑in containers) ---------- */
+/* Use on Text web parts (Switch to HTML mode) or Embed web parts */
+.jf-section{
+  border-radius: var(--jf-radius);
+  padding: var(--jf-gap);
+  box-shadow: var(--jf-shadow-sm);
+  color: var(--jf-text);
+}
+.jf-section--start { background: var(--jf-navy-1); }
+.jf-section--about { background: var(--jf-navy-2); }
+.jf-section--inside{ background: var(--jf-navy-3); }
+
+/* Headings inside sections */
+.jf-section h1,.jf-section h2,.jf-section h3{
+  margin: 0 0 .5rem 0;
+  line-height: 1.2;
+}
+.jf-section h1{ font-size:1.75rem; color:var(--jf-blue); }
+.jf-section h2{ font-size:1.5rem;  color:var(--jf-blue); }
+.jf-section h3{ font-size:1.25rem; color:var(--jf-cyan); }
+
+/* Lists in dark sections */
+.jf-section ul{ margin:.25rem 0 0 1.25rem; }
+.jf-section li{ margin:.15rem 0; }
+.jf-section a{ color:var(--jf-blue); }
+.jf-section a:hover{ color:var(--jf-cyan); }
+
+/* ---------- Buttons (optional) ---------- */
+.jf-btn{
+  display:inline-block;
+  padding:.55rem .9rem;
+  border-radius:8px;
+  font-weight:600;
+  color:#001015;
+  background: var(--jf-blue);
+  text-decoration:none;
+  box-shadow: var(--jf-shadow-sm);
+  transition: transform .08s ease, box-shadow .12s ease, background .12s ease;
+}
+.jf-btn:hover{ background: var(--jf-cyan); transform: translateY(-1px); }
+.jf-btn--ghost{
+  color: var(--jf-blue);
+  background: transparent;
+  border: 2px solid var(--jf-blue);
+}
+.jf-btn--ghost:hover{
+  color: #001015; background: var(--jf-blue); border-color: var(--jf-blue);
+}
+
+/* ---------- Cards (for callouts / KPIs) ---------- */
+.jf-card{
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--jf-radius);
+  color: var(--jf-text);
+  padding: 14px 16px;
+  box-shadow: var(--jf-shadow-sm);
+}
+.jf-card__title{ color: var(--jf-cyan); font-weight:700; margin:0 0 .25rem 0; }
+.jf-card__meta { color: var(--jf-muted); font-size:.9rem; }
+
+/* ---------- Badges (pill) ---------- */
+.jf-badge{
+  display:inline-block; padding:.2rem .55rem; border-radius:999px;
+  background: rgba(41,240,227,.12); color: var(--jf-cyan); font-weight:600;
+  border:1px solid rgba(41,240,227,.35);
+}
+
+/* ---------- Tables on dark blocks ---------- */
+.jf-table{
+  width:100%; border-collapse:separate; border-spacing:0; overflow:hidden;
+  border-radius: var(--jf-radius); color: var(--jf-text);
+}
+.jf-table thead th{
+  background: #121C2F; color: var(--jf-cyan); text-align:left; padding:.6rem .7rem;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.jf-table tbody td{
+  padding:.55rem .7rem; border-bottom:1px solid rgba(255,255,255,.08);
+}
+.jf-table tbody tr:hover{ background: rgba(255,255,255,.03); }
+
+/* ---------- Hero overlay helper (if you apply an image banner) ---------- */
+.jf-hero-overlay{
+  position:relative;
+}
+.jf-hero-overlay::after{
+  content:""; position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(15,24,39,.55), rgba(15,24,39,.85));
+  pointer-events:none;
+}
+
+/* ---------- Quick Links (Text web part variant) ---------- */
+.jf-links-list { list-style: none; margin: .4rem 0 0 0; padding:0; }
+.jf-links-list li{ margin:.25rem 0; }
+.jf-links-list a{
+  display:inline-flex; align-items:center; gap:.4rem;
+  color: var(--jf-blue); text-decoration:none; font-weight:600;
+}
+.jf-links-list a:hover{ color: var(--jf-cyan); text-decoration:underline; }
+
+/* ---------- Accessibility touch-ups ---------- */
+.jf-section a:focus, .jf-btn:focus{
+  outline: 3px solid rgba(30,186,255,.6); outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce){
+  .jf-btn{ transition: none; }
+}

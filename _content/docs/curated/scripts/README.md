@@ -1,0 +1,3 @@
+- build-minified-assets.ps1 (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\scripts)
+- export-sharepoint-pages.ps1 (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\scripts)
+- promote-site.ps1 (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\scripts)
