@@ -103,6 +103,19 @@ body {
 }
 .card:hover { transform: translateY(-8px); border-color: var(--brand-cyan); box-shadow: var(--glow-strong); }
 
+.card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-link:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 4px;
+}
+
 /* =========================================================
    5A. LANDING PAGE SECTIONS
 ========================================================= */
