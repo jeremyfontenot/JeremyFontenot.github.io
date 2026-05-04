@@ -413,6 +413,24 @@ body::after {
   color: #fff;
 }
 
+/* Evidence UI */
+.evidence-badge {
+  display: inline-block;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #051021;
+  background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
+  box-shadow: 0 6px 18px rgba(76,201,240,0.14);
+  margin-left: 0.5rem;
+}
+
+.evidence-list { list-style: none; padding: 0; display: grid; gap: 12px; }
+.evidence-item { background: var(--panel); border: 1px solid var(--border); padding: 12px 14px; border-radius: 10px; }
+.evidence-item a { font-weight: 700; color: var(--text); text-decoration: none; }
+.evidence-item .meta { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+
 .doc-card-desc {
   color: var(--muted);
   font-weight: 400;
