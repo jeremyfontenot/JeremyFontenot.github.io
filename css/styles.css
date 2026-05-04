@@ -12,10 +12,10 @@
   --muted: #a1aab9;
   --border: rgba(255, 255, 255, 0.12);
   --radius: 12px;
-  --glow-strong: 0 0 30px rgba(76, 201, 240, 0.35);
-  --glow-soft: 0 0 15px rgba(76, 201, 240, 0.18);
-  --glow-magenta: 0 0 30px rgba(224, 86, 253, 0.3);
-  --glow-magenta-soft: 0 0 16px rgba(224, 86, 253, 0.15);
+  --glow-strong: 0 0 36px rgba(76, 201, 240, 0.45);
+  --glow-soft: 0 0 16px rgba(76, 201, 240, 0.22);
+  --glow-magenta: 0 0 26px rgba(224, 86, 253, 0.22);
+  --glow-magenta-soft: 0 0 12px rgba(224, 86, 253, 0.10);
 }
 
 /* =========================================================
@@ -29,9 +29,9 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 15% 12%, rgba(224, 86, 253, 0.15), transparent 26%),
-    radial-gradient(circle at 84% 18%, rgba(76, 201, 240, 0.1), transparent 24%),
-    radial-gradient(circle at 50% 100%, rgba(201, 76, 255, 0.1), transparent 30%),
+    radial-gradient(circle at 15% 12%, rgba(224, 86, 253, 0.08), transparent 26%),
+    radial-gradient(circle at 84% 18%, rgba(76, 201, 240, 0.12), transparent 24%),
+    radial-gradient(circle at 50% 100%, rgba(201, 76, 255, 0.08), transparent 30%),
     var(--bg);
   position: relative;
 }
@@ -80,7 +80,7 @@ body::after {
   width: 72px;
   height: 3px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--brand-magenta), var(--brand-cyan));
+  background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
   box-shadow: var(--glow-magenta-soft);
 }
 
@@ -124,7 +124,7 @@ body::after {
 .nav-toggle span + span { margin-top: 5px; }
 .nav-links { display: flex; gap: 1.5rem; list-style: none; }
 .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: 0.3s; }
-.nav-links a:hover { color: var(--brand-magenta); text-shadow: var(--glow-magenta-soft); }
+.nav-links a:hover { color: var(--brand-cyan); text-shadow: var(--glow-soft); }
 
 /* =========================================================
    4. ABOUT SECTION & AVATAR FIX
@@ -167,10 +167,10 @@ body::after {
   position: absolute;
   inset: 0 0 auto;
   height: 3px;
-  background: linear-gradient(90deg, var(--brand-magenta), var(--brand-cyan));
+  background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
   opacity: 0.9;
 }
-.card:hover { transform: translateY(-8px); border-color: var(--brand-magenta); box-shadow: var(--glow-strong), var(--glow-magenta); }
+.card:hover { transform: translateY(-8px); border-color: var(--brand-cyan); box-shadow: var(--glow-strong), var(--glow-magenta-soft); }
 
 .card-link {
   display: block;
@@ -182,7 +182,7 @@ body::after {
 }
 
 .card-link:focus-visible {
-  outline: 2px solid var(--brand-magenta);
+  outline: 2px solid var(--brand-cyan);
   outline-offset: 4px;
 }
 
@@ -212,7 +212,7 @@ body::after {
   font-size: clamp(2.5rem, 6vw, 4.8rem);
   line-height: 1.05;
   margin-bottom: 0.9rem;
-  background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0.8), var(--brand-magenta));
+  background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0.8), var(--brand-cyan), var(--brand-magenta));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -293,7 +293,7 @@ body::after {
   z-index: 1;
   width: min(100%, 640px);
   border-radius: 24px;
-  box-shadow: var(--glow-strong), var(--glow-magenta);
+  box-shadow: var(--glow-strong), var(--glow-magenta-soft);
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -310,7 +310,15 @@ body::after {
   box-shadow: var(--glow-soft);
 }
 
-.skill-sub, .project-sub { color: var(--brand-magenta); font-size: 0.95rem; margin: 0.25rem 0 1rem; }
+.skill-sub, .project-sub {
+  background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 0.95rem;
+  margin: 0.25rem 0 1rem;
+  font-weight: 600;
+}
 .skill-list, .project-list { padding-left: 1.2rem; display: grid; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text); }
 .skill-tags, .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
 .project-kicker {
@@ -319,9 +327,9 @@ body::after {
   margin-bottom: 0.9rem;
   padding: 0.28rem 0.65rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 26, 143, 0.32);
-  background: rgba(255, 26, 143, 0.08);
-  color: #ffd9ea;
+  border: 1px solid rgba(76, 201, 240, 0.28);
+  background: linear-gradient(90deg, rgba(76, 201, 240, 0.08), rgba(224, 86, 253, 0.06));
+  color: #e8fbff;
   font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -349,9 +357,9 @@ body::after {
   display: inline-flex;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  border: 1px solid var(--border);
-  background: linear-gradient(135deg, rgba(255, 26, 143, 0.14), rgba(0, 234, 255, 0.08));
-  color: #d9e3ef;
+  border: 1px solid rgba(76, 201, 240, 0.18);
+  background: linear-gradient(135deg, rgba(76, 201, 240, 0.10), rgba(224, 86, 253, 0.06));
+  color: #e8fbff;
   font-size: 0.8rem;
 }
 
@@ -364,7 +372,7 @@ body::after {
   text-align: center;
   transition: 0.3s ease;
 }
-.cert-card:hover { transform: translateY(-6px); border-color: var(--brand-magenta); box-shadow: var(--glow-soft), var(--glow-magenta-soft); }
+.cert-card:hover { transform: translateY(-6px); border-color: var(--brand-cyan); box-shadow: var(--glow-soft), var(--glow-magenta-soft); }
 .cert-card img { width: 72px; height: 72px; object-fit: contain; margin-bottom: 12px; }
 
 .timeline { display: grid; gap: 24px; margin-top: 1.5rem; }
@@ -377,9 +385,9 @@ body::after {
   height: 12px;
   border-radius: 50%;
   background: var(--brand-cyan);
-  box-shadow: var(--glow-soft);
+  box-shadow: var(--glow-soft), var(--glow-magenta-soft);
 }
-.timeline-meta { color: var(--brand-magenta); margin: 0.35rem 0 0.85rem; }
+.timeline-meta { color: var(--brand-cyan); margin: 0.35rem 0 0.85rem; }
 
 .grid--docs { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
 .section-intro {
@@ -416,8 +424,8 @@ body::after {
   width: 54px;
   height: 3px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--brand-magenta), var(--brand-cyan));
-  box-shadow: var(--glow-magenta-soft);
+  background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
+  box-shadow: var(--glow-soft), var(--glow-magenta-soft);
 }
 
 .doc-card--wide {
@@ -527,8 +535,8 @@ body::after {
 }
 
 .doc-nav a:hover {
-  border-color: var(--brand-magenta);
-  box-shadow: var(--glow-magenta-soft);
+  border-color: var(--brand-cyan);
+  box-shadow: var(--glow-soft), var(--glow-magenta-soft);
   transform: translateY(-1px);
 }
 
@@ -542,7 +550,7 @@ body::after {
   text-decoration: none;
   transition: 0.3s;
 }
-.doc-card:hover { transform: translateX(8px); border-color: var(--brand-magenta); box-shadow: var(--glow-magenta-soft); }
+.doc-card:hover { transform: translateX(8px); border-color: var(--brand-cyan); box-shadow: var(--glow-soft), var(--glow-magenta-soft); }
 
 @media (max-width: 900px) {
   .hero-inner { flex-direction: column; align-items: flex-start; min-height: auto; }
