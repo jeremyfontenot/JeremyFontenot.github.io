@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PolicyDefinitions>
+  <Policy name="StandardDesktopPasswordPolicy">
+    <Setting name="MinimumPasswordLength">12</Setting>
+    <Setting name="PasswordComplexity">Enabled</Setting>
+    <Setting name="MaximumPasswordAgeDays">90</Setting>
+  </Policy>
+  <Policy name="DesktopLockdown">
+    <Setting name="DisableGuestAccount">True</Setting>
+    <Setting name="ScreenLockTimeoutSeconds">900</Setting>
+  </Policy>
+</PolicyDefinitions>

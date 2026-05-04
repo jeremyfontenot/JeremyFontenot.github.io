@@ -1,0 +1,4 @@
+[2025-02-10 09:12:03] Transport service unexpected error: Rule ID 7f3a caused loop
+[2025-02-10 09:14:45] Attempted rollback of transport rule 7f3a
+[2025-02-10 10:00:12] Service restored: MX routing normalized
+[2025-02-10 10:05:44] Post-incident verification completed
