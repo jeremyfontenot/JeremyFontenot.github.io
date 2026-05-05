@@ -3,6 +3,8 @@
 A Dell R710‑based enterprise lab environment built on Proxmox VE as the primary hypervisor,
 with Windows Server 2022 AD DS, RHEL 9, pfSense routing, and full monitoring via Wazuh and Zabbix.
 
+<!-- Validation broken-link test: https://example.com/does-not-exist-12345 -->
+
 ---
 
 ## Executive Summary
