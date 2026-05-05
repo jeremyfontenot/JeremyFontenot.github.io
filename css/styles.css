@@ -431,6 +431,13 @@ body::after {
 .evidence-item a { font-weight: 700; color: var(--text); text-decoration: none; }
 .evidence-item .meta { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
 
+/* Evidence thumbnails and accordion */
+.evidence-thumb { width: 120px; height: 72px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-right: 12px; }
+.evidence-row { display: flex; gap: 12px; align-items: center; }
+.evidence-expand { display: none; margin-top: 8px; color: var(--muted); }
+.evidence-item.open .evidence-expand { display: block; }
+.evidence-admin-note { font-size: 0.82rem; color: var(--muted); margin-top: 6px; }
+
 .doc-card-desc {
   color: var(--muted);
   font-weight: 400;
