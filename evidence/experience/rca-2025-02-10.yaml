@@ -5,12 +5,20 @@ role: Escalation Engineer
 context: Mail flow outage affecting ~12% of users in a multi-tenant environment (2025-02-10).
 action:
   - Collected logs and isolated faulty transport rule
-  - Rolled back change and created remediation script
+  - Rolled back change and executed remediation script
   - Documented RCA and post-incident mitigation
 tools: [Exchange Online, PowerShell]
 outcome: "Service restored in 2.4 hours; no recurrence detected in 9-month window."
 artifacts:
   - incident-2025-02-10-logs.txt
   - remediation-disable-transportrule.ps1
-verification: "Ticket SR-8871 (internal)"
+  - remediation-disable-transportrule.patch
+  - rca-run-2025-02-10.log
+verification: "SR-8871 (redacted)"
+status: Verified
+verifier: oncall-lead [redacted]
+reproduce: |
+  1. Authenticate to Exchange Online with sufficient privileges.
+  2. Run: `Disable-TransportRule -Identity 7f3a`
+  3. Verify mail flow restoration and check `rca-run-2025-02-10.log` for timestamps.
 ---
