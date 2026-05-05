@@ -4,6 +4,8 @@ A modern, responsive portfolio website showcasing cloud infrastructure expertise
 
 **Live Site:** [https://jeremyfontenot.github.io](https://jeremyfontenot.github.io)
 
+<!-- Validation broken-link test: https://example.com/does-not-exist-12345 -->
+
 ---
 
 ## ✨ Features
