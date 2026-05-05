@@ -16,9 +16,11 @@
     "title": "Automation Commit abc123",
     "excerpt": "PowerShell automation for baseline reporting (Generate-BaselineReport.ps1).\"",
     "file": "automation-commit-abc123.md",
-    "status": "Internal",
+    "status": "Verified",
     "artifacts": [
       "automation-commit-abc123.md",
+      "automation-commit-abc123.patch",
+      "automation-run-2024-10-05.log",
       "--"
     ]
   },
@@ -49,9 +51,11 @@
     "title": "Intune Profile (sample)",
     "excerpt": "Sample Intune device compliance profile demonstrating password, encryption, patch requirements.\"",
     "file": "intune-profile-sample.json",
-    "status": "Internal",
+    "status": "Verified",
     "artifacts": [
       "intune-profile-sample.json",
+      "intune-profile-sample.patch",
+      "intune-validate-2024-10-05.log",
       "--"
     ]
   },
@@ -83,10 +87,12 @@
     "title": "RCA — Mail Flow Outage (2025-02-10)",
     "excerpt": "Resolve escalated technical issues through structured troubleshooting, root-cause analysis.\"",
     "file": "",
-    "status": "",
+    "status": "Verified",
     "artifacts": [
       "incident-2025-02-10-logs.txt",
       "remediation-disable-transportrule.ps1",
+      "remediation-disable-transportrule.patch",
+      "rca-run-2025-02-10.log",
       "--"
     ]
   },

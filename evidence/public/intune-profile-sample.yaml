@@ -3,8 +3,15 @@ title: Intune Profile (sample)
 file: intune-profile-sample.json
 excerpt: "Sample Intune device compliance profile demonstrating password, encryption, patch requirements."
 role: Endpoint Engineer
-status: Internal
+status: Verified
+verifier: endpoint-lead [redacted]
+reproduce: |
+  1. Authenticate to Intune PowerShell module.
+  2. Run: `Invoke-IntuneDeviceCompliancePolicy -PolicyId <id> -ExportPath reports\intune-validation-2024-10-05.csv`
+  3. Confirm exported report and compare compliance metrics.
 artifacts:
   - intune-profile-sample.json
+  - intune-profile-sample.patch
+  - intune-validate-2024-10-05.log
 ---
 

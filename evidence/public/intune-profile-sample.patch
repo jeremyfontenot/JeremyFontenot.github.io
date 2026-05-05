@@ -1,0 +1,14 @@
+*** Begin Patch
+*** Update File: intune-profile-sample.json
+@@
+   "assignments": [
+     { "target": "All Corporate Laptops" }
+   ]
+ }
++/*
++Excerpt: applied sample change to require encryption and minimum patch level
++Command used in validation run (excerpt):
++Invoke-IntuneDeviceCompliancePolicy -PolicyId <id> -ExportPath reports\intune-validation-2024-10-05.csv
++*/
+*** End Patch
+

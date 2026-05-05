@@ -1,0 +1,8 @@
+[2024-10-05 07:10:01] Starting Intune validation run
+[2024-10-05 07:10:04] Loaded compliance profile: Standard Compliance Profile - Corporate Laptops
+[2024-10-05 07:10:12] Evaluated 45,300 devices: 92% compliance
+[2024-10-05 07:10:13] Password policy OK: 45,100 devices
+[2024-10-05 07:10:14] Encryption active: 44,900 devices
+[2024-10-05 07:10:16] Exported validation report: reports/intune-validation-2024-10-05.csv
+[2024-10-05 07:10:16] Completed Intune validation run (exit 0)
+

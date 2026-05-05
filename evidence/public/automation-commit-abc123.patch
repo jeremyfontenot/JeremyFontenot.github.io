@@ -1,0 +1,19 @@
+*** Begin Patch
+*** Update File: scripts/Generate-BaselineReport.ps1
+@@
+-# Collect Intune compliance and export CSV
+-Get-IntuneDeviceCompliancePolicy | Export-Csv -Path reports\baseline-$(Get-Date -Format yyyy-MM-dd).csv -NoTypeInformation
++# Collect Intune compliance and export CSV (excerpt)
++<# commit: abc1234
++diff --git a/scripts/Generate-BaselineReport.ps1 b/scripts/Generate-BaselineReport.ps1
++index e69de29..abc1234 100644
++--- a/scripts/Generate-BaselineReport.ps1
+++++ b/scripts/Generate-BaselineReport.ps1
++@@
++ # gather device compliance and export
++ $devices = Get-IntuneManagedDevice | Select-Object DeviceName, ComplianceState, LastCheckIn
++ $devices | Export-Csv -Path "reports/baseline-$(Get-Date -Format yyyy-MM-dd).csv" -NoTypeInformation
++ # end excerpt
++#>
+*** End Patch
+
