@@ -1,0 +1,72 @@
+name: Link Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  link-check:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify PowerShell availability
+        shell: pwsh
+        run: |
+          $PSVersionTable.PSVersion
+
+      - name: Run link scanner
+        shell: pwsh
+        run: |
+          pwsh ./scripts/link-scanner.ps1 -IncludeContentExport
+
+      - name: Upload Link Scan Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-scan-report
+          path: |
+            link-scan-report.json
+            LINK_SCAN_SUMMARY.md
+
+      - name: Fail on broken external links
+        shell: pwsh
+        run: |
+          if (-not (Test-Path -LiteralPath './link-scan-report.json')) {
+            Write-Error 'link-scan-report.json was not generated.'
+            exit 1
+          }
+
+          $report = Get-Content -Raw -LiteralPath './link-scan-report.json' | ConvertFrom-Json
+          if ($null -eq $report) {
+            Write-Error 'Failed to parse link-scan-report.json.'
+            exit 1
+          }
+
+          $external = @($report | Where-Object { $_.type -eq 'external_public' })
+
+          $brokenByStatus = @($external | Where-Object {
+            $_.status -eq 'broken' -or $_.status -eq 'error'
+          })
+
+          $brokenByHttp = @($external | Where-Object {
+            $code = $null
+            if ($null -ne $_.httpStatus -and [int]::TryParse([string]$_.httpStatus, [ref]$code)) {
+              $code -ge 400 -and $code -lt 600
+            } else {
+              $false
+            }
+          })
+
+          $failures = @($brokenByStatus + $brokenByHttp | Sort-Object url, sourceFile -Unique)
+
+          if ($failures.Count -gt 0) {
+            Write-Host "Detected $($failures.Count) failing external_public links:"
+            $failures | ForEach-Object {
+              Write-Host "- $($_.url) [$($_.status)] httpStatus=$($_.httpStatus) source=$($_.sourceFile)"
+            }
+            exit 1
+          }
+
+          Write-Host 'No failing external_public links detected.'

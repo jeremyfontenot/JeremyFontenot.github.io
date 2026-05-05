@@ -1,0 +1,231 @@
+name: Link Scan PR Comment
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  link-scan-comment:
+    runs-on: windows-latest
+    env:
+      PR_COMMENT_BOT_ARGS: ${{ vars.PR_COMMENT_BOT_ARGS }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run link scanner
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          pwsh ./scripts/link-scanner.ps1 -IncludeContentExport
+
+      - name: Build PR comment markdown
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $marker = '<!-- link-scan-bot -->'
+          $rawArgs = [string]$env:PR_COMMENT_BOT_ARGS
+          $expandReport = $false
+          if ($rawArgs -match '(^|\s)--expand-report(\s|$)') { $expandReport = $true }
+          $reportPath = Join-Path $PWD 'link-scan-report.json'
+
+          $report = @()
+          if (Test-Path -LiteralPath $reportPath) {
+            try {
+              $report = Get-Content -Raw -LiteralPath $reportPath | ConvertFrom-Json
+              if ($null -eq $report) { $report = @() }
+              if ($report -isnot [System.Array]) { $report = @($report) }
+            } catch {
+              $report = @()
+            }
+          }
+
+          $external = @($report | Where-Object { $_.type -eq 'external_public' })
+          $ignoredMetadata = @($report | Where-Object { $_.type -eq 'ignored_metadata' })
+          $legacyExport = @($report | Where-Object { $_.type -eq 'legacy_export' })
+
+          # Normalize and enrich external_public candidates before filtering/sorting.
+          $normalized = @(
+            $external | ForEach-Object {
+              $httpCode = 0
+              [void][int]::TryParse([string]$_.httpStatus, [ref]$httpCode)
+
+              $responseCandidate = $null
+              if ($null -ne $_.responseTimeMs) { $responseCandidate = $_.responseTimeMs }
+              elseif ($null -ne $_.responseTime) { $responseCandidate = $_.responseTime }
+              elseif ($null -ne $_.durationMs) { $responseCandidate = $_.durationMs }
+
+              $responseMs = 0.0
+              [void][double]::TryParse([string]$responseCandidate, [ref]$responseMs)
+
+              $statusRank = if ($_.status -eq 'error') { 2 } elseif ($_.status -eq 'broken') { 1 } else { 0 }
+              $httpTier = if ($httpCode -ge 500) { 2 } elseif ($httpCode -ge 400) { 1 } else { 0 }
+
+              [PSCustomObject]@{
+                url = [string]$_.url
+                sourceFile = [string]$_.sourceFile
+                status = [string]$_.status
+                httpStatus = $httpCode
+                responseMs = $responseMs
+                __statusRank = $statusRank
+                __httpTier = $httpTier
+              }
+            }
+          )
+
+          $broken = @($normalized | Where-Object {
+            $_.__statusRank -gt 0 -or $_.httpStatus -ge 400
+          })
+
+          # Deduplicate by URL and keep the worst severity entry.
+          $dedupMap = @{}
+          foreach ($item in $broken) {
+            if ([string]::IsNullOrWhiteSpace([string]$item.url)) { continue }
+            $key = [string]$item.url
+            if (-not $dedupMap.ContainsKey($key)) {
+              $dedupMap[$key] = $item
+              continue
+            }
+
+            $current = $dedupMap[$key]
+            $replace = $false
+
+            if ($item.__httpTier -gt $current.__httpTier) { $replace = $true }
+            elseif ($item.__httpTier -eq $current.__httpTier -and $item.httpStatus -gt $current.httpStatus) { $replace = $true }
+            elseif ($item.__httpTier -eq $current.__httpTier -and $item.httpStatus -eq $current.httpStatus -and $item.__statusRank -gt $current.__statusRank) { $replace = $true }
+            elseif ($item.__httpTier -eq $current.__httpTier -and $item.httpStatus -eq $current.httpStatus -and $item.__statusRank -eq $current.__statusRank -and $item.responseMs -gt $current.responseMs) { $replace = $true }
+
+            if ($replace) { $dedupMap[$key] = $item }
+          }
+
+          $broken = @($dedupMap.Values)
+
+          # Sort severity priority:
+          # 1) httpStatus class/code (5xx before 4xx)
+          # 2) status (error before broken)
+          # 3) response time (higher first if available)
+          $ranked = @(
+            $broken |
+              Sort-Object -Property @(
+                @{Expression='__httpTier'; Descending=$true},
+                @{Expression='httpStatus'; Descending=$true},
+                @{Expression='__statusRank'; Descending=$true},
+                @{Expression='responseMs'; Descending=$true}
+              )
+          )
+
+          $topLimit = 10
+          $displayBroken = if ($expandReport) { @($ranked) } else { @($ranked | Select-Object -First $topLimit) }
+          $remainingCount = if ($expandReport) { 0 } else { [Math]::Max(0, $ranked.Count - $topLimit) }
+
+          $lines = @()
+          $lines += $marker
+          $lines += ''
+          $lines += '## 🔗 Link Scan Report'
+          $lines += ''
+
+          if ($ranked.Count -gt 0) {
+            if ($expandReport) {
+              $lines += '### ❌ Broken External Links (All)'
+            } else {
+              $lines += '### ❌ Broken External Links (Top 10)'
+            }
+            $lines += ''
+
+            $grouped = $displayBroken | Group-Object {
+              if ([string]::IsNullOrWhiteSpace([string]$_.sourceFile)) {
+                'unknown'
+              } else {
+                [System.IO.Path]::GetFileName([string]$_.sourceFile)
+              }
+            }
+
+            foreach ($g in $grouped) {
+              $lines += "### 📁 $($g.Name)"
+              foreach ($item in $g.Group) {
+                $statusText = if ([string]::IsNullOrWhiteSpace([string]$item.status)) { 'unknown' } else { [string]$item.status }
+                $httpText = if ($item.httpStatus -gt 0) { [string]$item.httpStatus } else { 'n/a' }
+                $lines += "- URL: $($item.url)"
+                $lines += "- Status: $statusText"
+                $lines += "- HTTP: $httpText"
+              }
+              $lines += ''
+            }
+
+            if (-not $expandReport -and $remainingCount -gt 0) {
+              $lines += "+ $remainingCount more broken links (see artifact for full report)"
+              $lines += ''
+            }
+          } else {
+            $lines += '✅ No broken external links detected.'
+            $lines += ''
+          }
+
+          $lines += '---'
+          $lines += ''
+          $lines += '### 📊 Summary'
+          $lines += "- Total scanned: $($report.Count)"
+          $lines += "- External links: $($external.Count)"
+          $lines += "- Broken links: $($ranked.Count)"
+          $lines += "- Ignored metadata: $($ignoredMetadata.Count)"
+          $lines += "- Legacy export: $($legacyExport.Count)"
+
+          $commentPath = Join-Path $PWD 'link-scan-pr-comment.md'
+          $lines -join "`n" | Out-File -LiteralPath $commentPath -Encoding utf8
+
+      - name: Upload Link Scan Report
+        uses: actions/upload-artifact@v4
+        continue-on-error: true
+        with:
+          name: link-scan-report
+          path: |
+            link-scan-report.json
+            LINK_SCAN_SUMMARY.md
+
+      - name: Upsert PR comment
+        uses: actions/github-script@v7
+        continue-on-error: true
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- link-scan-bot -->';
+            const path = 'link-scan-pr-comment.md';
+
+            let body = `${marker}\n\n## 🔗 Link Scan Report\n\nUnable to generate scan summary.`;
+            if (fs.existsSync(path)) {
+              body = fs.readFileSync(path, 'utf8');
+            }
+
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.pull_request.number;
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number,
+              per_page: 100
+            });
+
+            const existing = comments.find((c) =>
+              c.user && c.user.type === 'Bot' && typeof c.body === 'string' && c.body.includes(marker)
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existing.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body
+              });
+            }
