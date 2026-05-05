@@ -113,8 +113,8 @@ foreach ($f in $items) {
             # Validate URI structure
             try {
                 $u = [uri]$url
-                $host = $u.Host.ToLower()
-                if ($internalHosts -contains $host -or $host -like '*.github.io') {
+                $urlHost = $u.Host.ToLower()
+                if ($internalHosts -contains $urlHost -or $urlHost -like '*.github.io') {
                     $entry.type = 'internal_site'
                     $entry.status = 'ignored'
                 } elseif ($isLegacyUrl) {
