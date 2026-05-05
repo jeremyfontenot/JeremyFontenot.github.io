@@ -1,0 +1,9 @@
+id: evidence-2025-02-10-004
+title: Incident Logs — 2025-02-10
+file: incident-2025-02-10-logs.txt
+excerpt: "Transport service logs from mail flow outage investigation." 
+role: Escalation Engineer
+status: Internal
+artifacts:
+  - incident-2025-02-10-logs.txt
+---

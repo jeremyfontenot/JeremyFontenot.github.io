@@ -1,0 +1,9 @@
+id: evidence-2024-10-05-003
+title: Automation Commit abc123
+file: automation-commit-abc123.md
+excerpt: "PowerShell automation for baseline reporting (Generate-BaselineReport.ps1)."
+role: Automation Engineer
+status: Internal
+artifacts:
+  - automation-commit-abc123.md
+---
