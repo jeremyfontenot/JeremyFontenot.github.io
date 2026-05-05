@@ -52,8 +52,3 @@ security monitoring, and network segmentation.
 - Replicates modern enterprise segmentation and access control  
 
 ---
-
-## Scanner Test Links
-
-<!-- Force duplicate broken link for scanner test -->
-[Force 500 Error](https://httpstat.us/500)
