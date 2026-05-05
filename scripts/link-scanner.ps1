@@ -7,7 +7,6 @@ param(
 $urlRegex = [regex]'https?:\/\/[a-zA-Z0-9\-._~%]+(\.[a-zA-Z0-9\-._~%]+)+(\/[\w\-._~%+?=&:#@]*)?'
 
 # Blacklist substrings (metadata / PKI / c2pa noise)
-# Blacklist substrings (metadata / PKI / c2pa noise)
 $ignorePatterns = @(
     'cv.iptc.org',
     'c2pa-ocsp.pki.goog',
@@ -16,9 +15,24 @@ $ignorePatterns = @(
     'analytics.ahrefs.com'
 )
 
+# Placeholder domains / patterns (classify as placeholder)
+$placeholderPatterns = @(
+    'example.com',
+    'example.org',
+    'example.net',
+    'placeholder'
+)
+
+# Restricted / authenticated patterns (classify as restricted_access)
+$restrictedPatterns = @(
+    'sharepoint.com',
+    'microsoftonline.com',
+    'onmicrosoft.com',
+    'login.microsoftonline.com'
+)
+
 # Legacy export patterns (classify as legacy_export)
 $legacyPatterns = @(
-    'sharepoint.com',
     'microsoft.com/pkiops',
     '/_layouts/',
     'getpreview.ashx'
@@ -27,8 +41,21 @@ $legacyPatterns = @(
 # File extensions to scan
 $scanExt = @('*.html','*.htm','*.js','*.ts','*.css','*.md')
 
-# Internal site hosts (classify as internal_site)
+# Internal site hosts (classify as internal_document)
 $internalHosts = @('jeremyfontenot.github.io','localhost')
+
+# Generated artifacts to exclude from scanning.
+$scanExcludeLeafNames = @(
+    'link-scan-report.json',
+    'LINK_SCAN_SUMMARY.md',
+    'DEAD_LINK_REPORT.md',
+    'DEAD_LINK_REPORT_DETAILED.md',
+    'FIX_SUGGESTIONS.md',
+    'PLACEHOLDER_REPORT.md',
+    'SITE_AUDIT_REPORT.md',
+    'redaction-report.md',
+    'test_deadlink.ps1'
+)
 
 $root = (Get-Location).ProviderPath
 
@@ -59,6 +86,9 @@ foreach ($dir in $scanDirs) {
 }
 
 $items = $items | Sort-Object -Unique
+$items = $items | Where-Object {
+    $scanExcludeLeafNames -notcontains $_.Name
+}
 
 Write-Output "Scanning $($items.Count) files..."
 
@@ -76,6 +106,20 @@ foreach ($f in $items) {
         if ($Debug) { Write-Warning "Empty content: $($f.FullName)" }
         continue
     }
+
+    # Capture placeholder attributes explicitly because they do not match the URL regex.
+    $placeholderAttrRegex = [regex]'(?i)\b(?:href|src)\s*=\s*["'']\s*(?:#)?\s*["'']'
+    foreach ($pm in $placeholderAttrRegex.Matches($text)) {
+        $placeholderUrl = if ($pm.Value -match '#') { '#' } else { '' }
+        $results += [PSCustomObject]@{
+            url = $placeholderUrl
+            type = 'placeholder'
+            sourceFile = $f.FullName
+            status = 'placeholder'
+            httpStatus = $null
+        }
+    }
+
     $matches = $urlRegex.Matches($text)
     foreach ($m in $matches) {
         $pattern = '[\)\.,>"''\s]+$'
@@ -114,23 +158,42 @@ foreach ($f in $items) {
             try {
                 $u = [uri]$url
                 $urlHost = $u.Host.ToLower()
-                if ($internalHosts -contains $urlHost -or $urlHost -like '*.github.io') {
-                    $entry.type = 'internal_site'
-                    $entry.status = 'ignored'
-                } elseif ($isLegacyUrl) {
-                    $entry.type = 'legacy_export'
-                    $entry.status = 'legacy'
-                } elseif ($sourceIsContent) {
-                    # low-trust source: mark as legacy_export if not already classified
-                    $entry.type = 'legacy_export'
-                    $entry.status = 'legacy'
-                } else {
-                    $entry.type = 'external_public'
-                    $entry.status = 'pending'
-                }
             } catch {
                 $entry.type = 'invalid_malformed'
                 $entry.status = 'invalid'
+                $results += $entry
+                continue
+            }
+
+            $isPlaceholder = $false
+            foreach ($pp in $placeholderPatterns) {
+                if ($urlHost -eq $pp -or $urlHost.EndsWith('.' + $pp) -or $url -like "*${pp}*") { $isPlaceholder = $true; break }
+            }
+
+            $isRestricted = $false
+            foreach ($rp in $restrictedPatterns) {
+                if ($urlHost -eq $rp -or $urlHost.EndsWith('.' + $rp) -or $url -like "*${rp}*") { $isRestricted = $true; break }
+            }
+
+            if ($placeholderUrl -eq '#' -or $isPlaceholder) {
+                $entry.type = 'placeholder'
+                $entry.status = 'placeholder'
+            } elseif ($sourceIsContent) {
+                # archived / low-trust source: preserve as legacy_export
+                $entry.type = 'legacy_export'
+                $entry.status = 'legacy'
+            } elseif ($isLegacyUrl) {
+                $entry.type = 'legacy_export'
+                $entry.status = 'legacy'
+            } elseif ($isRestricted) {
+                $entry.type = 'restricted_access'
+                $entry.status = 'restricted'
+            } elseif ($internalHosts -contains $urlHost -or $urlHost -like '*.github.io') {
+                $entry.type = 'internal_document'
+                $entry.status = 'ignored'
+            } else {
+                $entry.type = 'external_public'
+                $entry.status = 'pending'
             }
         }
 
@@ -188,6 +251,9 @@ $results | ConvertTo-Json -Depth 6 | Out-File -FilePath $outJson -Encoding utf8
 $total = $results.Count
 $externalCount = ($results | Where-Object { $_.type -eq 'external_public' }).Count
 $brokenExternal = ($results | Where-Object { $_.type -eq 'external_public' -and ($_.status -eq 'broken' -or $_.status -eq 'error') }).Count
+$internalCount = ($results | Where-Object { $_.type -eq 'internal_document' }).Count
+$restrictedCount = ($results | Where-Object { $_.type -eq 'restricted_access' }).Count
+$placeholderCount = ($results | Where-Object { $_.type -eq 'placeholder' }).Count
 $legacyCount = ($results | Where-Object { $_.type -eq 'legacy_export' }).Count
 $ignoredMetadata = ($results | Where-Object { $_.type -eq 'ignored_metadata' }).Count
 
@@ -198,6 +264,9 @@ $md += ""
 $md += "- total URLs discovered: $total"
 $md += "- external_public links: $externalCount"
 $md += "- broken/unreachable external links: $brokenExternal"
+$md += "- internal_document links: $internalCount"
+$md += "- restricted_access links: $restrictedCount"
+$md += "- placeholder links: $placeholderCount"
 $md += "- legacy_export links: $legacyCount"
 $md += "- ignored_metadata links: $ignoredMetadata"
 $md += ""

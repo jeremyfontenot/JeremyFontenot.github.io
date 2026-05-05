@@ -45,6 +45,9 @@ jobs:
           }
 
           $external = @($report | Where-Object { $_.type -eq 'external_public' })
+          $internalDocument = @($report | Where-Object { $_.type -eq 'internal_document' })
+          $restrictedAccess = @($report | Where-Object { $_.type -eq 'restricted_access' })
+          $placeholder = @($report | Where-Object { $_.type -eq 'placeholder' })
           $ignoredMetadata = @($report | Where-Object { $_.type -eq 'ignored_metadata' })
           $legacyExport = @($report | Where-Object { $_.type -eq 'legacy_export' })
 
@@ -171,6 +174,9 @@ jobs:
           $lines += "- Total scanned: $($report.Count)"
           $lines += "- External links: $($external.Count)"
           $lines += "- Broken links: $($ranked.Count)"
+          $lines += "- Internal documents: $($internalDocument.Count)"
+          $lines += "- Restricted access: $($restrictedAccess.Count)"
+          $lines += "- Placeholder links: $($placeholder.Count)"
           $lines += "- Ignored metadata: $($ignoredMetadata.Count)"
           $lines += "- Legacy export: $($legacyExport.Count)"
 
