@@ -3,7 +3,15 @@ title: Automation Commit abc123
 file: automation-commit-abc123.md
 excerpt: "PowerShell automation for baseline reporting (Generate-BaselineReport.ps1)."
 role: Automation Engineer
-status: Internal
+status: Verified
+verifier: ops-lead [redacted]
+commit: abc1234def (example patch attached)
+reproduce: |
+  1. Install Exchange/Intune PowerShell modules and authenticate.
+  2. Run: `.	ools\Generate-BaselineReport.ps1 -Output reports/baseline-YYYY-MM-DD.csv`
+  3. Check `reports/baseline-YYYY-MM-DD.csv` for compliance metrics.
 artifacts:
   - automation-commit-abc123.md
+  - automation-commit-abc123.patch
+  - automation-run-2024-10-05.log
 ---

@@ -55,6 +55,20 @@
       </li>
     </ul>
 
+    <hr>
+
+    <h3>How this proves entry-level system administration</h3>
+    <p>Each evidence entry links to artifacts showing concrete work you performed. For entry-level verification we provide:</p>
+    <ul>
+      <li><strong>Commit/patch</strong> — shows code you authored (see the attached patch).</li>
+      <li><strong>Execution log</strong> — timestamped run output that proves you ran the script and produced the result (`automation-run-2024-10-05.log`).</li>
+      <li><strong>Reproduction steps</strong> — exact commands in the evidence YAML so a reviewer can reproduce results locally.</li>
+      <li><strong>Verification</strong> — a verifier field and status in the YAML (`Verified`/`Internal`/`Redacted`).</li>
+    </ul>
+    <p>Example quick reproduction (local):</p>
+    <pre><code>pwsh -NoProfile -Command "./tools/Generate-BaselineReport.ps1 -Output reports/baseline-$(Get-Date -Format yyyy-MM-dd).csv"</code></pre>
+    <p>Artifacts to inspect: <a href="../../evidence/experience/automation-commit-abc123.patch">patch</a>, <a href="../../evidence/experience/automation-run-2024-10-05.log">execution log</a>, <a href="../../evidence/experience/automation-commit-abc123.md">commit notes</a>.</p>
+
   </div>
 </body>
 </html>
