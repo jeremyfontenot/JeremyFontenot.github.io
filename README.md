@@ -162,6 +162,22 @@ All paths are validated and accessible from the source browser.
 
 ---
 
+## 🔗 Link Validation & Evidence Integrity System
+
+This repository includes a link-validation pipeline designed to keep the site and archive safe to publish:
+
+- `scripts/link-scanner.ps1` scans site content, classifies URLs, validates `external_public` links, and writes `link-scan-report.json` plus `LINK_SCAN_SUMMARY.md`.
+- Classification categories include `external_public`, `internal_document`, `restricted_access`, `placeholder`, `legacy_export`, and `invalid_malformed`.
+- CI enforcement in [`.github/workflows/link-check.yml`](.github/workflows/link-check.yml) fails only when `external_public` links are broken, error, or return HTTP 4xx/5xx.
+- The PR bot in [`.github/workflows/link-scan-pr-comment.yml`](.github/workflows/link-scan-pr-comment.yml) upserts a single comment, deduplicates repeated URLs, sorts by severity, and supports top-N or expanded output.
+- Evidence validation in [`.github/workflows/validate-evidence-links.yml`](.github/workflows/validate-evidence-links.yml) reuses `scripts/validate-evidence-links.ps1` so private or archived evidence paths remain intact while public files are checked for existence.
+- Private, restricted, and placeholder links are reported for visibility but are not treated as merge-blocking failures.
+- A static viewer is available at [reports/link-health.html](reports/link-health.html) for browsing the scan JSON grouped by file and filtered by link type.
+
+The current workflow is intended to remain strict for real public link failures while avoiding false positives from archived `_content/` material and private evidence references.
+
+---
+
 ## 📝 Recent Changes
 
 **Initial Rebuild (May 2, 2026)**
