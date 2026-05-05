@@ -50,3 +50,10 @@ security monitoring, and network segmentation.
 - Provides a safe environment for automation and scripting development  
 - Includes full monitoring and SIEM visibility  
 - Replicates modern enterprise segmentation and access control  
+
+---
+
+## Scanner Test Links
+
+<!-- Force duplicate broken link for scanner test -->
+[Force 500 Error](https://httpstat.us/500)
