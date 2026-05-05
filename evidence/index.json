@@ -1,0 +1,104 @@
+[
+  {
+    "id": "evidence-2023-06-21-002",
+    "title": "AD Consolidation & GPO Standardization — 2023-06-21",
+    "excerpt": "Manage Active Directory and Group Policy configurations to standardize user access.\"",
+    "file": "",
+    "status": "",
+    "artifacts": [
+      "gpo-template-StandardDesktop.xml",
+      "prepost-audit-summary.csv",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2024-10-05-003",
+    "title": "Automation Commit abc123",
+    "excerpt": "PowerShell automation for baseline reporting (Generate-BaselineReport.ps1).\"",
+    "file": "automation-commit-abc123.md",
+    "status": "Internal",
+    "artifacts": [
+      "automation-commit-abc123.md",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2023-06-21-003",
+    "title": "GPO Template — StandardDesktop",
+    "excerpt": "Baseline GPO template used in AD consolidation and desktop hardening.\"",
+    "file": "gpo-template-StandardDesktop.xml",
+    "status": "Internal",
+    "artifacts": [
+      "gpo-template-StandardDesktop.xml",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2025-02-10-004",
+    "title": "Incident Logs — 2025-02-10",
+    "excerpt": "Transport service logs from mail flow outage investigation.\"",
+    "file": "incident-2025-02-10-logs.txt",
+    "status": "Internal",
+    "artifacts": [
+      "incident-2025-02-10-logs.txt",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2024-10-05-002",
+    "title": "Intune Profile (sample)",
+    "excerpt": "Sample Intune device compliance profile demonstrating password, encryption, patch requirements.\"",
+    "file": "intune-profile-sample.json",
+    "status": "Internal",
+    "artifacts": [
+      "intune-profile-sample.json",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2024-10-05-001",
+    "title": "M365 Baseline Report — 2024-10-05",
+    "excerpt": "Administer Microsoft 365 and Azure workloads while maintaining secure identity and endpoint baselines.\"",
+    "file": "",
+    "status": "",
+    "artifacts": [
+      "intune-profile-sample.json",
+      "automation-commit-abc123.md",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2023-06-21-004",
+    "title": "Pre/Post Audit Summary",
+    "excerpt": "CSV summary of pre/post migration audit metrics.\"",
+    "file": "prepost-audit-summary.csv",
+    "status": "Internal",
+    "artifacts": [
+      "prepost-audit-summary.csv",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2025-02-10-003",
+    "title": "RCA — Mail Flow Outage (2025-02-10)",
+    "excerpt": "Resolve escalated technical issues through structured troubleshooting, root-cause analysis.\"",
+    "file": "",
+    "status": "",
+    "artifacts": [
+      "incident-2025-02-10-logs.txt",
+      "remediation-disable-transportrule.ps1",
+      "--"
+    ]
+  },
+  {
+    "id": "evidence-2025-02-10-005",
+    "title": "Remediation Script — Disable Transport Rule",
+    "excerpt": "PowerShell remediation script used to disable a faulty transport rule during incident response.\"",
+    "file": "remediation-disable-transportrule.ps1",
+    "status": "Verified",
+    "artifacts": [
+      "remediation-disable-transportrule.ps1",
+      "--"
+    ]
+  }
+]

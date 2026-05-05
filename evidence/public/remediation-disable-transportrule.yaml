@@ -1,0 +1,10 @@
+id: evidence-2025-02-10-005
+title: Remediation Script — Disable Transport Rule
+file: remediation-disable-transportrule.ps1
+excerpt: "PowerShell remediation script used to disable a faulty transport rule during incident response." 
+role: Escalation Engineer
+status: Verified
+artifacts:
+  - remediation-disable-transportrule.ps1
+---
+

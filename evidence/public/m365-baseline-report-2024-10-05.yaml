@@ -1,0 +1,17 @@
+id: evidence-2024-10-05-001
+title: M365 Baseline Report — 2024-10-05
+excerpt: "Administer Microsoft 365 and Azure workloads while maintaining secure identity and endpoint baselines."
+role: Senior Cloud Engineer
+context: Managed M365/Azure baseline hardening for [REDACTED] tenant (Aug–Oct 2024). 50k users.
+action:
+  - Created and deployed Conditional Access policies
+  - Built Intune device compliance profiles
+  - Automated monthly baseline compliance reporting via PowerShell
+tools: [Azure AD, Microsoft Intune, PowerShell, Defender for Endpoint]
+outcome: "Baseline compliance increased from 62% to 92%; MFA adoption to 98% (2024-10-05)."
+artifacts:
+  - intune-profile-sample.json
+  - automation-commit-abc123.md
+verification: "Ticket [REDACTED] (internal) — signed off by [REDACTED] security lead (redacted)"
+---
+

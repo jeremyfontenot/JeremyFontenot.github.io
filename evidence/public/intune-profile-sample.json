@@ -1,0 +1,15 @@
+{
+  "displayName": "Standard Compliance Profile - Corporate Laptops",
+  "description": "Sample Intune device compliance profile used for baseline enforcement",
+  "settings": {
+    "osMinimumVersion": "10.0.19042",
+    "passwordRequired": true,
+    "passwordMinimumLength": 8,
+    "encryptionRequired": true,
+    "requiredSecurityPatchLevelDays": 30
+  },
+  "assignments": [
+    { "target": "All Corporate Laptops" }
+  ]
+}
+

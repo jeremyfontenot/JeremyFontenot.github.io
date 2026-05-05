@@ -1,0 +1,10 @@
+id: evidence-2024-10-05-002
+title: Intune Profile (sample)
+file: intune-profile-sample.json
+excerpt: "Sample Intune device compliance profile demonstrating password, encryption, patch requirements."
+role: Endpoint Engineer
+status: Internal
+artifacts:
+  - intune-profile-sample.json
+---
+

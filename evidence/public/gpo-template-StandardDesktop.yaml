@@ -1,0 +1,10 @@
+id: evidence-2023-06-21-003
+title: GPO Template — StandardDesktop
+file: gpo-template-StandardDesktop.xml
+excerpt: "Baseline GPO template used in AD consolidation and desktop hardening." 
+role: Windows Server Administrator
+status: Internal
+artifacts:
+  - gpo-template-StandardDesktop.xml
+---
+

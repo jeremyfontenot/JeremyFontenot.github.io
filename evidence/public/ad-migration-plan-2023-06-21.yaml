@@ -1,0 +1,17 @@
+id: evidence-2023-06-21-002
+title: AD Consolidation & GPO Standardization — 2023-06-21
+excerpt: "Manage Active Directory and Group Policy configurations to standardize user access."
+role: Windows Server Administrator
+context: Consolidation of three AD forests and rollout of standardized GPO baseline (Mar–Jun 2023).
+action:
+  - Designed OU structure
+  - Created GPO templates and applied to test OUs
+  - Automated reporting with AD PowerShell scripts
+tools: [Active Directory, Group Policy, PowerShell]
+outcome: "Reduced AD misconfigurations by 87%; onboarding SLA reduced from 72h to 6h."
+artifacts:
+  - gpo-template-StandardDesktop.xml
+  - prepost-audit-summary.csv
+verification: "Internal audit [REDACTED]-06"
+---
+
