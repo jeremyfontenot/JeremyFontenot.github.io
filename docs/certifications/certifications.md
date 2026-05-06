@@ -14,7 +14,7 @@ Certifications extracted from the portfolio homepage and preserved as a unified 
 - **MTA: Windows Server Administration** — Microsoft Verified  
 - **MTA: Security Fundamentals** — Microsoft Verified  
 - **Introduction to Cybersecurity** — Cisco Verified  
-- **Linux Essentials** — Linux Professional Institute (LPI) Verified  
+- **LPI Certification** — Linux Professional Institute (LPI) Verified  
 - **Google IT Support Specialist** — Google Verified  
 
 ---
@@ -24,5 +24,5 @@ Certifications extracted from the portfolio homepage and preserved as a unified 
 > “Microsoft Certified: Azure Fundamentals — Microsoft Verified”  
 > “CompTIA A+, CompTIA Server+, CompTIA ITF+ — CompTIA Verified”  
 > “Introduction to Cybersecurity — Cisco Verified”  
-> “Linux Essentials — Linux Professional Institute (LPI) Verified”  
+> “LPI Certification — Linux Professional Institute (LPI) Verified”  
 > “Google IT Support Specialist — Google Verified”  
