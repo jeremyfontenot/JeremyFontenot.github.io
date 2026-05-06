@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">LPI Certification Badge</title>
+  <desc id="desc">Linux Professional Institute certification badge without Linux Essentials wording.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b4f8a" />
+      <stop offset="100%" stop-color="#1b79c2" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" fill="url(#bg)" rx="28" ry="28" />
+  <rect x="22" y="22" width="468" height="468" fill="#ffffff" rx="20" ry="20" />
+
+  <circle cx="128" cy="146" r="56" fill="none" stroke="#1b79c2" stroke-width="16" />
+  <path d="M105 174 V120 H129 V152 H160" fill="none" stroke="#1b79c2" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="168" cy="118" r="8" fill="#1b79c2" />
+
+  <text x="220" y="126" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#1b79c2" font-weight="600">Linux</text>
+  <text x="220" y="166" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#1b79c2" font-weight="600">Professional</text>
+  <text x="220" y="206" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#1b79c2" font-weight="600">Institute</text>
+
+  <line x1="76" y1="252" x2="436" y2="252" stroke="#1b79c2" stroke-width="4" />
+
+  <text x="256" y="330" text-anchor="middle" font-size="44" font-family="Segoe UI, Arial, sans-serif" fill="#1b79c2" font-weight="700">LPI</text>
+  <text x="256" y="378" text-anchor="middle" font-size="44" font-family="Segoe UI, Arial, sans-serif" fill="#1b79c2" font-weight="700">CERTIFICATION</text>
+</svg>
