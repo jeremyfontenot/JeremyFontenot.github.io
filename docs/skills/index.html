@@ -1,23 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills | Documentation</title>
-  <link rel="stylesheet" href="../../css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Skills — Jeremy Fontenot | Entry-Level System Administrator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Detailed skills matrix for Windows Server, Active Directory, Microsoft 365, Intune, Networking, PowerShell, and troubleshooting." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
-<body class="section">
-  <div class="container">
-    <p class="doc-nav"><a href="../index.html">← Back to Documentation Hub</a></p>
-    <h1>Skills</h1>
-    <div class="docs-grid">
-      <a class="doc-card" href="automation.html">Automation</a>
-      <a class="doc-card" href="cloud.html">Cloud Administration</a>
-      <a class="doc-card" href="endpoint.html">Endpoint Management</a>
-      <a class="doc-card" href="identity.html">Identity & Access</a>
-      <a class="doc-card" href="infrastructure.html">Infrastructure & Operations</a>
-      <a class="doc-card" href="monitoring.html">Monitoring & Security Visibility</a>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-sky-500 text-slate-900 px-4 py-2 rounded-md">
+    Skip to main content
+  </a>
+
+  <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3" aria-label="Primary navigation">
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-sky-500/40">
+          <span class="text-sm font-semibold tracking-tight">JF</span>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-sm font-semibold">Jeremy Fontenot</span>
+          <span class="text-xs text-slate-400">Entry-Level System Administrator</span>
+        </div>
+      </div>
+      <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="primary-menu" class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html" class="nav-link" aria-current="page">Skills</a></li>
+        <li><a href="../projects/index.html" class="nav-link">Projects</a></li>
+        <li><a href="../index.html" class="nav-link">Documentation</a></li>
+        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <ul id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95" aria-label="Mobile navigation">
+      <li><a href="../index.html" class="block px-4 py-3 text-sm nav-link">Home</a></li>
+      <li><a href="index.html" class="block px-4 py-3 text-sm nav-link" aria-current="page">Skills</a></li>
+      <li><a href="../projects/index.html" class="block px-4 py-3 text-sm nav-link">Projects</a></li>
+      <li><a href="../index.html" class="block px-4 py-3 text-sm nav-link">Documentation</a></li>
+      <li><a href="../contact/index.html" class="block px-4 py-3 text-sm nav-link">Contact</a></li>
+    </ul>
+  </header>
+
+  <main id="main" class="max-w-6xl mx-auto px-4 pt-10 pb-16 space-y-12">
+    <header class="space-y-3">
+      <p class="text-xs font-semibold tracking-[0.2em] text-sky-400 uppercase">Skills Matrix</p>
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-slate-50">System Administration Skills</h1>
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
+        This skills matrix highlights my current capabilities across identity, Windows administration, cloud services,
+        endpoint management, networking, automation, security, and troubleshooting. Each area includes related tools and
+        links to projects or documentation where I have applied these skills.
+      </p>
+    </header>
+
+    <section aria-labelledby="identity-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-user-lock text-sky-400 text-sm" aria-hidden="true"></i>
+          <h2 id="identity-heading" class="text-lg font-semibold text-slate-50">Identity &amp; Access Management</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Intermediate proficiency">Intermediate</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Managing user and group lifecycle across on-premises Active Directory and Entra ID, including OU design,
+            group strategy, and access control aligned with least privilege.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Designing OU structures for departments and roles</li>
+            <li>Creating and managing security and distribution groups</li>
+            <li>Configuring Entra ID roles and admin boundaries</li>
+            <li>Enforcing MFA for privileged accounts</li>
+            <li>Using Conditional Access to protect sign-ins</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Active Directory Domain Services</li>
+              <li>Entra ID (Azure AD)</li>
+              <li>Group Policy</li>
+              <li>Microsoft 365 Admin Center</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/index.html#ad-migration">Active Directory Migration Plan</a></li>
+              <li><a href="../projects/index.html#m365-lab">Microsoft 365 Personal Cloud Lab</a></li>
+              <li><a href="../projects/index.html#m365-lab">Conditional Access and M365 setup</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="windows-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-server text-emerald-400 text-sm" aria-hidden="true"></i>
+          <h2 id="windows-heading" class="text-lg font-semibold text-slate-50">Windows Administration</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Intermediate proficiency">Intermediate</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Installing, configuring, and maintaining Windows Server roles that support identity, name resolution, and
+            file services in a small-business style environment.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Deploying domain controllers and member servers</li>
+            <li>Configuring DNS zones, records, and forwarders</li>
+            <li>Managing DHCP scopes and reservations</li>
+            <li>Setting up SMB shares and NTFS permissions</li>
+            <li>Applying baseline hardening and updates</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Windows Server 2019/2022</li>
+              <li>DNS &amp; DHCP</li>
+              <li>File and Storage Services</li>
+              <li>Group Policy Management</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/ad-migration/index.html">Windows Server and AD configuration</a></li>
+              <li><a href="../projects/index.html#incident-rca">Incident Root Cause Analysis (DNS)</a></li>
+              <li><a href="../troubleshooting/index.html">Troubleshooting resources</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cloud-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-cloud text-sky-400 text-sm" aria-hidden="true"></i>
+          <h2 id="cloud-heading" class="text-lg font-semibold text-slate-50">Cloud Administration</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Intermediate proficiency">Intermediate</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Administering Microsoft 365 services for identity, email, collaboration, and endpoint integration in a lab
+            environment that mirrors real tenant operations.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Managing users and licenses in Microsoft 365</li>
+            <li>Configuring Exchange Online mailboxes and policies</li>
+            <li>Creating SharePoint sites and permissions</li>
+            <li>Managing Teams channels and policies</li>
+            <li>Integrating Intune for device management</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Microsoft 365 Admin Center</li>
+              <li>Exchange Online</li>
+              <li>SharePoint Online</li>
+              <li>Teams Admin Center</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/index.html#m365-lab">Microsoft 365 Personal Cloud Lab</a></li>
+              <li><a href="../architecture/m365-architecture.md">M365 tenant architecture</a></li>
+              <li><a href="../projects/index.html#ps-provisioning">Microsoft Graph and automation examples</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="endpoint-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-laptop-medical text-emerald-400 text-sm" aria-hidden="true"></i>
+          <h2 id="endpoint-heading" class="text-lg font-semibold text-slate-50">Endpoint Management</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Intermediate proficiency">Intermediate</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Using Intune to standardize Windows endpoints with compliance policies, configuration profiles, and
+            application deployment, including validation and troubleshooting.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Enrolling Windows 11 devices into Intune</li>
+            <li>Creating compliance and configuration policies</li>
+            <li>Deploying Win32 and Microsoft Store apps</li>
+            <li>Monitoring device compliance and health</li>
+            <li>Documenting baseline configurations</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Intune Admin Center</li>
+              <li>Windows 11</li>
+              <li>Compliance &amp; configuration policies</li>
+              <li>Endpoint security baselines</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/index.html#intune-baseline">Intune Baseline Deployment</a></li>
+              <li><a href="../projects/intune-baseline/artifacts/intune-export.json">Intune baseline JSON</a></li>
+              <li><a href="../projects/index.html#intune-baseline">Endpoint compliance and configuration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="network-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-network-wired text-sky-400 text-sm" aria-hidden="true"></i>
+          <h2 id="network-heading" class="text-lg font-semibold text-slate-50">Networking</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Foundational proficiency">Foundational</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Supporting reliable connectivity and name resolution between servers, clients, and cloud services, with a
+            focus on DNS and basic routing concepts.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Configuring DNS zones, records, and forwarders</li>
+            <li>Managing DHCP scopes and options</li>
+            <li>Understanding VLANs and basic routing</li>
+            <li>Using pfSense in a lab environment</li>
+            <li>Troubleshooting connectivity and latency issues</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Windows DNS &amp; DHCP</li>
+              <li>pfSense</li>
+              <li>Basic VLANs and firewall rules</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/index.html#incident-rca">Incident Root Cause Analysis</a></li>
+              <li><a href="../troubleshooting/index.html">Troubleshooting resources</a></li>
+              <li><a href="../architecture/home-lab-architecture.md">Lab network diagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="automation-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-code text-fuchsia-400 text-sm" aria-hidden="true"></i>
+          <h2 id="automation-heading" class="text-lg font-semibold text-slate-50">Automation</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Intermediate proficiency">Intermediate</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Using PowerShell and Microsoft Graph to automate user provisioning, reporting, and configuration tasks,
+            while capturing logs and documentation for repeatability.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Automating new hire provisioning</li>
+            <li>Generating license and group membership reports</li>
+            <li>Interacting with Microsoft Graph via PowerShell</li>
+            <li>Creating reusable functions and modules</li>
+            <li>Logging and error handling for scripts</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>PowerShell</li>
+              <li>Microsoft Graph PowerShell SDK</li>
+              <li>ActiveDirectory module</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/index.html#ps-provisioning">PowerShell User Provisioning Automation</a></li>
+              <li><a href="../projects/rca-and-provisioning/artifacts/rca-2417.md">User provisioning artifacts</a></li>
+              <li><a href="../scripts/script-documentation.html">Microsoft Graph and automation examples</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="security-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-rose-400 text-sm" aria-hidden="true"></i>
+          <h2 id="security-heading" class="text-lg font-semibold text-slate-50">Security</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Foundational proficiency">Foundational</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Applying secure baselines, access controls, and monitoring practices that reduce risk while supporting
+            day-to-day operations in small environments.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Separating admin and standard accounts</li>
+            <li>Applying secure workstation baselines</li>
+            <li>Using Conditional Access for risky sign-ins</li>
+            <li>Monitoring sign-in logs and alerts</li>
+            <li>Documenting security-related changes</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Intune security baselines</li>
+              <li>Entra ID sign-in logs</li>
+              <li>Conditional Access</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/index.html#m365-lab">Conditional Access baseline YAML</a></li>
+              <li><a href="../projects/intune-baseline/artifacts/intune-export.json">Intune baseline JSON</a></li>
+              <li><a href="../troubleshooting/index.html">Authentication failure logs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="troubleshooting-heading" class="skill-section">
+      <div class="skill-section-header">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-stethoscope text-amber-300 text-sm" aria-hidden="true"></i>
+          <h2 id="troubleshooting-heading" class="text-lg font-semibold text-slate-50">Troubleshooting</h2>
+        </div>
+        <span class="proficiency-pill" aria-label="Intermediate proficiency">Intermediate</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>
+            Investigating incidents using logs, structured testing, and clear documentation of root cause, impact, and
+            corrective actions.
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Reproducing issues and narrowing scope</li>
+            <li>Reviewing Event Viewer and sign-in logs</li>
+            <li>Testing DNS, connectivity, and authentication</li>
+            <li>Documenting timelines and findings</li>
+            <li>Writing RCA and incident reports</li>
+          </ul>
+        </div>
+        <div class="skill-meta">
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+              <li>Event Viewer</li>
+              <li>Entra ID sign-in logs</li>
+              <li>Windows logs and PowerShell</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Supporting Evidence</h3>
+            <ul>
+              <li><a href="../projects/index.html#incident-rca">Incident Root Cause Analysis</a></li>
+              <li><a href="../projects/rca-and-provisioning/artifacts/rca-2417.md">Incident 2417 RCA report</a></li>
+              <li><a href="../troubleshooting/index.html">Troubleshooting playbook</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950/90">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>&copy; <span id="year"></span> Jeremy Fontenot. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="/sitemap.xml" class="hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-sm px-1">Sitemap</a>
+        <a href="../index.html" class="hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-sm px-1">Technical Documentation</a>
+      </div>
     </div>
-  </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

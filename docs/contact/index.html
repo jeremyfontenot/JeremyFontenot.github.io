@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact — Jeremy Fontenot | Entry-Level System Administrator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Jeremy Fontenot for entry-level System Administrator roles focused on Microsoft infrastructure." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-sky-500 text-slate-900 px-4 py-2 rounded-md">
+    Skip to main content
+  </a>
+
+  <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3" aria-label="Primary navigation">
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-sky-500/40">
+          <span class="text-sm font-semibold tracking-tight">JF</span>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-sm font-semibold">Jeremy Fontenot</span>
+          <span class="text-xs text-slate-400">Entry-Level System Administrator</span>
+        </div>
+      </div>
+      <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="primary-menu" class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <li><a href="../../index.html" class="nav-link">Home</a></li>
+        <li><a href="../../skills.html" class="nav-link">Skills</a></li>
+        <li><a href="../../projects.html" class="nav-link">Projects</a></li>
+        <li><a href="../index.html" class="nav-link">Documentation</a></li>
+        <li><a href="index.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <ul id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95" aria-label="Mobile navigation">
+      <li><a href="../../index.html" class="block px-4 py-3 text-sm nav-link">Home</a></li>
+      <li><a href="../../skills.html" class="block px-4 py-3 text-sm nav-link">Skills</a></li>
+      <li><a href="../../projects.html" class="block px-4 py-3 text-sm nav-link">Projects</a></li>
+      <li><a href="../index.html" class="block px-4 py-3 text-sm nav-link">Documentation</a></li>
+      <li><a href="index.html" class="block px-4 py-3 text-sm nav-link" aria-current="page">Contact</a></li>
+    </ul>
+  </header>
+
+  <main id="main" class="max-w-3xl mx-auto px-4 pt-10 pb-16 space-y-8">
+    <header class="space-y-3">
+      <p class="text-xs font-semibold tracking-[0.2em] text-sky-400 uppercase">Contact</p>
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-slate-50">Let’s connect</h1>
+      <p class="text-sm md:text-base text-slate-300">
+        I’m actively pursuing entry-level System Administrator roles focused on Microsoft infrastructure, identity, and
+        endpoint management. Use the form below or connect via LinkedIn or GitHub.
+      </p>
+    </header>
+
+    <section aria-labelledby="contact-form-heading" class="space-y-4">
+      <h2 id="contact-form-heading" class="text-sm font-semibold text-slate-100">Contact form</h2>
+      <form id="contact-form" class="space-y-4" novalidate>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div>
+            <label for="name" class="block text-xs font-medium text-slate-200 mb-1">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required class="form-input" />
+            <p class="form-error" id="name-error"></p>
+          </div>
+          <div>
+            <label for="email" class="block text-xs font-medium text-slate-200 mb-1">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required class="form-input" />
+            <p class="form-error" id="email-error"></p>
+          </div>
+        </div>
+
+        <div>
+          <label for="subject" class="block text-xs font-medium text-slate-200 mb-1">Subject</label>
+          <input id="subject" name="subject" type="text" required class="form-input" />
+          <p class="form-error" id="subject-error"></p>
+        </div>
+
+        <div>
+          <label for="message" class="block text-xs font-medium text-slate-200 mb-1">Message</label>
+          <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+          <p class="form-error" id="message-error"></p>
+        </div>
+
+        <!-- Simple spam protection -->
+        <div class="hidden">
+          <label for="website">Leave this field empty</label>
+          <input id="website" name="website" type="text" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <i class="fa-solid fa-paper-plane mr-2"></i>Send message
+        </button>
+        <p id="form-status" class="text-xs text-slate-400 mt-2" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section aria-labelledby="contact-links-heading" class="space-y-3">
+      <h2 id="contact-links-heading" class="text-sm font-semibold text-slate-100">Direct links</h2>
+      <div class="grid gap-3 md:grid-cols-2 text-sm">
+        <a href="https://www.linkedin.com/in/jeremyfontenot" class="contact-card">
+          <i class="fa-brands fa-linkedin text-sky-400 mr-2"></i>
+          <span>LinkedIn profile</span>
+        </a>
+        <a href="https://github.com/jeremyfontenot" class="contact-card">
+          <i class="fa-brands fa-github text-slate-100 mr-2"></i>
+          <span>GitHub profile</span>
+        </a>
+        <a href="mailto:contact@jeremyfontenot.online" class="contact-card">
+          <i class="fa-solid fa-envelope text-emerald-400 mr-2"></i>
+          <span>Email: contact@jeremyfontenot.online</span>
+        </a>
+        <a href="/assets/resume/Jeremy-Fontenot-Resume.pdf" class="contact-card" download>
+          <i class="fa-solid fa-file-arrow-down text-amber-300 mr-2"></i>
+          <span>Download resume (PDF)</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950/90">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>&copy; <span id="year"></span> Jeremy Fontenot. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="/sitemap.xml" class="hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-sm px-1">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

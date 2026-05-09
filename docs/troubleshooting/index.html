@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Troubleshooting Playbooks</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Troubleshooting playbooks: DNS, authentication, network connectivity, and incident RCA." />
+  <link rel="icon" href="/assets/logos/favicon_64x64.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bg: '#050816',
+            card: 'rgba(15,23,42,0.9)',
+            accent: '#22d3ee',
+            accentSoft: 'rgba(34,211,238,0.15)'
+          },
+          boxShadow: {
+            neon: '0 0 25px rgba(34,211,238,0.35)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-slate-100 antialiased">
+  <header class="sticky top-0 bg-bg/90 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="font-semibold">Jeremy Fontenot</a>
+      <nav><a href="/docs/index.html" class="text-sm text-accent">Docs Home</a></nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <nav class="text-sm text-slate-400 mb-4" aria-label="Breadcrumbs">
+      <a href="/docs/index.html" class="hover:underline">Docs</a> › <span>Troubleshooting</span>
+    </nav>
+
+    <h1 class="text-2xl font-semibold mb-3">Troubleshooting Playbooks</h1>
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold">DNS Troubleshooting</h2>
+      <ol class="list-decimal ml-5 text-slate-300">
+        <li>Verify DNS server settings on client and server.</li>
+        <li>Use nslookup to validate resolution and server responses.</li>
+        <li>Check event logs on DNS server for errors.</li>
+      </ol>
+      <pre id="dns-cmd" class="bg-slate-900 p-3 rounded text-xs font-mono overflow-auto mt-3">
+# Example: query DNS
+nslookup host.lab.jeremyfontenot.online 10.0.0.10
+      </pre>
+      <button class="copy-btn mt-2 px-3 py-1 bg-accent text-slate-900 rounded text-xs" data-target="dns-cmd">Copy</button>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">Authentication Failures (RCA)</h2>
+      <p class="text-slate-300">Example RCA summary for a DNS-induced authentication failure.</p>
+      <pre id="rca" class="bg-slate-900 p-3 rounded text-xs font-mono overflow-auto">
+# RCA Summary
+Issue: Users unable to authenticate to Entra-connected resources.
+Root Cause: Internal DNS forwarder misconfiguration causing stale records.
+Action: Corrected forwarder, flushed caches, validated sign-in.
+      </pre>
+      <button class="copy-btn mt-2 px-3 py-1 bg-accent text-slate-900 rounded text-xs" data-target="rca">Copy</button>
+    </section>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

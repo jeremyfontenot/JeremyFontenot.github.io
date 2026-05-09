@@ -1,36 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documentation Hub | Jeremy Fontenot</title>
-  <link rel="icon" type="image/png" sizes="64x64" href="../assets/logos/favicon_64x64.png">
-  <link rel="icon" type="image/png" sizes="128x128" href="../assets/logos/favicon_128x128.png">
-  <link rel="shortcut icon" type="image/png" href="../assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Documentation — Jeremy Fontenot | System Administration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Curated documentation for Windows Server, Active Directory, Intune, PowerShell, networking, troubleshooting, and identity & security." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
-<body class="section">
-  <div class="container">
-    <p class="doc-nav"><a href="../index.html">← Back to Home</a></p>
-    <h1>Documentation Hub</h1>
-    <p class="lead">Central index for the portfolio documentation set.</p>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-sky-500 text-slate-900 px-4 py-2 rounded-md">
+    Skip to main content
+  </a>
 
-    <div class="docs-grid">
-      <a class="doc-card" href="source-browser.html">Source Browser</a>
-      <a class="doc-card" href="architecture/index.html">Architecture</a>
-      <a class="doc-card" href="projects/index.html">Projects</a>
-      <a class="doc-card" href="scripts/index.html">Scripts</a>
-      <a class="doc-card" href="skills/index.html">Skills</a>
-      <a class="doc-card" href="experience/index.html">Experience</a>
-      <a class="doc-card" href="certifications/index.html">Certifications</a>
-      <a class="doc-card" href="brand-guide/branding.html">Brand Guide</a>
-    </div>
+  <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3" aria-label="Primary navigation">
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-sky-500/40">
+          <span class="text-sm font-semibold tracking-tight">JF</span>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-sm font-semibold">Jeremy Fontenot</span>
+          <span class="text-xs text-slate-400">Entry-Level System Administrator</span>
+        </div>
+      </div>
+      <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul id="primary-menu" class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="skills/index.html" class="nav-link">Skills</a></li>
+        <li><a href="projects/index.html" class="nav-link">Projects</a></li>
+        <li><a href="index.html" class="nav-link" aria-current="page">Documentation</a></li>
+        <li><a href="contact/index.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <ul id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95" aria-label="Mobile navigation">
+      <li><a href="../index.html" class="block px-4 py-3 text-sm nav-link">Home</a></li>
+      <li><a href="skills/index.html" class="block px-4 py-3 text-sm nav-link">Skills</a></li>
+      <li><a href="projects/index.html" class="block px-4 py-3 text-sm nav-link">Projects</a></li>
+      <li><a href="index.html" class="block px-4 py-3 text-sm nav-link" aria-current="page">Documentation</a></li>
+      <li><a href="contact/index.html" class="block px-4 py-3 text-sm nav-link">Contact</a></li>
+    </ul>
+  </header>
 
-    <div style="margin-top: 2rem; text-align: center;">
-      <a href="search.html" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(0, 234, 255, 0.1), rgba(167, 139, 250, 0.1)); border: 2px solid #00eaff; border-radius: 12px; color: #00eaff; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; cursor: pointer;">
-        🔍 Search All Documentation
-      </a>
+  <main id="main" class="max-w-6xl mx-auto px-4 pt-10 pb-16 space-y-8">
+    <header class="space-y-3">
+      <p class="text-xs font-semibold tracking-[0.2em] text-sky-400 uppercase">Documentation</p>
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-slate-50">Operational Documentation</h1>
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
+        This documentation focuses on practical system administration topics: Windows Server, Active Directory, Intune,
+        PowerShell, networking, troubleshooting, and identity &amp; security. Each document is written to be usable as a
+        runbook or reference in a small IT team.
+      </p>
+    </header>
+
+    <!-- Search -->
+    <section aria-labelledby="search-heading" class="space-y-3">
+      <h2 id="search-heading" class="text-sm font-semibold text-slate-100">Search documentation</h2>
+      <div class="relative max-w-md">
+        <label for="doc-search" class="sr-only">Search documentation</label>
+        <input id="doc-search" type="search" class="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="Search by topic, technology, or keyword" />
+        <i class="fa-solid fa-magnifying-glass text-slate-500 text-xs absolute right-3 top-1/2 -translate-y-1/2" aria-hidden="true"></i>
+      </div>
+      <p class="text-xs text-slate-400">Results update as you type. Press Tab to move between sections.</p>
+    </section>
+
+    <!-- Categories -->
+    <section class="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1.2fr)]">
+      <div class="space-y-6">
+        <article class="doc-category" data-doc-category="server">
+          <header class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-server text-emerald-400 text-sm" aria-hidden="true"></i>
+              <h2 class="text-sm font-semibold text-slate-50">Windows Server &amp; Active Directory</h2>
+            </div>
+          </header>
+          <ul class="doc-list">
+            <li>
+              <a href="projects/ad-migration/index.html" class="doc-link" data-doc-keywords="windows server build domain controller dns dhcp">
+                Windows Server and Active Directory configuration
+              </a>
+            </li>
+            <li>
+              <a href="architecture/home-lab-architecture.md" class="doc-link" data-doc-keywords="active directory ou design diagram">
+                Home Lab architecture and OU design
+              </a>
+            </li>
+            <li>
+              <a href="projects/ad-migration/artifacts/provisioning.ps1" class="doc-link" data-doc-keywords="active directory migration plan gpo">
+                User provisioning and migration scripts
+              </a>
+            </li>
+            <li>
+              <a href="projects/index.html#ad-migration" class="doc-link" data-doc-keywords="group policy baseline workstation server">
+                Active Directory migration project case study
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-category" data-doc-category="identity">
+          <header class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-user-shield text-sky-400 text-sm" aria-hidden="true"></i>
+              <h2 class="text-sm font-semibold text-slate-50">Identity &amp; Security</h2>
+            </div>
+          </header>
+          <ul class="doc-list">
+            <li>
+              <a href="architecture/m365-architecture.md" class="doc-link" data-doc-keywords="m365 tenant architecture entra id">
+                Microsoft 365 tenant architecture and identity design
+              </a>
+            </li>
+            <li>
+              <a href="projects/index.html#m365-lab" class="doc-link" data-doc-keywords="conditional access yaml mfa admins">
+                Conditional Access and M365 Lab setup
+              </a>
+            </li>
+            <li>
+              <a href="skills/identity.html" class="doc-link" data-doc-keywords="intune compliance policy export json">
+                Identity &amp; Security skill documentation
+              </a>
+            </li>
+            <li>
+              <a href="troubleshooting/index.html" class="doc-link" data-doc-keywords="authentication failure logs entra id">
+                Troubleshooting and authentication resources
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-category" data-doc-category="intune">
+          <header class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-laptop-medical text-emerald-400 text-sm" aria-hidden="true"></i>
+              <h2 class="text-sm font-semibold text-slate-50">Intune &amp; Endpoint Management</h2>
+            </div>
+          </header>
+          <ul class="doc-list">
+            <li>
+              <a href="projects/intune-baseline/artifacts/intune-export.json" class="doc-link" data-doc-keywords="intune baseline json secure workstation">
+                Intune secure workstation baseline (JSON)
+              </a>
+            </li>
+            <li>
+              <a href="projects/index.html#intune-baseline" class="doc-link" data-doc-keywords="intune compliance policy export">
+                Intune Baseline Deployment project
+              </a>
+            </li>
+            <li>
+              <a href="skills/endpoint.html" class="doc-link" data-doc-keywords="intune deployment log troubleshooting">
+                Endpoint Management skill documentation
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-category" data-doc-category="powershell">
+          <header class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-terminal text-fuchsia-400 text-sm" aria-hidden="true"></i>
+              <h2 class="text-sm font-semibold text-slate-50">PowerShell &amp; Automation</h2>
+            </div>
+          </header>
+          <ul class="doc-list">
+            <li>
+              <a href="projects/rca-and-provisioning/artifacts/rca-2417.md" class="doc-link" data-doc-keywords="powershell user provisioning ad entra id">
+                User provisioning automation and RCA
+              </a>
+            </li>
+            <li>
+              <a href="projects/index.html#ps-provisioning" class="doc-link" data-doc-keywords="user template json onboarding">
+                PowerShell User Provisioning project
+              </a>
+            </li>
+            <li>
+              <a href="skills/automation.html" class="doc-link" data-doc-keywords="microsoft graph powershell examples">
+                Automation skill documentation
+              </a>
+            </li>
+            <li>
+              <a href="scripts/script-documentation.html" class="doc-link" data-doc-keywords="provisioning log powershell">
+                Script documentation and examples
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-category" data-doc-category="networking">
+          <header class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-network-wired text-sky-400 text-sm" aria-hidden="true"></i>
+              <h2 class="text-sm font-semibold text-slate-50">Networking</h2>
+            </div>
+          </header>
+          <ul class="doc-list">
+            <li>
+              <a href="architecture/home-lab-architecture.md" class="doc-link" data-doc-keywords="lab network diagram pfsense vlan">
+                Lab network diagram and VLAN layout
+              </a>
+            </li>
+            <li>
+              <a href="troubleshooting/index.html" class="doc-link" data-doc-keywords="dns troubleshooting log">
+                DNS troubleshooting and authentication resources
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-category" data-doc-category="troubleshooting">
+          <header class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-stethoscope text-amber-300 text-sm" aria-hidden="true"></i>
+              <h2 class="text-sm font-semibold text-slate-50">Troubleshooting &amp; RCA</h2>
+            </div>
+          </header>
+          <ul class="doc-list">
+            <li>
+              <a href="projects/rca-and-provisioning/artifacts/rca-2417.md" class="doc-link" data-doc-keywords="incident rca dns authentication">
+                Incident 2417 root cause analysis (DNS &amp; authentication)</a>
+            </li>
+            <li>
+              <a href="projects/index.html#incident-rca" class="doc-link" data-doc-keywords="troubleshooting playbook runbook">
+                Incident Root Cause Analysis project
+              </a>
+            </li>
+            <li>
+              <a href="troubleshooting/index.html" class="doc-link" data-doc-keywords="change management record dns">
+                Troubleshooting resources and incident handling
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Markdown rendering preview (static) -->
+    <section aria-labelledby="preview-heading" class="space-y-3">
+      <h2 id="preview-heading" class="text-sm font-semibold text-slate-100">Sample documentation preview</h2>
+      <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 text-xs md:text-sm text-slate-200 markdown-preview">
+        <h3>Windows Server build guide (excerpt)</h3>
+        <p>This guide walks through building a domain controller for the <code>lab.local</code> domain.</p>
+        <ol>
+          <li>Install Windows Server and apply updates.</li>
+          <li>Assign a static IP and configure DNS to point to itself.</li>
+          <li>Install the Active Directory Domain Services role.</li>
+          <li>Promote the server to a new forest: <code>lab.local</code>.</li>
+          <li>Verify replication, DNS, and basic authentication.</li>
+        </ol>
+        <button type="button" class="copy-btn" data-copy="# Install-ADDSForest -DomainName 'lab.local'">
+          <i class="fa-regular fa-copy mr-1"></i>Copy sample command
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950/90">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>&copy; <span id="year"></span> Jeremy Fontenot. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="/sitemap.xml" class="hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-sm px-1">Sitemap</a>
+        <a href="/audit/audit-report.md" class="hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-sm px-1">Audit report</a>
+      </div>
     </div>
-  </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

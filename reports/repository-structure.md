@@ -1,0 +1,23 @@
+# Repository Structure
+
+- /index.html
+- /js/main.js
+- /assets/
+  - /logos/
+  - /placeholders/
+  - /og/
+  - /resume/
+- /docs/
+  - /index.html
+  - /skills/
+  - /projects/
+    - /artifacts/
+  - /identity-security/
+  - /troubleshooting/
+  - /powershell/
+  - /homelab/
+  - /server-guides/
+- /audit/
+- /reports/
+- /sitemap.xml
+- /robots.txt

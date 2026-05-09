@@ -1,647 +1,554 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jeremy Fontenot | Cloud-First IT Professional</title>
-  <link rel="icon" type="image/png" sizes="64x64" href="assets/logos/favicon_64x64.png">
-  <link rel="icon" type="image/png" sizes="128x128" href="assets/logos/favicon_128x128.png">
-  <link rel="shortcut icon" type="image/png" href="assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://analytics.ahrefs.com/analytics.js" data-key="qEbA3tO5i2yIxSvMhLxWzg" async></script>
+  <title>Jeremy Fontenot — Entry-Level System Administrator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Entry-Level System Administrator portfolio specializing in Windows Server, Active Directory, Microsoft 365, Intune, Networking, and PowerShell." />
+  <meta name="keywords" content="Entry-Level System Administrator, Windows Server, Active Directory, Microsoft 365, Intune, PowerShell, Networking, Endpoint Management, Entra ID" />
+  <meta name="author" content="Jeremy Fontenot" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jeremy Fontenot — Entry-Level System Administrator" />
+  <meta property="og:description" content="Recruiter-focused portfolio showcasing Windows Server, Active Directory, Microsoft 365, Intune, and PowerShell projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jeremyfontenot.online/" />
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/img/hero-preview.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jeremy Fontenot — Entry-Level System Administrator" />
+  <meta name="twitter:description" content="Enterprise-grade, recruiter-optimized System Administrator portfolio." />
+  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/img/hero-preview.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jeremy Fontenot",
+    "jobTitle": "Entry-Level System Administrator",
+    "url": "https://jeremyfontenot.online/",
+    "sameAs": [
+      "https://www.linkedin.com/in/jeremyfontenot",
+      "https://github.com/jeremyfontenot"
+    ],
+    "knowsAbout": [
+      "Windows Server",
+      "Active Directory",
+      "Entra ID",
+      "Microsoft 365",
+      "Intune",
+      "PowerShell",
+      "Networking",
+      "Endpoint Management",
+      "Identity and Access Management",
+      "Automation",
+      "Troubleshooting"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha384-heroicons" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-sky-500 text-slate-900 px-4 py-2 rounded-md">
+    Skip to main content
+  </a>
 
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">Jeremy Fontenot</div>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links" id="primary-navigation">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certs">Certifications</a></li>
-        <li><a href="#documentation">Documentation</a></li>
-        <li><a href="docs/evidence.html">Evidence</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3" aria-label="Primary navigation">
+    
+    <div class="flex items-center gap-3">
+
+      <!-- FIXED LOGO -->
+      <img 
+        src="/assets/logos/logo_horizontal_3000x1500.png"
+        alt="Jeremy Fontenot Logo"
+        class="h-14 w-auto object-contain select-none"
+      />
+
+      <!-- Name + Title -->
+      <div class="flex flex-col leading-tight">
+        <span class="text-sm font-semibold">Jeremy Fontenot</span>
+        <span class="text-xs text-slate-400">Entry-Level System Administrator</span>
+      </div>
+
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500" aria-expanded="false" aria-controls="primary-menu">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <ul id="primary-menu" class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <li><a href="index.html" class="nav-link aria-[current=page]:text-sky-400" aria-current="page">Home</a></li>
+      <li><a href="docs/skills/index.html" class="nav-link">Skills</a></li>
+      <li><a href="docs/projects/index.html" class="nav-link">Projects</a></li>
+      <li><a href="docs/index.html" class="nav-link">Documentation</a></li>
+      <li><a href="docs/contact/index.html" class="nav-link">Contact</a></li>
+    </ul>
+
   </nav>
+</header>
 
-  <!-- PARTICLES LAYER -->
-  <canvas id="particles"></canvas>
-
-  <!-- HERO -->
-  <header class="hero section">
-    <div class="hero-inner container">
-      <div class="hero-text">
-        <h1>Cloud‑First IT Professional</h1>
-        <p class="hero-lead">Microsoft 365 • Entra ID • Intune • Automation • Modern Infrastructure</p>
-        <p class="hero-summary">
-          I design secure, polished, and automated Microsoft environments that feel enterprise-grade and look unforgettable.
+  <main id="main" class="max-w-6xl mx-auto px-4 pt-10 pb-16 space-y-16">
+    <!-- HERO -->
+    <section aria-labelledby="hero-heading" class="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] items-center">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.2em] text-sky-400 uppercase mb-3">System Administration Portfolio</p>
+        <h1 id="hero-heading" class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-50">
+          Jeremy Fontenot — Entry-Level System Administrator
+        </h1>
+        <p class="mt-3 text-sm md:text-base text-slate-300">
+          Windows Server • Active Directory • Microsoft 365 • Intune • Networking • PowerShell
         </p>
-        <div class="hero-actions">
-          <a class="hero-btn hero-btn--primary" href="#projects">Explore Projects</a>
-          <a class="hero-btn hero-btn--secondary" href="#documentation">Open Documentation</a>
-        </div>
-        <div class="hero-metrics" aria-label="Highlights">
-          <span>Cloud-first systems</span>
-          <span>Identity security</span>
-          <span>Automation workflows</span>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <img src="assets/website-images/full-neon-tech-hero-banner.png"
-             alt="Neon Tech Cloud Hero" class="hero-banner">
-      </div>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-  <div class="container about-container">
-    <div class="about-grid">
-      <div class="about-avatar">
-        <img src="assets/profile-pictures/branded-avatar.png" alt="Jeremy Fontenot Branded Avatar" class="avatar-img">
-      </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m a cloud‑first IT professional specializing in Microsoft 365, Entra ID, Intune, and modern workplace automation.
-          I build secure, scalable, enterprise‑grade environments with a focus on user experience, reliability, and operational excellence.
+        <p class="mt-5 text-sm md:text-base text-slate-300 max-w-xl">
+          I design, deploy, and support Microsoft-centric infrastructure with a focus on identity, endpoint management,
+          automation, and clear documentation that helps teams operate reliably.
         </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-  <div class="container">
-    <h2>Core Skills</h2>
-
-    <div class="grid grid--skills">
-
-      <!-- Microsoft 365 -->
-      <a class="card skill-card card-link" href="docs/skills/cloud.html">
-        <h3>Microsoft 365</h3>
-        <p class="skill-sub">Administration, governance, automation</p>
-        <ul class="skill-list">
-          <li>Tenant governance & lifecycle management</li>
-          <li>Exchange Online administration</li>
-          <li>SharePoint/OneDrive configuration</li>
-          <li>Teams provisioning & policy management</li>
-          <li>M365 automation via Graph + PowerShell</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">Exchange Online</span>
-          <span class="tag">Teams</span>
-          <span class="tag">SharePoint</span>
-          <span class="tag">Graph API</span>
-          <span class="tag">Automation</span>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/assets/resume/Jeremy-Fontenot-Resume.pdf" class="btn-primary" download>
+            <i class="fa-solid fa-file-arrow-down mr-2"></i>Download Resume
+          </a>
+          <a href="docs/projects/index.html" class="btn-secondary">
+            <i class="fa-solid fa-diagram-project mr-2"></i>View Projects
+          </a>
+          <a href="docs/contact/index.html" class="btn-ghost">
+            <i class="fa-solid fa-envelope mr-2"></i>Contact
+          </a>
         </div>
-      </a>
-
-      <!-- Entra ID -->
-      <a class="card skill-card card-link" href="docs/skills/identity.html">
-        <h3>Entra ID</h3>
-        <p class="skill-sub">Identity, conditional access, security</p>
-        <ul class="skill-list">
-          <li>Conditional Access design & enforcement</li>
-          <li>MFA, SSPR, identity protection</li>
-          <li>RBAC & privileged identity workflows</li>
-          <li>App registrations & enterprise apps</li>
-          <li>Identity lifecycle automation</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">Conditional Access</span>
-          <span class="tag">MFA</span>
-          <span class="tag">SSPR</span>
-          <span class="tag">RBAC</span>
-          <span class="tag">Identity Protection</span>
-        </div>
-      </a>
-
-      <!-- Intune -->
-      <a class="card skill-card card-link" href="docs/skills/endpoint.html">
-        <h3>Intune</h3>
-        <p class="skill-sub">Device management, compliance, provisioning</p>
-        <ul class="skill-list">
-          <li>Compliance & configuration profiles</li>
-          <li>Autopilot deployment & ESP tuning</li>
-          <li>App deployment (Win32, Store, LOB)</li>
-          <li>Update rings & security baselines</li>
-          <li>Zero‑touch provisioning workflows</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">Autopilot</span>
-          <span class="tag">Compliance</span>
-          <span class="tag">Win32 Apps</span>
-          <span class="tag">Baselines</span>
-          <span class="tag">Zero‑Touch</span>
-        </div>
-      </a>
-
-      <!-- PowerShell -->
-      <a class="card skill-card card-link" href="docs/skills/automation.html">
-        <h3>PowerShell</h3>
-        <p class="skill-sub">Automation, scripting, workflows</p>
-        <ul class="skill-list">
-          <li>Graph API automation</li>
-          <li>M365/Entra/Intune scripting</li>
-          <li>Idempotent provisioning scripts</li>
-          <li>Bulk operations & reporting</li>
-          <li>Secure credential handling</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">Graph API</span>
-          <span class="tag">Automation</span>
-          <span class="tag">Scripting</span>
-          <span class="tag">Provisioning</span>
-          <span class="tag">Reporting</span>
-        </div>
-      </a>
-
-      <!-- Azure -->
-      <a class="card skill-card card-link" href="docs/skills/cloud.html">
-        <h3>Azure</h3>
-        <p class="skill-sub">Compute, identity, networking</p>
-        <ul class="skill-list">
-          <li>Azure AD/Entra integration</li>
-          <li>VM provisioning & management</li>
-          <li>VNETs, NSGs, hybrid connectivity</li>
-          <li>Azure Files/Storage configuration</li>
-          <li>Monitoring & logging (Log Analytics)</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">VMs</span>
-          <span class="tag">VNETs</span>
-          <span class="tag">NSGs</span>
-          <span class="tag">Storage</span>
-          <span class="tag">Log Analytics</span>
-        </div>
-      </a>
-
-      <!-- Security -->
-      <a class="card skill-card card-link" href="docs/skills/monitoring.html">
-        <h3>Security</h3>
-        <p class="skill-sub">Zero Trust, MFA, hardening</p>
-        <ul class="skill-list">
-          <li>Zero Trust architecture alignment</li>
-          <li>Endpoint hardening & compliance</li>
-          <li>Identity threat protection</li>
-          <li>Secure access policies</li>
-          <li>Audit, logging, and governance</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">Zero Trust</span>
-          <span class="tag">Hardening</span>
-          <span class="tag">Threat Protection</span>
-          <span class="tag">Governance</span>
-          <span class="tag">Audit</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-  <div class="container">
-    <h2>Projects</h2>
-    <p class="section-intro">
-      Selected work that combines Microsoft 365, identity, automation, and infrastructure into clear, validated outcomes.
-    </p>
-
-    <div class="grid grid--projects">
-
-      <!-- PROJECT 1 -->
-      <a class="card project-card card-link" href="docs/projects/m365-lab.html">
-        <span class="project-kicker">Featured Lab</span>
-        <h3>Modern Workplace Deployment (Lab Simulation)</h3>
-        <p class="project-sub">Intune • Autopilot • Entra ID</p>
-        <p class="project-desc">
-          Designed a full modern workplace environment modeled after enterprise deployments.  
-          Implemented cloud-first provisioning, compliance controls, and automated device onboarding.
-        </p>
-        <ul class="project-list">
-          <li>Autopilot deployment with zero‑touch provisioning</li>
-          <li>Compliance, security baselines, and update rings</li>
-          <li>Lifecycle automation using PowerShell + Graph</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">Intune</span>
-          <span class="tag">Autopilot</span>
-          <span class="tag">Entra ID</span>
-          <span class="tag">Graph API</span>
-          <span class="tag">PowerShell</span>
-        </div>
-      </a>
-
-      <!-- PROJECT 2 -->
-      <a class="card project-card card-link" href="docs/projects/m365-lab.html">
-        <span class="project-kicker">Security Focus</span>
-        <h3>Identity Hardening Initiative (Modeled After Healthcare Environment)</h3>
-        <p class="project-sub">Zero Trust • Identity Security</p>
-        <p class="project-desc">
-          Built a lab environment replicating healthcare identity requirements.  
-          Implemented Conditional Access, MFA enforcement, and privileged access workflows aligned with Zero Trust.
-        </p>
-        <ul class="project-list">
-          <li>Zero Trust‑aligned Conditional Access policies</li>
-          <li>MFA, SSPR, and identity protection configuration</li>
-          <li>Privileged access workflow modeling</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">Conditional Access</span>
-          <span class="tag">MFA</span>
-          <span class="tag">Identity Protection</span>
-          <span class="tag">RBAC</span>
-          <span class="tag">Security</span>
-        </div>
-      </a>
-
-      <!-- PROJECT 3 -->
-      <a class="card project-card card-link" href="docs/projects/home-lab.html">
-        <span class="project-kicker">Infrastructure</span>
-        <h3>Startup Infrastructure Build-Out (Real-World Project)</h3>
-        <p class="project-sub">Windows Server • Hybrid Identity</p>
-        <p class="project-desc">
-          Built the foundational infrastructure for a new startup, including Active Directory, networking,  
-          and hybrid identity integration with Entra ID.
-        </p>
-        <ul class="project-list">
-          <li>Windows Server + Active Directory deployment</li>
-          <li>Hybrid identity with Azure AD Connect</li>
-          <li>Secure workstation provisioning and baselines</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">Windows Server</span>
-          <span class="tag">Active Directory</span>
-          <span class="tag">Azure AD Connect</span>
-          <span class="tag">Networking</span>
-          <span class="tag">Intune</span>
-        </div>
-      </a>
-
-      <!-- PROJECT 4 -->
-      <a class="card project-card card-link" href="docs/projects/m365-lab.html">
-        <span class="project-kicker">Automation</span>
-        <h3>M365 Automation Framework (Lab + Real Use)</h3>
-        <p class="project-sub">PowerShell • Graph API</p>
-        <p class="project-desc">
-          Developed a modular automation framework to streamline Microsoft 365 operations,  
-          including provisioning, reporting, and lifecycle workflows.
-        </p>
-        <ul class="project-list">
-          <li>Automated onboarding/offboarding workflows</li>
-          <li>Graph API‑driven reporting engine</li>
-          <li>Secure token and credential handling</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">PowerShell</span>
-          <span class="tag">Graph API</span>
-          <span class="tag">Automation</span>
-          <span class="tag">M365</span>
-          <span class="tag">Identity</span>
-        </div>
-      </a>
-
-      <!-- PROJECT 5 -->
-      <a class="card project-card card-link" href="docs/projects/m365-lab.html">
-        <span class="project-kicker">Governance</span>
-        <h3>Secure Access Policy Overhaul (Lab Simulation)</h3>
-        <p class="project-sub">Zero Trust • Governance</p>
-        <p class="project-desc">
-          Recreated a multi‑tenant access governance environment to practice designing secure,  
-          least‑privilege access policies aligned with Zero Trust principles.
-        </p>
-        <ul class="project-list">
-          <li>Conditional Access restructuring</li>
-          <li>Privileged identity governance modeling</li>
-          <li>Audit and monitoring enhancements</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">Zero Trust</span>
-          <span class="tag">Governance</span>
-          <span class="tag">Conditional Access</span>
-          <span class="tag">Identity</span>
-          <span class="tag">Security</span>
-        </div>
-      </a>
-
-      <!-- PROJECT 6 -->
-      <a class="card project-card card-link" href="docs/projects/home-lab.html">
-        <span class="project-kicker">Endpoint</span>
-        <h3>Endpoint Hardening Initiative (Lab)</h3>
-        <p class="project-sub">Compliance • Baselines</p>
-        <p class="project-desc">
-          Implemented enterprise‑style endpoint hardening using Intune baselines,  
-          compliance policies, and vulnerability reduction strategies.
-        </p>
-        <ul class="project-list">
-          <li>Security baselines + compliance profiles</li>
-          <li>Threat surface reduction</li>
-          <li>Automated remediation workflows</li>
-        </ul>
-        <div class="project-tags">
-          <span class="tag">Intune</span>
-          <span class="tag">Compliance</span>
-          <span class="tag">Baselines</span>
-          <span class="tag">Security</span>
-          <span class="tag">Hardening</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-
-  <section id="experience" class="section">
-  <div class="container">
-    <h2>Experience</h2>
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <a class="timeline-content card card-link" href="docs/experience/experience.html">
-          <h3>Service Desk Technician — Logicalis, Inc.</h3>
-          <p class="timeline-meta">Cloud-first enterprise support • Modern workplace</p>
-          <ul>
-            <li>Supported Microsoft 365, Entra ID, and Intune environments with a focus on identity and device compliance.</li>
-            <li>Automated repetitive tasks using PowerShell to improve resolution speed and consistency.</li>
-            <li>Assisted with access management, device onboarding, and cloud security operations.</li>
-          </ul>
-        </a>
+        <dl class="mt-8 grid grid-cols-2 gap-4 max-w-md text-xs md:text-sm">
+          <div class="glass-tile">
+            <dt class="text-slate-400">Primary focus</dt>
+            <dd class="font-medium text-slate-100">Microsoft 365 &amp; Identity</dd>
+          </div>
+          <div class="glass-tile">
+            <dt class="text-slate-400">Core tools</dt>
+            <dd class="font-medium text-slate-100">AD, Entra ID, Intune, PowerShell</dd>
+          </div>
+          <div class="glass-tile">
+            <dt class="text-slate-400">Strengths</dt>
+            <dd class="font-medium text-slate-100">Troubleshooting &amp; documentation</dd>
+          </div>
+          <div class="glass-tile">
+            <dt class="text-slate-400">Environment</dt>
+            <dd class="font-medium text-slate-100">Homelab mirroring SMB infrastructure</dd>
+          </div>
+        </dl>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <a class="timeline-content card card-link" href="docs/experience/experience.html">
-          <h3>SME (Subject Matter Expert) — Insight Global</h3>
-          <p class="timeline-meta">Client: HealthESystems • Healthcare technology</p>
-          <ul>
-            <li>Provided advanced support for Microsoft 365 and Entra ID in a healthcare environment.</li>
-            <li>Led escalations and root‑cause analysis for identity, access, and authentication issues.</li>
-            <li>Standardized support workflows and mentored technicians to improve service quality.</li>
-          </ul>
-        </a>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <a class="timeline-content card card-link" href="docs/experience/experience.html">
-          <h3>IT Technician — Completeful Technologies</h3>
-          <p class="timeline-meta">Startup on‑prem build‑out</p>
-          <ul>
-            <li>Built the company’s first Windows Server and Active Directory environment.</li>
-            <li>Configured networking, DNS, DHCP, and workstation provisioning.</li>
-            <li>Implemented secure, scalable foundations for production operations.</li>
-          </ul>
-        </a>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <a class="timeline-content card card-link" href="docs/experience/experience.html">
-          <h3>Technical Support — Hughes Network Services</h3>
-          <p class="timeline-meta">Enterprise connectivity and infrastructure</p>
-          <ul>
-            <li>Troubleshot networking and connectivity issues for enterprise clients.</li>
-            <li>Provided Tier 2 support for infrastructure and system operations.</li>
-            <li>Documented solutions to expand the internal knowledge base.</li>
-          </ul>
-        </a>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <a class="timeline-content card card-link" href="docs/experience/experience.html">
-          <h3>Help Desk — Remington College</h3>
-          <p class="timeline-meta">Academic environment support</p>
-          <ul>
-            <li>Delivered front‑line support for staff and students across campus systems.</li>
-            <li>Managed accounts, password resets, and workstation troubleshooting.</li>
-            <li>Helped maintain uptime and reliability for critical academic services.</li>
-          </ul>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- CERTIFICATIONS -->
-  <section id="certs" class="section">
-  <div class="container">
-    <h2>Certifications</h2>
-    <div class="grid grid--certs">
-
-      <div class="cert-card" data-title="Cisco Certification" data-desc="Foundational networking concepts including routing, switching, and infrastructure basics.">
-        <img src="assets/certifications/badges/cisco.png" alt="Cisco Certification Badge">
-        <p>Cisco Certification</p>
-      </div>
-
-      <div class="cert-card" data-title="CompTIA A+" data-desc="Core IT support, hardware, OS troubleshooting, and operational procedures.">
-        <img src="assets/certifications/badges/comptia-a+.png" alt="CompTIA A+ Certification Badge">
-        <p>CompTIA A+</p>
-      </div>
-
-      <div class="cert-card" data-title="CompTIA ITF+" data-desc="Foundational IT concepts, terminology, and basic system operations.">
-        <img src="assets/certifications/badges/comptia-itf+.png" alt="CompTIA ITF+ Certification Badge">
-        <p>CompTIA ITF+</p>
-      </div>
-
-      <div class="cert-card" data-title="CompTIA Server+" data-desc="Server hardware, virtualization, storage, and troubleshooting.">
-        <img src="assets/certifications/badges/comptia-server+.png" alt="CompTIA Server+ Certification Badge">
-        <p>CompTIA Server+</p>
-      </div>
-
-      <div class="cert-card" data-title="Google IT Support" data-desc="IT support fundamentals, networking, system administration, and troubleshooting.">
-        <img src="assets/certifications/badges/google-it-support.png" alt="Google IT Support Certification Badge">
-        <p>Google IT Support</p>
-      </div>
-
-      <div class="cert-card" data-title="LPI Certification" data-desc="Linux Professional Institute foundational certification.">
-        <img src="assets/certifications/badges/lpi-certification.svg" alt="LPI Certification Badge">
-        <p>LPI Certification</p>
-      </div>
-
-      <div class="cert-card" data-title="Azure Fundamentals" data-desc="Core Azure services, identity, governance, and cloud concepts.">
-        <img src="assets/certifications/badges/microsoft-azure-fundamentals.png" alt="Microsoft Azure Fundamentals Certification Badge">
-        <p>Azure Fundamentals</p>
-      </div>
-
-      <div class="cert-card" data-title="MTA Networking" data-desc="Networking fundamentals, protocols, and infrastructure basics.">
-        <img src="assets/certifications/badges/mta-networking.png" alt="MTA Networking Certification Badge">
-        <p>MTA Networking</p>
-      </div>
-
-      <div class="cert-card" data-title="MTA Security" data-desc="Security fundamentals, access control, and threat mitigation.">
-        <img src="assets/certifications/badges/mta-security.png" alt="MTA Security Certification Badge">
-        <p>MTA Security</p>
-      </div>
-
-      <div class="cert-card" data-title="MTA Windows Server" data-desc="Windows Server fundamentals, roles, and administration.">
-        <img src="assets/certifications/badges/mta-windows-server.png" alt="MTA Windows Server Certification Badge">
-        <p>MTA Windows Server</p>
-      </div>
-
-      <div class="cert-card" data-title="WCITP Certification" data-desc="Workforce IT professional certification demonstrating foundational IT skills.">
-        <img src="assets/certifications/badges/Jeremy_Chant_Fontenot_WCITP1_thumb_web.png" alt="WCITP Certification Badge">
-        <p>WCITP Certification</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- DOCUMENTATION HUB -->
-<section id="documentation" class="section">
-  <div class="container">
-    <h2>Documentation Hub</h2>
-    <p class="section-intro">
-      Browse the deeper case studies, archived work, and technical write-ups that back up the portfolio highlights above.
-    </p>
-
-    <div class="grid grid--docs">
-
-      <a class="doc-card" href="docs/projects/index.html">
-        <span class="doc-card-title">Projects</span>
-        <span class="doc-card-desc">Lab builds, infrastructure design, and automation case studies.</span>
-      </a>
-      <a class="doc-card" href="docs/skills/index.html">
-        <span class="doc-card-title">Skills</span>
-        <span class="doc-card-desc">Role-based skill breakdowns with supporting evidence.</span>
-      </a>
-      <a class="doc-card" href="docs/experience/index.html">
-        <span class="doc-card-title">Experience</span>
-        <span class="doc-card-desc">Career history written for clarity and validation.</span>
-      </a>
-      <a class="doc-card" href="docs/architecture/index.html">
-        <span class="doc-card-title">Architecture</span>
-        <span class="doc-card-desc">Diagrams and system layouts for lab and workplace designs.</span>
-      </a>
-      <a class="doc-card" href="docs/scripts/index.html">
-        <span class="doc-card-title">Scripts</span>
-        <span class="doc-card-desc">Automation notes, validation, and script documentation.</span>
-      </a>
-      <a class="doc-card" href="docs/certifications/index.html">
-        <span class="doc-card-title">Certifications</span>
-        <span class="doc-card-desc">Credential evidence and supporting documentation.</span>
-      </a>
-      <a class="doc-card doc-card--wide" href="docs/index.html">
-        <span class="doc-card-title">Master Evidence Page</span>
-        <span class="doc-card-desc">The central archive for the entire documentation system.</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- CERT MODAL -->
-  <div id="cert-modal" class="cert-modal">
-    <div class="cert-modal-content">
-      <span id="cert-modal-close">&times;</span>
-      <img id="cert-modal-img" src="" alt="">
-      <h3 id="cert-modal-title"></h3>
-      <p id="cert-modal-desc"></p>
-    </div>
-  </div>
-
-  <section id="contact" class="section">
-  <div class="container">
-    <h2>Contact</h2>
-
-    <div class="contact-grid">
-
-      <div class="contact-info card contact-panel">
-        <h3>Let’s Work Together</h3>
-        <p class="contact-lead">
-          If your team needs a motivated system administrator with hands‑on experience in Microsoft 365,  
-          identity security, and automation‑ready operations, I’d love to connect.
-        </p>
-
-        <div class="contact-details">
-          <div class="contact-item">
-            <span class="contact-label">Email</span>
-            <span>jeremy.fontenot@jeremyfontenot.online</span>
+      <!-- Hero Visual: Infrastructure + Terminal -->
+      <div class="relative">
+        <div class="absolute -inset-6 bg-gradient-to-br from-sky-500/20 via-emerald-400/10 to-fuchsia-500/10 blur-3xl opacity-70 pointer-events-none" aria-hidden="true"></div>
+        <div class="relative space-y-4">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur shadow-xl shadow-sky-900/40 p-4">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1.5">
+                <span class="h-2.5 w-2.5 rounded-full bg-rose-500"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-amber-400"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+              </div>
+              <p class="text-[10px] text-slate-400 font-mono">PS C:\Admin\</p>
+            </div>
+            <div class="terminal font-mono text-[11px] leading-relaxed text-slate-100" aria-label="Animated PowerShell terminal">
+              <p><span class="text-sky-400">PS C:\&gt;</span> Import-Module ActiveDirectory</p>
+              <p><span class="text-sky-400">PS C:\&gt;</span> .\New-HireUser.ps1 -Template "StandardUser" -Count 5</p>
+              <p class="text-emerald-400">[OK] Created 5 users, assigned licenses, and added to security groups.</p>
+              <p><span class="text-sky-400">PS C:\&gt;</span> Invoke-IntuneBaseline -Policy "Secure-Workstation"</p>
+              <p class="text-emerald-400">[OK] Baseline applied to 42 devices. Compliance: 100%.</p>
+              <p><span class="text-sky-400">PS C:\&gt;</span> Resolve-Incident -Ticket 2417</p>
+              <p class="text-amber-300">[RCA] DNS misconfiguration on branch DC. Updated forwarders and validated replication.</p>
+            </div>
           </div>
 
-          <div class="contact-item">
-            <span class="contact-label">Location</span>
-            <p>Abbeville, Louisiana</p>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-label">Availability</span>
-            <p>Open to remote or hybrid roles</p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur p-3 flex flex-col gap-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-medium text-slate-200">Identity Plane</span>
+                <i class="fa-solid fa-user-shield text-sky-400 text-xs"></i>
+              </div>
+              <ul class="text-[11px] text-slate-300 space-y-1">
+                <li>• Entra ID tenant with synced AD users</li>
+                <li>• MFA enforced for admin roles</li>
+                <li>• Conditional Access for risky sign-ins</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur p-3 flex flex-col gap-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-medium text-slate-200">Endpoint Plane</span>
+                <i class="fa-solid fa-laptop-code text-emerald-400 text-xs"></i>
+              </div>
+              <ul class="text-[11px] text-slate-300 space-y-1">
+                <li>• Intune baseline for Windows 11</li>
+                <li>• Compliance &amp; configuration policies</li>
+                <li>• Application deployment via Win32 apps</li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="contact-links">
-          <a href="mailto:jeremy.fontenot@jeremyfontenot.online" class="contact-btn contact-btn--primary">Email Me</a>
-          <a href="assets/resume/Jeremy-Fontenot-Resume.pdf" target="_blank" class="contact-btn">Download Resume</a>
-          <a href="https://github.com/JeremyFontenot" target="_blank" class="contact-btn">GitHub</a>
+    <!-- PROFESSIONAL SUMMARY -->
+    <section aria-labelledby="summary-heading" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <div class="h-6 w-0.5 bg-gradient-to-b from-sky-500 to-emerald-400 rounded-full"></div>
+        <h2 id="summary-heading" class="text-xl font-semibold text-slate-50">Professional Summary</h2>
+      </div>
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
+        I am an entry-level System Administrator focused on Microsoft-based environments, including Windows Server,
+        Active Directory, Entra ID, Microsoft 365, and Intune. I build and maintain a homelab that mirrors small and
+        mid-sized business infrastructure, giving me practical experience with identity, endpoint management, and
+        network services.
+      </p>
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
+        My strengths include troubleshooting authentication and connectivity issues, automating repeatable tasks with
+        PowerShell, and documenting changes in a way that supports incident response and future maintenance. I enjoy
+        turning loosely defined problems into clear runbooks, scripts, and configurations that can be reused by a team.
+      </p>
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
+        This portfolio highlights real-world style projects such as Active Directory migration planning, Intune baseline
+        deployment, Microsoft 365 lab design, incident root cause analysis, and user provisioning automation. Each
+        project includes architecture diagrams, scripts, logs, and documentation to demonstrate how I approach
+        system administration work from both a technical and operational perspective.
+      </p>
+    </section>
+
+    <!-- CORE SKILLS GRID -->
+    <section aria-labelledby="skills-heading" class="space-y-6">
+      <div class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-0.5 bg-gradient-to-b from-sky-500 to-fuchsia-500 rounded-full"></div>
+          <h2 id="skills-heading" class="text-xl font-semibold text-slate-50">Core Skills</h2>
+        </div>
+        <a href="docs/skills/index.html" class="inline-flex items-center text-xs font-medium text-sky-400 hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-md px-2 py-1">
+          View detailed skills
+          <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+        </a>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Identity &amp; Access</h3>
+            <i class="fa-solid fa-user-lock text-sky-400 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Managing on-premises and cloud identity with secure access controls and clear group structures.
+          </p>
+          <ul class="skill-list">
+            <li>Active Directory users, groups, OUs</li>
+            <li>Entra ID, security groups, roles</li>
+            <li>MFA and Conditional Access basics</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Systems Administration</h3>
+            <i class="fa-solid fa-server text-emerald-400 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Building and maintaining Windows Server roles that support identity, file services, and core infrastructure.
+          </p>
+          <ul class="skill-list">
+            <li>Windows Server installation &amp; hardening</li>
+            <li>DNS, DHCP, file services</li>
+            <li>Group Policy baselines</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Endpoint Management</h3>
+            <i class="fa-solid fa-laptop-medical text-emerald-400 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Standardizing Windows endpoints using Intune policies, compliance rules, and application deployment.
+          </p>
+          <ul class="skill-list">
+            <li>Intune device enrollment</li>
+            <li>Compliance &amp; configuration profiles</li>
+            <li>Win32 app deployment</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Networking</h3>
+            <i class="fa-solid fa-network-wired text-sky-400 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Supporting reliable connectivity and name resolution across servers, clients, and cloud services.
+          </p>
+          <ul class="skill-list">
+            <li>DNS troubleshooting and records</li>
+            <li>DHCP scopes and reservations</li>
+            <li>Basic VLAN and firewall concepts</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Automation</h3>
+            <i class="fa-solid fa-code text-fuchsia-400 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Using PowerShell to reduce manual work, standardize changes, and capture repeatable workflows.
+          </p>
+          <ul class="skill-list">
+            <li>User provisioning scripts</li>
+            <li>Reporting and inventory</li>
+            <li>Scheduled tasks and logging</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Troubleshooting</h3>
+            <i class="fa-solid fa-stethoscope text-amber-300 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Investigating incidents using logs, structured testing, and clear documentation of root cause and fixes.
+          </p>
+          <ul class="skill-list">
+            <li>Authentication failures</li>
+            <li>DNS and connectivity issues</li>
+            <li>Incident RCA documentation</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Security &amp; Compliance</h3>
+            <i class="fa-solid fa-shield-halved text-rose-400 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Applying secure baselines and access controls that align with least privilege and basic compliance needs.
+          </p>
+          <ul class="skill-list">
+            <li>Secure workstation baselines</li>
+            <li>Admin role separation</li>
+            <li>Patch and update awareness</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-50">Documentation</h3>
+            <i class="fa-solid fa-file-lines text-sky-300 text-sm" aria-hidden="true"></i>
+          </div>
+          <p class="text-xs text-slate-300 mb-3">
+            Writing clear, reusable documentation that supports operations, onboarding, and incident response.
+          </p>
+          <ul class="skill-list">
+            <li>SOPs and runbooks</li>
+            <li>Change and incident records</li>
+            <li>Troubleshooting playbooks</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section aria-labelledby="projects-heading" class="space-y-6">
+      <div class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-0.5 bg-gradient-to-b from-emerald-400 to-sky-500 rounded-full"></div>
+          <h2 id="projects-heading" class="text-xl font-semibold text-slate-50">Featured Projects</h2>
+        </div>
+        <a href="docs/projects/index.html" class="inline-flex items-center text-xs font-medium text-sky-400 hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-md px-2 py-1">
+          View all projects
+          <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+        </a>
+      </div>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <!-- AD Migration -->
+        <article class="project-card">
+          <header class="flex items-start justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-semibold text-slate-50">Active Directory Migration Plan</h3>
+              <p class="text-[11px] text-slate-400">Modernizing a legacy domain structure into a clean, supportable design.</p>
+            </div>
+            <span class="badge">Identity &amp; Access</span>
+          </header>
+          <p class="text-xs text-slate-300 mb-3">
+            Designed a migration plan to move from a flat, legacy AD structure to a role-based OU and group model,
+            including GPO baselines and validation steps.
+          </p>
+          <dl class="project-meta">
+            <div>
+              <dt>Technologies</dt>
+              <dd>Windows Server, AD DS, GPO, PowerShell</dd>
+            </div>
+            <div>
+              <dt>Artifacts</dt>
+              <dd>OU diagram, migration script, GPO baseline, change record</dd>
+            </div>
+          </dl>
+          <a href="projects.html#ad-migration" class="project-link">View case study</a>
+        </article>
+
+        <!-- M365 Lab -->
+        <article class="project-card">
+          <header class="flex items-start justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-semibold text-slate-50">Microsoft 365 Personal Cloud Lab</h3>
+              <p class="text-[11px] text-slate-400">Hands-on tenant mirroring small-business collaboration and identity.</p>
+            </div>
+            <span class="badge">Cloud &amp; Identity</span>
+          </header>
+          <p class="text-xs text-slate-300 mb-3">
+            Built a Microsoft 365 tenant with Entra ID, Exchange Online, SharePoint, Teams, and Intune integration to
+            practice real-world administration tasks.
+          </p>
+          <dl class="project-meta">
+            <div>
+              <dt>Technologies</dt>
+              <dd>Microsoft 365, Entra ID, Intune, PowerShell</dd>
+            </div>
+            <div>
+              <dt>Artifacts</dt>
+              <dd>Architecture diagram, CA YAML, Intune JSON, SOPs</dd>
+            </div>
+          </dl>
+          <a href="projects.html#m365-lab" class="project-link">View case study</a>
+        </article>
+
+        <!-- Intune Baseline -->
+        <article class="project-card">
+          <header class="flex items-start justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-semibold text-slate-50">Intune Baseline Deployment</h3>
+              <p class="text-[11px] text-slate-400">Standardizing Windows 11 endpoints with secure baselines.</p>
+            </div>
+            <span class="badge">Endpoint Management</span>
+          </header>
+          <p class="text-xs text-slate-300 mb-3">
+            Created and deployed a secure workstation baseline using Intune compliance and configuration policies,
+            including deployment validation and troubleshooting.
+          </p>
+          <dl class="project-meta">
+            <div>
+              <dt>Technologies</dt>
+              <dd>Intune, Windows 11, Compliance policies, PowerShell</dd>
+            </div>
+            <div>
+              <dt>Artifacts</dt>
+              <dd>Baseline JSON, deployment logs, RCA notes</dd>
+            </div>
+          </dl>
+          <a href="projects.html#intune-baseline" class="project-link">View case study</a>
+        </article>
+
+        <!-- Incident RCA -->
+        <article class="project-card">
+          <header class="flex items-start justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-semibold text-slate-50">Incident Root Cause Analysis</h3>
+              <p class="text-[11px] text-slate-400">Resolving intermittent authentication failures across services.</p>
+            </div>
+            <span class="badge">Troubleshooting</span>
+          </header>
+          <p class="text-xs text-slate-300 mb-3">
+            Investigated and documented an incident where users experienced sign-in failures, tracing the issue to DNS
+            misconfiguration and documenting corrective actions.
+          </p>
+          <dl class="project-meta">
+            <div>
+              <dt>Technologies</dt>
+              <dd>Windows Server, DNS, AD, Event Viewer</dd>
+            </div>
+            <div>
+              <dt>Artifacts</dt>
+              <dd>RCA report, DNS logs, change record</dd>
+            </div>
+          </dl>
+          <a href="projects.html#incident-rca" class="project-link">View case study</a>
+        </article>
+
+        <!-- PowerShell Provisioning -->
+        <article class="project-card">
+          <header class="flex items-start justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-semibold text-slate-50">PowerShell User Provisioning Automation</h3>
+              <p class="text-[11px] text-slate-400">Reducing manual effort for new hire onboarding.</p>
+            </div>
+            <span class="badge">Automation</span>
+          </header>
+          <p class="text-xs text-slate-300 mb-3">
+            Developed a PowerShell script that provisions new users in AD and Entra ID, assigns licenses, and places
+            accounts into the correct security groups.
+          </p>
+          <dl class="project-meta">
+            <div>
+              <dt>Technologies</dt>
+              <dd>PowerShell, AD module, Microsoft Graph</dd>
+            </div>
+            <div>
+              <dt>Artifacts</dt>
+              <dd>Provisioning script, JSON templates, logs</dd>
+            </div>
+          </dl>
+          <a href="projects.html#ps-provisioning" class="project-link">View case study</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- TOOLS & TECHNOLOGIES -->
+    <section aria-labelledby="tools-heading" class="space-y-6">
+      <div class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-0.5 bg-gradient-to-b from-fuchsia-500 to-emerald-400 rounded-full"></div>
+          <h2 id="tools-heading" class="text-xl font-semibold text-slate-50">Tools &amp; Technologies</h2>
         </div>
       </div>
-
-      <div class="contact-form card">
-        <form action="#" method="POST">
-          <label>Name</label>
-          <input type="text" name="name" required>
-
-          <label>Email</label>
-          <input type="email" name="email" required>
-
-          <label>Message</label>
-          <textarea name="message" rows="6" required></textarea>
-
-          <button type="submit" class="contact-submit">Send Message</button>
-        </form>
+      <div class="grid gap-3 md:grid-cols-3 lg:grid-cols-4 text-xs">
+        <div class="tool-pill"><i class="fa-solid fa-server mr-2 text-sky-400"></i>Windows Server</div>
+        <div class="tool-pill"><i class="fa-solid fa-users-gear mr-2 text-sky-400"></i>Active Directory Users &amp; Computers</div>
+        <div class="tool-pill"><i class="fa-solid fa-cloud mr-2 text-sky-400"></i>Entra ID</div>
+        <div class="tool-pill"><i class="fa-solid fa-cloud-arrow-up mr-2 text-sky-400"></i>Microsoft 365 Admin Center</div>
+        <div class="tool-pill"><i class="fa-solid fa-laptop-medical mr-2 text-emerald-400"></i>Intune</div>
+        <div class="tool-pill"><i class="fa-solid fa-terminal mr-2 text-fuchsia-400"></i>PowerShell</div>
+        <div class="tool-pill"><i class="fa-solid fa-diagram-project mr-2 text-sky-400"></i>Microsoft Graph</div>
+        <div class="tool-pill"><i class="fa-solid fa-globe mr-2 text-emerald-400"></i>DNS / DHCP</div>
+        <div class="tool-pill"><i class="fa-solid fa-share-nodes mr-2 text-sky-400"></i>SharePoint</div>
+        <div class="tool-pill"><i class="fa-solid fa-comments mr-2 text-sky-400"></i>Teams</div>
+        <div class="tool-pill"><i class="fa-solid fa-microchip mr-2 text-emerald-400"></i>Hyper-V</div>
+        <div class="tool-pill"><i class="fa-solid fa-network-wired mr-2 text-emerald-400"></i>pfSense</div>
+        <div class="tool-pill"><i class="fa-solid fa-code mr-2 text-fuchsia-400"></i>VS Code</div>
+        <div class="tool-pill"><i class="fa-brands fa-github mr-2 text-slate-100"></i>GitHub</div>
+        <div class="tool-pill"><i class="fa-brands fa-github mr-2 text-slate-100"></i>GitHub Actions</div>
+        <div class="tool-pill"><i class="fa-solid fa-desktop mr-2 text-sky-400"></i>Proxmox (lab)</div>
       </div>
+    </section>
 
+
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950 py-10 mt-20">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+
+    <!-- Footer Logo -->
+    <img 
+      src="/assets/logos/logo_horizontal_3000x1500.png"
+      alt="Jeremy Fontenot Logo"
+      class="h-14 w-auto object-contain select-none"
+    />
+
+    <div class="text-center md:text-right text-slate-400 text-sm">
+      <p>© 2024 Jeremy Fontenot</p>
+      <p>Entry-Level System Administrator</p>
     </div>
+
   </div>
-</section>
-
-
-
-  <footer class="footer">
-  <div class="footer-hex-bg"></div>
-
-  <div class="container footer-inner">
-
-    <div class="footer-brand">
-      <h4>Jeremy Fontenot</h4>
-      <p>Cloud‑First IT Professional</p>
-    </div>
-
-    <div class="footer-copy">
-      © 2026 Jeremy Fontenot — All Rights Reserved
-    </div>
-
-  </div>
-
-  <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-    ↑
-  </button>
 </footer>
 
 
-
-  <script src="main.js"></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
