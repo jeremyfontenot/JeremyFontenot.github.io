@@ -1,604 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projects — Jeremy Fontenot | Entry-Level System Administrator</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="System administration case studies including Active Directory migration, Microsoft 365 lab, Intune baseline deployment, incident RCA, and PowerShell automation." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Jeremy Fontenot</title>
+  <meta name="description" content="System administration case studies with scripts, logs, diagrams, configuration examples, outcomes, and lessons learned.">
+  <link rel="icon" href="/assets/logos/favicon_64x64.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased">
-  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-sky-500 text-slate-900 px-4 py-2 rounded-md">
-    Skip to main content
-  </a>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/index.html"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/index.html">Home</a></li><li><a class="nav-link" href="/index.html#summary-title">Summary</a></li><li><a class="nav-link" href="/index.html#skills-title">Skills</a></li><li><a class="nav-link" href="/index.html#projects-title" aria-current="page">Projects</a></li><li><a class="nav-link" href="/index.html#documentation-title">Documentation</a></li><li><a class="nav-link" href="/index.html#tools-title">Tools</a></li><li><a class="nav-link" href="/index.html#certs-title">Certifications</a></li><li><a class="nav-link" href="/index.html#contact-title">Contact</a></li></ul></nav></header>
+  <main id="main" class="page-shell">
+    <header class="section"><p class="eyebrow">Projects</p><h1 class="page-title">Recruiter-readable case studies with technical evidence.</h1><p class="lead">Each project is framed around a practical IT operations problem, the technical approach, supporting evidence, and lessons learned. Artifacts are redacted, realistic, and aligned to entry-level system administration responsibilities.</p></header>
 
-  <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3" aria-label="Primary navigation">
-      <div class="flex items-center gap-2">
-        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-sky-500/40">
-          <span class="text-sm font-semibold tracking-tight">JF</span>
-        </div>
-        <div class="flex flex-col leading-tight">
-          <span class="text-sm font-semibold">Jeremy Fontenot</span>
-          <span class="text-xs text-slate-400">Entry-Level System Administrator</span>
-        </div>
-      </div>
-      <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500" aria-expanded="false" aria-controls="primary-menu">
-        <span class="sr-only">Toggle navigation</span>
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <ul id="primary-menu" class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <li><a href="../index.html" class="nav-link">Home</a></li>
-        <li><a href="../skills/index.html" class="nav-link">Skills</a></li>
-        <li><a href="index.html" class="nav-link" aria-current="page">Projects</a></li>
-        <li><a href="../index.html" class="nav-link">Documentation</a></li>
-        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-    <ul id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95" aria-label="Mobile navigation">
-      <li><a href="../index.html" class="block px-4 py-3 text-sm nav-link">Home</a></li>
-      <li><a href="../skills/index.html" class="block px-4 py-3 text-sm nav-link">Skills</a></li>
-      <li><a href="index.html" class="block px-4 py-3 text-sm nav-link" aria-current="page">Projects</a></li>
-      <li><a href="../index.html" class="block px-4 py-3 text-sm nav-link">Documentation</a></li>
-      <li><a href="../contact/index.html" class="block px-4 py-3 text-sm nav-link">Contact</a></li>
-    </ul>
-  </header>
-
-  <main id="main" class="max-w-6xl mx-auto px-4 pt-10 pb-16 space-y-10">
-    <header class="space-y-3">
-      <p class="text-xs font-semibold tracking-[0.2em] text-sky-400 uppercase">Projects</p>
-      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-slate-50">System Administration Case Studies</h1>
-      <p class="text-sm md:text-base text-slate-300 max-w-3xl">
-        Each project below is structured like a real-world case study, including the business problem, technical
-        solution, architecture, artifacts, and lessons learned. These examples are based on homelab and personal
-        environments designed to mirror small-business infrastructure.
-      </p>
-    </header>
-
-    <!-- AD Migration -->
-    <section id="ad-migration" aria-labelledby="ad-migration-heading" class="project-section">
-      <header class="project-section-header">
-        <div>
-          <h2 id="ad-migration-heading" class="text-lg md:text-xl font-semibold text-slate-50">Active Directory Migration Plan</h2>
-          <p class="text-xs text-slate-400">Identity &amp; Access • Windows Server • GPO</p>
-        </div>
-        <span class="badge">Identity &amp; Access</span>
-      </header>
-
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.2fr)]">
-        <div class="space-y-4 text-sm text-slate-300">
-          <section>
-            <h3 class="project-subheading">Executive Summary</h3>
-            <p>
-              Designed a migration plan to move from a flat, legacy Active Directory structure to a role-based OU and
-              group model. The plan focuses on improving manageability, security, and clarity for future administration.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Business Problem</h3>
-            <p>
-              The existing domain used a single OU with inconsistent group naming and no clear separation between
-              departments or administrative boundaries. This made it difficult to apply targeted Group Policy, audit
-              access, or delegate administration.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Technical Solution</h3>
-            <p>
-              I created a new OU structure aligned to departments and roles, standardized group naming conventions, and
-              defined GPO baselines for workstations and servers. A staged migration plan was documented to move users,
-              computers, and policies with minimal disruption.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Architecture Overview</h3>
-            <pre class="code-block" aria-label="Active Directory OU diagram (text)">
-Root Domain: lab.local
-├── OU=Corp
-│   ├── OU=Users
-│   │   ├── OU=HR
-│   │   ├── OU=IT
-│   │   └── OU=Finance
-│   ├── OU=Computers
-│   │   ├── OU=Workstations
-│   │   └── OU=Servers
-│   └── OU=Groups
-│       ├── OU=Security
-│       └── OU=Distribution
-└── OU=Service
-    ├── OU=ServiceAccounts
-    └── OU=Admin
-            </pre>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Outcome</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Clear separation of users, computers, and groups by department and function</li>
-              <li>GPOs targeted to specific OUs with reduced policy conflicts</li>
-              <li>Improved ability to delegate administration to department IT contacts</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Lessons Learned</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Planning OU design around business structure simplifies long-term management</li>
-              <li>Standardized group naming reduces confusion during troubleshooting</li>
-              <li>Documented migration steps help avoid accidental policy changes</li>
-            </ul>
-          </section>
-        </div>
-
-        <aside class="project-aside">
-          <div>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Windows Server 2019</li>
-              <li>Active Directory Domain Services</li>
-              <li>Group Policy Management</li>
-              <li>PowerShell (ActiveDirectory module)</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Key Artifacts</h3>
-            <ul>
-              <li><a href="../architecture/home-lab-architecture.md">Lab architecture overview</a></li>
-              <li><a href="ad-migration/artifacts/provisioning.ps1">User provisioning script</a></li>
-              <li><a href="ad-migration/artifacts/change-record.md">Change record</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Sample Script</h3>
-            <pre class="code-block" aria-label="PowerShell OU creation script">
-# Create core OUs
-New-ADOrganizationalUnit -Name "Corp" -Path "DC=lab,DC=local"
-New-ADOrganizationalUnit -Name "Users" -Path "OU=Corp,DC=lab,DC=local"
-New-ADOrganizationalUnit -Name "Computers" -Path "OU=Corp,DC=lab,DC=local"
-New-ADOrganizationalUnit -Name "Groups" -Path "OU=Corp,DC=lab,DC=local"
-            </pre>
-          </div>
-        </aside>
-      </div>
+    <section id="ad-migration" class="section case-section" aria-labelledby="ad-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Identity & Access</p><h2 id="ad-title">Active Directory Migration Plan</h2><p>Modernized a flat lab domain structure into an OU, group, and GPO model that is easier to administer and audit.</p></div><span class="badge">Windows Server</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Users, workstations, and groups were mixed together without clear delegation boundaries or policy targeting.</p></div><div><h3>Solution</h3><p>Designed staged OU migration, standardized security group naming, and documented GPO validation steps.</p></div><div><h3>Outcome</h3><p>Produced a supportable identity structure with rollback notes, provisioning script, and change record.</p></div></div>
+        <details class="case-details" open><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/ad-migration-diagram.svg" alt="Active Directory migration OU structure diagram"><pre id="ad-code" data-lang="text">Root Domain: lab.local
+OU=Corp
+  OU=Users
+  OU=Computers
+  OU=Groups
+OU=Service
+  OU=ServiceAccounts
+  OU=Admin</pre><button class="copy-btn" type="button" data-copy="ad-code">Copy structure</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><a href="/evidence/public/ad-migration-plan.md">Migration plan</a></li><li><a href="/evidence/public/ad-migration-plan-2023-06-21.yaml">Change metadata</a></li><li><a href="/docs/projects/ad-migration/artifacts/provisioning.ps1">Provisioning script</a></li><li><a href="/evidence/public/gpo-template-StandardDesktop.xml">GPO XML sample</a></li></ul><h3>Lessons learned</h3><p>OU design should follow operational support boundaries, not just department names. Validation and rollback notes matter as much as the target structure.</p></aside></div></details>
+      </article>
     </section>
 
-    <!-- M365 Lab -->
-    <section id="m365-lab" aria-labelledby="m365-lab-heading" class="project-section">
-      <header class="project-section-header">
-        <div>
-          <h2 id="m365-lab-heading" class="text-lg md:text-xl font-semibold text-slate-50">Microsoft 365 Personal Cloud Lab</h2>
-          <p class="text-xs text-slate-400">Microsoft 365 • Entra ID • Intune</p>
-        </div>
-        <span class="badge">Cloud &amp; Identity</span>
-      </header>
-
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.2fr)]">
-        <div class="space-y-4 text-sm text-slate-300">
-          <section>
-            <h3 class="project-subheading">Executive Summary</h3>
-            <p>
-              Built a Microsoft 365 tenant that mirrors a small-business environment, including Entra ID, Exchange
-              Online, SharePoint, Teams, and Intune integration. The lab is used to practice administration, automation,
-              and troubleshooting.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Business Problem</h3>
-            <p>
-              Many entry-level roles expect familiarity with Microsoft 365 administration, but production access is
-              limited. I needed a safe environment to practice tenant configuration, identity management, and endpoint
-              integration.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Technical Solution</h3>
-            <p>
-              I provisioned a Microsoft 365 tenant, configured Entra ID with security groups and roles, set up Exchange
-              Online mailboxes, created SharePoint team sites, and integrated Intune for device management. I also
-              created automation scripts using Microsoft Graph.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Architecture Overview</h3>
-            <pre class="code-block" aria-label="M365 lab architecture diagram (text)">
-[Users] --> [Entra ID Tenant]
-   |             |
-   |             +--> [Microsoft 365 Apps]
-   |                    - Exchange Online
-   |                    - SharePoint Online
-   |                    - Teams
-   |
-   +--> [Intune]
-          |
-          +--> [Windows 11 Devices]
-            </pre>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Outcome</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Hands-on experience with core Microsoft 365 administration tasks</li>
-              <li>Working integration between identity, collaboration, and endpoint management</li>
-              <li>Reusable scripts for user and group management via Microsoft Graph</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Lessons Learned</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Licensing and group-based assignment simplify user onboarding</li>
-              <li>Conditional Access policies should be tested with pilot groups first</li>
-              <li>Documenting tenant configuration helps when revisiting settings later</li>
-            </ul>
-          </section>
-        </div>
-
-        <aside class="project-aside">
-          <div>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Microsoft 365</li>
-              <li>Entra ID</li>
-              <li>Exchange Online</li>
-              <li>SharePoint &amp; Teams</li>
-              <li>Intune</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Key Artifacts</h3>
-            <ul>
-              <li><a href="../architecture/m365-architecture.md">Tenant architecture documentation</a></li>
-              <li><a href="../skills/identity.html">Identity & Security skill overview</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Sample Conditional Access YAML</h3>
-            <pre class="code-block" aria-label="Conditional Access YAML example">
-policy:
-  name: "Require MFA for Admins"
-  state: "enabled"
-  conditions:
-    users:
-      includeRoles:
-        - "Global Administrator"
-        - "Intune Administrator"
-    clientAppTypes:
-      - "browser"
-      - "mobileAppsAndDesktopClients"
-  grantControls:
-    operator: "AND"
-    builtInControls:
-      - "mfa"
-            </pre>
-          </div>
-        </aside>
-      </div>
+    <section id="m365-lab" class="section case-section" aria-labelledby="m365-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Cloud Administration</p><h2 id="m365-title">Microsoft 365 Personal Cloud Lab</h2><p>Built a Microsoft 365 lab narrative covering Entra ID, Exchange Online, SharePoint, Teams, Intune, and baseline reporting.</p></div><span class="badge">Microsoft 365</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Entry-level administrators need safe practice with M365 administration without production tenant risk.</p></div><div><h3>Solution</h3><p>Documented tenant layout, baseline controls, service ownership, and repeatable evidence collection.</p></div><div><h3>Outcome</h3><p>Generated tenant baseline report, configuration notes, and admin workflows suitable for portfolio review.</p></div></div>
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/m365-lab-architecture.svg" alt="Microsoft 365 lab architecture diagram"><pre id="m365-code" data-lang="yaml">identity:
+  provider: Entra ID
+  controls:
+    - MFA for administrator roles
+    - Security groups by function
+services:
+  - Exchange Online
+  - SharePoint Online
+  - Microsoft Teams
+  - Intune</pre><button class="copy-btn" type="button" data-copy="m365-code">Copy YAML</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><a href="/evidence/public/m365-baseline-report-2024-10-05.md">M365 baseline report</a></li><li><a href="/evidence/public/m365-baseline-report-2024-10-05.yaml">Baseline metadata</a></li><li><a href="/docs/index.html#identity-security">Identity notes</a></li><li><a href="/_content/docs/curated/home-lab/Lab-Overview.html">Archived lab overview</a></li></ul><h3>Lessons learned</h3><p>Tenant documentation is strongest when it maps controls to operational risk: account compromise, collaboration sprawl, endpoint drift, and change traceability.</p></aside></div></details>
+      </article>
     </section>
 
-    <!-- Intune Baseline -->
-    <section id="intune-baseline" aria-labelledby="intune-baseline-heading" class="project-section">
-      <header class="project-section-header">
-        <div>
-          <h2 id="intune-baseline-heading" class="text-lg md:text-xl font-semibold text-slate-50">Intune Baseline Deployment</h2>
-          <p class="text-xs text-slate-400">Endpoint Management • Security Baselines</p>
-        </div>
-        <span class="badge">Endpoint Management</span>
-      </header>
-
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.2fr)]">
-        <div class="space-y-4 text-sm text-slate-300">
-          <section>
-            <h3 class="project-subheading">Executive Summary</h3>
-            <p>
-              Implemented a secure workstation baseline for Windows 11 devices using Intune compliance and configuration
-              policies, focusing on encryption, password policies, and endpoint protection.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Business Problem</h3>
-            <p>
-              Devices in the lab environment had inconsistent security settings, making it difficult to ensure that all
-              endpoints met a minimum security standard.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Technical Solution</h3>
-            <p>
-              I created Intune compliance policies for encryption and OS version, configuration profiles for password
-              and lock screen policies, and endpoint security baselines. Deployment was validated using device reports
-              and remediation logs.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Architecture Overview</h3>
-            <pre class="code-block" aria-label="Intune baseline architecture (text)">
-[Intune]
-  ├── Compliance Policies
-  │     - Require BitLocker
-  │     - Minimum OS version
-  ├── Configuration Profiles
-  │     - Password & lock screen
-  │     - Defender settings
-  └── Security Baselines
-        - MDM Security Baseline
-            </pre>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Outcome</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>All enrolled Windows 11 devices reported compliant with baseline policies</li>
-              <li>Documented deployment steps and troubleshooting notes</li>
-              <li>Improved understanding of Intune reporting and policy conflicts</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Lessons Learned</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Testing baselines on a pilot group prevents widespread configuration issues</li>
-              <li>Compliance policies should be paired with clear remediation guidance</li>
-              <li>Exporting JSON configurations helps track changes over time</li>
-            </ul>
-          </section>
-        </div>
-
-        <aside class="project-aside">
-          <div>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Intune</li>
-              <li>Windows 11</li>
-              <li>Endpoint security baselines</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Key Artifacts</h3>
-            <ul>
-              <li><a href="intune-baseline/artifacts/intune-export.json">Intune baseline export</a></li>
-              <li><a href="../skills/endpoint.html">Endpoint Management skill overview</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Sample Baseline JSON</h3>
-            <pre class="code-block" aria-label="Intune baseline JSON example">
-{
-  "name": "Secure-Workstation-Baseline",
+    <section id="intune-baseline" class="section case-section" aria-labelledby="intune-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Endpoint Management</p><h2 id="intune-title">Intune Baseline Deployment</h2><p>Created a Windows 11 endpoint baseline with JSON export, validation log, and deployment evidence.</p></div><span class="badge">Intune</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Workstations need consistent security settings, compliance checks, and deployment validation.</p></div><div><h3>Solution</h3><p>Defined a baseline profile, exported representative JSON, and documented validation against target devices.</p></div><div><h3>Outcome</h3><p>Produced a reusable endpoint baseline artifact with operational validation notes.</p></div></div>
+          <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/intune-baseline-preview.svg" alt="Intune baseline compliance preview"><pre id="intune-code" data-lang="json">{
+  "displayName": "JF-Win11-Secure-Workstation",
   "platform": "windows10AndLater",
-  "encryptionRequired": true,
-  "minimumOSVersion": "10.0.22000.0",
   "passwordRequired": true,
-  "passwordMinimumLength": 12
-}
-            </pre>
-          </div>
-        </aside>
-      </div>
+  "firewallRequired": true,
+  "defenderRequired": true
+}</pre><button class="copy-btn" type="button" data-copy="intune-code">Copy JSON</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><a href="/evidence/public/intune-profile-sample.json">Intune JSON profile</a></li><li><a href="/evidence/public/intune-validate-2024-10-05.log">Validation log</a></li><li><a href="/evidence/public/intune-profile-sample.yaml">Profile metadata</a></li><li><a href="/docs/projects/intune-baseline/artifacts/intune-export.json">Project export</a></li></ul><h3>Lessons learned</h3><p>Baseline deployment requires both configuration and proof: assignment scope, expected behavior, failed-state troubleshooting, and evidence of validation.</p></aside></div></details>
+      </article>
     </section>
 
-    <!-- Incident RCA -->
-    <section id="incident-rca" aria-labelledby="incident-rca-heading" class="project-section">
-      <header class="project-section-header">
-        <div>
-          <h2 id="incident-rca-heading" class="text-lg md:text-xl font-semibold text-slate-50">Incident Root Cause Analysis</h2>
-          <p class="text-xs text-slate-400">Troubleshooting • DNS • Authentication</p>
-        </div>
-        <span class="badge">Troubleshooting</span>
-      </header>
-
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.2fr)]">
-        <div class="space-y-4 text-sm text-slate-300">
-          <section>
-            <h3 class="project-subheading">Executive Summary</h3>
-            <p>
-              Investigated intermittent authentication failures affecting domain-joined clients and cloud sign-ins. The
-              root cause was traced to a misconfigured DNS forwarder on a branch domain controller.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Business Problem</h3>
-            <p>
-              Users reported occasional sign-in failures and delays when accessing resources. The issue was intermittent,
-              making it difficult to reproduce and diagnose quickly.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Technical Solution</h3>
-            <p>
-              I collected Event Viewer logs, DNS logs, and client-side error messages, then correlated timestamps to
-              identify patterns. Testing with <code>nslookup</code> and <code>Test-ComputerSecureChannel</code> revealed
-              inconsistent name resolution. Updating DNS forwarders and clearing caches resolved the issue.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Architecture Overview</h3>
-            <pre class="code-block" aria-label="Incident architecture (text)">
-[Clients] --> [Branch DC / DNS] --> [Internet DNS]
-                 |
-                 +--> [Hub DC / DNS]
-            </pre>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Outcome</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Authentication failures stopped after DNS configuration was corrected</li>
-              <li>Documented incident timeline and corrective actions</li>
-              <li>Added DNS configuration checks to regular maintenance tasks</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Lessons Learned</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>DNS misconfigurations can present as authentication issues</li>
-              <li>Correlating logs across systems is critical for RCA</li>
-              <li>Documented change management helps prevent regressions</li>
-            </ul>
-          </section>
-        </div>
-
-        <aside class="project-aside">
-          <div>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Windows Server DNS</li>
-              <li>Active Directory</li>
-              <li>Event Viewer</li>
-              <li>PowerShell</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Key Artifacts</h3>
-            <ul>
-              <li><a href="rca-and-provisioning/artifacts/rca-2417.md">Incident 2417 RCA report</a></li>
-              <li><a href="../troubleshooting/index.html">Troubleshooting resources</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Sample Log Excerpt</h3>
-            <pre class="code-block" aria-label="DNS troubleshooting log excerpt">
-2025-03-14T09:12:03Z CLIENT01 Error: Kerberos pre-authentication failed.
-2025-03-14T09:12:05Z BRANCHDC DNS: Timeout resolving 'login.microsoftonline.com'.
-2025-03-14T09:13:10Z BRANCHDC DNS: Forwarder 8.8.8.8 unreachable.
-2025-03-14T09:20:45Z BRANCHDC DNS: Forwarder updated to 1.1.1.1, 9.9.9.9.
-2025-03-14T09:21:02Z CLIENT01 Info: Authentication succeeded.
-            </pre>
-          </div>
-        </aside>
-      </div>
+    <section id="incident-rca" class="section case-section" aria-labelledby="rca-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Troubleshooting</p><h2 id="rca-title">Incident Root Cause Analysis</h2><p>Investigated authentication failures, isolated DNS misconfiguration, documented remediation, and validated recovery.</p></div><span class="badge">RCA</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Users experienced intermittent sign-in failures and inconsistent domain service resolution.</p></div><div><h3>Solution</h3><p>Reviewed logs, tested DNS resolution, corrected forwarder configuration, and recorded change evidence.</p></div><div><h3>Outcome</h3><p>Created a clear RCA with timeline, impact, root cause, remediation, and prevention actions.</p></div></div>
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/rca-timeline.svg" alt="Incident RCA timeline"><pre id="rca-code" data-lang="text">2025-02-10 08:42 users report intermittent auth failures
+2025-02-10 09:05 DNS query failures reproduced
+2025-02-10 09:22 forwarder mismatch identified
+2025-02-10 09:41 remediation applied
+2025-02-10 10:10 validation complete</pre><button class="copy-btn" type="button" data-copy="rca-code">Copy timeline</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><a href="/evidence/public/rca-2025-02-10.md">RCA report</a></li><li><a href="/evidence/public/incident-2025-02-10-logs.txt">Incident logs</a></li><li><a href="/evidence/public/rca-run-2025-02-10.log">Run log</a></li><li><a href="/evidence/public/remediation-disable-transportrule.ps1">Remediation script sample</a></li></ul><h3>Lessons learned</h3><p>The best troubleshooting evidence shows the path from symptom to test to fix. Documented timelines reduce ambiguity during handoff.</p></aside></div></details>
+      </article>
     </section>
 
-    <!-- PowerShell Provisioning -->
-    <section id="ps-provisioning" aria-labelledby="ps-provisioning-heading" class="project-section">
-      <header class="project-section-header">
-        <div>
-          <h2 id="ps-provisioning-heading" class="text-lg md:text-xl font-semibold text-slate-50">PowerShell User Provisioning Automation</h2>
-          <p class="text-xs text-slate-400">Automation • Identity • Microsoft Graph</p>
-        </div>
-        <span class="badge">Automation</span>
-      </header>
-
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.2fr)]">
-        <div class="space-y-4 text-sm text-slate-300">
-          <section>
-            <h3 class="project-subheading">Executive Summary</h3>
-            <p>
-              Developed a PowerShell script that automates new hire provisioning across Active Directory and Entra ID,
-              including group membership and license assignment.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Business Problem</h3>
-            <p>
-              Manual user creation is time-consuming and error-prone, especially when multiple systems and groups must
-              be updated consistently.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Technical Solution</h3>
-            <p>
-              I created a script that reads a JSON template for new hires, creates accounts in AD, syncs to Entra ID,
-              assigns licenses via Microsoft Graph, and logs all actions. The script supports dry-run mode for testing.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Architecture Overview</h3>
-            <pre class="code-block" aria-label="Provisioning architecture (text)">
-[New Hire JSON] --> [PowerShell Script]
-      |                    |
-      |                    +--> [Active Directory]
-      |                    +--> [Entra ID / Microsoft 365]
-      |                    +--> [Log File]
-            </pre>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Outcome</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Reduced manual steps for new hire onboarding</li>
-              <li>Consistent group membership and license assignment</li>
-              <li>Clear logs for auditing and troubleshooting</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3 class="project-subheading">Lessons Learned</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Dry-run mode is essential for safe testing</li>
-              <li>JSON templates make it easy to adjust onboarding rules</li>
-              <li>Logging should capture both success and failure details</li>
-            </ul>
-          </section>
-        </div>
-
-        <aside class="project-aside">
-          <div>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>PowerShell</li>
-              <li>ActiveDirectory module</li>
-              <li>Microsoft Graph PowerShell SDK</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Key Artifacts</h3>
-            <ul>
-              <li><a href="rca-and-provisioning/artifacts/rca-2417.md">RCA and provisioning artifacts</a></li>
-              <li><a href="../skills/automation.html">Automation skill overview</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Script Excerpt</h3>
-            <pre class="code-block" aria-label="PowerShell provisioning script excerpt">
-param(
-  [string]$InputFile = ".\new-hires.json",
-  [switch]$WhatIf
-)
-
-$users = Get-Content $InputFile | ConvertFrom-Json
-foreach ($user in $users) {
-  Write-Host "Creating user $($user.DisplayName)..." -ForegroundColor Cyan
-  if (-not $WhatIf) {
-    New-ADUser -Name $user.DisplayName -SamAccountName $user.SamAccountName `
-      -UserPrincipalName $user.UserPrincipalName -GivenName $user.GivenName `
-      -Surname $user.Surname -Path $user.OU -Enabled $true
-  }
-}
-            </pre>
-          </div>
-        </aside>
-      </div>
+    <section id="ps-provisioning" class="section case-section" aria-labelledby="ps-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Automation</p><h2 id="ps-title">PowerShell User Provisioning Automation</h2><p>Built a repeatable user onboarding workflow with input validation, template-driven group assignment, and logging.</p></div><span class="badge">PowerShell</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Manual onboarding is repetitive and prone to inconsistent naming, group assignment, and license steps.</p></div><div><h3>Solution</h3><p>Created a readable PowerShell workflow with approved verbs, parameter validation, and auditable output.</p></div><div><h3>Outcome</h3><p>Produced reusable automation evidence aligned to service desk and junior administrator responsibilities.</p></div></div>
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/powershell-provisioning.svg" alt="PowerShell provisioning workflow"><pre id="ps-code" data-lang="powershell">Import-Csv .\\new-hires.csv | ForEach-Object {
+  New-ADUser -Name $_.DisplayName -SamAccountName $_.SamAccountName
+  Add-ADGroupMember -Identity $_.RoleGroup -Members $_.SamAccountName
+  Write-Information "Provisioned $($_.SamAccountName)"
+}</pre><button class="copy-btn" type="button" data-copy="ps-code">Copy snippet</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><a href="/docs/projects/ad-migration/artifacts/provisioning.ps1">Provisioning script</a></li><li><a href="/evidence/public/automation-commit-abc123.md">Automation change summary</a></li><li><a href="/evidence/public/automation-commit-abc123.patch">Patch evidence</a></li><li><a href="/evidence/public/automation-run-2024-10-05.log">Run log</a></li></ul><h3>Lessons learned</h3><p>Automation for entry-level administration should prioritize validation, readable logs, and safe defaults over clever shortcuts.</p></aside></div></details>
+      </article>
     </section>
   </main>
-
-  <footer class="border-t border-slate-800 bg-slate-950/90">
-    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-      <p>&copy; <span id="year"></span> Jeremy Fontenot. All rights reserved.</p>
-      <div class="flex items-center gap-4">
-        <a href="/sitemap.xml" class="hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-sm px-1">Sitemap</a>
-        <a href="../index.html" class="hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-sm px-1">Technical Documentation</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.js" defer></script>
+  <footer class="footer"><div class="footer-inner"><span>&copy; <span id="year"></span> Jeremy Fontenot</span><span>Case studies include evidence links, logs, scripts, and validation notes</span></div></footer>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

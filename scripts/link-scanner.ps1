@@ -3,8 +3,8 @@ param(
     [switch]$Debug
 )
 
-# Strict URL regex per spec
-$urlRegex = [regex]'https?:\/\/[a-zA-Z0-9\-._~%]+(\.[a-zA-Z0-9\-._~%]+)+(\/[\w\-._~%+?=&:#@]*)?'
+# URL regex for full absolute links without truncating deeper paths
+$urlRegex = [regex]'https?:\/\/[^\s"''<>]+'
 
 # Blacklist substrings (metadata / PKI / c2pa noise)
 $ignorePatterns = @(
@@ -28,7 +28,8 @@ $restrictedPatterns = @(
     'sharepoint.com',
     'microsoftonline.com',
     'onmicrosoft.com',
-    'login.microsoftonline.com'
+    'login.microsoftonline.com',
+    'linkedin.com'
 )
 
 # Legacy export patterns (classify as legacy_export)
@@ -42,7 +43,7 @@ $legacyPatterns = @(
 $scanExt = @('*.html','*.htm','*.js','*.ts','*.css','*.md')
 
 # Internal site hosts (classify as internal_document)
-$internalHosts = @('jeremyfontenot.github.io','localhost')
+$internalHosts = @('jeremyfontenot.github.io','jeremyfontenot.online','localhost')
 
 # Generated artifacts to exclude from scanning.
 $scanExcludeLeafNames = @(
@@ -55,6 +56,13 @@ $scanExcludeLeafNames = @(
     'SITE_AUDIT_REPORT.md',
     'redaction-report.md',
     'test_deadlink.ps1'
+)
+
+# Exclude legacy/archive paths not part of the public recruiter-facing site
+$scanExcludePathPatterns = @(
+    '\\validation-docs\\',
+    '\\_content\\archive\\',
+    '\\_content\\docs\\archive\\'
 )
 
 $root = (Get-Location).ProviderPath
@@ -88,6 +96,10 @@ foreach ($dir in $scanDirs) {
 $items = $items | Sort-Object -Unique
 $items = $items | Where-Object {
     $scanExcludeLeafNames -notcontains $_.Name
+}
+$items = $items | Where-Object {
+    $path = $_.FullName
+    -not ($scanExcludePathPatterns | ForEach-Object { $path -match $_ } | Where-Object { $_ } | Select-Object -First 1)
 }
 
 Write-Output "Scanning $($items.Count) files..."
@@ -175,7 +187,7 @@ foreach ($f in $items) {
                 if ($urlHost -eq $rp -or $urlHost.EndsWith('.' + $rp) -or $url -like "*${rp}*") { $isRestricted = $true; break }
             }
 
-            if ($placeholderUrl -eq '#' -or $isPlaceholder) {
+            if ($isPlaceholder) {
                 $entry.type = 'placeholder'
                 $entry.status = 'placeholder'
             } elseif ($sourceIsContent) {

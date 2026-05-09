@@ -145,7 +145,7 @@
     .external_public { background: rgba(93, 228, 199, 0.14); color: var(--accent); }
     .internal_document { background: rgba(120, 160, 255, 0.14); color: #9fc0ff; }
     .restricted_access { background: rgba(255, 143, 112, 0.14); color: #ffbcaa; }
-    .placeholder { background: rgba(255, 255, 255, 0.12); color: #d5def2; }
+    .deferred { background: rgba(255, 255, 255, 0.12); color: #d5def2; }
     .legacy_export { background: rgba(168, 140, 255, 0.14); color: #d4c6ff; }
     .invalid_malformed { background: rgba(255, 92, 122, 0.18); color: #ff9cb0; }
     .broken { border-left: 4px solid var(--bad); padding-left: 12px; }
@@ -181,7 +181,7 @@
 
   <script>
     const reportUrl = '../link-scan-report.json';
-    const categories = ['all', 'external_public', 'internal_document', 'restricted_access', 'placeholder', 'legacy_export', 'invalid_malformed', 'ignored_metadata'];
+    const categories = ['all', 'external_public', 'internal_document', 'restricted_access', 'deferred', 'legacy_export', 'invalid_malformed', 'ignored_metadata'];
     let report = [];
     let activeFilter = 'all';
 
@@ -200,7 +200,7 @@
         external_public: items.filter((item) => item.type === 'external_public').length,
         internal_document: items.filter((item) => item.type === 'internal_document').length,
         restricted_access: items.filter((item) => item.type === 'restricted_access').length,
-        placeholder: items.filter((item) => item.type === 'placeholder').length,
+        deferred: items.filter((item) => item.type === 'deferred').length,
         legacy_export: items.filter((item) => item.type === 'legacy_export').length,
         invalid_malformed: items.filter((item) => item.type === 'invalid_malformed').length,
         ignored_metadata: items.filter((item) => item.type === 'ignored_metadata').length,
@@ -216,7 +216,7 @@
         ['Broken', summary.broken_external],
         ['Internal', summary.internal_document],
         ['Restricted', summary.restricted_access],
-        ['Placeholder', summary.placeholder],
+        ['Deferred', summary.deferred],
         ['Legacy', summary.legacy_export]
       ];
 

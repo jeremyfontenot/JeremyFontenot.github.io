@@ -1,0 +1,22 @@
+{
+  "displayName": "JF-Win11-Secure-Workstation",
+  "description": "Redacted portfolio sample for Windows 11 compliance baseline validation.",
+  "platform": "windows10AndLater",
+  "technologies": ["mdm"],
+  "settings": {
+    "passwordRequired": true,
+    "passwordMinimumLength": 12,
+    "passwordRequiredType": "alphanumeric",
+    "firewallRequired": true,
+    "defenderEnabled": true,
+    "bitLockerEnabled": true,
+    "secureBootEnabled": true,
+    "codeIntegrityEnabled": true,
+    "osMinimumVersion": "10.0.22621.0"
+  },
+  "assignment": {
+    "targetGroup": "SG-INTUNE-WIN11-PILOT",
+    "mode": "pilot",
+    "validationLog": "intune-validate-2024-10-05.log"
+  }
+}
