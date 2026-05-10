@@ -1,0 +1,236 @@
+name: Site Audit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+  pull-requests: write
+
+env:
+  CRITICAL_THRESHOLD: 0
+  AUDIT_ROOT: public
+  AUDIT_OUTPUT: internal/reports
+  AUDIT_REPORT_JSON: internal/reports/audit-report.json
+  AUDIT_REPORT_MD: internal/reports/audit-report.md
+  AUDIT_PR_COMMENT: internal/reports/audit-pr-comment.md
+
+jobs:
+  audit:
+    name: Audit
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Detect package manifest
+        id: manifest
+        shell: pwsh
+        run: |
+          $hasPackageJson = Test-Path -LiteralPath 'package.json'
+          $hasLockFile = Test-Path -LiteralPath 'package-lock.json'
+          "has_package_json=$hasPackageJson" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+          "has_lock_file=$hasLockFile" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+
+      - name: Cache node_modules
+        id: node_modules_cache
+        if: steps.manifest.outputs.has_package_json == 'true'
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+
+      - name: Install dependencies
+        if: steps.manifest.outputs.has_package_json == 'true' && steps.node_modules_cache.outputs.cache-hit != 'true'
+        shell: pwsh
+        run: |
+          if (Test-Path -LiteralPath 'package-lock.json') {
+            npm ci
+          } else {
+            npm install
+          }
+
+      - name: Run Audit
+        id: run-audit
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          node internal/scripts/site-audit/audit.js --root public --output internal/reports --pr-comment-file internal/reports/audit-pr-comment.md
+
+      - name: Enforce
+        id: enforce
+        if: always()
+        shell: pwsh
+        run: |
+          $reportPath = Join-Path $PWD 'internal/reports/audit-report.json'
+          if (-not (Test-Path -LiteralPath $reportPath)) {
+            Write-Error 'Audit report was not generated.'
+            exit 1
+          }
+
+          $report = Get-Content -Raw -LiteralPath $reportPath | ConvertFrom-Json
+          if ($null -eq $report) {
+            Write-Error 'Failed to parse audit report JSON.'
+            exit 1
+          }
+
+          $criticalThreshold = [int]$env:CRITICAL_THRESHOLD
+          $criticalIssues = [int]$report.summary.criticalIssues
+          $warningIssues = [int]$report.summary.warningIssues
+          $passedChecks = [int]$report.summary.passedChecks
+          $totalIssues = [int]$report.summary.totalIssues
+
+          Write-Host 'Audit summary:'
+          Write-Host "  Total issues   : $totalIssues"
+          Write-Host "  Critical issues: $criticalIssues"
+          Write-Host "  Warnings       : $warningIssues"
+          Write-Host "  Passed checks   : $passedChecks"
+          Write-Host "  Threshold       : $criticalThreshold"
+
+          if ($criticalIssues -gt $criticalThreshold) {
+            Write-Error "Critical issue count ($criticalIssues) exceeded threshold ($criticalThreshold)."
+            exit 1
+          }
+
+          Write-Host 'Critical issue threshold satisfied.'
+
+      - name: Upload Audit Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-audit-reports
+          path: |
+            internal/reports/audit-report.json
+            internal/reports/audit-report.md
+            internal/reports/audit-pr-comment.md
+          if-no-files-found: error
+
+      - name: Post or update PR comment
+        if: ${{ github.event_name == 'pull_request' && always() }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- site-audit-bot -->';
+            const commentPath = 'internal/reports/audit-pr-comment.md';
+
+            let body = `${marker}\n\n## Site Audit\n\nAudit report was not generated.`;
+            if (fs.existsSync(commentPath)) {
+              body = `${marker}\n\n${fs.readFileSync(commentPath, 'utf8')}`;
+            }
+
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.pull_request.number;
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number,
+              per_page: 100,
+            });
+
+            const existing = comments.find((comment) => {
+              return comment.user && comment.user.type === 'Bot' && typeof comment.body === 'string' && comment.body.includes(marker);
+            });
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body,
+              });
+            }
+
+  audit-summary:
+    name: Audit Summary
+    runs-on: windows-latest
+    needs: audit
+    if: always()
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download audit artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: site-audit-reports
+          path: internal/reports
+
+      - name: Print formatted markdown summary
+        shell: pwsh
+        run: |
+          $reportPath = Join-Path $PWD 'internal/reports/audit-report.json'
+          $markdownPath = Join-Path $PWD 'internal/reports/audit-report.md'
+
+          if (-not (Test-Path -LiteralPath $reportPath)) {
+            Write-Host 'Audit report artifact not available.'
+            exit 0
+          }
+
+          $report = Get-Content -Raw -LiteralPath $reportPath | ConvertFrom-Json
+          if ($null -eq $report) {
+            Write-Host 'Failed to parse audit report artifact.'
+            exit 0
+          }
+
+          $summary = @()
+          $summary += '# Site Audit Summary'
+          $summary += ''
+          $summary += '| Metric | Value |'
+          $summary += '| --- | ---: |'
+          $summary += "| Total issues | $($report.summary.totalIssues) |"
+          $summary += "| Critical issues | $($report.summary.criticalIssues) |"
+          $summary += "| Warnings | $($report.summary.warningIssues) |"
+          $summary += "| Passed checks | $($report.summary.passedChecks) |"
+          $summary += ''
+          $summary += '## Report Files'
+          $summary += ''
+          $summary += '- audit-report.json'
+          $summary += '- audit-report.md'
+          $summary += '- audit-pr-comment.md'
+          $summary += ''
+          $summary += '## Check Results'
+          $summary += ''
+          $summary += '| Check | Status | Issues |'
+          $summary += '| --- | --- | ---: |'
+          foreach ($check in $report.checkResults) {
+            $summary += "| $($check.name) | $($check.status.ToUpper()) | $($check.issueCount) |"
+          }
+
+          $summaryText = $summary -join "`n"
+          Write-Host $summaryText
+          $summaryText | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
+
+      - name: Show audit markdown excerpt
+        shell: pwsh
+        run: |
+          $markdownPath = Join-Path $PWD 'internal/reports/audit-report.md'
+          if (Test-Path -LiteralPath $markdownPath) {
+            Get-Content -LiteralPath $markdownPath -TotalCount 60
+          }

@@ -1,4 +1,0 @@
-metric,before,after,notes
-baseline_compliance,62,92,"Calculated from weekly compliance scans"
-ad_misconfig_rate,43,6,"Percent of AD objects failing baseline checks"
-onboarding_sla_hours,72,6,"Average time to provision new user"

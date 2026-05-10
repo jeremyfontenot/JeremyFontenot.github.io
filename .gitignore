@@ -1,2 +1,18 @@
-# Ignore generated validation documentation
-validation-docs/
+# Ignore generated validation and reporting artifacts
+internal/validation-docs/
+*.log
+*.csv
+*.tmp
+link-scan-report.json
+LINK_SCAN_SUMMARY.md
+links-report.csv
+links-report.json
+linked-files.txt
+exposed-files.txt
+refactor-log.txt
+repo-structure.txt
+server-exposure-analysis.txt
+public-exposure-audit.csv
+internal/reports/audit-report.json
+internal/reports/audit-report.md
+internal/reports/*.tmp

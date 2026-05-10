@@ -1,9 +1,0 @@
-[2024-10-05 07:12:03] Starting Generate-BaselineReport.ps1
-[2024-10-05 07:12:05] Collecting Intune device compliance metrics...
-[2024-10-05 07:12:22] Collected 45300 device records
-[2024-10-05 07:12:23] Calculating baseline compliance...
-[2024-10-05 07:12:25] Baseline compliance: 92%
-[2024-10-05 07:12:25] MFA adoption: 98%
-[2024-10-05 07:12:26] Exported reports/baseline-2024-10-05.csv
-[2024-10-05 07:12:26] Completed Generate-BaselineReport.ps1 (exit 0)
-

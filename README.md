@@ -4,6 +4,13 @@ A modern, responsive portfolio website showcasing cloud infrastructure expertise
 
 **Live Site:** [https://jeremyfontenot.github.io](https://jeremyfontenot.github.io)
 
+## Deployment Architecture
+
+- `public/` contains the only deployable site content for GitHub Pages.
+- `internal/` contains scripts, reports, workflows, audit material, and other non-public assets.
+- GitHub Pages should be configured to publish from `/public` only.
+- Production URLs stay the same on the live site; the directory split is for repository safety.
+
 ---
 
 ## ✨ Features
@@ -26,7 +33,7 @@ A modern, responsive portfolio website showcasing cloud infrastructure expertise
 - **Hierarchical Navigation** – Browse by category: Skills, Projects, Architecture, Experience, Certifications, Scripts
 - **Full-Text Search** – Index of 16+ documented topics with real-time filtering
 - **Category Filters** – Search by Skills, Projects, Architecture, Scripts, Experience, Certifications
-- **Source Browser** – Bridge to archived documentation in `_content/docs`
+- **Source Browser** – Bridge to archived documentation in `internal/_content/docs`
 - **Back Navigation** – Easy traversal from subsection → section → hub → home
 
 ### Archive Integration
@@ -40,31 +47,29 @@ A modern, responsive portfolio website showcasing cloud infrastructure expertise
 
 ```
 Portfolio-Dev/
-├── index.html                    # Landing page (hero, skills, projects, etc.)
-├── css/
-│   └── styles.css               # Central stylesheet with brand tokens & responsive design
-├── js/
-│   └── main.js                  # Scroll animations, parallax, navbar toggle
-├── docs/                        # Live documentation pages
-│   ├── index.html               # Documentation hub
-│   ├── search.html              # Full-text search browser
-│   ├── source-browser.html      # Archive documentation gateway
-│   ├── skills/                  # Skill documentation (6 categories)
-│   ├── projects/                # Project documentation (6 projects)
-│   ├── architecture/            # Architecture documentation (2 projects)
-│   ├── experience/              # Career experience details (5 roles)
-│   ├── certifications/          # Certification information (12 certs)
-│   ├── scripts/                 # Automation & script documentation
-│   └── brand-guide/             # Brand guidelines & assets
-├── assets/                      # Media assets
-│   ├── certifications/badges/   # 12+ certification badge images (AVIF, PNG, WebP)
-│   ├── profile-pictures/        # Profile images (multiple formats)
-│   └── website-images/          # Hero banners and UI assets
-├── _content/                    # Archived documentation & source files
-│   └── docs/
-│       ├── curated/             # Web-ready documentation exports
-│       └── archive/             # Source archives (M365 PCL, Home Lab, etc.)
-└── README.md                    # This file
+├── public/                       # GitHub Pages source
+│   ├── index.html                # Landing page
+│   ├── contact.html              # Contact page
+│   ├── projects.html             # Projects page
+│   ├── skills.html               # Skills page
+│   ├── documentation.html        # Documentation hub
+│   ├── robots.txt                # Crawler rules
+│   ├── sitemap.xml               # Sitemap
+│   ├── .nojekyll                 # Disable Jekyll processing
+│   ├── css/styles.css            # Site styles
+│   ├── js/main.js                # Site behavior
+│   ├── assets/                   # Public images and media
+│   └── docs/                     # Public documentation pages
+└── internal/                     # Not deployed
+   ├── scripts/                  # PowerShell automation
+   │   └── site-audit/           # Node.js audit runner and reporters
+   ├── admin/                    # Admin tools
+   ├── audit/                    # Audit reports
+   ├── reports/                  # Generated reports
+   ├── evidence/                 # Private evidence and exports
+   ├── validation-docs/          # Validation docs
+   ├── .github/                  # Workflow files
+   └── _content/                 # Archive and source material
 
 ```
 
@@ -109,6 +114,18 @@ Portfolio-Dev/
 
 3. Open in browser: `http://localhost:8000`
 
+### Automated Audit System
+
+Run the static audit from the repository root:
+
+```bash
+node internal/scripts/site-audit/audit.js --root public --output internal/reports
+```
+
+The command writes `internal/reports/audit-report.json` and `internal/reports/audit-report.md`, prints a color-coded console summary, and can also emit a PR comment summary with `--pr-comment`.
+
+The audit covers links, file structure, HTML, CSS, JavaScript, SEO, accessibility, performance, and static security checks.
+
 ### Navigation Guide
 - **Home** – Landing page with all featured content
 - **Navbar Links** – Quick access to Skills, Projects, Experience, Certifications, Documentation
@@ -140,7 +157,7 @@ Portfolio-Dev/
 - Azure Cloud Infrastructure
 - Security & Compliance
 
-**Archived Sources (_content/docs/):**
+**Archived Sources (internal/_content/docs/):**
 - M365 Project Completion Log (curated)
 - Home Lab Enterprise Architecture (curated)
 - Script Documentation & Automation (curated)
@@ -166,13 +183,13 @@ All paths are validated and accessible from the source browser.
 
 This repository includes a link-validation pipeline designed to keep the site and archive safe to publish:
 
-- `scripts/link-scanner.ps1` scans site content, classifies URLs, validates `external_public` links, and writes `link-scan-report.json` plus `LINK_SCAN_SUMMARY.md`.
+- `internal/scripts/link-scanner.ps1` scans site content, classifies URLs, validates `external_public` links, and writes `internal/link-scan-report.json` plus `internal/LINK_SCAN_SUMMARY.md`.
 - Classification categories include `external_public`, `internal_document`, `restricted_access`, `placeholder`, `legacy_export`, and `invalid_malformed`.
-- CI enforcement in [`.github/workflows/link-check.yml`](.github/workflows/link-check.yml) fails only when `external_public` links are broken, error, or return HTTP 4xx/5xx.
-- The PR bot in [`.github/workflows/link-scan-pr-comment.yml`](.github/workflows/link-scan-pr-comment.yml) upserts a single comment, deduplicates repeated URLs, sorts by severity, and supports top-N or expanded output.
-- Evidence validation in [`.github/workflows/validate-evidence-links.yml`](.github/workflows/validate-evidence-links.yml) reuses `scripts/validate-evidence-links.ps1` so private or archived evidence paths remain intact while public files are checked for existence.
+- CI enforcement in `[internal/.github/workflows/link-check.yml](internal/.github/workflows/link-check.yml)` fails only when `external_public` links are broken, error, or return HTTP 4xx/5xx.
+- The PR bot in `[internal/.github/workflows/link-scan-pr-comment.yml](internal/.github/workflows/link-scan-pr-comment.yml)` upserts a single comment, deduplicates repeated URLs, sorts by severity, and supports top-N or expanded output.
+- Evidence validation in `[internal/.github/workflows/validate-evidence-links.yml](internal/.github/workflows/validate-evidence-links.yml)` reuses `internal/scripts/validate-evidence-links.ps1` so private or archived evidence paths remain intact while public files are checked for existence.
 - Private, restricted, and placeholder links are reported for visibility but are not treated as merge-blocking failures.
-- A static viewer is available at [reports/link-health.html](reports/link-health.html) for browsing the scan JSON grouped by file and filtered by link type.
+- A static viewer is available at [internal/reports/link-health.html](internal/reports/link-health.html) for browsing the scan JSON grouped by file and filtered by link type.
 
 The current workflow is intended to remain strict for real public link failures while avoiding false positives from archived `_content/` material and private evidence references.
 
