@@ -1,0 +1,8 @@
+<!-- Placeholder: GPO template (redacted) -->
+<GPOTemplate>
+  <Name>StandardDesktop</Name>
+  <Description>Redacted example GPO template for documentation purposes.</Description>
+  <Settings>
+    <Setting key="DesktopBackground">redacted</Setting>
+  </Settings>
+</GPOTemplate>

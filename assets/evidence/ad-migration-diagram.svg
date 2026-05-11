@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Active Directory OU migration diagram</title>
+  <desc id="desc">A dark enterprise diagram showing a lab.local domain organized into Corp and Service organizational units.</desc>
+  <rect width="960" height="540" fill="#071226"/>
+  <rect x="32" y="32" width="896" height="476" rx="24" fill="#0d1b34" stroke="#3fe0e8" stroke-opacity=".35"/>
+  <text x="60" y="82" fill="#6af7ff" font-family="Segoe UI, Arial" font-size="24" font-weight="700">Active Directory Migration Plan</text>
+  <text x="60" y="112" fill="#b8c2d1" font-family="Segoe UI, Arial" font-size="14">Target OU structure for lab.local</text>
+  <g font-family="Segoe UI, Arial" font-size="15" fill="#f5f7fa">
+    <rect x="390" y="72" width="180" height="54" rx="12" fill="#132543" stroke="#3fe0e8"/>
+    <text x="432" y="105">lab.local</text>
+    <path d="M480 126v42M260 168h440" stroke="#3fe0e8" stroke-width="2"/>
+    <path d="M260 168v42M700 168v42" stroke="#3fe0e8" stroke-width="2"/>
+    <rect x="170" y="210" width="180" height="54" rx="12" fill="#132543" stroke="#d65be8"/>
+    <text x="232" y="243">OU=Corp</text>
+    <rect x="610" y="210" width="180" height="54" rx="12" fill="#132543" stroke="#d65be8"/>
+    <text x="676" y="243">OU=Service</text>
+    <path d="M260 264v48M170 312h180M170 312v38M260 312v38M350 312v38" stroke="#3fe0e8" stroke-width="2"/>
+    <rect x="92" y="350" width="130" height="46" rx="10" fill="#071226" stroke="#3fe0e8"/>
+    <text x="127" y="379">Users</text>
+    <rect x="235" y="350" width="130" height="46" rx="10" fill="#071226" stroke="#3fe0e8"/>
+    <text x="262" y="379">Computers</text>
+    <rect x="378" y="350" width="130" height="46" rx="10" fill="#071226" stroke="#3fe0e8"/>
+    <text x="410" y="379">Groups</text>
+    <path d="M700 264v48M630 312h140M630 312v38M770 312v38" stroke="#3fe0e8" stroke-width="2"/>
+    <rect x="552" y="350" width="160" height="46" rx="10" fill="#071226" stroke="#3fe0e8"/>
+    <text x="581" y="379">ServiceAccounts</text>
+    <rect x="735" y="350" width="130" height="46" rx="10" fill="#071226" stroke="#3fe0e8"/>
+    <text x="779" y="379">Admin</text>
+  </g>
+  <text x="60" y="468" fill="#7d8ca3" font-family="Segoe UI, Arial" font-size="13">Validation: staged moves, GPO link review, group membership export, rollback checkpoint</text>
+</svg>

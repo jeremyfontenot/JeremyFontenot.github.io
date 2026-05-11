@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Source Browser | Jeremy Fontenot</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/docs/source-browser.html">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .source-shell {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .source-hero {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(0, 234, 255, 0.18);
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(10, 14, 39, 0.92), rgba(7, 19, 48, 0.88));
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+    }
+
+    .source-hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.6rem);
+    }
+
+    .source-hero p {
+      margin: 0;
+      max-width: 72ch;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.6;
+    }
+
+    .source-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .source-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 234, 255, 0.24);
+      background: rgba(0, 234, 255, 0.08);
+      color: #c8fbff;
+      text-decoration: none;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+
+    .source-actions a:hover {
+      transform: translateY(-1px);
+      background: rgba(0, 234, 255, 0.14);
+      border-color: rgba(0, 234, 255, 0.5);
+    }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .source-card {
+      display: block;
+      padding: 1rem 1.1rem;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 234, 255, 0.15);
+      background: rgba(255, 255, 255, 0.04);
+      color: inherit;
+      text-decoration: none;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 234, 255, 0.4);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .source-card small {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+    }
+
+    .source-card strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: #00eaff;
+    }
+
+    .source-card span {
+      display: block;
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .source-sections {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .source-section {
+      padding: 1.25rem;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 234, 255, 0.14);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .source-section h2 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .source-section p {
+      margin-top: 0;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .source-section ul {
+      margin: 0.75rem 0 0;
+      padding-left: 1.2rem;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .source-section li + li {
+      margin-top: 0.35rem;
+    }
+
+    .source-note {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid #00eaff;
+      border-radius: 12px;
+      background: rgba(0, 234, 255, 0.07);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 720px) {
+      .source-shell {
+        padding-inline: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body class="section">
+  <nav class="navbar">
+    <div class="nav-logo">Portfolio</div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">About</a></li>
+      <li><a href="/docs/skills/">Skills</a></li>
+      <li><a href="/docs/projects/">Projects</a></li>
+      <li><a href="/docs/experience/">Experience</a></li>
+      <li><a href="/docs/certifications/">Certifications</a></li>
+      <li><a href="/docs/">Documentation</a></li>
+      <li><a href="/docs/contact/">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="source-shell">
+    <p class="doc-nav"><a href="/docs/">← Back to Documentation Hub</a></p>
+
+    <section class="source-hero">
+      <div>
+        <h1>Documentation Source Browser</h1>
+        <p>
+          Use this page to move between the live site docs and the archived source docs under <strong>_content/docs</strong>.
+          The source tree includes curated page sets, archive exports, manifests, and validation artifacts.
+        </p>
+      </div>
+      <div class="source-actions">
+        <a href="/docs/">Current Docs Hub</a>
+        <a href="search.html">Search Current Docs</a>
+        <span style="display: inline-block; padding: 0.8rem 1.1rem; border-radius: 999px; border: 1px solid rgba(0, 234, 255, 0.24); background: rgba(0, 234, 255, 0.08); color: #c8fbff;"><code>_content/docs/</code> (archived internally)</span>
+        <span style="display: inline-block; padding: 0.8rem 1.1rem; border-radius: 999px; border: 1px solid rgba(0, 234, 255, 0.24); background: rgba(0, 234, 255, 0.08); color: #c8fbff;"><code>archive-filelist.csv</code> (archived)</span>
+      </div>
+    </section>
+
+    <section class="source-grid" aria-label="Primary document entry points">
+      <div class="source-card" style="cursor: default;">
+        <small>Source</small>
+        <strong><code>_content/docs/</code> Index</strong>
+        <span>Landing page for the curated archive (archived internally).</span>
+      </div>
+      <div class="source-card" style="cursor: default;">
+        <small>Source</small>
+        <strong><code>Curated Home Lab</code></strong>
+        <span>Validated home-lab architecture (archived internally).</span>
+      </div>
+      <div class="source-card" style="cursor: default;">
+        <small>Source</small>
+        <strong><code>Curated Web</code></strong>
+        <span>Portfolio summary and content (archived internally).</span>
+      </div>
+      <div class="source-card" style="cursor: default;">
+        <small>Source</small>
+        <strong><code>Curated Script Docs</code></strong>
+        <span>PowerShell and automation documentation (archived internally).</span>
+      </div>
+    </section>
+
+    <section class="source-sections">
+      <article class="source-section">
+        <h2>Current Site Docs</h2>
+        <p>The live portfolio docs in this repo are the public-facing, trimmed version.</p>
+        <ul>
+          <li><a href="/docs/">Documentation Hub</a></li>
+          <li><a href="search.html">Documentation Search</a></li>
+          <li><a href="architecture/">Architecture</a></li>
+          <li><a href="projects/">Projects</a></li>
+          <li><a href="scripts/">Scripts</a></li>
+          <li><a href="skills/">Skills</a></li>
+        </ul>
+      </article>
+
+      <article class="source-section">
+        <h2>Source Documentation Tree</h2>
+        <p>The source archive contains archived project documentation (not published).</p>
+        <ul>
+          <li><code>_content/docs/curated/brandguide/BrandGuideHome.html</code> (archived internally)</li>
+          <li><code>_content/docs/archive/home-lab/</code> (archived internally)</li>
+          <li><code>_content/docs/archive/M365 PCL/</code> (archived internally)</li>
+          <li><code>_content/docs/curated/endpoint-management/Endpoint-Management.html</code> (archived internally)</li>
+          <li><code>_content/docs/curated/identity/Identity.html</code> (archived internally)</li>
+          <li><code>_content/docs/curated/security/Security.html</code> (archived internally)</li>
+          <li><code>_content/docs/curated/script-documentation/Automation.html</code> (archived internally)</li>
+          <li><code>_content/docs/curated/portfolio/Portfolio-Summary.html</code> (archived internally)</li>
+        </ul>
+      </article>
+
+      <article class="source-section">
+        <h2>Validation & Archive Files</h2>
+        <p>Archive references are kept for internal documentation purposes only.</p>
+        <ul>
+          <li><code>_content/docs/archive-filelist.csv</code> (archived internally)</li>
+          <li><code>_content/docs/archive/home-lab/validation-report.json</code> (archived internally)</li>
+          <li><code>_content/docs/archive/scripts/docs/script-documentation/summary.json</code> (archived internally)</li>
+          <li><code>_content/docs/archive/scripts/docs/script-documentation/validation-results.json</code> (archived internally)</li>
+          <li><code>_content/docs/archive/brandguide/manifest.json</code> (archived internally)</li>
+        </ul>
+        <div class="source-note">
+          Archive files are not published. For current site documentation, use the <a href="/docs/">Documentation Hub</a>.
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('is-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+</body>
+</html>

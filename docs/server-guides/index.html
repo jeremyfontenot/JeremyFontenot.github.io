@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Server Guides</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/docs/server-guides/">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Server guides: Windows Server roles, DNS, DHCP, file services, and hardening." />
+  <link rel="icon" href="/assets/logos/favicon_64x64.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bg: '#050816',
+            card: 'rgba(15,23,42,0.9)',
+            accent: '#22d3ee',
+            accentSoft: 'rgba(34,211,238,0.15)'
+          },
+          boxShadow: {
+            neon: '0 0 25px rgba(34,211,238,0.35)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-slate-100 antialiased">
+  <header class="sticky top-0 bg-bg/90 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="font-semibold">Jeremy Fontenot</a>
+      <nav><a href="/docs/" class="text-sm text-accent">Docs Home</a></nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <nav class="text-sm text-slate-400 mb-4" aria-label="Breadcrumbs">
+      <a href="/docs/" class="hover:underline">Docs</a> › <span>Server Guides</span>
+    </nav>
+
+    <h1 class="text-2xl font-semibold mb-3">Server Guides</h1>
+    <section>
+      <h2 class="text-xl font-semibold">DNS Server Hardening</h2>
+      <p class="text-slate-300">Guidance for securing Windows DNS servers and recommended audit settings.</p>
+    </section>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

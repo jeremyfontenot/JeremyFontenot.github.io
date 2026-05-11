@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jeremy Fontenot — Entry-Level System Administrator</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/">
+
+  <meta name="description" content="System Administrator portfolio featuring Windows Server, Active Directory, Microsoft 365, Intune, networking, PowerShell, and documentation.">
+  <meta name="keywords" content="Jeremy Fontenot, Entry-Level System Administrator, Active Directory, Windows Server, Microsoft 365, Intune, Entra ID, PowerShell, Networking, Help Desk, Service Desk">
+  <meta name="author" content="Jeremy Fontenot">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Jeremy Fontenot — Entry-Level System Administrator">
+  <meta property="og:description" content="Microsoft-focused systems administration portfolio with projects, evidence, scripts, and operational documentation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeremyfontenot.online/">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/logos/favicon_64x64.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- FIXED PATH -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- FIXED JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jeremy Fontenot",
+    "jobTitle": "Entry-Level System Administrator",
+    "url": "https://jeremyfontenot.online",
+    "description": "Microsoft-focused System Administrator specializing in Windows Server, Active Directory, Microsoft 365, Intune, and PowerShell.",
+    "sameAs": [
+      "https://github.com/jeremyfontenot"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="/" aria-label="Jeremy Fontenot home">
+        <img src="assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150">
+        <span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      <!-- Background brand toggle (accessible) -->
+      <button id="bg-toggle" class="nav-toggle" type="button" aria-pressed="false" aria-label="Toggle background brand imagery" title="Toggle background imagery"><i class="fa-solid fa-image" aria-hidden="true"></i></button>
+      <ul id="primary-menu" class="nav-menu" data-collapsed="true">
+        <li><a class="nav-link" href="/" aria-current="page">Home</a></li>
+        <li><a class="nav-link" href="/#summary-title">Summary</a></li>
+        <li><a class="nav-link" href="/#skills-title">Skills</a></li>
+        <li><a class="nav-link" href="/#projects-title">Projects</a></li>
+        <li><a class="nav-link" href="/#documentation-title">Documentation</a></li>
+        <li><a class="nav-link" href="/#tools-title">Tools</a></li>
+        <li><a class="nav-link" href="/#certs-title">Certifications</a></li>
+        <li><a class="nav-link" href="/#contact-title">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">System Administration Portfolio</p>
+        <h1 id="hero-title">Jeremy Fontenot — Entry-Level System Administrator</h1>
+        <p class="skill-line">Windows Server • Active Directory • Microsoft 365 • Intune • Networking • PowerShell</p>
+        <p class="lead">Microsoft-focused IT professional building practical capability in identity, endpoint management, automation, troubleshooting, and documentation-first operations.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/assets/Jeremy-Fontenot-Resume.pdf" download="Jeremy-Fontenot-Resume.pdf"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>Download Resume</a>
+          <a class="btn btn-secondary" href="/docs/projects/"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i>View Projects</a>
+          <a class="btn btn-quiet" href="/docs/contact/"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Contact</a>
+        </div>
+      </div>
+      <aside class="hero-visual" aria-label="Infrastructure administration console preview">
+        <div class="terminal-head"><div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div><span class="brand-role">PS C:\Admin</span></div>
+        <div class="terminal">
+          <p><span class="prompt">PS C:\></span> Import-Module ActiveDirectory</p>
+          <p><span class="prompt">PS C:\></span> Test-ComputerSecureChannel -Verbose</p>
+          <p class="ok">[OK] Domain trust validated for workstation baseline group.</p>
+          <p><span class="prompt">PS C:\></span> Get-MgDeviceManagementDeviceCompliancePolicy</p>
+          <p class="ok">[OK] Windows 11 compliance baseline exported to JSON.</p>
+          <p><span class="prompt">PS C:\></span> Resolve-DnsName dc01.lab.local</p>
+          <p class="warn">[RCA] Forwarder mismatch documented; remediation validated.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="summary-title">
+      <div class="section-head">
+        <div><p class="eyebrow">Professional Summary</p><h2 id="summary-title">Practical Microsoft administration with audit-ready evidence.</h2></div>
+      </div>
+      <div class="grid grid-2">
+        <p class="lead">I am an entry-level System Administrator and Service Desk Technician focused on Windows Server, Active Directory, Entra ID, Microsoft 365, Intune, networking fundamentals, and PowerShell automation. My portfolio is structured around realistic homelab and personal cloud environments that mirror small-business IT operations.</p>
+        <p class="lead">I document changes, validate outcomes, and connect each project to operational value: cleaner identity structure, safer endpoint baselines, repeatable onboarding, better troubleshooting notes, and evidence that a hiring team can review quickly.</p>
+      </div>
+      <div class="signal-grid" aria-label="Portfolio proof points">
+        <div class="metric"><strong>5</strong><span>case-study projects</span></div>
+        <div class="metric"><strong>8</strong><span>core skill domains</span></div>
+        <div class="metric"><strong>20+</strong><span>redacted evidence artifacts</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Core Skills</p>
+          <h2 id="skills-title">Capabilities aligned to entry-level systems administration.</h2>
+          <p class="site-note">Note: detailed evidence and full case studies are hosted on separate documentation pages — <a href="/docs/skills/">Skills</a>, <a href="/docs/projects/">Projects</a>, and <a href="/docs/">Documentation</a>. Use those pages for recruiter-grade proofs and artifact lists.</p>
+        </div>
+        <a class="project-link" href="/docs/skills/">Detailed skills matrix <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="grid grid-4">
+        <a href="/docs/skills/#identity-access" class="card card-link"><span class="card-icon"><i class="fa-solid fa-user-shield"></i></span><h3>Identity & Access</h3><p>AD users, groups, OU design, Entra ID roles, MFA, and access review basics.</p><ul class="tech-list"><li>AD DS</li><li>Entra ID</li><li>Conditional Access</li></ul></a>
+        <a href="/docs/skills/#systems-admin" class="card card-link"><span class="card-icon"><i class="fa-solid fa-server"></i></span><h3>Systems Administration</h3><p>Windows Server roles, DNS, DHCP, file services, GPO baselines, and server documentation.</p><ul class="tech-list"><li>Windows Server</li><li>GPMC</li><li>Hyper-V</li></ul></a>
+        <a href="/docs/skills/#endpoint-management" class="card card-link"><span class="card-icon"><i class="fa-solid fa-laptop-code"></i></span><h3>Endpoint Management</h3><p>Windows 11 compliance, Intune configuration profiles, Win32 app deployment, and validation logs.</p><ul class="tech-list"><li>Intune</li><li>Autopilot concepts</li><li>Compliance policies</li></ul></a>
+        <a href="/docs/skills/#networking" class="card card-link"><span class="card-icon"><i class="fa-solid fa-network-wired"></i></span><h3>Networking</h3><p>Name resolution, addressing, VLAN awareness, firewall basics, and structured connectivity testing.</p><ul class="tech-list"><li>DNS</li><li>DHCP</li><li>pfSense</li></ul></a>
+        <a href="/docs/skills/#automation" class="card card-link"><span class="card-icon"><i class="fa-solid fa-terminal"></i></span><h3>Automation</h3><p>PowerShell scripts for onboarding, reporting, validation, and repeatable administrative tasks.</p><ul class="tech-list"><li>PowerShell</li><li>Microsoft Graph</li><li>CSV/JSON</li></ul></a>
+        <a href="/docs/skills/#troubleshooting" class="card card-link"><span class="card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></span><h3>Troubleshooting</h3><p>Incident notes, RCA workflow, Event Viewer review, DNS testing, and service validation.</p><ul class="tech-list"><li>RCA</li><li>Logs</li><li>Runbooks</li></ul></a>
+        <a href="/docs/skills/#security" class="card card-link"><span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span><h3>Security & Compliance</h3><p>Least privilege, MFA, secure workstation settings, audit evidence, and change validation.</p><ul class="tech-list"><li>MFA</li><li>Baselines</li><li>Access controls</li></ul></a>
+        <a href="/docs/skills/#documentation" class="card card-link"><span class="card-icon"><i class="fa-solid fa-file-lines"></i></span><h3>Documentation</h3><p>SOPs, change records, playbooks, architecture notes, and recruiter-readable technical evidence.</p><ul class="tech-list"><li>Markdown</li><li>Runbooks</li><li>Change records</li></ul></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="section-head">
+        <div><p class="eyebrow">Featured Projects</p><h2 id="projects-title">Case studies with evidence, scripts, logs, and lessons learned.</h2></div>
+        <a class="project-link" href="/docs/projects/">Open all case studies <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="grid grid-3">
+        <article class="project-card"><header><div><h3>Active Directory Migration Plan</h3><p>Reworked flat lab identity design into role-based OUs and groups.</p></div><span class="badge">Identity</span></header><ul class="plain-list"><li>Problem: inconsistent OU and group structure</li><li>Solution: staged migration and GPO targeting model</li><li>Outcome: cleaner administration and validation steps</li></ul><a class="project-link" href="/docs/projects/#ad-migration">View case study</a></article>
+        <article class="project-card"><header><div><h3>Microsoft 365 Personal Cloud Lab</h3><p>Tenant administration practice across Entra ID, Exchange, Teams, SharePoint, and Intune.</p></div><span class="badge">Cloud</span></header><ul class="plain-list"><li>Problem: need safe production-style practice</li><li>Solution: documented M365 lab with baseline controls</li><li>Outcome: repeatable admin evidence and reports</li></ul><a class="project-link" href="/docs/projects/#m365-lab">View case study</a></article>
+        <article class="project-card"><header><div><h3>Intune Baseline Deployment</h3><p>Windows 11 compliance profile with export, validation log, and troubleshooting notes.</p></div><span class="badge">Endpoint</span></header><ul class="plain-list"><li>Problem: inconsistent workstation settings</li><li>Solution: Intune profile and validation process</li><li>Outcome: clear compliance baseline artifacts</li></ul><a class="project-link" href="/docs/projects/#intune-baseline">View case study</a></article>
+        <article class="project-card"><header><div><h3>Incident Root Cause Analysis</h3><p>Structured investigation of authentication failures tied to DNS configuration.</p></div><span class="badge">RCA</span></header><ul class="plain-list"><li>Problem: intermittent sign-in failures</li><li>Solution: log review, DNS testing, remediation record</li><li>Outcome: validated fix and playbook improvements</li></ul><a class="project-link" href="/docs/projects/#incident-rca">View case study</a></article>
+        <article class="project-card"><header><div><h3>PowerShell User Provisioning Automation</h3><p>Repeatable onboarding workflow using templates, validation, and logging.</p></div><span class="badge">Automation</span></header><ul class="plain-list"><li>Problem: manual account setup risk</li><li>Solution: standardized script with input validation</li><li>Outcome: auditable onboarding process</li></ul><a class="project-link" href="/docs/projects/#ps-provisioning">View case study</a></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="documentation-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Documentation</p>
+          <h2 id="documentation-title">Operational docs and how-to guides.</h2>
+          <p class="site-note">Quick links to core operational notes — full documents live on the Documentation hub if you need recruiter-grade artifacts.</p>
+        </div>
+        <a class="project-link" href="/docs/">Open documentation hub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="grid grid-3">
+        <a href="/docs/#server-guides" class="card card-link"><span class="card-icon"><i class="fa-solid fa-server"></i></span><h3>Server Setup Guides</h3><p>Windows Server, AD setup, DNS/DHCP, and GPO validation steps.</p></a>
+        <a href="/docs/#identity-security" class="card card-link"><span class="card-icon"><i class="fa-solid fa-user-lock"></i></span><h3>Identity & Security</h3><p>MFA, Entra ID notes, Conditional Access, and baseline controls.</p></a>
+        <a href="/docs/#powershell-snippets" class="card card-link"><span class="card-icon"><i class="fa-solid fa-terminal"></i></span><h3>PowerShell Snippets</h3><p>Provisioning, validation, and reporting examples for repeatable automation.</p></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="section-head">
+        <div><p class="eyebrow">Contact</p><h2 id="contact-title">Get in touch or request evidence</h2></div>
+        <a class="project-link" href="/docs/contact/">Contact page <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="grid grid-2">
+        <div class="contact-panel">
+          <h3>Contact</h3>
+          <p class="lead">Prefer to review evidence first? Visit the Documentation hub for artifact lists, then use the contact page to request full proofs or ask questions.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:contact@jeremyfontenot.online"><i class="fa-solid fa-envelope"></i>Email</a>
+            <a class="btn btn-secondary" href="/docs/contact/"><i class="fa-solid fa-comments"></i>Contact Page</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Recruiter checklist</h3>
+          <ul class="plain-list">
+            <li>Short summary + links to artifacts</li>
+            <li>Project outcomes and measurable results</li>
+            <li>Redacted evidence links in Documentation hub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <div class="section-head"><div><p class="eyebrow">Tools & Technologies</p><h2 id="tools-title">Microsoft ecosystem tools plus lab infrastructure.</h2></div></div>
+      <div class="tools-grid">
+        <span class="tool-pill"><i class="fa-solid fa-server"></i>Windows Server</span><span class="tool-pill"><i class="fa-solid fa-users-gear"></i>Active Directory Users & Computers</span><span class="tool-pill"><i class="fa-solid fa-cloud"></i>Entra ID</span><span class="tool-pill"><i class="fa-brands fa-microsoft"></i>Microsoft 365</span><span class="tool-pill"><i class="fa-solid fa-laptop-medical"></i>Intune</span><span class="tool-pill"><i class="fa-solid fa-terminal"></i>PowerShell</span><span class="tool-pill"><i class="fa-solid fa-code-branch"></i>Microsoft Graph</span><span class="tool-pill"><i class="fa-solid fa-globe"></i>DNS</span><span class="tool-pill"><i class="fa-solid fa-network-wired"></i>DHCP</span><span class="tool-pill"><i class="fa-solid fa-share-nodes"></i>SharePoint</span><span class="tool-pill"><i class="fa-solid fa-comments"></i>Teams</span><span class="tool-pill"><i class="fa-solid fa-microchip"></i>Hyper-V</span><span class="tool-pill"><i class="fa-solid fa-cubes"></i>Proxmox</span><span class="tool-pill"><i class="fa-solid fa-shield-halved"></i>pfSense</span><span class="tool-pill"><i class="fa-solid fa-code"></i>VS Code</span><span class="tool-pill"><i class="fa-brands fa-github"></i>GitHub Actions</span>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="certs-title">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Certifications & Training</p>
+      <h2 id="certs-title">Credential evidence presented without overstating scope.</h2>
+    </div>
+  </div>
+
+  <div class="cert-grid">
+
+    <!-- Existing -->
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/comptia-a+.webp" alt="CompTIA A+ badge" width="200" height="200"><strong>CompTIA A+</strong><span>IT support fundamentals</span></article>
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/comptia-server+.webp" alt="CompTIA Server+ badge" width="200" height="200"><strong>CompTIA Server+</strong><span>Server operations</span></article>
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/microsoft-azure-fundamentals.webp" alt="Microsoft Azure Fundamentals badge" width="200" height="200"><strong>Azure Fundamentals</strong><span>Cloud basics</span></article>
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/mta-windows-server.webp" alt="MTA Windows Server badge" width="200" height="200"><strong>MTA Windows Server</strong><span>Server foundation</span></article>
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/mta-networking.webp" alt="MTA Networking badge" width="200" height="200"><strong>MTA Networking</strong><span>Networking foundation</span></article>
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/google-it-support.webp" alt="Google IT Support badge" width="200" height="200"><strong>Google IT Support</strong><span>Support operations</span></article>
+
+    <!-- Missing (Added Below) -->
+
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/comptia-itf+.webp" alt="CompTIA ITF+ badge" width="200" height="200"><strong>CompTIA ITF+</strong><span>IT fundamentals</span></article>
+
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/mta-security.webp" alt="MTA Security badge" width="200" height="200"><strong>MTA Security</strong><span>Security fundamentals</span></article>
+
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/cisco.webp" alt="Cisco certification badge" width="200" height="200"><strong>Cisco Certification</strong><span>Networking concepts</span></article>
+
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/lpi-certification.svg" alt="LPI Certification badge" width="200" height="200"><strong>LPI Certification</strong><span>Linux fundamentals</span></article>
+
+    <article class="cert-card"><img loading="lazy" src="assets/certifications/badges/Jeremy_Chant_Fontenot_WCITP1_thumb_web.webp" alt="WCITP1 Award badge" width="200" height="200"><strong>WCITP1 Award</strong><span>Academic excellence</span></article>
+
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="/" aria-label="Jeremy Fontenot home">
+      <img class="footer-logo" src="assets/logos/logo_stacked_1500x3000.png" alt="Jeremy Fontenot logo" width="96" height="96">
+        <span class="footer-brand-copy">
+          <strong>Jeremy Fontenot</strong>
+          <span>Entry-Level System Administrator</span>
+        </span>
+      </a>
+      <div class="footer-meta">
+        <span>&copy; <span id="year"></span> Jeremy Fontenot</span>
+        <span>Microsoft infrastructure portfolio</span>
+      </div>
+      <div class="footer-links" aria-label="Social links">
+        <a class="footer-icon-link" href="https://github.com/jeremyfontenot" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="footer-icon-link" href="https://www.linkedin.com/in/jeremyfontenot" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

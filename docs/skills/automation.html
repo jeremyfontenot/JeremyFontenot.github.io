@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation & Scripting | Skills</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/docs/skills/automation.html">
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="section">
+  <div class="container">
+
+    <p class="doc-nav"><a href="/docs/skills/">← Back to Skills</a> <a href="/docs/skills/">Return to Skills Section</a></p>
+
+    <h1>Automation & Scripting</h1>
+    <p class="lead">
+      PowerShell automation across Microsoft Graph, Exchange Online, Teams, Intune, and SharePoint.
+      Includes idempotent runbooks, structured error handling, and script governance.
+    </p>
+
+    <hr>
+
+    <h2>Core Skills</h2>
+    <ul>
+      <li>PowerShell 7</li>
+      <li>Microsoft Graph SDK</li>
+      <li>REST API integration</li>
+      <li>Idempotent runbook design</li>
+      <li>Script validation and governance</li>
+    </ul>
+
+    <hr>
+
+    <h2>Evidence Excerpts</h2>
+    <blockquote>
+      “Idempotent runbooks with structured error handling…”
+    </blockquote>
+    <blockquote>
+      “Microsoft Graph SDK usage (users, groups, CA, Intune, SharePoint file upload)…”
+    </blockquote>
+
+    <hr>
+
+    <h3>Evidence</h3>
+    <ul class="evidence-list">
+      <li class="evidence-item">
+        <a href="../../evidence/experience/automation-commit-abc123.md">Automation commit — baseline reporting</a>
+        <span class="evidence-badge">Internal</span>
+        <div class="meta">PowerShell script and commit notes for baseline reporting</div>
+      </li>
+      <li class="evidence-item">
+        <a href="../../evidence/experience/remediation-disable-transportrule.ps1">Remediation script — transport rule</a>
+        <span class="evidence-badge">Verified</span>
+        <div class="meta">Example remediation script used in incident response</div>
+      </li>
+    </ul>
+
+    <hr>
+
+    <h3>How this proves entry-level system administration</h3>
+    <p>Each evidence entry links to artifacts showing concrete work you performed. For entry-level verification we provide:</p>
+    <ul>
+      <li><strong>Commit/patch</strong> — shows code you authored (see the attached patch).</li>
+      <li><strong>Execution log</strong> — timestamped run output that proves you ran the script and produced the result (`automation-run-2024-10-05.log`).</li>
+      <li><strong>Reproduction steps</strong> — exact commands in the evidence YAML so a reviewer can reproduce results locally.</li>
+      <li><strong>Verification</strong> — a verifier field and status in the YAML (`Verified`/`Internal`/`Redacted`).</li>
+    </ul>
+    <p>Example quick reproduction (local):</p>
+    <pre><code>pwsh -NoProfile -Command "./tools/Generate-BaselineReport.ps1 -Output reports/baseline-$(Get-Date -Format yyyy-MM-dd).csv"</code></pre>
+    <p>Artifacts to inspect: <a href="../../evidence/experience/automation-commit-abc123.patch">patch</a>, <a href="../../evidence/experience/automation-run-2024-10-05.log">execution log</a>, <a href="../../evidence/experience/automation-commit-abc123.md">commit notes</a>.</p>
+
+  </div>
+</body>
+</html>

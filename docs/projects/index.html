@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Case Study Projects — Jeremy Fontenot</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/docs/projects/">
+  <meta name="description" content="System administration case studies with scripts, logs, diagrams, configuration examples, outcomes, and lessons learned.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Case Study Projects — Jeremy Fontenot">
+  <meta property="og:description" content="IT administration case studies with evidence and technical details.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeremyfontenot.online/docs/projects/">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+  <link rel="icon" href="/assets/logos/favicon_64x64.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/">Home</a></li><li><a class="nav-link" href="/#summary-title">Summary</a></li><li><a class="nav-link" href="/#skills-title">Skills</a></li><li><a class="nav-link" href="/#projects-title" aria-current="page">Projects</a></li><li><a class="nav-link" href="/#documentation-title">Documentation</a></li><li><a class="nav-link" href="/#tools-title">Tools</a></li><li><a class="nav-link" href="/#certs-title">Certifications</a></li><li><a class="nav-link" href="/#contact-title">Contact</a></li></ul></nav></header>
+  <main id="main" class="page-shell">
+    <header class="section"><p class="eyebrow">Projects</p><h1 class="page-title">Recruiter-readable case studies with technical evidence.</h1><p class="lead">Each project is framed around a practical IT operations problem, the technical approach, supporting evidence, and lessons learned. Artifacts are redacted, realistic, and aligned to entry-level system administration responsibilities.</p></header>
+
+    <section id="ad-migration" class="section case-section" aria-labelledby="ad-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Identity & Access</p><h2 id="ad-title">Active Directory Migration Plan</h2><p>Modernized a flat lab domain structure into an OU, group, and GPO model that is easier to administer and audit.</p></div><span class="badge">Windows Server</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Users, workstations, and groups were mixed together without clear delegation boundaries or policy targeting.</p></div><div><h3>Solution</h3><p>Designed staged OU migration, standardized security group naming, and documented GPO validation steps.</p></div><div><h3>Outcome</h3><p>Produced a supportable identity structure with rollback notes, provisioning script, and change record.</p></div></div>
+        <details class="case-details" open><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/ad-migration-diagram.svg" alt="Active Directory migration OU structure diagram" width="400" height="300"><pre id="ad-code" data-lang="text">Root Domain: lab.local
+OU=Corp
+  OU=Users
+  OU=Computers
+  OU=Groups
+OU=Service
+  OU=ServiceAccounts
+  OU=Admin</pre><button class="copy-btn" type="button" data-copy="ad-code">Copy structure</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>ad-migration-plan.md</code> (example artifact)</li><li><code>ad-migration-plan-2023-06-21.yaml</code> (example metadata)</li><li><a href="/docs/projects/ad-migration/artifacts/provisioning.ps1">Provisioning script</a></li><li><code>gpo-template-StandardDesktop.xml</code> (example artifact)</li></ul><h3>Lessons learned</h3><p>OU design should follow operational support boundaries, not just department names. Validation and rollback notes matter as much as the target structure.</p></aside></div></details>
+      </article>
+    </section>
+
+    <section id="m365-lab" class="section case-section" aria-labelledby="m365-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Cloud Administration</p><h2 id="m365-title">Microsoft 365 Personal Cloud Lab</h2><p>Built a Microsoft 365 lab narrative covering Entra ID, Exchange Online, SharePoint, Teams, Intune, and baseline reporting.</p></div><span class="badge">Microsoft 365</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Entry-level administrators need safe practice with M365 administration without production tenant risk.</p></div><div><h3>Solution</h3><p>Documented tenant layout, baseline controls, service ownership, and repeatable evidence collection.</p></div><div><h3>Outcome</h3><p>Generated tenant baseline report, configuration notes, and admin workflows suitable for portfolio review.</p></div></div>
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/m365-lab-architecture.svg" alt="Microsoft 365 lab architecture diagram" width="400" height="300"><pre id="m365-code" data-lang="yaml">identity:
+  provider: Entra ID
+  controls:
+    - MFA for administrator roles
+    - Security groups by function
+services:
+  - Exchange Online
+  - SharePoint Online
+  - Microsoft Teams
+  - Intune</pre><button class="copy-btn" type="button" data-copy="m365-code">Copy YAML</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>m365-baseline-report-2024-10-05.md</code> (example artifact)</li><li><code>m365-baseline-report-2024-10-05.yaml</code> (example metadata)</li><li><a href="/docs/#identity-security">Identity notes</a></li><li><code>lab-overview</code> (archived internally)</li></ul><h3>Lessons learned</h3><p>Tenant documentation is strongest when it maps controls to operational risk: account compromise, collaboration sprawl, endpoint drift, and change traceability.</p></aside></div></details>
+      </article>
+    </section>
+
+    <section id="intune-baseline" class="section case-section" aria-labelledby="intune-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Endpoint Management</p><h2 id="intune-title">Intune Baseline Deployment</h2><p>Created a Windows 11 endpoint baseline with JSON export, validation log, and deployment evidence.</p></div><span class="badge">Intune</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Workstations need consistent security settings, compliance checks, and deployment validation.</p></div><div><h3>Solution</h3><p>Defined a baseline profile, exported representative JSON, and documented validation against target devices.</p></div><div><h3>Outcome</h3><p>Produced a reusable endpoint baseline artifact with operational validation notes.</p></div></div>
+          <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/intune-baseline-preview.svg" alt="Intune baseline compliance preview" width="400" height="300"><pre id="intune-code" data-lang="json">{
+  "displayName": "JF-Win11-Secure-Workstation",
+  "platform": "windows10AndLater",
+  "passwordRequired": true,
+  "firewallRequired": true,
+  "defenderRequired": true
+}</pre><button class="copy-btn" type="button" data-copy="intune-code">Copy JSON</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>intune-profile-sample.json</code> (example artifact)</li><li><code>intune-validate-2024-10-05.log</code> (example log)</li><li><code>intune-profile-sample.yaml</code> (example metadata)</li><li><a href="/docs/projects/intune-baseline/artifacts/intune-export.json">Project export</a></li></ul><h3>Lessons learned</h3><p>Baseline deployment requires both configuration and proof: assignment scope, expected behavior, failed-state troubleshooting, and evidence of validation.</p></aside></div></details>
+      </article>
+    </section>
+
+    <section id="incident-rca" class="section case-section" aria-labelledby="rca-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Troubleshooting</p><h2 id="rca-title">Incident Root Cause Analysis</h2><p>Investigated authentication failures, isolated DNS misconfiguration, documented remediation, and validated recovery.</p></div><span class="badge">RCA</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Users experienced intermittent sign-in failures and inconsistent domain service resolution.</p></div><div><h3>Solution</h3><p>Reviewed logs, tested DNS resolution, corrected forwarder configuration, and recorded change evidence.</p></div><div><h3>Outcome</h3><p>Created a clear RCA with timeline, impact, root cause, remediation, and prevention actions.</p></div></div>
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/rca-timeline.svg" alt="Incident RCA timeline" width="400" height="300"><pre id="rca-code" data-lang="text">2025-02-10 08:42 users report intermittent auth failures
+2025-02-10 09:05 DNS query failures reproduced
+2025-02-10 09:22 forwarder mismatch identified
+2025-02-10 09:41 remediation applied
+2025-02-10 10:10 validation complete</pre><button class="copy-btn" type="button" data-copy="rca-code">Copy timeline</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>rca-2025-02-10.md</code> (example artifact)</li><li><code>incident-2025-02-10-logs.txt</code> (example log)</li><li><code>rca-run-2025-02-10.log</code> (example artifact)</li><li><code>remediation-disable-transportrule.ps1</code> (example script)</li></ul><h3>Lessons learned</h3><p>The best troubleshooting evidence shows the path from symptom to test to fix. Documented timelines reduce ambiguity during handoff.</p></aside></div></details>
+      </article>
+    </section>
+
+    <section id="ps-provisioning" class="section case-section" aria-labelledby="ps-title">
+      <article class="project-card">
+        <header><div><p class="eyebrow">Automation</p><h2 id="ps-title">PowerShell User Provisioning Automation</h2><p>Built a repeatable user onboarding workflow with input validation, template-driven group assignment, and logging.</p></div><span class="badge">PowerShell</span></header>
+        <div class="grid grid-3"><div><h3>Problem</h3><p>Manual onboarding is repetitive and prone to inconsistent naming, group assignment, and license steps.</p></div><div><h3>Solution</h3><p>Created a readable PowerShell workflow with approved verbs, parameter validation, and auditable output.</p></div><div><h3>Outcome</h3><p>Produced reusable automation evidence aligned to service desk and junior administrator responsibilities.</p></div></div>
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/powershell-provisioning.svg" alt="PowerShell provisioning workflow" width="400" height="300"><pre id="ps-code" data-lang="powershell">Import-Csv .\\new-hires.csv | ForEach-Object {
+  New-ADUser -Name $_.DisplayName -SamAccountName $_.SamAccountName
+  Add-ADGroupMember -Identity $_.RoleGroup -Members $_.SamAccountName
+  Write-Information "Provisioned $($_.SamAccountName)"
+}</pre><button class="copy-btn" type="button" data-copy="ps-code">Copy snippet</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><a href="/docs/projects/ad-migration/artifacts/provisioning.ps1">Provisioning script</a></li><li><code>automation-commit-abc123.md</code> (example metadata)</li><li><code>automation-commit-abc123.patch</code> (example artifact)</li><li><code>automation-run-2024-10-05.log</code> (example log)</li></ul><h3>Lessons learned</h3><p>Automation for entry-level administration should prioritize validation, readable logs, and safe defaults over clever shortcuts.</p></aside></div></details>
+      </article>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-inner"><span>&copy; <span id="year"></span> Jeremy Fontenot</span><span>Case studies include evidence links, logs, scripts, and validation notes</span></div></footer>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

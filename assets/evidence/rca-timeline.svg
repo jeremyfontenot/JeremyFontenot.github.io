@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Incident RCA timeline</title>
+  <desc id="desc">A root cause analysis timeline showing DNS investigation and remediation milestones.</desc>
+  <rect width="960" height="540" fill="#071226"/>
+  <rect x="36" y="36" width="888" height="468" rx="24" fill="#0d1b34" stroke="#3fe0e8" stroke-opacity=".35"/>
+  <text x="64" y="86" fill="#6af7ff" font-family="Segoe UI, Arial" font-size="24" font-weight="700">Incident RCA: Authentication Failures</text>
+  <line x1="120" y1="270" x2="830" y2="270" stroke="#3fe0e8" stroke-width="3"/>
+  <g font-family="Segoe UI, Arial" fill="#f5f7fa" font-size="14">
+    <circle cx="150" cy="270" r="12" fill="#d65be8"/><text x="105" y="232">08:42</text><text x="86" y="318">Reports received</text>
+    <circle cx="320" cy="270" r="12" fill="#d65be8"/><text x="275" y="232">09:05</text><text x="255" y="318">DNS failures reproduced</text>
+    <circle cx="500" cy="270" r="12" fill="#f4c95d"/><text x="455" y="232">09:22</text><text x="420" y="318">Forwarder mismatch found</text>
+    <circle cx="670" cy="270" r="12" fill="#49d39a"/><text x="625" y="232">09:41</text><text x="610" y="318">Remediation applied</text>
+    <circle cx="820" cy="270" r="12" fill="#49d39a"/><text x="775" y="232">10:10</text><text x="760" y="318">Validation complete</text>
+  </g>
+  <text x="64" y="444" fill="#7d8ca3" font-family="Segoe UI, Arial" font-size="13">Method: symptom definition, scope isolation, log review, hypothesis testing, documented fix, post-change validation</text>
+</svg>

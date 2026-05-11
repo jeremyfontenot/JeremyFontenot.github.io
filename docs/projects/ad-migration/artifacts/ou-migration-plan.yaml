@@ -1,0 +1,23 @@
+domain: lab.local
+change_id: CHG-AD-2023-0621
+classification: redacted_portfolio_evidence
+objective: Move from a flat identity structure to delegated OUs and role-based groups.
+target_ous:
+  - OU=Corp,DC=lab,DC=local
+  - OU=Users,OU=Corp,DC=lab,DC=local
+  - OU=Computers,OU=Corp,DC=lab,DC=local
+  - OU=Groups,OU=Corp,DC=lab,DC=local
+  - OU=Service,DC=lab,DC=local
+  - OU=Admin,OU=Service,DC=lab,DC=local
+validation:
+  pre_change:
+    - Export current OU inventory.
+    - Export security group membership.
+    - Confirm GPO links and inheritance.
+  post_change:
+    - Confirm users resolve in target OUs.
+    - Confirm GPO results with gpresult.
+    - Confirm no orphaned group assignments.
+rollback:
+  trigger: Failed login, failed GPO processing, or incorrect group placement.
+  action: Move affected objects to exported source OU path and restore group membership from CSV.
