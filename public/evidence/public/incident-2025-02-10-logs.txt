@@ -1,3 +1,0 @@
-# Incident logs (redacted placeholder)
-Timestamp: 2025-02-10
-Notes: demo-only
