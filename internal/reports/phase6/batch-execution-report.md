@@ -93,3 +93,38 @@
 
 - `Invoke-AutoRemediation.ps1` still resolves its sibling queue generator via `$PSScriptRoot`.
 - No deletions were performed.
+
+---
+
+# Phase 6 Batch 4 Execution Report
+
+**Batch Type:** Validation scripts restructuring
+**Batch Status:** Completed
+**Executed:** 2026-05-13
+
+## Files Moved
+
+- `scripts/Invoke-RepositoryPolicyValidation.ps1` → `scripts/validation/Invoke-RepositoryPolicyValidation.ps1`
+- `scripts/Invoke-RepositoryValidation.ps1` → `scripts/validation/Invoke-RepositoryValidation.ps1`
+- `scripts/generate-governance-reports.ps1` → `scripts/validation/generate-governance-reports.ps1`
+- `scripts/generate-phase2-reports.ps1` → `scripts/validation/generate-phase2-reports.ps1`
+
+## Files Archived
+
+- None. These scripts were relocated, not deleted.
+
+## References Fixed
+
+- `.github/workflows/repository-remediation.yml` updated to call the moved validation entry point.
+- `.github/workflows/repository-validation.yml` updated to call the moved validation entry point.
+
+## Validation Status
+
+- Stale validation path search: clean
+- Phase 5 mapping and dependency reports regenerated: clean
+- GitHub Pages root entry points unchanged: clean
+
+## Notes
+
+- The moved validation scripts keep their sibling path lookups intact under `scripts/validation`.
+- No deletions were performed.

@@ -13,7 +13,7 @@ jobs:
 
       - name: Validate repository policy
         shell: pwsh
-        run: ./scripts/Invoke-RepositoryPolicyValidation.ps1
+        run: ./scripts/validation/Invoke-RepositoryPolicyValidation.ps1
 
       - name: Generate remediation queue
         shell: pwsh

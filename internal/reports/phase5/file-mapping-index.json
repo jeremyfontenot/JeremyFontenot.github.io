@@ -1,6 +1,6 @@
 {
   "TotalFiles": 872,
-  "GeneratedAt": "2026-05-13T13:39:55Z",
+  "GeneratedAt": "2026-05-13T13:41:06Z",
   "Files": [
     {
       "Protected": false,
@@ -812,6 +812,14 @@
     },
     {
       "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/curated/exchange-online/Change-Exchange-Online-20260223-0742.html",
+      "Orphan": false,
+      "Classification": "duplicate",
+      "Zone": "audit-outputs",
+      "Duplicate": true
+    },
+    {
+      "Protected": false,
       "Path": "css/styles.css",
       "Orphan": false,
       "Classification": "resource",
@@ -1180,9 +1188,9 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/exchange-online/Change-Exchange-Online-20260223-0742.html",
+      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Scripts-and-Automation.html",
       "Orphan": false,
-      "Classification": "duplicate",
+      "Classification": "canonical_source",
       "Zone": "audit-outputs",
       "Duplicate": true
     },
@@ -1724,10 +1732,10 @@
     },
     {
       "Protected": false,
-      "Path": "assets/certifications/badges/linux-essentials.avif",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/security/Change-Validation-20260306-0345.aspx",
       "Orphan": false,
       "Classification": "unknown",
-      "Zone": "public-assets",
+      "Zone": "audit-outputs",
       "Duplicate": false
     },
     {
@@ -2204,10 +2212,10 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Portfolio-Summary.html",
+      "Path": "assets/certifications/badges/linux-essentials.avif",
       "Orphan": false,
-      "Classification": "resource",
-      "Zone": "audit-outputs",
+      "Classification": "unknown",
+      "Zone": "public-assets",
       "Duplicate": false
     },
     {
@@ -2524,11 +2532,11 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Scripts-and-Automation.html",
+      "Path": "index.html",
       "Orphan": false,
-      "Classification": "canonical_source",
-      "Zone": "audit-outputs",
-      "Duplicate": true
+      "Classification": "resource",
+      "Zone": "site-entrypoints",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -2593,6 +2601,14 @@
       "Classification": "duplicate",
       "Zone": "audit-outputs",
       "Duplicate": true
+    },
+    {
+      "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/curated/identity/Change-Identity-and-Security-20260223-0409.aspx",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "audit-outputs",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -2780,14 +2796,6 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Scripts-Used.html",
-      "Orphan": false,
-      "Classification": "canonical_source",
-      "Zone": "audit-outputs",
-      "Duplicate": true
-    },
-    {
-      "Protected": false,
       "Path": "assets/certifications/badges/comptia-server+.webp",
       "Orphan": false,
       "Classification": "unknown",
@@ -2801,14 +2809,6 @@
       "Classification": "protected_zone",
       "Zone": "validation-reports",
       "Duplicate": false
-    },
-    {
-      "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/home-lab/Change-New-Home-20260227-1151.html",
-      "Orphan": false,
-      "Classification": "duplicate",
-      "Zone": "audit-outputs",
-      "Duplicate": true
     },
     {
       "Protected": false,
@@ -3088,6 +3088,14 @@
       "Orphan": false,
       "Classification": "resource",
       "Zone": "audit-outputs",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
+      "Path": "scripts/validation/Invoke-RepositoryValidation.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {
@@ -4164,10 +4172,10 @@
     },
     {
       "Protected": false,
-      "Path": "scripts/generate-phase2-reports.ps1",
+      "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Change-Cleanup-Summary.aspx",
       "Orphan": false,
       "Classification": "unknown",
-      "Zone": "automation-scripts",
+      "Zone": "audit-outputs",
       "Duplicate": false
     },
     {
@@ -4296,14 +4304,6 @@
       "Orphan": false,
       "Classification": "unknown",
       "Zone": "public-assets",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/security/Change-Validation-20260306-0345.aspx",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "audit-outputs",
       "Duplicate": false
     },
     {
@@ -4607,14 +4607,6 @@
       "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Security.html",
       "Orphan": false,
       "Classification": "canonical_source",
-      "Zone": "audit-outputs",
-      "Duplicate": true
-    },
-    {
-      "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/architecture/Architecture-Overview.html",
-      "Orphan": false,
-      "Classification": "duplicate",
       "Zone": "audit-outputs",
       "Duplicate": true
     },
@@ -5020,10 +5012,10 @@
     },
     {
       "Protected": false,
-      "Path": "index.html",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/architecture/Change-Architecture-Overview-20260223-0417.aspx",
       "Orphan": false,
-      "Classification": "resource",
-      "Zone": "site-entrypoints",
+      "Classification": "unknown",
+      "Zone": "audit-outputs",
       "Duplicate": false
     },
     {
@@ -5612,6 +5604,14 @@
     },
     {
       "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Portfolio-Summary.html",
+      "Orphan": false,
+      "Classification": "resource",
+      "Zone": "audit-outputs",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Change-Power-Platform-20260223-0427.html",
       "Orphan": false,
       "Classification": "duplicate",
@@ -5764,10 +5764,18 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/identity/Change-Identity-and-Security-20260223-0409.aspx",
+      "Path": "scripts/validation/generate-phase2-reports.ps1",
       "Orphan": false,
       "Classification": "unknown",
-      "Zone": "audit-outputs",
+      "Zone": "automation-scripts",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
+      "Path": "scripts/validation/generate-governance-reports.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {
@@ -6052,11 +6060,11 @@
     },
     {
       "Protected": false,
-      "Path": "scripts/Invoke-RepositoryValidation.ps1",
+      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Scripts-Used.html",
       "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
+      "Classification": "canonical_source",
+      "Zone": "audit-outputs",
+      "Duplicate": true
     },
     {
       "Protected": false,
@@ -6164,6 +6172,14 @@
     },
     {
       "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/curated/exchange-online/Change-Exchange-Online-20260223-0742.aspx",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "audit-outputs",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Validation.html",
       "Orphan": false,
       "Classification": "canonical_source",
@@ -6244,7 +6260,7 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Scripts-Automation.html",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/home-lab/Change-New-Home-20260227-1151.html",
       "Orphan": false,
       "Classification": "duplicate",
       "Zone": "audit-outputs",
@@ -6344,14 +6360,6 @@
       "Orphan": false,
       "Classification": "documentation",
       "Zone": "published-docs",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/architecture/Change-Architecture-Overview-20260223-0417.aspx",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "audit-outputs",
       "Duplicate": false
     },
     {
@@ -6788,11 +6796,11 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Change-Cleanup-Summary.aspx",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/architecture/Architecture-Overview.html",
       "Orphan": false,
-      "Classification": "unknown",
+      "Classification": "duplicate",
       "Zone": "audit-outputs",
-      "Duplicate": false
+      "Duplicate": true
     },
     {
       "Protected": false,
@@ -6892,11 +6900,11 @@
     },
     {
       "Protected": false,
-      "Path": "scripts/generate-governance-reports.ps1",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Scripts-Automation.html",
       "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
+      "Classification": "duplicate",
+      "Zone": "audit-outputs",
+      "Duplicate": true
     },
     {
       "Protected": false,
@@ -6908,10 +6916,10 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/exchange-online/Change-Exchange-Online-20260223-0742.aspx",
+      "Path": "scripts/validation/Invoke-RepositoryPolicyValidation.ps1",
       "Orphan": false,
       "Classification": "unknown",
-      "Zone": "audit-outputs",
+      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {
@@ -6937,14 +6945,6 @@
       "Classification": "duplicate",
       "Zone": "deployment-mirror",
       "Duplicate": true
-    },
-    {
-      "Protected": false,
-      "Path": "scripts/Invoke-RepositoryPolicyValidation.ps1",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
     },
     {
       "Protected": false,
