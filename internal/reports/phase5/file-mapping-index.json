@@ -1,15 +1,7 @@
 {
   "TotalFiles": 872,
-  "GeneratedAt": "2026-05-13T13:41:06Z",
+  "GeneratedAt": "2026-05-13T13:42:02Z",
   "Files": [
-    {
-      "Protected": false,
-      "Path": "scripts/Phase5-DryRunAnalysis.ps1",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
-    },
     {
       "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/brandguide/aspx/index.html",
@@ -292,10 +284,10 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/security/Security-Baselines.aspx",
+      "Path": "scripts/automation/Phase5-DryRunAnalysis.ps1",
       "Orphan": false,
       "Classification": "unknown",
-      "Zone": "audit-outputs",
+      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {
@@ -393,6 +385,14 @@
       "Classification": "duplicate",
       "Zone": "audit-outputs",
       "Duplicate": true
+    },
+    {
+      "Protected": false,
+      "Path": "scripts/automation/Fix-MarkdownLinks.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -864,14 +864,6 @@
       "Orphan": false,
       "Classification": "unknown",
       "Zone": "audit-outputs",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
-      "Path": "scripts/Fix-MarkdownLinks.ps1",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {
@@ -1844,6 +1836,14 @@
     },
     {
       "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/curated/portfolio/Portfolio-Summary.html",
+      "Orphan": false,
+      "Classification": "resource",
+      "Zone": "audit-outputs",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/aspx/Change-Automation-20260306-0200.aspx",
       "Orphan": false,
       "Classification": "canonical_source",
@@ -1964,10 +1964,10 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/web/Portfolio-Summary.html",
+      "Path": "assets/logos/favicon_128x128.png",
       "Orphan": false,
-      "Classification": "resource",
-      "Zone": "audit-outputs",
+      "Classification": "unknown",
+      "Zone": "public-assets",
       "Duplicate": false
     },
     {
@@ -2481,14 +2481,6 @@
       "Classification": "canonical_source",
       "Zone": "audit-outputs",
       "Duplicate": true
-    },
-    {
-      "Protected": false,
-      "Path": "assets/logos/favicon_128x128.png",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "public-assets",
-      "Duplicate": false
     },
     {
       "Protected": false,
@@ -3596,9 +3588,9 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/portfolio/Portfolio-Summary.html",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/security/Security-Baselines.aspx",
       "Orphan": false,
-      "Classification": "resource",
+      "Classification": "unknown",
       "Zone": "audit-outputs",
       "Duplicate": false
     },
@@ -4412,14 +4404,6 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Change-Scripts-and-Automation-20260223-0738.aspx",
-      "Orphan": false,
-      "Classification": "duplicate",
-      "Zone": "audit-outputs",
-      "Duplicate": true
-    },
-    {
-      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Identity-and-Security.html",
       "Orphan": false,
       "Classification": "canonical_source",
@@ -4668,14 +4652,6 @@
     },
     {
       "Protected": false,
-      "Path": "scripts/Normalize-Filenames.ps1",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Collaboration.aspx",
       "Orphan": false,
       "Classification": "unknown",
@@ -4684,11 +4660,11 @@
     },
     {
       "Protected": false,
-      "Path": "scripts/Remediate-AssetPaths.ps1",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Change-Scripts-and-Automation-20260223-0738.aspx",
       "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
+      "Classification": "duplicate",
+      "Zone": "audit-outputs",
+      "Duplicate": true
     },
     {
       "Protected": true,
@@ -4961,6 +4937,14 @@
       "Classification": "duplicate",
       "Zone": "audit-outputs",
       "Duplicate": true
+    },
+    {
+      "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/curated/web/Portfolio-Summary.html",
+      "Orphan": false,
+      "Classification": "resource",
+      "Zone": "audit-outputs",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -5276,6 +5260,14 @@
     },
     {
       "Protected": false,
+      "Path": "scripts/core/Normalize-Filenames.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Change-Conditional-Access-20260306-0200.aspx",
       "Orphan": false,
       "Classification": "unknown",
@@ -5537,6 +5529,14 @@
       "Classification": "duplicate",
       "Zone": "deployment-mirror",
       "Duplicate": true
+    },
+    {
+      "Protected": false,
+      "Path": "scripts/core/Normalize-Casing.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -6572,14 +6572,6 @@
     },
     {
       "Protected": false,
-      "Path": "scripts/Normalize-Casing.ps1",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Change-Power-Platform-20260223-0427.aspx",
       "Orphan": false,
       "Classification": "unknown",
@@ -6736,6 +6728,14 @@
       "Orphan": false,
       "Classification": "unknown",
       "Zone": "audit-outputs",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
+      "Path": "scripts/automation/Remediate-AssetPaths.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {

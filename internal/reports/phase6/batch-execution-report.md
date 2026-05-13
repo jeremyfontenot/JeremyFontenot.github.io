@@ -128,3 +128,38 @@
 
 - The moved validation scripts keep their sibling path lookups intact under `scripts/validation`.
 - No deletions were performed.
+
+---
+
+# Phase 6 Batch 5 Execution Report
+
+**Batch Type:** Utility scripts restructuring
+**Batch Status:** Completed
+**Executed:** 2026-05-13
+
+## Files Moved
+
+- `scripts/Fix-MarkdownLinks.ps1` → `scripts/automation/Fix-MarkdownLinks.ps1`
+- `scripts/Remediate-AssetPaths.ps1` → `scripts/automation/Remediate-AssetPaths.ps1`
+- `scripts/Phase5-DryRunAnalysis.ps1` → `scripts/automation/Phase5-DryRunAnalysis.ps1`
+- `scripts/Normalize-Casing.ps1` → `scripts/core/Normalize-Casing.ps1`
+- `scripts/Normalize-Filenames.ps1` → `scripts/core/Normalize-Filenames.ps1`
+
+## Files Archived
+
+- None. These scripts were relocated, not deleted.
+
+## References Fixed
+
+- None required. No repository references pointed at the moved root utility script paths.
+
+## Validation Status
+
+- Stale utility script path search: clean
+- Phase 5 mapping and dependency reports regenerated: clean
+- GitHub Pages root entry points unchanged: clean
+
+## Notes
+
+- The dry-run analysis script now lives under `scripts/automation` and continues to resolve the repository root from the current working directory.
+- No deletions were performed.
