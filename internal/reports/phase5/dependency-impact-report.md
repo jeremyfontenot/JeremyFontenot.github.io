@@ -1,17 +1,15 @@
 # Phase 5: Dependency & Reference Impact Report
 
-**Generated:** 2026-05-13 13:36:52
+**Generated:** 2026-05-13 13:38:27
 
 ## Proposed Actions
 
 ### 1. Duplicate Consolidation (Non-Destructive)
 
-**Total duplicates to archive:** 230 files
+**Total duplicates to archive:** 228 files
 
 **First 20 consolidations:**
-- assets/logos/primary_logo_light_3000x3000.png → archive/duplicates/assets-logos-primary_logo_light_3000x3000.png
 - assets/logos/primary_logo_transparent_3000x3000.png → archive/duplicates/assets-logos-primary_logo_transparent_3000x3000.png
-- assets/website-images/full-neon-tech-hero-banner.png → archive/duplicates/assets-website-images-full-neon-tech-hero-banner.png
 - internal/_content/docs/archive/scripts/docs/script-documentation/validation-results.csv → archive/duplicates/internal-_content-docs-archive-scripts-docs-script-documentation-validation-results.csv
 - internal/validation-docs/sharepoint-pages/archive/brandguide/html/Brand-Guidelines.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-brandguide-html-Brand-Guidelines.html
 - internal/validation-docs/sharepoint-pages/archive/brandguide/html/BrandGuideHome.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-brandguide-html-BrandGuideHome.html
@@ -29,8 +27,10 @@
 - internal/validation-docs/sharepoint-pages/archive/scripts/docs/brandguide-archive/html/SocialMediaKit.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-brandguide-archive-html-SocialMediaKit.html
 - internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Home.aspx → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-m365-documentation-archive-aspx-Home.aspx
 - internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Scripts-Used_BACKUP_20260227-210344.aspx → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-m365-documentation-archive-aspx-Scripts-Used_BACKUP_20260227-210344.aspx
+- internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Scripts-Used_BACKUP_20260227-210614.aspx → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-m365-documentation-archive-aspx-Scripts-Used_BACKUP_20260227-210614.aspx
+- internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Automation.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-m365-documentation-archive-html-Automation.html
 
-... and 210 more files
+... and 208 more files
 
 **Safety:** Non-destructive (duplicates are never directly referenced)
 **Reversibility:** Full git rollback available

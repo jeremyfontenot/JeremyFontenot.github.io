@@ -1,6 +1,6 @@
 {
-  "TotalFiles": 871,
-  "GeneratedAt": "2026-05-13T13:36:52Z",
+  "TotalFiles": 872,
+  "GeneratedAt": "2026-05-13T13:38:27Z",
   "Files": [
     {
       "Protected": false,
@@ -523,12 +523,12 @@
       "Duplicate": false
     },
     {
-      "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Scripts-and-Automation.html",
+      "Protected": true,
+      "Path": "archive/duplicates/assets-website-images-full-neon-tech-hero-banner.png",
       "Orphan": false,
-      "Classification": "duplicate",
-      "Zone": "audit-outputs",
-      "Duplicate": true
+      "Classification": "protected_zone",
+      "Zone": "approved-archive",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -785,6 +785,14 @@
       "Classification": "canonical_source",
       "Zone": "audit-outputs",
       "Duplicate": true
+    },
+    {
+      "Protected": true,
+      "Path": "archive/duplicates/assets-logos-primary_logo_light_3000x3000.png",
+      "Orphan": false,
+      "Classification": "protected_zone",
+      "Zone": "approved-archive",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -1964,19 +1972,11 @@
     },
     {
       "Protected": false,
-      "Path": "assets/logos/favicon_128x128.png",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/web/Portfolio-Summary.html",
       "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "public-assets",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/endpoint-management/Change-Conditional-Access-20260306-0200.html",
-      "Orphan": false,
-      "Classification": "duplicate",
+      "Classification": "resource",
       "Zone": "audit-outputs",
-      "Duplicate": true
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -2492,6 +2492,14 @@
     },
     {
       "Protected": false,
+      "Path": "assets/logos/favicon_128x128.png",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "public-assets",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Change-Endpoint-Management-Intune-20260223-0426.aspx",
       "Orphan": false,
       "Classification": "unknown",
@@ -2608,6 +2616,14 @@
       "Orphan": false,
       "Classification": "unknown",
       "Zone": "audit-outputs",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
+      "Path": "docs/index.html",
+      "Orphan": false,
+      "Classification": "resource",
+      "Zone": "published-docs",
       "Duplicate": false
     },
     {
@@ -2861,14 +2877,6 @@
     {
       "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Lab-Overview.html",
-      "Orphan": false,
-      "Classification": "canonical_source",
-      "Zone": "audit-outputs",
-      "Duplicate": true
-    },
-    {
-      "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Change-Exchange-Online-20260223-0409.html",
       "Orphan": false,
       "Classification": "canonical_source",
       "Zone": "audit-outputs",
@@ -4964,14 +4972,6 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/web/Portfolio-Summary.html",
-      "Orphan": false,
-      "Classification": "resource",
-      "Zone": "audit-outputs",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/curated/endpoint-management/Change-Endpoint-Management-Intune-20260223-0409.aspx",
       "Orphan": false,
       "Classification": "unknown",
@@ -5065,6 +5065,14 @@
       "Classification": "unknown",
       "Zone": "audit-outputs",
       "Duplicate": false
+    },
+    {
+      "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/curated/script-documentation/Scripts-and-Automation.html",
+      "Orphan": false,
+      "Classification": "duplicate",
+      "Zone": "audit-outputs",
+      "Duplicate": true
     },
     {
       "Protected": false,
@@ -5932,11 +5940,11 @@
     },
     {
       "Protected": false,
-      "Path": "docs/index.html",
+      "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Change-Exchange-Online-20260223-0409.html",
       "Orphan": false,
-      "Classification": "resource",
-      "Zone": "published-docs",
-      "Duplicate": false
+      "Classification": "canonical_source",
+      "Zone": "audit-outputs",
+      "Duplicate": true
     },
     {
       "Protected": false,
@@ -6292,10 +6300,10 @@
     },
     {
       "Protected": false,
-      "Path": "assets/logos/primary_logo_light_3000x3000.png",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/endpoint-management/Change-Conditional-Access-20260306-0200.html",
       "Orphan": false,
       "Classification": "duplicate",
-      "Zone": "public-assets",
+      "Zone": "audit-outputs",
       "Duplicate": true
     },
     {
@@ -6473,6 +6481,14 @@
       "Classification": "duplicate",
       "Zone": "deployment-mirror",
       "Duplicate": true
+    },
+    {
+      "Protected": true,
+      "Path": "internal/reports/phase6/batch-execution-report.md",
+      "Orphan": false,
+      "Classification": "protected_zone",
+      "Zone": "validation-reports",
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -6828,14 +6844,6 @@
     },
     {
       "Protected": false,
-      "Path": "assets/website-images/full-neon-tech-hero-banner.png",
-      "Orphan": false,
-      "Classification": "duplicate",
-      "Zone": "public-assets",
-      "Duplicate": true
-    },
-    {
-      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/aspx/Change-Scripts-Used-20260223-0426.aspx",
       "Orphan": false,
       "Classification": "unknown",
@@ -6975,8 +6983,8 @@
     "canonical_source": 186,
     "unknown": 290,
     "documentation": 35,
-    "duplicate": 231,
+    "duplicate": 229,
     "resource": 100,
-    "protected_zone": 29
+    "protected_zone": 32
   }
 }

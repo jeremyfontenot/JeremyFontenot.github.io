@@ -1,14 +1,14 @@
 # Phase 5: Migration Risk Report
 
-**Generated:** 2026-05-13 13:36:52
-**Total Files Analyzed:** 871
+**Generated:** 2026-05-13 13:38:27
+**Total Files Analyzed:** 872
 
 ## Classification Summary
 
 | Classification | Count |
 |---|---|
-| Protected Zones | 66 |
-| Duplicates | 417 |
+| Protected Zones | 69 |
+| Duplicates | 415 |
 | Orphans (Total) | 0 |
 | Orphans (Suppressed) | 0 |
 | Orphans (Actionable) | 0 |
@@ -16,7 +16,7 @@
 
 ## Protected Zones (DO NOT MODIFY)
 
-The following 66 files are in immutable/protected zones and will NOT be touched.
+The following 69 files are in immutable/protected zones and will NOT be touched.
 
 **First 20 protected files:**
 - _content/docs/archive-filelist.csv
@@ -35,21 +35,19 @@ The following 66 files are in immutable/protected zones and will NOT be touched.
 - _content/docs/curated/security/Security.html
 - _content/docs/curated/web/index.html
 - _content/docs/index.html
+- archive/duplicates/assets-logos-primary_logo_light_3000x3000.png
 - archive/duplicates/assets-resume-Jeremy-Fontenot-Resume.pdf
+- archive/duplicates/assets-website-images-full-neon-tech-hero-banner.png
 - archive/duplicates/docs-assets-resume-Jeremy-Fontenot-Resume.pdf
-- cdn-cgi/l/email-protection/index.html
-- evidence/public/ad-migration-plan-2023-06-21.yaml
 
-... and 46 more files
+... and 49 more files
 
 ## Consolidation Candidates
 
-The following 230 duplicate files will be archived:
+The following 228 duplicate files will be archived:
 
 **First 15 consolidations:**
-- assets/logos/primary_logo_light_3000x3000.png → archive/duplicates/assets-logos-primary_logo_light_3000x3000.png
 - assets/logos/primary_logo_transparent_3000x3000.png → archive/duplicates/assets-logos-primary_logo_transparent_3000x3000.png
-- assets/website-images/full-neon-tech-hero-banner.png → archive/duplicates/assets-website-images-full-neon-tech-hero-banner.png
 - internal/_content/docs/archive/scripts/docs/script-documentation/validation-results.csv → archive/duplicates/internal-_content-docs-archive-scripts-docs-script-documentation-validation-results.csv
 - internal/validation-docs/sharepoint-pages/archive/brandguide/html/Brand-Guidelines.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-brandguide-html-Brand-Guidelines.html
 - internal/validation-docs/sharepoint-pages/archive/brandguide/html/BrandGuideHome.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-brandguide-html-BrandGuideHome.html
@@ -62,8 +60,10 @@ The following 230 duplicate files will be archived:
 - internal/validation-docs/sharepoint-pages/archive/scripts/docs/brandguide-archive/html/Brand-Guidelines.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-brandguide-archive-html-Brand-Guidelines.html
 - internal/validation-docs/sharepoint-pages/archive/scripts/docs/brandguide-archive/html/BrandGuideHome.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-brandguide-archive-html-BrandGuideHome.html
 - internal/validation-docs/sharepoint-pages/archive/scripts/docs/brandguide-archive/html/Documentation.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-brandguide-archive-html-Documentation.html
+- internal/validation-docs/sharepoint-pages/archive/scripts/docs/brandguide-archive/html/Home.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-brandguide-archive-html-Home.html
+- internal/validation-docs/sharepoint-pages/archive/scripts/docs/brandguide-archive/html/Logos.html → archive/duplicates/internal-validation-docs-sharepoint-pages-archive-scripts-docs-brandguide-archive-html-Logos.html
 
-... and 215 more files
+... and 213 more files
 
 ## Risk Assessment
 

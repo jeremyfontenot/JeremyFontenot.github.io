@@ -1,7 +1,7 @@
 # Phase 6 Batch 1 Execution Report
 
-**Batch Type:** Duplicate archival  
-**Batch Status:** Completed  
+**Batch Type:** Duplicate archival
+**Batch Status:** Completed
 **Executed:** 2026-05-13
 
 ## Files Moved
@@ -27,4 +27,37 @@
 ## Notes
 
 - Canonical resume asset remains in `assets/Jeremy-Fontenot-Resume.pdf`.
+- No deletions were performed.
+
+---
+
+# Phase 6 Batch 2 Execution Report
+
+**Batch Type:** Duplicate archival
+**Batch Status:** Completed
+**Executed:** 2026-05-13
+
+## Files Moved
+
+- `assets/logos/primary_logo_light_3000x3000.png` → `archive/duplicates/assets-logos-primary_logo_light_3000x3000.png`
+- `assets/website-images/full-neon-tech-hero-banner.png` → `archive/duplicates/assets-website-images-full-neon-tech-hero-banner.png`
+
+## Files Archived
+
+- `archive/duplicates/assets-logos-primary_logo_light_3000x3000.png`
+- `archive/duplicates/assets-website-images-full-neon-tech-hero-banner.png`
+
+## References Fixed
+
+- None required. No repository references pointed at the moved source paths.
+
+## Validation Status
+
+- Broken-link search for the moved asset paths: clean
+- Phase 5 mapping and dependency reports regenerated: clean
+- GitHub Pages root entry points unchanged: clean
+
+## Notes
+
+- The transparent logo asset remains in place because `css/styles.css` still references it.
 - No deletions were performed.
