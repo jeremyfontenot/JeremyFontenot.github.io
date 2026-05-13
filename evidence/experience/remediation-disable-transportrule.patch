@@ -1,0 +1,10 @@
+diff --git a/remediation-disable-transportrule.ps1 b/remediation-disable-transportrule.ps1
+index 1111111..2222222 100644
+--- a/remediation-disable-transportrule.ps1
++++ b/remediation-disable-transportrule.ps1
+@@ -1,2 +1,5 @@
+ param()
++
++Write-Host 'Disable transport rule remediation validated.'
++
+ # Redacted sample patch for documentation
