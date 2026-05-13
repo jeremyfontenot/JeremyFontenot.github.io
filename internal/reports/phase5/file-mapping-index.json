@@ -1,6 +1,6 @@
 {
   "TotalFiles": 872,
-  "GeneratedAt": "2026-05-13T13:38:27Z",
+  "GeneratedAt": "2026-05-13T13:39:55Z",
   "Files": [
     {
       "Protected": false,
@@ -444,6 +444,14 @@
     },
     {
       "Protected": false,
+      "Path": "scripts/remediation/Invoke-AutoRemediation.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
       "Path": "internal/refactor-log.txt",
       "Orphan": false,
       "Classification": "unknown",
@@ -692,27 +700,11 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/curated/home-lab/Change-New-Home-20260223-0427.aspx",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "audit-outputs",
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
       "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/aspx/Lab-Overview.aspx",
       "Orphan": false,
       "Classification": "canonical_source",
       "Zone": "audit-outputs",
       "Duplicate": true
-    },
-    {
-      "Protected": false,
-      "Path": "scripts/Invoke-AutoRemediation.ps1",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
-      "Duplicate": false
     },
     {
       "Protected": false,
@@ -824,14 +816,6 @@
       "Orphan": false,
       "Classification": "resource",
       "Zone": null,
-      "Duplicate": false
-    },
-    {
-      "Protected": false,
-      "Path": "scripts/Generate-RemediationQueue.ps1",
-      "Orphan": false,
-      "Classification": "unknown",
-      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {
@@ -2052,11 +2036,11 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Change-Automation-20260306-0346.html",
+      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Architecture.html",
       "Orphan": false,
-      "Classification": "duplicate",
+      "Classification": "resource",
       "Zone": "audit-outputs",
-      "Duplicate": true
+      "Duplicate": false
     },
     {
       "Protected": false,
@@ -2560,6 +2544,14 @@
       "Orphan": false,
       "Classification": "unknown",
       "Zone": "audit-outputs",
+      "Duplicate": false
+    },
+    {
+      "Protected": false,
+      "Path": "scripts/remediation/Generate-RemediationQueue.ps1",
+      "Orphan": false,
+      "Classification": "unknown",
+      "Zone": "automation-scripts",
       "Duplicate": false
     },
     {
@@ -3617,6 +3609,14 @@
       "Classification": "resource",
       "Zone": "audit-outputs",
       "Duplicate": false
+    },
+    {
+      "Protected": false,
+      "Path": "internal/validation-docs/sharepoint-pages/archive/scripts/docs/m365-documentation-archive/html/Change-Automation-20260306-0346.html",
+      "Orphan": false,
+      "Classification": "duplicate",
+      "Zone": "audit-outputs",
+      "Duplicate": true
     },
     {
       "Protected": false,
@@ -5588,9 +5588,9 @@
     },
     {
       "Protected": false,
-      "Path": "internal/validation-docs/sharepoint-pages/archive/M365 PCL/html/Architecture.html",
+      "Path": "internal/validation-docs/sharepoint-pages/curated/home-lab/Change-New-Home-20260223-0427.aspx",
       "Orphan": false,
-      "Classification": "resource",
+      "Classification": "unknown",
       "Zone": "audit-outputs",
       "Duplicate": false
     },

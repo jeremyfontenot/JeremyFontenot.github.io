@@ -1,0 +1,47 @@
+name: Repository Remediation Queue
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  remediation-queue:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate repository policy
+        shell: pwsh
+        run: ./scripts/Invoke-RepositoryPolicyValidation.ps1
+
+      - name: Generate remediation queue
+        shell: pwsh
+        run: ./scripts/remediation/Generate-RemediationQueue.ps1
+
+      - name: Dry-run remediation engine
+        shell: pwsh
+        run: ./scripts/remediation/Invoke-AutoRemediation.ps1 -DryRun
+
+      - name: Upload remediation artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: remediation-queue-artifacts
+          path: |
+            internal/remediation/remediation-queue.json
+            internal/remediation/remediation-queue.md
+            internal/reports/phase4/remediation-queue-report.md
+            internal/reports/phase4/execution-report.md
+            internal/reports/phase4/risk-assessment-report.md
+            internal/reports/phase4/duplicate-classification-report.md
+            internal/reports/phase4/orphan-suppression-report.md
+
+      - name: Fail on protected or destructive risk
+        shell: pwsh
+        run: |
+          $risk = Get-Content -LiteralPath 'internal/reports/phase4/risk-assessment-report.md' -Raw
+          $protected = [regex]::Match($risk, '- Protected zone violations: (\d+)').Groups[1].Value
+          $destructive = [regex]::Match($risk, '- Destructive attempts: (\d+)').Groups[1].Value
+          if ([int]$protected -gt 0 -or [int]$destructive -gt 0) {
+            throw 'Repository remediation dry-run reported protected-zone violations or destructive attempts.'
+          }

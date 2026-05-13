@@ -61,3 +61,35 @@
 
 - The transparent logo asset remains in place because `css/styles.css` still references it.
 - No deletions were performed.
+
+---
+
+# Phase 6 Batch 3 Execution Report
+
+**Batch Type:** Scripts restructuring
+**Batch Status:** Completed
+**Executed:** 2026-05-13
+
+## Files Moved
+
+- `scripts/Generate-RemediationQueue.ps1` → `scripts/remediation/Generate-RemediationQueue.ps1`
+- `scripts/Invoke-AutoRemediation.ps1` → `scripts/remediation/Invoke-AutoRemediation.ps1`
+
+## Files Archived
+
+- None. These scripts were relocated, not deleted.
+
+## References Fixed
+
+- `.github/workflows/repository-remediation.yml` updated to call the moved remediation scripts.
+
+## Validation Status
+
+- Stale workflow path search: clean
+- Phase 5 mapping and dependency reports regenerated: clean
+- GitHub Pages root entry points unchanged: clean
+
+## Notes
+
+- `Invoke-AutoRemediation.ps1` still resolves its sibling queue generator via `$PSScriptRoot`.
+- No deletions were performed.

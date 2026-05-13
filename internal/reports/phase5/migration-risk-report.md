@@ -1,6 +1,6 @@
 # Phase 5: Migration Risk Report
 
-**Generated:** 2026-05-13 13:38:27
+**Generated:** 2026-05-13 13:39:55
 **Total Files Analyzed:** 872
 
 ## Classification Summary
