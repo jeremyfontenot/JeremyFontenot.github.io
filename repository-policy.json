@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "1.0",
+  "repositoryName": "Portfolio-Dev",
+  "policyMode": "advisory",
+  "owners": [
+    "jeremyfontenot"
+  ],
+  "canonicalZones": [
+    {
+      "name": "published-docs",
+      "pathRegex": "^docs/(?!assets/)",
+      "description": "Published documentation source for GitHub Pages."
+    },
+    {
+      "name": "public-assets",
+      "pathRegex": "^assets/",
+      "description": "Public-safe logos, media, downloads, and certificate assets."
+    },
+    {
+      "name": "public-evidence-thumbnails",
+      "pathRegex": "^evidence/experience/",
+      "description": "Public evidence thumbnails and visual summaries."
+    },
+    {
+      "name": "site-entrypoints",
+      "pathRegex": "^(index\\.html|contact\\.html|documentation\\.html|projects\\.html|skills\\.html)$",
+      "description": "GitHub Pages entry pages at repository root."
+    },
+    {
+      "name": "repo-control-files",
+      "pathRegex": "^(README\\.md|CONTRIBUTING\\.md|SECURITY\\.md|docs-governance\\.md|archive-retention-policy\\.md|repository-policy\\.json|robots\\.txt|sitemap\\.xml|CNAME|\\.nojekyll)$",
+      "description": "Repository control files and policy documentation."
+    },
+    {
+      "name": "automation-scripts",
+      "pathRegex": "^scripts/",
+      "description": "PowerShell validation and remediation tooling."
+    },
+    {
+      "name": "ci-automation",
+      "pathRegex": "^\\.github/",
+      "description": "Repository workflow and ownership configuration."
+    }
+  ],
+  "generatedZones": [
+    {
+      "name": "deployment-mirror",
+      "pathRegex": "^public/",
+      "description": "Deployment-safe generated content and mirrors."
+    },
+    {
+      "name": "docs-assets-mirror",
+      "pathRegex": "^docs/assets/",
+      "description": "Generated documentation asset mirror used for compatibility."
+    },
+    {
+      "name": "validation-reports",
+      "pathRegex": "^internal/reports/",
+      "description": "Generated validation and governance reports."
+    },
+    {
+      "name": "audit-outputs",
+      "pathRegex": "^internal/(?!reports/)",
+      "description": "Generated audit, exposure, and repository inventory artifacts."
+    },
+    {
+      "name": "local-development-config",
+      "pathRegex": "^\\.vscode/",
+      "description": "Local editor and workspace settings."
+    }
+  ],
+  "immutableArchiveZones": [
+    {
+      "name": "legacy-source-exports",
+      "pathRegex": "^_content/",
+      "description": "Historical source exports and legacy documentation snapshots."
+    },
+    {
+      "name": "approved-archive",
+      "pathRegex": "^archive/",
+      "description": "Explicitly archived content approved for preservation."
+    },
+    {
+      "name": "validation-archives",
+      "pathRegex": "^internal/validation-docs/",
+      "description": "Historical validation snapshots kept for provenance."
+    },
+    {
+      "name": "legacy-cdn-artifacts",
+      "pathRegex": "^cdn-cgi/",
+      "description": "Legacy Cloudflare artifact tree preserved as a historical deployment artifact."
+    }
+  ],
+  "protectedEvidenceZones": [
+    {
+      "name": "public-redactions",
+      "pathRegex": "^evidence/public/",
+      "description": "Redacted public evidence artifacts."
+    },
+    {
+      "name": "experience-evidence",
+      "pathRegex": "^evidence/experience/",
+      "description": "Evidence thumbnails and supporting visuals."
+    }
+  ],
+  "remediationExclusions": {
+    "pathRegexes": [
+      "^_content/",
+      "^archive/",
+      "^evidence/public/",
+      "^public/_content/",
+      "^internal/validation-docs/",
+      "^\\.vscode/"
+    ],
+    "description": "Never apply automatic remediation to protected archive or evidence zones unless an explicit override flag is supplied."
+  },
+  "orphanSuppressionRules": [
+    {
+      "name": "historical-export-exception",
+      "pathRegex": "^(?:_content/|archive/|internal/validation-docs/|public/_content/)",
+      "reason": "Historical exports and mirrors are preserved even when they have low or no live inbound references."
+    },
+    {
+      "name": "evidence-exception",
+      "pathRegex": "^(?:evidence/public/|evidence/experience/)",
+      "reason": "Evidence assets are intentionally preserved as portfolio proof and may be referenced indirectly."
+    },
+    {
+      "name": "downloadable-artifact-exception",
+      "pathRegex": "^(?:assets/resume/|docs/projects/.*/artifacts/|evidence/public/)",
+      "extensions": [
+        ".pdf",
+        ".ps1",
+        ".log",
+        ".csv",
+        ".json",
+        ".yaml",
+        ".yml",
+        ".xml",
+        ".md",
+        ".txt",
+        ".patch"
+      ],
+      "reason": "Downloadable artifacts are retained for provenance, evidence, or recruiter review."
+    },
+    {
+      "name": "explicit-allowlist",
+      "paths": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "SECURITY.md",
+        "docs-governance.md",
+        "archive-retention-policy.md"
+      ],
+      "reason": "Repository policy and governance docs are intentionally present even when they have sparse inbound links."
+    }
+  ],
+  "duplicateSuppressionRules": [
+    {
+      "name": "canonical-source",
+      "preferredZones": [
+        "published-docs",
+        "public-assets",
+        "public-evidence-thumbnails",
+        "site-entrypoints"
+      ],
+      "description": "Prefer canonical public source locations over mirrors and archive copies."
+    },
+    {
+      "name": "generated-derivative",
+      "preferredZones": [
+        "deployment-mirror",
+        "validation-reports",
+        "audit-outputs"
+      ],
+      "description": "Treat generated mirrors and reports as derivatives of the canonical source."
+    },
+    {
+      "name": "historical-archive-duplicate",
+      "preferredZones": [
+        "legacy-source-exports",
+        "approved-archive",
+        "validation-archives"
+      ],
+      "description": "Archive duplicates are retained for lineage and provenance."
+    }
+  ],
+  "metadata": {
+    "frontmatterRequiredFor": [
+      "docs-governance.md",
+      "archive-retention-policy.md",
+      "CONTRIBUTING.md",
+      "SECURITY.md"
+    ],
+    "frontmatterOptionalFor": [
+      "README.md",
+      "docs/**/*.md",
+      "internal/**/*.md",
+      "_content/**/*.md",
+      "archive/**/*.md"
+    ],
+    "requiredFields": [
+      "title",
+      "description",
+      "owner",
+      "classification",
+      "lifecycle",
+      "archiveStatus"
+    ],
+    "requiredTags": {
+      "classification": [
+        "published-doc",
+        "policy",
+        "evidence",
+        "project",
+        "architecture",
+        "skill",
+        "archive",
+        "generated"
+      ],
+      "lifecycle": [
+        "draft",
+        "active",
+        "maintenance",
+        "archived"
+      ],
+      "archiveStatus": [
+        "live",
+        "historical",
+        "generated",
+        "immutable"
+      ]
+    }
+  }
+}

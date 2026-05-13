@@ -1,7 +1,0 @@
--- Placeholder patch excerpt (redacted)
-Index: automation/script.ps1
---- a/automation/script.ps1
-+++ b/automation/script.ps1
-@@ -1,3 +1,3 @@
-- Write-Output "Original"
-+ Write-Output "Updated (placeholder)"

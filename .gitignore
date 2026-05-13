@@ -2,3 +2,13 @@
 /internal/
 /public/_content/docs/archive-filelist.csv
 /public/evidence/public/
+
+# Local OS/editor clutter
+Thumbs.db
+.DS_Store
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*.swo
