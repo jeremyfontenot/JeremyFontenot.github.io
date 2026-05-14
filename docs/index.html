@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Documentation — Jeremy Fontenot</title>
   <link rel="canonical" href="https://jeremyfontenot.online/docs/">
-  <meta name="description" content="Documentation — Jeremy Fontenot Skip to main content Jeremy Fontenot Entry-Level System Administrator Home Summary Skills Projects Documentation Tools Cert">
+  <meta name="description" content="Documentation — Jeremy Fontenot — concise documentation and examples for Documentation. Practical guidance and related artifacts for implementers.">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Documentation — Jeremy Fontenot">
   <meta property="og:description" content="System administration documentation hub with guides, snippets, and playbooks.">
@@ -30,7 +30,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/">Home</a></li><li><a class="nav-link" href="/#summary-title">Summary</a></li><li><a class="nav-link" href="/#skills-title">Skills</a></li><li><a class="nav-link" href="/#projects-title">Projects</a></li><li><a class="nav-link" href="/#documentation-title" aria-current="page">Documentation</a></li><li><a class="nav-link" href="/#tools-title">Tools</a></li><li><a class="nav-link" href="/#certs-title">Certifications</a></li><li><a class="nav-link" href="/#contact-title">Contact</a></li></ul></nav></header>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/index.html"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/index.html">Home</a></li><li>Summary</li><li>Skills</li><li>Projects</li><li>Documentation</li><li>Tools</li><li>Certifications</li><li>Contact</li></ul></nav></header>
   <main id="main" class="page-shell">
     <header class="section"><p class="eyebrow">Documentation</p><h1 class="page-title">Focused operational notes, not a document maze.</h1><p class="lead">This hub keeps documentation short and easy to scan. It is grouped into four recruiter-friendly categories. Search by topic, tool, or operational task.</p></header>
     <section class="section" aria-labelledby="search-title">
@@ -38,7 +38,7 @@
       <div class="grid grid-2">
         <article id="server-guides" class="doc-card" data-doc-card><span class="badge">Server Setup Guides</span><h3>Windows Server and Active Directory setup</h3><p>Includes domain services, OU planning, DNS and DHCP notes, and GPO targeting. Each guide also includes validation steps for a small-business style lab.</p><pre id="server-snippet" data-lang="powershell">Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Test-NetConnection dc01.lab.local -Port 389
-Get-GPO -All | Sort-Object DisplayName</pre><button class="copy-btn" type="button" data-copy="server-snippet">Copy commands</button><p><a class="doc-link" href="/docs/projects/#ad-migration">Related AD project</a></p></article>
+Get-GPO -All | Sort-Object DisplayName</pre><button class="copy-btn" type="button" data-copy="server-snippet">Copy commands</button><p>Related AD project</p></article>
         <article id="identity-security" class="doc-card" data-doc-card><span class="badge">Identity & Security Notes</span><h3>MFA, groups, Conditional Access, and baseline controls</h3><p>These notes connect Microsoft 365 administration to daily risk. They cover compromised accounts, weak role boundaries, and inconsistent access controls.</p><pre id="identity-snippet" data-lang="yaml">control: MFA for privileged users
 scope: admin roles and break-glass review
 validation:
@@ -50,7 +50,7 @@ validation:
   if (-not (Get-Module -ListAvailable -Name $Name)) {
     throw "Required module not found: $Name"
   }
-}</pre><button class="copy-btn" type="button" data-copy="powershell-snippet">Copy function</button><p><a class="doc-link" href="/docs/projects/ad-migration/artifacts/provisioning.ps1">Provisioning script</a></p></article>
+}</pre><button class="copy-btn" type="button" data-copy="powershell-snippet">Copy function</button><p>Provisioning script</p></article>
         <article id="troubleshooting" class="doc-card" data-doc-card><span class="badge">Troubleshooting Playbooks</span><h3>DNS, authentication, and incident RCA workflow</h3><p>Playbooks follow one consistent sequence. Define symptoms, isolate scope, collect logs, test hypotheses, apply a reversible fix, and validate recovery.</p><pre id="troubleshooting-snippet" data-lang="text">1. Confirm user impact and time window
 2. Test DNS and domain controller reachability
 3. Review Event Viewer and sign-in logs
@@ -62,6 +62,6 @@ validation:
   <footer class="footer"><div class="footer-inner"><span>&copy; <span id="year"></span> Jeremy Fontenot</span><span>Condensed documentation with search, copy buttons, and project references</span></div></footer>
   <script src="/js/main.js" defer></script>
 
-  <p>Explore more: <a href="/docs/">Documentation & projects</a></p>
+  <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
 </body>
 </html>

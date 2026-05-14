@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Case Study Projects — Jeremy Fontenot</title>
   <link rel="canonical" href="https://jeremyfontenot.online/docs/projects/">
-  <meta name="description" content="Case Study Projects — Jeremy Fontenot Skip to main content Jeremy Fontenot Entry-Level System Administrator Home Summary Skills Projects Documentation Tool">
+  <meta name="description" content="Case Study Projects — Jeremy Fontenot — concise documentation and examples for Case. Practical guidance and related artifacts for implementers.">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Case Study Projects — Jeremy Fontenot">
   <meta property="og:description" content="IT administration case studies with evidence and technical details.">
@@ -30,7 +30,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/">Home</a></li><li><a class="nav-link" href="/#summary-title">Summary</a></li><li><a class="nav-link" href="/#skills-title">Skills</a></li><li><a class="nav-link" href="/#projects-title" aria-current="page">Projects</a></li><li><a class="nav-link" href="/#documentation-title">Documentation</a></li><li><a class="nav-link" href="/#tools-title">Tools</a></li><li><a class="nav-link" href="/#certs-title">Certifications</a></li><li><a class="nav-link" href="/#contact-title">Contact</a></li></ul></nav></header>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/index.html"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/index.html">Home</a></li><li>Summary</li><li>Skills</li><li>Projects</li><li>Documentation</li><li>Tools</li><li>Certifications</li><li>Contact</li></ul></nav></header>
   <main id="main" class="page-shell">
     <header class="section"><p class="eyebrow">Projects</p><h1 class="page-title">Recruiter-readable case studies with technical evidence.</h1><p class="lead">Each project starts with a real IT operations problem. It then shows the approach, evidence, and lessons learned. Artifacts are redacted, realistic, and aligned to entry-level system administration responsibilities.</p></header>
 
@@ -45,7 +45,7 @@ OU=Corp
   OU=Groups
 OU=Service
   OU=ServiceAccounts
-  OU=Admin</pre><button class="copy-btn" type="button" data-copy="ad-code">Copy structure</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>ad-migration-plan.md</code> (example artifact)</li><li><code>ad-migration-plan-2023-06-21.yaml</code> (example metadata)</li><li><a href="/docs/projects/ad-migration/artifacts/provisioning.ps1">Provisioning script</a></li><li><code>gpo-template-StandardDesktop.xml</code> (example artifact)</li></ul><h3>Lessons learned</h3><p>OU design should follow operational support boundaries, not just department names. Validation and rollback notes matter as much as the target structure.</p></aside></div></details>
+  OU=Admin</pre><button class="copy-btn" type="button" data-copy="ad-code">Copy structure</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>ad-migration-plan.md</code> (example artifact)</li><li><code>ad-migration-plan-2023-06-21.yaml</code> (example metadata)</li><li>Provisioning script</li><li><code>gpo-template-StandardDesktop.xml</code> (example artifact)</li></ul><h3>Lessons learned</h3><p>OU design should follow operational support boundaries, not just department names. Validation and rollback notes matter as much as the target structure.</p></aside></div></details>
       </article>
     </section>
 
@@ -62,7 +62,7 @@ services:
   - Exchange Online
   - SharePoint Online
   - Microsoft Teams
-  - Intune</pre><button class="copy-btn" type="button" data-copy="m365-code">Copy YAML</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>m365-baseline-report-2024-10-05.md</code> (example artifact)</li><li><code>m365-baseline-report-2024-10-05.yaml</code> (example metadata)</li><li><a href="/docs/#identity-security">Identity notes</a></li><li><code>lab-overview</code> (archived internally)</li></ul><h3>Lessons learned</h3><p>Tenant documentation is strongest when it maps controls to operational risk: account compromise, collaboration sprawl, endpoint drift, and change traceability.</p></aside></div></details>
+  - Intune</pre><button class="copy-btn" type="button" data-copy="m365-code">Copy YAML</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>m365-baseline-report-2024-10-05.md</code> (example artifact)</li><li><code>m365-baseline-report-2024-10-05.yaml</code> (example metadata)</li><li>Identity notes</li><li><code>lab-overview</code> (archived internally)</li></ul><h3>Lessons learned</h3><p>Tenant documentation is strongest when it maps controls to operational risk: account compromise, collaboration sprawl, endpoint drift, and change traceability.</p></aside></div></details>
       </article>
     </section>
 
@@ -76,7 +76,7 @@ services:
   "passwordRequired": true,
   "firewallRequired": true,
   "defenderRequired": true
-}</pre><button class="copy-btn" type="button" data-copy="intune-code">Copy JSON</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>intune-profile-sample.json</code> (example artifact)</li><li><code>intune-validate-2024-10-05.log</code> (example log)</li><li><code>intune-profile-sample.yaml</code> (example metadata)</li><li><a href="/docs/projects/intune-baseline/artifacts/intune-export.json">Project export</a></li></ul><h3>Lessons learned</h3><p>Baseline deployment requires both configuration and proof: assignment scope, expected behavior, failed-state troubleshooting, and evidence of validation.</p></aside></div></details>
+}</pre><button class="copy-btn" type="button" data-copy="intune-code">Copy JSON</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>intune-profile-sample.json</code> (example artifact)</li><li><code>intune-validate-2024-10-05.log</code> (example log)</li><li><code>intune-profile-sample.yaml</code> (example metadata)</li><li>Project export</li></ul><h3>Lessons learned</h3><p>Baseline deployment requires both configuration and proof: assignment scope, expected behavior, failed-state troubleshooting, and evidence of validation.</p></aside></div></details>
       </article>
     </section>
 
@@ -100,13 +100,13 @@ services:
   New-ADUser -Name $_.DisplayName -SamAccountName $_.SamAccountName
   Add-ADGroupMember -Identity $_.RoleGroup -Members $_.SamAccountName
   Write-Information "Provisioned $($_.SamAccountName)"
-}</pre><button class="copy-btn" type="button" data-copy="ps-code">Copy snippet</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><a href="/docs/projects/ad-migration/artifacts/provisioning.ps1">Provisioning script</a></li><li><code>automation-commit-abc123.md</code> (example metadata)</li><li><code>automation-commit-abc123.patch</code> (example artifact)</li><li><code>automation-run-2024-10-05.log</code> (example log)</li></ul><h3>Lessons learned</h3><p>Automation for entry-level administration should prioritize validation, readable logs, and safe defaults over clever shortcuts.</p></aside></div></details>
+}</pre><button class="copy-btn" type="button" data-copy="ps-code">Copy snippet</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li>Provisioning script</li><li><code>automation-commit-abc123.md</code> (example metadata)</li><li><code>automation-commit-abc123.patch</code> (example artifact)</li><li><code>automation-run-2024-10-05.log</code> (example log)</li></ul><h3>Lessons learned</h3><p>Automation for entry-level administration should prioritize validation, readable logs, and safe defaults over clever shortcuts.</p></aside></div></details>
       </article>
     </section>
   </main>
   <footer class="footer"><div class="footer-inner"><span>&copy; <span id="year"></span> Jeremy Fontenot</span><span>Case studies include evidence links, logs, scripts, and validation notes</span></div></footer>
   <script src="/js/main.js" defer></script>
 
-  <p>Explore more: <a href="/docs/">Documentation & projects</a></p>
+  <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
 </body>
 </html>
