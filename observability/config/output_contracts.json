@@ -1,0 +1,155 @@
+{
+  "contracts": {
+    "scripts/ahrefs_verification.py": {
+      "script_name": "ahrefs_verification.py",
+      "description": "SEO verification scanner - core verification logic",
+      "output_files": [
+        {
+          "name": "ahrefs_verify_pass4.json",
+          "schema": "verification_report_v1",
+          "required": true,
+          "validate_schema": true,
+          "encoding": "utf-8",
+          "description": "SEO verification results from Pass 4 scan"
+        }
+      ],
+      "exit_codes": {
+        "0": "Success - verification completed (may have issues)",
+        "1": "System error - verification script failed",
+        "2": "Configuration error - invalid arguments"
+      },
+      "environment_vars": {
+        "VERIFICATION_TIMEOUT": {
+          "type": "integer",
+          "default": 300,
+          "description": "Timeout in seconds"
+        }
+      },
+      "arguments": {
+        "--output-file": {
+          "type": "string",
+          "required": false,
+          "default": "ahrefs_verify_pass4.json",
+          "description": "Output file path"
+        }
+      },
+      "expected_runtime_ms": {
+        "p50": 45000,
+        "p99": 120000,
+        "max": 300000
+      }
+    },
+    "scripts/repair_internal_links.ps1": {
+      "script_name": "repair_internal_links.ps1",
+      "description": "Non-destructive internal link repair workflow",
+      "output_files": [
+        {
+          "name": "link_repair_report.json",
+          "schema": "repair_report_v1",
+          "required": false,
+          "validate_schema": true,
+          "encoding": "utf-8",
+          "description": "Summary of link repairs applied"
+        }
+      ],
+      "exit_codes": {
+        "0": "Success - repair completed",
+        "1": "System error - repair script failed",
+        "2": "Validation error - links remain broken"
+      }
+    }
+  },
+  "schemas": {
+    "verification_report_v1": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Verification Report v1",
+      "type": "object",
+      "required": [
+        "timestamp",
+        "metrics"
+      ],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "UTC timestamp of execution"
+        },
+        "metrics": {
+          "type": "object",
+          "required": [
+            "broken_links",
+            "thin_content_pages",
+            "weak_meta_descriptions"
+          ],
+          "properties": {
+            "broken_links": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "thin_content_pages": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "weak_meta_descriptions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "missing_canonicals": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "orphan_pages": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "repair_report_v1": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Repair Report v1",
+      "type": "object",
+      "required": [
+        "timestamp",
+        "status"
+      ],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "success",
+            "partial",
+            "failed"
+          ]
+        },
+        "files_processed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "repairs_applied": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

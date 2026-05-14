@@ -1,15 +1,30 @@
 <#
-Pass 4 verification wrapper.
-Re-runs the existing ahrefs verification scanner, writes ahrefs_verify_pass4.json,
-and compares the new broken-link count against ahrefs_verification_report.json.
+Pass 4 verification wrapper - SEO Verification System
+
+EXECUTION LAYER: HARDENED
+- File-based execution only (no inline Python)
+- Subprocess isolation
+- Output contract validation
+- Explicit failure classification (SYSTEM vs SEO)
+
 Read-only with respect to site content; safe for CI.
 #>
 param(
     [switch]$CheckExternal
 )
 
+# Import execution layer
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $repoRoot = Resolve-Path (Join-Path $scriptDir '..')
+$executionLayerPath = Join-Path $scriptDir 'execution-layer.ps1'
+
+if (-not (Test-Path $executionLayerPath)) {
+    Write-Error "Execution layer not found: $executionLayerPath"
+    exit 1
+}
+
+. $executionLayerPath
+
 $previousReportPath = Join-Path $repoRoot 'ahrefs_verification_report.json'
 $currentReportPath = Join-Path $repoRoot 'ahrefs_verify_pass4.json'
 $scannerPath = Join-Path $scriptDir 'ahrefs_verification.py'
@@ -66,25 +81,32 @@ function Get-CurrentSummaryCount {
     return 0
 }
 
-function Invoke-ExistingScanner {
+function Invoke-VerificationScanner {
     param(
         [string]$PythonCommand = 'python'
     )
 
-    if (-not (Test-Path $scannerPath)) {
-        throw "Scanner not found: $scannerPath"
+    # Use safe execution layer (file-based only, subprocess isolated)
+    Write-Host 'Phase: running authoritative verification scanner'
+    
+    $success = Invoke-SafeScript `
+        -ScriptPath $scannerPath `
+        -Arguments @{} `
+        -TimeoutSeconds 300 `
+        -ExpectedOutputFiles @('ahrefs_verification_report.json') `
+        -ValidateSchema $true `
+        -ExecContext 'verify_pass4'
+    
+    if (-not $success) {
+        throw "Verification scanner failed - see observability/incidents/system/ for details"
     }
 
-    # Run scanner directly (it outputs ahrefs_verification_report.json)
-    & $PythonCommand $scannerPath
-    if ($LASTEXITCODE -ne 0) {
-        throw "Existing verification scanner failed with exit code $LASTEXITCODE"
-    }
-
-    # Copy to Pass 4 output name
+    # Copy output to Pass 4 format
     $tempReportPath = Join-Path $repoRoot 'ahrefs_verification_report.json'
     if (Test-Path $tempReportPath) {
         Copy-Item -Path $tempReportPath -Destination $currentReportPath -Force
+    } else {
+        throw "Expected ahrefs_verification_report.json not created"
     }
 }
 
@@ -119,16 +141,15 @@ function Get-ExternalFailureCount {
 
 $previousBrokenLinks = Get-PreviousBrokenCount -Path $previousReportPath
 if ($null -eq $previousBrokenLinks) {
-    $previousBrokenLinks = 91
+    $previousBrokenLinks = 0
 }
 
 Push-Location $repoRoot
 try {
-    $pythonCommand = if (Get-Command python -ErrorAction SilentlyContinue) { 'python' } elseif (Get-Command py -ErrorAction SilentlyContinue) { 'py' } else { throw 'Python runtime not found. Install python or py to run verification.' }
-
     Write-Host "Scanning site directory: $repoRoot"
-    Write-Host 'Phase: running authoritative verification scanner'
-    Invoke-ExistingScanner -PythonCommand $pythonCommand
+    
+    # HARDENED EXECUTION: Safe invocation with failure classification
+    Invoke-VerificationScanner
 
     if (-not (Test-Path $currentReportPath)) {
         throw "Expected report was not created: $currentReportPath"

@@ -1,848 +1,6 @@
 {
   "report": {
-    "broken_links": [
-      {
-        "file": "index.html",
-        "href": "./css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "./css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/#summary-title",
-        "candidates": [
-          "#summary-title",
-          "#summary-title.html",
-          "#summary-title/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/#skills-title",
-        "candidates": [
-          "#skills-title",
-          "#skills-title.html",
-          "#skills-title/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/#projects-title",
-        "candidates": [
-          "#projects-title",
-          "#projects-title.html",
-          "#projects-title/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/#documentation-title",
-        "candidates": [
-          "#documentation-title",
-          "#documentation-title.html",
-          "#documentation-title/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/#tools-title",
-        "candidates": [
-          "#tools-title",
-          "#tools-title.html",
-          "#tools-title/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/#certs-title",
-        "candidates": [
-          "#certs-title",
-          "#certs-title.html",
-          "#certs-title/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/#contact-title",
-        "candidates": [
-          "#contact-title",
-          "#contact-title.html",
-          "#contact-title/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#identity-access",
-        "candidates": [
-          "docs/skills/#identity-access",
-          "docs/skills/#identity-access.html",
-          "docs/skills/#identity-access/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#systems-admin",
-        "candidates": [
-          "docs/skills/#systems-admin",
-          "docs/skills/#systems-admin.html",
-          "docs/skills/#systems-admin/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#endpoint-management",
-        "candidates": [
-          "docs/skills/#endpoint-management",
-          "docs/skills/#endpoint-management.html",
-          "docs/skills/#endpoint-management/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#networking",
-        "candidates": [
-          "docs/skills/#networking",
-          "docs/skills/#networking.html",
-          "docs/skills/#networking/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#automation",
-        "candidates": [
-          "docs/skills/#automation",
-          "docs/skills/#automation.html",
-          "docs/skills/#automation/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#troubleshooting",
-        "candidates": [
-          "docs/skills/#troubleshooting",
-          "docs/skills/#troubleshooting.html",
-          "docs/skills/#troubleshooting/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#security",
-        "candidates": [
-          "docs/skills/#security",
-          "docs/skills/#security.html",
-          "docs/skills/#security/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#documentation",
-        "candidates": [
-          "docs/skills/#documentation",
-          "docs/skills/#documentation.html",
-          "docs/skills/#documentation/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#ad-migration",
-        "candidates": [
-          "docs/projects/#ad-migration",
-          "docs/projects/#ad-migration.html",
-          "docs/projects/#ad-migration/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#m365-lab",
-        "candidates": [
-          "docs/projects/#m365-lab",
-          "docs/projects/#m365-lab.html",
-          "docs/projects/#m365-lab/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#intune-baseline",
-        "candidates": [
-          "docs/projects/#intune-baseline",
-          "docs/projects/#intune-baseline.html",
-          "docs/projects/#intune-baseline/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#incident-rca",
-        "candidates": [
-          "docs/projects/#incident-rca",
-          "docs/projects/#incident-rca.html",
-          "docs/projects/#incident-rca/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#ps-provisioning",
-        "candidates": [
-          "docs/projects/#ps-provisioning",
-          "docs/projects/#ps-provisioning.html",
-          "docs/projects/#ps-provisioning/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/#server-guides",
-        "candidates": [
-          "docs/#server-guides",
-          "docs/#server-guides.html",
-          "docs/#server-guides/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/#identity-security",
-        "candidates": [
-          "docs/#identity-security",
-          "docs/#identity-security.html",
-          "docs/#identity-security/index.html"
-        ]
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/#powershell-snippets",
-        "candidates": [
-          "docs/#powershell-snippets",
-          "docs/#powershell-snippets.html",
-          "docs/#powershell-snippets/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#summary-title",
-        "candidates": [
-          "#summary-title",
-          "#summary-title.html",
-          "#summary-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#skills-title",
-        "candidates": [
-          "#skills-title",
-          "#skills-title.html",
-          "#skills-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#projects-title",
-        "candidates": [
-          "#projects-title",
-          "#projects-title.html",
-          "#projects-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#documentation-title",
-        "candidates": [
-          "#documentation-title",
-          "#documentation-title.html",
-          "#documentation-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#tools-title",
-        "candidates": [
-          "#tools-title",
-          "#tools-title.html",
-          "#tools-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#certs-title",
-        "candidates": [
-          "#certs-title",
-          "#certs-title.html",
-          "#certs-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#contact-title",
-        "candidates": [
-          "#contact-title",
-          "#contact-title.html",
-          "#contact-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/docs/projects/#ad-migration",
-        "candidates": [
-          "docs/projects/#ad-migration",
-          "docs/projects/#ad-migration.html",
-          "docs/projects/#ad-migration/index.html"
-        ]
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/docs/projects/ad-migration/artifacts/provisioning.ps1",
-        "candidates": [
-          "docs/projects/ad-migration/artifacts/provisioning.ps1",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1.html",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1/index.html"
-        ]
-      },
-      {
-        "file": "docs/search.html",
-        "href": "../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/architecture/home-lab-architecture.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/architecture/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/architecture/index.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/architecture/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/architecture/m365-architecture.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/architecture/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/brand-guide/branding.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/brand-guide/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/certifications/certifications.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/certifications/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/certifications/index.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/certifications/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#summary-title",
-        "candidates": [
-          "#summary-title",
-          "#summary-title.html",
-          "#summary-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#skills-title",
-        "candidates": [
-          "#skills-title",
-          "#skills-title.html",
-          "#skills-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#projects-title",
-        "candidates": [
-          "#projects-title",
-          "#projects-title.html",
-          "#projects-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#documentation-title",
-        "candidates": [
-          "#documentation-title",
-          "#documentation-title.html",
-          "#documentation-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#contact-title",
-        "candidates": [
-          "#contact-title",
-          "#contact-title.html",
-          "#contact-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/experience/experience.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/experience/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/experience/index.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/experience/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/identity-security/index.html",
-        "href": "/docs/projects/ad-migration.html",
-        "candidates": [
-          "docs/projects/ad-migration.html",
-          "docs/projects/ad-migration.html.html",
-          "docs/projects/ad-migration.html/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/home-lab.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/projects/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#summary-title",
-        "candidates": [
-          "#summary-title",
-          "#summary-title.html",
-          "#summary-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#skills-title",
-        "candidates": [
-          "#skills-title",
-          "#skills-title.html",
-          "#skills-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#projects-title",
-        "candidates": [
-          "#projects-title",
-          "#projects-title.html",
-          "#projects-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#documentation-title",
-        "candidates": [
-          "#documentation-title",
-          "#documentation-title.html",
-          "#documentation-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#tools-title",
-        "candidates": [
-          "#tools-title",
-          "#tools-title.html",
-          "#tools-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#certs-title",
-        "candidates": [
-          "#certs-title",
-          "#certs-title.html",
-          "#certs-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#contact-title",
-        "candidates": [
-          "#contact-title",
-          "#contact-title.html",
-          "#contact-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/docs/projects/ad-migration/artifacts/provisioning.ps1",
-        "candidates": [
-          "docs/projects/ad-migration/artifacts/provisioning.ps1",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1.html",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/docs/#identity-security",
-        "candidates": [
-          "docs/#identity-security",
-          "docs/#identity-security.html",
-          "docs/#identity-security/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/docs/projects/intune-baseline/artifacts/intune-export.json",
-        "candidates": [
-          "docs/projects/intune-baseline/artifacts/intune-export.json",
-          "docs/projects/intune-baseline/artifacts/intune-export.json.html",
-          "docs/projects/intune-baseline/artifacts/intune-export.json/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/docs/projects/ad-migration/artifacts/provisioning.ps1",
-        "candidates": [
-          "docs/projects/ad-migration/artifacts/provisioning.ps1",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1.html",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1/index.html"
-        ]
-      },
-      {
-        "file": "docs/projects/m365-lab.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/projects/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/scripts/index.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/scripts/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/scripts/script-documentation.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/scripts/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/scripts/validation.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/scripts/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/automation.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/skills/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/cloud.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/skills/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/endpoint.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/skills/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/identity.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/skills/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#summary-title",
-        "candidates": [
-          "#summary-title",
-          "#summary-title.html",
-          "#summary-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#skills-title",
-        "candidates": [
-          "#skills-title",
-          "#skills-title.html",
-          "#skills-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#projects-title",
-        "candidates": [
-          "#projects-title",
-          "#projects-title.html",
-          "#projects-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#documentation-title",
-        "candidates": [
-          "#documentation-title",
-          "#documentation-title.html",
-          "#documentation-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#tools-title",
-        "candidates": [
-          "#tools-title",
-          "#tools-title.html",
-          "#tools-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#certs-title",
-        "candidates": [
-          "#certs-title",
-          "#certs-title.html",
-          "#certs-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#contact-title",
-        "candidates": [
-          "#contact-title",
-          "#contact-title.html",
-          "#contact-title/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#ad-migration",
-        "candidates": [
-          "docs/projects/#ad-migration",
-          "docs/projects/#ad-migration.html",
-          "docs/projects/#ad-migration/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#m365-lab",
-        "candidates": [
-          "docs/projects/#m365-lab",
-          "docs/projects/#m365-lab.html",
-          "docs/projects/#m365-lab/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#ad-migration",
-        "candidates": [
-          "docs/projects/#ad-migration",
-          "docs/projects/#ad-migration.html",
-          "docs/projects/#ad-migration/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#m365-lab",
-        "candidates": [
-          "docs/projects/#m365-lab",
-          "docs/projects/#m365-lab.html",
-          "docs/projects/#m365-lab/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#identity-security",
-        "candidates": [
-          "docs/#identity-security",
-          "docs/#identity-security.html",
-          "docs/#identity-security/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#intune-baseline",
-        "candidates": [
-          "docs/projects/#intune-baseline",
-          "docs/projects/#intune-baseline.html",
-          "docs/projects/#intune-baseline/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#incident-rca",
-        "candidates": [
-          "docs/projects/#incident-rca",
-          "docs/projects/#incident-rca.html",
-          "docs/projects/#incident-rca/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#troubleshooting",
-        "candidates": [
-          "docs/#troubleshooting",
-          "docs/#troubleshooting.html",
-          "docs/#troubleshooting/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#ps-provisioning",
-        "candidates": [
-          "docs/projects/#ps-provisioning",
-          "docs/projects/#ps-provisioning.html",
-          "docs/projects/#ps-provisioning/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/ad-migration/artifacts/provisioning.ps1",
-        "candidates": [
-          "docs/projects/ad-migration/artifacts/provisioning.ps1",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1.html",
-          "docs/projects/ad-migration/artifacts/provisioning.ps1/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#identity-security",
-        "candidates": [
-          "docs/#identity-security",
-          "docs/#identity-security.html",
-          "docs/#identity-security/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#incident-rca",
-        "candidates": [
-          "docs/projects/#incident-rca",
-          "docs/projects/#incident-rca.html",
-          "docs/projects/#incident-rca/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#troubleshooting",
-        "candidates": [
-          "docs/#troubleshooting",
-          "docs/#troubleshooting.html",
-          "docs/#troubleshooting/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/infrastructure.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/skills/../../css/styles.css/index.html"
-        ]
-      },
-      {
-        "file": "docs/skills/monitoring.html",
-        "href": "../../css/styles.css",
-        "candidates": [
-          "css/styles.css",
-          "css/styles.css.html",
-          "css/styles.css/index.html",
-          "docs/skills/../../css/styles.css/index.html"
-        ]
-      }
-    ],
+    "broken_links": [],
     "duplicate_pages": [
       {
         "basename": "index.html",
@@ -867,926 +25,9 @@
       }
     ],
     "missing_canonicals": [],
-    "weak_meta_descriptions": [
-      {
-        "file": "index.html",
-        "issue": "low_quality",
-        "sample": "Jeremy Fontenot \u2014 Entry-Level System Administrator Portfolio Skip to main conten"
-      },
-      {
-        "file": "docs/index.html",
-        "issue": "low_quality",
-        "sample": "Documentation \u2014 Jeremy Fontenot Skip to main content Jeremy Fontenot Entry-Level"
-      },
-      {
-        "file": "docs/certifications/certifications.html",
-        "issue": "low_quality",
-        "sample": "Certifications | Documentation \u2190 Back to Certifications Return to Certifications"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "issue": "low_quality",
-        "sample": "Contact & Opportunities \u2014 Jeremy Fontenot Skip to main content Jeremy Fontenot E"
-      },
-      {
-        "file": "docs/experience/experience.html",
-        "issue": "low_quality",
-        "sample": "Professional Experience | Documentation \u2190 Back to Home Return to Experience Sect"
-      },
-      {
-        "file": "docs/projects/home-lab.html",
-        "issue": "low_quality",
-        "sample": "Enterprise Home Lab Infrastructure | Documentation \u2190 Back to Projects Return to "
-      },
-      {
-        "file": "docs/projects/index.html",
-        "issue": "low_quality",
-        "sample": "Case Study Projects \u2014 Jeremy Fontenot Skip to main content Jeremy Fontenot Entry"
-      },
-      {
-        "file": "docs/projects/m365-lab.html",
-        "issue": "low_quality",
-        "sample": "M365 Personal Cloud Lab | Documentation \u2190 Back to Projects Return to Projects Se"
-      },
-      {
-        "file": "docs/skills/automation.html",
-        "issue": "low_quality",
-        "sample": "Automation & Scripting | Skills \u2190 Back to Skills Return to Skills Section Automa"
-      },
-      {
-        "file": "docs/skills/cloud.html",
-        "issue": "low_quality",
-        "sample": "Cloud Administration | Skills \u2190 Back to Skills Return to Skills Section Cloud Ad"
-      },
-      {
-        "file": "docs/skills/endpoint.html",
-        "issue": "low_quality",
-        "sample": "Endpoint Management | Skills \u2190 Back to Skills Return to Skills Section Endpoint "
-      },
-      {
-        "file": "docs/skills/identity.html",
-        "issue": "low_quality",
-        "sample": "Identity & Access | Skills \u2190 Back to Skills Return to Skills Section Identity & "
-      },
-      {
-        "file": "docs/skills/index.html",
-        "issue": "low_quality",
-        "sample": "IT Skills Matrix \u2014 Jeremy Fontenot Skip to main content Jeremy Fontenot Entry-Le"
-      },
-      {
-        "file": "docs/skills/monitoring.html",
-        "issue": "low_quality",
-        "sample": "Monitoring & Security Visibility | Skills \u2190 Back to Skills Return to Skills Sect"
-      }
-    ],
-    "thin_content_pages": [
-      {
-        "file": "contact.html",
-        "words": 110
-      },
-      {
-        "file": "documentation.html",
-        "words": 110
-      },
-      {
-        "file": "linkedin.html",
-        "words": 121
-      },
-      {
-        "file": "projects.html",
-        "words": 110
-      },
-      {
-        "file": "skills.html",
-        "words": 110
-      },
-      {
-        "file": "cdn-cgi/l/email-protection/index.html",
-        "words": 107
-      },
-      {
-        "file": "docs/search.html",
-        "words": 129
-      },
-      {
-        "file": "docs/architecture/home-lab-architecture.html",
-        "words": 149
-      },
-      {
-        "file": "docs/architecture/index.html",
-        "words": 144
-      },
-      {
-        "file": "docs/certifications/certifications.html",
-        "words": 134
-      },
-      {
-        "file": "docs/certifications/index.html",
-        "words": 146
-      },
-      {
-        "file": "docs/contact/index.html",
-        "words": 137
-      },
-      {
-        "file": "docs/server-guides/index.html",
-        "words": 143
-      },
-      {
-        "file": "docs/skills/cloud.html",
-        "words": 144
-      },
-      {
-        "file": "docs/skills/endpoint.html",
-        "words": 123
-      },
-      {
-        "file": "docs/skills/monitoring.html",
-        "words": 145
-      },
-      {
-        "file": "docs/troubleshooting/index.html",
-        "words": 142
-      },
-      {
-        "file": "evidence/public/index.html",
-        "words": 76
-      }
-    ],
-    "unnormalized_links": [
-      {
-        "file": "contact.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "contact.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "documentation.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "documentation.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "index.html",
-        "href": "/"
-      },
-      {
-        "file": "index.html",
-        "href": "/"
-      },
-      {
-        "file": "index.html",
-        "href": "/#summary-title"
-      },
-      {
-        "file": "index.html",
-        "href": "/#skills-title"
-      },
-      {
-        "file": "index.html",
-        "href": "/#projects-title"
-      },
-      {
-        "file": "index.html",
-        "href": "/#documentation-title"
-      },
-      {
-        "file": "index.html",
-        "href": "/#tools-title"
-      },
-      {
-        "file": "index.html",
-        "href": "/#certs-title"
-      },
-      {
-        "file": "index.html",
-        "href": "/#contact-title"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#identity-access"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#systems-admin"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#endpoint-management"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#networking"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#automation"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#troubleshooting"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#security"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/skills/#documentation"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#ad-migration"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#m365-lab"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#intune-baseline"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#incident-rca"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/projects/#ps-provisioning"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/#server-guides"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/#identity-security"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/#powershell-snippets"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "index.html",
-        "href": "/"
-      },
-      {
-        "file": "index.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "linkedin.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "linkedin.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "projects.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "projects.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "skills.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "skills.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "cdn-cgi/l/email-protection/index.html",
-        "href": "/"
-      },
-      {
-        "file": "cdn-cgi/l/email-protection/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/evidence.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#summary-title"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#skills-title"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#projects-title"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#documentation-title"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#tools-title"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#certs-title"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/#contact-title"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/docs/projects/#ad-migration"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/experience/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/certifications/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/experience/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/certifications/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/architecture"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/projects"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/scripts"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/skills"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/architecture/home-lab-architecture.html",
-        "href": "/docs/architecture/"
-      },
-      {
-        "file": "docs/architecture/home-lab-architecture.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/architecture/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/architecture/m365-architecture.html",
-        "href": "/docs/architecture/"
-      },
-      {
-        "file": "docs/architecture/m365-architecture.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/brand-guide/branding.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/brand-guide/branding.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/certifications/certifications.html",
-        "href": "/docs/certifications/"
-      },
-      {
-        "file": "docs/certifications/certifications.html",
-        "href": "/docs/certifications/"
-      },
-      {
-        "file": "docs/certifications/certifications.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/certifications/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/certifications/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#summary-title"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#skills-title"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#projects-title"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#documentation-title"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/#contact-title"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/docs/contact/"
-      },
-      {
-        "file": "docs/experience/experience.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/experience/experience.html",
-        "href": "/docs/experience/"
-      },
-      {
-        "file": "docs/experience/experience.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/experience/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/experience/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/homelab/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/homelab/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/homelab/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/identity-security/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/identity-security/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/identity-security/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/powershell/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/powershell/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/powershell/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/powershell/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/projects/home-lab.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "docs/projects/home-lab.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "docs/projects/home-lab.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#summary-title"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#skills-title"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#projects-title"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#documentation-title"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#tools-title"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#certs-title"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/#contact-title"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/docs/#identity-security"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/projects/m365-lab.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "docs/projects/m365-lab.html",
-        "href": "/docs/projects/"
-      },
-      {
-        "file": "docs/projects/m365-lab.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/scripts/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/scripts/script-documentation.html",
-        "href": "/docs/scripts/"
-      },
-      {
-        "file": "docs/scripts/script-documentation.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/scripts/validation.html",
-        "href": "/docs/scripts/"
-      },
-      {
-        "file": "docs/scripts/validation.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/server-guides/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/server-guides/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/server-guides/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/server-guides/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/automation.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/automation.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/automation.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/cloud.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/cloud.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/cloud.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/endpoint.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/endpoint.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/endpoint.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/identity.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/identity.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/identity.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#summary-title"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#skills-title"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#projects-title"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#documentation-title"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#tools-title"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#certs-title"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/#contact-title"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#ad-migration"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#m365-lab"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#ad-migration"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#m365-lab"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#identity-security"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#intune-baseline"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#incident-rca"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#troubleshooting"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#ps-provisioning"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#identity-security"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/projects/#incident-rca"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/#troubleshooting"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/infrastructure.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/infrastructure.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/skills/monitoring.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/monitoring.html",
-        "href": "/docs/skills/"
-      },
-      {
-        "file": "docs/skills/monitoring.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/troubleshooting/index.html",
-        "href": "/"
-      },
-      {
-        "file": "docs/troubleshooting/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/troubleshooting/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "docs/troubleshooting/index.html",
-        "href": "/docs/"
-      },
-      {
-        "file": "evidence/public/index.html",
-        "href": "/docs/"
-      }
-    ],
+    "weak_meta_descriptions": [],
+    "thin_content_pages": [],
+    "unnormalized_links": [],
     "invalid_internal_links": [
       {
         "file": "index.html",
@@ -1794,6 +35,10 @@
       },
       {
         "file": "index.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "index.html",
         "href": "/assets/Jeremy-Fontenot-Resume.pdf"
       },
       {
@@ -1809,6 +54,38 @@
         "href": "/css/styles.css"
       },
       {
+        "file": "docs/search.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/source-browser.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/architecture/home-lab-architecture.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/architecture/index.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/architecture/m365-architecture.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/brand-guide/branding.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/certifications/certifications.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/certifications/index.html",
+        "href": "/css/styles.css"
+      },
+      {
         "file": "docs/contact/index.html",
         "href": "/assets/logos/favicon_64x64.png"
       },
@@ -1819,6 +96,14 @@
       {
         "file": "docs/contact/index.html",
         "href": "/assets/Jeremy-Fontenot-Resume.pdf"
+      },
+      {
+        "file": "docs/experience/experience.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/experience/index.html",
+        "href": "/css/styles.css"
       },
       {
         "file": "docs/homelab/index.html",
@@ -1833,6 +118,10 @@
         "href": "/assets/logos/favicon_64x64.png"
       },
       {
+        "file": "docs/projects/home-lab.html",
+        "href": "/css/styles.css"
+      },
+      {
         "file": "docs/projects/index.html",
         "href": "/assets/logos/favicon_64x64.png"
       },
@@ -1841,15 +130,55 @@
         "href": "/css/styles.css"
       },
       {
+        "file": "docs/projects/m365-lab.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/scripts/index.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/scripts/script-documentation.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/scripts/validation.html",
+        "href": "/css/styles.css"
+      },
+      {
         "file": "docs/server-guides/index.html",
         "href": "/assets/logos/favicon_64x64.png"
       },
       {
+        "file": "docs/skills/automation.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/skills/cloud.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/skills/endpoint.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/skills/identity.html",
+        "href": "/css/styles.css"
+      },
+      {
         "file": "docs/skills/index.html",
         "href": "/assets/logos/favicon_64x64.png"
       },
       {
         "file": "docs/skills/index.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/skills/infrastructure.html",
+        "href": "/css/styles.css"
+      },
+      {
+        "file": "docs/skills/monitoring.html",
         "href": "/css/styles.css"
       },
       {
@@ -1859,15 +188,13 @@
     ],
     "sitemap_mismatches": {
       "missing_from_sitemap": [
-        "index.html",
-        "cdn-cgi/l/email-protection/index.html"
+        "index.html"
       ],
       "sitemap_missing_pages": []
     },
     "indexnow_mismatches": {
       "missing_from_indexnow": [
         "index.html",
-        "cdn-cgi/l/email-protection/index.html",
         "docs/index.html",
         "docs/architecture/index.html",
         "docs/certifications/index.html",
@@ -1880,40 +207,33 @@
         "docs/scripts/index.html",
         "docs/server-guides/index.html",
         "docs/skills/index.html",
-        "docs/troubleshooting/index.html",
-        "evidence/public/index.html"
+        "docs/troubleshooting/index.html"
       ],
       "indexnow_removed_pages": [
-        "docs/skills//index.html",
-        "docs/homelab//index.html",
-        "docs/scripts//index.html",
-        "docs/projects//index.html",
-        "docs/architecture//index.html",
-        "docs/powershell//index.html",
         "docs/certifications//index.html",
         "docs/server-guides//index.html",
-        "docs/experience//index.html",
-        "docs/contact//index.html",
         "docs//index.html",
-        "evidence/public//index.html",
+        "docs/projects//index.html",
+        "docs/skills//index.html",
+        "docs/identity-security//index.html",
         "docs/troubleshooting//index.html",
-        "docs/identity-security//index.html"
+        "docs/homelab//index.html",
+        "docs/contact//index.html",
+        "docs/experience//index.html",
+        "docs/powershell//index.html",
+        "docs/architecture//index.html",
+        "docs/scripts//index.html"
       ]
     },
     "orphan_pages": [
       "contact.html",
       "documentation.html",
-      "index.html",
       "linkedin.html",
       "projects.html",
       "skills.html",
       "cdn-cgi/l/email-protection/index.html",
-      "docs/index.html",
       "docs/source-browser.html",
       "docs/brand-guide/branding.html",
-      "docs/certifications/index.html",
-      "docs/contact/index.html",
-      "docs/experience/index.html",
       "docs/homelab/index.html",
       "docs/identity-security/index.html",
       "docs/powershell/index.html",
@@ -1929,21 +249,21 @@
     ]
   },
   "summary": {
-    "broken_links": 91,
+    "broken_links": 0,
     "duplicate_pages": 1,
     "missing_canonicals": 0,
-    "weak_meta_descriptions": 14,
-    "thin_content_pages": 18,
-    "unnormalized_links": 193,
-    "invalid_internal_links": 17,
+    "weak_meta_descriptions": 0,
+    "thin_content_pages": 0,
+    "unnormalized_links": 0,
+    "invalid_internal_links": 39,
     "sitemap_mismatches": {
-      "missing_from_sitemap": 2,
+      "missing_from_sitemap": 1,
       "sitemap_missing_pages": 0
     },
     "indexnow_mismatches": {
-      "missing_from_indexnow": 16,
-      "indexnow_removed_pages": 14
+      "missing_from_indexnow": 14,
+      "indexnow_removed_pages": 13
     },
-    "orphan_pages": 25
+    "orphan_pages": 20
   }
 }
