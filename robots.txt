@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
+# Prevent crawlers from indexing internal reports and tooling outputs
+Disallow: /internal/
 Sitemap: https://jeremyfontenot.online/sitemap.xml
