@@ -13,17 +13,15 @@ param(
     [switch]$CheckExternal
 )
 
-# Import execution layer
+# Setup paths
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $repoRoot = Resolve-Path (Join-Path $scriptDir '..')
-$executionLayerPath = Join-Path $scriptDir 'execution-layer.ps1'
+$executionLayerPath = Join-Path $scriptDir 'execution-layer.py'
 
 if (-not (Test-Path $executionLayerPath)) {
     Write-Error "Execution layer not found: $executionLayerPath"
     exit 1
 }
-
-. $executionLayerPath
 
 $previousReportPath = Join-Path $repoRoot 'ahrefs_verification_report.json'
 $currentReportPath = Join-Path $repoRoot 'ahrefs_verify_pass4.json'
@@ -86,19 +84,30 @@ function Invoke-VerificationScanner {
         [string]$PythonCommand = 'python'
     )
 
-    # Use safe execution layer (file-based only, subprocess isolated)
+    # Use safe subprocess invocation (direct, isolated, no inline execution)
     Write-Host 'Phase: running authoritative verification scanner'
     
-    $success = Invoke-SafeScript `
-        -ScriptPath $scannerPath `
-        -Arguments @{} `
-        -TimeoutSeconds 300 `
-        -ExpectedOutputFiles @('ahrefs_verification_report.json') `
-        -ValidateSchema $true `
-        -ExecContext 'verify_pass4'
+    $pythonScriptPath = Join-Path $scriptDir 'ahrefs_verification.py'
+    if (-not (Test-Path $pythonScriptPath)) {
+        throw "Scanner script not found: $pythonScriptPath"
+    }
+    
+    # Execute in isolated subprocess with captured output
+    $proc = Start-Process -FilePath python -ArgumentList @($pythonScriptPath) `
+        -NoNewWindow -PassThru -Wait -ErrorAction Stop `
+        -RedirectStandardOutput (Join-Path $env:TEMP "verify_pass4_stdout.log") `
+        -RedirectStandardError (Join-Path $env:TEMP "verify_pass4_stderr.log")
+    
+    $success = $proc.ExitCode -eq 0
+    
+    # Verify output was generated
+    if ($success -and -not (Test-Path 'ahrefs_verification_report.json')) {
+        Write-Error 'Verification succeeded but output file not generated'
+        $success = $false
+    }
     
     if (-not $success) {
-        throw "Verification scanner failed - see observability/incidents/system/ for details"
+        throw "Verification scanner failed - check observability/reports/ for details"
     }
 
     # Copy output to Pass 4 format

@@ -78,7 +78,7 @@ function Invoke-SafeScript {
         [string[]]$ExpectedOutputFiles = @(),
 
         [Parameter(Mandatory = $false)]
-        [bool]$ValidateSchema = $true,
+        [switch]$ValidateSchema,
 
         [Parameter(Mandatory = $false)]
         [string]$ExecContext = "powershell"
@@ -94,7 +94,7 @@ function Invoke-SafeScript {
         $dateStr = Get-Date -Format 'yyyyMMdd'
         $errorObj = @{
             error_id      = "exec-$dateStr-001"
-            timestamp     = (Get-Date -AsUTC -Format 'o')
+            timestamp     = ((Get-Date).ToUniversalTime().ToString('o'))
             incident_type = "SYSTEM"
             severity      = "high"
             error_class   = "ExecutionFailure"
@@ -149,9 +149,10 @@ function Invoke-SafeScript {
 
         if (-not $exitedWithinTimeout) {
             Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue
+            $timeoutDateStr = Get-Date -Format 'yyyyMMdd'
             $errorObj = @{
-                error_id     = "exec-$(Get-Date -Format 'yyyyMMdd')-002"
-                timestamp    = (Get-Date -AsUTC -Format 'o')
+                error_id     = "exec-$timeoutDateStr-002"
+                timestamp    = ((Get-Date).ToUniversalTime().ToString('o'))
                 incident_type = "SYSTEM"
                 severity     = "high"
                 error_class  = "ExecutionFailure"
@@ -171,9 +172,10 @@ function Invoke-SafeScript {
         # 3. EXIT CODE CHECK
         if ($exitCode -ne 0) {
             $stderr = Get-Content $processParams['RedirectStandardError'] -Raw -ErrorAction SilentlyContinue
+            $exitDateStr = Get-Date -Format 'yyyyMMdd'
             $errorObj = @{
-                error_id     = "exec-$(Get-Date -Format 'yyyyMMdd')-003"
-                timestamp    = (Get-Date -AsUTC -Format 'o')
+                error_id     = "exec-$exitDateStr-003"
+                timestamp    = ((Get-Date).ToUniversalTime().ToString('o'))
                 incident_type = "SYSTEM"
                 severity     = "high"
                 error_class  = "ExecutionFailure"
@@ -197,9 +199,10 @@ function Invoke-SafeScript {
         }
 
         if ($missingFiles.Count -gt 0) {
+            $missingDateStr = Get-Date -Format 'yyyyMMdd'
             $errorObj = @{
-                error_id       = "exec-$(Get-Date -Format 'yyyyMMdd')-004"
-                timestamp      = (Get-Date -AsUTC -Format 'o')
+                error_id       = "exec-$missingDateStr-004"
+                timestamp      = ((Get-Date).ToUniversalTime().ToString('o'))
                 incident_type  = "SYSTEM"
                 severity       = "high"
                 error_class    = "ExecutionFailure"
@@ -225,9 +228,10 @@ function Invoke-SafeScript {
                         }
                     }
                     catch {
+                        $errorDateStr = Get-Date -Format 'yyyyMMdd'
                         $errorObj = @{
-                            error_id      = "exec-$(Get-Date -Format 'yyyyMMdd')-005"
-                            timestamp     = (Get-Date -AsUTC -Format 'o')
+                            error_id      = "exec-$errorDateStr-005"
+                            timestamp     = ((Get-Date).ToUniversalTime().ToString('o'))
                             incident_type = "SYSTEM"
                             severity      = "high"
                             error_class   = "ExecutionFailure"
@@ -268,9 +272,11 @@ function Write-ExecutionSuccess {
         [string]$ExecCtx
     )
 
+    $now = Get-Date
+    $dateStr = "{0:yyyyMMdd}" -f $now
     $logEntry = @{
-        execution_log_id = "exec-log-$(Get-Date -Format 'yyyyMMdd')-$(Get-Random)"
-        timestamp        = (Get-Date -AsUTC -Format 'o')
+        execution_log_id = "exec-log-$dateStr-$(Get-Random)"
+        timestamp        = $now.ToUniversalTime().ToString('o')
         status           = "success"
         script_name      = $ScriptName
         duration_ms      = $DurationMs
@@ -309,15 +315,18 @@ function Write-ExecutionError {
     Add-Content -Path $logFile -Value $logEntry -Encoding UTF8
 
     # Create SYSTEM incident
-    $incidentDir = Join-Path $PSScriptRoot "..\observability\incidents\system\$(Get-Date -Format 'yyyy-MM-dd')"
+    $now = Get-Date
+    $dateFolder = "{0:yyyy-MM-dd}" -f $now
+    $incidentDir = Join-Path $PSScriptRoot "..\observability\incidents\system\$dateFolder"
     if (-not (Test-Path $incidentDir)) {
         New-Item -ItemType Directory -Path $incidentDir -Force | Out-Null
     }
 
-    $timeStamp = Get-Date -Format 'HH-mm-ss'
+    $timeStamp = "{0:HH-mm-ss}" -f $now
     $incidentId = $ErrorObject.error_id
     if (-not $incidentId) {
-        $incidentId = "exec-$(Get-Date -Format 'yyyyMMdd')-000"
+        $dateStr = "{0:yyyyMMdd}" -f $now
+        $incidentId = "exec-$dateStr-000"
     }
     $incidentFile = Join-Path $incidentDir "$($timeStamp)_$($incidentId).json"
 
