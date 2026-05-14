@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence Files — Jeremy Fontenot Portfolio</title>
+  <meta name="description" content="Portfolio evidence files and supporting documentation">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header {
+      background: white;
+      padding: 30px 0;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .subtitle {
+      color: #666;
+      font-size: 1.1em;
+    }
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .evidence-card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: box-shadow 0.2s;
+    }
+    .evidence-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .file-name {
+      font-weight: 600;
+      font-size: 1em;
+      margin-bottom: 8px;
+      word-break: break-word;
+      color: #222;
+    }
+    .file-meta {
+      font-size: 0.85em;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .file-type {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75em;
+      font-weight: 500;
+      margin-right: 6px;
+    }
+    .file-size {
+      display: inline-block;
+      color: #999;
+      font-size: 0.85em;
+    }
+    .download-link {
+      display: inline-block;
+      background: #1976d2;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9em;
+      transition: background 0.2s;
+      margin-top: 10px;
+    }
+    .download-link:hover {
+      background: #1565c0;
+    }
+    .category {
+      margin-bottom: 40px;
+    }
+    .category-title {
+      font-size: 1.4em;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #1976d2;
+    }
+    .info-box {
+      background: #e3f2fd;
+      border-left: 4px solid #1976d2;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+    .info-box p {
+      color: #1565c0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Evidence Files</h1>
+      <p class="subtitle">Supporting documentation for portfolio case studies</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="info-box">
+      <p><strong>ℹ️ Note:</strong> All files below are available for download from the GitHub repository's raw CDN. Click the download link to access each file.</p>
+    </div>
+
+    <!-- M365 Evidence -->
+    <div class="category">
+      <h2 class="category-title">M365 & Identity Security</h2>
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="file-name">m365-baseline-report-2024-10-05.md</div>
+          <div class="file-meta">
+            <span class="file-type">MARKDOWN</span>
+            <span class="file-size">Config baseline report</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Cloud security baseline assessment and recommendations</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/m365-baseline-report-2024-10-05.md" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">m365-baseline-report-2024-10-05.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">Configuration data</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Baseline configuration in YAML format</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/m365-baseline-report-2024-10-05.yaml" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">intune-profile-sample.json</div>
+          <div class="file-meta">
+            <span class="file-type">JSON</span>
+            <span class="file-size">Profile template</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Intune device profile configuration example</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/intune-profile-sample.json" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">intune-profile-sample.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">Profile configuration</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Profile in YAML format for version control</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/intune-profile-sample.yaml" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">intune-validate-2024-10-05.log</div>
+          <div class="file-meta">
+            <span class="file-type">LOG</span>
+            <span class="file-size">Validation output</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Intune configuration validation results</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/intune-validate-2024-10-05.log" class="download-link">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Directory & AD Migration -->
+    <div class="category">
+      <h2 class="category-title">Active Directory Migration</h2>
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="file-name">ad-migration-plan-2023-06-21.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">Migration plan</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Detailed AD migration project planning</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/ad-migration-plan-2023-06-21.yaml" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">ad-migration-plan.md</div>
+          <div class="file-meta">
+            <span class="file-type">MARKDOWN</span>
+            <span class="file-size">Migration documentation</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Migration plan and execution strategy</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/ad-migration-plan.md" class="download-link">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Automation & Remediation -->
+    <div class="category">
+      <h2 class="category-title">Automation & Remediation</h2>
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="file-name">automation-run-2024-10-05.log</div>
+          <div class="file-meta">
+            <span class="file-type">LOG</span>
+            <span class="file-size">Execution log</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Automation script execution results</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-run-2024-10-05.log" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">automation-commit-abc123.md</div>
+          <div class="file-meta">
+            <span class="file-type">MARKDOWN</span>
+            <span class="file-size">Commit summary</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Detailed commit notes and changes</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-commit-abc123.md" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">automation-commit-abc123.patch</div>
+          <div class="file-meta">
+            <span class="file-type">PATCH</span>
+            <span class="file-size">Code diff</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Code changes in unified diff format</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-commit-abc123.patch" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">automation-commit-abc123.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">Configuration metadata</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Automation configuration specification</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-commit-abc123.yaml" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">remediation-disable-transportrule.ps1</div>
+          <div class="file-meta">
+            <span class="file-type">POWERSHELL</span>
+            <span class="file-size">Script</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Email remediation script implementation</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/remediation-disable-transportrule.ps1" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">remediation-disable-transportrule.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">Remediation config</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Remediation action configuration</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/remediation-disable-transportrule.yaml" class="download-link">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RCA & Incident Response -->
+    <div class="category">
+      <h2 class="category-title">Incident Response & RCA</h2>
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="file-name">rca-run-2025-02-10.log</div>
+          <div class="file-meta">
+            <span class="file-type">LOG</span>
+            <span class="file-size">RCA execution log</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Root cause analysis execution transcript</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/rca-run-2025-02-10.log" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">rca-2025-02-10.md</div>
+          <div class="file-meta">
+            <span class="file-type">MARKDOWN</span>
+            <span class="file-size">RCA report</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Detailed root cause analysis report</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/rca-2025-02-10.md" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">rca-2025-02-10.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">RCA metadata</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">RCA findings in structured format</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/rca-2025-02-10.yaml" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">incident-2025-02-10-logs.txt</div>
+          <div class="file-meta">
+            <span class="file-type">TEXT</span>
+            <span class="file-size">Incident logs</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Raw incident response logs</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/incident-2025-02-10-logs.txt" class="download-link">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security & Compliance -->
+    <div class="category">
+      <h2 class="category-title">Security & Compliance</h2>
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="file-name">prepost-audit-summary.csv</div>
+          <div class="file-meta">
+            <span class="file-type">CSV</span>
+            <span class="file-size">Audit data</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Pre/post audit comparison results</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/prepost-audit-summary.csv" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">prepost-audit-summary.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">Audit summary</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Audit results in YAML format</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/prepost-audit-summary.yaml" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">gpo-template-StandardDesktop.xml</div>
+          <div class="file-meta">
+            <span class="file-type">XML</span>
+            <span class="file-size">GPO template</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Group Policy Object configuration template</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/gpo-template-StandardDesktop.xml" class="download-link">Download</a>
+        </div>
+
+        <div class="evidence-card">
+          <div class="file-name">gpo-template-StandardDesktop.yaml</div>
+          <div class="file-meta">
+            <span class="file-type">YAML</span>
+            <span class="file-size">GPO metadata</span>
+          </div>
+          <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">GPO configuration in YAML</p>
+          <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/gpo-template-StandardDesktop.yaml" class="download-link">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
