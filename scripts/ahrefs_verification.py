@@ -64,6 +64,8 @@ report = {
     'orphan_pages': []
 }
 
+noindex_pages = set()
+
 # load sitemap if present
 sitemap_paths = set()
 if os.path.exists('sitemap.xml'):
@@ -166,6 +168,9 @@ for rel in html_files:
     else:
         content = None
     meta_map[rel] = content
+    robots = re.search(r'<meta[^>]*name=["\']robots["\'][^>]*content=["\']([^"\']*)["\']', html, re.I)
+    if robots and 'noindex' in robots.group(1).lower():
+        noindex_pages.add(rel)
     # visible text
     vt = visible_text(html)
     wc = len(vt.split())
@@ -238,6 +243,8 @@ if sitemap_paths:
     sitemap_set = set(sitemap_paths)
     # missing from sitemap: public html files not in sitemap_set
     for f in html_files:
+        if f in noindex_pages:
+            continue
         # map index.html to dir index
         mapped = f
         if f.endswith('index.html'):
@@ -255,6 +262,8 @@ if indexnow_urls:
     idx_set = set(indexnow_urls)
     # missing from indexnow: pages in sitemap not in indexnow
     for f in html_files:
+        if f in noindex_pages:
+            continue
         mapped = f
         if f.endswith('index.html'):
             d = os.path.dirname(f)
