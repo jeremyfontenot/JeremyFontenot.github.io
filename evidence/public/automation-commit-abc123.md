@@ -1,8 +1,8 @@
-# Automation Change Summary - abc123
+# Automation Commit - abc123
 
-Redacted public summary for the automation change set.
+Public-facing notes for the automation change set.
 
-## Highlights
-- Baseline report generation documented
-- Patch excerpt published separately
-- Validation run completed successfully
+## Included artifacts
+- Patch excerpt
+- Baseline report generation notes
+- Validation log references
