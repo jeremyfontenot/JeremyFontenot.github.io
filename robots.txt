@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /cdn-cgi/l/email-protection
+Allow: /cdn-cgi/scripts/
 Disallow: /cdn-cgi/
 # Prevent crawlers from indexing internal reports and tooling outputs
 Disallow: /internal/
