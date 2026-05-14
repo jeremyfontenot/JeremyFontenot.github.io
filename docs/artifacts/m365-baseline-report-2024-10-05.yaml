@@ -1,9 +1,0 @@
-title: M365 Baseline Report
-report_date: 2024-10-05
-visibility: public
-status: redacted
-summary:
-  - baseline validation completed
-  - conditional access reviewed
-  - endpoint posture documented
-source: docs/experience/experience.html

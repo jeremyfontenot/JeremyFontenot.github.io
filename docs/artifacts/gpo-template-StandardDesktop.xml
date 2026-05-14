@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GPO name="StandardDesktop" version="1">
-  <Description>Redacted sample Group Policy template for workstation baselines.</Description>
-  <Settings>
-    <Setting name="PasswordPolicy" value="Configured" />
-    <Setting name="ScreenLock" value="Configured" />
-    <Setting name="AuditPolicy" value="Configured" />
-  </Settings>
-</GPO>

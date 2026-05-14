@@ -1,7 +1,0 @@
-title: Standard Desktop GPO Template
-visibility: public
-status: sample
-settings:
-  passwordPolicy: configured
-  screenLock: configured
-  auditPolicy: configured

@@ -1,9 +1,0 @@
-title: Intune Profile Sample
-visibility: public
-status: redacted
-platform: windows10AndLater
-settings:
-  passwordRequired: true
-  encryptionRequired: true
-  minimumOSVersion: 22H2
-  bitLockerRequired: true
