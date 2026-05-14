@@ -75,12 +75,16 @@ function Invoke-ExistingScanner {
         throw "Scanner not found: $scannerPath"
     }
 
-    $scannerText = Get-Content -Raw -Encoding UTF8 $scannerPath
-    $scannerText = $scannerText.Replace("out = 'ahrefs_verification_report.json'", "out = 'ahrefs_verify_pass4.json'")
-
-    & $PythonCommand -c $scannerText
+    # Run scanner directly (it outputs ahrefs_verification_report.json)
+    & $PythonCommand $scannerPath
     if ($LASTEXITCODE -ne 0) {
         throw "Existing verification scanner failed with exit code $LASTEXITCODE"
+    }
+
+    # Copy to Pass 4 output name
+    $tempReportPath = Join-Path $repoRoot 'ahrefs_verification_report.json'
+    if (Test-Path $tempReportPath) {
+        Copy-Item -Path $tempReportPath -Destination $currentReportPath -Force
     }
 }
 
