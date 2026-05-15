@@ -48,8 +48,8 @@ def visible_text(html):
     return t
 
 # helpers to find hrefs
-href_re = re.compile(r'href=["\']([^"\']+)["\']', re.I)
-img_re = re.compile(r'src=["\']([^"\']+)["\']', re.I)
+# Only anchor hrefs are navigational links for this verifier.
+href_re = re.compile(r'<a[^>]*href=["\']([^"\']+)["\']', re.I)
 
 report = {
     'broken_links': [],
@@ -102,6 +102,7 @@ if os.path.exists('scripts/indexnow_payload.json'):
             # map to path
             if u.startswith('http'):
                 path = u.split('://',1)[1].split('/',1)[1] if '/' in u.split('://',1)[1] else ''
+                path = path.rstrip('/')
                 if path == '':
                     indexnow_urls.add('index.html')
                 else:
@@ -117,8 +118,18 @@ inbound = {f: 0 for f in html_files}
 
 # helper to resolve an href to local candidate paths
 def resolve_href(src_rel, href):
+    href = href.strip()
     # ignore external
     if href.startswith('http') or href.startswith('mailto:') or href.startswith('tel:') or href.startswith('javascript:') or href.startswith('#') or href.strip()=='' or href.startswith('${'):
+        return None, []
+    # remove URL fragment before path resolution
+    href = href.split('#', 1)[0]
+    if href == '':
+        return None, []
+    # ignore obvious non-HTML asset links
+    href_no_query = href.split('?', 1)[0].split('#', 1)[0].lower()
+    asset_exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.ico', '.css', '.js', '.pdf', '.txt', '.xml', '.json', '.zip')
+    if href_no_query.endswith(asset_exts):
         return None, []
     # normalize
     candidates = []
@@ -245,11 +256,7 @@ if sitemap_paths:
     for f in html_files:
         if f in noindex_pages:
             continue
-        # map index.html to dir index
         mapped = f
-        if f.endswith('index.html'):
-            d = os.path.dirname(f)
-            mapped = d + '/index.html'
         if mapped not in sitemap_set and ('/' + mapped) not in sitemap_set:
             report['sitemap_mismatches']['missing_from_sitemap'].append(f)
     # sitemap entries pointing to removed pages
@@ -265,9 +272,6 @@ if indexnow_urls:
         if f in noindex_pages:
             continue
         mapped = f
-        if f.endswith('index.html'):
-            d = os.path.dirname(f)
-            mapped = d + '/index.html'
         if mapped not in idx_set:
             report['indexnow_mismatches']['missing_from_indexnow'].append(f)
     for u in idx_set:

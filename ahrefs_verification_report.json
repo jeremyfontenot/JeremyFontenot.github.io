@@ -28,209 +28,17 @@
     "weak_meta_descriptions": [],
     "thin_content_pages": [],
     "unnormalized_links": [],
-    "invalid_internal_links": [
-      {
-        "file": "index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "index.html",
-        "href": "/assets/Jeremy-Fontenot-Resume.pdf"
-      },
-      {
-        "file": "docs/evidence.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/search.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/source-browser.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/architecture/home-lab-architecture.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/architecture/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/architecture/m365-architecture.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/brand-guide/branding.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/certifications/certifications.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/certifications/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/contact/index.html",
-        "href": "/assets/Jeremy-Fontenot-Resume.pdf"
-      },
-      {
-        "file": "docs/experience/experience.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/experience/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/homelab/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/identity-security/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/powershell/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/projects/home-lab.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/projects/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/projects/m365-lab.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/scripts/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/scripts/script-documentation.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/scripts/validation.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/server-guides/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/skills/automation.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/skills/cloud.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/skills/endpoint.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/skills/identity.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      },
-      {
-        "file": "docs/skills/index.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/skills/infrastructure.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/skills/monitoring.html",
-        "href": "/css/styles.css"
-      },
-      {
-        "file": "docs/troubleshooting/index.html",
-        "href": "/assets/logos/favicon_64x64.png"
-      }
-    ],
+    "invalid_internal_links": [],
     "sitemap_mismatches": {
-      "missing_from_sitemap": [
-        "index.html"
-      ],
+      "missing_from_sitemap": [],
       "sitemap_missing_pages": []
     },
     "indexnow_mismatches": {
-      "missing_from_indexnow": [
-        "index.html",
-        "docs/index.html",
-        "docs/architecture/index.html",
-        "docs/certifications/index.html",
-        "docs/contact/index.html",
-        "docs/experience/index.html",
-        "docs/homelab/index.html",
-        "docs/identity-security/index.html",
-        "docs/powershell/index.html",
-        "docs/projects/index.html",
-        "docs/scripts/index.html",
-        "docs/server-guides/index.html",
-        "docs/skills/index.html",
-        "docs/troubleshooting/index.html"
-      ],
-      "indexnow_removed_pages": [
-        "docs/powershell//index.html",
-        "docs//index.html",
-        "docs/experience//index.html",
-        "docs/server-guides//index.html",
-        "docs/architecture//index.html",
-        "docs/scripts//index.html",
-        "docs/projects//index.html",
-        "docs/contact//index.html",
-        "docs/certifications//index.html",
-        "docs/skills//index.html",
-        "docs/identity-security//index.html",
-        "docs/troubleshooting//index.html",
-        "docs/homelab//index.html"
-      ]
+      "missing_from_indexnow": [],
+      "indexnow_removed_pages": []
     },
     "orphan_pages": [
-      "contact.html",
-      "documentation.html",
       "linkedin.html",
-      "projects.html",
-      "skills.html",
       "cdn-cgi/l/email-protection/index.html",
       "docs/source-browser.html",
       "docs/brand-guide/branding.html",
@@ -255,15 +63,15 @@
     "weak_meta_descriptions": 0,
     "thin_content_pages": 0,
     "unnormalized_links": 0,
-    "invalid_internal_links": 39,
+    "invalid_internal_links": 0,
     "sitemap_mismatches": {
-      "missing_from_sitemap": 1,
+      "missing_from_sitemap": 0,
       "sitemap_missing_pages": 0
     },
     "indexnow_mismatches": {
-      "missing_from_indexnow": 14,
-      "indexnow_removed_pages": 13
+      "missing_from_indexnow": 0,
+      "indexnow_removed_pages": 0
     },
-    "orphan_pages": 20
+    "orphan_pages": 16
   }
 }
