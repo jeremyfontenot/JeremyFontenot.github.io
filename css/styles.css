@@ -573,6 +573,7 @@ h3 { font-size: 1.05rem; }
 }
 
 .hidden { display: none !important; }
+[hidden] { display: none !important; }
 :focus-visible { outline: var(--focus-outline); outline-offset: 3px; }
 
 @media (max-width: 920px) {
