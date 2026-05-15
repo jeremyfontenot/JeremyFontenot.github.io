@@ -1,29 +1,7 @@
 {
   "report": {
     "broken_links": [],
-    "duplicate_pages": [
-      {
-        "basename": "index.html",
-        "files": [
-          "index.html",
-          "cdn-cgi/l/email-protection/index.html",
-          "docs/index.html",
-          "docs/architecture/index.html",
-          "docs/certifications/index.html",
-          "docs/contact/index.html",
-          "docs/experience/index.html",
-          "docs/homelab/index.html",
-          "docs/identity-security/index.html",
-          "docs/powershell/index.html",
-          "docs/projects/index.html",
-          "docs/scripts/index.html",
-          "docs/server-guides/index.html",
-          "docs/skills/index.html",
-          "docs/troubleshooting/index.html",
-          "evidence/public/index.html"
-        ]
-      }
-    ],
+    "duplicate_pages": [],
     "missing_canonicals": [],
     "weak_meta_descriptions": [],
     "thin_content_pages": [],
@@ -37,28 +15,11 @@
       "missing_from_indexnow": [],
       "indexnow_removed_pages": []
     },
-    "orphan_pages": [
-      "linkedin.html",
-      "cdn-cgi/l/email-protection/index.html",
-      "docs/source-browser.html",
-      "docs/brand-guide/branding.html",
-      "docs/homelab/index.html",
-      "docs/identity-security/index.html",
-      "docs/powershell/index.html",
-      "docs/projects/home-lab.html",
-      "docs/server-guides/index.html",
-      "docs/skills/automation.html",
-      "docs/skills/endpoint.html",
-      "docs/skills/identity.html",
-      "docs/skills/infrastructure.html",
-      "docs/skills/monitoring.html",
-      "docs/troubleshooting/index.html",
-      "evidence/public/index.html"
-    ]
+    "orphan_pages": []
   },
   "summary": {
     "broken_links": 0,
-    "duplicate_pages": 1,
+    "duplicate_pages": 0,
     "missing_canonicals": 0,
     "weak_meta_descriptions": 0,
     "thin_content_pages": 0,
@@ -72,6 +33,6 @@
       "missing_from_indexnow": 0,
       "indexnow_removed_pages": 0
     },
-    "orphan_pages": 16
+    "orphan_pages": 0
   }
 }

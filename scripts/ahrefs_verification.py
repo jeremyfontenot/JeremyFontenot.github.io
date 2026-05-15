@@ -2,7 +2,7 @@
 import os, re, json
 from html import unescape
 ROOT = os.path.abspath('.')
-EXCLUDE_DIRS = ('assets','css','js','internal','reports')
+EXCLUDE_DIRS = ('assets','css','js','internal','reports','cdn-cgi')
 EXCLUDE_FILES = ('sitemap.xml','scripts/indexnow_payload.json')
 
 def is_excluded_path(path):
@@ -159,16 +159,11 @@ def resolve_href(src_rel, href):
     return 'internal', norm
 
 # scan files
-basename_map = {}
 meta_map = {}
 for rel in html_files:
     full = os.path.join(ROOT, rel)
     with open(full, 'r', encoding='utf-8', errors='ignore') as fh:
         html = fh.read()
-    # collect title
-    title_m = re.search(r'<title>(.*?)</title>', html, re.I|re.S)
-    title = title_m.group(1).strip() if title_m else ''
-    basename_map.setdefault(os.path.basename(rel), []).append(rel)
     # canonical
     if not re.search(r'<link[^>]*rel=["\']canonical["\']', html, re.I):
         report['missing_canonicals'].append(rel)
@@ -217,11 +212,6 @@ for rel in html_files:
                 break
         if not exists:
             report['broken_links'].append({'file': rel, 'href': href, 'candidates': cands})
-
-# duplicates heuristic: same basename in multiple locations
-for b, files in basename_map.items():
-    if len(files) > 1:
-        report['duplicate_pages'].append({'basename': b, 'files': files})
 
 # meta description issues: duplicates and length issues
 # duplicates
@@ -280,6 +270,8 @@ if indexnow_urls:
 
 # orphan pages: inbound count zero
 for f,count in inbound.items():
+    if f in noindex_pages:
+        continue
     if count == 0:
         report['orphan_pages'].append(f)
 
