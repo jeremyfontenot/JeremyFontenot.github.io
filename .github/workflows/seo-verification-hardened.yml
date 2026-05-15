@@ -36,36 +36,16 @@ jobs:
       
       - name: Run SEO Verification via Hardened Execution Layer
         id: verify
-        shell: python
+        shell: pwsh
         run: |
-          import subprocess
-          import json
-          import sys
-          from pathlib import Path
-          from datetime import datetime
-          
-          # Load execution layer helper
-          sys.path.insert(0, 'scripts')
-          from execution_layer import invoke_subprocess_safely
-          
-          # RULE: File-based execution only
-          # RULE: Subprocess isolation
-          # RULE: Output contract validation
-          
-          success, error = invoke_subprocess_safely(
-              script_name="ahrefs_verification.py",
-              args={"output-file": "ahrefs_verify_pass4.json"},
-              timeout_seconds=300,
-              expected_output_files=["ahrefs_verify_pass4.json"],
-              validate_schema=True,
-              execution_context="github-actions-seo-verification"
-          )
-          
-          if not success:
-              print(f"::error::SEO Verification SYSTEM incident: {error['error_code']}")
-              sys.exit(1)
-          
-          print("::notice::SEO Verification completed successfully")
+          # Use the repository's authoritative pass-4 wrapper.
+          ./scripts/verify_pass4.ps1
+
+          if (-not (Test-Path -LiteralPath "ahrefs_verify_pass4.json")) {
+            throw "Expected output missing: ahrefs_verify_pass4.json"
+          }
+
+          Write-Host "::notice::SEO Verification completed successfully"
       
       # ============================================================================
       # CLASSIFICATION LAYER: Distinguish SYSTEM vs SEO incidents
@@ -105,8 +85,9 @@ jobs:
               with open(verify_report) as f:
                   data = json.load(f)
               
+              summary = data.get("summary", {})
               metrics = data.get("metrics", {})
-              broken_links = metrics.get("broken_links", 0)
+              broken_links = summary.get("total_broken_internal_links", metrics.get("broken_links", 0))
               
               if broken_links > 0:
                   print("::error::SEO incident detected - broken links found")
@@ -167,12 +148,12 @@ jobs:
           git config user.name "SEO Verification Bot"
           
           # Add verification results
-          git add ahrefs_verify_pass4.json -f
+          [ -f ahrefs_verify_pass4.json ] && git add ahrefs_verify_pass4.json -f || true
           
           # Add execution logs and incidents
-          git add observability/reports/execution_log.jsonl -f
-          git add observability/reports/execution_metrics.json -f
-          git add observability/incidents/system/ -f
+          [ -f observability/reports/execution_log.jsonl ] && git add observability/reports/execution_log.jsonl -f || true
+          [ -f observability/reports/execution_metrics.json ] && git add observability/reports/execution_metrics.json -f || true
+          [ -d observability/incidents/system ] && git add observability/incidents/system/ -f || true
           
           git commit -m "chore(seo): verification and execution logs [no-ci]" --allow-empty
           git push
