@@ -26,6 +26,7 @@
 
   <!-- FIXED PATH -->
   <link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/styles-extended.css">
 
   <!-- FIXED JSON-LD -->
   <script type="application/ld+json">
@@ -66,15 +67,15 @@
       <!-- Background brand toggle (accessible) -->
       <button id="bg-toggle" class="nav-toggle" type="button" aria-pressed="false" aria-label="Toggle background brand imagery" title="Toggle background imagery"><i class="fa-solid fa-image" aria-hidden="true"></i></button>
       <ul id="primary-menu" class="nav-menu" data-collapsed="true">
-        <li><a class="nav-link" href="/index.html" aria-current="page">Home</a></li>
-        <li>Summary</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Documentation</li>
-        <li>Tools</li>
-        <li>Certifications</li>
-        <li>Contact</li>
-      </ul>
+  <li><a class="nav-link" href="/index.html">Home</a></li>
+  <li><a class="nav-link" href="#summary-title">Summary</a></li>
+  <li><a class="nav-link" href="#skills-title">Skills</a></li>
+  <li><a class="nav-link" href="#projects-title">Projects</a></li>
+  <li><a class="nav-link" href="#documentation-title">Documentation</a></li>
+  <li><a class="nav-link" href="#tools-title">Tools</a></li>
+  <li><a class="nav-link" href="#certs-title">Certifications</a></li>
+  <li><a class="nav-link" href="#contact-title">Contact</a></li>
+</ul>
     </nav>
   </header>
 
@@ -121,25 +122,82 @@
     </section>
 
     <section class="section" aria-labelledby="skills-title">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Core Skills</p>
-          <h2 id="skills-title">Capabilities aligned to entry-level systems administration.</h2>
-          <p class="site-note">Note: detailed evidence and full case studies are hosted on separate documentation pages — <a href="/docs/skills/index.html">Skills</a>, <a href="/docs/projects/index.html">Projects</a>, and <a href="/docs/index.html">Documentation</a>. Use those pages for recruiter-grade proofs and artifact lists.</p>
-        </div>
-        <a class="project-link" href="/docs/skills/index.html">Detailed skills matrix <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-      </div>
-      <div class="grid grid-4">
-        <span class="card-icon"><i class="fa-solid fa-user-shield"></i></span><h3>Identity & Access</h3><p>AD users, groups, OU design, Entra ID roles, MFA, and access review basics.</p><ul class="tech-list"><li>AD DS</li><li>Entra ID</li><li>Conditional Access</li></ul>
-        <span class="card-icon"><i class="fa-solid fa-server"></i></span><h3>Systems Administration</h3><p>Windows Server roles, DNS, DHCP, file services, GPO baselines, and server documentation.</p><ul class="tech-list"><li>Windows Server</li><li>GPMC</li><li>Hyper-V</li></ul>
-        <span class="card-icon"><i class="fa-solid fa-laptop-code"></i></span><h3>Endpoint Management</h3><p>Windows 11 compliance, Intune configuration profiles, Win32 app deployment, and validation logs.</p><ul class="tech-list"><li>Intune</li><li>Autopilot concepts</li><li>Compliance policies</li></ul>
-        <span class="card-icon"><i class="fa-solid fa-network-wired"></i></span><h3>Networking</h3><p>Name resolution, addressing, VLAN awareness, firewall basics, and structured connectivity testing.</p><ul class="tech-list"><li>DNS</li><li>DHCP</li><li>pfSense</li></ul>
-        <span class="card-icon"><i class="fa-solid fa-terminal"></i></span><h3>Automation</h3><p>PowerShell scripts for onboarding, reporting, validation, and repeatable administrative tasks.</p><ul class="tech-list"><li>PowerShell</li><li>Microsoft Graph</li><li>CSV/JSON</li></ul>
-        <span class="card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></span><h3>Troubleshooting</h3><p>Incident notes, RCA workflow, Event Viewer review, DNS testing, and service validation.</p><ul class="tech-list"><li>RCA</li><li>Logs</li><li>Runbooks</li></ul>
-        <span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span><h3>Security & Compliance</h3><p>Least privilege, MFA, secure workstation settings, audit evidence, and change validation.</p><ul class="tech-list"><li>MFA</li><li>Baselines</li><li>Access controls</li></ul>
-        <span class="card-icon"><i class="fa-solid fa-file-lines"></i></span><h3>Documentation</h3><p>SOPs, change records, playbooks, architecture notes, and recruiter-readable technical evidence.</p><ul class="tech-list"><li>Markdown</li><li>Runbooks</li><li>Change records</li></ul>
-      </div>
-    </section>
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Core Skills</p>
+      <h2 id="skills-title">Capabilities aligned to entry-level systems administration.</h2>
+      <p class="site-note">
+        Note: detailed evidence and full case studies are hosted on separate documentation pages —
+        <a href="/docs/skills/index.html">Skills</a>,
+        <a href="/docs/projects/index.html">Projects</a>,
+        <a href="/docs/index.html">Documentation</a>.
+      </p>
+    </div>
+    <a class="project-link" href="/docs/skills/index.html">
+      Detailed skills matrix <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <div class="grid grid-4">
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-user-shield"></i></span>
+      <h3>Identity & Access</h3>
+      <p>AD users, groups, OU design, Entra ID roles, MFA, and access review basics.</p>
+      <ul class="tech-list"><li>AD DS</li><li>Entra ID</li><li>Conditional Access</li></ul>
+    </article>
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-server"></i></span>
+      <h3>Systems Administration</h3>
+      <p>Windows Server roles, DNS, DHCP, file services, GPO baselines, and server documentation.</p>
+      <ul class="tech-list"><li>Windows Server</li><li>GPMC</li><li>Hyper‑V</li></ul>
+    </article>
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-laptop-code"></i></span>
+      <h3>Endpoint Management</h3>
+      <p>Windows 11 compliance, Intune configuration profiles, Win32 app deployment, and validation logs.</p>
+      <ul class="tech-list"><li>Intune</li><li>Autopilot</li><li>Compliance</li></ul>
+    </article>
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-network-wired"></i></span>
+      <h3>Networking</h3>
+      <p>Name resolution, addressing, VLAN awareness, firewall basics, and structured connectivity testing.</p>
+      <ul class="tech-list"><li>DNS</li><li>DHCP</li><li>pfSense</li></ul>
+    </article>
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-terminal"></i></span>
+      <h3>Automation</h3>
+      <p>PowerShell scripts for onboarding, reporting, validation, and repeatable administrative tasks.</p>
+      <ul class="tech-list"><li>PowerShell</li><li>Microsoft Graph</li><li>CSV/JSON</li></ul>
+    </article>
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+      <h3>Troubleshooting</h3>
+      <p>Incident notes, RCA workflow, Event Viewer review, DNS testing, and service validation.</p>
+      <ul class="tech-list"><li>RCA</li><li>Logs</li><li>Runbooks</li></ul>
+    </article>
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span>
+      <h3>Security & Compliance</h3>
+      <p>Least privilege, MFA, secure workstation settings, audit evidence, and change validation.</p>
+      <ul class="tech-list"><li>MFA</li><li>Baselines</li><li>Access controls</li></ul>
+    </article>
+
+    <article class="card card--skill">
+      <span class="card-icon"><i class="fa-solid fa-file-lines"></i></span>
+      <h3>Documentation</h3>
+      <p>SOPs, change records, playbooks, architecture notes, and recruiter‑readable technical evidence.</p>
+      <ul class="tech-list"><li>Markdown</li><li>Runbooks</li><li>Change records</li></ul>
+    </article>
+
+  </div>
+</section>
 
     <section class="section" aria-labelledby="projects-title">
       <div class="section-head">
@@ -156,20 +214,41 @@
     </section>
 
     <section class="section" aria-labelledby="documentation-title">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Documentation</p>
-          <h2 id="documentation-title">Operational docs and how-to guides.</h2>
-          <p class="site-note">Quick links to core operational notes — full documents live on the Documentation hub if you need recruiter-grade artifacts.</p>
-        </div>
-        <a class="project-link" href="/docs/index.html">Open documentation hub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-      </div>
-      <div class="grid grid-3">
-        <span class="card-icon"><i class="fa-solid fa-server"></i></span><h3>Server Setup Guides</h3><p>Windows Server, AD setup, DNS/DHCP, and GPO validation steps.</p>
-        <span class="card-icon"><i class="fa-solid fa-user-lock"></i></span><h3>Identity & Security</h3><p>MFA, Entra ID notes, Conditional Access, and baseline controls.</p>
-        <span class="card-icon"><i class="fa-solid fa-terminal"></i></span><h3>PowerShell Snippets</h3><p>Provisioning, validation, and reporting examples for repeatable automation.</p>
-      </div>
-    </section>
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Documentation</p>
+      <h2 id="documentation-title">Operational docs and how‑to guides.</h2>
+      <p class="site-note">
+        Quick links to core operational notes — full documents live on the Documentation hub.
+      </p>
+    </div>
+    <a class="project-link" href="/docs/index.html">
+      Open documentation hub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <div class="grid grid-3">
+
+    <article class="card card--doc">
+      <span class="card-icon"><i class="fa-solid fa-server"></i></span>
+      <h3>Server Setup Guides</h3>
+      <p>Windows Server, AD setup, DNS/DHCP, and GPO validation steps.</p>
+    </article>
+
+    <article class="card card--doc">
+      <span class="card-icon"><i class="fa-solid fa-user-lock"></i></span>
+      <h3>Identity & Security</h3>
+      <p>MFA, Entra ID notes, Conditional Access, and baseline controls.</p>
+    </article>
+
+    <article class="card card--doc">
+      <span class="card-icon"><i class="fa-solid fa-terminal"></i></span>
+      <h3>PowerShell Snippets</h3>
+      <p>Provisioning, validation, and reporting examples for repeatable automation.</p>
+    </article>
+
+  </div>
+</section>
 
     <section class="section" aria-labelledby="contact-title">
       <div class="section-head">

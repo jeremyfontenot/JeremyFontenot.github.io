@@ -210,19 +210,19 @@
         "docs/troubleshooting/index.html"
       ],
       "indexnow_removed_pages": [
-        "docs/identity-security//index.html",
-        "docs/homelab//index.html",
         "docs/powershell//index.html",
-        "docs/experience//index.html",
         "docs//index.html",
-        "docs/contact//index.html",
-        "docs/troubleshooting//index.html",
-        "docs/skills//index.html",
+        "docs/experience//index.html",
         "docs/server-guides//index.html",
-        "docs/projects//index.html",
         "docs/architecture//index.html",
+        "docs/scripts//index.html",
+        "docs/projects//index.html",
+        "docs/contact//index.html",
         "docs/certifications//index.html",
-        "docs/scripts//index.html"
+        "docs/skills//index.html",
+        "docs/identity-security//index.html",
+        "docs/troubleshooting//index.html",
+        "docs/homelab//index.html"
       ]
     },
     "orphan_pages": [
