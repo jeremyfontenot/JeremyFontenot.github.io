@@ -116,3 +116,38 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
   });
 });
+
+  // Fade-up reveal and micro-interactions
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const animated = Array.from(document.querySelectorAll('[data-animate]'));
+    if('IntersectionObserver' in window && animated.length){
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      },{threshold:0.12});
+      animated.forEach(el=>io.observe(el));
+    }else{
+      animated.forEach(el=>el.classList.add('in-view'));
+    }
+
+    // subtle hover pulse hooks (CSS handles visuals)
+    const interactives = document.querySelectorAll('.btn, a.contact-email');
+    interactives.forEach(el=>{
+      el.addEventListener('mouseenter', ()=>el.classList.add('hovering'));
+      el.addEventListener('mouseleave', ()=>el.classList.remove('hovering'));
+    });
+
+    // smooth-handle anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const href = a.getAttribute('href');
+        if(!href || href === '#') return;
+        const target = document.querySelector(href);
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); history.pushState(null,'',href); }
+      });
+    });
+  });

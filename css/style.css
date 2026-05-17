@@ -20,6 +20,7 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
+html{scroll-behavior:smooth}
 body{margin:0;font-family:var(--font-sans);background:var(--color-bg);color:var(--color-text);line-height:1.55}
 body.dashboard-page{background:
   radial-gradient(circle at 15% 10%, rgba(56,189,248,0.10), transparent 28%),
@@ -41,6 +42,71 @@ body.dashboard-page{background:
 .hero .hero-content::before{content:"";position:absolute;inset:-20%;background:var(--glow-cyan);pointer-events:none;z-index:0}
 .hero .hero-content > *{position:relative;z-index:1}
 .hero .hero-content:hover{transform:translateY(-4px)}
+.frosted-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:1.25rem;backdrop-filter: blur(6px);border:1px solid rgba(255,255,255,0.03);position:relative;overflow:visible}
+.hero-badge{position:absolute;right:1rem;top:1rem;font-size:1.05rem;color:var(--color-primary);filter:drop-shadow(0 6px 16px rgba(34,211,238,0.12))}
+.frosted-card h2{margin:0 0 0.45rem;font-size:clamp(1.45rem,3vw,2.2rem);letter-spacing:0.01em}
+.frosted-card::after{content:"";position:absolute;left:-12%;right:-12%;bottom:-22%;height:220px;background:radial-gradient(closest-side, rgba(217,70,239,0.06), transparent 40%);pointer-events:none;z-index:0}
+
+/* Animated subtle background for hero */
+@keyframes pulseGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero .hero-content{background-size:200% 200%;animation: pulseGradient 12s ease-in-out infinite}
+
+/* Cardized highlights */
+.highlights{gap:1rem;margin-top:1.5rem;padding-top:8px;padding-bottom:8px}
+.highlights .card{display:flex;flex-direction:column;gap:0.6rem;padding:1.15rem;border-radius:14px;transition:transform .16s ease,box-shadow .16s ease}
+.highlights .card:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(0,0,0,0.36)}
+.card-icon{font-size:1.6rem;background:linear-gradient(90deg,var(--color-secondary),var(--color-primary));-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 6px 18px rgba(34,211,238,0.12));}
+
+/* Inline SVG sizing for icons */
+.card-icon svg{width:28px;height:28px;display:block;color:var(--color-secondary);}
+
+
+/* Alternating subtle bands */
+.highlights article:nth-child(odd){background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006))}
+.highlights article:nth-child(even){background:transparent}
+
+/* Section rhythm */
+section{padding-top:64px;padding-bottom:48px}
+
+/* Buttons with icons */
+.btn .btn-icon{display:inline-block;margin-right:0.6rem;vertical-align:middle;color:inherit}
+.btn .btn-icon[width]{width:16px;height:16px}
+.btn{will-change:transform}
+.btn.outline .btn-icon{filter:none}
+
+/* Paragraph readability */
+p{line-height:1.65;margin-top:0;margin-bottom:0.9rem}
+
+/* Fade-up reveal */
+[data-animate="fade-up"]{opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.9,.2,1)}
+[data-animate="fade-up"].in-view{opacity:1;transform:none}
+
+/* Glow behind section headers */
+h3{position:relative}
+h3::after{content:"";position:absolute;left:0;right:50%;height:8px;bottom:-6px;background:linear-gradient(90deg,var(--color-primary),var(--color-accent));opacity:0.08;border-radius:8px}
+
+/* H4 scaling */
+h4{font-size:clamp(0.95rem,2.2vw,1.05rem);letter-spacing:0.02em}
+
+/* Contact email styling */
+.contact-email{display:inline-flex;gap:0.5rem;align-items:center;padding:0.35rem 0.6rem;border-radius:999px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--color-text);text-decoration:none}
+.contact-email svg{opacity:0.9;margin-right:0.15rem}
+.contact-email:hover{box-shadow:0 10px 30px rgba(34,211,238,0.08);transform:translateY(-2px)}
+
+/* Footer enhancements */
+.site-footer{background:linear-gradient(180deg, rgba(7,16,38,0.9), rgba(9,16,29,0.96));padding:1.25rem;margin-top:2.5rem;border-top:1px solid rgba(34,211,238,0.06);color:var(--color-muted)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.footer-brand{display:flex;align-items:center;gap:0.75rem}
+.footer-badges{display:flex;gap:0.5rem;flex-wrap:wrap}
+.badge{background:rgba(255,255,255,0.02);padding:0.35rem 0.6rem;border-radius:999px;border:1px solid rgba(255,255,255,0.03);font-size:0.85rem;color:var(--color-muted)}
+
+/* Typographic scaling */
+h1{font-size:clamp(1.6rem,4vw,2.75rem)}
+h2{font-size:clamp(1.35rem,3.6vw,2.2rem)}
+h3{font-size:clamp(1.05rem,2.6vw,1.15rem);letter-spacing:0.02em}
+
+/* Small performance-friendly focus glow */
+.btn:focus,.card:focus{outline:3px solid rgba(34,211,238,0.12);outline-offset:3px}
 .hero-meta{background:var(--color-surface);padding:1rem;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,0.22);border:1px solid rgba(255,255,255,0.05)}
 .cta-row{margin-top:1rem}
 .btn{display:inline-block;padding:0.65rem 1rem;border-radius:10px;background:linear-gradient(120deg,var(--color-primary),var(--color-accent));color:#ffffff;text-decoration:none;font-weight:700;box-shadow:0 10px 24px rgba(34,211,238,0.22), 0 0 0 1px rgba(217,70,239,0.15);transition:transform .12s ease,box-shadow .12s ease,background .12s ease,color .12s ease}
@@ -48,13 +114,16 @@ body.dashboard-page{background:
 .btn.outline{background:transparent;border:1px solid rgba(217,70,239,0.65);color:#f0c6ff}
 .btn.outline:hover,.btn.outline:focus{background:rgba(217,70,239,0.1);color:#ffd8ff}
 .highlights{display:grid;grid-template-columns:1fr;gap:0.8rem;margin-top:1rem}
-.card, article{background:var(--color-surface);padding:1rem;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.05)}
+.card, article{background:var(--color-surface);padding:1rem;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.05);transition:transform .18s ease,box-shadow .18s ease}
 .site-footer{background:#09101d;padding:1rem;margin-top:2rem;border-top:1px solid rgba(34,211,238,0.08);color:var(--color-muted)}
 
 h1,h2,h3,h4{color:var(--color-text);line-height:1.2}
 p,li,small{color:var(--color-text)}
 a{color:var(--color-secondary)}
 a:hover{color:var(--color-accent)}
+
+/* Hero neon glow (subtle) */
+.hero .hero-content{box-shadow:0 16px 36px rgba(0,0,0,0.28), 0 0 48px rgba(34,211,238,0.04)}
 
 @media(min-width:800px){
   .hero{grid-template-columns:2fr 1fr}
