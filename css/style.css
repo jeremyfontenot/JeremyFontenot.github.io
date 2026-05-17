@@ -60,10 +60,13 @@ a:hover{color:var(--color-primary)}
   .highlights{grid-template-columns:repeat(3,1fr)}
 }
 
-/* Small-screen nav: allow horizontal scrolling when many items */
+/* Mobile nav: hamburger toggle and collapsed menu */
+.nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--color-text);padding:0.4rem 0.6rem;border-radius:8px;font-size:1.05rem}
 @media(max-width:799px){
-  .nav{overflow-x:auto;padding-bottom:0.25rem}
-  .nav a{white-space:nowrap}
+  .nav-toggle{display:inline-flex;align-items:center;gap:0.4rem}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--color-surface);padding:0.75rem 1rem;flex-direction:column;gap:0.5rem;border-bottom:1px solid rgba(255,255,255,0.03);z-index:45}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:0.6rem;border-radius:8px}
 }
 
 /* Dashboard */
