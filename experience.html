@@ -8,29 +8,133 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="/experience.html" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-grid">
       <div class="brand">
-        <a href="/index.html"><img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'"></a>
+        <a href="/index.html">
+          <img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy"
+               onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
+        </a>
         <div><h1>Experience</h1></div>
       </div>
+
       <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
       <nav id="primary-menu" class="nav" aria-label="Primary" data-primary-nav></nav>
     </div>
   </header>
+
   <main class="container">
-    <section>
+
+    <!-- M365 Personal Cloud Lab -->
+    <section class="experience-section">
       <h2>Owner & Engineer — M365 Personal Cloud Lab</h2>
-      <div data-docpath="/docs/curated/portfolio/Portfolio-Summary.html" data-fragment="p">Loading resume summary...</div>
+      <p class="experience-dates">2024–Present</p>
+      <p>A full Microsoft 365 Business Premium tenant engineered as a production-grade enterprise environment.</p>
+
+      <ul>
+        <li>Designed and deployed a complete identity architecture using Entra ID, Conditional Access, MFA, and RBAC.</li>
+        <li>Built an enterprise-aligned endpoint management stack using Intune, compliance policies, configuration profiles, and Win32 app deployments.</li>
+        <li>Implemented secure collaboration using SharePoint Online, Teams, OneDrive, and DLP-aligned governance.</li>
+        <li>Automated tenant operations with PowerShell, Microsoft Graph, and scheduled reporting workflows.</li>
+        <li>Created a full Validation Hub documenting configuration evidence, audit results, and operational baselines.</li>
+        <li>Maintains a full Change Log with versioned updates, rollback notes, and operational impact summaries.</li>
+      </ul>
+
+      <p><strong>Tech Stack:</strong> Entra ID, Intune, SharePoint Online, Teams, PowerShell, Microsoft Graph, Defender for Cloud Apps, Exchange Online, Windows 11, Hyper‑V, GitHub Pages.</p>
     </section>
 
-    <section>
+    <!-- Enterprise Home Lab -->
+    <section class="experience-section">
       <h2>Owner & Engineer — Enterprise-Grade Home Lab</h2>
-      <div data-docpath="/docs/curated/home-lab/Lab-Overview.html" data-fragment="p">Loading home lab experience summary...</div>
+      <p class="experience-dates">2023–Present</p>
+      <p>A hybrid infrastructure environment mirroring small‑business IT operations.</p>
+
+      <ul>
+        <li>Built a multi-tier lab using Hyper‑V, Proxmox, and pfSense for routing, segmentation, and firewall policy testing.</li>
+        <li>Deployed Windows Server roles including AD DS, DNS, DHCP, GPO baselines, and file services.</li>
+        <li>Implemented VLAN-aware networking, name resolution, and structured connectivity testing.</li>
+        <li>Created automated provisioning workflows using PowerShell and DSC-style configuration patterns.</li>
+        <li>Documented all services using SOPs, architecture diagrams, and troubleshooting playbooks.</li>
+      </ul>
+
+      <p><strong>Tech Stack:</strong> Windows Server, AD DS, DNS, DHCP, GPO, pfSense, Proxmox, Hyper‑V, PowerShell, VS Code, GitHub Actions.</p>
     </section>
+
+    <!-- Logicalis -->
+    <section class="experience-section">
+      <h2>Service Desk Technician — Logicalis, Inc.</h2>
+      <p class="experience-dates">2022–2023</p>
+
+      <ul>
+        <li>Delivered enterprise support across Microsoft 365, Entra ID, and hybrid identity environments.</li>
+        <li>Automated repetitive tasks using PowerShell to reduce ticket resolution time.</li>
+        <li>Managed device compliance, identity lifecycle, and access troubleshooting.</li>
+        <li>Handled escalations involving Teams, Exchange Online, and endpoint configuration.</li>
+      </ul>
+
+      <p><strong>Tech:</strong> M365, Entra ID, Intune, Exchange Online, Teams, PowerShell.</p>
+    </section>
+
+    <!-- Insight Global -->
+    <section class="experience-section">
+      <h2>SME / Team Lead — Insight Global (HealthESystems)</h2>
+      <p class="experience-dates">2021–2022</p>
+
+      <ul>
+        <li>Led a support team handling escalations and high‑priority incidents.</li>
+        <li>Implemented process improvements that increased team efficiency and reduced SLA breaches.</li>
+        <li>Trained staff on modern workplace tools, identity security, and endpoint best practices.</li>
+      </ul>
+
+      <p><strong>Tech:</strong> M365, Windows 10/11, ServiceNow, PowerShell.</p>
+    </section>
+
+    <!-- Completeful -->
+    <section class="experience-section">
+      <h2>IT Technician — Completeful Technologies</h2>
+      <p class="experience-dates">2020–2021</p>
+
+      <ul>
+        <li>Supported Windows, Azure AD, and Microsoft 365 environments for a fast‑growing startup.</li>
+        <li>Performed device provisioning, imaging, and lifecycle management.</li>
+        <li>Hardened endpoints using policy baselines and secure configuration standards.</li>
+      </ul>
+    </section>
+
+    <!-- Hughes -->
+    <section class="experience-section">
+      <h2>Technical Support — Hughes Network Services</h2>
+      <p class="experience-dates">2019–2020</p>
+
+      <ul>
+        <li>Resolved networking and connectivity issues for enterprise clients.</li>
+        <li>Provided Tier 2 troubleshooting for infrastructure and systems.</li>
+        <li>Documented solutions to improve team knowledge base and reduce repeat incidents.</li>
+      </ul>
+    </section>
+
+    <!-- Remington -->
+    <section class="experience-section">
+      <h2>Help Desk — Remington College</h2>
+      <p class="experience-dates">2018–2019</p>
+
+      <ul>
+        <li>Delivered front‑line support for staff and students.</li>
+        <li>Managed accounts, password resets, and workstation issues.</li>
+        <li>Ensured uptime and reliability across campus systems.</li>
+      </ul>
+    </section>
+
   </main>
-  <footer class="site-footer"><div class="container"><small>&copy; 2026 Jeremy Fontenot</small></div></footer>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 Jeremy Fontenot</small>
+    </div>
+  </footer>
+
   <script src="/js/main.js" defer></script>
 </body>
 </html>

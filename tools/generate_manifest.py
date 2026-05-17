@@ -14,6 +14,7 @@ from title_format import compact_context, format_display_title, humanize
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 DOCS = os.path.join(ROOT, 'docs')
+CANONICAL_DOCS = os.path.join(DOCS, 'curated')
 
 def slugify(text):
     value = humanize(text).lower()
@@ -50,7 +51,7 @@ def normalize_title(title):
     return humanize(title) or ''
 
 entries = []
-for dirpath, dirs, files in os.walk(DOCS):
+for dirpath, dirs, files in os.walk(CANONICAL_DOCS):
     dirs.sort()
     files.sort()
     for f in files:

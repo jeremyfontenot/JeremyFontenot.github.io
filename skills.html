@@ -8,28 +8,105 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="/skills.html" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-grid">
       <div class="brand">
-        <a href="/index.html"><img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'"></a>
+        <a href="/index.html">
+          <img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy"
+               onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
+        </a>
         <div><h1>Skills</h1></div>
       </div>
+
       <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
       <nav id="primary-menu" class="nav" aria-label="Primary" data-primary-nav></nav>
     </div>
   </header>
+
   <main class="container">
-    <section>
-      <h2>Skill Areas</h2>
-      <div data-docpath="/docs/curated/identity/Identity-and-Security.html" data-fragment="ul">Loading identity & security skills...</div>
+
+    <!-- Identity & Security -->
+    <section class="skills-section">
+      <h2>Identity & Security</h2>
+      <p>Modern identity architecture, access governance, and secure authentication across Microsoft cloud environments.</p>
+
+      <ul>
+        <li>Entra ID architecture, Conditional Access, MFA, identity lifecycle, RBAC, privileged access controls.</li>
+        <li>Secure collaboration governance across SharePoint Online, Teams, and OneDrive.</li>
+        <li>Defender for Cloud Apps, session controls, and cloud app governance.</li>
+        <li>Security baselines, audit evidence, and compliance validation workflows.</li>
+      </ul>
+
+      <p><strong>Tech Stack:</strong> Entra ID, Conditional Access, MFA, PIM, Defender for Cloud Apps, SharePoint Online, Teams.</p>
     </section>
-    <section>
+
+    <!-- Endpoint Management -->
+    <section class="skills-section">
+      <h2>Endpoint Management</h2>
+      <p>Enterprise-grade device management, compliance enforcement, and secure configuration baselines.</p>
+
+      <ul>
+        <li>Intune configuration profiles, compliance policies, and secure Windows 11 baselines.</li>
+        <li>Win32 app packaging, deployment rings, and update management.</li>
+        <li>Autopilot provisioning, ESP optimization, and lifecycle automation.</li>
+        <li>Hybrid identity integration with Entra ID and on-premises AD DS.</li>
+      </ul>
+
+      <p><strong>Tech Stack:</strong> Intune, Autopilot, Windows 11, Configuration Profiles, Compliance Policies, Win32 Apps.</p>
+    </section>
+
+    <!-- Automation & Scripting -->
+    <section class="skills-section">
+      <h2>Automation & Scripting</h2>
+      <p>PowerShell-driven automation for identity, endpoint, reporting, and operational workflows.</p>
+
+      <ul>
+        <li>PowerShell automation for onboarding, reporting, and configuration validation.</li>
+        <li>Microsoft Graph scripting for identity, Intune, and M365 service automation.</li>
+        <li>Scheduled reporting pipelines and operational evidence generation.</li>
+        <li>GitHub Actions workflows for CI/CD-style automation in lab environments.</li>
+      </ul>
+
+      <p><strong>Tech Stack:</strong> PowerShell 7, Microsoft Graph, VS Code, GitHub Actions.</p>
+    </section>
+
+    <!-- Cloud & Infrastructure -->
+    <section class="skills-section">
+      <h2>Cloud & Infrastructure</h2>
+      <p>Hybrid infrastructure design mirroring small-business and enterprise operational patterns.</p>
+
+      <ul>
+        <li>Windows Server roles: AD DS, DNS, DHCP, GPO baselines, file services.</li>
+        <li>Virtualization platforms including Hyper‑V and Proxmox.</li>
+        <li>Network segmentation, VLANs, routing, and firewall policy design using pfSense.</li>
+        <li>Structured troubleshooting workflows and RCA documentation.</li>
+      </ul>
+
+      <p><strong>Tech Stack:</strong> Windows Server, Hyper‑V, Proxmox, pfSense, DNS, DHCP, GPO.</p>
+    </section>
+
+    <!-- Tools & Technology Snapshot -->
+    <section class="skills-section">
       <h2>Tools & Technology Snapshot</h2>
-      <div data-docpath="/docs/curated/script-documentation/summary.json" data-fragment="pre">Loading tools and technology snapshot...</div>
+      <ul>
+        <li>Microsoft 365: Entra ID, Intune, SharePoint Online, Teams, Exchange Online</li>
+        <li>Automation: PowerShell, Microsoft Graph, GitHub Actions</li>
+        <li>Infrastructure: Windows Server, Hyper‑V, Proxmox, pfSense</li>
+        <li>Development & Ops: VS Code, GitHub, JSON, YAML</li>
+        <li>Documentation: SOPs, architecture diagrams, audit evidence, change logs</li>
+      </ul>
     </section>
+
   </main>
-  <footer class="site-footer"><div class="container"><small>&copy; 2026 Jeremy Fontenot</small></div></footer>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 Jeremy Fontenot</small>
+    </div>
+  </footer>
+
   <script src="/js/main.js" defer></script>
 </body>
 </html>

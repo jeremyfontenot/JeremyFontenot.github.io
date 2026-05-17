@@ -12,7 +12,7 @@ function normalizeDocPath(path){
 }
 
 async function loadManifest(){
-  const res = await fetch(DOC_MANIFEST);
+  const res = await fetch(DOC_MANIFEST, { cache: 'no-store' });
   if(!res.ok) throw new Error('Manifest load failed');
   return res.json();
 }
@@ -209,8 +209,13 @@ function performQuery(){
   let results = docsIndex.map(i=>({item:i,score:scoreMatch(i,q)})).filter(x=>x.score>0 || !q).map(x=>({...x.item, score:x.score}));
   if(category && category!=='all') results = results.filter(r=> (r.categories||[]).includes(category));
   if(tag) results = results.filter(r=> (r.tags||[]).includes(tag));
+  results = dedupeResults(results);
   results.sort((a,b)=> (b.score||0)-(a.score||0) || String(a.title || '').localeCompare(String(b.title || '')) || String(a.path || '').localeCompare(String(b.path || '')));
   renderResults(results, q);
+  // Privacy-safe analytics: log query and result count to localStorage
+  try{
+    if(q && q.length>0) logSearchEvent(q, results.length);
+  }catch(e){ /* ignore logging errors */ }
 }
 
 function populateFilters(){
@@ -224,11 +229,42 @@ function populateFilters(){
 
 function option(val, text){ const o=document.createElement('option'); o.value=val; o.textContent=text; return o }
 
+function dedupeResults(results){
+  const bestByTitle = new Map();
+  results.forEach(item => {
+    const key = normalizeSearchText(item.sourceTitle || item.title || item.displayTitle || item.path);
+    const existing = bestByTitle.get(key);
+    if(!existing){
+      bestByTitle.set(key, item);
+      return;
+    }
+
+    const nextIsCanonical = String(item.path || '').includes('/docs/curated/');
+    const existingIsCanonical = String(existing.path || '').includes('/docs/curated/');
+    if(nextIsCanonical && !existingIsCanonical){
+      bestByTitle.set(key, item);
+      return;
+    }
+
+    if(Number(item.score || 0) > Number(existing.score || 0)){
+      bestByTitle.set(key, item);
+      return;
+    }
+
+    if(Number(item.score || 0) === Number(existing.score || 0) && String(item.path || '').length < String(existing.path || '').length){
+      bestByTitle.set(key, item);
+    }
+  });
+
+  return Array.from(bestByTitle.values());
+}
+
 document.addEventListener('DOMContentLoaded', async ()=>{
   const searchInput = document.querySelector('#doc-search');
   if(!searchInput) return;
   const STANDARD_CATEGORIES = ['All','Skills','Projects','Labs','Notes','Certifications','Reports','Reference'];
   try{
+    migrateSearchEvents();
     await buildIndex();
     populateFilters();
     const cat = document.querySelector('#filter-category');
@@ -244,3 +280,143 @@ document.addEventListener('DOMContentLoaded', async ()=>{
 });
 
 function debounce(fn,wait){ let t; return (...a)=>{ clearTimeout(t); t = setTimeout(()=>fn(...a), wait) } }
+
+// --- Search Analytics (client-only, privacy-safe) ---
+const SEARCH_ANALYTICS_KEY = 'search_analytics_v1';
+
+function classifySearchIntent(query){
+  const text = normalizeSearchText(query);
+  if(!text) return 'intent:empty';
+  if(/\b(how to|how do i|how can i|setup|set up|configure|install|fix|create|add|remove|update|change|troubleshoot|migrate|deploy|build|generate|write)\b/.test(text)){
+    return 'intent:howto';
+  }
+  if(/\b(what is|what are|define|definition|lookup|search for|find|show|list|view|open|locate)\b/.test(text)){
+    return 'intent:lookup';
+  }
+  if(/\b(index|home|dashboard|contact|projects|skills|experience|docs|documentation|resume|about)\b/.test(text)){
+    return 'intent:navigate';
+  }
+  return 'intent:search';
+}
+
+function classifySearchDomain(query){
+  const text = normalizeSearchText(query);
+  if(!text) return 'domain:unspecified';
+
+  const domainRules = [
+    ['domain:networking', /\b(dns|dhcp|ip\s?address|subnet|gateway|route|routing|vpn|firewall|wifi|lan|wan|network|networking)\b/],
+    ['domain:infrastructure', /\b(server|servers|vm|virtual|hyper-?v|storage|backup|raid|domain controller|active directory|ad\b|dc\b|infrastructure|infra)\b/],
+    ['domain:identity', /\b(azure ad|entra|mfa|authentication|auth|conditional access|sso|login|identity|accounts?)\b/],
+    ['domain:automation', /\b(script|scripting|automation|powershell|python|bash|workflow|github actions|ci\/cd|pipeline|deploy|build)\b/],
+    ['domain:documentation', /\b(doc|docs|documentation|readme|notes|guide|runbook|reference|article)\b/],
+    ['domain:security', /\b(security|defense|threat|incident|siem|logging|monitoring|audit|policy|compliance)\b/],
+  ];
+
+  for(const [label, re] of domainRules){
+    if(re.test(text)) return label;
+  }
+
+  return 'domain:general';
+}
+
+function buildSearchBucket(query){
+  return `${classifySearchIntent(query)}|${classifySearchDomain(query)}`;
+}
+
+function shortHashHex(text){
+  const normalized = normalizeSearchText(text);
+  if(window.crypto && window.crypto.subtle && window.TextEncoder){
+    return window.crypto.subtle.digest('SHA-256', new TextEncoder().encode(normalized)).then(buffer => {
+      const bytes = Array.from(new Uint8Array(buffer)).slice(0, 8);
+      return bytes.map(b => b.toString(16).padStart(2, '0')).join('');
+    });
+  }
+
+  let hash = 0;
+  for(let i = 0; i < normalized.length; i += 1){
+    hash = ((hash << 5) - hash) + normalized.charCodeAt(i);
+    hash |= 0;
+  }
+  return Promise.resolve(Math.abs(hash).toString(16).padStart(8, '0'));
+}
+
+function saveSearchEvent(evt){
+  try{
+    const raw = localStorage.getItem(SEARCH_ANALYTICS_KEY) || '[]';
+    const arr = JSON.parse(raw);
+    arr.push(evt);
+    // keep recent 5000 events max to avoid unbounded growth
+    if(arr.length>5000) arr.splice(0, arr.length-5000);
+    localStorage.setItem(SEARCH_ANALYTICS_KEY, JSON.stringify(arr));
+  }catch(e){ /* ignore storage errors (quota, private mode) */ }
+}
+
+function logSearchEvent(query, resultCount){
+  const bucket = buildSearchBucket(query || '');
+  Promise.all([
+    shortHashHex(query || ''),
+    Promise.resolve(bucket),
+  ]).then(([qHash, qBucket]) => {
+    const ev = {
+      ts: new Date().toISOString(),
+      q_hash: qHash,
+      q_bucket: qBucket,
+      resultCount: Number(resultCount||0),
+      zero: Number(resultCount||0) === 0,
+      page: location.pathname || ''
+    };
+    saveSearchEvent(ev);
+  }).catch(() => {
+    const ev = {
+      ts: new Date().toISOString(),
+      q_hash: '00000000',
+      q_bucket: bucket,
+      resultCount: Number(resultCount||0),
+      zero: Number(resultCount||0) === 0,
+      page: location.pathname || ''
+    };
+    saveSearchEvent(ev);
+  });
+}
+
+function getSearchEvents(){
+  try{ return JSON.parse(localStorage.getItem(SEARCH_ANALYTICS_KEY) || '[]') }catch(e){ return [] }
+}
+
+function clearSearchEvents(){
+  try{ localStorage.removeItem(SEARCH_ANALYTICS_KEY) }catch(e){}
+}
+
+function migrateSearchEvents(){
+  try{
+    const raw = localStorage.getItem(SEARCH_ANALYTICS_KEY) || '[]';
+    const arr = JSON.parse(raw);
+    if(!Array.isArray(arr) || !arr.length) return;
+
+    let changed = false;
+    const migrated = arr.map(evt => {
+      if(!evt || typeof evt !== 'object') return evt;
+      const bucket = String(evt.q_bucket || '');
+      const nextBucket = /^intent:[^|]+\|domain:[^|]+$/.test(bucket) ? bucket : buildSearchBucket(bucket || evt.query_normalized || evt.query || '');
+      const next = {
+        ...evt,
+        q_bucket: nextBucket,
+      };
+      if('query' in next){ delete next.query; changed = true; }
+      if('query_normalized' in next){ delete next.query_normalized; changed = true; }
+      if('q_intent' in next){ delete next.q_intent; changed = true; }
+      if('q_domain' in next){ delete next.q_domain; changed = true; }
+      if(nextBucket !== bucket) changed = true;
+      return next;
+    });
+
+    if(changed){
+      localStorage.setItem(SEARCH_ANALYTICS_KEY, JSON.stringify(migrated));
+    }
+  }catch(e){ /* ignore migration errors */ }
+}
+
+if(typeof window !== 'undefined'){
+  window.SearchAnalytics = { getSearchEvents, clearSearchEvents, migrateSearchEvents };
+}
+

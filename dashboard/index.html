@@ -7,6 +7,10 @@
   <meta name="description" content="Lightweight CI health dashboard for manifest integrity, incident state, and score trends." />
   <link rel="canonical" href="/dashboard/index.html" />
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body.dashboard-page .site-header .nav{display:flex !important;position:static !important;flex-wrap:wrap;gap:0.5rem;background:transparent;padding:0;border:0}
+    body.dashboard-page .site-header .nav-toggle{display:none !important}
+  </style>
 </head>
 <body class="dashboard-page">
   <header class="site-header" role="banner">
@@ -19,7 +23,16 @@
         </div>
       </div>
       <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
-      <nav id="primary-menu" aria-label="Primary" class="nav" data-primary-nav></nav>
+      <nav id="primary-menu" aria-label="Primary" class="nav" data-primary-nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/skills.html">Skills</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/dashboard/index.html" aria-current="page">Dashboard</a>
+        <a href="/experience.html">Experience</a>
+        <a href="/docs/index.html">Docs</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
@@ -73,6 +86,7 @@
   </footer>
 
   <script src="/js/title-format.js" defer></script>
+  <script src="/js/main.js" defer></script>
   <script src="/dashboard/app.js" defer></script>
 </body>
 </html>

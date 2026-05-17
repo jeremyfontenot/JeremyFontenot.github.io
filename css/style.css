@@ -77,6 +77,8 @@ a:hover{color:var(--color-accent)}
 }
 
 /* Dashboard */
+body.dashboard-page .nav{display:flex !important;position:static !important;flex-wrap:wrap;gap:0.5rem;background:transparent;padding:0;border:0}
+body.dashboard-page .nav-toggle{display:none !important}
 .dashboard-hero{display:grid;grid-template-columns:1fr;gap:1rem;padding:2rem 0 1rem}
 .dashboard-hero .panel{background:rgba(17,24,39,0.9);border:1px solid rgba(34,211,238,0.12);border-radius:18px;padding:1.2rem;box-shadow:0 18px 44px rgba(0,0,0,0.28)}
 .dashboard-hero .headline{font-size:clamp(2rem,4vw,3.6rem);line-height:0.98;margin:0 0 0.6rem}
@@ -86,9 +88,12 @@ a:hover{color:var(--color-accent)}
 .dashboard-section{background:var(--color-surface);border:1px solid rgba(255,255,255,0.05);border-radius:16px;padding:1rem;box-shadow:0 10px 24px rgba(0,0,0,0.22)}
 .dashboard-section h2{margin-top:0;margin-bottom:0.7rem}
 .stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.75rem}
+#title-sample-list{grid-template-columns:1fr}
 .stat{padding:0.9rem;border-radius:14px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05)}
+.stat{min-width:0}
 .stat .label{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-muted);margin-bottom:0.35rem}
 .stat .value{font-size:1.35rem;font-weight:800;color:var(--color-text)}
+.stat .value,.stat .dashboard-footer-note{overflow-wrap:anywhere;word-break:break-word}
 .status-pill{display:inline-flex;align-items:center;gap:0.4rem;padding:0.35rem 0.7rem;border-radius:999px;font-size:0.82rem;font-weight:700}
 .status-pass{background:rgba(16,185,129,0.15);color:#7EE2B8;border:1px solid rgba(16,185,129,0.22)}
 .status-fail{background:rgba(239,68,68,0.15);color:#FCA5A5;border:1px solid rgba(239,68,68,0.25)}
@@ -106,7 +111,7 @@ a:hover{color:var(--color-accent)}
 @media(min-width:800px){
   .dashboard-hero{grid-template-columns:1.5fr 0.9fr}
   .dashboard-grid{grid-template-columns:1.1fr 0.9fr}
-  .stat-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .trend-item{grid-template-columns:1.1fr 1fr;align-items:center}
 }
 
@@ -134,3 +139,7 @@ a:focus{outline:3px solid var(--color-secondary);outline-offset:2px}
 
 /* reduce CLS by reserving image space */
 img[width][height]{display:block}
+
+/* Dashboard header nav should remain visible at all widths */
+body.dashboard-page .site-header .nav{display:flex !important;position:static !important;flex-wrap:wrap;gap:0.5rem;background:transparent;padding:0;border:0}
+body.dashboard-page .site-header .nav-toggle{display:none !important}
