@@ -4,6 +4,16 @@ document.addEventListener('DOMContentLoaded',()=>{
   const q = document.querySelector('#doc-search');
   if(q){document.addEventListener('keydown',e=>{if(e.key==='/'&&!e.metaKey){e.preventDefault();q.focus();}})}
 });
+// Ensure desktop nav is visible (keeps mobile collapse behavior)
+function updateNavDisplay(){
+  const isDesktop = window.matchMedia('(min-width:800px)').matches;
+  document.querySelectorAll('.nav').forEach(n=>{
+    if(isDesktop){ n.style.display = 'flex'; }
+    else { n.style.display = ''; }
+  });
+}
+window.addEventListener('resize', updateNavDisplay);
+document.addEventListener('DOMContentLoaded', updateNavDisplay);
 
 function normalizeDocPath(path){ try{ return encodeURI(path); }catch(e){ return path } }
 
