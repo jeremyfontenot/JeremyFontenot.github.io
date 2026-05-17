@@ -36,28 +36,28 @@ jobs:
       - name: Validate manifest entries exist in site
         run: |
           python - <<'PY'
-import json, os, sys, urllib.parse
-missing = []
-data = json.load(open('docs/manifest.json','r',encoding='utf-8'))
-for e in data:
-    p = e.get('path','')
-    if not p:
-        missing.append(f"(empty path) - {e}")
-        continue
-    # decode percent-encoding
-    dp = urllib.parse.unquote(p)
-    # strip leading slash
-    dp = dp.lstrip('/')
-    fp = os.path.join('site', dp)
-    if not os.path.exists(fp):
-        missing.append(p)
-if missing:
-    print('Missing manifest targets (sample):')
-    for m in missing[:50]:
-        print(' -', m)
-    sys.exit(1)
-print('All manifest entries resolved to files in site/')
-PY
+          import json, os, sys, urllib.parse
+          missing = []
+          data = json.load(open('docs/manifest.json','r',encoding='utf-8'))
+          for e in data:
+            p = e.get('path','')
+            if not p:
+              missing.append(f"(empty path) - {e}")
+              continue
+            # decode percent-encoding
+            dp = urllib.parse.unquote(p)
+            # strip leading slash
+            dp = dp.lstrip('/')
+            fp = os.path.join('site', dp)
+            if not os.path.exists(fp):
+              missing.append(p)
+          if missing:
+            print('Missing manifest targets (sample):')
+            for m in missing[:50]:
+              print(' -', m)
+            sys.exit(1)
+          print('All manifest entries resolved to files in site/')
+          PY
 
       - name: Run lychee (broken-link scanner)
         uses: lycheeverse/lychee-action@v1

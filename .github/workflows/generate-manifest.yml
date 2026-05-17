@@ -35,15 +35,15 @@ jobs:
       - name: Validate URL encoding
         run: |
           python - <<'PY'
-import json,sys
-data = json.load(open('docs/manifest.json'))
-bad = [x['path'] for x in data if ' ' in x.get('path','')]
-if bad:
-    print('Found manifest entries with unencoded spaces:')
-    print('\n'.join(bad[:20]))
-    sys.exit(1)
-print('Manifest URL encoding OK')
-PY
+            import json,sys
+            data = json.load(open('docs/manifest.json'))
+            bad = [x['path'] for x in data if ' ' in x.get('path','')]
+            if bad:
+                print('Found manifest entries with unencoded spaces:')
+                print('\n'.join(bad[:20]))
+                sys.exit(1)
+            print('Manifest URL encoding OK')
+            PY
 
       - name: Commit updated manifest (if changed)
         run: |
