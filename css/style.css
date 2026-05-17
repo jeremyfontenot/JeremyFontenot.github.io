@@ -51,6 +51,38 @@ body.dashboard-page{background:
 @keyframes pulseGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .hero .hero-content{background-size:200% 200%;animation: pulseGradient 12s ease-in-out infinite}
 
+/* About page hero tweaks */
+.about-hero{padding:2.2rem 0 1rem}
+.about-hero .hero-content{background:linear-gradient(135deg, rgba(7,16,38,0.6), rgba(17,24,39,0.6), rgba(34,211,238,0.06));border-radius:14px;padding:1.2rem}
+.about-hero .frosted-card{padding:1rem}
+
+/* Section dividers and alternating bands for about page */
+main.container > section{border-top:1px solid rgba(255,255,255,0.02);position:relative}
+main.container > section:nth-of-type(odd){background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+main.container > section + section{margin-top:0}
+
+/* Gradient text effect for section headers */
+main.container h2{background:linear-gradient(90deg,var(--color-secondary),var(--color-primary));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* About cards grid */
+.about-cards{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:0.9rem;margin-top:0.8rem}
+.about-cards .card{display:flex;gap:0.8rem;align-items:flex-start;padding:1rem}
+.about-cards .card .card-body h4{margin:0 0 0.35rem;font-size:1rem}
+.about-cards .card .card-body p{margin:0;color:var(--color-muted)}
+
+@media(min-width:800px){
+  .about-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Soft neon glow for cards on hover */
+.about-cards .card:hover{transform:translateY(-6px);box-shadow:0 28px 64px rgba(34,211,238,0.06), 0 6px 18px rgba(0,0,0,0.5)}
+
+/* Ensure revealed elements respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  [data-animate="fade-up"]{transition:none!important;transform:none!important;opacity:1!important}
+  .hero .hero-content{animation:none}
+}
+
 /* Cardized highlights */
 .highlights{gap:1rem;margin-top:1.5rem;padding-top:8px;padding-bottom:8px}
 .highlights .card{display:flex;flex-direction:column;gap:0.6rem;padding:1.15rem;border-radius:14px;transition:transform .16s ease,box-shadow .16s ease}
@@ -125,9 +157,38 @@ a:hover{color:var(--color-accent)}
 /* Hero neon glow (subtle) */
 .hero .hero-content{box-shadow:0 16px 36px rgba(0,0,0,0.28), 0 0 48px rgba(34,211,238,0.04)}
 
+/* Skills page specific styles */
+.skills-hero{padding:2.2rem 0 1rem}
+.skills-hero .hero-content{background:linear-gradient(135deg, rgba(7,16,38,0.6), rgba(17,24,39,0.6), rgba(34,211,238,0.06));border-radius:14px;padding:1.2rem}
+.skills-hero .frosted-card{padding:1rem}
+
+.skills-section{padding-top:64px;padding-bottom:48px}
+.skills-section:nth-of-type(odd){background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+.skills-section h2{background:linear-gradient(90deg,var(--color-secondary),var(--color-primary));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0.02em}
+
+.card-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:0.9rem;margin-top:0.8rem}
+.card-grid .card{display:flex;gap:0.8rem;align-items:flex-start;padding:1rem;border-radius:12px;background:var(--color-surface);border:1px solid rgba(255,255,255,0.04);box-shadow:0 12px 28px rgba(0,0,0,0.24);transition:transform .18s ease,box-shadow .18s ease}
+.card-grid .card .card-icon svg{width:36px;height:36px;color:var(--color-secondary)}
+.card-grid .card .card-body h4{margin:0 0 0.35rem}
+.card-grid .card .card-body p{margin:0;color:var(--color-muted)}
+.card-grid .card:hover{transform:translateY(-6px);box-shadow:0 28px 64px rgba(34,211,238,0.06)}
+
+@media(min-width:800px){
+  .card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+.tech-stack .badge{display:inline-flex;align-items:center;gap:0.4rem;padding:0.35rem 0.6rem;border-radius:999px;background:linear-gradient(90deg,var(--color-primary),var(--color-accent));color:#fff;border:none;box-shadow:0 6px 20px rgba(34,211,238,0.08);transition:transform .12s ease,box-shadow .12s ease}
+.tech-stack .badge:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(34,211,238,0.12)}
+
+/* Skills footer (page-only) */
+.skills-footer{background:linear-gradient(180deg, rgba(7,16,38,0.92), rgba(9,16,29,0.98));padding:1rem;margin-top:2rem;border-top:1px solid rgba(34,211,238,0.06);box-shadow:0 -8px 40px rgba(34,211,238,0.02) inset}
+.skills-footer .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.skills-footer .footer-brand img{width:48px;height:48px;border-radius:8px}
+
 @media(min-width:800px){
   .hero{grid-template-columns:2fr 1fr}
   .highlights{grid-template-columns:repeat(3,1fr)}
+  .card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 
 /* Ensure the primary nav is always visible on larger screens */

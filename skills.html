@@ -26,84 +26,119 @@
   </header>
 
   <main class="container">
+    <!-- Page header / hero -->
+    <section class="skills-hero hero" aria-labelledby="skills-title" data-animate="fade-up">
+      <div class="hero-content">
+        <div class="frosted-card">
+          <h2 id="skills-title">Skills</h2>
+          <p class="lead">Expertise in identity, endpoint management, automation, and hybrid infrastructure.</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Identity & Security -->
-    <section class="skills-section">
-      <h2>Identity & Security</h2>
-      <p>Modern identity architecture, access governance, and secure authentication across Microsoft cloud environments.</p>
-
-      <ul>
-        <li>Entra ID architecture, Conditional Access, MFA, identity lifecycle, RBAC, privileged access controls.</li>
-        <li>Secure collaboration governance across SharePoint Online, Teams, and OneDrive.</li>
-        <li>Defender for Cloud Apps, session controls, and cloud app governance.</li>
-        <li>Security baselines, audit evidence, and compliance validation workflows.</li>
-      </ul>
-
-      <p><strong>Tech Stack:</strong> Entra ID, Conditional Access, MFA, PIM, Defender for Cloud Apps, SharePoint Online, Teams.</p>
+    <section class="skills-section" data-animate="fade-up">
+      <h2>Modern identity architecture & governance</h2>
+      <p data-animate="fade-up">Entra ID, access governance, conditional access, and secure authentication for Microsoft cloud environments.</p>
+      <div class="card-grid about-cards">
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <div class="card-body"><h4>Entra ID Architecture</h4><p>Designing tenant topology, app registrations, and RBAC for secure delegation.</p></div>
+        </article>
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <div class="card-body"><h4>Conditional Access</h4><p>Adaptive policies, MFA orchestration, and policy testing pipelines.</p></div>
+        </article>
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          <div class="card-body"><h4>Governance</h4><p>Lifecycle, entitlement management, and PIM workflows to reduce blast radius.</p></div>
+        </article>
+      </div>
+      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">Entra ID</span> <span class="badge">Conditional Access</span> <span class="badge">PIM</span> <span class="badge">Defender for Cloud Apps</span></p>
     </section>
 
     <!-- Endpoint Management -->
-    <section class="skills-section">
-      <h2>Endpoint Management</h2>
-      <p>Enterprise-grade device management, compliance enforcement, and secure configuration baselines.</p>
-
-      <ul>
-        <li>Intune configuration profiles, compliance policies, and secure Windows 11 baselines.</li>
-        <li>Win32 app packaging, deployment rings, and update management.</li>
-        <li>Autopilot provisioning, ESP optimization, and lifecycle automation.</li>
-        <li>Hybrid identity integration with Entra ID and on-premises AD DS.</li>
-      </ul>
-
-      <p><strong>Tech Stack:</strong> Intune, Autopilot, Windows 11, Configuration Profiles, Compliance Policies, Win32 Apps.</p>
+    <section class="skills-section" data-animate="fade-up">
+      <h2>Enterprise device management (Intune)</h2>
+      <p data-animate="fade-up">Device lifecycle, baselines, and secure configuration management using Intune.</p>
+      <div class="card-grid about-cards">
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <div class="card-body"><h4>Intune Baselines</h4><p>Configuration profiles and security baselines for Windows 11 at scale.</p></div>
+        </article>
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          <div class="card-body"><h4>Autopilot & Provisioning</h4><p>Optimized Windows Autopilot flows and ESP configuration.</p></div>
+        </article>
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          <div class="card-body"><h4>App Deployment</h4><p>Win32 packaging, deployment rings, and update orchestration.</p></div>
+        </article>
+      </div>
+      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">Intune</span> <span class="badge">Autopilot</span> <span class="badge">Windows 11</span></p>
     </section>
 
     <!-- Automation & Scripting -->
-    <section class="skills-section">
-      <h2>Automation & Scripting</h2>
-      <p>PowerShell-driven automation for identity, endpoint, reporting, and operational workflows.</p>
-
-      <ul>
-        <li>PowerShell automation for onboarding, reporting, and configuration validation.</li>
-        <li>Microsoft Graph scripting for identity, Intune, and M365 service automation.</li>
-        <li>Scheduled reporting pipelines and operational evidence generation.</li>
-        <li>GitHub Actions workflows for CI/CD-style automation in lab environments.</li>
-      </ul>
-
-      <p><strong>Tech Stack:</strong> PowerShell 7, Microsoft Graph, VS Code, GitHub Actions.</p>
+    <section class="skills-section" data-animate="fade-up">
+      <h2>PowerShell & automation workflows</h2>
+      <p data-animate="fade-up">Scripting for identity, endpoint, reporting, and validation pipelines.</p>
+      <div class="card-grid about-cards">
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          <div class="card-body"><h4>PowerShell 7</h4><p>Cross-platform scripts, modules, and testing harnesses.</p></div>
+        </article>
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          <div class="card-body"><h4>Microsoft Graph</h4><p>API-driven automation for tenant and service management.</p></div>
+        </article>
+      </div>
+      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">PowerShell</span> <span class="badge">Microsoft Graph</span> <span class="badge">GitHub Actions</span></p>
     </section>
 
     <!-- Cloud & Infrastructure -->
-    <section class="skills-section">
-      <h2>Cloud & Infrastructure</h2>
-      <p>Hybrid infrastructure design mirroring small-business and enterprise operational patterns.</p>
-
-      <ul>
-        <li>Windows Server roles: AD DS, DNS, DHCP, GPO baselines, file services.</li>
-        <li>Virtualization platforms including Hyper‑V and Proxmox.</li>
-        <li>Network segmentation, VLANs, routing, and firewall policy design using pfSense.</li>
-        <li>Structured troubleshooting workflows and RCA documentation.</li>
-      </ul>
-
-      <p><strong>Tech Stack:</strong> Windows Server, Hyper‑V, Proxmox, pfSense, DNS, DHCP, GPO.</p>
+    <section class="skills-section" data-animate="fade-up">
+      <h2>Hybrid infrastructure & troubleshooting</h2>
+      <p data-animate="fade-up">Design, virtualization, and structured troubleshooting across hybrid environments.</p>
+      <div class="card-grid about-cards">
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="13" y="13" width="7" height="7" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <div class="card-body"><h4>Windows Server</h4><p>AD DS, DNS, DHCP, GPO baselines and file services.</p></div>
+        </article>
+        <article class="card" data-animate="fade-up">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          <div class="card-body"><h4>Networking & VLANs</h4><p>Segmentation, routing, and firewall policy design using pfSense.</p></div>
+        </article>
+      </div>
+      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">Windows Server</span> <span class="badge">Hyper-V</span> <span class="badge">pfSense</span></p>
     </section>
 
-    <!-- Tools & Technology Snapshot -->
-    <section class="skills-section">
+    <!-- Tools snapshot (kept compact) -->
+    <section class="skills-section" data-animate="fade-up">
       <h2>Tools & Technology Snapshot</h2>
       <ul>
         <li>Microsoft 365: Entra ID, Intune, SharePoint Online, Teams, Exchange Online</li>
         <li>Automation: PowerShell, Microsoft Graph, GitHub Actions</li>
         <li>Infrastructure: Windows Server, Hyper‑V, Proxmox, pfSense</li>
         <li>Development & Ops: VS Code, GitHub, JSON, YAML</li>
-        <li>Documentation: SOPs, architecture diagrams, audit evidence, change logs</li>
       </ul>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer skills-footer">
     <div class="container">
-      <small>&copy; 2026 Jeremy Fontenot</small>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="/assets/images/logo.png" alt="Jeremy Fontenot" width="48" height="48" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
+          <small>&copy; 2026 Jeremy Fontenot</small>
+        </div>
+        <div class="footer-badges">
+          <span class="badge">Microsoft 365</span>
+          <span class="badge">Entra ID</span>
+          <span class="badge">Intune</span>
+          <span class="badge">PowerShell</span>
+        </div>
+      </div>
     </div>
   </footer>
 
