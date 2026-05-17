@@ -1,11 +1,12 @@
 /* Lightweight professional responsive CSS - mobile-first */
 :root{
-  /* Brand palette from the requested system */
-  --color-primary:#2563EB;
-  --color-secondary:#22D3EE;
-  --color-bg:#0B1220;
-  --color-surface:#111827;
-  --color-elevated:#1F2937;
+  /* Brand palette (tuned to site logo) */
+  --color-primary:#22D3EE; /* cyan */
+  --color-accent:#D946EF; /* magenta/pink */
+  --color-secondary:#38BDF8; /* lighter cyan for accents */
+  --color-bg:#071026; /* deep navy */
+  --color-surface:#0F1724;
+  --color-elevated:#172033;
   --color-text:#E5E7EB;
   --color-muted:#9CA3AF;
   --color-low:#6B7280;
