@@ -1,0 +1,5 @@
+- Brand-Guidelines.aspx (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx)
+- BrandGuideHome.aspx (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx)
+- WORKSPACE_FILE_GUIDE.md (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\assets\reference)
+- Brand-Guidelines.html (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html)
+- BrandGuideHome.html (from C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html)

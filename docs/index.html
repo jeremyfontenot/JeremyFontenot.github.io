@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Documentation Hub — Jeremy Fontenot</title>
+  <meta name="description" content="Searchable documentation hub containing labs, runbooks, validation reports, and scripts." />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="/docs/index.html" />
+</head>
+<body>
+  <header class="site-header"><div class="container header-grid"><h1>Documentation Hub</h1><nav class="nav" aria-label="Primary"><a href="/index.html">Portfolio</a></nav></div></header>
+  <main class="container docs-hub" id="main">
+    <div class="docs-controls">
+      <input id="doc-search" class="search-input" type="search" placeholder="Search documentation, files, tags..." aria-label="Search documentation">
+      <select id="filter-category" aria-label="Filter by category"></select>
+      <select id="filter-tag" aria-label="Filter by tag"></select>
+    </div>
+    <div id="results" class="results" aria-live="polite"></div>
+  </main>
+
+  <div id="doc-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel" role="document" id="modal-panel"></div>
+  </div>
+
+  <footer class="site-footer"><div class="container"><small>Documentation hub — content originates from /docs source files.</small></div></footer>
+  <script src="/js/title-format.js" defer></script>
+  <script src="/js/search.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

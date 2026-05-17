@@ -1,0 +1,57 @@
+[
+  {
+    "File": "architecture-and-topology.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "asset-inventory.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "backup-and-disaster-recovery.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "change-management-and-validation.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "identity-and-access.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "index.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "infrastructure-and-network.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "monitoring-and-logging.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "operations-and-monitoring.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "operations-runbook.html",
+    "Passed": true,
+    "LinkErrors": ""
+  },
+  {
+    "File": "security-baseline.html",
+    "Passed": true,
+    "LinkErrors": ""
+  }
+]

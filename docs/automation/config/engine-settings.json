@@ -1,0 +1,13 @@
+{
+    "archiveRoot": "archive",
+    "curatedRoot": "curated",
+    "scanFileTypes": [".html", ".aspx", ".md", ".txt", ".ps1"],
+    "ignoreFolders": ["logs", "reports"],
+    "maxFileSizeMB": 50,
+    "copyInsteadOfMove": false,
+    "overwriteExistingFiles": false,
+    "enableLogging": true,
+    "logFile": "automation/logs/engine.log",
+    "enableReporting": true,
+    "reportFolder": "automation/reports"
+}

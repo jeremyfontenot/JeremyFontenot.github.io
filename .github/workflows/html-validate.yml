@@ -1,0 +1,43 @@
+name: HTML Validate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  html-validate:
+    name: Validate HTML (html-validate)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Set up Python (for manifest)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Regenerate manifest
+        run: |
+          python tools/generate_manifest.py
+
+      - name: Prepare site directory
+        run: |
+          rm -rf site && mkdir site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='tools' --exclude='venv' --exclude='node_modules' ./ site/
+
+      - name: Install html-validate
+        run: |
+          npm ci --no-audit --no-fund --silent || true
+          npm install -g html-validate@9 || true
+
+      - name: Run html-validate across site
+        run: |
+          npx html-validate --config .htmlvalidate.json "site/**/*.html"

@@ -1,0 +1,17 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "no-duplicate-id": "error",
+    "img-req-alt": "error",
+    "heading-order": "error",
+    "attribute-boolean-style": "error",
+    "no-broken-links": "error"
+  },
+  "elements": {
+    "iframe": {
+      "checks": {
+        "allowEmpty": true
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "Source": "m365-automation",
+    "TotalScripts": 5,
+    "ValidScripts": 5,
+    "InvalidScripts": 0
+  },
+  {
+    "Source": "m365-cloud-lab-scripts",
+    "TotalScripts": 8,
+    "ValidScripts": 8,
+    "InvalidScripts": 0
+  },
+  {
+    "Source": "m365-scripts",
+    "TotalScripts": 4,
+    "ValidScripts": 4,
+    "InvalidScripts": 0
+  },
+  {
+    "Source": "powershell",
+    "TotalScripts": 788,
+    "ValidScripts": 786,
+    "InvalidScripts": 2
+  },
+  {
+    "Source": "scriptpack",
+    "TotalScripts": 8,
+    "ValidScripts": 8,
+    "InvalidScripts": 0
+  },
+  {
+    "Source": "scripts",
+    "TotalScripts": 2,
+    "ValidScripts": 2,
+    "InvalidScripts": 0
+  },
+  {
+    "Source": "windows-powershell",
+    "TotalScripts": 522,
+    "ValidScripts": 522,
+    "InvalidScripts": 0
+  }
+]

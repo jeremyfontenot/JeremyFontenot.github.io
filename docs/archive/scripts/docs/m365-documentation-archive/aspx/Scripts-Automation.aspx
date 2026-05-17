@@ -1,0 +1,45 @@
+﻿<%@ Assembly Name="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%> <%@ Page Language="C#" Inherits="Microsoft.SharePoint.WebControls.ClientSidePage"       %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,ClientSideApplicationId,PageLayoutType,CanvasContent1,BannerImageUrl,BannerImageOffset,PromotedState,FirstPublishedDate,LayoutWebpartsContent,_TopicHeader,_SPSitePageFlags,_SPAssetFolderId,_SPCallToAction,_SPCollaborators,_SPAuthoringMetadata,_SPHiddenHighlightsMetadata"><xml>
+<mso:CustomDocumentProperties>
+<mso:PageLayoutType msdt:dt="string">Article</mso:PageLayoutType>
+<mso:CanvasContent1 msdt:dt="string">&lt;div&gt;&lt;div data-sp-canvascontrol=&quot;&quot; data-sp-canvasdataversion=&quot;1.0&quot; data-sp-controldata=&quot;&amp;#123;&amp;quot;editorType&amp;quot;&amp;#58;&amp;quot;CKEditor&amp;quot;,&amp;quot;controlType&amp;quot;&amp;#58;4,&amp;quot;id&amp;quot;&amp;#58;&amp;quot;1a9ec28d-bc1c-4aba-87eb-7f19e4e13b83&amp;quot;,&amp;quot;position&amp;quot;&amp;#58;&amp;#123;&amp;quot;controlIndex&amp;quot;&amp;#58;1,&amp;quot;zoneIndex&amp;quot;&amp;#58;1,&amp;quot;sectionIndex&amp;quot;&amp;#58;1,&amp;quot;sectionFactor&amp;quot;&amp;#58;12,&amp;quot;layoutIndex&amp;quot;&amp;#58;1,&amp;quot;zoneId&amp;quot;&amp;#58;null,&amp;quot;isLayoutReflowOnTop&amp;quot;&amp;#58;null&amp;#125;,&amp;quot;emphasis&amp;quot;&amp;#58;&amp;#123;&amp;quot;zoneEmphasis&amp;quot;&amp;#58;0&amp;#125;,&amp;quot;zoneGroupMetadata&amp;quot;&amp;#58;null&amp;#125;&quot;&gt;&lt;div data-sp-rte=&quot;&quot;&gt;&lt;h1&gt;Scripts &amp;amp; Automation&lt;/h1&gt;&lt;p&gt;This page documents the lab setup, automation, validation steps, and artifacts for &lt;strong&gt;Scripts &amp;amp; Automation&lt;/strong&gt;.&lt;/p&gt;&lt;hr /&gt;&lt;h2&gt;Runbook&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Prerequisites&lt;/li&gt;
+  &lt;li&gt;Connect Modules (PowerShell/Graph)&lt;/li&gt;
+  &lt;li&gt;Execute Scripts&lt;/li&gt;
+  &lt;li&gt;Validate&lt;/li&gt;
+  &lt;li&gt;Document Artifacts&lt;/li&gt;
+  &lt;li&gt;Rollback Plan&lt;/li&gt;
+&lt;/ol&gt;&lt;h2&gt;PowerShell (Identity)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;
+Connect-MgGraph -Scopes &amp;quot;User.ReadWrite.All&amp;quot;,&amp;quot;Group.ReadWrite.All&amp;quot;,&amp;quot;Directory.ReadWrite.All&amp;quot;
+# ./scripts/graph/Create-LabUsersAndGroups.ps1 -Domain jeremyfontenot.online -SkuPartNumber ENTERPRISEPACK
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;PowerShell (Exchange Online)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;
+Connect-ExchangeOnline
+# ./scripts/exchange/Exchange-Basics.ps1
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;PowerShell (Teams)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;
+Connect-MicrosoftTeams
+# ./scripts/teams/Provision-LabTeam.ps1 -TeamName &amp;quot;LAB-Engineering-Team&amp;quot; -OwnerUPN jeremy.fontenot@jeremyfontenot.online
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;PowerShell (SharePoint)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;
+Connect-PnPOnline -Url &amp;quot;https&amp;#58;//jeremyfontenot.sharepoint.com/sites/M365-Documentation&amp;quot; -Interactive
+# ./scripts/sharepoint/Export-SPOSiteTemplate.ps1 -SiteUrl https&amp;#58;//jeremyfontenot.sharepoint.com/sites/M365-Documentation
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;Artifacts&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reports (CSV/HTML/PDF)&lt;/li&gt;
+  &lt;li&gt;Screenshots (annotated)&lt;/li&gt;
+  &lt;li&gt;Change records&lt;/li&gt;
+  &lt;li&gt;Scripts and configs&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-sp-canvascontrol=&quot;&quot; data-sp-canvasdataversion=&quot;1.0&quot; data-sp-controldata=&quot;&amp;#123;&amp;quot;controlType&amp;quot;&amp;#58;0,&amp;quot;pageSettingsSlice&amp;quot;&amp;#58;&amp;#123;&amp;quot;isDefaultDescription&amp;quot;&amp;#58;true,&amp;quot;isDefaultThumbnail&amp;quot;&amp;#58;true,&amp;quot;isSpellCheckEnabled&amp;quot;&amp;#58;true,&amp;quot;globalRichTextStylingVersion&amp;quot;&amp;#58;1,&amp;quot;rtePageSettings&amp;quot;&amp;#58;&amp;#123;&amp;quot;contentVersion&amp;quot;&amp;#58;5&amp;#125;,&amp;quot;isEmailReady&amp;quot;&amp;#58;false&amp;#125;&amp;#125;&quot;&gt;&lt;/div&gt;&lt;/div&gt;</mso:CanvasContent1>
+<mso:BannerImageUrl msdt:dt="string">https://jeremyfontenot.sharepoint.com/_layouts/15/images/sitepagethumbnail.png, /_layouts/15/images/sitepagethumbnail.png</mso:BannerImageUrl>
+<mso:_SPAuthoringMetadata msdt:dt="string"></mso:_SPAuthoringMetadata>
+<mso:ContentTypeId msdt:dt="string">0x0101009D1CB255DA76424F860D91F20E6C4118</mso:ContentTypeId>
+<mso:ClientSideApplicationId msdt:dt="string">{b6917cb1-93a0-4b97-a84d-7cf49975d4ec}</mso:ClientSideApplicationId>
+<mso:LayoutWebpartsContent msdt:dt="string">&lt;div&gt;&lt;div data-sp-canvascontrol=&quot;&quot; data-sp-canvasdataversion=&quot;1.4&quot; data-sp-controldata=&quot;&amp;#123;&amp;quot;id&amp;quot;&amp;#58;&amp;quot;cbe7b0a9-3504-44dd-a3a3-0e5cacd07788&amp;quot;,&amp;quot;instanceId&amp;quot;&amp;#58;&amp;quot;cbe7b0a9-3504-44dd-a3a3-0e5cacd07788&amp;quot;,&amp;quot;title&amp;quot;&amp;#58;&amp;quot;Title Region&amp;quot;,&amp;quot;description&amp;quot;&amp;#58;&amp;quot;Title Region Description&amp;quot;,&amp;quot;serverProcessedContent&amp;quot;&amp;#58;&amp;#123;&amp;quot;htmlStrings&amp;quot;&amp;#58;&amp;#123;&amp;#125;,&amp;quot;searchablePlainTexts&amp;quot;&amp;#58;&amp;#123;&amp;#125;,&amp;quot;imageSources&amp;quot;&amp;#58;&amp;#123;&amp;#125;,&amp;quot;links&amp;quot;&amp;#58;&amp;#123;&amp;#125;&amp;#125;,&amp;quot;dataVersion&amp;quot;&amp;#58;&amp;quot;1.4&amp;quot;,&amp;quot;properties&amp;quot;&amp;#58;&amp;#123;&amp;quot;title&amp;quot;&amp;#58;&amp;quot;Scripts &amp;amp; Automation&amp;quot;,&amp;quot;imageSourceType&amp;quot;&amp;#58;4,&amp;quot;layoutType&amp;quot;&amp;#58;&amp;quot;FullWidthImage&amp;quot;,&amp;quot;textAlignment&amp;quot;&amp;#58;&amp;quot;Left&amp;quot;,&amp;quot;showTopicHeader&amp;quot;&amp;#58;false,&amp;quot;showPublishDate&amp;quot;&amp;#58;false,&amp;quot;topicHeader&amp;quot;&amp;#58;&amp;quot;&amp;quot;,&amp;quot;authorByline&amp;quot;&amp;#58;[],&amp;quot;authors&amp;quot;&amp;#58;[]&amp;#125;&amp;#125;&quot;&gt;&lt;/div&gt;&lt;/div&gt;</mso:LayoutWebpartsContent>
+<mso:PromotedState msdt:dt="string">0</mso:PromotedState>
+</mso:CustomDocumentProperties>
+</xml></SharePoint:CTFieldRefs><![endif]-->
+<title>Scripts &amp; Automation</title></head>

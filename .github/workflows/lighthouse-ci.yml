@@ -1,0 +1,68 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lhci:
+    name: Run Lighthouse CI
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Set up Python (for manifest)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install optional Python deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Regenerate manifest
+        run: |
+          python tools/generate_manifest.py
+
+      - name: Ensure manifest is valid JSON
+        run: |
+          if [ ! -f docs/manifest.json ]; then echo "docs/manifest.json missing" >&2; exit 1; fi
+          python -m json.tool docs/manifest.json
+
+      - name: Prepare site directory
+        run: |
+          rm -rf site && mkdir site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='tools' --exclude='venv' --exclude='node_modules' ./ site/
+
+      - name: Install Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.11.0
+
+      - name: Run Lighthouse CI (assert thresholds)
+        run: |
+          npx -y @lhci/cli@0.11.0 autorun \
+            --collect.staticDistDir=site \
+            --collect.numberOfRuns=3 \
+            --collect.settings.emulatedFormFactor=mobile \
+            --upload.target=temporary-public-storage \
+            --assert.performance=90 \
+            --assert.accessibility=95 \
+            --assert.best-practices=100 \
+            --assert.lhr.categories.seo=100
+
+      - name: Upload LHCI results (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lhci-results
+          path: .lighthouseci

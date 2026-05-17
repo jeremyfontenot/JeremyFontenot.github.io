@@ -1,0 +1,187 @@
+name: Manifest Integrity
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  schedule:
+    # Nightly release validation at 02:00 UTC
+    - cron: '0 2 * * *'
+    # Weekly deep audit Sunday 03:00 UTC
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Validation mode (lenient|normal|strict|release). Only used for manual runs.'
+        required: false
+        default: 'normal'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  manifest-integrity:
+    name: Validate manifest ↔ filesystem
+    runs-on: ubuntu-latest
+    env:
+      MODE: ${{ github.event_name == 'pull_request' && 'normal' || github.event_name == 'schedule' && 'release' || github.ref == 'refs/heads/main' && 'strict' || startsWith(github.ref, 'refs/tags/') && 'release' || startsWith(github.ref, 'refs/heads/develop') && 'lenient' || startsWith(github.ref, 'refs/heads/feature/') && 'lenient' || startsWith(github.ref, 'refs/heads/hotfix/') && 'normal' || github.event.inputs.mode || 'normal' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure main branch checked out for scheduled runs
+        if: github.event_name == 'schedule'
+        run: |
+          git fetch origin main:main
+          git checkout main
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Generate title format JS
+        run: |
+          python tools/generate_title_format_js.py
+
+      - name: Verify generated title format JS is committed
+        run: |
+          python tools/generate_title_format_js.py --check
+
+      - name: Search ranking contract
+        run: |
+          python tools/test_search_ranking.py
+
+      - name: Regenerate manifest
+        run: |
+          python tools/generate_manifest.py
+
+      - name: Run manifest integrity analyzer
+        id: run-check
+        run: |
+          set +e
+          python tools/validate_manifest_integrity.py --mode "${MODE}"
+          STATUS=$?
+          echo "analyzer_status=$STATUS" >> $GITHUB_OUTPUT
+          if [ $STATUS -ne 0 ]; then
+            echo "Analyzer exited with status $STATUS"
+          fi
+        continue-on-error: true
+
+      - name: Upload manifest integrity reports
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: manifest-integrity-reports
+          path: artifacts/manifest-integrity
+
+      - name: Create or update structured GitHub Issue on scheduled release failure
+        if: github.event_name == 'schedule' && env.MODE == 'release' && steps.run-check.outputs.analyzer_status != '0'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const run_url = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const art = 'artifacts/manifest-integrity';
+            function read(name){ try { return fs.readFileSync(`${art}/${name}`, 'utf8').trim(); } catch(e){ return null } }
+            const summaryStr = read('summary.json');
+            const summary = summaryStr ? JSON.parse(summaryStr) : {};
+            const missing = read('missing_manifest_targets.txt') || '';
+            const orphaned = read('orphaned_docs.txt') || '';
+            const dup = read('duplicate_paths.txt') || '';
+            const sha = process.env.GITHUB_SHA || '';
+
+            const title = '🚨 Scheduled Release Validation Failed';
+            // Structured issue body
+            let body = [];
+            body.push('## 🚨 Scheduled Release Validation Failed');
+            body.push('\n### Summary');
+            body.push(`- Mode: release`);
+            body.push(`- Score: ${summary.score || 'n/a'} / 100`);
+            body.push(`- Status: FAIL`);
+            body.push('\n### Breakdown');
+            body.push(`- Critical issues: ${summary.structural_issues || 0}`);
+            body.push(`- Warnings: ${summary.warning_issues || 0}`);
+            body.push('\n### Top Issues');
+            if(orphaned) body.push(`- orphaned_doc: ${orphaned.split('\n').slice(0,3).join('\n- ')}`);
+            if(dup) body.push(`- duplicate_path: ${dup.split('\n').slice(0,3).join('\n- ')}`);
+            if(missing) body.push(`- missing_manifest_target: ${missing.split('\n').slice(0,3).join('\n- ')}`);
+            body.push('\n### Run Details');
+            body.push(`- Workflow run: ${run_url}`);
+            body.push(`- Artifacts: ${run_url} (see Artifacts)`);
+            body.push(`- Commit: ${sha}`);
+            body.push('');
+            const bodyStr = body.join('\n');
+
+            // Ensure labels exist
+            const needed = [ 'incident:release', 'severity:high', 'status:open' ];
+            const existingLabels = (await github.rest.issues.listLabelsForRepo({ owner, repo })).data.map(l => l.name);
+            for(const lbl of needed){
+              if(!existingLabels.includes(lbl)){
+                try{
+                  await github.rest.issues.createLabel({ owner, repo, name: lbl, color: 'b60205', description: 'Auto-created incident label' });
+                }catch(e){ /* ignore if creation fails */ }
+              }
+            }
+
+            // find existing open issue with same title
+            const issues = await github.rest.issues.listForRepo({ owner, repo, state: 'open' });
+            const existing = issues.data.find(i => i.title === title);
+            if(existing){
+              // append a comment with latest run details and update labels/body
+              await github.rest.issues.createComment({ owner, repo, issue_number: existing.number, body: `New scheduled failure detected at ${new Date().toISOString()} - Score: ${summary.score || 'n/a'} / 100\n\nRun: ${run_url}` });
+              // update body to current structured snapshot and ensure labels present
+              const currentLabels = (existing.labels || []).map(l => typeof l === 'string' ? l : l.name);
+              const merged = Array.from(new Set(currentLabels.concat(needed)));
+              await github.rest.issues.update({ owner, repo, issue_number: existing.number, title, body: bodyStr, labels: merged });
+            } else {
+              // create a new issue with structured body and labels
+              await github.rest.issues.create({ owner, repo, title, body: bodyStr, labels: needed });
+            }
+
+      - name: Close existing GitHub Issue if scheduled release now passes
+        if: github.event_name == 'schedule' && env.MODE == 'release' && steps.run-check.outputs.analyzer_status == '0'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = '🚨 Scheduled Release Validation Failed';
+            const run_url = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const art = 'artifacts/manifest-integrity';
+            function read(name){ try { return fs.readFileSync(`${art}/${name}`, 'utf8').trim(); } catch(e){ return null } }
+            const fs = require('fs');
+            const summaryStr = read('summary.json');
+            const summary = summaryStr ? JSON.parse(summaryStr) : {};
+            const issues = await github.rest.issues.listForRepo({ owner, repo, state: 'open' });
+            const existing = issues.data.find(i => i.title === title);
+            if(existing){
+              // attempt to parse previous score from issue body
+              const prevMatch = existing.body && existing.body.match(/Score:\s*(\d+)/);
+              const prev = prevMatch ? parseInt(prevMatch[1],10) : null;
+              const current = summary.score || null;
+              let comment = `Scheduled release validation now passes (${new Date().toISOString()}).`;
+              if(prev !== null && current !== null){
+                comment += ` Score improved from ${prev} → ${current}.`;
+              } else if(current !== null){
+                comment += ` Current score: ${current}.`;
+              }
+              comment += `\n\nRun: ${run_url}`;
+              await github.rest.issues.createComment({ owner, repo, issue_number: existing.number, body: comment });
+              // update labels: remove status:open, add status:resolved
+              const labels = (existing.labels || []).map(l => typeof l === 'string' ? l : l.name).filter(n => n !== 'status:open');
+              labels.push('status:resolved');
+              // ensure status:resolved label exists
+              const existingLabels = (await github.rest.issues.listLabelsForRepo({ owner, repo })).data.map(l => l.name);
+              if(!existingLabels.includes('status:resolved')){
+                try{ await github.rest.issues.createLabel({ owner, repo, name: 'status:resolved', color: '0e8a16', description: 'Incident resolved' }); }catch(e){}
+              }
+              await github.rest.issues.update({ owner, repo, issue_number: existing.number, state: 'closed', labels: labels });
+            }

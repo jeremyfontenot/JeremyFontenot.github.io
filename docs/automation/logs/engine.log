@@ -1,0 +1,932 @@
+[2026-05-01 19:59:20] --- Auto-curation run started ---
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx\Brand-Guidelines.aspx -> curated\brandguide\Brand-Guidelines.aspx
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx\BrandGuideHome.aspx -> curated\brandguide\BrandGuideHome.aspx
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\assets\reference\WORKSPACE_FILE_GUIDE.md -> curated\brandguide\WORKSPACE_FILE_GUIDE.md
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html\Brand-Guidelines.html -> curated\brandguide\Brand-Guidelines.html
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html\BrandGuideHome.html -> curated\brandguide\BrandGuideHome.html
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\Lab-Portfolio.pdf -> curated\home-lab\Lab-Portfolio.pdf
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Automation.aspx -> curated\script-documentation\Automation.aspx
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Automation-20260306-0200.aspx -> curated\script-documentation\Change-Automation-20260306-0200.aspx
+[2026-05-01 19:59:20] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Automation-20260306-0346.aspx -> curated\script-documentation\Change-Automation-20260306-0346.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Lab-Overview-20260307-0200.aspx -> curated\home-lab\Change-Lab-Overview-20260307-0200.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-and-Automation-20260223-0410.aspx -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-and-Automation-20260223-0418.aspx -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-and-Automation-20260223-0427.aspx -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-and-Automation-20260223-0738.aspx -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-and-Automation-20260223-0742.aspx -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-Used-20260223-0409.aspx -> curated\script-documentation\Change-Scripts-Used-20260223-0409.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-Used-20260223-0417.aspx -> curated\script-documentation\Change-Scripts-Used-20260223-0417.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-Used-20260223-0426.aspx -> curated\script-documentation\Change-Scripts-Used-20260223-0426.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-Used-20260223-0737.aspx -> curated\script-documentation\Change-Scripts-Used-20260223-0737.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-Used-20260223-0741.aspx -> curated\script-documentation\Change-Scripts-Used-20260223-0741.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.aspx -> curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Collaboration.aspx -> curated\home-lab\Collaboration.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Lab-Overview.aspx -> curated\home-lab\Lab-Overview.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Scripts-and-Automation.aspx -> curated\script-documentation\Scripts-and-Automation.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Scripts-Automation.aspx -> curated\script-documentation\Scripts-Automation.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Scripts-Used.aspx -> curated\script-documentation\Scripts-Used.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Scripts-Used_BACKUP_20260227-205559.aspx -> curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Scripts-Used_BACKUP_20260227-210344.aspx -> curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Scripts-Used_BACKUP_20260227-210614.aspx -> curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.aspx
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Automation.html -> curated\script-documentation\Automation.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Automation-20260306-0200.html -> curated\script-documentation\Change-Automation-20260306-0200.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Automation-20260306-0346.html -> curated\script-documentation\Change-Automation-20260306-0346.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Lab-Overview-20260307-0200.html -> curated\home-lab\Change-Lab-Overview-20260307-0200.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-and-Automation-20260223-0410.html -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-and-Automation-20260223-0418.html -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-and-Automation-20260223-0427.html -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-and-Automation-20260223-0738.html -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-and-Automation-20260223-0742.html -> curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-Used-20260223-0409.html -> curated\script-documentation\Change-Scripts-Used-20260223-0409.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-Used-20260223-0417.html -> curated\script-documentation\Change-Scripts-Used-20260223-0417.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-Used-20260223-0426.html -> curated\script-documentation\Change-Scripts-Used-20260223-0426.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-Used-20260223-0737.html -> curated\script-documentation\Change-Scripts-Used-20260223-0737.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-Used-20260223-0741.html -> curated\script-documentation\Change-Scripts-Used-20260223-0741.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.html -> curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Collaboration.html -> curated\home-lab\Collaboration.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Lab-Overview.html -> curated\home-lab\Lab-Overview.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Scripts-and-Automation.html -> curated\script-documentation\Scripts-and-Automation.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Scripts-Automation.html -> curated\script-documentation\Scripts-Automation.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Scripts-Used.html -> curated\script-documentation\Scripts-Used.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Scripts-Used_BACKUP_20260227-205559.html -> curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Scripts-Used_BACKUP_20260227-210344.html -> curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Scripts-Used_BACKUP_20260227-210614.html -> curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.html
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\scripts\build-minified-assets.ps1 -> curated\scripts\build-minified-assets.ps1
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\scripts\export-sharepoint-pages.ps1 -> curated\scripts\export-sharepoint-pages.ps1
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\scripts\promote-site.ps1 -> curated\scripts\promote-site.ps1
+[2026-05-01 19:59:21] COPY: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\scripts\validate-and-publish-scripts.ps1 -> curated\script-documentation\validate-and-publish-scripts.ps1
+[2026-05-01 19:59:21] SKIP (exists): curated\brandguide\Brand-Guidelines.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\brandguide\BrandGuideHome.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\brandguide\WORKSPACE_FILE_GUIDE.md
+[2026-05-01 19:59:21] SKIP (exists): curated\brandguide\Brand-Guidelines.html
+[2026-05-01 19:59:21] SKIP (exists): curated\brandguide\BrandGuideHome.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Automation.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\home-lab\Collaboration.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\home-lab\Lab-Overview.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-and-Automation.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Automation.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.aspx
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Automation.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.html
+[2026-05-01 19:59:21] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.html
+[2026-05-01 19:59:21] SKIP (exists): curated\home-lab\Collaboration.html
+[2026-05-01 19:59:21] SKIP (exists): curated\home-lab\Lab-Overview.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-and-Automation.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Automation.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.html
+[2026-05-01 19:59:21] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.html
+[2026-05-01 19:59:21] --- Auto-curation run finished ---
+[2026-05-01 20:14:52] --- Auto-curation run started ---
+[2026-05-01 20:14:53] --- Auto-curation run finished ---
+[2026-05-01 20:15:42] --- Auto-curation run started ---
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\index.html -> curated\web\index.html
+[2026-05-01 20:15:42] SKIP (exists): curated\brandguide\Brand-Guidelines.aspx
+[2026-05-01 20:15:42] SKIP (exists): curated\brandguide\BrandGuideHome.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx\Documentation.aspx -> curated\web\Documentation.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx\Home.aspx -> curated\home-lab\Home.aspx
+[2026-05-01 20:15:42] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx\Logos.aspx -> curated\web\Logos.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\aspx\SocialMediaKit.aspx -> curated\web\SocialMediaKit.aspx
+[2026-05-01 20:15:42] SKIP (exists): curated\brandguide\Brand-Guidelines.html
+[2026-05-01 20:15:42] SKIP (exists): curated\brandguide\BrandGuideHome.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html\Documentation.html -> curated\web\Documentation.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html\Home.html -> curated\home-lab\Home.html
+[2026-05-01 20:15:42] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html\Logos.html -> curated\web\Logos.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\brandguide\html\SocialMediaKit.html -> curated\web\SocialMediaKit.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\architecture-and-topology.html -> curated\architecture\architecture-and-topology.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\asset-inventory.html -> curated\web\asset-inventory.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\backup-and-disaster-recovery.html -> curated\web\backup-and-disaster-recovery.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\change-management-and-validation.html -> curated\security\change-management-and-validation.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\identity-and-access.html -> curated\identity\identity-and-access.html
+[2026-05-01 20:15:42] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\infrastructure-and-network.html -> curated\web\infrastructure-and-network.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\monitoring-and-logging.html -> curated\web\monitoring-and-logging.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\operations-and-monitoring.html -> curated\web\operations-and-monitoring.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\operations-runbook.html -> curated\web\operations-runbook.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\security-baseline.html -> curated\security\security-baseline.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\home-lab\validation-report.html -> curated\security\validation-report.html
+[2026-05-01 20:15:42] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Architecture-Overview.aspx -> curated\architecture\Architecture-Overview.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Architecture.aspx -> curated\architecture\Architecture.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Artifacts-Index.aspx -> curated\home-lab\Artifacts-Index.aspx
+[2026-05-01 20:15:42] SKIP (exists): curated\script-documentation\Automation.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-20260306-0200.aspx -> curated\architecture\Change-Architecture-20260306-0200.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-20260306-0345.aspx -> curated\architecture\Change-Architecture-20260306-0345.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-Overview-20260223-0410.aspx -> curated\architecture\Change-Architecture-Overview-20260223-0410.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-Overview-20260223-0417.aspx -> curated\architecture\Change-Architecture-Overview-20260223-0417.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-Overview-20260223-0427.aspx -> curated\architecture\Change-Architecture-Overview-20260223-0427.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-Overview-20260223-0738.aspx -> curated\architecture\Change-Architecture-Overview-20260223-0738.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-Overview-20260223-0742.aspx -> curated\architecture\Change-Architecture-Overview-20260223-0742.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Architecture-Overview-20260306-0200.aspx -> curated\architecture\Change-Architecture-Overview-20260306-0200.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Artifacts-Index-20260306-0200.aspx -> curated\home-lab\Change-Artifacts-Index-20260306-0200.aspx
+[2026-05-01 20:15:42] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.aspx
+[2026-05-01 20:15:42] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Cleanup-Summary.aspx -> curated\script-documentation\Change-Cleanup-Summary.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Conditional-Access-20260306-0200.aspx -> curated\endpoint-management\Change-Conditional-Access-20260306-0200.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Endpoint-Management-Intune-20260223-0409.aspx -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0409.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Endpoint-Management-Intune-20260223-0417.aspx -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0417.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Endpoint-Management-Intune-20260223-0426.aspx -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0426.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Endpoint-Management-Intune-20260223-0738.aspx -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0738.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Endpoint-Management-Intune-20260223-0742.aspx -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0742.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Exchange-20260307-0200.aspx -> curated\exchange-online\Change-Exchange-20260307-0200.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Exchange-Online-20260223-0409.aspx -> curated\exchange-online\Change-Exchange-Online-20260223-0409.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Exchange-Online-20260223-0417.aspx -> curated\exchange-online\Change-Exchange-Online-20260223-0417.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Exchange-Online-20260223-0426.aspx -> curated\exchange-online\Change-Exchange-Online-20260223-0426.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Exchange-Online-20260223-0738.aspx -> curated\exchange-online\Change-Exchange-Online-20260223-0738.aspx
+[2026-05-01 20:15:42] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Exchange-Online-20260223-0742.aspx -> curated\exchange-online\Change-Exchange-Online-20260223-0742.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Home-20260227-1151.aspx -> curated\home-lab\Change-Home-20260227-1151.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Home-20260227-1753.aspx -> curated\home-lab\Change-Home-20260227-1753.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Home-20260305-0200.aspx -> curated\home-lab\Change-Home-20260305-0200.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Home-20260306-0345.aspx -> curated\home-lab\Change-Home-20260306-0345.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Home-20260314-1157.aspx -> curated\home-lab\Change-Home-20260314-1157.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Home-20260330-0918.aspx -> curated\home-lab\Change-Home-20260330-0918.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Home-20260401-1000.aspx -> curated\home-lab\Change-Home-20260401-1000.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Identity-20260307-0200.aspx -> curated\identity\Change-Identity-20260307-0200.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Identity-and-Security-20260223-0409.aspx -> curated\identity\Change-Identity-and-Security-20260223-0409.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Identity-and-Security-20260223-0417.aspx -> curated\identity\Change-Identity-and-Security-20260223-0417.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Identity-and-Security-20260223-0426.aspx -> curated\identity\Change-Identity-and-Security-20260223-0426.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Identity-and-Security-20260223-0738.aspx -> curated\identity\Change-Identity-and-Security-20260223-0738.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Identity-and-Security-20260223-0742.aspx -> curated\identity\Change-Identity-and-Security-20260223-0742.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Identity-and-Security-20260403-0300.aspx -> curated\identity\Change-Identity-and-Security-20260403-0300.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Intune-20260307-0200.aspx -> curated\endpoint-management\Change-Intune-20260307-0200.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Log.aspx -> curated\web\Change-Log.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260223-0410.aspx -> curated\home-lab\Change-New-Home-20260223-0410.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260223-0418.aspx -> curated\home-lab\Change-New-Home-20260223-0418.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260223-0427.aspx -> curated\home-lab\Change-New-Home-20260223-0427.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260223-0738.aspx -> curated\home-lab\Change-New-Home-20260223-0738.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260223-0742.aspx -> curated\home-lab\Change-New-Home-20260223-0742.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260227-0849.aspx -> curated\home-lab\Change-New-Home-20260227-0849.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260227-1151.aspx -> curated\home-lab\Change-New-Home-20260227-1151.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-New-Home-20260227-1753.aspx -> curated\home-lab\Change-New-Home-20260227-1753.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Portfolio-Summary-20260306-0345.aspx -> curated\portfolio\Change-Portfolio-Summary-20260306-0345.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Power-Platform-20260223-0410.aspx -> curated\script-documentation\Change-Power-Platform-20260223-0410.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Power-Platform-20260223-0418.aspx -> curated\script-documentation\Change-Power-Platform-20260223-0418.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Power-Platform-20260223-0427.aspx -> curated\script-documentation\Change-Power-Platform-20260223-0427.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Power-Platform-20260223-0738.aspx -> curated\script-documentation\Change-Power-Platform-20260223-0738.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Power-Platform-20260223-0742.aspx -> curated\script-documentation\Change-Power-Platform-20260223-0742.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Security-20260307-0200.aspx -> curated\security\Change-Security-20260307-0200.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Validation-20260306-0345.aspx -> curated\security\Change-Validation-20260306-0345.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Change-Validation-Results.aspx -> curated\security\Change-Validation-Results.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Cleanup-Summary.aspx -> curated\script-documentation\Cleanup-Summary.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\home-lab\Collaboration.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Conditional-Access.aspx -> curated\endpoint-management\Conditional-Access.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Endpoint-Management-Intune.aspx -> curated\endpoint-management\Endpoint-Management-Intune.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Endpoint-Management.aspx -> curated\endpoint-management\Endpoint-Management.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Exchange-Online.aspx -> curated\exchange-online\Exchange-Online.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Exchange-Setup.aspx -> curated\home-lab\Exchange-Setup.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Exchange.aspx -> curated\exchange-online\Exchange.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\home-lab\Home.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Identity-and-Security.aspx -> curated\identity\Identity-and-Security.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Identity-Setup.aspx -> curated\home-lab\Identity-Setup.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Identity.aspx -> curated\identity\Identity.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Intune-Setup.aspx -> curated\home-lab\Intune-Setup.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Intune.aspx -> curated\endpoint-management\Intune.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\home-lab\Lab-Overview.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\MFA-Enforcement.aspx -> curated\web\MFA-Enforcement.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\New-Home.aspx -> curated\home-lab\New-Home.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Operations.aspx -> curated\web\Operations.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Portfolio-Summary.aspx -> curated\portfolio\Portfolio-Summary.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Power-Platform.aspx -> curated\script-documentation\Power-Platform.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Resume-Summary.aspx -> curated\web\Resume-Summary.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Scripts-and-Automation.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Scripts-Automation.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Scripts-Used.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.aspx
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Security-Baselines.aspx -> curated\security\Security-Baselines.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Security-Overview.aspx -> curated\security\Security-Overview.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Security.aspx -> curated\security\Security.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\SharePoint-OneDrive.aspx -> curated\web\SharePoint-OneDrive.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Start-Here.aspx -> curated\web\Start-Here.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Teams-Setup.aspx -> curated\home-lab\Teams-Setup.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Teams.aspx -> curated\web\Teams.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Validation-Audit.aspx -> curated\security\Validation-Audit.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Validation-Results.aspx -> curated\security\Validation-Results.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\aspx\Validation.aspx -> curated\security\Validation.aspx
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Architecture-Overview.html -> curated\architecture\Architecture-Overview.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Architecture.html -> curated\architecture\Architecture.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Artifacts-Index.html -> curated\home-lab\Artifacts-Index.html
+[2026-05-01 20:15:43] SKIP (exists): curated\script-documentation\Automation.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-20260306-0200.html -> curated\architecture\Change-Architecture-20260306-0200.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-20260306-0345.html -> curated\architecture\Change-Architecture-20260306-0345.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-Overview-20260223-0410.html -> curated\architecture\Change-Architecture-Overview-20260223-0410.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-Overview-20260223-0417.html -> curated\architecture\Change-Architecture-Overview-20260223-0417.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-Overview-20260223-0427.html -> curated\architecture\Change-Architecture-Overview-20260223-0427.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-Overview-20260223-0738.html -> curated\architecture\Change-Architecture-Overview-20260223-0738.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-Overview-20260223-0742.html -> curated\architecture\Change-Architecture-Overview-20260223-0742.html
+[2026-05-01 20:15:43] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Architecture-Overview-20260306-0200.html -> curated\architecture\Change-Architecture-Overview-20260306-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Artifacts-Index-20260306-0200.html -> curated\home-lab\Change-Artifacts-Index-20260306-0200.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Cleanup-Summary.html -> curated\script-documentation\Change-Cleanup-Summary.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Conditional-Access-20260306-0200.html -> curated\endpoint-management\Change-Conditional-Access-20260306-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Endpoint-Management-Intune-20260223-0409.html -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0409.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Endpoint-Management-Intune-20260223-0417.html -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0417.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Endpoint-Management-Intune-20260223-0426.html -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0426.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Endpoint-Management-Intune-20260223-0738.html -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0738.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Endpoint-Management-Intune-20260223-0742.html -> curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0742.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Exchange-20260307-0200.html -> curated\exchange-online\Change-Exchange-20260307-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Exchange-Online-20260223-0409.html -> curated\exchange-online\Change-Exchange-Online-20260223-0409.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Exchange-Online-20260223-0417.html -> curated\exchange-online\Change-Exchange-Online-20260223-0417.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Exchange-Online-20260223-0426.html -> curated\exchange-online\Change-Exchange-Online-20260223-0426.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Exchange-Online-20260223-0738.html -> curated\exchange-online\Change-Exchange-Online-20260223-0738.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Exchange-Online-20260223-0742.html -> curated\exchange-online\Change-Exchange-Online-20260223-0742.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Home-20260227-1151.html -> curated\home-lab\Change-Home-20260227-1151.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Home-20260227-1753.html -> curated\home-lab\Change-Home-20260227-1753.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Home-20260305-0200.html -> curated\home-lab\Change-Home-20260305-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Home-20260306-0345.html -> curated\home-lab\Change-Home-20260306-0345.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Home-20260314-1157.html -> curated\home-lab\Change-Home-20260314-1157.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Home-20260330-0918.html -> curated\home-lab\Change-Home-20260330-0918.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Home-20260401-1000.html -> curated\home-lab\Change-Home-20260401-1000.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Identity-20260307-0200.html -> curated\identity\Change-Identity-20260307-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Identity-and-Security-20260223-0409.html -> curated\identity\Change-Identity-and-Security-20260223-0409.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Identity-and-Security-20260223-0417.html -> curated\identity\Change-Identity-and-Security-20260223-0417.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Identity-and-Security-20260223-0426.html -> curated\identity\Change-Identity-and-Security-20260223-0426.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Identity-and-Security-20260223-0738.html -> curated\identity\Change-Identity-and-Security-20260223-0738.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Identity-and-Security-20260223-0742.html -> curated\identity\Change-Identity-and-Security-20260223-0742.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Identity-and-Security-20260403-0300.html -> curated\identity\Change-Identity-and-Security-20260403-0300.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Intune-20260307-0200.html -> curated\endpoint-management\Change-Intune-20260307-0200.html
+[2026-05-01 20:15:44] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Log.html -> curated\web\Change-Log.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260223-0410.html -> curated\home-lab\Change-New-Home-20260223-0410.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260223-0418.html -> curated\home-lab\Change-New-Home-20260223-0418.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260223-0427.html -> curated\home-lab\Change-New-Home-20260223-0427.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260223-0738.html -> curated\home-lab\Change-New-Home-20260223-0738.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260223-0742.html -> curated\home-lab\Change-New-Home-20260223-0742.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260227-0849.html -> curated\home-lab\Change-New-Home-20260227-0849.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260227-1151.html -> curated\home-lab\Change-New-Home-20260227-1151.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-New-Home-20260227-1753.html -> curated\home-lab\Change-New-Home-20260227-1753.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Portfolio-Summary-20260306-0345.html -> curated\portfolio\Change-Portfolio-Summary-20260306-0345.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Power-Platform-20260223-0410.html -> curated\script-documentation\Change-Power-Platform-20260223-0410.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Power-Platform-20260223-0418.html -> curated\script-documentation\Change-Power-Platform-20260223-0418.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Power-Platform-20260223-0427.html -> curated\script-documentation\Change-Power-Platform-20260223-0427.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Power-Platform-20260223-0738.html -> curated\script-documentation\Change-Power-Platform-20260223-0738.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Power-Platform-20260223-0742.html -> curated\script-documentation\Change-Power-Platform-20260223-0742.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.html
+[2026-05-01 20:15:44] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Security-20260307-0200.html -> curated\security\Change-Security-20260307-0200.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Validation-20260306-0345.html -> curated\security\Change-Validation-20260306-0345.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Change-Validation-Results.html -> curated\security\Change-Validation-Results.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Cleanup-Summary.html -> curated\script-documentation\Cleanup-Summary.html
+[2026-05-01 20:15:44] SKIP (exists): curated\home-lab\Collaboration.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Conditional-Access.html -> curated\endpoint-management\Conditional-Access.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Endpoint-Management-Intune.html -> curated\endpoint-management\Endpoint-Management-Intune.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Endpoint-Management.html -> curated\endpoint-management\Endpoint-Management.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Exchange-Online.html -> curated\exchange-online\Exchange-Online.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Exchange-Setup.html -> curated\home-lab\Exchange-Setup.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Exchange.html -> curated\exchange-online\Exchange.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Final-Deliverables.html -> curated\web\Final-Deliverables.html
+[2026-05-01 20:15:44] SKIP (exists): curated\home-lab\Home.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Identity-and-Security.html -> curated\identity\Identity-and-Security.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Identity-Setup.html -> curated\home-lab\Identity-Setup.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Identity.html -> curated\identity\Identity.html
+[2026-05-01 20:15:44] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Intune-Setup.html -> curated\home-lab\Intune-Setup.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Intune.html -> curated\endpoint-management\Intune.html
+[2026-05-01 20:15:44] SKIP (exists): curated\home-lab\Lab-Overview.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\MFA-Enforcement.html -> curated\web\MFA-Enforcement.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\New-Home.html -> curated\home-lab\New-Home.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Operations.html -> curated\web\Operations.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Portfolio-Summary.html -> curated\portfolio\Portfolio-Summary.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Power-Platform.html -> curated\script-documentation\Power-Platform.html
+[2026-05-01 20:15:44] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Resume-Summary.html -> curated\web\Resume-Summary.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-and-Automation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Automation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Security-Baselines.html -> curated\security\Security-Baselines.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Security-Overview.html -> curated\security\Security-Overview.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Security.html -> curated\security\Security.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\SharePoint-OneDrive.html -> curated\web\SharePoint-OneDrive.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Start-Here.html -> curated\web\Start-Here.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Teams-Setup.html -> curated\home-lab\Teams-Setup.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Teams.html -> curated\web\Teams.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Validation-Audit.html -> curated\security\Validation-Audit.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Validation-Results.html -> curated\security\Validation-Results.html
+[2026-05-01 20:15:45] MOVE: C:\Users\jeremy\Documents\JeremyFontenot.online\_content\docs\archive\M365 PCL\html\Validation.html -> curated\security\Validation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\scripts\build-minified-assets.ps1
+[2026-05-01 20:15:45] SKIP (exists): curated\scripts\export-sharepoint-pages.ps1
+[2026-05-01 20:15:45] SKIP (exists): curated\scripts\promote-site.ps1
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\validate-and-publish-scripts.ps1
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\brandguide\Brand-Guidelines.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\brandguide\BrandGuideHome.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Documentation.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Home.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Logos.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\SocialMediaKit.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\brandguide\Brand-Guidelines.html
+[2026-05-01 20:15:45] SKIP (exists): curated\brandguide\BrandGuideHome.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Documentation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Home.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Logos.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\SocialMediaKit.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Architecture-Overview.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Architecture.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Artifacts-Index.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Automation.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-20260306-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-20260306-0345.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0410.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0417.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0427.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0738.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0742.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260306-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Artifacts-Index-20260306-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Cleanup-Summary.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Conditional-Access-20260306-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0409.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0417.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0426.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0738.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0742.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-20260307-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0409.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0417.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0426.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0738.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0742.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260227-1151.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260227-1753.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260305-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260306-0345.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260314-1157.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260330-0918.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260401-1000.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-20260307-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0409.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0417.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0426.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0738.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0742.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260403-0300.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Intune-20260307-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Change-Log.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0410.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0418.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0427.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0738.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0742.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260227-0849.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1151.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1753.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\portfolio\Change-Portfolio-Summary-20260306-0345.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0410.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0418.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0427.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0738.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0742.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Change-Security-20260307-0200.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Change-Validation-20260306-0345.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Change-Validation-Results.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Cleanup-Summary.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Collaboration.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Conditional-Access.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Endpoint-Management-Intune.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Endpoint-Management.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Exchange-Online.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Exchange-Setup.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Exchange.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Home.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Identity-and-Security.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Identity-Setup.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Identity.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Intune-Setup.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Intune.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Lab-Overview.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\MFA-Enforcement.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\New-Home.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Operations.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\portfolio\Portfolio-Summary.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Power-Platform.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Resume-Summary.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-and-Automation.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Automation.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Security-Baselines.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Security-Overview.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Security.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\SharePoint-OneDrive.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Start-Here.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Teams-Setup.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Teams.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Validation-Audit.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Validation-Results.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Validation.aspx
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Architecture-Overview.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Architecture.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Artifacts-Index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Automation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-20260306-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-20260306-0345.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0410.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0417.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0427.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0738.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0742.html
+[2026-05-01 20:15:45] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260306-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Artifacts-Index-20260306-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Cleanup-Summary.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Conditional-Access-20260306-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0409.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0417.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0426.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0738.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0742.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-20260307-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0409.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0417.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0426.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0738.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0742.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260227-1151.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260227-1753.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260305-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260306-0345.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260314-1157.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260330-0918.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Home-20260401-1000.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-20260307-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0409.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0417.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0426.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0738.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0742.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Change-Identity-and-Security-20260403-0300.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Change-Intune-20260307-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Change-Log.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0410.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0418.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0427.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0738.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0742.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260227-0849.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1151.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1753.html
+[2026-05-01 20:15:45] SKIP (exists): curated\portfolio\Change-Portfolio-Summary-20260306-0345.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0410.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0418.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0427.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0738.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0742.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Change-Security-20260307-0200.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Change-Validation-20260306-0345.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Change-Validation-Results.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Cleanup-Summary.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Collaboration.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Conditional-Access.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Endpoint-Management-Intune.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Endpoint-Management.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Exchange-Online.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Exchange-Setup.html
+[2026-05-01 20:15:45] SKIP (exists): curated\exchange-online\Exchange.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Final-Deliverables.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Home.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Identity-and-Security.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Identity-Setup.html
+[2026-05-01 20:15:45] SKIP (exists): curated\identity\Identity.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Intune-Setup.html
+[2026-05-01 20:15:45] SKIP (exists): curated\endpoint-management\Intune.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Lab-Overview.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\MFA-Enforcement.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\New-Home.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Operations.html
+[2026-05-01 20:15:45] SKIP (exists): curated\portfolio\Portfolio-Summary.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Power-Platform.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Resume-Summary.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-and-Automation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Automation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.html
+[2026-05-01 20:15:45] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Security-Baselines.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Security-Overview.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Security.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\SharePoint-OneDrive.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Start-Here.html
+[2026-05-01 20:15:45] SKIP (exists): curated\home-lab\Teams-Setup.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\Teams.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Validation-Audit.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Validation-Results.html
+[2026-05-01 20:15:45] SKIP (exists): curated\security\Validation.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] SKIP (exists): curated\web\index.html
+[2026-05-01 20:15:45] --- Auto-curation run finished ---
+[2026-05-01 20:18:16] --- Auto-curation run started ---
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\Brand-Guidelines.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\BrandGuideHome.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\Brand-Guidelines.html
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\BrandGuideHome.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Automation.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Collaboration.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Home.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Lab-Overview.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-and-Automation.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Automation.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Automation.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.html
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.html
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Collaboration.html
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Home.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Lab-Overview.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-and-Automation.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Automation.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.html
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\scripts\build-minified-assets.ps1
+[2026-05-01 20:18:16] SKIP (exists): curated\scripts\export-sharepoint-pages.ps1
+[2026-05-01 20:18:16] SKIP (exists): curated\scripts\promote-site.ps1
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\validate-and-publish-scripts.ps1
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\Brand-Guidelines.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\BrandGuideHome.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\web\Documentation.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Home.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\Logos.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\web\SocialMediaKit.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\Brand-Guidelines.html
+[2026-05-01 20:18:16] SKIP (exists): curated\brandguide\BrandGuideHome.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\Documentation.html
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Home.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\Logos.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\SocialMediaKit.html
+[2026-05-01 20:18:16] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Architecture-Overview.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Architecture.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Artifacts-Index.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Automation.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-20260306-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-20260306-0345.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0410.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0417.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0427.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260306-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Artifacts-Index-20260306-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Cleanup-Summary.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\endpoint-management\Change-Conditional-Access-20260306-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0409.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0417.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0426.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\exchange-online\Change-Exchange-20260307-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0409.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0417.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0426.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Home-20260227-1151.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Home-20260227-1753.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Home-20260305-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Home-20260306-0345.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Home-20260314-1157.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Home-20260330-0918.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Home-20260401-1000.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\identity\Change-Identity-20260307-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0409.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0417.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0426.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\identity\Change-Identity-and-Security-20260403-0300.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\endpoint-management\Change-Intune-20260307-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\web\Change-Log.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0410.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0418.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0427.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260227-0849.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1151.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1753.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\portfolio\Change-Portfolio-Summary-20260306-0345.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0410.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0418.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0427.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\security\Change-Security-20260307-0200.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\security\Change-Validation-20260306-0345.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\security\Change-Validation-Results.aspx
+[2026-05-01 20:18:16] SKIP (exists): curated\script-documentation\Cleanup-Summary.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Collaboration.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Conditional-Access.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Endpoint-Management-Intune.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Endpoint-Management.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Exchange-Online.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Exchange-Setup.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Exchange.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Home.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Identity-and-Security.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Identity-Setup.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Identity.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Intune-Setup.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Intune.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Lab-Overview.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\web\MFA-Enforcement.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\New-Home.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Operations.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\portfolio\Portfolio-Summary.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Power-Platform.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Resume-Summary.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-and-Automation.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Automation.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Security-Baselines.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Security-Overview.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Security.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\web\SharePoint-OneDrive.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Start-Here.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Teams-Setup.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Teams.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Validation-Audit.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Validation-Results.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Validation.aspx
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Architecture-Overview.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Architecture.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Artifacts-Index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Automation.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-20260306-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-20260306-0345.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0410.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0417.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0427.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0738.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260223-0742.html
+[2026-05-01 20:18:17] SKIP (exists): curated\architecture\Change-Architecture-Overview-20260306-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Artifacts-Index-20260306-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Automation-20260306-0346.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Cleanup-Summary.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Change-Conditional-Access-20260306-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0409.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0417.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0426.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0738.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Change-Endpoint-Management-Intune-20260223-0742.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Change-Exchange-20260307-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0409.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0417.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0426.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0738.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Change-Exchange-Online-20260223-0742.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Home-20260227-1151.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Home-20260227-1753.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Home-20260305-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Home-20260306-0345.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Home-20260314-1157.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Home-20260330-0918.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Home-20260401-1000.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Change-Identity-20260307-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0409.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0417.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0426.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0738.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Change-Identity-and-Security-20260223-0742.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Change-Identity-and-Security-20260403-0300.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Change-Intune-20260307-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-Lab-Overview-20260307-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Change-Log.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0410.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0418.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0427.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0738.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260223-0742.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260227-0849.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1151.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Change-New-Home-20260227-1753.html
+[2026-05-01 20:18:17] SKIP (exists): curated\portfolio\Change-Portfolio-Summary-20260306-0345.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0410.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0418.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0427.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0738.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Power-Platform-20260223-0742.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0410.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0418.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0427.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0738.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-and-Automation-20260223-0742.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0409.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0417.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0426.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0737.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-Used-20260223-0741.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Change-Scripts-Used_BACKUP_20260227-205559-20260228-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Change-Security-20260307-0200.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Change-Validation-20260306-0345.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Change-Validation-Results.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Cleanup-Summary.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Collaboration.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Conditional-Access.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Endpoint-Management-Intune.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Endpoint-Management.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Exchange-Online.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Exchange-Setup.html
+[2026-05-01 20:18:17] SKIP (exists): curated\exchange-online\Exchange.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Final-Deliverables.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Home.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Identity-and-Security.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Identity-Setup.html
+[2026-05-01 20:18:17] SKIP (exists): curated\identity\Identity.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Intune-Setup.html
+[2026-05-01 20:18:17] SKIP (exists): curated\endpoint-management\Intune.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Lab-Overview.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\MFA-Enforcement.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\New-Home.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Operations.html
+[2026-05-01 20:18:17] SKIP (exists): curated\portfolio\Portfolio-Summary.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Power-Platform.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Resume-Summary.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-and-Automation.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Automation.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-205559.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210344.html
+[2026-05-01 20:18:17] SKIP (exists): curated\script-documentation\Scripts-Used_BACKUP_20260227-210614.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Security-Baselines.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Security-Overview.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Security.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\SharePoint-OneDrive.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Start-Here.html
+[2026-05-01 20:18:17] SKIP (exists): curated\home-lab\Teams-Setup.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\Teams.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Validation-Audit.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Validation-Results.html
+[2026-05-01 20:18:17] SKIP (exists): curated\security\Validation.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] SKIP (exists): curated\web\index.html
+[2026-05-01 20:18:17] --- Auto-curation run finished ---

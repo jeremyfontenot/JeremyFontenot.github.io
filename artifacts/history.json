@@ -1,0 +1,101 @@
+[
+  {
+    "timestamp": "2026-05-16T22:48:57.824313+00:00",
+    "mode": "normal",
+    "score": 70,
+    "threshold": 80,
+    "passed": false,
+    "structural_issues": 0,
+    "warning_issues": 81,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-16T22:49:24.585175+00:00",
+    "mode": "normal",
+    "score": 70,
+    "threshold": 80,
+    "passed": false,
+    "structural_issues": 0,
+    "warning_issues": 81,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-16T22:52:06.849850+00:00",
+    "mode": "normal",
+    "score": 70,
+    "threshold": 80,
+    "passed": false,
+    "structural_issues": 0,
+    "warning_issues": 56,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-16T22:52:30.936761+00:00",
+    "mode": "normal",
+    "score": 100,
+    "threshold": 80,
+    "passed": true,
+    "structural_issues": 0,
+    "warning_issues": 0,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-16T22:57:42.469440+00:00",
+    "mode": "normal",
+    "score": 100,
+    "threshold": 80,
+    "passed": true,
+    "structural_issues": 0,
+    "warning_issues": 0,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-17T00:18:14.379806+00:00",
+    "mode": "normal",
+    "score": 100,
+    "threshold": 80,
+    "passed": true,
+    "structural_issues": 0,
+    "warning_issues": 0,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-17T00:21:25.869876+00:00",
+    "mode": "normal",
+    "score": 100,
+    "threshold": 80,
+    "passed": true,
+    "structural_issues": 0,
+    "warning_issues": 0,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-17T00:22:53.732583+00:00",
+    "mode": "normal",
+    "score": 100,
+    "threshold": 80,
+    "passed": true,
+    "structural_issues": 0,
+    "warning_issues": 0,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  },
+  {
+    "timestamp": "2026-05-17T00:31:13.806254+00:00",
+    "mode": "normal",
+    "score": 100,
+    "threshold": 80,
+    "passed": true,
+    "structural_issues": 0,
+    "warning_issues": 0,
+    "manifest_count": 450,
+    "actual_docs_count": 450
+  }
+]

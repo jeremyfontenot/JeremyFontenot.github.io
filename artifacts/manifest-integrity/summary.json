@@ -1,0 +1,19 @@
+{
+  "manifest_count": 450,
+  "actual_docs_count": 450,
+  "missing_targets": 0,
+  "orphaned_docs": 0,
+  "duplicate_path_groups": 0,
+  "case_collisions": 0,
+  "duplicate_titles": 81,
+  "invalid_metadata_items": 0,
+  "unencoded_spaces": 0,
+  "score": 100,
+  "structural_issues": 0,
+  "warning_issues": 0,
+  "ui_title_collisions": 81,
+  "mode": "normal",
+  "threshold": 80,
+  "passed": true,
+  "generated_at": "2026-05-17T00:31:13.806254+00:00"
+}
