@@ -1,0 +1,9 @@
+{
+  "policyName": "Secure-Workstation",
+  "platform": "windows10AndLater",
+  "settings": {
+    "bitlocker": true,
+    "defender": { "realTimeProtection": true },
+    "firewall": { "enabled": true }
+  }
+}

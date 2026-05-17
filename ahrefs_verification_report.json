@@ -1,0 +1,38 @@
+{
+  "report": {
+    "broken_links": [],
+    "duplicate_pages": [],
+    "missing_canonicals": [],
+    "weak_meta_descriptions": [],
+    "thin_content_pages": [],
+    "unnormalized_links": [],
+    "invalid_internal_links": [],
+    "sitemap_mismatches": {
+      "missing_from_sitemap": [],
+      "sitemap_missing_pages": []
+    },
+    "indexnow_mismatches": {
+      "missing_from_indexnow": [],
+      "indexnow_removed_pages": []
+    },
+    "orphan_pages": []
+  },
+  "summary": {
+    "broken_links": 0,
+    "duplicate_pages": 0,
+    "missing_canonicals": 0,
+    "weak_meta_descriptions": 0,
+    "thin_content_pages": 0,
+    "unnormalized_links": 0,
+    "invalid_internal_links": 0,
+    "sitemap_mismatches": {
+      "missing_from_sitemap": 0,
+      "sitemap_missing_pages": 0
+    },
+    "indexnow_mismatches": {
+      "missing_from_indexnow": 0,
+      "indexnow_removed_pages": 0
+    },
+    "orphan_pages": 0
+  }
+}

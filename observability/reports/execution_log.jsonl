@@ -1,0 +1,22 @@
+﻿{
+    "error_class":  "ExecutionFailure",
+    "error_id":  "exec-20260514-001",
+    "incident_type":  "SYSTEM",
+    "severity":  "high",
+    "error_code":  "SCRIPT_NOT_FOUND",
+    "timestamp":  "2026-05-14T23:46:20.5956365Z",
+    "script_name":  "execution-layer.py",
+    "exec_context":  "powershell",
+    "script_path":  "C:\\Users\\jeremy\\Dev\\Portfolio-Dev\\scripts\\scripts\\execution-layer.py"
+}
+{
+    "error_class":  "ExecutionFailure",
+    "error_id":  "exec-20260514-001",
+    "incident_type":  "SYSTEM",
+    "severity":  "high",
+    "error_code":  "SCRIPT_NOT_FOUND",
+    "timestamp":  "2026-05-14T23:47:18.0129165Z",
+    "script_name":  "execution-layer.py",
+    "exec_context":  "powershell",
+    "script_path":  "C:\\Users\\jeremy\\Dev\\Portfolio-Dev\\scripts\\scripts\\execution-layer.py"
+}

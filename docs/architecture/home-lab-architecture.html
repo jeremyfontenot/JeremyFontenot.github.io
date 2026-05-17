@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Lab Architecture | Documentation</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/docs/architecture/home-lab-architecture.html">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <meta name="description" content="Home Lab Architecture | Documentation ← Back to Architecture Enterprise Home Lab Architecture A Dell R710‑based enterprise lab environment built on Proxmox">
+
+  <meta property="og:title" content="Home Lab Architecture | Documentation">
+  <meta property="og:description" content="Home Lab Architecture | Documentation ← Back to Architecture Enterprise Home Lab Architecture A Dell R710‑based enterprise lab environment built on Pr">
+  <meta property="og:url" content="https://jeremyfontenot.online/docs/architecture/home-lab-architecture.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home Lab Architecture | Documentation">
+  <meta name="twitter:description" content="Home Lab Architecture | Documentation ← Back to Architecture Enterprise Home Lab Architecture A Dell R710‑based enterprise lab environment built on Pr">
+  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+</head>
+
+<body class="section">
+  <div class="container">
+
+    <p class="doc-nav"><a href="/docs/architecture/index.html">← Back to Architecture</a></p>
+
+    <h1>Enterprise Home Lab Architecture</h1>
+  <p>This section on Home Lab Architecture | Documentation provides practical context and links to related documentation and projects. It outlines common use-cases, implementation notes, and pointers to scripts or configurations maintained in the repository. Refer to the project pages for artifacts and configuration examples.</p>
+    <p class="lead">
+      A Dell R710‑based enterprise lab environment built on Proxmox VE as the primary hypervisor,
+      with Windows Server 2022 AD DS, RHEL 9, pfSense routing, Suricata/Snort IDS/IPS, and full
+      monitoring via Wazuh, Zabbix, and Graylog.
+    </p>
+
+    <hr>
+
+    <h2>Core Architecture</h2>
+    <ul>
+      <li><strong>Hypervisor:</strong> Proxmox VE</li>
+      <li><strong>Firewall:</strong> pfSense</li>
+      <li><strong>IDS/IPS:</strong> Suricata / Snort</li>
+      <li><strong>Directory Services:</strong> Windows Server 2022 AD DS</li>
+      <li><strong>Linux Services:</strong> RHEL 9</li>
+      <li><strong>Monitoring:</strong> Wazuh, Zabbix, Graylog</li>
+    </ul>
+
+    <hr>
+
+    <h2>Architecture Diagram</h2>
+<pre>
+[Internet]
+   |
+[pfSense Firewall]
+   |
+[Proxmox VE Host]
+   |--- Windows Server 2022 (Active Directory)
+   |--- RHEL 9 (Linux Services)
+   |--- Suricata/Snort (IDS/IPS)
+   |--- Wazuh Manager (Security Monitoring)
+   |--- Zabbix Server (Infrastructure Monitoring)
+   |--- Graylog (Log Aggregation)
+</pre>
+
+    <hr>
+
+    <h2>Evidence Excerpts</h2>
+    <blockquote>
+      “A Dell R710-based enterprise lab environment built on Proxmox VE as the primary hypervisor…”
+    </blockquote>
+    <blockquote>
+      “pfSense handling routing and firewall policy, Suricata/Snort providing IDS/IPS coverage…”
+    </blockquote>
+    <blockquote>
+      “Zabbix/Wazuh/Graylog supporting centralized monitoring and log analysis…”
+    </blockquote>
+
+  </div>
+
+  <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
+</body>
+</html>

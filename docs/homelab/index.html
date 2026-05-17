@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Homelab Architecture — Jeremy Fontenot</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/docs/homelab/">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Homelab Architecture — Jeremy Fontenot JF Homelab Architecture & documentation Overview Diagram Components Scenarios Homelab architecture This homelab mirr">
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:site_name" content="Jeremy Fontenot" />
+  <meta property="og:title" content="Homelab Architecture — Jeremy Fontenot" />
+  <meta property="og:description" content="Documented homelab environment mirroring small-business infrastructure: AD, file services, monitoring, and cloud integration." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://jeremyfontenot.online/docs/homelab/" />
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-homelab.png" />
+
+  <meta name="theme-color" content="#050816" />
+  <link rel="icon" href="/assets/logos/favicon_64x64.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --brand-cyan: #4CC9F0;
+      --brand-purple: #C94CFF;
+      --brand-magenta: #E056FD;
+      --bg-900: #050816;
+      --bg-800: #071021;
+      --card-bg: rgba(10, 14, 26, 0.96);
+      --muted: #9aa6b2;
+      --text: #e6eef8;
+      --glass-border: rgba(148,163,184,0.12);
+      --radius-md: 0.9rem;
+      --radius-lg: 1.25rem;
+      --shadow-lg: 0 22px 55px rgba(2,6,23,0.9);
+    }
+
+    html {
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(76,201,240,0.16), transparent 55%),
+        radial-gradient(circle at 100% 0%, rgba(224,86,253,0.16), transparent 55%),
+        linear-gradient(180deg, var(--bg-900) 0%, var(--bg-800) 60%);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(14px);
+      background:
+        linear-gradient(90deg, rgba(5,8,22,0.96), rgba(5,8,22,0.92)),
+        radial-gradient(circle at 0% 0%, rgba(76,201,240,0.18), transparent 55%),
+        radial-gradient(circle at 100% 0%, rgba(224,86,253,0.18), transparent 55%);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: .9rem;
+      background: radial-gradient(circle at 10% 0%, var(--brand-cyan), var(--brand-magenta));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #041025;
+      font-weight: 800;
+      font-size: 0.75rem;
+      box-shadow: 0 14px 40px rgba(76,201,240,0.35);
+    }
+
+    .nav-link {
+      position: relative;
+      padding: .25rem .2rem;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.85rem;
+      transition: color .18s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--brand-cyan);
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      height: 3px;
+      width: 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
+      transition: width .18s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(76,201,240,0.18);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: .25rem .6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.18);
+      background: linear-gradient(90deg, rgba(76,201,240,0.16), rgba(224,86,253,0.16));
+      font-size: .78rem;
+      color: var(--text);
+      gap: 0.35rem;
+    }
+
+    section h1,
+    section h2 {
+      background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+
+    section h2::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      margin-top: 0.4rem;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--brand-cyan), var(--brand-purple));
+      box-shadow: 0 0 18px rgba(76,201,240,0.25);
+    }
+
+    /* HOMELAB DIAGRAM STYLING */
+    .diagram-shell {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(76,201,240,0.25);
+      background:
+        radial-gradient(circle at 0% 0%, rgba(76,201,240,0.16), transparent 55%),
+        radial-gradient(circle at 100% 0%, rgba(224,86,253,0.16), transparent 55%),
+        rgba(10,14,26,0.96);
+      box-shadow: var(--shadow-lg);
+      padding: 1.25rem;
+    }
+
+    .diagram-node {
+      border-radius: 0.9rem;
+      border: 1px solid rgba(76,201,240,0.25);
+      background: linear-gradient(180deg, rgba(76,201,240,0.10), rgba(201,76,255,0.08));
+      padding: 0.75rem;
+      font-size: 0.75rem;
+      color: var(--text);
+    }
+
+    .diagram-node-title {
+      font-weight: 600;
+      color: var(--brand-cyan);
+      margin-bottom: 0.25rem;
+    }
+
+    .diagram-connector {
+      height: 2px;
+      background: linear-gradient(90deg, var(--brand-cyan), var(--brand-magenta));
+      opacity: 0.8;
+    }
+
+    .footer-shell {
+      border-top: 1px solid rgba(148,163,184,0.25);
+      background:
+        radial-gradient(circle at 0% 100%, rgba(76,201,240,0.18), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(224,86,253,0.18), transparent 55%),
+        linear-gradient(180deg, #020617, #020617);
+    }
+  </style>
+
+  <meta property="og:title" content="Homelab Architecture — Jeremy Fontenot">
+  <meta property="og:description" content="Homelab architecture, diagrams, and documentation for Jeremy Fontenot">
+  <meta property="og:url" content="https://jeremyfontenot.online/docs/homelab/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Homelab Architecture — Jeremy Fontenot">
+  <meta name="twitter:description" content="Homelab architecture, diagrams, and documentation for Jeremy Fontenot">
+  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+</head>
+<body class="text-slate-100">
+  <header class="nav-wrap">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="/index.html" class="flex items-center gap-2">
+          <div class="brand-mark">JF</div>
+          <div class="flex flex-col">
+            <span class="text-xs font-semibold tracking-wide text-slate-100">Homelab</span>
+            <span class="text-[11px] text-slate-400">Architecture & documentation</span>
+          </div>
+        </a>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-xs">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#diagram" class="nav-link">Diagram</a>
+        <a href="#components" class="nav-link">Components</a>
+        <a href="#scenarios" class="nav-link">Scenarios</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-10 space-y-10">
+    <section id="overview" class="space-y-4">
+      <h1 class="text-2xl sm:text-3xl">Homelab architecture</h1>
+      <p class="text-sm text-slate-300 max-w-3xl">
+        This homelab mirrors a small-business environment: a Windows Server domain, file services, basic monitoring, and
+        cloud-connected services. It’s designed to practice real workflows: user provisioning, access control, troubleshooting,
+        and documentation.
+      </p>
+      <div class="flex flex-wrap gap-2 text-[11px] text-slate-200">
+        <span class="badge">Windows Server · AD DS</span>
+        <span class="badge">File services</span>
+        <span class="badge">Monitoring</span>
+        <span class="badge">Cloud concepts</span>
+        <span class="badge">PowerShell automation</span>
+      </div>
+    </section>
+
+    <section id="diagram" class="space-y-4">
+      <h2 class="text-xl">High-level diagram</h2>
+      <p class="text-sm text-slate-300 max-w-3xl">
+        The diagram below shows the core components: clients, a domain controller, file server, and cloud services. It’s not
+        meant to be exhaustive, but to communicate how traffic and responsibilities are split.
+      </p>
+
+      <div class="diagram-shell">
+        <div class="grid md:grid-cols-3 gap-3 text-[11px]">
+          <div class="diagram-node">
+            <div class="diagram-node-title">Client segment</div>
+            <p>Workstations joined to the domain, using DHCP/DNS from the server and mapped drives for file access.</p>
+          </div>
+          <div class="diagram-node">
+            <div class="diagram-node-title">Core services</div>
+            <p>Domain controller providing AD DS, DNS, and DHCP. File server hosting departmental shares and home folders.</p>
+          </div>
+          <div class="diagram-node">
+            <div class="diagram-node-title">Cloud & monitoring</div>
+            <p>Microsoft 365 tenant, basic monitoring tools, and logging to validate services and track changes.</p>
+          </div>
+        </div>
+
+        <div class="my-4 diagram-connector"></div>
+
+        <div class="grid md:grid-cols-2 gap-3 text-[11px]">
+          <div class="diagram-node">
+            <div class="diagram-node-title">Identity & access</div>
+            <p>Users and groups in AD, mapped to shares and roles. Password policy and lockout thresholds configured.</p>
+          </div>
+          <div class="diagram-node">
+            <div class="diagram-node-title">Automation</div>
+            <p>PowerShell scripts for user creation, group membership, and basic reporting on AD and file usage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="components" class="space-y-4">
+      <h2 class="text-xl">Key components</h2>
+      <div class="grid md:grid-cols-3 gap-4 text-[12px]">
+        <div class="card">
+          <div class="badge mb-2">Domain controller</div>
+          <p class="text-slate-300 mb-1">AD DS, DNS, and DHCP for the lab network.</p>
+          <p class="text-slate-400">
+            Includes OU structure, groups, and baseline GPOs for password policy and workstation settings.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge mb-2">File server</div>
+          <p class="text-slate-300 mb-1">Departmental shares and home folders.</p>
+          <p class="text-slate-400">
+            NTFS and share permissions mapped to groups, with an access matrix documented.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge mb-2">Cloud tenant</div>
+          <p class="text-slate-300 mb-1">Microsoft 365 tenant for mail and collaboration.</p>
+          <p class="text-slate-400">
+            Used to practice license assignment, mailbox basics, and identity concepts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="scenarios" class="space-y-4 pb-10">
+      <h2 class="text-xl">Practice scenarios</h2>
+      <p class="text-sm text-slate-300 max-w-3xl">
+        The homelab is used to rehearse real tasks: onboarding, access changes, troubleshooting, and small incidents. Each
+        scenario is documented so it can be repeated and improved.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-4 text-[12px]">
+        <div class="card">
+          <div class="badge mb-2">Onboarding</div>
+          <p class="text-slate-300 mb-1">Create a new user, assign groups, and validate access.</p>
+          <p class="text-slate-400">
+            Includes: PowerShell commands, screenshots of group membership, and mapped drive verification.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge mb-2">Access change</div>
+          <p class="text-slate-300 mb-1">Adjust a user’s access to a departmental share.</p>
+          <p class="text-slate-400">
+            Includes: updated access matrix, before/after screenshots, and notes on communication.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge mb-2">Troubleshooting</div>
+          <p class="text-slate-300 mb-1">Resolve a DNS or login issue.</p>
+          <p class="text-slate-400">
+            Includes: event log snippets, ping/nslookup outputs, and root cause notes.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge mb-2">Documentation</div>
+          <p class="text-slate-300 mb-1">Update diagrams and notes after changes.</p>
+          <p class="text-slate-400">
+            Ensures the lab stays aligned with what’s actually deployed.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-shell mt-4">
+    <div class="max-w-5xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
+      <span>Homelab documentation — Jeremy Fontenot</span>
+      <a href="/index.html" class="text-slate-300 hover:text-brand-cyan">Back to main portfolio</a>
+    </div>
+  </footer>
+
+  <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+tenant: jeremyfontenot-lab
+control_set: m365-entry-admin-baseline
+classification: redacted_portfolio_evidence
+last_reviewed: 2026-05-09
+policies:
+  - name: CA001-Require-MFA-For-Admins
+    state: reportOnly
+    users:
+      include_roles:
+        - Global Administrator
+        - Privileged Role Administrator
+        - Exchange Administrator
+        - Intune Administrator
+      exclude_accounts:
+        - breakglass-review-required
+    cloud_apps:
+      include:
+        - All cloud apps
+    grant_controls:
+      operator: AND
+      built_in_controls:
+        - mfa
+    validation:
+      evidence:
+        - admin-role-export
+        - sign-in-log-review
+        - baseline-report
+      rollback: Disable report-only policy after exporting sign-in impact.
+  - name: CA002-Block-Legacy-Authentication
+    state: reportOnly
+    users:
+      include_groups:
+        - SG-All-Cloud-Users
+    client_apps:
+      include:
+        - exchangeActiveSync
+        - other
+    grant_controls:
+      operator: OR
+      built_in_controls:
+        - block
+    validation:
+      evidence:
+        - legacy-auth-signin-query
+        - helpdesk-exception-review
+      rollback: Remove policy assignment and document affected legacy clients.

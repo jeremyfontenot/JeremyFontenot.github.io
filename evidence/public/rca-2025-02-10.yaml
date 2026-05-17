@@ -1,0 +1,9 @@
+title: RCA Mail Flow Outage
+incident_date: 2025-02-10
+visibility: public
+status: redacted
+summary:
+  - mail flow delay investigated
+  - transport rule isolated
+  - validation completed before closure
+source: docs/experience/experience.html

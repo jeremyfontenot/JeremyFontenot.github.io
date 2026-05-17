@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IT Skills Matrix — Jeremy Fontenot</title>
+  <link rel="canonical" href="https://jeremyfontenot.online/docs/skills/">
+  <meta name="description" content="IT Skills Matrix covering identity, Windows Server, cloud, Intune, networking, automation, and troubleshooting evidence from the portfolio site.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="IT Skills Matrix — Jeremy Fontenot">
+  <meta property="og:description" content="System administration skills tied to evidence and case studies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeremyfontenot.online/docs/skills/">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+  <link rel="icon" href="/assets/logos/favicon_64x64.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <meta property="og:title" content="IT Skills Matrix — Jeremy Fontenot">
+  <meta property="og:description" content="System Administrator skills matrix covering identity, Windows Server, Microsoft 365, Intune, networking, automation, and troubleshooting.">
+  <meta property="og:url" content="https://jeremyfontenot.online/docs/skills/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IT Skills Matrix — Jeremy Fontenot">
+  <meta name="twitter:description" content="System Administrator skills matrix covering identity, Windows Server, Microsoft 365, Intune, networking, automation, and troubleshooting.">
+  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="/index.html"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      <ul id="primary-menu" class="nav-menu" data-collapsed="true">
+        <li><a class="nav-link" href="/index.html">Home</a></li>
+        <li><a class="nav-link" href="/index.html#summary-title">Summary</a></li>
+        <li><a class="nav-link" href="/skills.html" aria-current="page">Skills</a></li>
+        <li><a class="nav-link" href="/docs/experience/">Experience</a></li>
+        <li><a class="nav-link" href="/docs/projects/">Projects</a></li>
+        <li><a class="nav-link" href="/docs/">Documentation</a></li>
+        <li><a class="nav-link" href="/docs/index.html">Tools</a></li>
+        <li><a class="nav-link" href="/index.html#certs-title">Certifications</a></li>
+        <li><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" class="page-shell">
+    <header class="section">
+      <p class="eyebrow">Skills Matrix</p>
+      <h1 class="page-title">System administration skills tied to evidence.</h1>
+      <p class="lead">This page summarizes current capability without overstating seniority. Each domain links to projects, artifacts, or operational documentation that show practical work.</p>
+    </header>
+
+    <section class="section grid grid-2" aria-label="Skills">
+      <article id="identity" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-user-shield"></i></span><h2>Identity & Access Management</h2><p>Manages AD users, groups, and OUs. Uses Entra ID concepts, MFA enforcement, and basic Conditional Access documentation.</p><div class="proficiency"><span class="badge">Working proficiency</span><div class="bar"><span style="width:72%"></span></div></div><ul class="evidence-list"><li>AD Migration Plan</li><li><code>ad-migration-plan.md</code> (example artifact)</li><li>M365 lab identity design</li></ul></article>
+      <article id="windows" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-server"></i></span><h2>Windows Administration</h2><p>Configures Windows Server roles, DNS, and DHCP. Documents GPO baselines, file service concepts, and lab validation workflows.</p><div class="proficiency"><span class="badge">Working proficiency</span><div class="bar"><span style="width:70%"></span></div></div><ul class="evidence-list"><li>Windows Server case study</li><li><code>gpo-template-StandardDesktop.xml</code> (example artifact)</li><li><a href="/docs/index.html">Server setup guides</a></li></ul></article>
+      <article id="cloud" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-cloud"></i></span><h2>Cloud Administration</h2><p>Builds Microsoft 365 tenant documentation across Entra ID, Exchange Online, Teams, and SharePoint. Also maintains baseline reporting.</p><div class="proficiency"><span class="badge">Developing proficiency</span><div class="bar"><span style="width:66%"></span></div></div><ul class="evidence-list"><li>Microsoft 365 Personal Cloud Lab</li><li><code>m365-baseline-report-2024-10-05.md</code> (example artifact)</li><li>Identity notes</li></ul></article>
+      <article id="endpoint" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-laptop-medical"></i></span><h2>Endpoint Management</h2><p>Documents Intune compliance settings and Windows 11 security baselines. Includes JSON exports and deployment validation logs.</p><div class="proficiency"><span class="badge">Developing proficiency</span><div class="bar"><span style="width:65%"></span></div></div><ul class="evidence-list"><li>Intune Baseline Deployment</li><li><code>intune-profile-sample.json</code> (example artifact)</li><li><code>intune-validate-2024-10-05.log</code> (example log)</li></ul></article>
+      <article id="networking" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-network-wired"></i></span><h2>Networking</h2><p>Applies DNS, DHCP, VLAN, firewall, and connectivity troubleshooting basics. These are used in lab work and incident scenarios.</p><div class="proficiency"><span class="badge">Working foundation</span><div class="bar"><span style="width:68%"></span></div></div><ul class="evidence-list"><li>DNS RCA case study</li><li><code>rca-2025-02-10.md</code> (example artifact)</li><li>Troubleshooting playbooks</li></ul></article>
+      <article id="automation" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-terminal"></i></span><h2>Automation</h2><p>Writes readable PowerShell for provisioning and reporting. Uses scripts for evidence validation and repeatable administrative tasks.</p><div class="proficiency"><span class="badge">Working proficiency</span><div class="bar"><span style="width:74%"></span></div></div><ul class="evidence-list"><li>Provisioning Automation</li><li>Provisioning script</li><li><code>automation-run-2024-10-05.log</code> (example log)</li></ul></article>
+      <article id="security" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span><h2>Security</h2><p>Uses least privilege and MFA in baseline configurations. Tracks change validation and handles redacted evidence carefully.</p><div class="proficiency"><span class="badge">Developing proficiency</span><div class="bar"><span style="width:64%"></span></div></div><ul class="evidence-list"><li><code>prepost-audit-summary.csv</code> (example artifact)</li><li><code>remediation-disable-transportrule.ps1</code> (example script)</li><li>Security documentation</li></ul></article>
+      <article id="troubleshooting" class="card skill-section"><span class="card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></span><h2>Troubleshooting</h2><p>Uses structured problem statements and clear timelines. Reviews logs, tests hypotheses, applies remediation, and validates results.</p><div class="proficiency"><span class="badge">Working proficiency</span><div class="bar"><span style="width:76%"></span></div></div><ul class="evidence-list"><li>RCA project</li><li><code>incident-2025-02-10-logs.txt</code> (example log)</li><li>Playbooks</li></ul></article>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-inner"><span>&copy; <span id="year"></span> Jeremy Fontenot</span><span>Skills validated through projects and evidence artifacts</span></div></footer>
+  <script src="/js/main.js" defer></script>
+
+  <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
+</body>
+</html>

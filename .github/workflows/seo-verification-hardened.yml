@@ -1,0 +1,183 @@
+name: SEO Verification (Hardened Execution Layer)
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'docs/**'
+      - 'index.html'
+      - '.github/workflows/seo-verification-hardened.yml'
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  seo-verification:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      # ============================================================================
+      # EXECUTION LAYER: Hardened Subprocess Invocation (file-based only)
+      # ============================================================================
+      
+      - name: Run SEO Verification via Hardened Execution Layer
+        id: verify
+        shell: pwsh
+        run: |
+          # Use the repository's authoritative pass-4 wrapper.
+          ./scripts/verify_pass4.ps1
+
+          if (-not (Test-Path -LiteralPath "ahrefs_verify_pass4.json")) {
+            throw "Expected output missing: ahrefs_verify_pass4.json"
+          }
+
+          Write-Host "::notice::SEO Verification completed successfully"
+      
+      # ============================================================================
+      # CLASSIFICATION LAYER: Distinguish SYSTEM vs SEO incidents
+      # ============================================================================
+      
+      - name: Classify Incident Type (SYSTEM vs SEO)
+        id: classify
+        if: always()
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          from datetime import datetime
+          
+          # Check execution layer logs for SYSTEM incidents
+          execution_log_path = Path("observability/reports/execution_log.jsonl")
+          system_incidents = []
+          
+          if execution_log_path.exists():
+              with open(execution_log_path) as f:
+                  for line in f:
+                      entry = json.loads(line)
+                      if entry.get("status") == "failure":
+                          system_incidents.append(entry)
+          
+          # If SYSTEM incidents exist, fail immediately (execution layer problem)
+          if system_incidents:
+              print("::error::SYSTEM incident detected - execution layer failure")
+              print("::error::See observability/incidents/system/ for details")
+              with open("incident_type.txt", "w") as f:
+                  f.write("SYSTEM")
+              exit(1)
+          
+          # Check SEO verification results for SEO incidents
+          verify_report = Path("ahrefs_verify_pass4.json")
+          if verify_report.exists():
+              with open(verify_report) as f:
+                  data = json.load(f)
+              
+              summary = data.get("summary", {})
+              metrics = data.get("metrics", {})
+              broken_links = summary.get("total_broken_internal_links", metrics.get("broken_links", 0))
+              
+              if broken_links > 0:
+                  print("::error::SEO incident detected - broken links found")
+                  with open("incident_type.txt", "w") as f:
+                      f.write("SEO")
+                  exit(1)
+              else:
+                  print("::notice::All SEO checks passed")
+                  with open("incident_type.txt", "w") as f:
+                      f.write("NONE")
+      
+      # ============================================================================
+      # OBSERVABILITY: Record execution metrics and health
+      # ============================================================================
+      
+      - name: Record Execution Metrics
+        if: always()
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          from datetime import datetime
+          
+          metrics = {
+              "metric_type": "execution_layer_health",
+              "timestamp": datetime.utcnow().isoformat() + "Z",
+              "workflow_run": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+              "verification_completed": Path("ahrefs_verify_pass4.json").exists(),
+              "system_incidents": False,
+              "seo_incidents": False
+          }
+          
+          # Check for incidents
+          incident_type_file = Path("incident_type.txt")
+          if incident_type_file.exists():
+              incident_type = incident_type_file.read_text().strip()
+              if incident_type == "SYSTEM":
+                  metrics["system_incidents"] = True
+              elif incident_type == "SEO":
+                  metrics["seo_incidents"] = True
+          
+          metrics_file = Path("observability/reports/execution_metrics.json")
+          metrics_file.parent.mkdir(parents=True, exist_ok=True)
+          
+          with open(metrics_file, "w") as f:
+              json.dump(metrics, f, indent=2)
+          
+          print(f"::notice::Metrics recorded: {json.dumps(metrics)}")
+      
+      # ============================================================================
+      # COMMITMENT: Store verification artifacts and incident records
+      # ============================================================================
+      
+      - name: Commit Verification Artifacts
+        if: always()
+        run: |
+          git config user.email "seo-verification@example.com"
+          git config user.name "SEO Verification Bot"
+          
+          # Add verification results
+          [ -f ahrefs_verify_pass4.json ] && git add ahrefs_verify_pass4.json -f || true
+          
+          # Add execution logs and incidents
+          [ -f observability/reports/execution_log.jsonl ] && git add observability/reports/execution_log.jsonl -f || true
+          [ -f observability/reports/execution_metrics.json ] && git add observability/reports/execution_metrics.json -f || true
+          [ -d observability/incidents/system ] && git add observability/incidents/system/ -f || true
+          
+          git commit -m "chore(seo): verification and execution logs [no-ci]" --allow-empty
+          git push
+      
+      # ============================================================================
+      # FAILURE HANDLING: Explicit classification and routing
+      # ============================================================================
+      
+      - name: Summary - Execution Layer Status
+        if: always()
+        run: |
+          if [ -f "incident_type.txt" ]; then
+            INCIDENT_TYPE=$(cat incident_type.txt)
+            if [ "$INCIDENT_TYPE" = "SYSTEM" ]; then
+              echo "::error::SYSTEM Incident - execution layer failure"
+              echo "See observability/incidents/system/ for diagnostic information"
+              exit 1
+            elif [ "$INCIDENT_TYPE" = "SEO" ]; then
+              echo "::error::SEO Incident - domain-level regression detected"
+              echo "See ahrefs_verify_pass4.json for details"
+              exit 1
+            else
+              echo "::notice::All checks passed - no incidents"
+            fi
+          else
+            echo "::warning::Could not determine incident status"
+          fi

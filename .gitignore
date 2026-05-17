@@ -1,0 +1,25 @@
+# Generated audit and evidence outputs
+/internal/
+/public/_content/docs/archive-filelist.csv
+/public/evidence/public/
+
+# Local OS/editor clutter
+Thumbs.db
+.DS_Store
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*.swo
+
+# SEO remediation artifacts
+ahrefs_verification_report.json
+ahrefs_verify_pass4.json
+final_index_reconciliation_report.json
+seo_quality_report.json
+link_repair_report.json
+unresolved_links.json
+scripts/compare_sitemap_indexnow.py
+scripts/fix_sitemap_indexnow.py
+scripts/verify_pass3.ps1

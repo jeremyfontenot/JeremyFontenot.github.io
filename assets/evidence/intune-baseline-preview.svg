@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Intune baseline compliance preview</title>
+  <desc id="desc">A dashboard-style preview of Windows 11 Intune baseline controls.</desc>
+  <rect width="960" height="540" fill="#071226"/>
+  <rect x="36" y="36" width="888" height="468" rx="24" fill="#0d1b34" stroke="#3fe0e8" stroke-opacity=".35"/>
+  <text x="64" y="86" fill="#6af7ff" font-family="Segoe UI, Arial" font-size="24" font-weight="700">Intune Windows 11 Baseline</text>
+  <g font-family="Segoe UI, Arial">
+    <rect x="64" y="126" width="832" height="62" rx="14" fill="#132543" stroke="#3fe0e8" stroke-opacity=".5"/>
+    <text x="92" y="164" fill="#f5f7fa" font-size="18" font-weight="700">JF-Win11-Secure-Workstation</text>
+    <text x="650" y="164" fill="#49d39a" font-size="16" font-weight="700">Validation passed</text>
+    <g font-size="15" fill="#f5f7fa">
+      <rect x="64" y="226" width="250" height="92" rx="14" fill="#132543" stroke="#3fe0e8" stroke-opacity=".3"/>
+      <text x="92" y="262">Firewall required</text><text x="92" y="292" fill="#49d39a">Compliant</text>
+      <rect x="354" y="226" width="250" height="92" rx="14" fill="#132543" stroke="#3fe0e8" stroke-opacity=".3"/>
+      <text x="382" y="262">Defender enabled</text><text x="382" y="292" fill="#49d39a">Compliant</text>
+      <rect x="644" y="226" width="250" height="92" rx="14" fill="#132543" stroke="#3fe0e8" stroke-opacity=".3"/>
+      <text x="672" y="262">Password policy</text><text x="672" y="292" fill="#49d39a">Compliant</text>
+      <rect x="64" y="350" width="830" height="74" rx="14" fill="#071226" stroke="#d65be8" stroke-opacity=".45"/>
+      <text x="92" y="394">Assignment scope: Windows 11 pilot group | Export: intune-profile-sample.json</text>
+    </g>
+  </g>
+</svg>
