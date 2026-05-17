@@ -4,16 +4,47 @@ document.addEventListener('DOMContentLoaded',()=>{
   const q = document.querySelector('#doc-search');
   if(q){document.addEventListener('keydown',e=>{if(e.key==='/'&&!e.metaKey){e.preventDefault();q.focus();}})}
 });
-// Ensure desktop nav is visible (keeps mobile collapse behavior)
-function updateNavDisplay(){
-  const isDesktop = window.matchMedia('(min-width:800px)').matches;
-  document.querySelectorAll('.nav').forEach(n=>{
-    if(isDesktop){ n.style.display = 'flex'; }
-    else { n.style.display = ''; }
-  });
+
+async function injectPrimaryNav(){
+  const navContainers = Array.from(document.querySelectorAll('[data-primary-nav]'));
+  if(!navContainers.length){
+    return;
+  }
+
+  try{
+    const response = await fetch('/components/primary-nav.html', { cache: 'no-cache' });
+    if(!response.ok){
+      throw new Error(response.status + ' ' + response.statusText);
+    }
+    const navMarkup = await response.text();
+
+    navContainers.forEach((container)=>{
+      container.innerHTML = navMarkup;
+    });
+
+    const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+    navContainers.forEach((container)=>{
+      container.querySelectorAll('a[href]').forEach((link)=>{
+        const href = link.getAttribute('href');
+        if(!href){
+          return;
+        }
+        const linkPath = href.replace(/\/$/, '') || '/';
+        if(linkPath === currentPath){
+          link.setAttribute('aria-current', 'page');
+        }else{
+          link.removeAttribute('aria-current');
+        }
+      });
+    });
+  }catch(error){
+    console.warn('injectPrimaryNav', error);
+  }
 }
-window.addEventListener('resize', updateNavDisplay);
-document.addEventListener('DOMContentLoaded', updateNavDisplay);
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  injectPrimaryNav();
+});
 
 function normalizeDocPath(path){ try{ return encodeURI(path); }catch(e){ return path } }
 
