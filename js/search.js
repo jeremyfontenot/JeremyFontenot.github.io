@@ -140,7 +140,21 @@ function renderResults(list, q){
   out.innerHTML = '';
   if(!list.length){ out.textContent = 'No results'; return }
   list.forEach(it=>{
-    const el = document.createElement('article'); el.className='result';
+    const el = document.createElement('article');
+    el.className = 'result doc-card';
+    
+    // Add icon class based on category or path
+    const category = (it.categories && it.categories[0] || '').toLowerCase();
+    const path = (it.path || '').toLowerCase();
+    if(category === 'scripts' || path.includes('/script')) el.classList.add('icon-script');
+    else if(category === 'runbook' || path.includes('/runbook')) el.classList.add('icon-runbook');
+    else if(category === 'guide' || path.includes('/guide')) el.classList.add('icon-guide');
+    else if(path.includes('/architecture')) el.classList.add('icon-architecture');
+    else if(path.includes('/security')) el.classList.add('icon-security');
+    else if(path.includes('/resume')) el.classList.add('icon-resume');
+    else if(path.includes('/certification')) el.classList.add('icon-cert');
+    else el.classList.add('icon-doc');
+
     const header = document.createElement('div');
     header.style.display = 'flex';
     header.style.flexWrap = 'wrap';

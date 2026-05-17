@@ -134,6 +134,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
       animated.forEach(el=>el.classList.add('in-view'));
     }
 
+    // Set staggered animation delays for timeline cards
+    const timelineCards = document.querySelectorAll('.timeline-card[data-animate]');
+    timelineCards.forEach((card, index)=>{
+      card.style.setProperty('--item-index', index);
+    });
+
     // subtle hover pulse hooks (CSS handles visuals)
     const interactives = document.querySelectorAll('.btn, a.contact-email');
     interactives.forEach(el=>{

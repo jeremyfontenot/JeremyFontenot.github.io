@@ -20,6 +20,19 @@
     </div>
   </header>
   <main class="container docs-hub" id="main">
+    <div class="docs-hero" data-animate="fade-up">
+      <div class="frosted-panel">
+        <h1>Documentation Hub</h1>
+        <p class="docs-intro">Explore comprehensive guides, architecture diagrams, runbooks, and reference documentation for cloud infrastructure and systems administration.</p>
+        <a href="#" class="cta-button" aria-label="Explore all documentation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/>
+          </svg>
+          Explore Documentation
+        </a>
+      </div>
+    </div>
+
     <div class="docs-controls">
       <input id="doc-search" class="search-input" type="search" placeholder="Search documentation, files, tags..." aria-label="Search documentation">
       <select id="filter-category" aria-label="Filter by category"></select>
@@ -32,7 +45,26 @@
     <div class="modal-panel" role="document" id="modal-panel"></div>
   </div>
 
-  <footer class="site-footer"><div class="container"><small>Documentation hub — content originates from /docs source files.</small></div></footer>
+  <footer class="docs-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="/assets/images/logo.png" alt="Jeremy Fontenot" width="48" height="48" loading="lazy"
+               onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
+          <div>
+            <small>Documentation Hub — content originates from /docs source files.</small>
+            <p class="footer-tagline">Comprehensive Reference Library</p>
+          </div>
+        </div>
+        <div class="tech-badges">
+          <span class="tech-badge">M365</span>
+          <span class="tech-badge">Entra ID</span>
+          <span class="tech-badge">Intune</span>
+          <span class="tech-badge">PowerShell</span>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="/js/title-format.js" defer></script>
   <script src="/js/search.js" defer></script>
   <script src="/js/main.js" defer></script>
