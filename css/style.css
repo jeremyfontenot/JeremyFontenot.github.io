@@ -61,6 +61,12 @@ a:hover{color:var(--color-primary)}
   .highlights{grid-template-columns:repeat(3,1fr)}
 }
 
+/* Ensure the primary nav is always visible on larger screens */
+@media(min-width:800px){
+  .nav{display:flex !important}
+  .nav-toggle{display:none}
+}
+
 /* Mobile nav: hamburger toggle and collapsed menu */
 .nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--color-text);padding:0.4rem 0.6rem;border-radius:8px;font-size:1.05rem}
 @media(max-width:799px){
