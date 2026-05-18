@@ -161,9 +161,9 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  min-height: 4.75rem;
-  padding: 0.35rem 0;
+  gap: 1.25rem;
+  min-height: 5.25rem;
+  padding: 0.9rem 0;
 }
 
 .brand {
@@ -175,8 +175,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .brand img {
-  width: 5.7rem;
-  height: 3rem;
+  width: 6.2rem;
+  height: 3.4rem;
   object-fit: contain;
   border-radius: 0.35rem;
   display: block;
@@ -198,8 +198,8 @@ img { max-width: 100%; height: auto; display: block; }
   display: none;
   align-items: center;
   justify-content: center;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 3rem;
+  height: 3rem;
   border: 1px solid var(--line-strong);
   border-radius: 0.6rem;
   background: rgba(13, 27, 52, 0.7);
@@ -207,16 +207,16 @@ img { max-width: 100%; height: auto; display: block; }
   cursor: pointer;
 }
 
-.nav-menu { display: flex; align-items: center; gap: 0.35rem; margin: 0; padding: 0; list-style: none; }
+.nav-menu { display: flex; align-items: center; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
 
 .nav-link {
   display: inline-flex;
   align-items: center;
-  min-height: 2.4rem;
-  border-radius: 0.5rem;
-  padding: 0.45rem 0.75rem;
+  min-height: 2.8rem;
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.9rem;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   font-weight: 700;
   text-decoration: none;
   transition: color 160ms ease, background 160ms ease, transform 160ms ease;
