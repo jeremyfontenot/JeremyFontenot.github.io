@@ -28,12 +28,12 @@ body.dashboard-page{background:
   linear-gradient(180deg, #08111f 0%, var(--color-bg) 100%)}
 .container{max-width:var(--maxwidth);margin:0 auto;padding:1rem}
 .site-header{background:rgba(11,18,32,0.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(37,99,235,0.16);position:sticky;top:0;z-index:40}
-.header-grid{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.8rem 0}
-.brand{display:flex;align-items:center;gap:0.75rem}
-.brand img.logo{border-radius:10px;box-shadow:0 0 0 1px rgba(34,211,238,0.12), 0 12px 24px rgba(0,0,0,0.24);width:72px;height:72px;object-fit:cover}
+.header-grid{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.15rem 0}
+.brand{display:flex;align-items:center;gap:0.9rem}
+.brand img.logo{border-radius:10px;box-shadow:0 0 0 1px rgba(34,211,238,0.12), 0 12px 24px rgba(0,0,0,0.24);width:80px;height:80px;object-fit:cover}
 .site-title{margin:0;font-size:1.15rem}
-.nav{display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap}
-.nav a{color:var(--color-text);text-decoration:none;font-weight:600;position:relative;padding:0.45rem 0.6rem;border-radius:8px}
+.nav{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.nav a{color:var(--color-text);text-decoration:none;font-weight:600;position:relative;padding:0.6rem 0.9rem;border-radius:10px}
 .nav a:hover,.nav a:focus{color:var(--color-secondary);background:rgba(34,211,238,0.04)}
 .nav a:hover::after,.nav a:focus::after{content:"";position:absolute;left:0;right:0;bottom:-0.35rem;height:2px;background:linear-gradient(90deg,var(--color-secondary),var(--color-accent));border-radius:999px}
 .lead{margin:0;color:var(--color-muted)}
