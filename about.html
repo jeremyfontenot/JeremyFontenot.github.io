@@ -7,88 +7,168 @@
   <meta name="description" content="About Jeremy Fontenot — background, approach, and areas of expertise." />
   <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="/about.html" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jeremy Fontenot","url":"/about.html","jobTitle":"Systems Administrator / Cloud Engineer"}</script>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-grid">
       <div class="brand">
-        <a href="/index.html"><img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'"></a>
+        <a href="/index.html">
+          <img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy">
+        </a>
         <div><h1>About</h1></div>
       </div>
       <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
       <nav id="primary-menu" class="nav" aria-label="Primary" data-primary-nav></nav>
     </div>
   </header>
-  <main class="container" id="main">
-    <section class="about-hero hero" aria-labelledby="about-title" data-animate="fade-up">
-      <div class="hero-content">
-        <div class="frosted-card">
-          <h2 id="about-title">About</h2>
-          <p class="lead">Background, approach, and areas of expertise focused on architecture, identity, automation, and security.</p>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero hero--about frosted" data-animate="fade-up">
+      <div class="hero-inner">
+        <h1 class="hero-title">About Me</h1>
+        <p class="hero-subtitle">
+          Cloud‑first IT professional focused on identity, endpoint management, automation, and documentation‑driven operations.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO OVERVIEW -->
+    <section class="section-band section-band--alt" data-animate="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title glow-header">Portfolio Overview</h2>
+        <p>
+          This site represents my operational approach to modern IT: identity‑centric design, automation‑first execution,
+          and documentation that enables clarity, repeatability, and resilience. Every page reflects how I build and manage
+          real environments — structured, intentional, and aligned with Microsoft 365, Entra ID, Intune, and hybrid infrastructure.
+        </p>
+        <p>
+          My goal is to create systems that are observable, maintainable, and secure — without unnecessary complexity.
+          Architecture, automation, and documentation work together here as a unified practice.
+        </p>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS AS CARDS -->
+    <section class="section-band" data-animate="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title glow-header">Highlights</h2>
+
+        <div class="card-grid about-highlights">
+
+          <!-- Microsoft Graph -->
+          <article class="card" data-animate="fade-up">
+            <div class="card-body">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M7 13l3 3 7-7" />
+                </svg>
+              </div>
+              <h3>Microsoft Graph</h3>
+              <p>
+                Built automation and reporting workflows using Microsoft Graph to manage identity, devices, and M365 workloads at scale.
+              </p>
+            </div>
+          </article>
+
+          <!-- PowerShell Automation -->
+          <article class="card" data-animate="fade-up">
+            <div class="card-body">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="14" rx="2" />
+                  <path d="M8 10l4 2-4 2" />
+                </svg>
+              </div>
+              <h3>PowerShell Automation</h3>
+              <p>
+                Designed repeatable, idempotent PowerShell workflows for provisioning, governance, and operational hygiene across Microsoft 365 and hybrid environments.
+              </p>
+            </div>
+          </article>
+
+          <!-- Intune & Endpoint -->
+          <article class="card" data-animate="fade-up">
+            <div class="card-body">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4" y="5" width="16" height="12" rx="2" />
+                  <path d="M9 16h6" />
+                </svg>
+              </div>
+              <h3>Intune & Endpoint Management</h3>
+              <p>
+                Implemented secure, policy‑driven device management with Intune, baselines, compliance policies, and deployment rings aligned to real‑world operations.
+              </p>
+            </div>
+          </article>
+
+          <!-- Architecture & Design -->
+          <article class="card" data-animate="fade-up">
+            <div class="card-body">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <polygon points="12 3 4 9 12 15 20 9 12 3" />
+                  <path d="M4 15l8 6 8-6" />
+                </svg>
+              </div>
+              <h3>Architecture & Design</h3>
+              <p>
+                Focused on clear, documented architectures that balance security, usability, and operational simplicity across identity, devices, and services.
+              </p>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
-    <section>
-      <h2 data-animate="fade-up">Portfolio Overview</h2>
-      <p data-animate="fade-up">This portfolio documents a Microsoft 365 Business Premium tenant and an enterprise-grade personal home lab built and operated as an enterprise-class environment. Content on this site emphasizes architecture, identity and security posture, automation, and validation artifacts derived from live lab work.</p>
-    </section>
 
-    <section>
-      <h2 data-animate="fade-up">Highlights (resume)</h2>
-      <div class="about-cards" aria-label="resume highlights">
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="card-body">
-            <h4>Microsoft Graph</h4>
-            <p>Integrated Graph APIs for tenant automation, reporting, and delegated app workflows.</p>
-          </div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.2"/></svg></div>
-          <div class="card-body">
-            <h4>PowerShell automation</h4>
-            <p>Reusable modules and scripts to provision, validate, and remediate tenant and lab configuration.</p>
-          </div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/></svg></div>
-          <div class="card-body">
-            <h4>Intune & Endpoint</h4>
-            <p>Device management and policy automation applied to maintain a secure lab posture.</p>
-          </div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 14V7h5v7H7zM17 20V10h-4v10h4z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="card-body">
-            <h4>Architecture & Design</h4>
-            <p>Enterprise-grade topology, identity flows, and security controls documented and validated.</p>
-          </div>
-        </article>
+    <!-- DOCUMENTATION-DRIVEN OPERATIONS -->
+    <section class="section-band section-band--alt" data-animate="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title glow-header">Documentation‑Driven Operations</h2>
+        <p>
+          I treat documentation as a first‑class operational asset — not an afterthought. Runbooks, diagrams, and decision
+          records live alongside automation so that anyone stepping into the environment can understand not just
+          <em>what</em> exists, but <em>why</em> it was built that way.
+        </p>
+        <p>
+          The Documentation Hub on this site mirrors how I structure real environments: architecture views, operational guides,
+          scripts, and reference material all tied together in a way that’s actually usable under pressure.
+        </p>
+        <p>
+          If something can’t be explained clearly, it’s a signal that the design or process needs refinement — not that the
+          documentation should be skipped.
+        </p>
       </div>
     </section>
 
-    <section>
-      <h2 data-animate="fade-up">Documentation-Driven Operations</h2>
-      <p data-animate="fade-up">Every major system and change is captured with runbooks, validation steps, and change records. Primary artifacts include architecture diagrams, validation reports, monitoring runbooks, and automation scripts — all available from the Documentation Hub.</p>
-    </section>
   </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <img src="/assets/images/logo.png" alt="Jeremy Fontenot" width="48" height="48" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
-          <small>&copy; 2026 Jeremy Fontenot</small>
-        </div>
-        <div class="footer-badges">
-          <span class="badge">Microsoft 365</span>
-          <span class="badge">Entra ID</span>
-          <span class="badge">Intune</span>
-          <span class="badge">PowerShell</span>
-        </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" data-animate="fade-up">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/images/logo.png" alt="Jeremy Fontenot" class="footer-logo">
+        <span class="footer-name">Jeremy Fontenot</span>
+      </div>
+
+      <div class="footer-tech">
+        <span class="badge badge-tech">Microsoft 365</span>
+        <span class="badge badge-tech">Entra ID</span>
+        <span class="badge badge-tech">Intune</span>
+        <span class="badge badge-tech">PowerShell</span>
+      </div>
+
+      <div class="footer-meta">
+        <span>© 2026 Jeremy Fontenot</span>
       </div>
     </div>
   </footer>
+
   <script src="/js/main.js" defer></script>
 </body>
 </html>
