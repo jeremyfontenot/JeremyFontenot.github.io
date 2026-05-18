@@ -55,10 +55,10 @@ jobs:
           rsync -a --exclude='.git' --exclude='.github' --exclude='tools' --exclude='venv' --exclude='node_modules' ./ site/
 
       - name: Configure Pages (setup deployment target)
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
@@ -68,7 +68,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
 
   # Optional future jobs (suggested additions): Lighthouse, broken-link scanner, HTML validation
   # These are left as separate workflows or jobs to add after Pages deploy is confirmed.
