@@ -20,10 +20,10 @@
 
 .gradient-text {
   background: var(--tri-gradient);
-  background-clip: text;              /* Standard property */
   -webkit-background-clip: text;      /* WebKit fallback */
-  color: transparent;                 /* Required for Firefox */
+  background-clip: text;              /* Standard property */
   -webkit-text-fill-color: transparent;
+  color: transparent;                 /* Required for Firefox */
 }
 
 /* Subtle gradient underline for links */
@@ -128,10 +128,10 @@
   font-weight: 800;
   letter-spacing: -0.01em;
   background: var(--tri-gradient);
-  background-clip: text;              /* Standard */
   -webkit-background-clip: text;      /* WebKit */
-  color: transparent;                 /* Firefox */
+  background-clip: text;              /* Standard */
   -webkit-text-fill-color: transparent;
+  color: transparent;                 /* Firefox */
 }
 
 /* ============================================================
