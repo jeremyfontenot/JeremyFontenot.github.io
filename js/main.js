@@ -1,4 +1,8 @@
 // Main interactive enhancements (keyboard shortcuts, accessibility helpers)
+if(window.location.pathname.startsWith('/docs/')){
+  document.body.classList.add('docs-page');
+}
+
 document.addEventListener('DOMContentLoaded',()=>{
   // Quick focus to search on '/docs' pages with '#q' present
   const q = document.querySelector('#doc-search');
