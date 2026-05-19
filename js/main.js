@@ -6,13 +6,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 
 async function injectPrimaryNav(){
+  if(window.location.pathname.startsWith('/docs/')) return;
+
   const navContainers = Array.from(document.querySelectorAll('[data-primary-nav]'));
   if(!navContainers.length){
     return;
   }
 
   try{
-    const response = await fetch('components/primary-nav.html', { cache: 'no-cache' });
+    const response = await fetch('/components/primary-nav.html', { cache: 'no-cache' });
     if(!response.ok){
       throw new Error(response.status + ' ' + response.statusText);
     }
@@ -22,14 +24,18 @@ async function injectPrimaryNav(){
       container.innerHTML = navMarkup;
     });
 
-    const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+    const canonicalizePath = (path)=>{
+      const normalized = path.replace(/\\/g, '/').replace(/\/index\.html$/, '/').replace(/\/+$/, '/');
+      return normalized || '/';
+    };
+    const currentPath = canonicalizePath(window.location.pathname);
     navContainers.forEach((container)=>{
       container.querySelectorAll('a[href]').forEach((link)=>{
         const href = link.getAttribute('href');
         if(!href){
           return;
         }
-        const linkPath = href.replace(/\/$/, '') || '/';
+        const linkPath = canonicalizePath(new URL(href, window.location.origin).pathname);
         if(linkPath === currentPath){
           link.setAttribute('aria-current', 'page');
         }else{

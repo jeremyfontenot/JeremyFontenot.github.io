@@ -8,6 +8,7 @@
   --color-primary: #22D3EE;        /* Cyan - primary accent */
   --color-accent: #D946EF;          /* Magenta - secondary accent */
   --color-secondary: #38BDF8;       /* Light cyan - tertiary accent */
+
   --color-tertiary: #06B6D4;        /* Deep cyan - depth layer */
 
   /* Background & Surface */
@@ -33,13 +34,13 @@
   --grad-primary: linear-gradient(90deg, #22D3EE, #06B6D4);
   --grad-accent: linear-gradient(90deg, #D946EF, #EC4899);
   --grad-neon: linear-gradient(90deg, #22D3EE, #D946EF);
-  --grad-section: linear-gradient(180deg, rgba(34, 211, 238, 0.06), rgba(217, 70, 239, 0.04), rgba(34, 211, 238, 0.02));
-  --grad-card: linear-gradient(135deg, rgba(15, 23, 36, 0.8), rgba(23, 32, 51, 0.6));
+  --grad-section: linear-gradient(180deg, rgba(34, 211, 238, 0.05), rgba(217, 70, 239, 0.035), rgba(34, 211, 238, 0.018));
+  --grad-card: linear-gradient(135deg, rgba(15, 23, 36, 0.9), rgba(23, 32, 51, 0.76));
 
   /* Glow Effects */
-  --glow-cyan: radial-gradient(circle at top right, rgba(34, 211, 238, 0.28), rgba(34, 211, 238, 0) 54%);
-  --glow-magenta: radial-gradient(circle at center, rgba(217, 70, 239, 0.18), rgba(217, 70, 239, 0) 60%);
-  --glow-neon: radial-gradient(circle, rgba(34, 211, 238, 0.12) 0%, rgba(217, 70, 239, 0.08) 40%, transparent 70%);
+  --glow-cyan: radial-gradient(circle at top right, rgba(34, 211, 238, 0.18), rgba(34, 211, 238, 0) 58%);
+  --glow-magenta: radial-gradient(circle at center, rgba(217, 70, 239, 0.11), rgba(217, 70, 239, 0) 64%);
+  --glow-neon: radial-gradient(circle, rgba(34, 211, 238, 0.07) 0%, rgba(217, 70, 239, 0.045) 40%, transparent 74%);
 
   /* Spacing Scale (8px base) */
   --spacing-xs: 0.5rem;             /* 8px */
@@ -77,12 +78,12 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.16);
-  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.24);
-  --shadow-glow: 0 0 24px rgba(34, 211, 238, 0.2);
-  --shadow-glow-accent: 0 0 24px rgba(217, 70, 239, 0.15);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.14);
+  --shadow-lg: 0 14px 36px rgba(0, 0, 0, 0.18);
+  --shadow-xl: 0 24px 56px rgba(0, 0, 0, 0.26);
+  --shadow-glow: 0 0 20px rgba(34, 211, 238, 0.14);
+  --shadow-glow-accent: 0 0 20px rgba(217, 70, 239, 0.1);
 
   /* Layout */
   --max-width: 1200px;
@@ -179,10 +180,10 @@ a:hover {
    ========================================================================== */
 
 .site-header {
-  background: rgba(7, 16, 38, 0.92);
+  background: rgba(7, 16, 38, 0.96);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(34, 211, 238, 0.1);
+  border-bottom: 1px solid rgba(34, 211, 238, 0.12);
   position: sticky;
   top: 0;
   z-index: 40;
@@ -279,8 +280,8 @@ a:hover {
    ========================================================================== */
 
 footer, .site-footer {
-  background: linear-gradient(135deg, rgba(7, 16, 38, 0.95), rgba(15, 23, 36, 0.92));
-  border-top: 1px solid rgba(34, 211, 238, 0.1);
+  background: linear-gradient(135deg, rgba(7, 16, 38, 0.97), rgba(15, 23, 36, 0.95));
+  border-top: 1px solid rgba(34, 211, 238, 0.12);
   padding: var(--spacing-4xl) 0;
   margin-top: var(--spacing-4xl);
   position: relative;
@@ -683,3 +684,92 @@ section {
     padding: var(--spacing-md);
   }
 }
+
+@media (max-width: 414px) {
+  :root {
+    --grad-card: linear-gradient(135deg, rgba(15, 23, 36, 0.93), rgba(23, 32, 51, 0.8));
+    --glow-cyan: radial-gradient(circle at top right, rgba(34, 211, 238, 0.14), rgba(34, 211, 238, 0) 60%);
+    --glow-magenta: radial-gradient(circle at center, rgba(217, 70, 239, 0.09), rgba(217, 70, 239, 0) 66%);
+    --glow-neon: radial-gradient(circle, rgba(34, 211, 238, 0.06) 0%, rgba(217, 70, 239, 0.04) 40%, transparent 76%);
+  }
+
+  .site-footer,
+  .home-footer,
+  .about-footer,
+  .skills-footer,
+  .experience-footer,
+  .docs-footer,
+  .contact-footer {
+    background: linear-gradient(180deg, rgba(9, 17, 30, 0.98), rgba(8, 15, 27, 0.99));
+  }
+
+  .badge-hero,
+  .hero .badge-hero,
+  .badge,
+  .tech-badge,
+  .evidence-badge,
+  .tool-pill {
+    background: rgba(63, 224, 232, 0.05);
+    box-shadow: 0 0 10px rgba(63, 224, 232, 0.06);
+  }
+
+  .hero-badge {
+    opacity: 0.7;
+  }
+
+  .btn,
+  .btn.outline,
+  .submit-button,
+  .cta-button,
+  .contact-email,
+  .link-badge,
+  .contact-badge,
+  .footer-icon-link {
+    min-height: 44px;
+  }
+
+  .section-divider {
+    margin: 2rem 0;
+  }
+}
+
+/* Final frosted-card refinement: transform-origin, premium easing, micro translateZ,
+   softened shadow, and subtle pseudo-layer opacity on hover. High-specificity
+   selectors and !important flags ensure these rules take precedence over
+   page-level overrides. */
+html body .hero .frosted-card,
+html body .frosted-card,
+html body section.hero .frosted-card {
+  transform-origin: center bottom !important;
+  -webkit-transform: translateZ(0.0001px) !important;
+  transform: translateZ(0.0001px) !important;
+  will-change: transform, box-shadow, opacity !important;
+  backface-visibility: hidden !important;
+  perspective: 1000px !important;
+  isolation: isolate !important;
+  transition: transform 260ms cubic-bezier(.16,1,.3,1) !important,
+              box-shadow 260ms cubic-bezier(.16,1,.3,1) !important;
+}
+
+html body .hero .frosted-card:hover,
+html body .frosted-card:hover,
+html body .frosted-card.is-hover {
+  -webkit-transform: translateY(-6px) translateZ(0.0001px) !important;
+  transform: translateY(-6px) translateZ(0.0001px) !important;
+  box-shadow: 0 22px 48px rgba(0,0,0,0.32) !important, 0 0 32px rgba(34,211,238,0.06) !important;
+}
+
+/* Smooth pseudo-layer opacity transition for frosted effect */
+html body .frosted-card::before { opacity: 0.88 !important; transition: opacity 260ms cubic-bezier(.16,1,.3,1) !important; will-change: opacity !important }
+html body .frosted-card:hover::before, html body .frosted-card.is-hover::before { opacity: 0.92 !important }
+
+/* Neutralize parent transforms/filters that cause nested-transform jitter */
+html body .hero, html body .hero-inner, html body .hero-content, html body section.hero, html body .hero * {
+  -webkit-transform: none !important;
+  transform: none !important;
+  filter: none !important;
+  will-change: auto !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
