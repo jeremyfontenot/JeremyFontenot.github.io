@@ -5,6 +5,5 @@
       "internal/.github/workflows/*"
     ]
   },
-  "yaml.validate": true,
-  "liveServer.settings.root": "/public"
+  "yaml.validate": true
 }
