@@ -76,6 +76,7 @@
 .card--contact {
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(13, 27, 52, 0.55);
+  -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
   transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
