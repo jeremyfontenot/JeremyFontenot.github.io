@@ -1,0 +1,111 @@
+body {
+    font-family: Segoe UI, Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.meta {
+    margin-bottom: 1.25rem;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.meta a {
+    color: #0369a1;
+    text-decoration: none;
+}
+
+.meta a:hover {
+    text-decoration: underline;
+}
+
+.offline-panel {
+    margin: 1.25rem 0 1.5rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid #bfdbfe;
+    background: #eff6ff;
+    border-radius: 8px;
+}
+
+.offline-panel h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.offline-panel p {
+    margin: 0 0 0.85rem;
+    color: #334155;
+}
+
+.offline-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.offline-links a {
+    display: inline-block;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+    background: #fff;
+    color: #0c4a6e;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.offline-links a:hover {
+    background: #dbeafe;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0.8rem;
+}
+
+.logo-card {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #fff;
+    padding: 0.6rem;
+}
+
+.logo-card--inverse {
+    background: #0f172a;
+}
+
+.logo-card img {
+    width: 100%;
+    height: 92px;
+    object-fit: contain;
+    display: block;
+    background: #f8fafc;
+    border-radius: 4px;
+}
+
+.logo-card .label {
+    margin-top: 0.45rem;
+    font-size: 0.85rem;
+    color: #334155;
+}
+
+.logo-card--inverse .label {
+    color: #e2e8f0;
+}

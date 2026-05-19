@@ -5,27 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>System — Search Analytics</title>
   <link rel="stylesheet" href="/css/style.css">
-  <style>
-    body{padding:2rem}
-    .panel{background:var(--color-bg,#071026);padding:1rem;border-radius:8px;color:var(--color-text,#e6eef8)}
-    table{width:100%;border-collapse:collapse;margin-top:1rem}
-    th,td{padding:.5rem;border-bottom:1px solid rgba(255,255,255,0.06);text-align:left}
-    .controls{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
-    .btn{cursor:pointer}
-    .metrics-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1rem}
-    .metric{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:.85rem}
-    .metric .label{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.6);margin-bottom:.35rem}
-    .metric .value{font-size:1.4rem;font-weight:800}
-    .metric .detail{color:rgba(255,255,255,0.72);font-size:.92rem;margin-top:.25rem}
-    .table-wrap{overflow:auto}
-    .trend-bars{display:grid;gap:.5rem;margin-top:1rem}
-    .trend-row{display:grid;grid-template-columns:120px 1fr 64px;gap:.5rem;align-items:center}
-    .bar{height:10px;border-radius:999px;background:rgba(255,255,255,0.08);overflow:hidden}
-    .bar > span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#38BDF8,#D946EF)}
-    pre{max-height:40vh;overflow:auto;background:#021; padding:1rem;border-radius:6px}
-  </style>
 </head>
-<body>
+<body class="system-page">
   <main>
     <h1>System — Search Analytics (Local)</h1>
     <p class="muted">This page reads client-only, privacy-safe search events stored in your browser's <strong>localStorage</strong>. No data is sent to any server.</p>
@@ -245,7 +226,7 @@
           quality.last7.map(row => `
             <div class="trend-row">
               <div>${escapeHtml(row.key)}</div>
-              <div class="bar"><span style="width:${Math.round(row.successRate * 100)}%"></span></div>
+              <div class="bar"><span class="bar-fill bar-fill-${Math.round(row.successRate * 20) * 5}"></span></div>
               <div>${formatRate(row.successRate)}</div>
             </div>
           `).join('') +

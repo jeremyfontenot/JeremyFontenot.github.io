@@ -447,9 +447,18 @@ h3 { font-size: 1.05rem; }
 
 .skill-section, .case-section { scroll-margin-top: 6rem; }
 
+.skill-section#identity { --bar-fill: 72%; }
+.skill-section#windows { --bar-fill: 70%; }
+.skill-section#cloud { --bar-fill: 66%; }
+.skill-section#endpoint { --bar-fill: 65%; }
+.skill-section#networking { --bar-fill: 68%; }
+.skill-section#automation { --bar-fill: 74%; }
+.skill-section#security { --bar-fill: 64%; }
+.skill-section#troubleshooting { --bar-fill: 76%; }
+
 .proficiency { display: grid; gap: 0.45rem; }
 .bar { height: 0.45rem; border-radius: 999px; background: rgba(184, 194, 209, 0.16); overflow: hidden; }
-.bar span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta)); }
+.bar span { display: block; width: var(--bar-fill, 0%); height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta)); }
 
 .case-details { border: 1px solid rgba(63,224,232,0.12); border-radius: 0.9rem; background: rgba(5, 11, 24, 0.28); overflow: hidden; }
 .case-details summary { cursor: pointer; padding: 1rem; color: var(--accent-cyan); font-weight: 800; }

@@ -419,6 +419,46 @@ img[width][height]{display:block}
 body.dashboard-page .site-header .nav{display:flex !important;position:static !important;flex-wrap:wrap;gap:0.5rem;background:transparent;padding:0;border:0}
 body.dashboard-page .site-header .nav-toggle{display:none !important}
 
+/* System analytics page */
+body.system-page{padding:2rem}
+body.system-page .panel{background:var(--color-bg,#071026);padding:1rem;border-radius:8px;color:var(--color-text,#e6eef8)}
+body.system-page table{width:100%;border-collapse:collapse;margin-top:1rem}
+body.system-page th,body.system-page td{padding:.5rem;border-bottom:1px solid rgba(255,255,255,0.06);text-align:left}
+body.system-page .controls{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
+body.system-page .btn{cursor:pointer}
+body.system-page .metrics-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:1rem}
+body.system-page .metric{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:.85rem}
+body.system-page .metric .label{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,0.6);margin-bottom:.35rem}
+body.system-page .metric .value{font-size:1.4rem;font-weight:800}
+body.system-page .metric .detail{color:rgba(255,255,255,0.72);font-size:.92rem;margin-top:.25rem}
+body.system-page .table-wrap{overflow:auto}
+body.system-page .trend-bars{display:grid;gap:.5rem;margin-top:1rem}
+body.system-page .trend-row{display:grid;grid-template-columns:120px 1fr 64px;gap:.5rem;align-items:center}
+body.system-page .bar{height:10px;border-radius:999px;background:rgba(255,255,255,0.08);overflow:hidden}
+body.system-page .bar > span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#38BDF8,#D946EF)}
+body.system-page .bar-fill-0{width:0%}
+body.system-page .bar-fill-5{width:5%}
+body.system-page .bar-fill-10{width:10%}
+body.system-page .bar-fill-15{width:15%}
+body.system-page .bar-fill-20{width:20%}
+body.system-page .bar-fill-25{width:25%}
+body.system-page .bar-fill-30{width:30%}
+body.system-page .bar-fill-35{width:35%}
+body.system-page .bar-fill-40{width:40%}
+body.system-page .bar-fill-45{width:45%}
+body.system-page .bar-fill-50{width:50%}
+body.system-page .bar-fill-55{width:55%}
+body.system-page .bar-fill-60{width:60%}
+body.system-page .bar-fill-65{width:65%}
+body.system-page .bar-fill-70{width:70%}
+body.system-page .bar-fill-75{width:75%}
+body.system-page .bar-fill-80{width:80%}
+body.system-page .bar-fill-85{width:85%}
+body.system-page .bar-fill-90{width:90%}
+body.system-page .bar-fill-95{width:95%}
+body.system-page .bar-fill-100{width:100%}
+body.system-page pre{max-height:40vh;overflow:auto;background:#021;padding:1rem;border-radius:6px}
+
 /* ============================================================================
    THEME.CSS INTEGRATION & RESPONSIVE GRID UTILITIES
    ========================================================================== */
