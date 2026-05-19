@@ -87,7 +87,12 @@ function Invoke-SafeScript {
     # 1. VALIDATION PHASE - Script existence
     $scriptFullPath = $ScriptPath
     if (-not [System.IO.Path]::IsPathRooted($ScriptPath)) {
-        $scriptFullPath = Join-Path $PSScriptRoot $ScriptPath
+        $cwdRelativePath = Join-Path (Get-Location) $ScriptPath
+        if (Test-Path $cwdRelativePath) {
+            $scriptFullPath = $cwdRelativePath
+        } else {
+            $scriptFullPath = Join-Path $PSScriptRoot $ScriptPath
+        }
     }
 
     if (-not (Test-Path $scriptFullPath)) {
@@ -128,9 +133,6 @@ function Invoke-SafeScript {
         $processParams = @{
             FilePath               = $pythonPath
             ArgumentList           = @($scriptFullPath) + $argList
-            NoNewWindow            = $true
-            PassThru               = $true
-            Wait                   = $false
             RedirectStandardOutput = (Join-Path $env:TEMP "exec_stdout_$(Get-Random).log")
             RedirectStandardError  = (Join-Path $env:TEMP "exec_stderr_$(Get-Random).log")
         }
@@ -141,7 +143,20 @@ function Invoke-SafeScript {
             $processParams['ArgumentList'] = @("-NoProfile", "-File", $scriptFullPath) + $argList
         }
 
-        $process = Start-Process @processParams
+        $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
+        $startInfo.FileName = $processParams['FilePath']
+        $quotedArgs = @()
+        foreach ($arg in $processParams['ArgumentList']) {
+            $escapedArg = ([string]$arg).Replace('"', '\"')
+            $quotedArgs += '"' + $escapedArg + '"'
+        }
+        $startInfo.Arguments = ($quotedArgs -join ' ')
+        $startInfo.UseShellExecute = $false
+        $startInfo.CreateNoWindow = $true
+        $startInfo.RedirectStandardOutput = $true
+        $startInfo.RedirectStandardError = $true
+
+        $process = [System.Diagnostics.Process]::Start($startInfo)
         $processId = $process.Id
 
         # Wait with timeout
@@ -159,19 +174,27 @@ function Invoke-SafeScript {
                 error_code   = "TIMEOUT"
                 script_name  = (Split-Path -Leaf $ScriptPath)
                 timeout_sec  = $TimeoutSeconds
-                duration_ms  = ([Math]::Floor((Get-Date - $startTime).TotalMilliseconds))
+                duration_ms  = ([Math]::Floor(((Get-Date) - $startTime).TotalMilliseconds))
                 exec_context = $ExecContext
             }
             Write-ExecutionError -ErrorObject $errorObj
             return $false
         }
 
+        $stdout = $process.StandardOutput.ReadToEnd()
+        $stderr = $process.StandardError.ReadToEnd()
+        Set-Content -LiteralPath $processParams['RedirectStandardOutput'] -Value $stdout -Encoding UTF8
+        Set-Content -LiteralPath $processParams['RedirectStandardError'] -Value $stderr -Encoding UTF8
+        [void]$process.WaitForExit()
+        $process.Refresh()
         $exitCode = $process.ExitCode
-        $duration = [Math]::Floor((Get-Date - $startTime).TotalMilliseconds)
+        $duration = [Math]::Floor(((Get-Date) - $startTime).TotalMilliseconds)
 
         # 3. EXIT CODE CHECK
         if ($exitCode -ne 0) {
-            $stderr = Get-Content $processParams['RedirectStandardError'] -Raw -ErrorAction SilentlyContinue
+            if ($null -eq $stderr) {
+                $stderr = ""
+            }
             $exitDateStr = Get-Date -Format 'yyyyMMdd'
             $errorObj = @{
                 error_id     = "exec-$exitDateStr-003"

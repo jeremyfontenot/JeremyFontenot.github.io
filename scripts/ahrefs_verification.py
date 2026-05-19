@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-import os, re, json
+import os, re, json, urllib.parse
 from html import unescape
 ROOT = os.path.abspath('.')
-EXCLUDE_DIRS = ('assets','css','js','internal','reports','cdn-cgi')
+EXCLUDE_DIRS = ('assets','css','js','internal','reports','cdn-cgi','components')
+INVALID_LINK_PREFIXES = ('internal','reports','cdn-cgi')
 EXCLUDE_FILES = ('sitemap.xml','scripts/indexnow_payload.json')
 
 def is_excluded_path(path):
@@ -12,30 +13,47 @@ def is_excluded_path(path):
             return True
     return False
 
-# gather public HTML files
+# gather public files for link resolution
+public_files = set()
+for dirpath, dirnames, filenames in os.walk(ROOT):
+    rel_dir = os.path.relpath(dirpath, ROOT).replace('\\','/')
+    parts = rel_dir.split('/')
+    if any(part in ('.git', '.github', 'node_modules', 'internal', 'reports') for part in parts):
+        continue
+    for fn in filenames:
+        if fn.lower().endswith('.bak'):
+            continue
+        full_rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace('\\','/')
+        if full_rel in EXCLUDE_FILES:
+            continue
+        public_files.add(full_rel)
+
+# gather public HTML pages for quality checks
 html_files = []
 for dirpath, dirnames, filenames in os.walk(ROOT):
     rel = os.path.relpath(dirpath, ROOT).replace('\\','/')
     if is_excluded_path(dirpath):
         continue
     for fn in filenames:
-        if not fn.lower().endswith('.html'):
+        full_rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace('\\','/')
+        if full_rel in EXCLUDE_FILES:
             continue
         if fn.lower().endswith('.bak'):
             continue
-        full_rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace('\\','/')
-        if full_rel in EXCLUDE_FILES:
+        if not fn.lower().endswith('.html'):
             continue
         html_files.append(full_rel)
 
 # build existing set for resolution
-existing = set(html_files)
+existing = set(public_files)
 for f in list(html_files):
     if f.endswith('index.html'):
         d = os.path.dirname(f)
         existing.add(d + '/')
         existing.add('/' + d + '/')
         existing.add('/' + f)
+    existing.add('/' + f)
+for f in list(public_files):
     existing.add('/' + f)
 
 # helper to get visible text
@@ -123,14 +141,12 @@ def resolve_href(src_rel, href):
     if href.startswith('http') or href.startswith('mailto:') or href.startswith('tel:') or href.startswith('javascript:') or href.startswith('#') or href.strip()=='' or href.startswith('${'):
         return None, []
     # remove URL fragment before path resolution
-    href = href.split('#', 1)[0]
+    href = urllib.parse.unquote(href.split('#', 1)[0])
     if href == '':
         return None, []
     # ignore obvious non-HTML asset links
     href_no_query = href.split('?', 1)[0].split('#', 1)[0].lower()
-    asset_exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.ico', '.css', '.js', '.pdf', '.txt', '.xml', '.json', '.zip')
-    if href_no_query.endswith(asset_exts):
-        return None, []
+    asset_exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.avif', '.svg', '.ico', '.css', '.js', '.pdf', '.txt', '.xml', '.json', '.zip', '.md', '.yml', '.yaml', '.csv', '.aspx')
     # normalize
     candidates = []
     if href.startswith('/'):
@@ -164,8 +180,13 @@ for rel in html_files:
     full = os.path.join(ROOT, rel)
     with open(full, 'r', encoding='utf-8', errors='ignore') as fh:
         html = fh.read()
+    robots = re.search(r'<meta[^>]*name=["\']robots["\'][^>]*content=["\']([^"\']*)["\']', html, re.I)
+    is_noindex = bool(robots and 'noindex' in robots.group(1).lower())
+    if is_noindex:
+        noindex_pages.add(rel)
+
     # canonical
-    if not re.search(r'<link[^>]*rel=["\']canonical["\']', html, re.I):
+    if not is_noindex and not re.search(r'<link[^>]*rel=["\']canonical["\']', html, re.I):
         report['missing_canonicals'].append(rel)
     # meta description
     md = re.search(r'<meta[^>]*name=["\']description["\'][^>]*content=["\']([^"\']*)["\']', html, re.I)
@@ -174,14 +195,18 @@ for rel in html_files:
     else:
         content = None
     meta_map[rel] = content
-    robots = re.search(r'<meta[^>]*name=["\']robots["\'][^>]*content=["\']([^"\']*)["\']', html, re.I)
-    if robots and 'noindex' in robots.group(1).lower():
-        noindex_pages.add(rel)
+    if is_noindex:
+        meta_map[rel] = content
+    else:
+        meta_map[rel] = content
     # visible text
     vt = visible_text(html)
     wc = len(vt.split())
-    if wc < 150:
+    if not is_noindex and wc < 150:
         report['thin_content_pages'].append({'file': rel, 'words': wc})
+    if is_noindex:
+        continue
+
     # hrefs
     for m in href_re.finditer(html):
         href = m.group(1)
@@ -189,7 +214,7 @@ for rel in html_files:
         if kind is None:
             continue
         # check invalid internal links to excluded folders
-        if any(href.lstrip('/').startswith(ex + '/') or href.lstrip('/').startswith(ex) for ex in EXCLUDE_DIRS):
+        if any(href.lstrip('/').startswith(ex + '/') or href.lstrip('/').startswith(ex) for ex in INVALID_LINK_PREFIXES):
             report['invalid_internal_links'].append({'file': rel, 'href': href})
             continue
         # check unnormalized (directory-style) links: hrefs ending with '/' or no .html and no protocol
@@ -217,6 +242,8 @@ for rel in html_files:
 # duplicates
 content_to_files = {}
 for f,c in meta_map.items():
+    if f in noindex_pages:
+        continue
     if c:
         content_to_files.setdefault(c, []).append(f)
 for c, files in content_to_files.items():
@@ -225,6 +252,8 @@ for c, files in content_to_files.items():
             report['weak_meta_descriptions'].append({'file': f, 'issue': 'duplicate_description'})
 # length issues
 for f,c in meta_map.items():
+    if f in noindex_pages:
+        continue
     if not c:
         report['weak_meta_descriptions'].append({'file': f, 'issue': 'missing'})
     else:

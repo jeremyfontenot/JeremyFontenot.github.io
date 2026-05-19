@@ -82,7 +82,12 @@ async function loadDocSnippetElement(el, docPath, fragmentSelector){
     const doc = new DOMParser().parseFromString(html,'text/html');
     const fragment = fragmentSelector? doc.querySelector(fragmentSelector) : doc.body;
     if(el && fragment){ el.innerHTML = fragment.innerHTML; }
-  }catch(err){ console.warn('loadDocSnippetElement',docPath,err); }
+  }catch(err){
+    console.warn('loadDocSnippetElement',docPath,err);
+    if(el){
+      el.textContent = el.dataset.fallback || 'Documentation summary is available in the linked section.';
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -97,6 +102,27 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 
 window._siteHelpers = { snippet, loadDocSnippet };
+
+// Contact form: static-site fallback that opens the visitor's email client.
+document.addEventListener('DOMContentLoaded', ()=>{
+  const form = document.getElementById('contact-form');
+  if(!form) return;
+  form.addEventListener('submit', (event)=>{
+    event.preventDefault();
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const subject = String(data.get('subject') || 'Portfolio inquiry').trim();
+    const message = String(data.get('message') || '').trim();
+    const body = [
+      name ? `Name: ${name}` : '',
+      email ? `Email: ${email}` : '',
+      '',
+      message
+    ].filter(Boolean).join('\n');
+    window.location.href = `mailto:jeremy.fontenot@jeremyfontenot.online?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+});
 
 // Mobile navigation toggle
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -166,4 +192,42 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); history.pushState(null,'',href); }
       });
     });
+
+    const counters = Array.from(document.querySelectorAll('[data-counter]'));
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const setCounter = (el, value)=>{ el.textContent = String(value); };
+    const animateCounter = (el)=>{
+      const target = Number(el.dataset.counter || 0);
+      if(!Number.isFinite(target)){
+        return;
+      }
+      if(reduceMotion){
+        setCounter(el, target);
+        return;
+      }
+      const duration = 900;
+      const start = performance.now();
+      const tick = (now)=>{
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        setCounter(el, Math.round(target * eased));
+        if(progress < 1){
+          requestAnimationFrame(tick);
+        }
+      };
+      requestAnimationFrame(tick);
+    };
+    if(counters.length && 'IntersectionObserver' in window){
+      const counterObserver = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, {threshold:0.35});
+      counters.forEach(counterObserver.observe.bind(counterObserver));
+    }else{
+      counters.forEach(animateCounter);
+    }
   });

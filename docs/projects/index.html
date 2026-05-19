@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Case Study Projects — Jeremy Fontenot</title>
   <link rel="canonical" href="https://jeremyfontenot.online/docs/projects/">
-  <meta name="description" content="Case Study Projects — Jeremy Fontenot — concise documentation and examples for Case. Practical guidance and related artifacts for implementers.">
+  <meta name="description" content="Recruiter-readable IT project case studies covering Microsoft 365 labs, PowerShell automation, documentation, and operational value. for portfolio review.">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Case Study Projects — Jeremy Fontenot">
   <meta property="og:description" content="IT administration case studies with evidence and technical details.">
@@ -30,7 +30,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/index.html"><img src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/index.html">Home</a></li><li><a class="nav-link" href="/index.html#summary-title">Summary</a></li><li><a class="nav-link" href="/skills.html">Skills</a></li><li><a class="nav-link" href="/docs/experience/">Experience</a></li><li><a class="nav-link" href="/docs/projects/" aria-current="page">Projects</a></li><li><a class="nav-link" href="/docs/">Documentation</a></li><li><a class="nav-link" href="/docs/index.html">Tools</a></li><li><a class="nav-link" href="/index.html#certs-title">Certifications</a></li><li><a class="nav-link" href="/contact.html">Contact</a></li></ul></nav></header>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Primary navigation"><a class="brand" href="/index.html"><img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="300" height="150"><span><span class="brand-name">Jeremy Fontenot</span><span class="brand-role">Entry-Level System Administrator</span></span></a><button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button><ul id="primary-menu" class="nav-menu" data-collapsed="true"><li><a class="nav-link" href="/index.html">Home</a></li><li><a class="nav-link" href="/index.html#summary-title">Summary</a></li><li><a class="nav-link" href="/skills.html">Skills</a></li><li><a class="nav-link" href="/docs/experience/">Experience</a></li><li><a class="nav-link" href="/docs/projects/" aria-current="page">Projects</a></li><li><a class="nav-link" href="/docs/">Documentation</a></li><li><a class="nav-link" href="/docs/index.html">Tools</a></li><li><a class="nav-link" href="/index.html#certs-title">Certifications</a></li><li><a class="nav-link" href="/contact.html">Contact</a></li></ul></nav></header>
   <main id="main" class="page-shell">
     <header class="section"><p class="eyebrow">Projects</p><h1 class="page-title">Recruiter-readable case studies with technical evidence.</h1><p class="lead">Each project starts with a real IT operations problem. It then shows the approach, evidence, and lessons learned. Artifacts are redacted, realistic, and aligned to entry-level system administration responsibilities.</p></header>
 
@@ -38,14 +38,14 @@
       <article class="project-card">
         <header><div><p class="eyebrow">Identity & Access</p><h2 id="ad-title">Active Directory Migration Plan</h2><p>Moved a flat lab domain into an OU, group, and GPO model. The new model is easier to manage and audit.</p></div><span class="badge">Windows Server</span></header>
         <div class="grid grid-3"><div><h3>Problem</h3><p>Users, workstations, and groups were mixed together. Delegation boundaries and policy targeting were unclear.</p></div><div><h3>Solution</h3><p>Designed a staged OU migration. Standardized security group naming. Documented GPO validation steps.</p></div><div><h3>Outcome</h3><p>Produced a supportable identity structure. Added rollback notes, a provisioning script, and a change record.</p></div></div>
-        <details class="case-details" open><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/ad-migration-diagram.svg" alt="Active Directory migration OU structure diagram" width="400" height="300"><pre id="ad-code" data-lang="text">Root Domain: lab.local
+        <details class="case-details" open><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="400" height="300"><pre id="ad-code" data-lang="text">Root Domain: lab.local
 OU=Corp
   OU=Users
   OU=Computers
   OU=Groups
 OU=Service
   OU=ServiceAccounts
-  OU=Admin</pre><button class="copy-btn" type="button" data-copy="ad-code">Copy structure</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>ad-migration-plan.md</code> (example artifact)</li><li><code>ad-migration-plan-2023-06-21.yaml</code> (example metadata)</li><li>Provisioning script</li><li><code>gpo-template-StandardDesktop.xml</code> (example artifact)</li></ul><h3>Lessons learned</h3><p>OU design should follow operational support boundaries, not just department names. Validation and rollback notes matter as much as the target structure.</p></aside></div></details>
+  OU=Admin</pre><button class="copy-btn" type="button" data-copy="ad-code">Copy structure</button></div><aside aria-label="Active Directory evidence and lessons"><h3>Evidence</h3><ul class="evidence-list"><li><code>ad-migration-plan.md</code> (example artifact)</li><li><code>ad-migration-plan-2023-06-21.yaml</code> (example metadata)</li><li>Provisioning script</li><li><code>gpo-template-StandardDesktop.xml</code> (example artifact)</li></ul><h3>Lessons learned</h3><p>OU design should follow operational support boundaries, not just department names. Validation and rollback notes matter as much as the target structure.</p></aside></div></details>
       </article>
     </section>
 
@@ -53,7 +53,7 @@ OU=Service
       <article class="project-card">
         <header><div><p class="eyebrow">Cloud Administration</p><h2 id="m365-title">Microsoft 365 Personal Cloud Lab</h2><p>Built a Microsoft 365 lab across Entra ID, Exchange Online, SharePoint, Teams, Intune, and baseline reporting.</p></div><span class="badge">Microsoft 365</span></header>
         <div class="grid grid-3"><div><h3>Problem</h3><p>Entry-level administrators need safe M365 practice. They also need to avoid production tenant risk.</p></div><div><h3>Solution</h3><p>Documented tenant layout and baseline controls. Defined service ownership and repeatable evidence collection.</p></div><div><h3>Outcome</h3><p>Generated a tenant baseline report, configuration notes, and admin workflows for portfolio review.</p></div></div>
-        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/m365-lab-architecture.svg" alt="Microsoft 365 lab architecture diagram" width="400" height="300"><pre id="m365-code" data-lang="yaml">identity:
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="400" height="300"><pre id="m365-code" data-lang="yaml">identity:
   provider: Entra ID
   controls:
     - MFA for administrator roles
@@ -62,7 +62,7 @@ services:
   - Exchange Online
   - SharePoint Online
   - Microsoft Teams
-  - Intune</pre><button class="copy-btn" type="button" data-copy="m365-code">Copy YAML</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>m365-baseline-report-2024-10-05.md</code> (example artifact)</li><li><code>m365-baseline-report-2024-10-05.yaml</code> (example metadata)</li><li>Identity notes</li><li><code>lab-overview</code> (archived internally)</li></ul><h3>Lessons learned</h3><p>Tenant documentation is strongest when it maps controls to operational risk: account compromise, collaboration sprawl, endpoint drift, and change traceability.</p></aside></div></details>
+  - Intune</pre><button class="copy-btn" type="button" data-copy="m365-code">Copy YAML</button></div><aside aria-label="Microsoft 365 evidence and lessons"><h3>Evidence</h3><ul class="evidence-list"><li><code>m365-baseline-report-2024-10-05.md</code> (example artifact)</li><li><code>m365-baseline-report-2024-10-05.yaml</code> (example metadata)</li><li>Identity notes</li><li><code>lab-overview</code> (archived internally)</li></ul><h3>Lessons learned</h3><p>Tenant documentation is strongest when it maps controls to operational risk: account compromise, collaboration sprawl, endpoint drift, and change traceability.</p></aside></div></details>
       </article>
     </section>
 
@@ -70,13 +70,13 @@ services:
       <article class="project-card">
         <header><div><p class="eyebrow">Endpoint Management</p><h2 id="intune-title">Intune Baseline Deployment</h2><p>Created a Windows 11 endpoint baseline with JSON export, validation logs, and deployment evidence.</p></div><span class="badge">Intune</span></header>
         <div class="grid grid-3"><div><h3>Problem</h3><p>Workstations need consistent security settings. They also need compliance checks and deployment validation.</p></div><div><h3>Solution</h3><p>Defined a baseline profile. Exported representative JSON. Documented validation against target devices.</p></div><div><h3>Outcome</h3><p>Produced a reusable endpoint baseline artifact with clear operational validation notes.</p></div></div>
-          <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/intune-baseline-preview.svg" alt="Intune baseline compliance preview" width="400" height="300"><pre id="intune-code" data-lang="json">{
+          <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="400" height="300"><pre id="intune-code" data-lang="json">{
   "displayName": "JF-Win11-Secure-Workstation",
   "platform": "windows10AndLater",
   "passwordRequired": true,
   "firewallRequired": true,
   "defenderRequired": true
-}</pre><button class="copy-btn" type="button" data-copy="intune-code">Copy JSON</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>intune-profile-sample.json</code> (example artifact)</li><li><code>intune-validate-2024-10-05.log</code> (example log)</li><li><code>intune-profile-sample.yaml</code> (example metadata)</li><li>Project export</li></ul><h3>Lessons learned</h3><p>Baseline deployment requires both configuration and proof: assignment scope, expected behavior, failed-state troubleshooting, and evidence of validation.</p></aside></div></details>
+}</pre><button class="copy-btn" type="button" data-copy="intune-code">Copy JSON</button></div><aside aria-label="Intune evidence and lessons"><h3>Evidence</h3><ul class="evidence-list"><li><code>intune-profile-sample.json</code> (example artifact)</li><li><code>intune-validate-2024-10-05.log</code> (example log)</li><li><code>intune-profile-sample.yaml</code> (example metadata)</li><li>Project export</li></ul><h3>Lessons learned</h3><p>Baseline deployment requires both configuration and proof: assignment scope, expected behavior, failed-state troubleshooting, and evidence of validation.</p></aside></div></details>
       </article>
     </section>
 
@@ -84,11 +84,11 @@ services:
       <article class="project-card">
         <header><div><p class="eyebrow">Troubleshooting</p><h2 id="rca-title">Incident Root Cause Analysis</h2><p>Investigated authentication failures. Isolated DNS misconfiguration. Documented remediation and validated recovery.</p></div><span class="badge">RCA</span></header>
         <div class="grid grid-3"><div><h3>Problem</h3><p>Users had intermittent sign-in failures. Domain service resolution was inconsistent.</p></div><div><h3>Solution</h3><p>Reviewed logs and tested DNS resolution. Corrected forwarder settings. Recorded change evidence.</p></div><div><h3>Outcome</h3><p>Created a clear RCA with timeline, impact, root cause, remediation, and prevention actions.</p></div></div>
-        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/rca-timeline.svg" alt="Incident RCA timeline" width="400" height="300"><pre id="rca-code" data-lang="text">2025-02-10 08:42 users report intermittent auth failures
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="400" height="300"><pre id="rca-code" data-lang="text">2025-02-10 08:42 users report intermittent auth failures
 2025-02-10 09:05 DNS query failures reproduced
 2025-02-10 09:22 forwarder mismatch identified
 2025-02-10 09:41 remediation applied
-2025-02-10 10:10 validation complete</pre><button class="copy-btn" type="button" data-copy="rca-code">Copy timeline</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li><code>rca-2025-02-10.md</code> (example artifact)</li><li><code>incident-2025-02-10-logs.txt</code> (example log)</li><li><code>rca-run-2025-02-10.log</code> (example artifact)</li><li><code>remediation-disable-transportrule.ps1</code> (example script)</li></ul><h3>Lessons learned</h3><p>The best troubleshooting evidence shows the path from symptom to test to fix. Documented timelines reduce ambiguity during handoff.</p></aside></div></details>
+2025-02-10 10:10 validation complete</pre><button class="copy-btn" type="button" data-copy="rca-code">Copy timeline</button></div><aside aria-label="Incident RCA evidence and lessons"><h3>Evidence</h3><ul class="evidence-list"><li><code>rca-2025-02-10.md</code> (example artifact)</li><li><code>incident-2025-02-10-logs.txt</code> (example log)</li><li><code>rca-run-2025-02-10.log</code> (example artifact)</li><li><code>remediation-disable-transportrule.ps1</code> (example script)</li></ul><h3>Lessons learned</h3><p>The best troubleshooting evidence shows the path from symptom to test to fix. Documented timelines reduce ambiguity during handoff.</p></aside></div></details>
       </article>
     </section>
 
@@ -96,14 +96,13 @@ services:
       <article class="project-card">
         <header><div><p class="eyebrow">Automation</p><h2 id="ps-title">PowerShell User Provisioning Automation</h2><p>Built a repeatable user onboarding workflow with input validation, template-based group assignment, and logging.</p></div><span class="badge">PowerShell</span></header>
         <div class="grid grid-3"><div><h3>Problem</h3><p>Manual onboarding is repetitive. It often causes inconsistent naming, group assignment, and license steps.</p></div><div><h3>Solution</h3><p>Created a readable PowerShell workflow. Used approved verbs, parameter validation, and auditable output.</p></div><div><h3>Outcome</h3><p>Produced reusable automation evidence aligned to service desk and junior administrator responsibilities.</p></div></div>
-        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/evidence/powershell-provisioning.svg" alt="PowerShell provisioning workflow" width="400" height="300"><pre id="ps-code" data-lang="powershell">Import-Csv .\\new-hires.csv | ForEach-Object {
+        <details class="case-details"><summary>Technical details, artifacts, and lessons learned</summary><div class="case-body"><div><img class="evidence-shot" loading="lazy" src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="400" height="300"><pre id="ps-code" data-lang="powershell">Import-Csv .\\new-hires.csv | ForEach-Object {
   New-ADUser -Name $_.DisplayName -SamAccountName $_.SamAccountName
   Add-ADGroupMember -Identity $_.RoleGroup -Members $_.SamAccountName
   Write-Information "Provisioned $($_.SamAccountName)"
-}</pre><button class="copy-btn" type="button" data-copy="ps-code">Copy snippet</button></div><aside><h3>Evidence</h3><ul class="evidence-list"><li>Provisioning script</li><li><code>automation-commit-abc123.md</code> (example metadata)</li><li><code>automation-commit-abc123.patch</code> (example artifact)</li><li><code>automation-run-2024-10-05.log</code> (example log)</li></ul><h3>Lessons learned</h3><p>Automation for entry-level administration should prioritize validation, readable logs, and safe defaults over clever shortcuts.</p></aside></div></details>
+}</pre><button class="copy-btn" type="button" data-copy="ps-code">Copy snippet</button></div><aside aria-label="PowerShell evidence and lessons"><h3>Evidence</h3><ul class="evidence-list"><li>Provisioning script</li><li><code>automation-commit-abc123.md</code> (example metadata)</li><li><code>automation-commit-abc123.patch</code> (example artifact)</li><li><code>automation-run-2024-10-05.log</code> (example log)</li></ul><h3>Lessons learned</h3><p>Automation for entry-level administration should prioritize validation, readable logs, and safe defaults over clever shortcuts.</p></aside></div></details>
       </article>
-    </section>
-  </main>
+    </section></main>
   <footer class="footer"><div class="footer-inner"><span>&copy; <span id="year"></span> Jeremy Fontenot</span><span>Case studies include evidence links, logs, scripts, and validation notes</span></div></footer>
   <script src="/js/main.js" defer></script>
 

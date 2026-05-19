@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Documentation Hub — Jeremy Fontenot</title>
-  <meta name="description" content="Searchable documentation hub containing labs, runbooks, validation reports, and scripts." />
+  <meta name="description" content="Searchable IT portfolio documentation hub with Home Lab guides, Microsoft 365 Lab notes, runbooks, project evidence, scripts, and troubleshooting references." />
+  <meta property="og:title" content="Documentation Hub — Jeremy Fontenot" />
+  <meta property="og:description" content="Searchable IT documentation hub with labs, runbooks, scripts, support notes, and troubleshooting references." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jeremyfontenot.online/docs/index.html" />
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png" />
   <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="/docs/index.html" />
 </head>
@@ -12,10 +17,10 @@
   <header class="site-header">
     <div class="container header-grid">
       <div class="brand">
-        <a href="/index.html"><img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'"></a>
+        <a href="/index.html"><img class="logo" src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="72" height="72" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'"></a>
         <div><h1>Documentation Hub</h1></div>
       </div>
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
+      <button type="button" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
       <nav id="primary-menu" class="nav" aria-label="Primary" data-primary-nav></nav>
     </div>
   </header>
@@ -23,8 +28,8 @@
     <div class="docs-hero" data-animate="fade-up">
       <div class="frosted-panel">
         <h1>Documentation Hub</h1>
-        <p class="docs-intro">Explore comprehensive guides, architecture diagrams, runbooks, and reference documentation for cloud infrastructure and systems administration.</p>
-        <a href="#" class="cta-button" aria-label="Explore all documentation">
+        <p class="docs-intro">Explore guides, architecture notes, runbooks, project evidence, verification reports, and reference documentation for IT Support and Systems Administration workflows.</p>
+        <a href="#results" class="cta-button" aria-label="Explore all documentation results">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/>
           </svg>
@@ -34,12 +39,66 @@
     </div>
 
     <div class="docs-controls">
-      <input id="doc-search" class="search-input" type="search" placeholder="Search documentation, files, tags..." aria-label="Search documentation">
+      <input id="doc-search" class="search-input" type="search" aria-label="Search documentation, files, and tags">
       <select id="filter-category" aria-label="Filter by category"></select>
       <select id="filter-tag" aria-label="Filter by tag"></select>
     </div>
     <div id="results" class="results" aria-live="polite"></div>
-  </main>
+
+    <section class="doc-context" aria-labelledby="reference-pathways">
+      <h2 id="reference-pathways">Reference Pathways</h2>
+      <p>Use these curated entry points when reviewing supporting evidence beyond the main portfolio pages.</p>
+      <div class="evidence-grid">
+        <a class="evidence-panel" href="/docs/projects/home-lab.html">
+          <strong>Home Lab Case Study</strong>
+          <span>Architecture, implementation notes, and verification evidence.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/source-browser.html">
+          <strong>Source Browser</strong>
+          <span>Repository source references for documentation review.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/brand-guide/branding.html">
+          <strong>Brand Guide</strong>
+          <span>Visual identity standards and portfolio asset usage.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/server-guides/index.html">
+          <strong>Server Guides</strong>
+          <span>Windows Server and infrastructure administration references.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/troubleshooting/index.html">
+          <strong>Troubleshooting</strong>
+          <span>Structured support notes and incident review workflows.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/homelab/index.html">
+          <strong>Legacy Home Lab Index</strong>
+          <span>Retained route for older home lab documentation links.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/skills/identity.html">
+          <strong>Identity Skills</strong>
+          <span>Entra ID, MFA, access control, and account lifecycle notes.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/skills/endpoint.html">
+          <strong>Endpoint Skills</strong>
+          <span>Intune, Windows endpoint configuration, and test notes.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/skills/automation.html">
+          <strong>Automation Skills</strong>
+          <span>PowerShell workflow, reporting, and repeatable administration notes.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/skills/infrastructure.html">
+          <strong>Infrastructure Skills</strong>
+          <span>Networking, server, and IT Support references.</span>
+        </a>
+        <a class="evidence-panel" href="/docs/skills/monitoring.html">
+          <strong>Monitoring Skills</strong>
+          <span>Monitoring, log review, and security visibility notes.</span>
+        </a>
+      </div>
+    </section>
+<section class="doc-context" aria-labelledby="context-documentation-hub">
+  <h2 id="context-documentation-hub">Scope Note</h2>
+  <p>The documentation hub collects lab guides, reference notes, and evidence pages for IT Support and Systems Administration review. Items are lab-scoped unless a page states otherwise.</p>
+</section></main>
 
   <div id="doc-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal-panel" role="document" id="modal-panel"></div>
@@ -49,7 +108,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <img src="/assets/images/logo.png" alt="Jeremy Fontenot" width="48" height="48" loading="lazy"
+          <img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="48" height="48" loading="lazy"
                onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
           <div>
             <small>Documentation Hub — content originates from /docs source files.</small>

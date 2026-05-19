@@ -62,10 +62,6 @@
             background: rgba(0, 234, 255, 0.1);
         }
 
-        .search-input::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
         .filter-buttons {
             display: flex;
             gap: 0.5rem;
@@ -277,7 +273,7 @@
         }
     </style>
 
-  <meta name="description" content="Documentation Search | Portfolio Portfolio About Skills Projects Experience Certifications Documentation Contact ← Back to Documentation Hub Documentation">
+  <meta name="description" content="Search page for Jeremy Fontenot portfolio documentation, helping reviewers find Home Lab, Microsoft 365 Lab, PowerShell, and support reference pages." />
 
   <meta property="og:title" content="Documentation Search | Portfolio">
   <meta property="og:description" content="Documentation Search | Portfolio .search-container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; } .search-header { text-align: center; mar">
@@ -293,7 +289,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-logo">Portfolio</div>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -309,15 +305,13 @@
         </ul>
     </nav>
 
-    <div class="search-container">
+    <main class="search-container" id="main">
         <a href="/docs/index.html" class="back-link">← Back to Documentation Hub</a>
 
         <div class="search-header">
             <h1>Documentation Search</h1>
-  <p>This section on Documentation Search | Portfolio provides practical context and links to related documentation and projects. It outlines common use-cases, implementation notes, and pointers to scripts or configurations maintained in the repository. Refer to the project pages for artifacts and configuration examples.</p>
-  <p>This page provides an overview of Documentation Search | Portfolio and links to related documentation and projects. It offers practical guidance and pointers to deeper resources, helping readers find the right tools, scripts, and examples. See the related docs and project pages for artifacts and implementation notes.</p>
-            <p>Search across all portfolio documentation</p>
-            <p>This search page helps recruiters and technical reviewers find specific skills, projects, and implementation notes quickly. Use keywords for platforms, tools, or workflows to jump directly to relevant documentation pages and evidence context.</p>
+            <p>Search across portfolio documentation, Home Lab notes, Microsoft 365 Lab references, scripts, and support evidence.</p>
+            <p>This page helps recruiters and technical reviewers find specific skills, projects, and implementation notes quickly.</p>
         </div>
 
         <div class="search-box">
@@ -326,18 +320,18 @@
                     type="text" 
                     class="search-input" 
                     id="searchInput" 
-                    placeholder="Search documentation... (keywords, skills, projects)"
+                    aria-label="Search documentation by keyword, skill, or project"
                     autocomplete="off"
                 >
             </div>
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="skills">Skills</button>
-                <button class="filter-btn" data-filter="projects">Projects</button>
-                <button class="filter-btn" data-filter="architecture">Architecture</button>
-                <button class="filter-btn" data-filter="scripts">Scripts</button>
-                <button class="filter-btn" data-filter="experience">Experience</button>
-                <button class="filter-btn" data-filter="certifications">Certs</button>
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="skills">Skills</button>
+                <button type="button" class="filter-btn" data-filter="projects">Projects</button>
+                <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
+                <button type="button" class="filter-btn" data-filter="scripts">Scripts</button>
+                <button type="button" class="filter-btn" data-filter="experience">Experience</button>
+                <button type="button" class="filter-btn" data-filter="certifications">Certs</button>
             </div>
         </div>
 
@@ -361,7 +355,7 @@
         </div>
 
         <div class="docs-results" id="resultsContainer"></div>
-    </div>
+    </main>
 
     <script>
         // Documentation index with metadata
@@ -601,6 +595,8 @@
         }
     </script>
 
-  <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
+  <footer class="search-container">
+    <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
+  </footer>
 </body>
 </html>

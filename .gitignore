@@ -23,3 +23,11 @@ unresolved_links.json
 scripts/compare_sitemap_indexnow.py
 scripts/fix_sitemap_indexnow.py
 scripts/verify_pass3.ps1
+
+# Generated audit artifacts
+artifacts/active-html-files.txt
+artifacts/generated-image-fixes.patch
+artifacts/generated-image-skipped.csv
+artifacts/generated-image-status.csv
+artifacts/site-audit.json
+artifacts/core-page-diff-review.txt

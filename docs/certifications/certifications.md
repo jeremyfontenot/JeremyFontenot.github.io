@@ -1,28 +1,19 @@
-# Professional Certifications
+# Credential Evidence
 
-Certifications extracted from the portfolio homepage and preserved as a unified documentation page.
-
----
-
-## Verified Certifications
-
-- **Microsoft Certified: Azure Fundamentals** — Microsoft Verified  
-- **CompTIA A+** — CompTIA Verified  
-- **CompTIA Server+** — CompTIA Verified  
-- **CompTIA ITF+** — CompTIA Verified  
-- **MTA: Networking Fundamentals** — Microsoft Verified  
-- **MTA: Windows Server Administration** — Microsoft Verified  
-- **MTA: Security Fundamentals** — Microsoft Verified  
-- **Introduction to Cybersecurity** — Cisco Verified  
-- **LPI Certification** — Linux Professional Institute (LPI) Verified  
-- **Google IT Support Specialist** — Google Verified  
+This page summarizes certification and training evidence represented by repository assets. Current credential standing should be validated through issuer-provided verification links where available.
 
 ---
 
-## Evidence Excerpts
+## Certification Areas Represented
 
-> “Microsoft Certified: Azure Fundamentals — Microsoft Verified”  
-> “CompTIA A+, CompTIA Server+, CompTIA ITF+ — CompTIA Verified”  
-> “Introduction to Cybersecurity — Cisco Verified”  
-> “LPI Certification — Linux Professional Institute (LPI) Verified”  
-> “Google IT Support Specialist — Google Verified”  
+- **Microsoft fundamentals** — Azure, networking, Windows Server, and security fundamentals evidence.
+- **CompTIA fundamentals** — IT support, endpoint troubleshooting, and server administration foundations.
+- **Networking and security training** — Cisco and security-awareness learning areas represented in badge assets.
+- **Linux fundamentals** — Linux Professional Institute-related training evidence where maintained in assets.
+- **IT support foundations** — Google IT support learning artifacts where maintained in assets.
+
+---
+
+## How This Supports the Portfolio
+
+Credential evidence supports, but does not replace, the hands-on examples shown in projects, runbooks, configuration samples, troubleshooting records, and validation steps.

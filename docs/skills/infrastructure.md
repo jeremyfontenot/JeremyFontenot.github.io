@@ -9,8 +9,7 @@ Hybrid lab architecture using Proxmox, Windows Server, pfSense, and Linux system
 - Proxmox VE  
 - Windows Server 2022  
 - pfSense  
-- RHEL 9  
-- Operational troubleshooting  
+- RHEL 9
 
 ---
 

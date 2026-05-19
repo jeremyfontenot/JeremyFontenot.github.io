@@ -5,7 +5,7 @@
   <title>Identity & Security — Documentation</title>
   <link rel="canonical" href="https://jeremyfontenot.online/docs/identity-security/">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Identity & Security — Documentation Jeremy Fontenot Docs Home Docs › Identity & Security Identity & Security Enterprise-style documentation covering AD DS,">
+  <meta name="description" content="Identity and security documentation for Home Lab and Microsoft 365 Lab work, including Entra ID, MFA, access control, and account lifecycle notes." />
   <link rel="icon" href="/assets/logos/favicon_64x64.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -42,7 +42,7 @@
   <header class="sticky top-0 bg-bg/90 border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/index.html" class="font-semibold">Jeremy Fontenot</a>
-      <nav><a href="/docs/index.html" class="text-sm text-accent">Docs Home</a></nav>
+      <nav aria-label="Documentation"><a href="/docs/index.html" class="text-sm text-accent">Docs Home</a></nav>
     </div>
   </header>
 
@@ -64,7 +64,7 @@ New-ADOrganizationalUnit -Name "Corp" -Path "DC=lab,DC=local"
 New-ADOrganizationalUnit -Name "Users" -Path "OU=Corp,DC=lab,DC=local"
 New-ADOrganizationalUnit -Name "Computers" -Path "OU=Corp,DC=lab,DC=local"
       </pre>
-      <button class="copy-btn mt-2 px-3 py-1 bg-accent text-slate-900 rounded text-xs" data-target="ad-ps">Copy</button>
+      <button type="button" class="copy-btn mt-2 px-3 py-1 bg-accent text-slate-900 rounded text-xs" data-target="ad-ps">Copy</button>
     </section>
 
     <section class="mb-6">
@@ -76,7 +76,7 @@ New-ADOrganizationalUnit -Name "Computers" -Path "OU=Corp,DC=lab,DC=local"
   "grantControls": { "operator": "AND", "builtInControls": ["mfa"] }
 }
       </pre>
-      <button class="copy-btn mt-2 px-3 py-1 bg-accent text-slate-900 rounded text-xs" data-target="ca-json">Copy</button>
+      <button type="button" class="copy-btn mt-2 px-3 py-1 bg-accent text-slate-900 rounded text-xs" data-target="ca-json">Copy</button>
     </section>
 
     <section>

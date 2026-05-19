@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Projects — Jeremy Fontenot</title>
-  <meta name="description" content="Projects: home lab, automation, and documentation examples." />
+  <meta name="description" content="Portfolio projects documenting Microsoft 365 labs, PowerShell automation, service desk workflows, and systems administration evidence for IT roles.">
+  <meta property="og:title" content="Projects — Jeremy Fontenot" />
+  <meta property="og:description" content="Case-study style IT projects with lab artifacts, implementation notes, support value, and review evidence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jeremyfontenot.online/projects.html" />
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png" />
   <link rel="stylesheet" href="/assets/css/theme.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="/projects.html" />
@@ -16,43 +21,90 @@
         <a href="/index.html"><img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'"></a>
         <div><h1>Projects</h1></div>
       </div>
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
+      <button type="button" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
       <nav id="primary-menu" class="nav" aria-label="Primary" data-primary-nav></nav>
     </div>
   </header>
   <main class="container">
     <section class="section-header" data-animate="fade-up">
       <h1>Projects & Initiatives</h1>
-      <p>Enterprise-grade systems, automation workflows, and structured documentation.</p>
+      <p>Lab and internal-project evidence for Systems Administration, Microsoft 365 Lab work, endpoint management, troubleshooting, and support documentation.</p>
     </section>
     
     <div class="card-grid-with-top-margin">
-      <article class="card" data-animate="fade-up">
+      <article class="card project-summary-card" data-animate="fade-up">
         <div class="card-header">
-          <h2>Enterprise-Grade Home Lab</h2>
+          <h2>Structured Home Lab</h2>
         </div>
         <div class="card-body">
-          <div data-docpath="/docs/curated/home-lab/Lab-Overview.html" data-fragment="p">Loading home lab project summary...</div>
+          <p class="project-objective"><strong>Objective:</strong> Build a safe lab environment that mirrors small-business identity, networking, and server administration workflows.</p>
+          <div data-docpath="/docs/curated/home-lab/Lab-Overview.html" data-fragment="p" data-fallback="Documents Windows Server, AD DS, DNS, DHCP, segmentation, monitoring, and change testing in a controlled lab context.">Documents Windows Server, AD DS, DNS, DHCP, segmentation, monitoring, and change testing in a controlled lab context.</div>
+          <ul class="project-evidence-list">
+            <li>Architecture and topology notes</li>
+            <li>Support runbook and verification report</li>
+            <li>Backup, monitoring, and change-control documentation</li>
+          </ul>
           <p class="mt-1-5"><a class="btn outline" href="/docs/home-lab/index.html">Open Home Lab Docs</a></p>
         </div>
       </article>
 
-      <article class="card" data-animate="fade-up">
+      <article class="card project-summary-card" data-animate="fade-up">
         <div class="card-header">
           <h2>Automation & Script Library</h2>
         </div>
         <div class="card-body">
-          <div data-docpath="/docs/script-documentation/index.html" data-fragment="p">Loading automation project summary...</div>
+          <p class="project-objective"><strong>Objective:</strong> Show how routine IT tasks can be documented, tested, and automated without unsafe shortcuts.</p>
+          <div data-docpath="/docs/script-documentation/index.html" data-fragment="p" data-fallback="PowerShell-focused documentation covering script organization, test outputs, and support usage notes.">PowerShell-focused documentation covering script organization, test outputs, and support usage notes.</div>
+          <ul class="project-evidence-list">
+            <li>Script documentation and verification summary</li>
+            <li>Sample configuration and metadata artifacts</li>
+            <li>Repeatable audit and manifest workflows</li>
+          </ul>
           <p class="mt-1-5"><a class="btn outline" href="/docs/script-documentation/index.html">Open Script Documentation</a></p>
         </div>
       </article>
+
+      <article class="card project-summary-card" data-animate="fade-up">
+        <div class="card-header">
+          <h2>Microsoft 365 Administration Lab</h2>
+        </div>
+        <div class="card-body">
+          <p class="project-objective"><strong>Objective:</strong> Document identity, collaboration, and endpoint administration patterns in a controlled Microsoft 365 lab tenant.</p>
+          <p>Includes Entra ID, Exchange Online, SharePoint, Teams, Intune, baseline reporting, and sample change documentation framed as lab evidence.</p>
+          <ul class="project-evidence-list">
+            <li>Tenant baseline report sample</li>
+            <li>Conditional Access and Intune policy examples</li>
+            <li>Support notes and verification artifacts</li>
+          </ul>
+          <p class="mt-1-5"><a class="btn outline" href="/docs/projects/m365-lab.html">Open M365 Lab Case Study</a></p>
+        </div>
+      </article>
+
+      <article class="card project-summary-card" data-animate="fade-up">
+        <div class="card-header">
+          <h2>RCA & Provisioning Evidence</h2>
+        </div>
+        <div class="card-body">
+          <p class="project-objective"><strong>Objective:</strong> Present troubleshooting and provisioning examples with clear symptoms, test steps, remediation notes, and lessons learned.</p>
+          <p>Uses sample artifacts to demonstrate incident triage discipline, DNS/authentication checks, and safe onboarding workflow design.</p>
+          <ul class="project-evidence-list">
+            <li>Root-cause analysis format</li>
+            <li>DNS authentication troubleshooting playbook</li>
+            <li>Provisioning and rollback notes</li>
+          </ul>
+          <p class="mt-1-5"><a class="btn outline" href="/docs/projects/index.html#incident-rca">Open RCA Case Study</a></p>
+        </div>
+      </article>
     </div>
-  </main>
+<section class="doc-context" aria-labelledby="context-projects">
+  <h2 id="context-projects">Scope Note</h2>
+  <p>Project entries are framed as Home Lab, Microsoft 365 Lab, sample, or internal-project work unless a separate source identifies them as employment history or credential evidence.</p>
+</section></main>
   <footer class="site-footer">
     <div class="container">
       <div class="footer-brand">
         <img class="footer-logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="60" height="60" loading="lazy">
-        <p class="footer-tagline">&copy; 2026 Jeremy Fontenot • Cloud Infrastructure • Systems Administration</p>
+        <p class="footer-tagline">&copy; 2026 Jeremy Fontenot • IT Support • Systems Administration • Microsoft 365</p>
       </div>
     </div>
   </footer>
