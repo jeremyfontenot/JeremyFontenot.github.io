@@ -1,0 +1,13 @@
+#!/bin/sh
+git fetch origin || { echo "git fetch failed"; exit 1; }
+branch=$(git rev-parse --abbrev-ref HEAD)
+counts=$(git rev-list --left-right --count origin/$branch...$branch 2>/dev/null || echo "0 0")
+set -- $counts
+remote_ahead=$1
+local_ahead=$2
+if [ "$remote_ahead" -ne 0 ]; then
+  echo "Push blocked: origin/$branch has $remote_ahead commit(s) you don't have."
+  echo "Run: git pull --rebase origin $branch"
+  exit 1
+fi
+exit 0

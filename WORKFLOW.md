@@ -60,7 +60,7 @@ git fetch origin
 git rebase origin/main
 ```
 
-2. Resolve any conflicts, complete the rebase with `git rebase --continue`, then push:
+1. Resolve any conflicts, complete the rebase with `git rebase --continue`, then push:
 
 ```bash
 git push origin your-branch
@@ -77,3 +77,23 @@ If you are on `main` and the push is rejected, avoid force-pushing. Prefer integ
 ## Notes
 
 - The hook added is local to your clone (`.git/hooks`). If you want the check for all developers, consider using `core.hooksPath` or a repository-level solution combined with documentation or CI checks.
+
+## Installing Git Hooks
+
+- Purpose: The repository includes installer scripts to copy the tracked hook into the local repository's `.git/hooks` directory. The `.git/hooks` directory is intentionally untracked and should not be committed.
+
+- Windows (PowerShell): run the installer to copy the hook into your local `.git` directory (no executable bit changes are attempted):
+
+```powershell
+.\scripts\install-hooks.ps1
+```
+
+- macOS / Linux: run the shell installer which copies the hook and sets it executable:
+
+```bash
+sh scripts/install-hooks.sh
+```
+
+- After running the installer the hook will be placed at `.git/hooks/pre-push` and will be invoked by Git on `git push`.
+
+- Reminder: `.git/hooks` is intentionally untracked; these installer scripts provide a cross-platform way to place hooks into `.git/hooks` for contributors.
