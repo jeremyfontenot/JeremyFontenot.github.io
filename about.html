@@ -27,11 +27,32 @@
 
     <!-- HERO -->
     <section class="hero hero--about frosted" data-animate="fade-up">
-      <div class="hero-inner">
-        <h1 class="hero-title">About Me</h1>
-        <p class="hero-subtitle">
-          Cloud‑first IT professional focused on identity, endpoint management, automation, and documentation‑driven operations.
-        </p>
+      <div class="section-inner">
+        <div class="hero-inner">
+          <img src="/assets/profile-pictures/branded-avatar.png" alt="Jeremy Fontenot" class="profile-avatar" loading="lazy">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">Identity-first. Automation-led. Documentation always.</p>
+            <h1 class="hero-title">About Me</h1>
+            <p class="hero-subtitle">
+              Cloud‑first IT professional focused on identity, endpoint management, automation, and documentation‑driven operations.
+            </p>
+            <div class="hero-badges" aria-label="Core focus areas">
+              <span class="badge badge-hero">Microsoft 365</span>
+              <span class="badge badge-hero">Entra ID</span>
+              <span class="badge badge-hero">Intune</span>
+              <span class="badge badge-hero">PowerShell</span>
+            </div>
+          </div>
+          <aside class="hero-aside" aria-label="Operational emphasis">
+            <p class="hero-aside-label">Operational emphasis</p>
+            <ul class="hero-aside-list">
+              <li>Identity architecture with clear guardrails</li>
+              <li>Automation that removes repetitive work</li>
+              <li>Documentation that stays useful under pressure</li>
+            </ul>
+            <p class="hero-aside-note">Designed for environments that need clarity, consistency, and momentum.</p>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -62,7 +83,7 @@
           <article class="card" data-animate="fade-up">
             <div class="card-body">
               <div class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <path d="M7 13l3 3 7-7" />
                 </svg>
@@ -78,7 +99,7 @@
           <article class="card" data-animate="fade-up">
             <div class="card-body">
               <div class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="3" y="4" width="18" height="14" rx="2" />
                   <path d="M8 10l4 2-4 2" />
                 </svg>
@@ -94,7 +115,7 @@
           <article class="card" data-animate="fade-up">
             <div class="card-body">
               <div class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="4" y="5" width="16" height="12" rx="2" />
                   <path d="M9 16h6" />
                 </svg>
@@ -110,7 +131,7 @@
           <article class="card" data-animate="fade-up">
             <div class="card-body">
               <div class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <polygon points="12 3 4 9 12 15 20 9 12 3" />
                   <path d="M4 15l8 6 8-6" />
                 </svg>
@@ -149,11 +170,14 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer" data-animate="fade-up">
+  <footer class="site-footer about-footer" data-animate="fade-up">
     <div class="footer-inner">
       <div class="footer-brand">
         <img src="/assets/images/logo.png" alt="Jeremy Fontenot" class="footer-logo">
-        <span class="footer-name">Jeremy Fontenot</span>
+        <div>
+          <span class="footer-name">Jeremy Fontenot</span>
+          <span class="footer-tagline">Identity, automation, documentation</span>
+        </div>
       </div>
 
       <div class="footer-tech">
@@ -165,6 +189,7 @@
 
       <div class="footer-meta">
         <span>© 2026 Jeremy Fontenot</span>
+        <span class="footer-closeout">Built for identity-first operations and clear handoffs.</span>
       </div>
     </div>
   </footer>
