@@ -12,7 +12,7 @@ async function injectPrimaryNav(){
   }
 
   try{
-    const response = await fetch('/components/primary-nav.html', { cache: 'no-cache' });
+    const response = await fetch('components/primary-nav.html', { cache: 'no-cache' });
     if(!response.ok){
       throw new Error(response.status + ' ' + response.statusText);
     }
