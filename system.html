@@ -34,8 +34,8 @@
       <h2>Quality Overview</h2>
       <div id="summary">Loading…</div>
       <div id="quality-overview" class="metrics-grid" aria-live="polite"></div>
-      <div id="intent-summary" style="margin-top:1rem"></div>
-      <div id="trend-summary" style="margin-top:1rem"></div>
+      <div id="intent-summary" class="mt-1"></div>
+      <div id="trend-summary" class="mt-1"></div>
       <div class="controls">
         <button id="refresh" class="btn">Refresh</button>
         <button id="export" class="btn">Export JSON</button>
@@ -43,10 +43,10 @@
         <button id="toggle-raw" class="btn">Show Raw Events</button>
       </div>
       <div id="top-queries"></div>
-      <div id="raw" style="display:none;margin-top:1rem"><h3>Raw events</h3><pre id="raw-pre">[]</pre></div>
+      <div id="raw" class="hidden mt-1"><h3>Raw events</h3><pre id="raw-pre">[]</pre></div>
     </section>
 
-    <footer style="margin-top:1rem;color:rgba(255,255,255,0.6)">
+    <footer class="muted-footer">
       <small>For privacy, events are stored only in this browser. To centralize logs, implement a server-side collector that accepts anonymized events.</small>
     </footer>
   </main>

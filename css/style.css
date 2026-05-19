@@ -1457,6 +1457,76 @@ section:nth-of-type(odd){background:linear-gradient(180deg,rgba(255,255,255,0.00
   border-color:rgba(34,211,238,0.3);
 }
 
+/* 10. UTILITY CLASSES */
+.mt-1-5 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-xs {
+  font-size: 0.8rem;
+}
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.source-badge {
+  display: inline-block;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 234, 255, 0.24);
+  background: rgba(0, 234, 255, 0.08);
+  color: #c8fbff;
+}
+
+.muted-footer {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-grid-with-top-margin {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .card-grid-with-top-margin {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid-with-top-margin {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* 6. ANIMATIONS */
 [data-animate="fade-up"]{
   opacity:0;
