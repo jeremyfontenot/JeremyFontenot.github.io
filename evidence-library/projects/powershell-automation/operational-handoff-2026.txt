@@ -1,0 +1,20 @@
+Operational Handoff: Provisioning Automation v1
+
+Overview:
+This file documents the operational handoff checklist for the provisioning automation maintained in the lab environment. It is intended for on-call engineers and operators receiving ownership of the automation workflow.
+
+Owner: Jeremy Fontenot
+Contact: jeremy@example.com
+
+Checklist:
+- Confirm service account credentials are stored in the vault and accessible to the operator.
+- Review `powershell-automation-provisioning-script-v1.ps1` for scheduled tasks and parameter defaults.
+- Validate logging location: `evidence-library/scripts/logs/` and confirm retention policy.
+- Test a dry-run: `.\powershell-automation-provisioning-script-v1.ps1 -WhatIf` (use dry-run flag as configured).
+- Run a scoped live test: create one test user in staging OU, verify group assignments and license provisioning.
+- Confirm monitoring: check scheduled task health and alerting configuration for failures.
+- Confirm rollback steps: run `Remove-TestUsers` helper and restore group membership from exported CSV.
+
+Handoff Notes:
+- Escalation: On failure, notify the owner and create an incident with logs attached.
+- Maintenance windows: Coordinate changes during scheduled maintenance with backups exported prior to changes.

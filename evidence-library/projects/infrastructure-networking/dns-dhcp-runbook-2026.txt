@@ -1,0 +1,23 @@
+DNS/DHCP Operational Runbook — 2026
+
+Purpose:
+Provide step-by-step operational procedures for verifying, troubleshooting, and maintaining DNS and DHCP services used in the lab environment.
+
+Routine checks:
+- Verify DNS service is running on authoritative servers: `systemctl status named` or check Windows DNS service.
+- Confirm DHCP scope utilization and active leases; export leases for change audits.
+
+Common tasks:
+1. Verify DNS zone integrity and replication. On Windows: `repadmin /showrepl` and check DNS event logs.
+2. Check DHCP scope settings: address range, exclusions, reservations; document any manual reservations.
+3. Restart service safely: schedule maintenance, `net stop dhcpserver && net start dhcpserver` (Windows) or restart `isc-dhcp-server` on Linux.
+4. Validate client-facing DNS: `nslookup`, `dig +trace` and confirm expected A/CNAME records.
+5. For DHCP reservation issues, confirm MAC address and reservation mapping; test by forcing DHCP renew on client.
+
+Rollback and change notes:
+- Before any change, export the current configuration and DHCP leases to the evidence store.
+- If an automated change causes outage, restore the exported configuration and restart services in the correct order.
+
+Contact and escalation:
+- Primary: Jeremy Fontenot (owner)
+- Escalation: Network admin on call — refer to incident runbook.
