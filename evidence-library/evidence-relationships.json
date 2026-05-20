@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-05-20T03:00:00Z",
+  "relationships": [
+    {
+      "sourceId": "architecture-diagrams-identity-access-ad-migration-diagram-2026",
+      "targetId": "projects-identity-access-identity-access-change-record-notes-2026",
+      "relationshipType": "supports-documentation",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The change notes explain the preserved identity and access work documented in the diagram."
+    },
+    {
+      "sourceId": "projects-identity-access-identity-access-change-record-notes-2026",
+      "targetId": "projects-microsoft-365-lab-microsoft-365-lab-conditional-access-baseline-configuration-2026",
+      "relationshipType": "cross-project-context",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "Both records preserve identity and conditional-access context for reviewer navigation."
+    },
+    {
+      "sourceId": "projects-microsoft-365-lab-microsoft-365-lab-conditional-access-baseline-configuration-2026",
+      "targetId": "architecture-diagrams-microsoft-365-lab-architecture-diagram-2026",
+      "relationshipType": "same-project",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The configuration record and architecture diagram belong to the same preserved Microsoft 365 lab narrative."
+    },
+    {
+      "sourceId": "architecture-diagrams-microsoft-365-lab-architecture-diagram-2026",
+      "targetId": "projects-microsoft-365-lab-microsoft-365-lab-architecture-overview-2026",
+      "relationshipType": "supports-documentation",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The diagram is a visual companion to the preserved architecture overview."
+    },
+    {
+      "sourceId": "projects-microsoft-365-lab-microsoft-365-lab-architecture-overview-2026",
+      "targetId": "architecture-diagrams-microsoft-365-lab-architecture-overview-2026",
+      "relationshipType": "same-project",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The architecture overview and diagram are paired documentation artifacts."
+    },
+    {
+      "sourceId": "scripts-powershell-automation-provisioning-script-v1",
+      "targetId": "projects-microsoft-365-lab-microsoft-365-lab-conditional-access-baseline-configuration-2026",
+      "relationshipType": "automation-support",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The preserved script supports the documented administration narrative for the Microsoft 365 work."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-troubleshooting-rca-incident-log-2025",
+      "targetId": "skills-service-desk-support-service-desk-network-troubleshooting-workflow-2026",
+      "relationshipType": "operational-path",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The incident log and workflow show the same troubleshooting and escalation path."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-troubleshooting-rca-incident-log-2025",
+      "targetId": "architecture-diagrams-service-desk-network-troubleshooting-flow-2026",
+      "relationshipType": "process-visualization",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The flow diagram visualizes the preserved troubleshooting process from the incident record."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-troubleshooting-rca-incident-log-2025",
+      "targetId": "projects-monitoring-logging-monitoring-alerting-overview-2026",
+      "relationshipType": "validation-path",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "Monitoring and alerting guidance provides adjacent operational context for the RCA record."
+    },
+    {
+      "sourceId": "architecture-diagrams-home-lab-network-topology-diagram-2026",
+      "targetId": "projects-infrastructure-networking-vlan-architecture-walkthrough-2026",
+      "relationshipType": "network-design",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The topology diagram and VLAN walkthrough document the same preserved network design intent."
+    },
+    {
+      "sourceId": "architecture-diagrams-pfsense-network-segmentation-diagram-2026",
+      "targetId": "projects-infrastructure-networking-pfsense-network-segmentation-diagram-2026",
+      "relationshipType": "same-project",
+      "confidenceLevel": "manual-review-required",
+      "note": "The diagram and documentation page describe the same preserved segmentation concept."
+    },
+    {
+      "sourceId": "projects-infrastructure-networking-pfsense-network-segmentation-diagram-2026",
+      "targetId": "projects-infrastructure-networking-vlan-architecture-walkthrough-2026",
+      "relationshipType": "architecture-to-runbook",
+      "confidenceLevel": "manual-review-required",
+      "note": "The segmentation write-up and VLAN walkthrough help reviewers follow the network design path."
+    },
+    {
+      "sourceId": "projects-infrastructure-networking-vlan-architecture-walkthrough-2026",
+      "targetId": "skills-dns-dhcp-dns-dhcp-operational-runbook-2026",
+      "relationshipType": "runbook-adjacent",
+      "confidenceLevel": "manual-review-required",
+      "note": "The walkthrough and runbook address the operational routing, naming, and service-layer context."
+    },
+    {
+      "sourceId": "projects-backup-disaster-recovery-backup-restore-validation-workflow-2026",
+      "targetId": "projects-monitoring-logging-monitoring-alerting-overview-2026",
+      "relationshipType": "validation-path",
+      "confidenceLevel": "manual-review-required",
+      "note": "The backup validation workflow and monitoring overview are adjacent operational evidence."
+    },
+    {
+      "sourceId": "validation-reports-network-validation-checklist-2026",
+      "targetId": "projects-infrastructure-networking-pfsense-network-segmentation-diagram-2026",
+      "relationshipType": "validation-evidence",
+      "confidenceLevel": "manual-review-required",
+      "note": "The checklist is the validation companion for the preserved segmentation concept."
+    },
+    {
+      "sourceId": "experience-jeremy-fontenot-resume-2026",
+      "targetId": "certifications-certification-lpi-badge-2026",
+      "relationshipType": "credential-context",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The resume and badge preserve adjacent career context without overstating active credentials."
+    },
+    {
+      "sourceId": "experience-jeremy-fontenot-resume-2026",
+      "targetId": "screenshots-portfolio-visual-screenshot-2026",
+      "relationshipType": "portfolio-history",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The screenshot is retained as historical portfolio context rather than current proof."
+    }
+  ]
+}

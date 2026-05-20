@@ -1,0 +1,16 @@
+checkId,validationArea,checkName,sourceZone,destination,method,expectedResult,evidenceToCollect,statusLabel
+NV-001,Gateway,Confirm default gateway,workstation,segment gateway,ipconfig and ping,Endpoint has expected gateway and gateway responds,Command output or screenshot,Planned
+NV-002,VLAN,Confirm switch port mode,management,switch port,configuration review,Port mode matches access or trunk intent,Switch configuration export or photo,Planned
+NV-003,VLAN,Confirm Proxmox VLAN path,lab,test VM,bridge and VM network review,VM is connected to intended VLAN or bridge,Proxmox network screenshot or config export,Planned
+NV-004,DNS,Resolve internal hostname,workstation,DNS server,Resolve-DnsName or nslookup,Internal hostname resolves to expected record,Command output,Planned
+NV-005,DNS,Resolve external hostname,workstation,DNS forwarder,Resolve-DnsName or nslookup,External hostname resolves through approved DNS path,Command output,Planned
+NV-006,DHCP,Confirm lease assignment,workstation,DHCP scope,ipconfig /all,Lease comes from expected scope with correct options,Command output,Planned
+NV-007,DHCP,Confirm reservation behavior,reserved host,DHCP service,lease review,Reserved host receives expected address,DHCP lease screenshot or export,Planned
+NV-008,Firewall,Confirm management restriction,workstation,management zone,approved connection test,Only approved admin source can reach management service,Firewall log and test notes,Planned
+NV-009,Firewall,Confirm lab isolation,lab/test,management zone,connection test,Lab/test cannot reach management zone unless explicitly allowed,Firewall deny log,Planned
+NV-010,VPN,Confirm VPN route,vpn client,approved internal service,VPN connection and ping,Approved service is reachable over documented route,VPN client screenshot or command output,Planned
+NV-011,VPN,Confirm restricted VPN access,vpn client,restricted zone,connection test,Restricted zone remains blocked,Firewall deny log,Planned
+NV-012,Connectivity,Measure latency,workstation,gateway and DNS,ping,Latency is stable and packet loss is documented,Command output,Planned
+NV-013,Service,Confirm DNS service availability,server,DNS service,service status and query,DNS service is running and answering queries,Service status and query output,Planned
+NV-014,Service,Confirm DHCP service availability,server,DHCP service,service status and lease,DHCP service is running and issuing leases,Service status and lease evidence,Planned
+NV-015,Rollback,Confirm rollback evidence,administrator,change record,documentation review,Current config and rollback steps are recorded,Export path or change note,Planned

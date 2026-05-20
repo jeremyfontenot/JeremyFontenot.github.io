@@ -2,12 +2,23 @@
 import os, json
 ROOT = os.path.abspath('.')
 SITE_BASE = 'https://jeremyfontenot.online'
+ACTIVE_HTML_LIST = os.path.join('artifacts', 'active-html-files.txt')
 
-with open(os.path.join('scripts','ahrefs_report.json'),'r',encoding='utf-8') as fh:
-    report = json.load(fh)
+def load_active_html_files():
+    if os.path.exists(ACTIVE_HTML_LIST):
+        with open(ACTIVE_HTML_LIST, 'r', encoding='utf-8') as fh:
+            return [line.strip().replace('\\', '/') for line in fh if line.strip()]
+
+    report_path = os.path.join('scripts', 'ahrefs_report.json')
+    if os.path.exists(report_path):
+        with open(report_path, 'r', encoding='utf-8') as fh:
+            report = json.load(fh)
+        return [rel.replace('\\', '/') for rel in report.get('html_files', [])]
+
+    return []
 
 urls = []
-for rel in report['html_files']:
+for rel in load_active_html_files():
     if rel.startswith('internal') or rel.startswith('assets') or rel.startswith('cdn-cgi'):
         continue
     # map index.html to directory
@@ -22,8 +33,8 @@ for rel in report['html_files']:
     urls.append(url)
 
 # write sitemap.xml
-from datetime import datetime
-now = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+from datetime import datetime, UTC
+now = datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%SZ')
 entries = []
 for u in urls:
     entries.append(f'  <url>\n    <loc>{u}</loc>\n    <lastmod>{now}</lastmod>\n  </url>')

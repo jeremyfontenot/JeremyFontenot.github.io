@@ -1,212 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jeremy Fontenot — IT Support & Systems Administration Portfolio</title>
-  <meta name="description" content="IT Support and Systems Administration portfolio for Jeremy Fontenot, featuring Home Lab, Microsoft 365 Lab, PowerShell, endpoint, and support documentation." />
-  <link rel="canonical" href="/index.html" />
-  <link rel="icon" href="/assets/logos/favicon_64x64.png" type="image/png" />
-  <meta property="og:title" content="Jeremy Fontenot — IT Support & Systems Administration Portfolio" />
-  <meta property="og:description" content="IT Support, Microsoft 365 Lab, Windows Server, Intune, PowerShell, and Systems Administration portfolio." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jeremyfontenot.online/index.html" />
-  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Jeremy Fontenot","url":"https://jeremyfontenot.online/","jobTitle":"Service Desk Technician / Entry-Level System Administrator","sameAs":["https://www.linkedin.com/in/jeremy-fontenot-b1537a264/","https://github.com/JeremyFontenot"]}
-  </script>
-  <link rel="stylesheet" href="/assets/css/theme.css">
-  <link rel="stylesheet" href="/css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation-First IT Portfolio | Jeremy Fontenot</title>
+<meta name="description" content="Documentation-first IT portfolio built around preserved lab evidence, operational runbooks, architecture diagrams, scripts, and validation methodology.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jeremyfontenot.com/">
+<meta property="og:title" content="Documentation-First IT Portfolio | Jeremy Fontenot">
+<meta property="og:description" content="Documentation-first IT portfolio built around preserved lab evidence, operational runbooks, architecture diagrams, scripts, and validation methodology.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/js/site.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-grid">
-      <div class="brand">
-        <img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
-        <div>
-          <h1 class="site-title">Jeremy Fontenot</h1>
-          <p class="lead">Service Desk • Systems Administration • Microsoft 365 • Automation</p>
-        </div>
-      </div>
-      <button type="button" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
-      <nav id="primary-menu" aria-label="Primary" class="nav" data-primary-nav></nav>
-    </div>
-  </header>
-
-  <main id="main" class="container">
-    <section class="hero home-hero" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <div class="frosted-card">
-          <p class="hero-eyebrow">IT Support and Systems Administration portfolio</p>
-          <h2 id="hero-title">Service desk, systems administration, and Microsoft 365 lab evidence.</h2>
-          <div data-docpath="/docs/curated/portfolio/Portfolio-Summary.html" data-fragment="p" data-fallback="This portfolio presents lab, support, and admin-focused work across Microsoft 365, Windows Server, endpoint management, PowerShell automation, and troubleshooting.">This portfolio presents lab, support, and admin-focused work across Microsoft 365, Windows Server, endpoint management, PowerShell automation, and troubleshooting.</div>
-          <div class="hero-badges">
-            <span class="badge badge-hero">Microsoft 365</span>
-            <span class="badge badge-hero">Entra ID</span>
-            <span class="badge badge-hero">Intune</span>
-            <span class="badge badge-hero">PowerShell</span>
-          </div>
-          <div class="cert-ribbon">
-            <span>Certification Study Focus</span>
-            <strong>Microsoft 365 Fundamentals</strong>
-            <strong>CompTIA A+</strong>
-            <strong>Network+ fundamentals</strong>
-          </div>
-          <p class="cta-row">
-            <a class="btn" href="/projects.html">
-              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Explore Projects
-            </a>
-            <a class="btn outline" href="/docs/index.html">
-              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.5A2.5 2.5 0 015.5 4h11A2.5 2.5 0 0119 6.5V19l-7-3-7 3V6.5z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Open Documentation Hub
-            </a>
-            <a class="btn outline" href="/dashboard/index.html">
-              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 14V7h5v7H7zM17 20V10h-4v10h4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              View CI Dashboard
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="hero-meta hero-visual" aria-labelledby="topology-title">
-        <p class="hero-aside-label">Infrastructure Preview</p>
-        <h3 id="topology-title">Home Lab Topology</h3>
-        <div class="topology-card" role="img" aria-label="Preview diagram showing client, identity, Microsoft 365, endpoint, automation, and documentation nodes">
-          <span class="topology-node node-client">Client</span>
-          <span class="topology-node node-identity">AD / Entra ID</span>
-          <span class="topology-node node-m365">Microsoft 365</span>
-          <span class="topology-node node-endpoint">Intune</span>
-          <span class="topology-node node-script">PowerShell</span>
-          <span class="topology-node node-docs">Docs Hub</span>
-        </div>
-        <p class="hero-visual-note">A compact view of the systems, scripts, and documentation used throughout the portfolio.</p>
-        <p>Email: <a class="contact-email" href="#" data-email-user="jeremy.fontenot" data-email-domain="jeremyfontenot.online" data-email-label="Email Jeremy" data-email-aria="Email Jeremy Fontenot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 015.5 3h13A2.5 2.5 0 0121 5.5v13a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 18.5v-13z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 7l-9 6L3 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg> Email Jeremy</a></p>
-      </div>
-    </section>
-
-    <section class="metrics-strip" aria-label="Portfolio metrics">
-      <div class="metric-card">
-        <strong data-counter="4">0</strong>
-        <span>Focus domains</span>
-      </div>
-      <div class="metric-card">
-        <strong data-counter="3">0</strong>
-        <span>Lab tracks</span>
-      </div>
-      <div class="metric-card">
-        <strong data-counter="6">0</strong>
-        <span>Evidence types</span>
-      </div>
-      <div class="metric-card">
-        <strong data-counter="52">0</strong>
-        <span>Public documentation routes</span>
-      </div>
-    </section>
-
-    <section class="highlights" aria-label="Highlights">
-      <article class="card" data-animate="fade-up">
-        <div class="card-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="3" y="14" width="18" height="6" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
-        </div>
-        <h3>Home Lab</h3>
-        <div class="card-body" data-docpath="/docs/curated/home-lab/Home.html" data-fragment="p" data-fallback="Home Lab notes cover Windows Server, identity, networking, monitoring, and repeatable support documentation.">Home Lab notes cover Windows Server, identity, networking, monitoring, and repeatable support documentation.</div>
-      </article>
-      <article class="card" data-animate="fade-up">
-        <div class="card-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M6.2 7.5l1.8 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M16.8 16.5l1.8 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Automation</h3>
-        <div class="card-body" data-docpath="/docs/curated/script-documentation/Automation.html" data-fragment="p" data-fallback="PowerShell examples focus on readable functions, repeatable checks, logging, and safe service desk usage.">PowerShell examples focus on readable functions, repeatable checks, logging, and safe service desk usage.</div>
-      </article>
-      <article class="card" data-animate="fade-up">
-        <div class="card-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Security & Compliance</h3>
-        <div class="card-body" data-docpath="/docs/curated/security/Security-Overview.html" data-fragment="p" data-fallback="Security notes cover MFA, Conditional Access, baseline review, and careful handling of sample evidence.">Security notes cover MFA, Conditional Access, baseline review, and careful handling of sample evidence.</div>
-      </article>
-      <article class="card" data-animate="fade-up">
-        <div class="card-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 14V7h5v7H7zM17 20V10h-4v10h4z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>CI Health Dashboard</h3>
-        <div class="card-body">
-          <p>Track site integrity, incident state, and recent verification runs in one place.</p>
-          <p><a class="btn outline" href="/dashboard/index.html">Open the dashboard</a></p>
-        </div>
-      </article>
-    </section>
-
-    <section class="portfolio-section" aria-labelledby="proof-title" data-animate="fade-up">
-      <div class="section-header">
-        <h2 id="proof-title">Portfolio Evidence</h2>
-        <p>Portfolio content is framed as lab, demo, sample, or internal project work unless it is tied to a verifiable employment or credential source.</p>
-      </div>
-      <div class="evidence-grid">
-        <article class="evidence-panel">
-          <span class="eyebrow">Identity</span>
-          <h3>Active Directory and Entra ID Practice</h3>
-          <p>OU planning, group-based access, MFA and Conditional Access notes, and role-scoped administration examples built for repeatable review.</p>
-          <a class="text-link" href="/docs/identity-security/index.html">Review identity documentation</a>
-        </article>
-        <article class="evidence-panel">
-          <span class="eyebrow">Endpoint</span>
-          <h3>Intune and Windows Baseline Work</h3>
-          <p>Sample compliance policy exports, Windows 11 configuration notes, test steps, and rollback-aware change records.</p>
-          <a class="text-link" href="/docs/projects/index.html#intune-baseline">Open endpoint case study</a>
-        </article>
-        <article class="evidence-panel">
-          <span class="eyebrow">Automation</span>
-          <h3>PowerShell Documentation and Controls</h3>
-          <p>Scripts and runbooks emphasize approved verbs, readable logs, input checks, and safe defaults for service desk workflows.</p>
-          <a class="text-link" href="/docs/scripts/index.html">Open script documentation</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="portfolio-section portfolio-section--compact" aria-labelledby="workflow-title" data-animate="fade-up">
-      <div class="section-header">
-        <h2 id="workflow-title">How the Site Is Organized</h2>
-        <p>The public pages introduce the professional story; the documentation hub holds deeper runbooks, case studies, evidence artifacts, and search tools.</p>
-      </div>
-      <div class="workflow-strip">
-        <div><strong>1. Projects</strong><span>Business problem, implementation summary, and support value.</span></div>
-        <div><strong>2. Evidence</strong><span>Sample artifacts, diagrams, YAML or JSON exports, and test notes.</span></div>
-        <div><strong>3. Documentation</strong><span>Runbooks, troubleshooting guides, and repeatable admin procedures.</span></div>
-        <div><strong>4. Verification</strong><span>Static audit scripts, manifest checks, link checks, and deployment readiness review.</span></div>
-      </div>
-    </section>
-<section class="doc-context" aria-labelledby="context-jeremy-fontenot">
-  <h2 id="context-jeremy-fontenot">Scope Note</h2>
-  <p>This portfolio separates verified career history from Home Lab, Microsoft 365 Lab, demo, and internal-project evidence so reviewers can evaluate each artifact in the right context.</p>
-</section></main>
-
-  <footer class="site-footer home-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <img src="/assets/images/logo.png" alt="Jeremy Fontenot" width="48" height="48" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
-          <div>
-            <small>&copy; 2026 Jeremy Fontenot</small>
-            <span class="footer-tagline">Documentation hub and portfolio.</span>
-          </div>
-        </div>
-        <div class="footer-badges">
-          <span class="badge">Microsoft 365</span>
-          <span class="badge">Entra ID</span>
-          <span class="badge">Intune</span>
-          <span class="badge">PowerShell</span>
-        </div>
-        <div class="footer-meta">
-          <span class="footer-closeout">Built for clear evidence, maintainable documentation, and practical IT workflows.</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/js/main.js" defer></script>
-  <script src="/js/search.js" defer></script>
-  <script src="/js/email-obfuscation.js" defer></script>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="/index.html" aria-current="page" aria-label="Jeremy Fontenot portfolio home"><span class="brand-mark">JF</span><span>Jeremy Fontenot</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span>Menu</span></button><div class="nav-links" id="primary-menu"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/projects.html">Projects</a><a href="/skills.html">Skills</a><a href="/experience.html">Experience</a><a href="/documentation.html">Documentation</a><a href="/contact.html">Contact</a><a class="nav-cta" href="/docs/search.html">Search Evidence</a></div></nav></header>
+<main id="main">
+<section class="hero"><div class="hero-inner"><p class="eyebrow">Preserved evidence portfolio</p><h1>Documentation-first IT portfolio backed by preserved evidence.</h1><p class="lead">Jeremy Fontenot presents a recruiter-ready portfolio of archived home lab documentation, Microsoft 365 workflows, PowerShell automation, troubleshooting records, and validation methodology.</p><div class="hero-actions"><a class="button primary" href="/docs/search.html">Search documentation</a><a class="button" href="/evidence-library/index.html">Browse evidence library</a></div></div></section>
+<section class="section"><div class="section-inner"><h2>Proof-backed rebuild</h2><p class="lead">The site now presents preserved documentation, historical lab records, diagrams, scripts, runbooks, and validation methodology as the portfolio proof set.</p><div class="metric-row"><div class="metric"><strong>22</strong><span>promoted evidence records</span></div><div class="metric"><strong>32</strong><span>areas reviewed</span></div><div class="metric"><strong>2</strong><span>weak areas remediated</span></div><div class="metric"><strong>0</strong><span>fabricated claims added</span></div></div><div class="grid"><article class="card"><span class="badge">Searchable</span><h3>Documentation Hub</h3><p>Search project, skill, validation, architecture, and script evidence from one client-side index.</p><a class="button" href="/docs/search.html">Review details</a></article><article class="card"><span class="badge">Preserved evidence</span><h3>Evidence Library</h3><p>Browse promoted canonical evidence with source traceability and preservation status.</p><a class="button" href="/evidence-library/index.html">Review details</a></article><article class="card"><span class="badge">Evidence-safe</span><h3>Truthful lab framing</h3><p>The home lab is described as documented and preserved evidence, not as active infrastructure.</p><a class="button" href="/projects.html">Review details</a></article></div></div></section>
+</main>
+<footer class="site-footer"><div class="section-inner"><p>Jeremy Fontenot - documentation-first IT portfolio.</p><p><a href="/docs/index.html">Documentation Hub</a> · <a href="/evidence-library/index.html">Evidence Library</a></p></div></footer>
 </body>
 </html>

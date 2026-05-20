@@ -15,7 +15,21 @@
       "missing_from_indexnow": [],
       "indexnow_removed_pages": []
     },
-    "orphan_pages": []
+    "orphan_pages": [
+      "docs/brand-guide/branding.html",
+      "docs/homelab/index.html",
+      "docs/identity-security/index.html",
+      "docs/powershell/index.html",
+      "docs/server-guides/index.html",
+      "docs/skills/cloud.html",
+      "docs/skills/endpoint.html",
+      "docs/skills/identity.html",
+      "docs/skills/infrastructure.html",
+      "docs/skills/monitoring.html",
+      "docs/source-browser.html",
+      "docs/troubleshooting/index.html",
+      "docs/validation/index.html"
+    ]
   },
   "summary": {
     "broken_links": 0,
@@ -33,6 +47,6 @@
       "missing_from_indexnow": 0,
       "indexnow_removed_pages": 0
     },
-    "orphan_pages": 0
+    "orphan_pages": 13
   }
 }
