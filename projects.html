@@ -18,7 +18,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/"><img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="" width="44" height="44"><span>Jeremy Fontenot</span></a>
+      <a class="brand" href="/"><img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="44" height="44"><span>Jeremy Fontenot</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
       <div class="nav-links" id="primary-menu">
         <a href="/">Home</a>
@@ -34,6 +34,7 @@
       <p class="eyebrow">Selected Work</p>
       <h1>Projects tied to preserved evidence.</h1>
       <p class="lead">These projects are written as portfolio demonstrations and historical lab records. Each one points to supporting proof where the underlying artifact exists.</p>
+      <p class="lead">Project overview: preserved historical lab records and review-ready artifacts. Each project links to real validation artifacts and documentation; this portfolio is documentation-first and evidence-backed.</p>
     </section>
 
     <section class="section">
@@ -41,56 +42,64 @@
         <article class="card project-card">
           <span class="badge">Microsoft 365</span>
           <h2>Microsoft 365 Lab Baseline</h2>
-          <p>Preserved conditional access baseline notes and architecture documentation for identity and cloud administration review.</p>
+          <p>Preserved architecture and baseline notes for Microsoft 365 identity and administration workflows. Evidence-first: open the architecture diagram and supporting notes.</p>
           <ul>
             <li>Conditional access baseline sample</li>
             <li>Microsoft 365 lab architecture overview</li>
             <li>Identity and endpoint administration framing</li>
           </ul>
-          <a class="button" href="/proof.html?project=Microsoft%20365%20Lab">View proof</a>
+          <span id="proj1-desc" class="sr-only">Opens Microsoft 365 lab architecture overview (SVG)</span>
+          <a class="button" href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="proj1-desc">Open architecture diagram (SVG)</a>
+          <p class="meta">Format: SVG — Purpose: architecture overview</p>
         </article>
 
         <article class="card project-card">
           <span class="badge">PowerShell</span>
           <h2>Provisioning Automation</h2>
-          <p>PowerShell automation artifact showing repeatable administration structure, change notes, and script evidence.</p>
+          <p>Preserved PowerShell provisioning script demonstrating repeatable user and system configuration steps with documented change context.</p>
           <ul>
             <li>Provisioning script sample</li>
             <li>Change record notes</li>
             <li>Operational handoff context</li>
           </ul>
-          <a class="button" href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1">Open script</a>
+          <span id="proj2-desc" class="sr-only">Opens provisioning PowerShell script (PS1)</span>
+          <a class="button" href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="proj2-desc">Open provisioning script (PS1)</a>
+          <p class="meta">Format: PS1 — Purpose: provisioning automation</p>
         </article>
 
         <article class="card project-card">
           <span class="badge">Troubleshooting</span>
           <h2>Service Desk RCA Workflow</h2>
-          <p>Incident and troubleshooting records focused on support triage, escalation notes, and root-cause documentation.</p>
+          <p>Preserved incident log and service-desk troubleshooting workflow documenting RCA, remediation steps, and validation notes.</p>
           <ul>
             <li>Incident log evidence</li>
             <li>DNS authentication playbook</li>
             <li>Network troubleshooting workflow</li>
           </ul>
-          <a class="button" href="/proof.html?project=Troubleshooting%20RCA">View proof</a>
+          <span id="proj3-desc" class="sr-only">Opens Troubleshooting RCA incident log (text)</span>
+          <a class="button" href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt" aria-describedby="proj3-desc">Open incident log (TXT)</a>
+          <p class="meta">Format: TXT — Purpose: incident RCA record</p>
         </article>
 
         <article class="card project-card">
           <span class="badge">Networking</span>
-          <h2>Infrastructure & Network Segmentation</h2>
-          <p>Preserved diagrams and runbooks describing VLAN, pfSense, DNS, DHCP, and support-oriented network documentation.</p>
+          <h2>Infrastructure &amp; Network Segmentation</h2>
+          <p>Preserved segmentation diagrams and runbooks describing VLAN, pfSense firewall intent, and DNS/DHCP operational notes.</p>
           <ul>
             <li>Network topology diagrams</li>
             <li>VLAN architecture walkthrough</li>
             <li>DNS/DHCP operational runbook</li>
           </ul>
-          <a class="button" href="/proof.html?project=Infrastructure%20Networking">View proof</a>
+          <span id="proj4-desc" class="sr-only">Opens pfSense network segmentation diagram (SVG)</span>
+          <a class="button" href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-describedby="proj4-desc">Open segmentation diagram (SVG)</a>
+          <p class="meta">Format: SVG — Purpose: network segmentation diagram</p>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Jeremy Fontenot - project evidence is preserved for portfolio review.</p>
+    <p>Jeremy Fontenot - Documentation-first portfolio built from preserved lab evidence and operational artifacts.</p>
     <p><a href="/proof.html">Proof library</a> · <a href="/contact.html">Contact</a></p>
   </footer>
 </body>
