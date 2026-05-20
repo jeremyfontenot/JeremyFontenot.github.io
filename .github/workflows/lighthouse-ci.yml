@@ -53,7 +53,7 @@ jobs:
           npx -y @lhci/cli@0.11.0 autorun \
             --collect.staticDistDir=site \
             --collect.numberOfRuns=3 \
-            --collect.settings.emulatedFormFactor=mobile \
+            --collect.settings.formFactor=mobile \
             --upload.target=temporary-public-storage \
             --assert.performance=90 \
             --assert.accessibility=95 \
