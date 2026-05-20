@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proof Library | Jeremy Fontenot</title>
+  <meta name="description" content="Search preserved portfolio proof artifacts including diagrams, scripts, configuration samples, incident records, and documentation notes.">
+  <link rel="canonical" href="https://jeremyfontenot.online/proof.html">
+  <meta property="og:title" content="Proof Library | Jeremy Fontenot">
+  <meta property="og:description" content="A simple static proof library for preserved IT portfolio artifacts.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+  <link rel="icon" href="/assets/logos/favicon_64x64.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="" width="44" height="44"><span>Jeremy Fontenot</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <div class="nav-links" id="primary-menu">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/proof.html" aria-current="page">Proof</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page">
+    <section class="page-hero">
+      <p class="eyebrow">Preserved Proof</p>
+      <h1>Search the proof library.</h1>
+      <p class="lead">This library loads preserved portfolio artifacts from a static JSON index. It includes historical lab records, diagrams, scripts, configuration samples, support notes, and validation checklists that can be inspected directly.</p>
+    </section>
+
+    <section class="section proof-tools" aria-label="Proof search">
+      <label class="search-box">
+        <span>Search proof artifacts</span>
+        <input id="proof-search" type="search" placeholder="Search Microsoft 365, PowerShell, DNS, RCA, diagrams...">
+      </label>
+      <div class="filter-row" aria-label="Proof filters">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="diagram">Diagrams</button>
+        <button class="filter-button" type="button" data-filter="script">Scripts</button>
+        <button class="filter-button" type="button" data-filter="configuration">Configurations</button>
+        <button class="filter-button" type="button" data-filter="notes">Notes</button>
+      </div>
+      <p class="result-count" id="proof-count">Loading proof artifacts...</p>
+      <div class="proof-grid" id="proof-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Proof artifacts are static files preserved for portfolio review.</p>
+    <p><a href="/projects.html">Projects</a> · <a href="/contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>
