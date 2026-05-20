@@ -4,8 +4,7 @@ type: notes
 tags: [provisioning, change-log, powershell]
 ---
 
-# Provisioning change log
-
+ 
 This change log records approved changes to the provisioning automation used in the lab and test environments. Entries include scope, author, validation steps, and rollback guidance.
 
 ## 2026-04-12 — Draft v1.0
