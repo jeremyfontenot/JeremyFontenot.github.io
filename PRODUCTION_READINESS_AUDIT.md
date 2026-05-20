@@ -1,19 +1,23 @@
-# PRODUCTION READINESS AUDIT
+# DEPLOYMENT READINESS AUDIT
+
+<!-- markdownlint-disable MD013 -->
+
 ## Execution Layer Hardening System v1.0
 
 **Date**: May 14, 2026  
 **Audit Level**: CRITICAL PATH - Pre-Production Validation  
-**Severity**: Production Deployment Decision
+**Severity**: Deployment Review Decision
 
 ---
 
 ## EXECUTIVE SUMMARY
 
-**Verdict**: ⚠️ **NEEDS HARDENING BEFORE PRODUCTION**
+**Verdict**: ⚠️ **NEEDS HARDENING BEFORE RELEASE**
 
-The execution layer has **strong architectural intent** but contains **critical gaps** that make it unsafe for production CI/CD automation without immediate remediation. Multiple failure modes exist that violate stated safety guarantees.
+The execution layer has **strong architectural intent** but contains **critical gaps** that make it unsafe for release automation without immediate remediation. Multiple failure modes exist that violate stated safety guarantees.
 
-**Key Issues Identified**: 
+**Key Issues Identified**:
+
 - 7 high-severity risks (SYSTEM failures that bypass incident classification)
 - 3 medium-severity risks (SEO incident masking)
 - 5 low-severity risks (operational/observability gaps)
@@ -41,6 +45,7 @@ $proc = Start-Process -FilePath python -ArgumentList @($pythonScriptPath) ...
 ```
 
 **Issue**: The `verify_pass4.ps1` orchestration script itself is **not protected**. An attacker or misconfiguration could modify this file to:
+
 - Execute inline PowerShell: `powershell -c $maliciousCode`
 - Use `Invoke-Expression` directly
 - Bypass subprocess isolation entirely
@@ -58,6 +63,7 @@ run: |
 ```
 
 **Issue**: The GitHub Actions workflow **accepts arbitrary Python code** in the `run:` block. While the current implementation is safe, there is **no guard rail** preventing:
+
 - Future edits adding inline execution
 - Accidental subprocess.run with `shell=True`
 - Environment variable injection
@@ -67,6 +73,7 @@ run: |
 #### Risk 3: Configuration File Not Enforced
 
 The `execution.config.json` defines `inline_execution_allowed: false` and lists patterns to reject, but:
+
 - **Configuration is read-only metadata** - violations are NOT blocked at runtime
 - The Python layer checks patterns in logs but doesn't prevent execution
 - Pattern rejection is reactive (post-hoc), not preventive
@@ -74,6 +81,7 @@ The `execution.config.json` defines `inline_execution_allowed: false` and lists 
 **Status**: 🔴 **UNENFORCED GUARDRAIL**
 
 **Bypass Example**:
+
 ```python
 # This would violate config but won't be caught:
 os.system("python -c 'malicious'")  # Not subprocess.run(), bypasses check
@@ -89,6 +97,7 @@ exec("print('code execution')")     # Direct Python exec, not in process list
 **ACTUAL COMPLIANCE**: ✅ **COMPLETE - Both Layers Verified**
 
 Both Python and PowerShell layers correctly use subprocess isolation:
+
 - Python: `subprocess.run(..., shell=False)` ✅
 - PowerShell: `Start-Process -FilePath` with explicit arguments ✅
 - No `shell=True` anywhere ✅
@@ -103,7 +112,8 @@ Both Python and PowerShell layers correctly use subprocess isolation:
 
 **ACTUAL COMPLIANCE**: ✅ **ENFORCED for Script Layer, ⚠️ Partial for Orchestration**
 
-#### Compliant Pattern (Python Execution Layer):
+#### Compliant Pattern (Python Execution Layer)
+
 ```python
 # Data exchange via files only
 result = subprocess.run([sys.executable, str(script_path)], ...)
@@ -112,7 +122,8 @@ with open(output_path) as f:
     data = json.load(f)
 ```
 
-#### Potential Gap (PowerShell):
+#### Potential Gap (PowerShell)
+
 ```powershell
 # Currently compliant but vulnerability exists:
 $proc = Start-Process ... -RedirectStandardOutput $logPath
@@ -130,8 +141,9 @@ $proc = Start-Process ... -RedirectStandardOutput $logPath
 
 **ACTUAL COMPLIANCE**: 🔴 **NOT SEPARATED - Critical Architectural Issue**
 
-#### Architecture Gap:
-```
+#### Architecture Gap
+
+```text
 ┌─────────────────────────────────────────────────────┐
 │ Orchestration Layer (verify_pass4.ps1)              │
 │ - Script path selection                             │
@@ -150,12 +162,14 @@ $proc = Start-Process ... -RedirectStandardOutput $logPath
 ```
 
 **Problem**: The execution layer has **no authority over**:
+
 - Which script gets executed
 - What arguments are passed
 - What constitutes success/failure
 - When to retry or escalate
 
 **Risk**: A malicious/buggy `verify_pass4.ps1` could:
+
 ```powershell
 # Execute wrong script:
 $proc = Start-Process -FilePath python `
@@ -178,7 +192,7 @@ if ($proc.ExitCode -eq 0) { ... }  # Assumes 0=success
 ### 2.1 Execution Layer Failures (SYSTEM Classification)
 
 | ID | Failure Mode | Current Handling | Risk | Bypass Possible? |
-|----|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **E1** | Script not found | ✅ Caught, SYSTEM incident | Low | No - file check is reliable |
 | **E2** | Timeout exceeded | ✅ Caught, SYSTEM incident | Medium | Maybe - timeout is not enforced at OS level |
 | **E3** | Non-zero exit code | ✅ Caught, SYSTEM incident | Low | No - subprocess exit code is reliable |
@@ -297,6 +311,7 @@ def log_execution_error(error_object: Dict):
 ```
 
 **Issue**: If `incident_file` write fails:
+
 - Error logged to `execution_log.jsonl` ✅
 - Incident directory created ✅
 - But incident JSON not written ❌
@@ -310,12 +325,14 @@ def log_execution_error(error_object: Dict):
 ### 2.6 MEDIUM-RISK: Stdout/Stderr Redirect Security
 
 PowerShell:
+
 ```powershell
 -RedirectStandardOutput (Join-Path $env:TEMP "verify_pass4_stdout.log") `
 -RedirectStandardError (Join-Path $env:TEMP "verify_pass4_stderr.log")
 ```
 
 **Issues**:
+
 - Temp directory is world-writable on Windows
 - Filename collision possible (though unlikely with milliseconds)
 - Sensitive data (API keys, credentials) could leak to temp files
@@ -337,6 +354,7 @@ exit_codes = {
 ```
 
 **Problem**: The definition is ambiguous. Does exit code 0 mean:
+
 - ✅ Script completed and generated valid output?
 - ✅ Script completed even if it found 1000 broken links?
 - ✅ Data is safe to consume?
@@ -344,6 +362,7 @@ exit_codes = {
 **Current Assumption**: Exit code 0 = output file will exist and be valid
 
 **But**: What if the script logic is:
+
 ```python
 if broken_links > 0:
     sys.exit(0)  # "Completed, just FYI we found issues"
@@ -375,6 +394,7 @@ if result.returncode != 0:
 **Critical Finding**: 🔴 **SEO incidents are NOT created by execution layer**
 
 The GitHub Actions workflow creates them:
+
 ```yaml
 if broken_links > 0:
     print("::error::SEO incident detected")
@@ -384,13 +404,14 @@ if broken_links > 0:
 ```
 
 **Problem**: Incident classification is **split across layers**:
+
 - Layer 1 (Execution): Detects SYSTEM issues
 - Layer 2 (CI/CD Workflow): Detects SEO issues
 - Layer 3 (Disk filesystem): Stores incidents
 
 **Misclassification Risk**: What if...
 
-```
+```text
 Scenario: ahrefs_verification.py crashes with exit code 1
   ├─ Execution layer creates: SYSTEM incident ✅
   └─ GitHub workflow sees: exit(1), doesn't run SEO check ✅
@@ -409,7 +430,7 @@ Scenario: ahrefs_verification.py runs successfully but:
 
 ### 3.2 Partial Execution Failure
 
-```
+```text
 Scenario: ahrefs_verify_pass4.json exists but is corrupt
   ├─ Execution layer: Output file exists → PASS
   ├─ Execution layer: JSON is invalid → SYSTEM incident ✅
@@ -418,6 +439,7 @@ Scenario: ahrefs_verify_pass4.json exists but is corrupt
 ```
 
 Current workflow code:
+
 ```yaml
 metrics = data.get("metrics", {})
 broken_links = metrics.get("broken_links", 0)
@@ -434,7 +456,7 @@ If JSON is invalid, this throws and isn't caught.
 ### 4.1 Traceability Requirements
 
 | Requirement | Implementation | Gap |
-|---|---|---|
+| --- | --- | --- |
 | **Full execution history** | `execution_log.jsonl` | ⚠️ Only appends; no unique ID chain |
 | **Failure root cause** | `error_object` in incident JSON | ⚠️ Limited context (stderr truncated to 500 chars) |
 | **Environmental context** | Partial (script name, context, duration) | 🔴 Missing: Python version, env vars, working dir |
@@ -466,6 +488,7 @@ If JSON is invalid, this throws and isn't caught.
 ### 4.3 Forensic Capability
 
 **To replay a failure**, need:
+
 1. ✅ Script name → YES
 2. ✅ Script exit code → YES
 3. ✅ Failure timestamp → YES
@@ -493,7 +516,7 @@ on:
 
 **Scenario**: User manually triggers workflow while scheduled run is in progress.
 
-```
+```text
 T0: Scheduled run starts
 T1: Both workflows write to: observability/incidents/system/2026-05-14/
 T2: Both try to create: 10-30-45_exec-20260514-001.json
@@ -521,7 +544,7 @@ T3: File collision? → Windows allows it (one overwrites)
 
 **Scenario**: Two concurrent workflows both run `git push` at same time.
 
-```
+```text
 T0: Workflow A pulls latest
 T1: Workflow B pulls latest
 T2: Workflow A adds files and commits
@@ -550,7 +573,7 @@ git push
 
 **Scenario**: What if `git add observability/incidents/system/` fails?
 
-```
+```text
 T0: ahrefs_verify_pass4.json added ✅
 T1: execution_log.jsonl added ✅
 T2: observability/incidents/system/ add fails (permission denied?) ❌
@@ -579,7 +602,7 @@ git add ahrefs_verify_pass4.json -f
 
 **Scenario**: Script is writing `ahrefs_verify_pass4.json` while `git add` runs.
 
-```
+```text
 T0: Script writes: { "timestamp": "2026-05-14T...", ...
 T1: git add starts reading file
 T2: Script finishes write, file closed
@@ -587,12 +610,14 @@ T3: git add gets corrupted data (half-written JSON?)
 T4: Repository stores corrupted file ❌
 ```
 
-**Current Prevention**: 
+**Current Prevention**:
+
 - Script executes in subprocess ✅
 - Git runs after verify_pass4.ps1 completes ✅
 - But: Workflow step waits for verify_pass4.ps1 to finish?
 
 Looking at workflow:
+
 ```yaml
 - name: Run SEO Verification via Hardened Execution Layer
   id: verify
@@ -611,6 +636,7 @@ Looking at workflow:
 ### 5.4 Failure Masking
 
 **Current Workflow**:
+
 ```yaml
 - name: Classify Incident Type (SYSTEM vs SEO)
   if: always()
@@ -650,12 +676,14 @@ Looking at workflow:
 ```
 
 **Issues**:
+
 1. No retry logic if `git push` fails
 2. `--allow-empty` allows committing even if nothing changed
 3. What if someone manually commits between execution and push?
 
 **Scenario**:
-```
+
+```text
 T0: Workflow commits with --allow-empty
 T1: Manual commit happens externally
 T2: Workflow's push gets rejected
@@ -670,7 +698,7 @@ T4: No retry → Incident data not pushed ❌
 ## 6. RISK SUMMARY MATRIX
 
 | # | Risk | Severity | Category | Mitigation Status | Likelihood | Impact |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | **R1** | Inline execution not enforced in orchestration layer | HIGH | SYSTEM | ❌ UNMITIGATED | Medium | High |
 | **R2** | Partial file write accepted (incomplete JSON) | HIGH | SYSTEM/SEO | ✅ PARTIALLY (JSON check only) | Low | High |
 | **R3** | Timeout not fully enforced (orphaned processes) | HIGH | SYSTEM | ❌ UNMITIGATED | Low | Medium |
@@ -748,6 +776,7 @@ No evidence of this, but no protection either.
 ### Detailed Reasoning
 
 The execution layer has:
+
 - ✅ **Good intent**: Subprocess isolation, output validation, incident classification
 - ✅ **Sound architecture**: Separation of concerns, observability, event-driven
 - ❌ **Critical gaps**: No enforcement of safety claims, multiple unhandled failure modes
@@ -794,6 +823,7 @@ The execution layer has:
 ### Mitigation Priority
 
 **IMMEDIATE (Before any deployment)**:
+
 1. Fix git push retry logic (R6) - prevents data loss
 2. Fix incident file collision (R5) - use microsecond timestamps
 3. Fix incident creation error handling (R4) - prevent silent failures
@@ -821,6 +851,7 @@ The execution layer has:
 **DO NOT DEPLOY to production CI/CD automation yet.**
 
 Deploy to:
+
 - ✅ **Development/staging** (non-critical, can tolerate failures)
 - ✅ **Manual runs** (single operator, lower concurrency risk)
 - ❌ **Automated CI/CD** (data loss / incident masking risk too high)
