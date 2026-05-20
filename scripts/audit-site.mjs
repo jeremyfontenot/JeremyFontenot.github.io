@@ -3,7 +3,20 @@ import path from 'node:path';
 
 const root = process.cwd();
 const outputPath = path.join(root, 'artifacts', 'site-audit.json');
-const skipDirs = new Set(['.git', 'node_modules', 'sorted-documents', 'legacy-site-backup', 'proof-staging']);
+const activeListPath = path.join(root, 'artifacts', 'active-html-files.txt');
+const skipDirPrefixes = [
+  '.git',
+  'node_modules',
+  'sorted-documents',
+  'proof-staging',
+  'legacy-site-backup',
+  'artifacts',
+  'docs/archive',
+  'docs/automation',
+  'docs/m365-documentation-archive',
+  'docs/brandguide-archive',
+  'docs/curated'
+];
 const publicSkipDirs = new Set(['internal', 'reports', 'components']);
 const localSchemes = /^(https?:|mailto:|tel:|javascript:|data:|\$\{)/i;
 const assetAttrs = /\b(?:href|src)=["']([^"']+)["']/gi;
@@ -11,20 +24,75 @@ const imgTags = /<img\b[^>]*>/gi;
 const idAttrs = /\bid=["']([^"']+)["']/gi;
 const badText = /\b(lorem ipsum|todo\b|coming soon|insert .* here|auto-generated placeholder)\b/i;
 
+function rel(file) {
+  return path.relative(root, file).replace(/\\/g, '/');
+}
+
+function normalizeRepoPath(value) {
+  return value.replace(/\\/g, '/').replace(/^\.\//, '').replace(/^\/+/, '').replace(/\/+$/, '');
+}
+
+function shouldSkipDirectory(dirRel) {
+  const normalized = normalizeRepoPath(dirRel);
+  if (!normalized) return false;
+  return skipDirPrefixes.some(prefix => normalized === prefix || normalized.startsWith(`${prefix}/`));
+}
+
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const child = path.join(dir, entry.name);
+    const childRel = rel(child);
     if (entry.isDirectory()) {
-      if (skipDirs.has(entry.name)) continue;
-      walk(path.join(dir, entry.name), files);
+      if (shouldSkipDirectory(childRel)) continue;
+      walk(child, files);
     } else if (entry.isFile()) {
-      files.push(path.join(dir, entry.name));
+      files.push(childRel);
     }
   }
   return files;
 }
 
-function rel(file) {
-  return path.relative(root, file).replace(/\\/g, '/');
+function readActiveHtmlList(filePath) {
+  if (!fs.existsSync(filePath)) return [];
+  return fs.readFileSync(filePath, 'utf8')
+    .split(/\r?\n/)
+    .map(item => normalizeRepoPath(item.trim()))
+    .filter(Boolean);
+}
+
+function writeActiveHtmlList(filePath, files) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, `${files.join('\n')}${files.length ? '\n' : ''}`, 'utf8');
+}
+
+function sortUnique(files) {
+  return [...new Set(files.map(item => normalizeRepoPath(item)).filter(Boolean))].sort();
+}
+
+function discoverActiveHtmlFiles() {
+  return sortUnique(
+    walk(root)
+      .filter(file => file.toLowerCase().endsWith('.html') && !file.toLowerCase().endsWith('.bak'))
+      .filter(isPublicFile)
+  );
+}
+
+function discoverPublicFiles() {
+  return sortUnique(walk(root).filter(isPublicFile));
+}
+
+function diffLists(previousFiles, currentFiles) {
+  const previousSet = new Set(previousFiles);
+  const currentSet = new Set(currentFiles);
+  const newlyDiscovered = currentFiles.filter(file => !previousSet.has(file));
+  const missingFromCurrent = previousFiles.filter(file => !currentSet.has(file));
+  return {
+    previousCount: previousFiles.length,
+    currentCount: currentFiles.length,
+    newlyDiscovered,
+    removedOrMissing: missingFromCurrent,
+    previouslyListedButNoLongerPresent: missingFromCurrent
+  };
 }
 
 function isPublicFile(fileRel) {
@@ -55,23 +123,19 @@ function candidates(fromRel, ref) {
   return out.map(item => item.replace(/^\/+/, ''));
 }
 
-const activeListPath = path.join(root, 'artifacts', 'active-html-files.txt');
-const activeList = fs.existsSync(activeListPath)
-  ? fs.readFileSync(activeListPath, 'utf8')
-      .split(/\r?\n/)
-      .map(item => item.trim())
-      .filter(Boolean)
-  : [];
-
-const knownFiles = walk(root).map(rel).filter(isPublicFile);
-const allFiles = activeList.length ? activeList : knownFiles;
+const previousActiveList = readActiveHtmlList(activeListPath);
+const activeList = discoverActiveHtmlFiles();
+const inventoryDrift = diffLists(previousActiveList, activeList);
+const knownFiles = discoverPublicFiles();
 const existing = new Set(knownFiles);
 for (const file of knownFiles) {
   if (file.endsWith('/index.html')) existing.add(file.slice(0, -'index.html'.length));
   existing.add(`/${file}`);
 }
 
-const htmlFiles = allFiles.filter(file => file.toLowerCase().endsWith('.html') && !file.toLowerCase().endsWith('.bak'));
+writeActiveHtmlList(activeListPath, activeList);
+
+const htmlFiles = activeList;
 const findings = [];
 
 for (const file of htmlFiles) {
@@ -132,14 +196,21 @@ const grouped = findings.reduce((acc, item) => {
 const report = {
   generatedAt: new Date().toISOString(),
   scannedHtmlFiles: htmlFiles.length,
+  inventoryDrift,
   findingsByType: grouped,
   findings
 };
 
-fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 fs.writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`, 'utf8');
 
 console.log(`Scanned ${htmlFiles.length} HTML files.`);
+console.log(`Inventory drift: +${inventoryDrift.newlyDiscovered.length} new, -${inventoryDrift.removedOrMissing.length} removed/missing.`);
+if (inventoryDrift.newlyDiscovered.length) {
+  console.log(`Newly discovered: ${inventoryDrift.newlyDiscovered.slice(0, 10).join(', ')}${inventoryDrift.newlyDiscovered.length > 10 ? ' ...' : ''}`);
+}
+if (inventoryDrift.removedOrMissing.length) {
+  console.log(`Previously listed but no longer present: ${inventoryDrift.removedOrMissing.slice(0, 10).join(', ')}${inventoryDrift.removedOrMissing.length > 10 ? ' ...' : ''}`);
+}
 console.log(`Findings: ${findings.length}`);
 console.log(`Report: ${path.relative(root, outputPath).replace(/\\/g, '/')}`);
 
