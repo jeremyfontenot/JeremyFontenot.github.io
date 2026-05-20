@@ -32,29 +32,131 @@
   <main id="main" class="page">
     <section class="page-hero">
       <p class="eyebrow">Preserved Proof</p>
-      <h1>Search the proof library.</h1>
-      <p class="lead">This library loads preserved portfolio artifacts from a static JSON index. It includes historical lab records, diagrams, scripts, configuration samples, support notes, and validation checklists that can be inspected directly.</p>
+      <h1>Preserved Proof Library</h1>
+      <p class="lead">This page contains preserved validation artifacts from real lab work and operations. Every item links to an inspectable file — no fabricated evidence — presented evidence-first for recruiter review.</p>
+      <nav aria-label="Proof category jump links" class="proof-jump">
+        <a href="#architecture">Architecture</a>
+        <a href="#validation">Validation</a>
+        <a href="#scripts">Scripts</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#networking">Networking</a>
+      </nav>
     </section>
 
-    <section class="section proof-tools" aria-label="Proof search">
-      <label class="search-box">
-        <span>Search proof artifacts</span>
-        <input id="proof-search" type="search" placeholder="Search Microsoft 365, PowerShell, DNS, RCA, diagrams...">
-      </label>
-      <div class="filter-row" aria-label="Proof filters">
-        <button class="filter-button active" type="button" data-filter="all">All</button>
-        <button class="filter-button" type="button" data-filter="diagram">Diagrams</button>
-        <button class="filter-button" type="button" data-filter="script">Scripts</button>
-        <button class="filter-button" type="button" data-filter="configuration">Configurations</button>
-        <button class="filter-button" type="button" data-filter="notes">Notes</button>
-      </div>
-      <p class="result-count" id="proof-count">Loading proof artifacts...</p>
-      <div class="proof-grid" id="proof-grid"></div>
+    <section id="architecture" class="section" aria-labelledby="architecture-heading">
+      <h2 id="architecture-heading">Architecture Diagrams</h2>
+
+      <article class="artifact">
+        <h3>Microsoft 365 Lab — Architecture Overview (2026)</h3>
+        <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="arch-m365-desc">Microsoft 365 lab architecture (SVG)</a>
+        <span id="arch-m365-desc" class="sr-only">Opens the Microsoft 365 lab architecture overview in SVG format.</span>
+        <p class="meta">Format: SVG · Purpose: network and service topology diagram · Reviewer learns overall lab design, trust boundaries, and key service placements.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>pfSense — Network Segmentation Diagram (2026)</h3>
+        <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-describedby="arch-pfsense-desc">pfSense segmentation diagram (SVG)</a>
+        <span id="arch-pfsense-desc" class="sr-only">Opens the pfSense network segmentation diagram in SVG format.</span>
+        <p class="meta">Format: SVG · Purpose: segmentation and firewall rules overview · Reviewer learns VLAN boundaries, NAT/DMZ placement, and interface mapping.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>Home Lab — Network Topology (2026)</h3>
+        <a href="/evidence-library/architecture-diagrams/home-lab-network-topology-diagram-2026.svg" aria-describedby="arch-homelab-desc">Home lab topology (SVG)</a>
+        <span id="arch-homelab-desc" class="sr-only">Opens the home lab network topology SVG.</span>
+        <p class="meta">Format: SVG · Purpose: physical/logical topology · Reviewer learns device roles, uplinks, and label conventions used in the lab.</p>
+      </article>
+    </section>
+
+    <section id="validation" class="section" aria-labelledby="validation-heading">
+      <h2 id="validation-heading">Validation Reports</h2>
+
+      <article class="artifact">
+        <h3>Network Validation Checklist (2026)</h3>
+        <a href="/evidence-library/validation-reports/network-validation-checklist-2026.md" aria-describedby="val-net-desc">Network validation checklist (MD)</a>
+        <span id="val-net-desc" class="sr-only">Opens the network validation checklist Markdown file.</span>
+        <p class="meta">Format: MD · Purpose: validation checklist and test results · Reviewer learns the test criteria, measured outcomes, and pass/fail notes.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>Monitoring & Alerting — Overview (2026)</h3>
+        <a href="/evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md" aria-describedby="val-monitor-desc">Monitoring and alerting overview (MD)</a>
+        <span id="val-monitor-desc" class="sr-only">Opens the monitoring and alerting overview document.</span>
+        <p class="meta">Format: MD · Purpose: audit of monitoring configuration · Reviewer learns alerting rules, thresholds, and validation evidence.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>Backup & Restore — Validation Workflow (2026)</h3>
+        <a href="/evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md" aria-describedby="val-backup-desc">Backup validation workflow (MD)</a>
+        <span id="val-backup-desc" class="sr-only">Opens the backup and restore validation workflow document.</span>
+        <p class="meta">Format: MD · Purpose: DR validation procedure · Reviewer learns steps taken to validate backups and restore results.</p>
+      </article>
+    </section>
+
+    <section id="scripts" class="section" aria-labelledby="scripts-heading">
+      <h2 id="scripts-heading">Scripts & Automation</h2>
+
+      <article class="artifact">
+        <h3>PowerShell — Provisioning Script v1</h3>
+        <a href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="script-provision-desc">Provisioning script (PS1)</a>
+        <span id="script-provision-desc" class="sr-only">Opens the provisioning PowerShell script.</span>
+        <p class="meta">Format: PS1 · Purpose: automated provisioning · Reviewer learns the provisioning steps, idempotency checks, and key parameters used.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>Operational Handoff — Powershell Automation (2026)</h3>
+        <a href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt" aria-describedby="script-handoff-desc">Operational handoff notes (TXT)</a>
+        <span id="script-handoff-desc" class="sr-only">Opens the operational handoff text file.</span>
+        <p class="meta">Format: TXT · Purpose: operational run notes and handoff checklist · Reviewer learns who owns the scripts, run cadence, and operational caveats.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>Provisioning — Change Log (2026)</h3>
+        <a href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md" aria-describedby="script-log-desc">Provisioning change log (MD)</a>
+        <span id="script-log-desc" class="sr-only">Opens the provisioning change log.</span>
+        <p class="meta">Format: MD · Purpose: chronological changes and reasoning · Reviewer learns what changed, when, and why.</p>
+      </article>
+    </section>
+
+    <section id="troubleshooting" class="section" aria-labelledby="troubleshooting-heading">
+      <h2 id="troubleshooting-heading">Troubleshooting & RCA</h2>
+
+      <article class="artifact">
+        <h3>Troubleshooting — RCA Incident Log (2025)</h3>
+        <a href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt" aria-describedby="rca-log-desc">Incident log (TXT)</a>
+        <span id="rca-log-desc" class="sr-only">Opens the incident log text file.</span>
+        <p class="meta">Format: TXT · Purpose: incident timeline and root-cause analysis · Reviewer learns timeline, mitigation steps, and final RCA conclusions.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>DNS — Authentication Playbook (2026)</h3>
+        <a href="/evidence-library/projects/troubleshooting-rca/dns-authentication-playbook-2026.md" aria-describedby="rca-dns-desc">DNS authentication playbook (MD)</a>
+        <span id="rca-dns-desc" class="sr-only">Opens the DNS authentication playbook Markdown file.</span>
+        <p class="meta">Format: MD · Purpose: runbook for diagnosing DNS-related authentication failures · Reviewer learns pre-checks, remediation steps, and validation commands.</p>
+      </article>
+    </section>
+
+    <section id="networking" class="section" aria-labelledby="networking-heading">
+      <h2 id="networking-heading">Networking & Segmentation</h2>
+
+      <article class="artifact">
+        <h3>VLAN Architecture — Walkthrough (2026)</h3>
+        <a href="/evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md" aria-describedby="net-vlan-desc">VLAN architecture walkthrough (MD)</a>
+        <span id="net-vlan-desc" class="sr-only">Opens VLAN architecture walkthrough document.</span>
+        <p class="meta">Format: MD · Purpose: VLAN design and implementation notes · Reviewer learns VLAN numbering, routing implications, and example configurations.</p>
+      </article>
+
+      <article class="artifact">
+        <h3>DNS/DHCP — Operational Runbook (2026)</h3>
+        <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt" aria-describedby="net-dnsdhcp-desc">DNS/DHCP runbook (TXT)</a>
+        <span id="net-dnsdhcp-desc" class="sr-only">Opens DNS/DHCP runbook text file.</span>
+        <p class="meta">Format: TXT · Purpose: operational runbook for DNS and DHCP services · Reviewer learns maintenance steps, backups, and recovery commands.</p>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Proof artifacts are static files preserved for portfolio review.</p>
+    <p>Documentation-first portfolio built from preserved lab evidence and operational artifacts.</p>
     <p><a href="/projects.html">Projects</a> · <a href="/contact.html">Contact</a></p>
   </footer>
 </body>
