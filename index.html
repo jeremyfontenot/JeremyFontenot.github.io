@@ -19,8 +19,8 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/" aria-label="Jeremy Fontenot home">
-        <img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="" width="44" height="44">
+      <a class="brand" href="/">
+        <img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="44" height="44">
         <span>Jeremy Fontenot</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
@@ -37,8 +37,8 @@
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">IT Support • Systems Administration • Documentation</p>
-        <h1>Practical IT portfolio backed by preserved proof.</h1>
-        <p class="lead">Entry-level Systems Administrator and Service Desk portfolio focused on Windows support, Microsoft 365 administration, Active Directory concepts, PowerShell automation, troubleshooting, and evidence-based documentation.</p>
+        <h1>Documentation-First IT Support &amp; Systems Administration Portfolio</h1>
+        <p class="lead">Evidence-backed troubleshooting, Microsoft 365 administration, identity workflows, and PowerShell automation — presented as preserved documentation and reviewer-ready artifacts.</p>
         <div class="actions">
           <a class="button primary" href="/proof.html">Review proof library</a>
           <a class="button" href="/assets/Jeremy-Fontenot-Resume.pdf">Open resume</a>
@@ -47,12 +47,21 @@
       <div class="hero-panel" aria-label="Portfolio focus areas">
         <img class="hero-logo" src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot brand mark">
         <dl class="focus-list">
-          <div><dt>Support</dt><dd>Windows, endpoint, identity, and user troubleshooting workflows.</dd></div>
-          <div><dt>Administration</dt><dd>Microsoft 365, Entra ID concepts, Intune baselines, and Active Directory planning.</dd></div>
-          <div><dt>Automation</dt><dd>PowerShell scripts, repeatable documentation, and operational handoff notes.</dd></div>
+          <dt>Support</dt>
+          <dd>Windows, endpoint, identity, and user troubleshooting workflows.</dd>
+          <dt>Administration</dt>
+          <dd>Microsoft 365, Entra ID concepts, Intune baselines, and Active Directory planning.</dd>
+          <dt>Automation</dt>
+          <dd>PowerShell scripts, repeatable documentation, and operational handoff notes.</dd>
         </dl>
       </div>
     </section>
+
+    <ul aria-label="Key site principles" class="key-principles">
+      <li>No fabricated labs — all content reflects preserved documentation.</li>
+      <li>Evidence-first — every claim links to a real artifact for reviewer inspection.</li>
+      <li>Reviewer-ready — fast, static, and easy to inspect without execution.</li>
+    </ul>
 
     <section class="section">
       <div class="section-head">
@@ -61,28 +70,45 @@
         <p>This site has been reduced to a basic static portfolio and proof library. Claims are framed around preserved documents, historical lab records, and sample artifacts instead of implying live production infrastructure.</p>
       </div>
       <div class="card-grid">
-        <article class="card">
+        <a class="card" href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="card1-desc">
+          <span id="card1-desc" class="sr-only">Opens Microsoft 365 lab architecture overview (SVG) in the evidence library</span>
           <span class="badge">Microsoft ecosystem</span>
-          <h3>Systems Administration Foundation</h3>
+          <h3>Architecture &amp; Identity Overview</h3>
           <p>Windows Server concepts, Microsoft 365 administration, identity workflows, and endpoint support documentation.</p>
-        </article>
-        <article class="card">
+          <p class="meta">Format: SVG diagram</p>
+        </a>
+        <a class="card" href="/evidence-library/validation-reports/network-validation-checklist-2026.md" aria-describedby="card2-desc">
+          <span id="card2-desc" class="sr-only">Opens network validation checklist (Markdown) in the evidence library</span>
           <span class="badge">Operational proof</span>
-          <h3>Evidence-First Presentation</h3>
+          <h3>Network Validation Checklist</h3>
           <p>Preserved diagrams, configuration samples, runbooks, scripts, and incident records are linked directly from the proof library.</p>
-        </article>
-        <article class="card">
+          <p class="meta">Format: Markdown checklist</p>
+        </a>
+        <a class="card" href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="card3-desc">
+          <span id="card3-desc" class="sr-only">Opens provisioning PowerShell script (PS1) in the evidence library</span>
           <span class="badge">Service desk ready</span>
-          <h3>Troubleshooting & Handoff</h3>
+          <h3>Provisioning &amp; Automation Script</h3>
           <p>Records are organized around support workflows, validation notes, and documentation a technical reviewer can inspect quickly.</p>
-        </article>
+          <p class="meta">Format: PowerShell script</p>
+        </a>
       </div>
+      <p>This section links directly to representative validation artifacts — an architecture diagram, a network validation checklist, and a provisioning script — preserved in the evidence library for reviewer inspection.</p>
+
+      <section aria-label="Latest Proof Additions" class="latest-proofs">
+        <h3>Latest Proof Additions</h3>
+        <ul>
+          <li>Microsoft 365 Lab Architecture Overview (SVG)</li>
+          <li>Network Validation Checklist (MD)</li>
+          <li>Provisioning Automation Script v1 (PS1)</li>
+        </ul>
+      </section>
     </section>
   </main>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <p>Jeremy Fontenot - IT Support and Systems Administration Portfolio</p>
     <p><a href="/projects.html">Projects</a> · <a href="/proof.html">Proof</a> · <a href="/contact.html">Contact</a></p>
+    <p>Documentation-first portfolio built from preserved lab evidence and operational artifacts.</p>
   </footer>
 </body>
 </html>
