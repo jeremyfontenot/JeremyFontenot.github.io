@@ -29,6 +29,18 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Refresh authoritative active inventory
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          node scripts/audit-site.mjs
+          python scripts/generate_sitemap_and_indexnow.py
       
       # ============================================================================
       # EXECUTION LAYER: Hardened Subprocess Invocation (file-based only)

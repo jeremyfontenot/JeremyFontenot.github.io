@@ -1,48 +1,64 @@
 #!/usr/bin/env python3
 import os, re, json, urllib.parse
 from html import unescape
+
 ROOT = os.path.abspath('.')
-EXCLUDE_DIRS = ('assets','css','js','internal','reports','cdn-cgi','components')
-INVALID_LINK_PREFIXES = ('internal','reports','cdn-cgi')
-EXCLUDE_FILES = ('sitemap.xml','scripts/indexnow_payload.json')
+ACTIVE_HTML_LIST = os.path.join(ROOT, 'artifacts', 'active-html-files.txt')
+HTML_SKIP_DIRS = ('assets', 'css', 'js', 'internal', 'reports', 'cdn-cgi', 'components', 'sorted-documents', 'proof-staging', 'legacy-site-backup', 'artifacts', 'docs/archive', 'docs/automation', 'docs/m365-documentation-archive', 'docs/brandguide-archive', 'docs/curated')
+PUBLIC_FILE_SKIP_DIRS = {'.git', '.github', 'node_modules', 'sorted-documents', 'proof-staging', 'legacy-site-backup', 'artifacts', 'docs/archive', 'docs/automation', 'docs/m365-documentation-archive', 'docs/brandguide-archive', 'docs/curated'}
+INVALID_LINK_PREFIXES = ('internal', 'reports', 'cdn-cgi')
+EXCLUDE_FILES = ('sitemap.xml', 'scripts/indexnow_payload.json')
+
+def normalize_repo_path(value):
+    return value.replace('\\', '/').replace('./', '', 1).lstrip('/').rstrip('/')
 
 def is_excluded_path(path):
-    parts = path.replace('\\','/').split('/')
-    for ex in EXCLUDE_DIRS:
-        if ex in parts:
-            return True
-    return False
+    parts = normalize_repo_path(path).split('/')
+    return any(part in HTML_SKIP_DIRS for part in parts)
+
+def is_public_file(path):
+    parts = normalize_repo_path(path).split('/')
+    return not any(part in PUBLIC_FILE_SKIP_DIRS for part in parts)
+
+def read_active_html_files():
+    if not os.path.exists(ACTIVE_HTML_LIST):
+        return []
+    with open(ACTIVE_HTML_LIST, 'r', encoding='utf-8') as fh:
+        return [normalize_repo_path(line.strip()) for line in fh if normalize_repo_path(line.strip()).lower().endswith('.html')]
+
+def discover_html_files():
+    discovered = []
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        rel = os.path.relpath(dirpath, ROOT).replace('\\', '/')
+        if is_excluded_path(rel):
+            continue
+        for fn in filenames:
+            full_rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace('\\', '/')
+            if full_rel in EXCLUDE_FILES or full_rel.endswith('.bak'):
+                continue
+            if fn.lower().endswith('.html') and is_public_file(full_rel):
+                discovered.append(full_rel)
+    return sorted(set(discovered))
+
+def discover_public_files():
+    discovered = []
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        rel = os.path.relpath(dirpath, ROOT).replace('\\', '/')
+        if is_excluded_path(rel):
+            continue
+        for fn in filenames:
+            full_rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace('\\', '/')
+            if full_rel in EXCLUDE_FILES or full_rel.endswith('.bak'):
+                continue
+            if is_public_file(full_rel):
+                discovered.append(full_rel)
+    return sorted(set(discovered))
 
 # gather public files for link resolution
-public_files = set()
-for dirpath, dirnames, filenames in os.walk(ROOT):
-    rel_dir = os.path.relpath(dirpath, ROOT).replace('\\','/')
-    parts = rel_dir.split('/')
-    if any(part in ('.git', '.github', 'node_modules', 'internal', 'reports') for part in parts):
-        continue
-    for fn in filenames:
-        if fn.lower().endswith('.bak'):
-            continue
-        full_rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace('\\','/')
-        if full_rel in EXCLUDE_FILES:
-            continue
-        public_files.add(full_rel)
+public_files = set(discover_public_files())
 
-# gather public HTML pages for quality checks
-html_files = []
-for dirpath, dirnames, filenames in os.walk(ROOT):
-    rel = os.path.relpath(dirpath, ROOT).replace('\\','/')
-    if is_excluded_path(dirpath):
-        continue
-    for fn in filenames:
-        full_rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace('\\','/')
-        if full_rel in EXCLUDE_FILES:
-            continue
-        if fn.lower().endswith('.bak'):
-            continue
-        if not fn.lower().endswith('.html'):
-            continue
-        html_files.append(full_rel)
+# gather public HTML pages for quality checks from authoritative active inventory
+html_files = read_active_html_files() or discover_html_files()
 
 # build existing set for resolution
 existing = set(public_files)

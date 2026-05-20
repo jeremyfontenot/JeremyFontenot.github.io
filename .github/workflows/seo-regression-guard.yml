@@ -22,6 +22,18 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Refresh authoritative active inventory
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          node scripts/audit-site.mjs
+          python scripts/generate_sitemap_and_indexnow.py
+
       - name: Run Pass 4 SEO verification
         shell: pwsh
         run: ./scripts/verify_pass4.ps1
@@ -179,13 +191,22 @@ jobs:
           $canonicalFailures = 0
           $canonicalSeen = 0
           $canonicalMap = @{}
-          $htmlFiles = Get-ChildItem -Path $root -Recurse -File -Filter *.html | Where-Object {
-            -not $_.FullName.EndsWith('.bak') -and
-            $_.FullName -notmatch '(\\|/)(assets|css|js|internal|reports)(\\|/)'
+          $activeHtmlListPath = Join-Path $root 'artifacts/active-html-files.txt'
+          if (-not (Test-Path -LiteralPath $activeHtmlListPath)) {
+            Add-Failure 'Active HTML inventory is missing: artifacts/active-html-files.txt'
+            $htmlFiles = @()
+          } else {
+            $htmlFiles = Get-Content -LiteralPath $activeHtmlListPath | ForEach-Object { $_.Trim() } | Where-Object { $_ }
           }
 
           foreach ($file in $htmlFiles) {
-            $content = Get-Content -Raw -LiteralPath $file.FullName
+            $fullPath = Join-Path $root $file
+            if (-not (Test-Path -LiteralPath $fullPath)) {
+              Add-Failure "Active HTML file listed but missing: $file"
+              continue
+            }
+
+            $content = Get-Content -Raw -LiteralPath $fullPath
             $canonicalMatch = [regex]::Match($content, '<link[^>]*rel=["'']canonical["''][^>]*href=["'']([^"'']+)["'']', 'IgnoreCase')
             if (-not $canonicalMatch.Success) {
               continue

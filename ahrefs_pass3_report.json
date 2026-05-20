@@ -1,182 +1,87 @@
 {
   "files_modified": [
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "index.html",
-    "docs/index.html",
-    "docs/index.html",
-    "docs/index.html",
-    "docs/index.html",
-    "docs/index.html",
-    "docs/index.html",
-    "docs/index.html",
-    "docs/index.html",
-    "docs/index.html",
     "docs/contact/index.html",
-    "docs/contact/index.html",
-    "docs/contact/index.html",
-    "docs/contact/index.html",
-    "docs/contact/index.html",
-    "docs/identity-security/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/projects/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
-    "docs/skills/index.html",
+    "about.html",
     "contact.html",
-    "documentation.html",
-    "linkedin.html",
-    "projects.html",
-    "skills.html",
-    "cdn-cgi/l/email-protection/index.html",
-    "docs/search.html",
-    "docs/architecture/home-lab-architecture.html",
-    "docs/architecture/index.html",
-    "docs/certifications/certifications.html",
-    "docs/certifications/index.html",
-    "docs/server-guides/index.html",
-    "docs/skills/cloud.html",
-    "docs/skills/endpoint.html",
-    "docs/skills/monitoring.html",
-    "docs/troubleshooting/index.html",
-    "evidence/public/index.html",
-    "docs/experience/experience.html",
+    "docs/home-lab/architecture-and-topology.html",
+    "docs/home-lab/asset-inventory.html",
+    "docs/home-lab/backup-and-disaster-recovery.html",
+    "docs/home-lab/change-management-and-validation.html",
+    "docs/home-lab/identity-and-access.html",
+    "docs/home-lab/infrastructure-and-network.html",
+    "docs/home-lab/monitoring-and-logging.html",
+    "docs/home-lab/operations-and-monitoring.html",
+    "docs/home-lab/operations-runbook.html",
+    "docs/home-lab/security-baseline.html",
+    "docs/home-lab/validation-report.html",
+    "docs/index.html",
+    "docs/projects/endpoint-management.html",
     "docs/projects/home-lab.html",
-    "docs/projects/m365-lab.html",
+    "docs/projects/identity-access.html",
+    "docs/projects/powershell-automation.html",
+    "docs/projects/troubleshooting-rca.html",
+    "docs/search.html",
+    "docs/skills/active-directory.html",
     "docs/skills/automation.html",
-    "docs/skills/identity.html",
+    "docs/skills/dns-dhcp.html",
+    "docs/skills/documentation.html",
+    "docs/skills/entra-identity.html",
+    "docs/skills/github-pages-operations.html",
+    "docs/skills/intune-endpoint-management.html",
+    "docs/skills/networking-vlans.html",
+    "docs/skills/pfsense-firewall.html",
+    "docs/skills/powershell.html",
+    "docs/skills/security-baselines.html",
+    "docs/skills/service-desk-support.html",
+    "docs/skills/windows-support.html",
+    "documentation.html",
+    "experience.html",
+    "docs/documents.html",
+    "docs/projects/backup-disaster-recovery.html",
+    "docs/projects/infrastructure-networking.html",
+    "docs/projects/microsoft-365-lab.html",
+    "docs/projects/monitoring-logging.html",
+    "docs/skills/microsoft-365-administration.html",
+    "docs/skills/validation-audit.html",
+    "docs/validation/index.html",
+    "skills.html",
     "docs/evidence.html",
-    "docs/source-browser.html",
-    "docs/architecture/m365-architecture.html",
-    "docs/brand-guide/branding.html",
-    "docs/experience/index.html",
-    "docs/homelab/index.html",
-    "docs/powershell/index.html",
-    "docs/scripts/index.html",
-    "docs/scripts/script-documentation.html",
-    "docs/scripts/validation.html",
-    "docs/skills/infrastructure.html"
+    "docs/projects/index.html",
+    "docs/skills/index.html",
+    "evidence-library/index.html",
+    "index.html",
+    "projects.html"
   ],
   "links_fixed": [
     {
-      "file": "contact.html",
-      "original": "/docs/contact/",
-      "replacement": "/docs/contact/index.html"
-    },
-    {
-      "file": "contact.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "documentation.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "index.html",
+      "file": "about.html",
       "original": "/",
       "replacement": "/index.html"
     },
     {
-      "file": "index.html",
-      "original": "/docs/projects/",
-      "replacement": "/docs/projects/index.html"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/contact/",
-      "replacement": "/docs/contact/index.html"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "linkedin.html",
-      "original": "/docs/contact/",
-      "replacement": "/docs/contact/index.html"
-    },
-    {
-      "file": "linkedin.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "projects.html",
-      "original": "/docs/projects/",
-      "replacement": "/docs/projects/index.html"
-    },
-    {
-      "file": "projects.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "skills.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "skills.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "cdn-cgi/l/email-protection/index.html",
+      "file": "contact.html",
       "original": "/",
       "replacement": "/index.html"
     },
     {
-      "file": "cdn-cgi/l/email-protection/index.html",
+      "file": "docs/contact/index.html",
+      "original": "/docs/experience/",
+      "replacement": "/docs/experience/index.html"
+    },
+    {
+      "file": "docs/contact/index.html",
+      "original": "/docs/projects/",
+      "replacement": "/docs/projects/index.html"
+    },
+    {
+      "file": "docs/contact/index.html",
       "original": "/docs/",
       "replacement": "/docs/index.html"
+    },
+    {
+      "file": "docs/documents.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
       "file": "docs/evidence.html",
@@ -189,214 +94,24 @@
       "replacement": "/index.html"
     },
     {
-      "file": "docs/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/search.html",
+      "file": "docs/projects/backup-disaster-recovery.html",
       "original": "/",
       "replacement": "/index.html"
     },
     {
-      "file": "docs/search.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "docs/search.html",
-      "original": "/docs/projects/",
-      "replacement": "/docs/projects/index.html"
-    },
-    {
-      "file": "docs/search.html",
-      "original": "/docs/experience/",
-      "replacement": "/docs/experience/index.html"
-    },
-    {
-      "file": "docs/search.html",
-      "original": "/docs/certifications/",
-      "replacement": "/docs/certifications/index.html"
-    },
-    {
-      "file": "docs/search.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/search.html",
-      "original": "/docs/contact/",
-      "replacement": "/docs/contact/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
+      "file": "docs/projects/endpoint-management.html",
       "original": "/",
       "replacement": "/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/projects/",
-      "replacement": "/docs/projects/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/experience/",
-      "replacement": "/docs/experience/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/certifications/",
-      "replacement": "/docs/certifications/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/contact/",
-      "replacement": "/docs/contact/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/architecture",
-      "replacement": "/docs/architecture/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/projects",
-      "replacement": "/docs/projects/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/scripts",
-      "replacement": "/docs/scripts/index.html"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "original": "/docs/skills",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "docs/architecture/home-lab-architecture.html",
-      "original": "/docs/architecture/",
-      "replacement": "/docs/architecture/index.html"
-    },
-    {
-      "file": "docs/architecture/home-lab-architecture.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/architecture/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/architecture/m365-architecture.html",
-      "original": "/docs/architecture/",
-      "replacement": "/docs/architecture/index.html"
-    },
-    {
-      "file": "docs/architecture/m365-architecture.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/brand-guide/branding.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/certifications/certifications.html",
-      "original": "/docs/certifications/",
-      "replacement": "/docs/certifications/index.html"
-    },
-    {
-      "file": "docs/certifications/certifications.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/certifications/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/contact/index.html",
-      "original": "/",
-      "replacement": "/index.html"
-    },
-    {
-      "file": "docs/contact/index.html",
-      "original": "/docs/contact/",
-      "replacement": "/docs/contact/index.html"
-    },
-    {
-      "file": "docs/experience/experience.html",
-      "original": "/",
-      "replacement": "/index.html"
-    },
-    {
-      "file": "docs/experience/experience.html",
-      "original": "/docs/experience/",
-      "replacement": "/docs/experience/index.html"
-    },
-    {
-      "file": "docs/experience/experience.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/experience/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/homelab/index.html",
-      "original": "/",
-      "replacement": "/index.html"
-    },
-    {
-      "file": "docs/homelab/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/identity-security/index.html",
-      "original": "/",
-      "replacement": "/index.html"
-    },
-    {
-      "file": "docs/identity-security/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/powershell/index.html",
-      "original": "/",
-      "replacement": "/index.html"
-    },
-    {
-      "file": "docs/powershell/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
     },
     {
       "file": "docs/projects/home-lab.html",
-      "original": "/docs/projects/",
-      "replacement": "/docs/projects/index.html"
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
-      "file": "docs/projects/home-lab.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
+      "file": "docs/projects/identity-access.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
       "file": "docs/projects/index.html",
@@ -404,94 +119,64 @@
       "replacement": "/index.html"
     },
     {
-      "file": "docs/projects/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/projects/m365-lab.html",
-      "original": "/docs/projects/",
-      "replacement": "/docs/projects/index.html"
-    },
-    {
-      "file": "docs/projects/m365-lab.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/scripts/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/scripts/script-documentation.html",
-      "original": "/docs/scripts/",
-      "replacement": "/docs/scripts/index.html"
-    },
-    {
-      "file": "docs/scripts/script-documentation.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/scripts/validation.html",
-      "original": "/docs/scripts/",
-      "replacement": "/docs/scripts/index.html"
-    },
-    {
-      "file": "docs/scripts/validation.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/server-guides/index.html",
+      "file": "docs/projects/infrastructure-networking.html",
       "original": "/",
       "replacement": "/index.html"
     },
     {
-      "file": "docs/server-guides/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
+      "file": "docs/projects/microsoft-365-lab.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/projects/monitoring-logging.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/projects/powershell-automation.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/projects/troubleshooting-rca.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/search.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/skills/active-directory.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
       "file": "docs/skills/automation.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
-      "file": "docs/skills/automation.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
+      "file": "docs/skills/dns-dhcp.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
-      "file": "docs/skills/cloud.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
+      "file": "docs/skills/documentation.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
-      "file": "docs/skills/cloud.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
+      "file": "docs/skills/entra-identity.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
-      "file": "docs/skills/endpoint.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "docs/skills/endpoint.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/skills/identity.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "docs/skills/identity.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
+      "file": "docs/skills/github-pages-operations.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
       "file": "docs/skills/index.html",
@@ -499,587 +184,357 @@
       "replacement": "/index.html"
     },
     {
-      "file": "docs/skills/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/skills/infrastructure.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "docs/skills/infrastructure.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/skills/monitoring.html",
-      "original": "/docs/skills/",
-      "replacement": "/docs/skills/index.html"
-    },
-    {
-      "file": "docs/skills/monitoring.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
-    },
-    {
-      "file": "docs/troubleshooting/index.html",
+      "file": "docs/skills/intune-endpoint-management.html",
       "original": "/",
       "replacement": "/index.html"
     },
     {
-      "file": "docs/troubleshooting/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
+      "file": "docs/skills/microsoft-365-administration.html",
+      "original": "/",
+      "replacement": "/index.html"
     },
     {
-      "file": "evidence/public/index.html",
-      "original": "/docs/",
-      "replacement": "/docs/index.html"
+      "file": "docs/skills/networking-vlans.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/skills/pfsense-firewall.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/skills/powershell.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/skills/security-baselines.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/skills/service-desk-support.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/skills/validation-audit.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/skills/windows-support.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "docs/validation/index.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "documentation.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "evidence-library/index.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "experience.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "index.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "projects.html",
+      "original": "/",
+      "replacement": "/index.html"
+    },
+    {
+      "file": "skills.html",
+      "original": "/",
+      "replacement": "/index.html"
     }
   ],
   "links_removed": [
     {
-      "file": "index.html",
-      "original": "/#summary-title"
-    },
-    {
-      "file": "index.html",
-      "original": "/#skills-title"
-    },
-    {
-      "file": "index.html",
-      "original": "/#projects-title"
-    },
-    {
-      "file": "index.html",
-      "original": "/#documentation-title"
-    },
-    {
-      "file": "index.html",
-      "original": "/#tools-title"
-    },
-    {
-      "file": "index.html",
-      "original": "/#certs-title"
-    },
-    {
-      "file": "index.html",
-      "original": "/#contact-title"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#identity-access"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#systems-admin"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#endpoint-management"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#networking"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#automation"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#troubleshooting"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#security"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/skills/#documentation"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/projects/#ad-migration"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/projects/#m365-lab"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/projects/#intune-baseline"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/projects/#incident-rca"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/projects/#ps-provisioning"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/#server-guides"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/#identity-security"
-    },
-    {
-      "file": "index.html",
-      "original": "/docs/#powershell-snippets"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/#summary-title"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/#skills-title"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/#projects-title"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/#documentation-title"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/#tools-title"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/#certs-title"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/#contact-title"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/docs/projects/#ad-migration"
-    },
-    {
-      "file": "docs/index.html",
-      "original": "/docs/projects/ad-migration/artifacts/provisioning.ps1"
-    },
-    {
       "file": "docs/contact/index.html",
-      "original": "/#summary-title"
-    },
-    {
-      "file": "docs/contact/index.html",
-      "original": "/#skills-title"
-    },
-    {
-      "file": "docs/contact/index.html",
-      "original": "/#projects-title"
-    },
-    {
-      "file": "docs/contact/index.html",
-      "original": "/#documentation-title"
-    },
-    {
-      "file": "docs/contact/index.html",
-      "original": "/#contact-title"
-    },
-    {
-      "file": "docs/identity-security/index.html",
-      "original": "/docs/projects/ad-migration.html"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/#summary-title"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/#skills-title"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/#projects-title"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/#documentation-title"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/#tools-title"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/#certs-title"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/#contact-title"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/docs/projects/ad-migration/artifacts/provisioning.ps1"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/docs/#identity-security"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "original": "/docs/projects/intune-baseline/artifacts/intune-export.json"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/#summary-title"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/#skills-title"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/#projects-title"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/#documentation-title"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/#tools-title"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/#certs-title"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/#contact-title"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/projects/#ad-migration"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/projects/#m365-lab"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/#identity-security"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/projects/#intune-baseline"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/projects/#incident-rca"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/#troubleshooting"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/projects/#ps-provisioning"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "original": "/docs/projects/ad-migration/artifacts/provisioning.ps1"
+      "original": "/assets/Jeremy-Fontenot-Resume.pdf"
     }
   ],
   "ambiguous_links": [],
   "pages_expanded": [
     {
+      "file": "about.html",
+      "added_words": 43
+    },
+    {
       "file": "contact.html",
       "added_words": 43
+    },
+    {
+      "file": "docs/home-lab/architecture-and-topology.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/home-lab/asset-inventory.html",
+      "added_words": 43
+    },
+    {
+      "file": "docs/home-lab/backup-and-disaster-recovery.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/home-lab/change-management-and-validation.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/home-lab/identity-and-access.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/home-lab/infrastructure-and-network.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/home-lab/monitoring-and-logging.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/home-lab/operations-and-monitoring.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/home-lab/operations-runbook.html",
+      "added_words": 43
+    },
+    {
+      "file": "docs/home-lab/security-baseline.html",
+      "added_words": 43
+    },
+    {
+      "file": "docs/home-lab/validation-report.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/index.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/projects/endpoint-management.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/projects/home-lab.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/projects/identity-access.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/projects/powershell-automation.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/projects/troubleshooting-rca.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/search.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/skills/active-directory.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/skills/automation.html",
+      "added_words": 43
+    },
+    {
+      "file": "docs/skills/dns-dhcp.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/skills/documentation.html",
+      "added_words": 43
+    },
+    {
+      "file": "docs/skills/entra-identity.html",
+      "added_words": 46
+    },
+    {
+      "file": "docs/skills/github-pages-operations.html",
+      "added_words": 48
+    },
+    {
+      "file": "docs/skills/intune-endpoint-management.html",
+      "added_words": 46
+    },
+    {
+      "file": "docs/skills/networking-vlans.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/skills/pfsense-firewall.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/skills/powershell.html",
+      "added_words": 43
+    },
+    {
+      "file": "docs/skills/security-baselines.html",
+      "added_words": 44
+    },
+    {
+      "file": "docs/skills/service-desk-support.html",
+      "added_words": 45
+    },
+    {
+      "file": "docs/skills/windows-support.html",
+      "added_words": 44
     },
     {
       "file": "documentation.html",
       "added_words": 43
     },
     {
-      "file": "linkedin.html",
-      "added_words": 45
-    },
-    {
-      "file": "projects.html",
-      "added_words": 43
-    },
-    {
-      "file": "skills.html",
-      "added_words": 43
-    },
-    {
-      "file": "cdn-cgi/l/email-protection/index.html",
-      "added_words": 41
-    },
-    {
-      "file": "docs/search.html",
-      "added_words": 43
-    },
-    {
-      "file": "docs/architecture/home-lab-architecture.html",
-      "added_words": 44
-    },
-    {
-      "file": "docs/architecture/index.html",
-      "added_words": 42
-    },
-    {
-      "file": "docs/certifications/certifications.html",
-      "added_words": 42
-    },
-    {
-      "file": "docs/certifications/index.html",
-      "added_words": 42
-    },
-    {
-      "file": "docs/contact/index.html",
-      "added_words": 45
-    },
-    {
-      "file": "docs/server-guides/index.html",
-      "added_words": 45
-    },
-    {
-      "file": "docs/skills/cloud.html",
-      "added_words": 43
-    },
-    {
-      "file": "docs/skills/endpoint.html",
-      "added_words": 43
-    },
-    {
-      "file": "docs/skills/monitoring.html",
-      "added_words": 45
-    },
-    {
-      "file": "docs/troubleshooting/index.html",
-      "added_words": 45
-    },
-    {
-      "file": "evidence/public/index.html",
+      "file": "experience.html",
       "added_words": 43
     }
   ],
   "meta_descriptions_rewritten": [
     {
-      "file": "index.html",
-      "new": "Jeremy Fontenot \u2014 Entry-Level System Administrator Portfolio \u2014 concise documentation and examples for Jeremy. Practical guidance and related artifacts for imple"
+      "file": "docs/documents.html",
+      "new": "Documents | Jeremy Fontenot \u2014 concise documentation and examples for Documents. Practical guidance and related artifacts for implementers.  "
     },
     {
-      "file": "docs/index.html",
-      "new": "Documentation \u2014 Jeremy Fontenot \u2014 concise documentation and examples for Documentation. Practical guidance and related artifacts for implementers."
+      "file": "docs/projects/backup-disaster-recovery.html",
+      "new": "Backup and Disaster Recovery | Jeremy Fontenot \u2014 concise documentation and examples for Backup. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/certifications/certifications.html",
-      "new": "Certifications | Documentation \u2014 concise documentation and examples for Certifications. Practical guidance and related artifacts for implementers."
+      "file": "docs/projects/endpoint-management.html",
+      "new": "Endpoint Management | Jeremy Fontenot \u2014 concise documentation and examples for Endpoint. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/contact/index.html",
-      "new": "Contact & Opportunities \u2014 Jeremy Fontenot \u2014 concise documentation and examples for Contact. Practical guidance and related artifacts for implementers."
+      "file": "docs/projects/identity-access.html",
+      "new": "Identity and Access | Jeremy Fontenot \u2014 concise documentation and examples for Identity. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/experience/experience.html",
-      "new": "Professional Experience | Documentation \u2014 concise documentation and examples for Professional. Practical guidance and related artifacts for implementers."
+      "file": "docs/projects/infrastructure-networking.html",
+      "new": "Infrastructure and Networking | Jeremy Fontenot \u2014 concise documentation and examples for Infrastructure. Practical guidance and related artifacts for implemente"
     },
     {
-      "file": "docs/projects/home-lab.html",
-      "new": "Enterprise Home Lab Infrastructure | Documentation \u2014 concise documentation and examples for Enterprise. Practical guidance and related artifacts for implementer"
+      "file": "docs/projects/microsoft-365-lab.html",
+      "new": "Microsoft 365 Lab | Jeremy Fontenot \u2014 concise documentation and examples for Microsoft. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/projects/index.html",
-      "new": "Case Study Projects \u2014 Jeremy Fontenot \u2014 concise documentation and examples for Case. Practical guidance and related artifacts for implementers."
+      "file": "docs/projects/monitoring-logging.html",
+      "new": "Monitoring and Logging | Jeremy Fontenot \u2014 concise documentation and examples for Monitoring. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/projects/m365-lab.html",
-      "new": "M365 Personal Cloud Lab | Documentation \u2014 concise documentation and examples for M365. Practical guidance and related artifacts for implementers."
+      "file": "docs/projects/powershell-automation.html",
+      "new": "PowerShell Automation | Jeremy Fontenot \u2014 concise documentation and examples for PowerShell. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/projects/troubleshooting-rca.html",
+      "new": "Troubleshooting / RCA | Jeremy Fontenot \u2014 concise documentation and examples for Troubleshooting. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/search.html",
+      "new": "Evidence Search | Jeremy Fontenot \u2014 concise documentation and examples for Evidence. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/active-directory.html",
+      "new": "Active Directory | Jeremy Fontenot \u2014 concise documentation and examples for Active. Practical guidance and related artifacts for implementers."
     },
     {
       "file": "docs/skills/automation.html",
-      "new": "Automation & Scripting | Skills \u2014 concise documentation and examples for Automation. Practical guidance and related artifacts for implementers."
+      "new": "Automation | Jeremy Fontenot \u2014 concise documentation and examples for Automation. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/skills/cloud.html",
-      "new": "Cloud Administration | Skills \u2014 concise documentation and examples for Cloud. Practical guidance and related artifacts for implementers.    "
+      "file": "docs/skills/dns-dhcp.html",
+      "new": "DNS / DHCP | Jeremy Fontenot \u2014 concise documentation and examples for DNS. Practical guidance and related artifacts for implementers.       "
     },
     {
-      "file": "docs/skills/endpoint.html",
-      "new": "Endpoint Management | Skills \u2014 concise documentation and examples for Endpoint. Practical guidance and related artifacts for implementers.  "
+      "file": "docs/skills/documentation.html",
+      "new": "Documentation | Jeremy Fontenot \u2014 concise documentation and examples for Documentation. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/skills/identity.html",
-      "new": "Identity & Access | Skills \u2014 concise documentation and examples for Identity. Practical guidance and related artifacts for implementers.    "
+      "file": "docs/skills/entra-identity.html",
+      "new": "Entra ID / Identity | Jeremy Fontenot \u2014 concise documentation and examples for Entra. Practical guidance and related artifacts for implementers."
     },
     {
-      "file": "docs/skills/index.html",
-      "new": "IT Skills Matrix \u2014 Jeremy Fontenot \u2014 concise documentation and examples for IT. Practical guidance and related artifacts for implementers.  "
+      "file": "docs/skills/github-pages-operations.html",
+      "new": "GitHub Pages / Static Site Operations | Jeremy Fontenot \u2014 concise documentation and examples for GitHub. Practical guidance and related artifacts for implemente"
     },
     {
-      "file": "docs/skills/monitoring.html",
-      "new": "Monitoring & Security Visibility | Skills \u2014 concise documentation and examples for Monitoring. Practical guidance and related artifacts for implementers."
+      "file": "docs/skills/intune-endpoint-management.html",
+      "new": "Intune / Endpoint Management | Jeremy Fontenot \u2014 concise documentation and examples for Intune. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/microsoft-365-administration.html",
+      "new": "Microsoft 365 Administration | Jeremy Fontenot \u2014 concise documentation and examples for Microsoft. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/networking-vlans.html",
+      "new": "Networking / VLANs | Jeremy Fontenot \u2014 concise documentation and examples for Networking. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/pfsense-firewall.html",
+      "new": "pfSense / Firewall | Jeremy Fontenot \u2014 concise documentation and examples for pfSense. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/powershell.html",
+      "new": "PowerShell | Jeremy Fontenot \u2014 concise documentation and examples for PowerShell. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/security-baselines.html",
+      "new": "Security Baselines | Jeremy Fontenot \u2014 concise documentation and examples for Security. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/service-desk-support.html",
+      "new": "Service Desk Support | Jeremy Fontenot \u2014 concise documentation and examples for Service. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/validation-audit.html",
+      "new": "Validation / Audit | Jeremy Fontenot \u2014 concise documentation and examples for Validation. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/skills/windows-support.html",
+      "new": "Windows Support | Jeremy Fontenot \u2014 concise documentation and examples for Windows. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "docs/validation/index.html",
+      "new": "Validation Documentation | Jeremy Fontenot \u2014 concise documentation and examples for Validation. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "experience.html",
+      "new": "Experience | Jeremy Fontenot \u2014 concise documentation and examples for Experience. Practical guidance and related artifacts for implementers."
+    },
+    {
+      "file": "skills.html",
+      "new": "Skills | Jeremy Fontenot \u2014 concise documentation and examples for Skills. Practical guidance and related artifacts for implementers.        "
     }
   ],
   "canonical_tags_added": [],
   "sitemap_updates": {
-    "added": [
-      "https://jeremyfontenot.online/",
-      "https://jeremyfontenot.online/cdn-cgi/l/email-protection/"
-    ],
+    "added": [],
     "removed": []
   },
   "indexnow_updates": {
-    "added": [
-      "https://jeremyfontenot.online/cdn-cgi/l/email-protection/"
-    ],
+    "added": [],
     "removed": []
   },
-  "skipped_items": [
-    {
-      "file": "index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "./css/styles.css"
-    },
-    {
-      "file": "docs/search.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../css/styles.css"
-    },
-    {
-      "file": "docs/source-browser.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../css/styles.css"
-    },
-    {
-      "file": "docs/architecture/home-lab-architecture.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/architecture/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/architecture/m365-architecture.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/brand-guide/branding.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/certifications/certifications.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/certifications/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/experience/experience.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/experience/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/projects/home-lab.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/projects/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "/docs/projects/ad-migration/artifacts/provisioning.ps1"
-    },
-    {
-      "file": "docs/projects/m365-lab.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/scripts/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/scripts/script-documentation.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/scripts/validation.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/skills/automation.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/skills/cloud.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/skills/endpoint.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/skills/identity.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "/docs/projects/#ad-migration"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "/docs/projects/#m365-lab"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "/docs/#identity-security"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "/docs/projects/#incident-rca"
-    },
-    {
-      "file": "docs/skills/index.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "/docs/#troubleshooting"
-    },
-    {
-      "file": "docs/skills/infrastructure.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    },
-    {
-      "file": "docs/skills/monitoring.html",
-      "reason": "anchor-not-found-to-remove",
-      "href": "../../css/styles.css"
-    }
-  ]
+  "skipped_items": []
 }

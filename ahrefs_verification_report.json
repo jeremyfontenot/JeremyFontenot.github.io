@@ -4,7 +4,72 @@
     "duplicate_pages": [],
     "missing_canonicals": [],
     "weak_meta_descriptions": [],
-    "thin_content_pages": [],
+    "thin_content_pages": [
+      {
+        "file": "docs/home-lab/asset-inventory.html",
+        "words": 119
+      },
+      {
+        "file": "docs/home-lab/change-management-and-validation.html",
+        "words": 136
+      },
+      {
+        "file": "docs/home-lab/monitoring-and-logging.html",
+        "words": 129
+      },
+      {
+        "file": "docs/home-lab/operations-and-monitoring.html",
+        "words": 138
+      },
+      {
+        "file": "docs/home-lab/security-baseline.html",
+        "words": 137
+      },
+      {
+        "file": "docs/home-lab/validation-report.html",
+        "words": 86
+      },
+      {
+        "file": "docs/index.html",
+        "words": 123
+      },
+      {
+        "file": "docs/projects/endpoint-management.html",
+        "words": 143
+      },
+      {
+        "file": "docs/projects/powershell-automation.html",
+        "words": 133
+      },
+      {
+        "file": "docs/skills/active-directory.html",
+        "words": 133
+      },
+      {
+        "file": "docs/skills/automation.html",
+        "words": 138
+      },
+      {
+        "file": "docs/skills/entra-identity.html",
+        "words": 149
+      },
+      {
+        "file": "docs/skills/intune-endpoint-management.html",
+        "words": 146
+      },
+      {
+        "file": "docs/skills/powershell.html",
+        "words": 128
+      },
+      {
+        "file": "docs/skills/security-baselines.html",
+        "words": 141
+      },
+      {
+        "file": "docs/skills/windows-support.html",
+        "words": 143
+      }
+    ],
     "unnormalized_links": [],
     "invalid_internal_links": [],
     "sitemap_mismatches": {
@@ -15,14 +80,28 @@
       "missing_from_indexnow": [],
       "indexnow_removed_pages": []
     },
-    "orphan_pages": []
+    "orphan_pages": [
+      "docs/brand-guide/branding.html",
+      "docs/homelab/index.html",
+      "docs/identity-security/index.html",
+      "docs/powershell/index.html",
+      "docs/server-guides/index.html",
+      "docs/skills/cloud.html",
+      "docs/skills/endpoint.html",
+      "docs/skills/identity.html",
+      "docs/skills/infrastructure.html",
+      "docs/skills/monitoring.html",
+      "docs/source-browser.html",
+      "docs/troubleshooting/index.html",
+      "docs/validation/index.html"
+    ]
   },
   "summary": {
     "broken_links": 0,
     "duplicate_pages": 0,
     "missing_canonicals": 0,
     "weak_meta_descriptions": 0,
-    "thin_content_pages": 0,
+    "thin_content_pages": 16,
     "unnormalized_links": 0,
     "invalid_internal_links": 0,
     "sitemap_mismatches": {
@@ -33,6 +112,6 @@
       "missing_from_indexnow": 0,
       "indexnow_removed_pages": 0
     },
-    "orphan_pages": 0
+    "orphan_pages": 13
   }
 }
