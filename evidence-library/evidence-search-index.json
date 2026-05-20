@@ -464,6 +464,27 @@
     "fileType": "svg",
     "confidenceLevel": "manual-review-required",
     "preservationStatus": "MANUAL REVIEW REQUIRED"
+  },
+  {
+    "id": "projects-home-lab-lab-portfolio-preserved",
+    "title": "Home Lab Portfolio PDF",
+    "summary": "Preserved home lab portfolio PDF moved out of the old generated documentation tree during static-site cleanup.",
+    "path": "evidence-library/projects/home-lab/lab-portfolio-preserved.pdf",
+    "originalSourcePath": "docs/curated/home-lab/Lab-Portfolio.pdf",
+    "category": "projects",
+    "subcategory": "home-lab",
+    "proofType": "document",
+    "status": "PRESERVED",
+    "relatedProject": "Home Lab",
+    "relatedSkill": "Infrastructure",
+    "tags": [
+      "home-lab",
+      "portfolio",
+      "preserved-document"
+    ],
+    "fileType": "pdf",
+    "confidenceLevel": "preserved-source",
+    "preservationStatus": "PRESERVED PROOF"
   }
 ]
 
