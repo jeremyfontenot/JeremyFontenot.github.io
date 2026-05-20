@@ -1,12 +1,6 @@
 {
   "extends": ["html-validate:recommended"],
-  "ignore": [
-    "sorted-documents/**",
-    "legacy-site-backup/**",
-    "proof-staging/**"
-  ]
-}{
-  "extends": ["html-validate:recommended"],
+  
   "rules": {
     "attr-quotes": "off",
     "doctype-style": "off",
