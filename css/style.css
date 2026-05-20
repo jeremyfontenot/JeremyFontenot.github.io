@@ -2655,3 +2655,201 @@ article:hover,
     margin-bottom: 1.5rem;
   }
 }
+
+/* Brand restoration pass: shared legacy application stylesheet */
+:root {
+  --color-primary: #22D3EE;
+  --color-accent: #D946EF;
+  --color-secondary: #38BDF8;
+  --color-bg: #071026;
+  --color-surface: #0b1220;
+  --color-elevated: #111827;
+  --brand-gradient: linear-gradient(135deg, #22D3EE 0%, #38BDF8 44%, #D946EF 100%);
+  --brand-glow: 0 0 28px rgba(34, 211, 238, 0.18), 0 0 40px rgba(217, 70, 239, 0.12);
+}
+
+body {
+  background:
+    linear-gradient(rgba(34, 211, 238, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 16% 6%, rgba(34, 211, 238, 0.18), transparent 30%),
+    radial-gradient(circle at 84% 10%, rgba(217, 70, 239, 0.14), transparent 30%),
+    linear-gradient(180deg, #071026 0%, #0b1220 58%, #0c1727 100%) !important;
+  background-size: 44px 44px, 44px 44px, auto, auto, auto !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  right: clamp(1rem, 4vw, 4rem);
+  top: clamp(1rem, 8vw, 5rem);
+  width: min(30rem, 44vw);
+  height: 12rem;
+  background: url("../assets/logos/logo_horizontal_3000x1500.png") right center / contain no-repeat;
+  opacity: 0.055;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.site-header {
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08), transparent 28%, rgba(217, 70, 239, 0.08)),
+    rgba(7, 16, 38, 0.92) !important;
+  border-bottom-color: rgba(34, 211, 238, 0.22) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28), 0 1px 0 rgba(217, 70, 239, 0.16);
+}
+
+.brand,
+.footer-brand,
+.home-footer .footer-brand,
+.about-footer .footer-brand {
+  transition: transform 180ms ease, color 180ms ease;
+}
+
+.brand:hover,
+.brand:focus {
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.brand img,
+.brand img.logo,
+.footer-logo,
+.footer-brand img,
+.home-footer .footer-brand img,
+.about-footer .footer-logo {
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.18), rgba(217, 70, 239, 0.14)),
+    rgba(7, 16, 38, 0.9);
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  box-shadow: var(--brand-glow), 0 14px 32px rgba(0, 0, 0, 0.32) !important;
+}
+
+.nav a,
+.btn,
+button,
+.contact-email,
+.link-badge,
+.badge,
+.badge-hero,
+.tech-badge,
+.tool-pill {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.nav a:hover,
+.nav a:focus,
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus,
+.contact-email:hover,
+.link-badge:hover,
+.badge:hover,
+.badge-hero:hover,
+.tech-badge:hover,
+.tool-pill:hover {
+  border-color: rgba(217, 70, 239, 0.38);
+  box-shadow: var(--brand-glow), 0 14px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.btn,
+button,
+.contact-email,
+.link-badge {
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(217, 70, 239, 0.08));
+  border-color: rgba(34, 211, 238, 0.28);
+}
+
+.btn.primary,
+.btn-primary,
+button.primary {
+  background: var(--brand-gradient) !important;
+  color: #06111f !important;
+}
+
+.card,
+article,
+.frosted-card,
+.highlights .card,
+.about-cards .card,
+.card-grid .card,
+.timeline-card .card,
+.result,
+.dashboard-section,
+.evidence-item,
+.project-card,
+.panel,
+.doc-card,
+.contact-panel {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(16, 28, 47, 0.94), rgba(11, 22, 39, 0.96)) !important;
+  border: 1px solid rgba(34, 211, 238, 0.2) !important;
+}
+
+.card::before,
+article::before,
+.frosted-card::before,
+.highlights .card::before,
+.about-cards .card::before,
+.card-grid .card::before,
+.timeline-card .card::before,
+.result::before,
+.dashboard-section::before,
+.evidence-item::before,
+.project-card::before,
+.panel::before,
+.doc-card::before,
+.contact-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: var(--brand-gradient);
+  opacity: 0.86;
+}
+
+.card:hover,
+article:hover,
+.frosted-card:hover,
+.highlights .card:hover,
+.about-cards .card:hover,
+.card-grid .card:hover,
+.timeline-card:hover .card,
+.result:hover,
+.dashboard-section:hover,
+.evidence-item:hover,
+.project-card:hover,
+.panel:hover,
+.doc-card:hover,
+.contact-panel:hover {
+  border-color: rgba(217, 70, 239, 0.36) !important;
+  box-shadow: var(--brand-glow), 0 22px 48px rgba(0, 0, 0, 0.34);
+}
+
+.site-footer,
+.home-footer,
+.about-footer,
+.skills-footer,
+.experience-footer,
+.docs-footer,
+.contact-footer {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(34, 211, 238, 0.22);
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08), transparent 44%, rgba(217, 70, 239, 0.1)),
+    rgba(7, 16, 38, 0.86) !important;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    width: 16rem;
+    height: 7rem;
+    opacity: 0.04;
+  }
+}

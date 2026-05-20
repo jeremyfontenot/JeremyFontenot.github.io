@@ -1,17 +1,24 @@
 :root {
-  --bg: #07111d;
-  --bg-2: #0b1627;
-  --bg-3: #0f1c31;
+  --bg: #071026;
+  --bg-2: #0b1220;
+  --bg-3: #111827;
   --panel: rgba(14, 25, 42, 0.92);
   --panel-strong: rgba(17, 31, 52, 0.98);
   --panel-soft: rgba(255, 255, 255, 0.035);
   --text: #f7fbff;
   --muted: #b0bfd2;
   --muted-2: #90a2ba;
-  --line: rgba(110, 184, 214, 0.2);
-  --line-strong: rgba(110, 184, 214, 0.35);
-  --cyan: #67e8f9;
+  --line: rgba(34, 211, 238, 0.2);
+  --line-strong: rgba(217, 70, 239, 0.35);
+  --cyan: #22d3ee;
   --sky: #38bdf8;
+  --magenta: #d946ef;
+  --brand-primary: #22d3ee;
+  --brand-secondary: #d946ef;
+  --brand-gradient: linear-gradient(135deg, #22d3ee 0%, #38bdf8 44%, #d946ef 100%);
+  --brand-glow: 0 0 34px rgba(34, 211, 238, 0.18), 0 0 44px rgba(217, 70, 239, 0.12);
+  --brand-logo-mark: url("/assets/logos/primary_logo_transparent_3000x3000.png");
+  --brand-logo-horizontal: url("/assets/logos/logo_horizontal_3000x1500.png");
   --slate: #8ab4ff;
   --green: #74f0c0;
   --amber: #fbbf24;
@@ -37,9 +44,12 @@ body {
   min-height: 100vh;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 34%),
-    radial-gradient(circle at top right, rgba(103, 232, 249, 0.08), transparent 22%),
+    linear-gradient(rgba(34, 211, 238, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.2), transparent 34%),
+    radial-gradient(circle at top right, rgba(217, 70, 239, 0.16), transparent 28%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 48%, #0c1727 100%);
+  background-size: 44px 44px, 44px 44px, auto, auto, auto;
   font-family: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
@@ -59,7 +69,7 @@ body::before {
   right: -8rem;
   width: 24rem;
   height: 24rem;
-  background: radial-gradient(circle, rgba(103, 232, 249, 0.16), transparent 70%);
+  background: radial-gradient(circle, rgba(217, 70, 239, 0.2), transparent 70%);
   filter: blur(24px);
 }
 
@@ -68,7 +78,7 @@ body::after {
   bottom: -8rem;
   width: 26rem;
   height: 26rem;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.14), transparent 68%);
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.2), transparent 68%);
   filter: blur(24px);
 }
 
@@ -85,7 +95,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 2px solid rgba(103, 232, 249, 0.9);
+  outline: 2px solid rgba(34, 211, 238, 0.9);
   outline-offset: 2px;
 }
 
@@ -124,10 +134,13 @@ main {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(8, 17, 31, 0.88);
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08), transparent 22%, rgba(217, 70, 239, 0.08)),
+    rgba(7, 16, 38, 0.9);
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(103, 232, 249, 0.16);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28), 0 1px 0 rgba(217, 70, 239, 0.16);
 }
 
 .nav {
@@ -148,6 +161,13 @@ main {
   color: var(--text);
   font-weight: 800;
   letter-spacing: 0.01em;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.brand:hover,
+.brand:focus-visible {
+  color: var(--cyan);
+  text-decoration: none;
 }
 
 .brand-mark {
@@ -156,9 +176,22 @@ main {
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--sky), var(--cyan));
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.22), rgba(217, 70, 239, 0.18)),
+    var(--brand-logo-mark) center / 78% auto no-repeat,
+    rgba(7, 16, 38, 0.96);
   color: #06111f;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), var(--shadow-soft);
+  border: 1px solid rgba(34, 211, 238, 0.44);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), var(--brand-glow), var(--shadow-soft);
+  text-indent: -9999px;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.brand:hover .brand-mark,
+.brand:focus-visible .brand-mark {
+  border-color: rgba(217, 70, 239, 0.58);
+  box-shadow: 0 0 28px rgba(34, 211, 238, 0.22), 0 0 38px rgba(217, 70, 239, 0.2), var(--shadow-soft);
+  transform: translateY(-1px);
 }
 
 .nav-links {
@@ -171,21 +204,25 @@ main {
   color: var(--muted);
   padding: 0.68rem 0.85rem;
   border-radius: 999px;
-  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  border: 1px solid transparent;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
 .nav-links a:hover,
 .nav-links a[aria-current="page"] {
-  background: rgba(103, 232, 249, 0.12);
+  background: rgba(34, 211, 238, 0.1);
+  border-color: rgba(34, 211, 238, 0.2);
   color: var(--text);
   text-decoration: none;
   transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(34, 211, 238, 0.08);
 }
 
 .nav-cta {
-  border: 1px solid rgba(103, 232, 249, 0.34);
+  border: 1px solid rgba(217, 70, 239, 0.38) !important;
   color: var(--text) !important;
-  background: rgba(103, 232, 249, 0.08);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.14), rgba(217, 70, 239, 0.13)) !important;
+  box-shadow: 0 10px 28px rgba(217, 70, 239, 0.08);
 }
 
 .nav-toggle {
@@ -197,13 +234,23 @@ main {
   color: var(--text);
   font-weight: 700;
   box-shadow: var(--shadow-soft);
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.nav-toggle:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--brand-glow), var(--shadow-soft);
+  transform: translateY(-1px);
 }
 
 .hero {
   position: relative;
   overflow: hidden;
   padding: 6.75rem 1.25rem 4rem;
-  border-bottom: 1px solid rgba(103, 232, 249, 0.12);
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.08), transparent 36%, rgba(217, 70, 239, 0.08)),
+    linear-gradient(180deg, rgba(7, 16, 38, 0), rgba(7, 16, 38, 0.48));
 }
 
 .hero::before,
@@ -219,15 +266,16 @@ main {
   right: -6rem;
   width: 18rem;
   height: 18rem;
-  background: radial-gradient(circle, rgba(103, 232, 249, 0.12), transparent 70%);
+  background: radial-gradient(circle, rgba(217, 70, 239, 0.18), transparent 70%);
 }
 
 .hero::after {
-  left: -10rem;
-  bottom: -8rem;
-  width: 22rem;
-  height: 22rem;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.1), transparent 72%);
+  right: 6vw;
+  bottom: 1.8rem;
+  width: min(36rem, 45vw);
+  height: 16rem;
+  background: var(--brand-logo-horizontal) right center / contain no-repeat;
+  opacity: 0.08;
 }
 
 .hero-inner,
@@ -242,12 +290,13 @@ main {
 }
 
 .eyebrow {
-  color: var(--green);
+  color: var(--cyan);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8rem;
   margin: 0;
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.22);
 }
 
 h1,
@@ -295,23 +344,25 @@ h3 {
   border-radius: 999px;
   padding: 0.88rem 1.08rem;
   font-weight: 800;
-  border: 1px solid rgba(103, 232, 249, 0.3);
-  background: rgba(103, 232, 249, 0.08);
+  border: 1px solid rgba(34, 211, 238, 0.32);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(217, 70, 239, 0.08));
   color: var(--text);
   box-shadow: var(--shadow-soft);
-  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
 }
 
 .button:hover {
   text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
+  border-color: rgba(217, 70, 239, 0.44);
+  transform: translateY(-2px);
+  box-shadow: var(--brand-glow), 0 16px 34px rgba(0, 0, 0, 0.28);
 }
 
 .button.primary {
-  background: linear-gradient(135deg, var(--sky), var(--cyan));
+  background: var(--brand-gradient);
   color: #06111f;
   border: 0;
+  box-shadow: 0 14px 34px rgba(34, 211, 238, 0.16), 0 14px 34px rgba(217, 70, 239, 0.1);
 }
 
 .section {
@@ -399,10 +450,32 @@ h3 {
 .metric,
 .table-wrap,
 .panel {
-  background: linear-gradient(180deg, rgba(16, 28, 47, 0.96), rgba(11, 22, 39, 0.98));
-  border: 1px solid rgba(103, 232, 249, 0.14);
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(16, 28, 47, 0.96), rgba(11, 22, 39, 0.98)),
+    linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(217, 70, 239, 0.06));
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+}
+
+.card::before,
+.featured-card::before,
+.relation-card::before,
+.result-card::before,
+.stat-card::before,
+.empty-state::before,
+.search-panel::before,
+.metric::before,
+.table-wrap::before,
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: var(--brand-gradient);
+  opacity: 0.82;
 }
 
 .card,
@@ -447,6 +520,8 @@ h3 {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.03em;
+  color: var(--cyan);
+  text-shadow: 0 0 24px rgba(34, 211, 238, 0.16);
 }
 
 .stat-label {
@@ -477,18 +552,18 @@ h3 {
   border-radius: 999px;
   padding: 0.34rem 0.66rem;
   font-size: 0.82rem;
-  border: 1px solid rgba(103, 232, 249, 0.24);
+  border: 1px solid rgba(34, 211, 238, 0.24);
 }
 
 .badge,
 .chip {
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  background: rgba(34, 211, 238, 0.055);
 }
 
 .status-badge {
   color: var(--text);
-  background: rgba(103, 232, 249, 0.08);
+  background: rgba(34, 211, 238, 0.08);
   font-weight: 700;
 }
 
@@ -499,7 +574,7 @@ h3 {
 
 .badge-canonical {
   color: #06111f;
-  background: linear-gradient(135deg, rgba(103, 232, 249, 0.9), rgba(56, 189, 248, 0.95));
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.9), rgba(56, 189, 248, 0.95));
   border-color: transparent;
 }
 
@@ -511,8 +586,8 @@ h3 {
 
 .badge-generated,
 .badge-documentation {
-  color: #06111f;
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.92), rgba(251, 146, 60, 0.96));
+  color: var(--text);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.22), rgba(217, 70, 239, 0.22));
   border-color: transparent;
 }
 
@@ -539,7 +614,17 @@ h3 {
 .relation-card:hover,
 .result-card:hover,
 .stat-card:hover {
-  border-color: rgba(103, 232, 249, 0.26);
+  border-color: rgba(217, 70, 239, 0.35);
+  box-shadow: var(--brand-glow), var(--shadow);
+  transform: translateY(-2px);
+}
+
+.card,
+.featured-card,
+.relation-card,
+.result-card,
+.stat-card {
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .search-panel {
@@ -583,6 +668,16 @@ h3 {
   background: rgba(6, 17, 31, 0.95);
   color: var(--text);
   padding: 0.8rem 0.9rem;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.search-controls input:hover,
+.search-controls select:hover,
+.search-controls input:focus,
+.search-controls select:focus {
+  border-color: rgba(217, 70, 239, 0.42);
+  background: rgba(7, 16, 38, 0.98);
+  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.08), 0 0 24px rgba(217, 70, 239, 0.12);
 }
 
 .search-controls input::placeholder {
@@ -591,7 +686,7 @@ h3 {
 
 .result-count {
   margin: 0.9rem 0 0.2rem;
-  color: var(--green);
+  color: var(--cyan);
   font-weight: 800;
 }
 
@@ -609,7 +704,7 @@ h3 {
 
 .result-card mark,
 .featured-card mark {
-  background: rgba(103, 232, 249, 0.18);
+  background: rgba(34, 211, 238, 0.18);
   color: var(--text);
   padding: 0 0.18rem;
   border-radius: 0.18rem;
@@ -650,7 +745,7 @@ table {
 th,
 td {
   padding: 0.8rem 0.9rem;
-  border-bottom: 1px solid rgba(103, 232, 249, 0.12);
+  border-bottom: 1px solid rgba(34, 211, 238, 0.12);
   text-align: left;
   vertical-align: top;
 }
@@ -662,7 +757,7 @@ th {
 }
 
 mark {
-  background: rgba(103, 232, 249, 0.18);
+  background: rgba(34, 211, 238, 0.18);
   color: var(--text);
   padding: 0 0.18rem;
   border-radius: 0.18rem;
@@ -677,8 +772,34 @@ mark {
 .metric {
   padding: 1rem;
   border-left: 3px solid var(--cyan);
-  background: rgba(255, 255, 255, 0.035);
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(217, 70, 239, 0.055)),
+    rgba(255, 255, 255, 0.035);
   border-radius: var(--radius-sm);
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.35rem 0 1.25rem;
+}
+
+.metric-row .metric {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.metric-row .metric strong {
+  color: var(--cyan);
+  font-size: 1.75rem;
+  line-height: 1;
+  text-shadow: 0 0 24px rgba(34, 211, 238, 0.16);
+}
+
+.metric-row .metric span {
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .metric .label {
@@ -690,6 +811,7 @@ mark {
   font-size: 1.8rem;
   font-weight: 800;
   margin-top: 0.2rem;
+  color: var(--cyan);
 }
 
 .metric .detail {
@@ -711,16 +833,39 @@ mark {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(103, 232, 249, 0.12);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
   padding: 2rem 1.25rem;
   color: var(--muted);
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08), transparent 44%, rgba(217, 70, 239, 0.1)),
+    rgba(7, 16, 38, 0.62);
+}
+
+.site-footer::after {
+  content: "";
+  position: absolute;
+  right: 1.5rem;
+  bottom: -2.6rem;
+  width: min(22rem, 42vw);
+  height: 9rem;
+  background: var(--brand-logo-horizontal) right center / contain no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
 }
 
 .site-footer .section-inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.site-footer a {
+  color: var(--cyan);
 }
 
 @media (max-width: 1100px) {
@@ -731,7 +876,8 @@ mark {
   }
 
   .stat-grid,
-  .metrics-grid {
+  .metrics-grid,
+  .metric-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -783,6 +929,7 @@ mark {
   .relationship-grid,
   .stat-grid,
   .metrics-grid,
+  .metric-row,
   .search-controls {
     grid-template-columns: 1fr;
   }
