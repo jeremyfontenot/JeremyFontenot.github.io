@@ -34,3 +34,5 @@ artifacts/generated-image-skipped.csv
 artifacts/generated-image-status.csv
 artifacts/site-audit.json
 artifacts/core-page-diff-review.txt
+Code
+legacy-site-backup/
