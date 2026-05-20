@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const outputPath = path.join(root, 'artifacts', 'site-audit.json');
-const skipDirs = new Set(['.git', 'node_modules']);
+const skipDirs = new Set(['.git', 'node_modules', 'sorted-documents', 'legacy-site-backup', 'proof-staging']);
 const publicSkipDirs = new Set(['internal', 'reports', 'components']);
 const localSchemes = /^(https?:|mailto:|tel:|javascript:|data:|\$\{)/i;
 const assetAttrs = /\b(?:href|src)=["']([^"']+)["']/gi;
@@ -55,9 +55,18 @@ function candidates(fromRel, ref) {
   return out.map(item => item.replace(/^\/+/, ''));
 }
 
-const allFiles = walk(root).map(rel).filter(isPublicFile);
-const existing = new Set(allFiles);
-for (const file of allFiles) {
+const activeListPath = path.join(root, 'artifacts', 'active-html-files.txt');
+const activeList = fs.existsSync(activeListPath)
+  ? fs.readFileSync(activeListPath, 'utf8')
+      .split(/\r?\n/)
+      .map(item => item.trim())
+      .filter(Boolean)
+  : [];
+
+const knownFiles = walk(root).map(rel).filter(isPublicFile);
+const allFiles = activeList.length ? activeList : knownFiles;
+const existing = new Set(knownFiles);
+for (const file of knownFiles) {
   if (file.endsWith('/index.html')) existing.add(file.slice(0, -'index.html'.length));
   existing.add(`/${file}`);
 }

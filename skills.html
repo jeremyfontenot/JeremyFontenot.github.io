@@ -1,151 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Skills — Jeremy Fontenot</title>
-  <meta name="description" content="Practical IT support and systems administration skills across Windows, Microsoft 365, Intune, PowerShell, troubleshooting, and documentation.">
-  <meta property="og:title" content="Skills — Jeremy Fontenot" />
-  <meta property="og:description" content="IT support and junior systems administration skills mapped to practical documentation, labs, endpoint support, identity, and automation workflows." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jeremyfontenot.online/skills.html" />
-  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png" />
-  <link rel="stylesheet" href="/assets/css/theme.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="canonical" href="/skills.html" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills | Jeremy Fontenot</title>
+<meta name="description" content="Skill evidence index for service desk, Windows, Microsoft 365, Entra ID, Intune, PowerShell, DNS, DHCP, networking, and validation. Explore preserved.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jeremyfontenot.com/skills.html">
+<meta property="og:title" content="Skills | Jeremy Fontenot">
+<meta property="og:description" content="Skill evidence index for service desk, Windows, Microsoft 365, Entra ID, Intune, PowerShell, DNS, DHCP, networking, and validation. Explore preserved.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/js/site.js" defer></script>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-grid">
-      <div class="brand">
-        <a href="/index.html">
-          <img class="logo" src="/assets/images/logo.png" alt="Jeremy Fontenot" width="72" height="72" loading="lazy"
-               onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
-        </a>
-        <div><h1>Skills</h1></div>
-      </div>
-
-      <button type="button" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">☰</button>
-      <nav id="primary-menu" class="nav" aria-label="Primary" data-primary-nav></nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <!-- Page header / hero -->
-    <section class="skills-hero hero" aria-labelledby="skills-title" data-animate="fade-up">
-      <div class="hero-content">
-        <div class="frosted-card">
-          <h2 id="skills-title">Skills</h2>
-          <p class="lead">Practical support and administration skills across identity, endpoint management, automation, networking fundamentals, and hybrid infrastructure documentation.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Identity & Security -->
-    <section class="skills-section" data-animate="fade-up">
-      <h2>Modern identity support & governance</h2>
-      <p data-animate="fade-up">Entra ID fundamentals, group-based access, MFA, Conditional Access concepts, and secure authentication support for Microsoft cloud environments.</p>
-      <div class="card-grid about-cards">
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="1.2"/></svg></div>
-          <div class="card-body"><h3>Entra ID Administration</h3><p>Documenting tenant structure, group-based access, app registration concepts, and RBAC guardrails.</p></div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/></svg></div>
-          <div class="card-body"><h3>Conditional Access</h3><p>MFA requirements, policy scoping, test-user verification, and rollback-aware documentation.</p></div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
-          <div class="card-body"><h3>Governance</h3><p>Lifecycle documentation, least-privilege access, role review, and escalation handoff notes.</p></div>
-        </article>
-      </div>
-      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">Entra ID</span> <span class="badge">Conditional Access</span> <span class="badge">PIM</span> <span class="badge">Defender for Cloud Apps</span></p>
-    </section>
-
-    <!-- Endpoint Management -->
-    <section class="skills-section" data-animate="fade-up">
-      <h2>Enterprise device management (Intune)</h2>
-      <p data-animate="fade-up">Device lifecycle, baselines, and secure configuration management using Intune.</p>
-      <div class="card-grid about-cards">
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.2"/></svg></div>
-          <div class="card-body"><h3>Intune Baselines</h3><p>Configuration profiles and security baselines for Windows 11 at scale.</p></div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
-          <div class="card-body"><h3>Autopilot & Provisioning</h3><p>Optimized Windows Autopilot flows and ESP configuration.</p></div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
-          <div class="card-body"><h3>App Deployment</h3><p>Win32 packaging, deployment rings, and update orchestration.</p></div>
-        </article>
-      </div>
-      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">Intune</span> <span class="badge">Autopilot</span> <span class="badge">Windows 11</span></p>
-    </section>
-
-    <!-- Automation & Scripting -->
-    <section class="skills-section" data-animate="fade-up">
-      <h2>PowerShell & automation workflows</h2>
-      <p data-animate="fade-up">Scripting for identity, endpoint, reporting, and verification pipelines.</p>
-      <div class="card-grid about-cards">
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
-          <div class="card-body"><h3>PowerShell 7</h3><p>Cross-platform scripts, modules, and testing harnesses.</p></div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
-          <div class="card-body"><h3>Microsoft Graph</h3><p>API-driven automation for tenant and service management.</p></div>
-        </article>
-      </div>
-      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">PowerShell</span> <span class="badge">Microsoft Graph</span> <span class="badge">GitHub Actions</span></p>
-    </section>
-
-    <!-- Cloud & Infrastructure -->
-    <section class="skills-section" data-animate="fade-up">
-      <h2>Hybrid infrastructure & troubleshooting</h2>
-      <p data-animate="fade-up">Design, virtualization, and structured troubleshooting across hybrid environments.</p>
-      <div class="card-grid about-cards">
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="13" y="13" width="7" height="7" stroke="currentColor" stroke-width="1.2"/></svg></div>
-          <div class="card-body"><h3>Windows Server</h3><p>AD DS, DNS, DHCP, GPO baselines and file services.</p></div>
-        </article>
-        <article class="card" data-animate="fade-up">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
-          <div class="card-body"><h3>Networking & VLANs</h3><p>Segmentation, routing, and firewall policy design using pfSense.</p></div>
-        </article>
-      </div>
-      <p class="tech-stack" data-animate="fade-up"><strong>Tech Stack:</strong> <span class="badge">Windows Server</span> <span class="badge">Hyper-V</span> <span class="badge">pfSense</span></p>
-    </section>
-
-    <!-- Tools snapshot (kept compact) -->
-    <section class="skills-section" data-animate="fade-up">
-      <h2>Tools & Technology Snapshot</h2>
-      <ul>
-        <li>Microsoft 365: Entra ID, Intune, SharePoint Online, Teams, Exchange Online</li>
-        <li>Automation: PowerShell, Microsoft Graph, GitHub Actions</li>
-        <li>Infrastructure: Windows Server, Hyper‑V, Proxmox, pfSense</li>
-        <li>Development & Ops: VS Code, GitHub, JSON, YAML</li>
-      </ul>
-    </section></main>
-
-  <footer class="site-footer skills-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <img src="/assets/images/logo.png" alt="Jeremy Fontenot" width="48" height="48" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/profile.svg'">
-          <small>&copy; 2026 Jeremy Fontenot</small>
-        </div>
-        <div class="footer-badges">
-          <span class="badge">Microsoft 365</span>
-          <span class="badge">Entra ID</span>
-          <span class="badge">Intune</span>
-          <span class="badge">PowerShell</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/js/main.js" defer></script>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="/" aria-label="Jeremy Fontenot portfolio home"><span class="brand-mark">JF</span><span>Jeremy Fontenot</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span>Menu</span></button><div class="nav-links" id="primary-menu"><a href="/">Home</a><a href="/about.html">About</a><a href="/projects.html">Projects</a><a href="/skills.html" aria-current="page">Skills</a><a href="/experience.html">Experience</a><a href="/documentation.html">Documentation</a><a href="/contact.html">Contact</a><a class="nav-cta" href="/docs/search.html">Search Evidence</a></div></nav></header>
+<main id="main">
+<section class="hero"><div class="hero-inner"><p class="eyebrow">Preserved evidence portfolio</p><h1>Skills mapped to documentation and proof artifacts.</h1><p class="lead">The skills section points to evidence records, runbooks, diagrams, and preserved technical documentation that support each capability area.</p><div class="hero-actions"><a class="button primary" href="/docs/search.html">Search documentation</a><a class="button" href="/evidence-library/index.html">Browse evidence library</a></div></div></section>
+<section class="section"><div class="section-inner"><h2>Skill evidence map</h2><p class="lead">Each skill page separates authoritative evidence from review-ready documentation and archive support.</p><div class="grid"><article class="card"><span class="badge">Skill evidence</span><h3>Service Desk Support</h3><p>Troubleshooting workflows, ticket documentation practices, and escalation criteria for endpoint and network issues.</p><a class="button" href="/docs/skills/service-desk-support.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Windows Support</h3><p>Preserved endpoint support practices connected to Windows administration, DNS, DHCP, and troubleshooting evidence.</p><a class="button" href="/docs/skills/windows-support.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Microsoft 365 Administration</h3><p>Documented Microsoft 365 lab workflows covering identity, endpoint management, and security baseline concepts.</p><a class="button" href="/docs/skills/microsoft-365-administration.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Entra ID / Identity</h3><p>Identity and access evidence covering conditional access concepts, access control, and change documentation.</p><a class="button" href="/docs/skills/entra-identity.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Intune / Endpoint Management</h3><p>Endpoint management documentation with baseline, compliance, and deployment planning context.</p><a class="button" href="/docs/skills/intune-endpoint-management.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>PowerShell</h3><p>Preserved automation artifacts and script documentation for repeatable administrative workflows.</p><a class="button" href="/docs/skills/powershell.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Active Directory</h3><p>Identity infrastructure evidence connected to AD concepts, DNS dependency awareness, and migration documentation.</p><a class="button" href="/docs/skills/active-directory.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>DNS / DHCP</h3><p>Operational runbook and validation checklist for name resolution, leases, reservations, and AD-integrated troubleshooting.</p><a class="button" href="/docs/skills/dns-dhcp.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Networking / VLANs</h3><p>VLAN architecture walkthrough and validation methodology for segmentation, hypervisor networking, and switch uplinks.</p><a class="button" href="/docs/skills/networking-vlans.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>pfSense / Firewall</h3><p>Firewall segmentation diagram and policy intent documentation for WAN, LAN, VPN, and lab isolation concepts.</p><a class="button" href="/docs/skills/pfsense-firewall.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Documentation</h3><p>Documentation-first operating model backed by preserved runbooks, diagrams, review reports, and evidence indexes.</p><a class="button" href="/docs/skills/documentation.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Automation</h3><p>Automation evidence across scripts, validation workflows, and repeatable site documentation practices.</p><a class="button" href="/docs/skills/automation.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Security Baselines</h3><p>Baseline planning evidence across conditional access, endpoint policy, and validation-oriented documentation.</p><a class="button" href="/docs/skills/security-baselines.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>Validation / Audit</h3><p>Validation checklists, audit methodology, and preserved reports that distinguish planned checks from completed evidence.</p><a class="button" href="/docs/skills/validation-audit.html">Review details</a></article><article class="card"><span class="badge">Skill evidence</span><h3>GitHub Pages / Static Site Operations</h3><p>Static site operations evidence covering documentation structure, search indexes, manifests, and validation workflows.</p><a class="button" href="/docs/skills/github-pages-operations.html">Review details</a></article></div></div></section>
+</main>
+<footer class="site-footer"><div class="section-inner"><p>Jeremy Fontenot - documentation-first IT portfolio.</p><p><a href="/docs/index.html">Documentation Hub</a> · <a href="/evidence-library/index.html">Evidence Library</a></p></div></footer>
 </body>
 </html>

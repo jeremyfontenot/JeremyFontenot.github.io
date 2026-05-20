@@ -1,90 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automation & Scripting | Skills</title>
-  <link rel="canonical" href="https://jeremyfontenot.online/docs/skills/automation.html">
-  <link rel="stylesheet" href="/css/styles.css">
-
-  <meta name="description" content="Automation and scripting skills page covering PowerShell examples, safe script usage, evidence review, logging, and repeatable IT Support workflows." />
-
-  <meta property="og:title" content="Automation & Scripting | Skills">
-  <meta property="og:description" content="Automation & Scripting | Skills ← Back to Skills Return to Skills Section Automation & Scripting PowerShell automation across Microsoft Graph, Exchang">
-  <meta property="og:url" content="https://jeremyfontenot.online/docs/skills/automation.html">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Automation & Scripting | Skills">
-  <meta name="twitter:description" content="Automation & Scripting | Skills ← Back to Skills Return to Skills Section Automation & Scripting PowerShell automation across Microsoft Graph, Exchang">
-  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automation | Jeremy Fontenot</title>
+<meta name="description" content="Automation evidence across scripts, validation workflows, and repeatable site documentation practices. Explore preserved documentation, evidence records,.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jeremyfontenot.com/docs/skills/automation.html">
+<meta property="og:title" content="Automation | Jeremy Fontenot">
+<meta property="og:description" content="Automation evidence across scripts, validation workflows, and repeatable site documentation practices. Explore preserved documentation, evidence records,.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/js/site.js" defer></script>
 </head>
-
-<body class="section">
-  <div class="container">
-
-    <p class="doc-nav"><a href="/docs/skills/index.html">← Back to Skills</a> <a href="/docs/skills/index.html">Return to Skills Section</a></p>
-
-    <h1>Automation & Scripting</h1>
-    <p class="lead">
-      PowerShell automation across Microsoft Graph, Exchange Online, Teams, Intune, and SharePoint.
-      Includes idempotent runbooks, structured error handling, and script governance.
-    </p>
-
-    <hr>
-
-    <h2>Core Skills</h2>
-    <ul>
-      <li>PowerShell 7</li>
-      <li>Microsoft Graph SDK</li>
-      <li>REST API integration</li>
-      <li>Idempotent runbook design</li>
-      <li>Script verification and governance</li>
-    </ul>
-
-    <hr>
-
-    <h2>Evidence Excerpts</h2>
-    <blockquote>
-      “Idempotent runbooks with structured error handling…”
-    </blockquote>
-    <blockquote>
-      “Microsoft Graph SDK usage (users, groups, CA, Intune, SharePoint file upload)…”
-    </blockquote>
-
-    <hr>
-
-    <h3>Evidence</h3>
-    <ul class="evidence-list">
-      <li class="evidence-item">
-        <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-commit-abc123.md">Automation commit — baseline reporting</a>
-        <span class="evidence-badge">Internal</span>
-        <div class="meta">PowerShell script and commit notes for baseline reporting</div>
-      </li>
-      <li class="evidence-item">
-        <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/remediation-disable-transportrule.ps1">Remediation script — transport rule</a>
-        <span class="evidence-badge">Verified</span>
-        <div class="meta">Example remediation script used in incident response</div>
-      </li>
-    </ul>
-
-    <hr>
-
-    <h3>How this proves entry-level system administration</h3>
-    <p>Each evidence entry links to artifacts showing concrete work you performed. For entry-level verification we provide:</p>
-    <ul>
-      <li><strong>Commit/patch</strong> — shows code you authored (see the attached patch).</li>
-      <li><strong>Execution log</strong> — timestamped run output that proves you ran the script and produced the result (`automation-run-2024-10-05.log`).</li>
-      <li><strong>Reproduction steps</strong> — exact commands in the evidence YAML so a reviewer can reproduce results locally.</li>
-      <li><strong>Verification</strong> — a verifier field and status in the YAML (`Verified`/`Internal`/`Redacted`).</li>
-    </ul>
-    <p>Example quick reproduction (local):</p>
-    <pre><code>pwsh -NoProfile -Command "./tools/Generate-BaselineReport.ps1 -Output reports/baseline-$(Get-Date -Format yyyy-MM-dd).csv"</code></pre>
-    <p>Artifacts to inspect: <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-commit-abc123.patch">patch</a>, <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-run-2024-10-05.log">execution log</a>, <a href="https://raw.githubusercontent.com/JeremyFontenot/JeremyFontenot.github.io/main/evidence/public/automation-commit-abc123.md">commit notes</a>.</p>
-
-  </div>
-
-  <p>Explore more: <a href="/docs/index.html">Documentation & projects</a></p>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="/" aria-label="Jeremy Fontenot portfolio home"><span class="brand-mark">JF</span><span>Jeremy Fontenot</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span>Menu</span></button><div class="nav-links" id="primary-menu"><a href="/">Home</a><a href="/about.html">About</a><a href="/projects.html">Projects</a><a href="/skills.html" aria-current="page">Skills</a><a href="/experience.html">Experience</a><a href="/documentation.html">Documentation</a><a href="/contact.html">Contact</a><a class="nav-cta" href="/docs/search.html">Search Evidence</a></div></nav></header>
+<main id="main">
+<section class="hero"><div class="hero-inner"><p class="eyebrow">Preserved evidence portfolio</p><h1>Automation</h1><p class="lead">Automation evidence across scripts, validation workflows, and repeatable site documentation practices.</p><div class="hero-actions"><a class="button primary" href="/docs/search.html">Search documentation</a><a class="button" href="/evidence-library/index.html">Browse evidence library</a></div></div></section>
+<section class="section"><div class="section-inner"><h2>Evidence for this skill</h2><p class="lead">These records support the skill area while distinguishing preserved proof from review-ready planning documents.</p><div class="grid"><article class="card"><span class="badge">Manual review</span><h3>Preserved evidence review required</h3><p>Supporting records exist in the documentation hub, but this area should be reviewed before selecting final canonical proof.</p><a class="button" href="/docs/search.html">Review details</a></article></div></div></section>
+</main>
+<footer class="site-footer"><div class="section-inner"><p>Jeremy Fontenot - documentation-first IT portfolio.</p><p><a href="/docs/index.html">Documentation Hub</a> · <a href="/evidence-library/index.html">Evidence Library</a></p></div></footer>
 </body>
 </html>
