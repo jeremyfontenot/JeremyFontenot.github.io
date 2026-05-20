@@ -1,0 +1,9 @@
+# Normalize line endings to avoid LF/CRLF churn on Windows
+* text=auto
+
+# Ensure common web assets use LF in the repo
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
