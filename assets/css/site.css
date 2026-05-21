@@ -258,10 +258,7 @@ svg {
   z-index: 2;
 }
 
-/* Ensure decorative hero element is ignored by assistive tech */
-.hero-decor[aria-hidden="true"] {
-  speak: none;
-}
+/* Decorative hero element is marked with aria-hidden in HTML; no 'speak' needed */
 
 .hero-copy::after {
   content: "";
