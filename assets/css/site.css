@@ -4,8 +4,8 @@
   --panel: rgba(15, 23, 36, 0.84);
   --panel-strong: rgba(17, 24, 39, 0.96);
   --text: #f7fbff;
-  --muted: #b8c7dc;
-  --muted-2: #8ea1bb;
+  --muted: #9fb0c6;
+  --muted-2: #7f98af;
   --cyan: #22d3ee;
   --sky: #38bdf8;
   --magenta: #d946ef;
@@ -258,6 +258,11 @@ svg {
   z-index: 2;
 }
 
+/* Ensure decorative hero element is ignored by assistive tech */
+.hero-decor[aria-hidden="true"] {
+  speak: none;
+}
+
 .hero-copy::after {
   content: "";
   position: absolute;
@@ -305,6 +310,24 @@ h1::after {
   border-color: rgba(34,211,238,0.28);
 }
 
+/* Provide equivalent focus styles for keyboard users */
+.card:focus-visible {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 80px rgba(2,6,23,0.6), 0 0 40px rgba(34,211,238,0.12);
+  border-color: rgba(34,211,238,0.34);
+  outline: 3px solid rgba(34,211,238,0.14);
+  outline-offset: 4px;
+}
+
+/* Focus visibility for interactive controls */
+.button:focus-visible,
+.nav-links a:focus-visible,
+.nav-toggle:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(217,70,239,0.06);
+}
+
 /* Buttons and accents */
 .button.primary {
   background: var(--gradient);
@@ -328,7 +351,7 @@ h1::after {
 
 .site-footer {
   position: relative;
-  z-index: 1;
+  z-index: 2; /* keep footer content above decorative border */
 }
 .site-footer::before {
   content: "";
@@ -341,6 +364,27 @@ h1::after {
   opacity: 0.95;
   border-radius: 6px 6px 0 0;
   transform: translateY(-6px);
+  z-index: -1; /* ensure it doesn't cover footer content */
+  pointer-events: none;
+}
+
+/* Use reduced-motion preferences to avoid triggering motion sensitivity */
+@media (prefers-reduced-motion: reduce) {
+  .hero-decor,
+  .hero::after,
+  .hero-copy::after,
+  .hero {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .card,
+  .button,
+  .nav-links a,
+  .nav-toggle {
+    transition: none !important;
+  }
 }
 
 @keyframes gradientShift { 0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%} }
