@@ -24,6 +24,12 @@
 
 html {
   scroll-behavior: smooth;
+
+/* Prevent headline from escaping container: enable safe wrapping */
+h1 {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 }
 
 body {
@@ -290,6 +296,9 @@ svg {
   box-shadow: 0 6px 28px rgba(2,6,23,0.42), inset 0 1px 0 rgba(255,255,255,0.02);
   border: 1px solid rgba(255,255,255,0.045);
   position: relative;
+  z-index: 3; /* ensure glass content sits above decorative layers */
+  overflow: hidden; /* contain large headlines and pseudo-elements */
+  box-sizing: border-box;
 }
 
 /* subtle brand-color edge for glass panel (decorative) */
