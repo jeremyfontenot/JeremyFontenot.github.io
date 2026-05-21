@@ -910,7 +910,6 @@ h3 {
   transform: translateY(0);
   transition: transform 280ms ease, box-shadow 280ms ease, border-color 280ms ease;
   animation: sectionRise 900ms ease both;
-  animation-timeline: view();
   animation-range: entry 0% cover 28%;
 }
 
