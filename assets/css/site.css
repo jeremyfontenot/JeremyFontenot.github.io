@@ -248,7 +248,7 @@ svg {
   inset: 0;
   background-image: radial-gradient(circle at 10% 20%, rgba(34,211,238,0.06) 0px, transparent 80px), radial-gradient(circle at 85% 60%, rgba(217,70,239,0.05) 0px, transparent 100px), linear-gradient(90deg, rgba(34,211,238,0.03), rgba(217,70,239,0.03));
   background-blend-mode: screen;
-  opacity: 0.9;
+  opacity: 0.6; /* reduced to avoid visual interference */
   pointer-events: none;
 }
 
@@ -282,13 +282,13 @@ svg {
 
 /* Glassmorphism container for hero content */
 .hero-glass {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(7,16,38,0.36));
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(7,16,38,0.44)); /* slightly stronger for readability */
   -webkit-backdrop-filter: blur(10px) saturate(120%);
   backdrop-filter: blur(10px) saturate(120%);
   border-radius: 16px;
   padding: 1.6rem;
-  box-shadow: 0 8px 40px rgba(2,6,23,0.5), inset 0 1px 0 rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 28px rgba(2,6,23,0.42), inset 0 1px 0 rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.045);
   position: relative;
 }
 
@@ -316,9 +316,10 @@ svg {
   width: 120%;
   height: 140%;
   background: radial-gradient(ellipse at center, rgba(255,255,255,0.02), transparent 30%);
-  animation: shimmer 6s linear infinite;
+  animation: shimmer 8s linear infinite;
   pointer-events: none;
   mix-blend-mode: overlay;
+  opacity: 0.36; /* soften shimmer for readability */
 }
 
 h1::after {
@@ -335,7 +336,7 @@ h1::after {
 /* Card visual polish */
 .card {
   z-index: 1;
-  transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms, border-color 220ms;
+  transition: transform 200ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms, border-color 200ms;
 }
 .card::before {
   content: "";
@@ -360,7 +361,7 @@ h1::after {
   background: linear-gradient(120deg, rgba(34,211,238,0.02), rgba(217,70,239,0.02));
   mix-blend-mode: screen;
   opacity: 0;
-  transition: opacity 360ms ease, transform 360ms ease;
+  transition: opacity 320ms ease, transform 320ms ease;
 }
 .card:hover::after,
 .card:focus-visible::after {
@@ -368,18 +369,15 @@ h1::after {
   transform: scale(1.02);
 }
 .card:hover {
-  box-shadow: 0 34px 110px rgba(2,6,23,0.65), 0 0 44px rgba(34,211,238,0.06);
-}
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 28px 80px rgba(2,6,23,0.6), 0 0 34px rgba(217,70,239,0.06);
-  border-color: rgba(34,211,238,0.28);
+  transform: translateY(-6px);
+  box-shadow: 0 22px 68px rgba(2,6,23,0.55), 0 0 28px rgba(34,211,238,0.06);
+  border-color: rgba(34,211,238,0.24);
 }
 
 /* Provide equivalent focus styles for keyboard users */
 .card:focus-visible {
-  transform: translateY(-8px);
-  box-shadow: 0 28px 80px rgba(2,6,23,0.6), 0 0 40px rgba(34,211,238,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 22px 68px rgba(2,6,23,0.55), 0 0 40px rgba(34,211,238,0.12);
   border-color: rgba(34,211,238,0.34);
   outline: 3px solid rgba(34,211,238,0.14);
   outline-offset: 4px;
@@ -515,7 +513,7 @@ h3 {
 }
 
 h1 {
-  max-width: 12ch;
+  max-width: 16ch;
   margin-top: 0.65rem;
   font-size: clamp(2.9rem, 7.5vw, 5.6rem);
   font-weight: 900; /* stronger hero headline */
@@ -596,7 +594,7 @@ h3 {
 }
 
 .hero-panel {
-  padding: 1.35rem;
+  padding: 1.1rem;
 }
 
 .hero-logo {
