@@ -96,3 +96,36 @@ if (proofGrid && proofSearch && proofCount) {
       `;
     });
 }
+
+const revealNodes = [...document.querySelectorAll("[data-reveal]")];
+
+if (revealNodes.length) {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (prefersReducedMotion) {
+    revealNodes.forEach((node) => node.classList.add("is-visible"));
+  } else {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        threshold: 0.18,
+        rootMargin: "0px 0px -12% 0px"
+      }
+    );
+
+    revealNodes.forEach((node) => {
+      if (node.dataset.revealDelay) {
+        node.style.transitionDelay = `${node.dataset.revealDelay}ms`;
+      }
+
+      revealObserver.observe(node);
+    });
+  }
+}
