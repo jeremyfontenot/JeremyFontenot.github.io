@@ -6,6 +6,20 @@ if (navToggle && navLinks) {
     const isOpen = navLinks.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
+
+  navLinks.addEventListener("click", (event) => {
+    if (event.target instanceof HTMLAnchorElement) {
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
 }
 
 const proofGrid = document.querySelector("#proof-grid");

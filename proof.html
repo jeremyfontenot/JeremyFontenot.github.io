@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -9,16 +9,21 @@
   <meta property="og:title" content="Proof Library | Jeremy Fontenot">
   <meta property="og:description" content="A simple static proof library for preserved IT portfolio artifacts.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeremyfontenot.online/proof.html">
   <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
-  <link rel="icon" href="/assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="/assets/css/site.css">
-  <script src="/assets/js/site.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Proof Library | Jeremy Fontenot">
+  <meta name="twitter:description" content="A simple static proof library for preserved IT portfolio artifacts.">
+  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+  <link rel="icon" href="./assets/logos/favicon_64x64.png">
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/"><img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="44" height="44"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
+      <a class="brand" href="/"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
       <div class="nav-links" id="primary-menu">
         <a href="/">Home</a>
@@ -30,12 +35,12 @@
   </header>
 
   <main id="main" class="page">
-    <a id="top"></a>
+    <span id="top" class="sr-only" tabindex="-1">Top of proof library</span>
     <section class="page-hero">
-      <div class="hero-glass" role="region" aria-label="Introduction">
+      <div class="hero-glass">
         <p class="eyebrow">Preserved Proof</p>
         <h1>Preserved Proof Library</h1>
-        <p class="lead">This page contains preserved validation artifacts from real lab work and operations. Every item links to an inspectable file — no fabricated evidence — presented evidence-first for recruiter review.</p>
+        <p class="lead">A static evidence index for preserved diagrams, scripts, configuration samples, runbooks, and operational notes. Every listed item links to an inspectable file.</p>
         <nav aria-label="Proof category jump links" class="proof-jump" id="categories">
           <a href="#architecture">Architecture</a>
           <a href="#validation">Validation</a>
@@ -46,20 +51,20 @@
 
         <section class="how-to" aria-labelledby="howto-heading">
           <h2 id="howto-heading">How to use this library</h2>
-          <p class="meta">Use the category links to jump to sections. SVG = diagrams, MD = documentation/checklists, PS1 = scripts, TXT = operational notes. Open any artifact to inspect evidence, test outputs, and runbooks that map to identity, networking, RCA, and automation workflows.</p>
+          <p class="meta">Use the category links to scan by artifact type. SVG files are diagrams, MD files are documentation or checklists, PS1 files are scripts, and TXT files are operational notes.</p>
         </section>
       </div>
     </section>
 
     <section id="architecture" class="section" aria-labelledby="architecture-heading">
       <h2 id="architecture-heading">Architecture Diagrams</h2>
-      <p class="category-lead">High-level topology and segmentation diagrams showing trust boundaries, service placement, and network design decisions — useful for architecture reviews and design validation.</p>
+      <p class="category-lead">Topology and segmentation diagrams showing trust boundaries, service placement, and network design intent.</p>
 
       <article class="artifact">
         <h3>Microsoft 365 Lab — Architecture Overview (2026)</h3>
         <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="arch-m365-desc">Microsoft 365 lab architecture overview</a>
         <span id="arch-m365-desc" class="sr-only">Opens the Microsoft 365 lab architecture overview SVG showing services and topology.</span>
-        <p class="meta">Format: SVG · Purpose: topology and service placement · Reviewer learns design decisions, trust boundaries, and which services are colocated. Supports evaluation of identity placement and segmentation choices.</p>
+        <p class="meta">Format: SVG · Purpose: topology, service placement, identity boundaries, and segmentation context.</p>
         <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-diagram-2026.svg">Alternate M365 diagram (SVG)</a>, <a href="/evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg">Identity migration diagram (SVG)</a></p>
       </article>
 
@@ -67,7 +72,7 @@
         <h3>pfSense — Network Segmentation Diagram (2026)</h3>
         <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-describedby="arch-pfsense-desc">pfSense network segmentation diagram</a>
         <span id="arch-pfsense-desc" class="sr-only">Opens the pfSense network segmentation diagram SVG with VLAN and firewall zones.</span>
-        <p class="meta">Format: SVG · Purpose: segmentation and firewall overview · Reviewer learns VLAN boundaries, NAT/DMZ placement, and interface mappings. Helps validate access control and isolation decisions.</p>
+        <p class="meta">Format: SVG · Purpose: VLAN boundaries, NAT/DMZ placement, and interface mapping context.</p>
         <p class="meta">Related: <a href="/evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md">Segmentation notes (MD)</a></p>
       </article>
 
@@ -75,14 +80,14 @@
         <h3>Home Lab — Network Topology (2026)</h3>
         <a href="/evidence-library/architecture-diagrams/home-lab-network-topology-diagram-2026.svg" aria-describedby="arch-homelab-desc">Home lab network topology</a>
         <span id="arch-homelab-desc" class="sr-only">Opens the home lab network topology SVG showing physical and logical layout.</span>
-        <p class="meta">Format: SVG · Purpose: physical and logical topology · Reviewer learns device roles, uplinks, and addressing conventions. Useful for reproducing lab setups and verifying connectivity assumptions.</p>
+        <p class="meta">Format: SVG · Purpose: physical and logical topology, device roles, uplinks, and addressing context.</p>
         <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/service-desk-network-troubleshooting-flow-2026.svg">Service desk troubleshooting flow (SVG)</a></p>
       </article>
       <article class="artifact">
         <h3>Microsoft 365 Lab — Architecture Diagram (2026)</h3>
         <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-diagram-2026.svg" aria-describedby="arch-m365-diag-desc">Microsoft 365 lab architecture diagram</a>
         <span id="arch-m365-diag-desc" class="sr-only">Opens the Microsoft 365 lab architecture diagram SVG.</span>
-        <p class="meta">Format: SVG · Purpose: alternate architecture view · Reviewer learns additional layout details and component relationships complementary to the overview diagram.</p>
+        <p class="meta">Format: SVG · Purpose: alternate architecture view and component relationship reference.</p>
         <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">Overview (SVG)</a></p>
       </article>
 
@@ -90,7 +95,7 @@
         <h3>Identity Access — AD Migration Diagram (2026)</h3>
         <a href="/evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg" aria-describedby="arch-idm-desc">Identity access AD migration diagram</a>
         <span id="arch-idm-desc" class="sr-only">Opens the identity access AD migration diagram SVG.</span>
-        <p class="meta">Format: SVG · Purpose: migration and cutover planning · Reviewer learns sequence of migration steps, coexistence patterns, and identity flow during migration.</p>
+        <p class="meta">Format: SVG · Purpose: migration planning, coexistence pattern, and identity-flow reference.</p>
         <p class="meta">Related: <a href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md">M365 architecture overview (MD)</a></p>
       </article>
 
@@ -98,7 +103,7 @@
         <h3>Service Desk — Network Troubleshooting Flow (2026)</h3>
         <a href="/evidence-library/architecture-diagrams/service-desk-network-troubleshooting-flow-2026.svg" aria-describedby="arch-sd-desc">Service desk troubleshooting flow (SVG)</a>
         <span id="arch-sd-desc" class="sr-only">Opens the service desk network troubleshooting flow SVG.</span>
-        <p class="meta">Format: SVG · Purpose: operational troubleshooting workflow · Reviewer learns escalation paths, diagnostic steps, and who to notify during network incidents.</p>
+        <p class="meta">Format: SVG · Purpose: diagnostic flow, escalation path, and incident response reference.</p>
       </article>
 
       <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
@@ -106,48 +111,48 @@
 
     <section id="validation" class="section" aria-labelledby="validation-heading">
       <h2 id="validation-heading">Validation Reports</h2>
-      <p class="category-lead">Reports and checklists that record tests, measurements, and remediation actions — useful to confirm operational readiness and risk posture.</p>
+      <p class="category-lead">Checklists and reports that record validation criteria, observations, and follow-up actions.</p>
 
       <article class="artifact">
         <h3>Network Validation Checklist (2026)</h3>
         <a href="/evidence-library/validation-reports/network-validation-checklist-2026.md" aria-describedby="val-net-desc">Network validation checklist</a>
         <span id="val-net-desc" class="sr-only">Opens the network validation checklist Markdown with tests and outcomes.</span>
-        <p class="meta">Format: MD · Purpose: checklist and measured results · Reviewer learns test criteria, measured latencies, and pass/fail notes. Supports prioritization of remediation and verification of fixes.</p>
+        <p class="meta">Format: MD · Purpose: validation criteria, pass/fail notes, and remediation tracking.</p>
       </article>
       <article class="artifact">
         <h3>Network Validation — Raw CSV Results (2026)</h3>
         <a href="/evidence-library/validation-reports/network-validation-checklist-2026.csv" aria-describedby="val-net-csv-desc">Network validation raw results (CSV)</a>
         <span id="val-net-csv-desc" class="sr-only">Opens the raw CSV output from network validation runs.</span>
-        <p class="meta">Format: CSV · Purpose: raw result export · Reviewer learns measured values, timestamps, and test harness outputs used to produce the checklist summary.</p>
+        <p class="meta">Format: CSV · Purpose: raw result export supporting the validation checklist.</p>
         <p class="meta">Related: <a href="/evidence-library/validation-reports/network-validation-checklist-2026.md">Checklist summary (MD)</a></p>
       </article>
 
       <article class="artifact">
-        <h3>Monitoring & Alerting — Overview (2026)</h3>
+        <h3>Monitoring &amp; Alerting — Overview (2026)</h3>
         <a href="/evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md" aria-describedby="val-monitor-desc">Monitoring and alerting overview</a>
         <span id="val-monitor-desc" class="sr-only">Opens the monitoring and alerting overview document describing alerts and thresholds.</span>
-        <p class="meta">Format: MD · Purpose: monitoring audit and alerting rules · Reviewer learns alert rules, thresholds, and validation evidence. Helps assess detection coverage and tuning decisions.</p>
+        <p class="meta">Format: MD · Purpose: monitoring scope, alert rules, thresholds, and tuning notes.</p>
       </article>
 
       <article class="artifact">
-        <h3>Backup & Restore — Validation Workflow (2026)</h3>
+        <h3>Backup &amp; Restore — Validation Workflow (2026)</h3>
         <a href="/evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md" aria-describedby="val-backup-desc">Backup validation workflow</a>
         <span id="val-backup-desc" class="sr-only">Opens the backup and restore validation workflow document.</span>
-        <p class="meta">Format: MD · Purpose: DR validation procedure · Reviewer learns validation steps, verification results, and restore outcomes. Supports business continuity assessment.</p>
+        <p class="meta">Format: MD · Purpose: backup and restore validation procedure with verification notes.</p>
       </article>
 
       <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
     </section>
 
     <section id="scripts" class="section" aria-labelledby="scripts-heading">
-      <h2 id="scripts-heading">Scripts & Automation</h2>
-      <p class="category-lead">Automation artifacts and operational notes that codify repeatable workflows — useful for reproducibility, handoff, and evaluating automation safety.</p>
+      <h2 id="scripts-heading">Scripts &amp; Automation</h2>
+      <p class="category-lead">Automation artifacts and operational notes that document repeatable workflows, handoff, and change context.</p>
 
       <article class="artifact">
         <h3>PowerShell — Provisioning Script v1</h3>
         <a href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="script-provision-desc">Provisioning PowerShell script</a>
         <span id="script-provision-desc" class="sr-only">Opens the provisioning PowerShell script file.</span>
-        <p class="meta">Format: PS1 · Purpose: automated provisioning and configuration · Reviewer learns idempotent steps, required parameters, and rollback considerations. Supports evaluation of automation safety and repeatability.</p>
+        <p class="meta">Format: PS1 · Purpose: provisioning logic, required parameters, and operational safeguards.</p>
         <p class="meta">Related: <a href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md">Provisioning change log (MD)</a>, <a href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt">Operational handoff (TXT)</a></p>
       </article>
 
@@ -155,20 +160,20 @@
         <h3>Operational Handoff — Powershell Automation (2026)</h3>
         <a href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt" aria-describedby="script-handoff-desc">Operational handoff notes</a>
         <span id="script-handoff-desc" class="sr-only">Opens the operational handoff text file describing ownership and run cadence.</span>
-        <p class="meta">Format: TXT · Purpose: handoff checklist, run cadence, and monitoring notes · Reviewer learns script owners, execution schedule, and operational caveats.</p>
+        <p class="meta">Format: TXT · Purpose: handoff checklist, run cadence, monitoring notes, and caveats.</p>
       </article>
 
       <article class="artifact">
         <h3>Provisioning — Change Log (2026)</h3>
         <a href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md" aria-describedby="script-log-desc">Provisioning change log</a>
         <span id="script-log-desc" class="sr-only">Opens the provisioning change log Markdown file.</span>
-        <p class="meta">Format: MD · Purpose: chronological changes and rationale · Reviewer learns the change timeline, impact, and testing notes. Useful for release review and audit.</p>
+        <p class="meta">Format: MD · Purpose: chronological changes, rationale, impact notes, and testing context.</p>
       </article>
       <article class="artifact">
         <h3>Identity Access — Change Record Notes (2026)</h3>
         <a href="/evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md" aria-describedby="rca-identity-desc">Identity access change notes</a>
         <span id="rca-identity-desc" class="sr-only">Opens identity-access change record notes Markdown file.</span>
-        <p class="meta">Format: MD · Purpose: change records and notes · Reviewer learns what identity changes were applied, rationale, and any follow-up actions required.</p>
+        <p class="meta">Format: MD · Purpose: identity change notes, rationale, and follow-up context.</p>
         <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg">Identity migration diagram (SVG)</a></p>
       </article>
 
@@ -176,21 +181,21 @@
     </section>
 
     <section id="troubleshooting" class="section" aria-labelledby="troubleshooting-heading">
-      <h2 id="troubleshooting-heading">Troubleshooting & RCA</h2>
-      <p class="category-lead">Runbooks and incident records capturing investigative steps and conclusions — useful for verifying fixes, retrospective analysis, and preventing recurrence.</p>
+      <h2 id="troubleshooting-heading">Troubleshooting &amp; RCA</h2>
+      <p class="category-lead">Runbooks and incident records that capture symptoms, investigation steps, conclusions, and validation notes.</p>
 
       <article class="artifact">
         <h3>Troubleshooting — RCA Incident Log (2025)</h3>
         <a href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt" aria-describedby="rca-log-desc">RCA incident log</a>
         <span id="rca-log-desc" class="sr-only">Opens the RCA incident log text file with timeline and analysis.</span>
-        <p class="meta">Format: TXT · Purpose: incident timeline and root-cause analysis · Reviewer learns timeline, mitigation steps, involved stakeholders, and final RCA conclusions. Supports post-incident review and process improvements.</p>
+        <p class="meta">Format: TXT · Purpose: incident timeline, mitigation steps, and RCA notes.</p>
       </article>
 
       <article class="artifact">
         <h3>DNS — Authentication Playbook (2026)</h3>
         <a href="/evidence-library/projects/troubleshooting-rca/dns-authentication-playbook-2026.md" aria-describedby="rca-dns-desc">DNS authentication playbook</a>
         <span id="rca-dns-desc" class="sr-only">Opens the DNS authentication playbook Markdown runbook.</span>
-        <p class="meta">Format: MD · Purpose: step-by-step runbook for DNS-related authentication issues · Reviewer learns pre-checks, remediation steps, validation commands, and expected outputs. Useful for on-call and incident responders.</p>
+        <p class="meta">Format: MD · Purpose: DNS authentication checks, remediation steps, validation commands, and expected outputs.</p>
         <p class="meta">Related: <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">DNS/DHCP runbook (TXT)</a></p>
       </article>
 
@@ -198,21 +203,21 @@
     </section>
 
     <section id="networking" class="section" aria-labelledby="networking-heading">
-      <h2 id="networking-heading">Networking & Segmentation</h2>
-      <p class="category-lead">Operational runbooks and design walkthroughs for networking and segmentation — useful for validating routing, VLANs, and DNS/DHCP operations.</p>
+      <h2 id="networking-heading">Networking &amp; Segmentation</h2>
+      <p class="category-lead">Operational runbooks and design walkthroughs for routing, VLANs, segmentation, DNS, and DHCP.</p>
 
       <article class="artifact">
         <h3>VLAN Architecture — Walkthrough (2026)</h3>
         <a href="/evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md" aria-describedby="net-vlan-desc">VLAN architecture walkthrough</a>
         <span id="net-vlan-desc" class="sr-only">Opens the VLAN architecture walkthrough Markdown file.</span>
-        <p class="meta">Format: MD · Purpose: VLAN design and implementation notes · Reviewer learns VLAN numbering, routing implications, and filtering decisions. Supports capacity planning and segmentation validation.</p>
+        <p class="meta">Format: MD · Purpose: VLAN numbering, routing implications, and filtering decisions.</p>
         <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">pfSense segmentation diagram (SVG)</a>, <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">DNS/DHCP runbook (TXT)</a></p>
       </article>
       <article class="artifact">
         <h3>pfSense — Segmentation Notes (2026)</h3>
         <a href="/evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md" aria-describedby="net-pfsense-md-desc">pfSense segmentation notes (MD)</a>
         <span id="net-pfsense-md-desc" class="sr-only">Opens pfSense segmentation notes Markdown file.</span>
-        <p class="meta">Format: MD · Purpose: segmentation implementation notes · Reviewer learns firewall rule examples, interface mapping, and configuration snippets corresponding to the segmentation diagram.</p>
+        <p class="meta">Format: MD · Purpose: firewall rule examples, interface mapping, and configuration notes.</p>
         <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">Segmentation diagram (SVG)</a></p>
       </article>
 
@@ -220,7 +225,7 @@
         <h3>DNS/DHCP — Operational Runbook (2026) — Skills</h3>
         <a href="/evidence-library/skills/dns-dhcp/dns-dhcp-operational-runbook-2026.md" aria-describedby="net-dnsdhcp-skill-desc">DNS/DHCP operational runbook (skills)</a>
         <span id="net-dnsdhcp-skill-desc" class="sr-only">Opens the DNS/DHCP operational runbook in skills folder.</span>
-        <p class="meta">Format: MD · Purpose: operational procedures and troubleshooting steps · Reviewer learns operational checks, backup routines, and common recovery commands.</p>
+        <p class="meta">Format: MD · Purpose: operational checks, backup routines, and recovery commands.</p>
         <p class="meta">Related: <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">DNS/DHCP runbook (TXT)</a></p>
       </article>
 
@@ -228,15 +233,15 @@
         <h3>DNS/DHCP — Operational Runbook (2026)</h3>
         <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt" aria-describedby="net-dnsdhcp-desc">DNS/DHCP operational runbook</a>
         <span id="net-dnsdhcp-desc" class="sr-only">Opens the DNS/DHCP operational runbook text file.</span>
-        <p class="meta">Format: TXT · Purpose: maintenance, backup, and recovery procedures · Reviewer learns how to recover name services, rotate leases, and validate scopes. Supports operational recovery decisions.</p>
+        <p class="meta">Format: TXT · Purpose: maintenance, backup, recovery procedures, lease review, and scope validation.</p>
       </article>
 
       <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
     </section>
-  </main>
+
     <section id="miscellaneous" class="section" aria-labelledby="misc-heading">
       <h2 id="misc-heading">Miscellaneous</h2>
-      <p class="category-lead">Supporting artifacts: indexes, maps, screenshots, and reference files that help reviewers locate and interpret evidence across the library.</p>
+      <p class="category-lead">Indexes, maps, screenshots, and reference files that help reviewers locate and interpret preserved evidence.</p>
 
       <article class="artifact">
         <h3>Evidence — Source Map (CSV)</h3>
@@ -303,10 +308,28 @@
 
       <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
     </section>
+  </main>
 
-  <footer class="site-footer">
-    <p>Documentation-first portfolio built from preserved lab evidence and operational artifacts.</p>
-    <p><a href="/projects.html">Projects</a> · <a href="/contact.html">Contact</a></p>
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-divider" aria-hidden="true"></div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p>Jeremy Fontenot</p>
+        <p>Documentation-first portfolio built from preserved lab evidence and operational artifacts.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Navigate</h2>
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div>
+        <h2 class="footer-heading">Evidence</h2>
+        <a href="/evidence-library/index.html">Evidence library</a>
+        <a href="/evidence-library/README.md">Evidence README</a>
+      </div>
+    </div>
+    <p class="footer-meta">Preserved diagrams · scripts · validation reports · operational notes</p>
   </footer>
 </body>
 </html>

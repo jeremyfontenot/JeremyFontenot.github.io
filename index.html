@@ -1,106 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jeremy Fontenot | IT Support & Systems Administration Portfolio</title>
-  <meta name="description" content="Professional IT support and systems administration portfolio for Jeremy Fontenot, focused on Microsoft 365, Windows support, PowerShell, documentation, and preserved proof artifacts.">
+  <title>Jeremy Fontenot | IT Support &amp; Systems Admin Portfolio</title>
+  <meta name="description" content="Jeremy Fontenot's documentation-first portfolio for IT support, systems administration, Microsoft 365, PowerShell automation, and preserved proof artifacts.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jeremyfontenot.online/">
-  <meta property="og:title" content="Jeremy Fontenot | IT Support & Systems Administration Portfolio">
-  <meta property="og:description" content="A focused static portfolio backed by preserved documentation, diagrams, scripts, and configuration evidence.">
+  <meta property="og:site_name" content="Jeremy Fontenot">
+  <meta property="og:title" content="Jeremy Fontenot | IT Support, Systems Administration, and Automation Portfolio">
+  <meta property="og:description" content="Documentation-first portfolio with preserved proof artifacts, Microsoft 365 support, systems administration, and PowerShell automation.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeremyfontenot.online/">
   <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
-  <link rel="icon" href="/assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="/assets/css/site.css">
-  <script src="/assets/js/site.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jeremy Fontenot | IT Support, Systems Administration, and Automation Portfolio">
+  <meta name="twitter:description" content="Documentation-first portfolio with preserved proof artifacts, Microsoft 365 support, systems administration, and PowerShell automation.">
+  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+  <link rel="icon" href="./assets/logos/favicon_64x64.png">
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://jeremyfontenot.online/#person",
+        "name": "Jeremy Fontenot",
+        "url": "https://jeremyfontenot.online/",
+        "jobTitle": "IT Support and Systems Administration Professional",
+        "image": "https://jeremyfontenot.online/assets/logos/primary_logo_transparent_3000x3000.png",
+        "description": "Documentation-first portfolio covering IT support, systems administration, Microsoft 365, and PowerShell automation."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jeremyfontenot.online/#website",
+        "url": "https://jeremyfontenot.online/",
+        "name": "Jeremy Fontenot Portfolio",
+        "description": "Documentation-first portfolio with preserved proof artifacts and reviewer-ready evidence.",
+        "publisher": { "@id": "https://jeremyfontenot.online/#person" }
+      },
+      {
+        "@type": "Portfolio",
+        "name": "Jeremy Fontenot Portfolio",
+        "url": "https://jeremyfontenot.online/",
+        "creator": { "@id": "https://jeremyfontenot.online/#person" },
+        "about": ["IT Support", "Systems Administration", "Microsoft 365", "PowerShell Automation"]
+      }
+    ]
+  }
+  </script>
+  <script src="./assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/">
-        <img src="/assets/logos/primary_logo_transparent_3000x3000.png" alt="Jeremy Fontenot logo" width="44" height="44">
+      <a class="brand" href="./index.html">
+        <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async">
         <span>Jeremy Fontenot</span>
         <span class="brand-underline" aria-hidden="true"></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
       <div class="nav-links" id="primary-menu">
-        <a href="/" aria-current="page">Home</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/proof.html">Proof</a>
-        <a href="/contact.html">Contact</a>
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./proof.html">Proof</a>
+        <a href="./contact.html">Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-decor" aria-hidden="true"></div>
       <div class="hero-copy">
-        <div class="hero-glass" role="region" aria-label="Introduction">
-          <p class="eyebrow">IT Support • Systems Administration • Documentation</p>
-          <h1><span class="headline-shimmer">Documentation-First IT Support &amp; Systems Administration Portfolio</span></h1>
-          <p class="lead">Evidence-backed troubleshooting, Microsoft 365 administration, identity workflows, and PowerShell automation — presented as preserved documentation and reviewer-ready artifacts.</p>
+        <div class="hero-glass">
+          <p class="eyebrow">IT Support • Systems Administration • Automation</p>
+          <h1 id="hero-title"><span class="headline-shimmer">Documentation-first IT support and systems administration portfolio</span></h1>
+          <p class="lead">Evidence-backed troubleshooting, Microsoft 365 administration, identity workflows, and PowerShell automation presented as preserved documentation and reviewer-ready proof.</p>
           <div class="actions">
-            <a class="button primary" href="/proof.html">Review proof library</a>
-            <a class="button" href="/assets/Jeremy-Fontenot-Resume.pdf">Open resume</a>
+            <a class="button primary" href="./proof.html">Review proof library</a>
+            <a class="button" href="./assets/Jeremy-Fontenot-Resume.pdf">Open resume</a>
           </div>
+          <ul class="hero-badges">
+            <li>Microsoft 365</li>
+            <li>Windows Support</li>
+            <li>PowerShell</li>
+            <li>Documentation</li>
+          </ul>
         </div>
       </div>
-      <div class="hero-panel" aria-label="Portfolio focus areas">
+
+      <aside class="hero-panel" aria-labelledby="skills-title">
         <div class="hero-logo-shell">
-          <img class="hero-logo" src="/assets/logos/logo_horizontal_3000x1500.png" alt="Jeremy Fontenot brand mark">
+          <img class="hero-logo" src="./assets/logos/logo_horizontal_640x320.png" alt="Jeremy Fontenot brand logo" width="540" height="270" decoding="async">
         </div>
-        <dl class="focus-list">
-          <dt>Support</dt>
-          <dd>Windows, endpoint, identity, and user troubleshooting workflows.</dd>
-          <dt>Administration</dt>
-          <dd>Microsoft 365, Entra ID concepts, Intune baselines, and Active Directory planning.</dd>
-          <dt>Automation</dt>
-          <dd>PowerShell scripts, repeatable documentation, and operational handoff notes.</dd>
-        </dl>
-      </div>
+        <div class="skill-card">
+          <p class="eyebrow">Focus areas</p>
+          <h2 id="skills-title">Support, administration, and automation.</h2>
+          <dl class="focus-list">
+            <div>
+              <dt>Support</dt>
+              <dd>Windows, endpoint, identity, and user troubleshooting workflows.</dd>
+            </div>
+            <div>
+              <dt>Administration</dt>
+              <dd>Microsoft 365, Entra ID concepts, Intune baselines, and Active Directory planning.</dd>
+            </div>
+            <div>
+              <dt>Automation</dt>
+              <dd>PowerShell scripts, repeatable documentation, and operational handoff notes.</dd>
+            </div>
+          </dl>
+        </div>
+      </aside>
     </section>
 
-    <ul aria-label="Key site principles" class="key-principles">
-      <li>No fabricated labs — all content reflects preserved documentation.</li>
-      <li>Evidence-first — every claim links to a real artifact for reviewer inspection.</li>
-      <li>Reviewer-ready — fast, static, and easy to inspect without execution.</li>
+    <ul class="key-principles">
+      <li>No fabricated labs; all content reflects preserved documentation.</li>
+      <li>Evidence-first; claims are routed to inspectable artifacts where proof exists.</li>
+      <li>Reviewer-ready; fast, static, and easy to inspect without execution.</li>
     </ul>
 
-    <section class="section">
+    <section class="section proof-section" aria-labelledby="proof-library-title">
       <div class="section-head">
-        <p class="eyebrow">Current Positioning</p>
-        <h2>Built for recruiter review without generated clutter.</h2>
-        <p>This site has been reduced to a basic static portfolio and proof library. Claims are framed around preserved documents, historical lab records, and sample artifacts instead of implying live production infrastructure.</p>
+        <p class="eyebrow">Proof Library</p>
+        <h2 id="proof-library-title">Representative artifacts, preserved and easy to inspect.</h2>
+        <p>A diagram, validation checklist, and automation script provide a concise path from overview to evidence.</p>
       </div>
-      <div class="card-grid">
-        <a class="card" href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="card1-desc">
-          <span id="card1-desc" class="sr-only">Opens Microsoft 365 lab architecture overview (SVG) in the evidence library</span>
-          <span class="badge">Microsoft ecosystem</span>
-          <h3>Architecture &amp; Identity Overview</h3>
-          <p>Windows Server concepts, Microsoft 365 administration, identity workflows, and endpoint support documentation.</p>
-          <p class="meta">Format: SVG diagram</p>
-        </a>
-        <a class="card" href="/evidence-library/validation-reports/network-validation-checklist-2026.md" aria-describedby="card2-desc">
-          <span id="card2-desc" class="sr-only">Opens network validation checklist (Markdown) in the evidence library</span>
-          <span class="badge">Operational proof</span>
-          <h3>Network Validation Checklist</h3>
-          <p>Preserved diagrams, configuration samples, runbooks, scripts, and incident records are linked directly from the proof library.</p>
-          <p class="meta">Format: Markdown checklist</p>
-        </a>
-        <a class="card" href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="card3-desc">
-          <span id="card3-desc" class="sr-only">Opens provisioning PowerShell script (PS1) in the evidence library</span>
-          <span class="badge">Service desk ready</span>
-          <h3>Provisioning &amp; Automation Script</h3>
-          <p>Records are organized around support workflows, validation notes, and documentation a technical reviewer can inspect quickly.</p>
-          <p class="meta">Format: PowerShell script</p>
-        </a>
-      </div>
-      <p>This section links directly to representative validation artifacts — an architecture diagram, a network validation checklist, and a provisioning script — preserved in the evidence library for reviewer inspection.</p>
 
-      <section aria-label="Latest Proof Additions" class="latest-proofs">
+      <div class="card-grid proof-home-grid">
+        <article class="card proof-card proof-card-diagram">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+              <rect x="3" y="4" width="18" height="16" rx="3"></rect>
+              <path d="M7 15h10M7 11h5M7 7h10"></path>
+            </svg>
+          </span>
+          <span class="badge">SVG</span>
+          <h3>Architecture &amp; Identity Overview</h3>
+          <p>Microsoft 365 administration, identity workflow, Windows support, and endpoint documentation context.</p>
+          <p class="meta">Microsoft ecosystem proof artifact</p>
+          <a class="button card-cta" href="./evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">Open diagram</a>
+        </article>
+
+        <article class="card proof-card proof-card-checklist">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+              <path d="M5 5h14v14H5z"></path>
+              <path d="M8 12l2.2 2.2L16 8.4"></path>
+            </svg>
+          </span>
+          <span class="badge">MD</span>
+          <h3>Network Validation Checklist</h3>
+          <p>Checklist-style validation notes for networking, troubleshooting, and operational review.</p>
+          <p class="meta">Operational validation artifact</p>
+          <a class="button card-cta" href="./evidence-library/validation-reports/network-validation-checklist-2026.md">Open checklist</a>
+        </article>
+
+        <article class="card proof-card proof-card-script">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+              <path d="M7 5h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"></path>
+              <path d="M9 10l-2 2 2 2M15 10l2 2-2 2M11 17l2-10"></path>
+            </svg>
+          </span>
+          <span class="badge">PS1</span>
+          <h3>Provisioning &amp; Automation Script</h3>
+          <p>Provisioning logic and handoff context for repeatable operational automation.</p>
+          <p class="meta">PowerShell automation artifact</p>
+          <a class="button card-cta" href="./evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1">Open script</a>
+        </article>
+      </div>
+
+      <section aria-label="Latest proof additions" class="latest-proofs">
         <h3>Latest Proof Additions</h3>
         <ul>
           <li>Microsoft 365 Lab Architecture Overview (SVG)</li>
@@ -111,10 +185,27 @@
     </section>
   </main>
 
-    <footer class="site-footer">
-    <p>Jeremy Fontenot - IT Support and Systems Administration Portfolio</p>
-    <p><a href="/projects.html">Projects</a> · <a href="/proof.html">Proof</a> · <a href="/contact.html">Contact</a></p>
-    <p>Documentation-first portfolio built from preserved lab evidence and operational artifacts.</p>
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-divider" aria-hidden="true"></div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="./assets/logos/logo_horizontal_640x320.png" alt="Jeremy Fontenot logo" width="360" height="180" decoding="async">
+        <p>Documentation-first portfolio built from preserved lab evidence and operational artifacts.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Navigate</h2>
+        <a href="./projects.html">Projects</a>
+        <a href="./proof.html">Proof</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <div>
+        <h2 class="footer-heading">Evidence</h2>
+        <a href="./evidence-library/index.html">Evidence library</a>
+        <a href="./evidence-library/README.md">Evidence library README</a>
+        <a href="./sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+    <p class="footer-meta">Jeremy Fontenot · IT Support · Systems Administration · Microsoft 365 · PowerShell</p>
   </footer>
 </body>
 </html>
