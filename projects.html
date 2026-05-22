@@ -49,121 +49,206 @@
     </section>
     <div class="section-divider" aria-hidden="true"></div>
 
-      <section class="section">
-      <div class="project-grid">
-          <article class="card project-card featured" role="article" aria-labelledby="proj-m365-title" tabindex="0" data-reveal data-reveal-delay="80">
+      <section class="section projects-section" aria-labelledby="projects-list-heading">
+        <h2 id="projects-list-heading" class="sr-only">Project library</h2>
+        <div class="projects-toolbar" aria-hidden="false">
+          <div class="filter-bar" role="group" aria-label="Project categories">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="m365" aria-pressed="false">Microsoft 365</button>
+            <button class="filter-button" type="button" data-filter="powershell" aria-pressed="false">PowerShell</button>
+            <button class="filter-button" type="button" data-filter="rca" aria-pressed="false">RCA</button>
+            <button class="filter-button" type="button" data-filter="networking" aria-pressed="false">Networking</button>
+          </div>
+        </div>
+        <div class="project-grid">
+          <article class="card project-card featured" aria-labelledby="proj-m365-title" tabindex="0" data-reveal data-reveal-delay="80" data-category="m365">
           <div class="card-accent" aria-hidden="true"></div>
-          <span class="badge">Microsoft 365</span>
-          <h3 id="proj-m365-title"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"></rect><path d="M7 12h10M7 16h6"/></svg></span>Microsoft 365 Lab Baseline</h3>
-          <p class="meta">Category: Microsoft 365 Administration</p>
-          <p>Microsoft 365 baseline work covering Conditional Access intent, identity architecture, and endpoint administration notes.</p>
-          <ul>
+          <div class="card-left-glow" aria-hidden="true"></div>
+          <div class="card-body">
+            <span class="badge">Microsoft 365</span>
+            <h3 id="proj-m365-title"><span class="project-icon icon-m365" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"></rect><path d="M7 12h10M7 16h6"/></svg></span>Microsoft 365 Lab Baseline</h3>
+            <p class="meta">Category: Microsoft 365 Administration</p>
+            <p>Microsoft 365 baseline work covering Conditional Access intent, identity architecture, and endpoint administration notes.</p>
+            <ul>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h6"></path></svg></span>
               <span id="m365-desc-1" class="sr-only">Opens the Conditional Access baseline configuration YAML file</span>
               <a href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml" aria-describedby="m365-desc-1">Conditional Access baseline configuration (YAML)</a>
               <p class="meta">Format: YAML — Purpose: baseline policy settings</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"></path><path d="M8 15l3-3 2 2 3-4"></path></svg></span>
               <span id="m365-desc-2" class="sr-only">Opens the Microsoft 365 lab architecture overview SVG file</span>
               <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="m365-desc-2">Microsoft 365 lab architecture overview (SVG)</a>
               <p class="meta">Format: SVG — Purpose: architecture overview</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
               <span id="m365-desc-3" class="sr-only">Opens the identity and endpoint administration notes file</span>
               <a href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md" aria-describedby="m365-desc-3">Identity &amp; endpoint administration notes (MD)</a>
               <p class="meta">Format: MD — Purpose: admin guidance and notes</p>
             </li>
-          </ul>
-          <div class="actions">
+            </ul>
+          </div>
+          <div class="card-footer actions">
             <a class="button primary project-view" href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml" aria-label="Open Microsoft 365 project">View Project</a>
           </div>
         </article>
 
-        <article class="card project-card" role="article" aria-labelledby="proj-ps-title" tabindex="0" data-reveal data-reveal-delay="160">
+        <article class="card project-card" aria-labelledby="proj-ps-title" tabindex="0" data-reveal data-reveal-delay="160" data-category="powershell">
           <div class="card-accent" aria-hidden="true"></div>
-          <span class="badge">PowerShell</span>
-          <h3 id="proj-ps-title"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M7 6h10M7 18h10"/></svg></span>Provisioning Automation</h3>
-          <p class="meta">Category: PowerShell Automation</p>
-          <p>PowerShell and handoff materials that show repeatable provisioning, change context, and clear notes.</p>
-          <ul>
+          <div class="card-left-glow" aria-hidden="true"></div>
+          <div class="card-body">
+            <span class="badge">PowerShell</span>
+            <h3 id="proj-ps-title"><span class="project-icon icon-ps" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M7 6h10M7 18h10"/></svg></span>Provisioning Automation</h3>
+            <p class="meta">Category: PowerShell Automation</p>
+            <p>PowerShell and handoff materials that show repeatable provisioning, change context, and clear notes.</p>
+            <ul>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"></path><path d="M8 10l3 2-3 2M13 15h4"></path></svg></span>
               <span id="ps-desc-1" class="sr-only">Opens the provisioning automation script PS1 file</span>
               <a href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="ps-desc-1">Provisioning automation script v1 (PS1)</a>
               <p class="meta">Format: PS1 — Purpose: provisioning automation</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
               <span id="ps-desc-2" class="sr-only">Opens the provisioning change log notes file</span>
               <a href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md" aria-describedby="ps-desc-2">Provisioning change record notes (MD)</a>
               <p class="meta">Format: MD — Purpose: change log and notes</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 12h6M9 16h6"></path></svg></span>
               <span id="ps-desc-3" class="sr-only">Opens the operational handoff checklist for provisioning automation</span>
               <a href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt" aria-describedby="ps-desc-3">Operational handoff checklist (TXT)</a>
               <p class="meta">Format: TXT — Purpose: handoff checklist and runbook</p>
             </li>
           </ul>
-          <div class="actions">
+          </div>
+          <div class="card-footer actions">
             <a class="button project-view" href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-label="Open provisioning automation project">View Project</a>
           </div>
         </article>
 
-        <article class="card project-card" role="article" aria-labelledby="proj-rca-title" tabindex="0" data-reveal data-reveal-delay="240">
+        <article class="card project-card" aria-labelledby="proj-rca-title" tabindex="0" data-reveal data-reveal-delay="240" data-category="rca">
           <div class="card-accent" aria-hidden="true"></div>
-          <span class="badge">Troubleshooting</span>
-          <h3 id="proj-rca-title"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M3 12h18"/></svg></span>Service Desk RCA Workflow</h3>
-          <p class="meta">Category: Troubleshooting &amp; RCA</p>
-          <p>Incident and runbook records organized around symptoms, fixes, validation, and escalation context.</p>
-          <ul>
+          <div class="card-left-glow" aria-hidden="true"></div>
+          <div class="card-body">
+            <span class="badge">Troubleshooting</span>
+            <h3 id="proj-rca-title"><span class="project-icon icon-rca" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M3 12h18"/></svg></span>Service Desk RCA Workflow</h3>
+            <p class="meta">Category: Troubleshooting &amp; RCA</p>
+            <p>Incident and runbook records organized around symptoms, fixes, validation, and escalation context.</p>
+            <ul>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 12h6M9 16h6"></path></svg></span>
               <span id="tr-desc-1" class="sr-only">Opens the Troubleshooting RCA incident log TXT file</span>
               <a href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt" aria-describedby="tr-desc-1">Troubleshooting RCA incident log (TXT)</a>
               <p class="meta">Format: TXT — Purpose: incident timeline and RCA notes</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
               <span id="tr-desc-2" class="sr-only">Opens the network validation checklist MD file</span>
               <a href="/evidence-library/validation-reports/network-validation-checklist-2026.md" aria-describedby="tr-desc-2">Network validation checklist (MD)</a>
               <p class="meta">Format: MD — Purpose: validation checklist</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
               <span id="tr-desc-3" class="sr-only">Opens the DNS authentication playbook MD file</span>
               <a href="/evidence-library/projects/troubleshooting-rca/dns-authentication-playbook-2026.md" aria-describedby="tr-desc-3">DNS authentication playbook (MD)</a>
               <p class="meta">Format: MD — Purpose: DNS troubleshooting steps</p>
             </li>
           </ul>
-          <div class="actions">
+          </div>
+          <div class="card-footer actions">
             <a class="button project-view" href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt" aria-label="Open troubleshooting project">View Project</a>
           </div>
         </article>
 
-        <article class="card project-card" role="article" aria-labelledby="proj-net-title" tabindex="0" data-reveal data-reveal-delay="320">
+        <article class="card project-card" aria-labelledby="proj-net-title" tabindex="0" data-reveal data-reveal-delay="320" data-category="networking">
           <div class="card-accent" aria-hidden="true"></div>
-          <span class="badge">Networking</span>
-          <h3 id="proj-net-title"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg></span>Infrastructure &amp; Network Segmentation</h3>
-          <p class="meta">Category: Networking &amp; Segmentation</p>
-          <p>Segmentation diagrams and runbooks covering VLANs, firewalls, DNS, DHCP, and validation workflows.</p>
-          <ul>
+          <div class="card-left-glow" aria-hidden="true"></div>
+          <div class="card-body">
+            <span class="badge">Networking</span>
+            <h3 id="proj-net-title"><span class="project-icon icon-net" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg></span>Infrastructure &amp; Network Segmentation</h3>
+            <p class="meta">Category: Networking &amp; Segmentation</p>
+            <p>Segmentation diagrams and runbooks covering VLANs, firewalls, DNS, DHCP, and validation workflows.</p>
+            <ul>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"></path><path d="M8 15l3-3 2 2 3-4"></path></svg></span>
               <span id="net-desc-1" class="sr-only">Opens the pfSense network segmentation diagram SVG file</span>
               <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-describedby="net-desc-1">pfSense network segmentation diagram (SVG)</a>
               <p class="meta">Format: SVG — Purpose: segmentation topology</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
               <span id="net-desc-2" class="sr-only">Opens the VLAN architecture walkthrough MD file</span>
               <a href="/evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md" aria-describedby="net-desc-2">VLAN architecture walkthrough (MD)</a>
               <p class="meta">Format: MD — Purpose: VLAN design and notes</p>
             </li>
             <li>
+              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 12h6M9 16h6"></path></svg></span>
               <span id="net-desc-3" class="sr-only">Opens the DNS/DHCP operational runbook TXT file</span>
               <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt" aria-describedby="net-desc-3">DNS/DHCP operational runbook (TXT)</a>
               <p class="meta">Format: TXT — Purpose: DNS/DHCP procedures</p>
             </li>
           </ul>
-          <div class="actions">
+          </div>
+          <div class="card-footer actions">
             <a class="button project-view" href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-label="Open networking project">View Project</a>
           </div>
         </article>
       </div>
     </section>
+    <script>
+    // Projects filter + reveal script (vanilla JS)
+    (function(){
+      const buttons = document.querySelectorAll('.filter-bar .filter-button');
+      const cards = document.querySelectorAll('.project-card');
+      function setFilter(filter){
+        cards.forEach((c, i) => {
+          const cat = c.getAttribute('data-category') || 'all';
+          const matches = filter === 'all' || cat === filter;
+          if(matches){
+            c.style.display = '';
+            // stagger reveal
+            const delay = 80 + i * 80;
+            c.dataset.revealDelay = delay;
+            setTimeout(()=> c.classList.add('is-visible'), delay);
+          } else {
+            c.classList.remove('is-visible');
+            c.style.display = 'none';
+          }
+        });
+      }
+      buttons.forEach(btn => btn.addEventListener('click', () => {
+        const f = btn.getAttribute('data-filter');
+        buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+        btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
+        setFilter(f);
+      }));
+
+      // initial reveal on scroll (and respects reduced-motion)
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(!prefersReduced){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(entry=>{
+            if(entry.isIntersecting){
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, {threshold: 0.12});
+        document.querySelectorAll('.project-card').forEach(c=> io.observe(c));
+        // reveal first two cards immediately so users see content on load
+        document.addEventListener('DOMContentLoaded', ()=>{
+          const first = Array.from(document.querySelectorAll('.project-card')).slice(0,2);
+          first.forEach((c,i)=> setTimeout(()=> c.classList.add('is-visible'), 120 + i*120));
+        });
+      } else {
+        document.querySelectorAll('.project-card').forEach(c=> c.classList.add('is-visible'));
+      }
+
+    })();
+    </script>
   </main>
 
   <footer class="site-footer" aria-label="Site footer">
