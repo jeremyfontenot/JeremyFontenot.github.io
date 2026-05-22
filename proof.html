@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Proof Library | Jeremy Fontenot</title>
-  <meta name="description" content="Search diagrams, scripts, configuration samples, incident records, and notes from the proof library.">
+  <meta name="description" content="A curated proof library of preserved diagrams, scripts, runbooks, validation records, and technical notes from Jeremy Fontenot's IT support and systems administration portfolio.">
   <link rel="canonical" href="https://jeremyfontenot.online/proof.html">
   <meta property="og:title" content="Proof Library | Jeremy Fontenot">
-  <meta property="og:description" content="A static proof library for diagrams, scripts, configuration samples, incident records, and notes.">
+  <meta property="og:description" content="Curated portfolio evidence for Microsoft 365, PowerShell, troubleshooting, networking, validation, and documentation-first operations.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jeremyfontenot.online/proof.html">
   <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Proof Library | Jeremy Fontenot">
-  <meta name="twitter:description" content="A static proof library for diagrams, scripts, configuration samples, incident records, and notes.">
+  <meta name="twitter:description" content="Preserved proof files for diagrams, scripts, runbooks, validation records, and technical notes.">
   <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
   <link rel="stylesheet" href="./assets/css/site.css">
@@ -34,279 +34,391 @@
     </nav>
   </header>
 
-  <main id="main" class="page">
+  <main id="main" class="page proof-page">
     <span id="top" class="sr-only" tabindex="-1">Top of proof library</span>
-    <section class="page-hero">
-      <div class="hero-glass">
-        <p class="eyebrow">Preserved Proof</p>
-        <h1>Proof Library</h1>
-        <p class="lead">A curated index of diagrams, scripts, configuration samples, runbooks, and notes. Each item links to the original file for direct inspection.</p>
-        <nav aria-label="Proof category jump links" class="proof-jump" id="categories">
-          <a href="#architecture">Architecture</a>
-          <a href="#validation">Validation</a>
-          <a href="#scripts">Scripts</a>
-          <a href="#troubleshooting">Troubleshooting</a>
-          <a href="#networking">Networking</a>
-        </nav>
 
-        <section class="how-to" aria-labelledby="howto-heading">
-          <h2 id="howto-heading">How to use this library</h2>
-          <p class="meta">Use category links to filter by file type: SVG=diagrams, MD=notes/checklists, PS1=scripts, TXT=plain-text references.</p>
-        </section>
+    <section class="page-hero proof-hero" aria-labelledby="proof-title">
+      <div class="hero-glass proof-hero-panel">
+        <div class="proof-hero-copy">
+          <p class="eyebrow">Preserved Proof Library</p>
+          <h1 id="proof-title">Evidence that can be opened and reviewed.</h1>
+          <p class="lead">A curated set of diagrams, scripts, runbooks, validation records, and notes from preserved portfolio work. Every card points to an actual file in the repository.</p>
+          <nav aria-label="Proof category jump links" class="proof-jump" id="categories">
+            <a href="#architecture">Architecture</a>
+            <a href="#operations">Operations</a>
+            <a href="#automation">Automation</a>
+            <a href="#troubleshooting">Troubleshooting</a>
+            <a href="#networking">Networking</a>
+            <a href="#reference">Reference</a>
+          </nav>
+        </div>
+
+        <div class="proof-integrity-panel" aria-labelledby="integrity-heading">
+          <h2 id="integrity-heading">Review Surface</h2>
+          <dl>
+            <div>
+              <dt>Evidence model</dt>
+              <dd>Direct repository files</dd>
+            </div>
+            <div>
+              <dt>Primary formats</dt>
+              <dd>SVG, MD, TXT, PS1, CSV, JSON, PDF</dd>
+            </div>
+            <div>
+              <dt>Framing</dt>
+              <dd>Preserved documentation and lab-safe records</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <section id="architecture" class="section" aria-labelledby="architecture-heading">
-      <h2 id="architecture-heading">Architecture Diagrams</h2>
-      <p class="category-lead">Topology and segmentation diagrams that show trust boundaries, service placement, and design intent.</p>
-
-      <article class="artifact">
-        <h3>Microsoft 365 Lab — Architecture Overview (2026)</h3>
-        <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="arch-m365-desc">Microsoft 365 lab architecture overview</a>
-        <span id="arch-m365-desc" class="sr-only">Opens the Microsoft 365 lab architecture overview SVG showing services and topology.</span>
-        <p class="meta">Format: SVG · Summary: topology, service placement, identity boundaries.</p>
-        <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-diagram-2026.svg">Alternate M365 diagram (SVG)</a>, <a href="/evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg">Identity migration diagram (SVG)</a></p>
-      </article>
-
-      <article class="artifact">
-        <h3>pfSense — Network Segmentation Diagram (2026)</h3>
-        <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-describedby="arch-pfsense-desc">pfSense network segmentation diagram</a>
-        <span id="arch-pfsense-desc" class="sr-only">Opens the pfSense network segmentation diagram SVG with VLAN and firewall zones.</span>
-        <p class="meta">Format: SVG · Summary: VLAN boundaries, NAT/DMZ placement, interface mapping.</p>
-        <p class="meta">Related: <a href="/evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md">Segmentation notes (MD)</a></p>
-      </article>
-
-      <article class="artifact">
-        <h3>Home Lab — Network Topology (2026)</h3>
-        <a href="/evidence-library/architecture-diagrams/home-lab-network-topology-diagram-2026.svg" aria-describedby="arch-homelab-desc">Home lab network topology</a>
-        <span id="arch-homelab-desc" class="sr-only">Opens the home lab network topology SVG showing physical and logical layout.</span>
-        <p class="meta">Format: SVG · Summary: physical and logical topology, device roles, addressing.</p>
-        <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/service-desk-network-troubleshooting-flow-2026.svg">Service desk troubleshooting flow (SVG)</a></p>
-      </article>
-      <article class="artifact">
-        <h3>Microsoft 365 Lab — Architecture Diagram (2026)</h3>
-        <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-diagram-2026.svg" aria-describedby="arch-m365-diag-desc">Microsoft 365 lab architecture diagram</a>
-        <span id="arch-m365-diag-desc" class="sr-only">Opens the Microsoft 365 lab architecture diagram SVG.</span>
-        <p class="meta">Format: SVG · Summary: alternate architecture view and component relationships.</p>
-        <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">Overview (SVG)</a></p>
-      </article>
-
-      <article class="artifact">
-        <h3>Identity Access — AD Migration Diagram (2026)</h3>
-        <a href="/evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg" aria-describedby="arch-idm-desc">Identity access AD migration diagram</a>
-        <span id="arch-idm-desc" class="sr-only">Opens the identity access AD migration diagram SVG.</span>
-        <p class="meta">Format: SVG · Summary: migration planning, coexistence, identity flow.</p>
-        <p class="meta">Related: <a href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md">M365 architecture overview (MD)</a></p>
-      </article>
-
-      <article class="artifact">
-        <h3>Service Desk — Network Troubleshooting Flow (2026)</h3>
-        <a href="/evidence-library/architecture-diagrams/service-desk-network-troubleshooting-flow-2026.svg" aria-describedby="arch-sd-desc">Service desk troubleshooting flow (SVG)</a>
-        <span id="arch-sd-desc" class="sr-only">Opens the service desk network troubleshooting flow SVG.</span>
-        <p class="meta">Format: SVG · Summary: diagnostic flow and escalation path.</p>
-      </article>
-
-      <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
+    <section class="section proof-orientation" aria-labelledby="orientation-heading">
+      <div>
+        <p class="eyebrow">How to Review</p>
+        <h2 id="orientation-heading">Scan by discipline, then open the source file.</h2>
+      </div>
+      <p>Cards separate the evidence title, file format, year, operational purpose, and review link so recruiters and technical reviewers can quickly verify the underlying artifact.</p>
     </section>
 
-    <section id="validation" class="section" aria-labelledby="validation-heading">
-      <h2 id="validation-heading">Validation Reports</h2>
-      <p class="category-lead">Checklists and reports capturing validation criteria, observations, and follow-up actions.</p>
+    <section id="architecture" class="section proof-category" aria-labelledby="architecture-heading">
+      <div class="proof-section-head">
+        <span class="proof-section-icon" aria-hidden="true">A</span>
+        <div>
+          <p class="eyebrow">Topology &amp; Design</p>
+          <h2 id="architecture-heading">Architecture Diagrams</h2>
+          <p class="category-lead">Visual records showing network boundaries, service placement, identity flow, and troubleshooting paths.</p>
+        </div>
+      </div>
 
-      <article class="artifact">
-        <h3>Network Validation Checklist (2026)</h3>
-        <a href="/evidence-library/validation-reports/network-validation-checklist-2026.md" aria-describedby="val-net-desc">Network validation checklist</a>
-        <span id="val-net-desc" class="sr-only">Opens the network validation checklist Markdown with tests and outcomes.</span>
-        <p class="meta">Format: MD · Summary: validation criteria, outcomes, and remediation notes.</p>
-      </article>
-      <article class="artifact">
-        <h3>Network Validation — Raw CSV Results (2026)</h3>
-        <a href="/evidence-library/validation-reports/network-validation-checklist-2026.csv" aria-describedby="val-net-csv-desc">Network validation raw results (CSV)</a>
-        <span id="val-net-csv-desc" class="sr-only">Opens the raw CSV output from network validation runs.</span>
-        <p class="meta">Format: CSV · Summary: raw validation results supporting the checklist.</p>
-        <p class="meta">Related: <a href="/evidence-library/validation-reports/network-validation-checklist-2026.md">Checklist summary (MD)</a></p>
-      </article>
+      <div class="proof-evidence-grid">
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Architecture</span></div>
+          <h3>Microsoft 365 Lab Architecture Overview</h3>
+          <p class="proof-summary">Service placement and identity boundary overview for Microsoft 365 lab documentation.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Architecture diagram</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Monitoring &amp; Alerting — Overview (2026)</h3>
-        <a href="/evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md" aria-describedby="val-monitor-desc">Monitoring and alerting overview</a>
-        <span id="val-monitor-desc" class="sr-only">Opens the monitoring and alerting overview document describing alerts and thresholds.</span>
-        <p class="meta">Format: MD · Summary: monitoring scope, alert rules, thresholds, and tuning notes.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Architecture</span></div>
+          <h3>Microsoft 365 Lab Architecture Diagram</h3>
+          <p class="proof-summary">Alternate architecture view showing component relationships in the Microsoft 365 lab record set.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Architecture diagram</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-diagram-2026.svg">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Backup &amp; Restore — Validation Workflow (2026)</h3>
-        <a href="/evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md" aria-describedby="val-backup-desc">Backup validation workflow</a>
-        <span id="val-backup-desc" class="sr-only">Opens the backup and restore validation workflow document.</span>
-        <p class="meta">Format: MD · Summary: backup & restore validation steps and verification notes.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Identity</span></div>
+          <h3>Identity Access AD Migration Diagram</h3>
+          <p class="proof-summary">Migration planning diagram for identity flow, coexistence, and access transition context.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Identity diagram</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg">Review evidence</a>
+        </article>
 
-      <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Networking</span></div>
+          <h3>pfSense Network Segmentation Diagram</h3>
+          <p class="proof-summary">VLAN, firewall-zone, NAT, and DMZ segmentation record for infrastructure networking work.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Network diagram</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Home Lab</span></div>
+          <h3>Home Lab Network Topology</h3>
+          <p class="proof-summary">Physical and logical topology reference showing device roles and lab network layout.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Topology diagram</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/architecture-diagrams/home-lab-network-topology-diagram-2026.svg">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Support Flow</span></div>
+          <h3>Service Desk Network Troubleshooting Flow</h3>
+          <p class="proof-summary">Troubleshooting decision flow for service desk network symptoms and escalation context.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Workflow diagram</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/architecture-diagrams/service-desk-network-troubleshooting-flow-2026.svg">Review evidence</a>
+        </article>
+      </div>
+      <p class="proof-backlinks"><a href="#top">Back to top</a> <span aria-hidden="true">/</span> <a href="#categories">Back to categories</a></p>
     </section>
 
-    <section id="scripts" class="section" aria-labelledby="scripts-heading">
-      <h2 id="scripts-heading">Scripts &amp; Automation</h2>
-      <p class="category-lead">Scripts and notes documenting repeatable workflows, handoff, and change context.</p>
+    <section id="operations" class="section proof-category" aria-labelledby="operations-heading">
+      <div class="proof-section-head">
+        <span class="proof-section-icon" aria-hidden="true">O</span>
+        <div>
+          <p class="eyebrow">Validation &amp; Operations</p>
+          <h2 id="operations-heading">Operational Proof Records</h2>
+          <p class="category-lead">Checklists and workflow notes that capture validation scope, operational criteria, and follow-up context.</p>
+        </div>
+      </div>
 
-      <article class="artifact">
-        <h3>PowerShell — Provisioning Script v1</h3>
-        <a href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="script-provision-desc">Provisioning PowerShell script</a>
-        <span id="script-provision-desc" class="sr-only">Opens the provisioning PowerShell script file.</span>
-        <p class="meta">Format: PS1 · Summary: provisioning logic, parameters, and safety checks.</p>
-        <p class="meta">Related: <a href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md">Provisioning change log (MD)</a>, <a href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt">Operational handoff (TXT)</a></p>
-      </article>
+      <div class="proof-evidence-grid">
+        <article class="proof-evidence-card featured-proof">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">YAML</span><span class="proof-filetype">Microsoft 365</span></div>
+          <h3>Conditional Access Baseline Configuration</h3>
+          <p class="proof-summary">Configuration sample documenting baseline Conditional Access intent and policy structure.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>YAML</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Configuration sample</dd></div></dl>
+          <a class="button primary proof-review-link" href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Operational Handoff — Powershell Automation (2026)</h3>
-        <a href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt" aria-describedby="script-handoff-desc">Operational handoff notes</a>
-        <span id="script-handoff-desc" class="sr-only">Opens the operational handoff text file describing ownership and run cadence.</span>
-        <p class="meta">Format: TXT · Summary: handoff checklist, cadence, ownership notes.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Microsoft 365</span></div>
+          <h3>Microsoft 365 Architecture Notes</h3>
+          <p class="proof-summary">Identity and endpoint administration notes supporting the Microsoft 365 lab architecture diagrams.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Administration notes</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Provisioning — Change Log (2026)</h3>
-        <a href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md" aria-describedby="script-log-desc">Provisioning change log</a>
-        <span id="script-log-desc" class="sr-only">Opens the provisioning change log Markdown file.</span>
-        <p class="meta">Format: MD · Summary: change history, rationale, impact notes, and test context.</p>
-      </article>
-      <article class="artifact">
-        <h3>Identity Access — Change Record Notes (2026)</h3>
-        <a href="/evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md" aria-describedby="rca-identity-desc">Identity access change notes</a>
-        <span id="rca-identity-desc" class="sr-only">Opens identity-access change record notes Markdown file.</span>
-        <p class="meta">Format: MD · Summary: identity change notes, rationale, and follow-up context.</p>
-        <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg">Identity migration diagram (SVG)</a></p>
-      </article>
+        <article class="proof-evidence-card featured-proof">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Validation</span></div>
+          <h3>Network Validation Checklist</h3>
+          <p class="proof-summary">Validation criteria, expected outcomes, and remediation notes for network review work.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Validation checklist</dd></div></dl>
+          <a class="button primary proof-review-link" href="/evidence-library/validation-reports/network-validation-checklist-2026.md">Review evidence</a>
+        </article>
 
-      <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">CSV</span><span class="proof-filetype">Validation</span></div>
+          <h3>Network Validation Raw Results</h3>
+          <p class="proof-summary">Structured CSV output that supports the network validation checklist record.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>CSV</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Raw validation data</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/validation-reports/network-validation-checklist-2026.csv">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Monitoring</span></div>
+          <h3>Monitoring and Alerting Overview</h3>
+          <p class="proof-summary">Monitoring scope, alert rules, threshold notes, and tuning considerations.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Operations notes</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Recovery</span></div>
+          <h3>Backup and Restore Validation Workflow</h3>
+          <p class="proof-summary">Backup and restore workflow with verification steps and documented validation context.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Recovery workflow</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md">Review evidence</a>
+        </article>
+      </div>
+      <p class="proof-backlinks"><a href="#top">Back to top</a> <span aria-hidden="true">/</span> <a href="#categories">Back to categories</a></p>
     </section>
 
-    <section id="troubleshooting" class="section" aria-labelledby="troubleshooting-heading">
-      <h2 id="troubleshooting-heading">Troubleshooting &amp; RCA</h2>
-      <p class="category-lead">Runbooks and incident records capturing symptoms, investigation steps, conclusions, and validation notes.</p>
+    <section id="automation" class="section proof-category" aria-labelledby="automation-heading">
+      <div class="proof-section-head">
+        <span class="proof-section-icon" aria-hidden="true">P</span>
+        <div>
+          <p class="eyebrow">PowerShell &amp; Change Control</p>
+          <h2 id="automation-heading">Scripts and Automation</h2>
+          <p class="category-lead">Script evidence and handoff notes documenting repeatable work, change context, and operational ownership.</p>
+        </div>
+      </div>
 
-      <article class="artifact">
-        <h3>Troubleshooting — RCA Incident Log (2025)</h3>
-        <a href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt" aria-describedby="rca-log-desc">RCA incident log</a>
-        <span id="rca-log-desc" class="sr-only">Opens the RCA incident log text file with timeline and analysis.</span>
-        <p class="meta">Format: TXT · Summary: incident timeline, mitigation steps, RCA findings.</p>
-      </article>
+      <div class="proof-evidence-grid">
+        <article class="proof-evidence-card featured-proof">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">PS1</span><span class="proof-filetype">PowerShell</span></div>
+          <h3>Provisioning Automation Script v1</h3>
+          <p class="proof-summary">PowerShell provisioning logic with practical structure for repeatable administrative workflows.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>PS1</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Automation script</dd></div></dl>
+          <a class="button primary proof-review-link" href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>DNS — Authentication Playbook (2026)</h3>
-        <a href="/evidence-library/projects/troubleshooting-rca/dns-authentication-playbook-2026.md" aria-describedby="rca-dns-desc">DNS authentication playbook</a>
-        <span id="rca-dns-desc" class="sr-only">Opens the DNS authentication playbook Markdown runbook.</span>
-        <p class="meta">Format: MD · Summary: DNS authentication checks, remediation steps, and verification commands.</p>
-        <p class="meta">Related: <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">DNS/DHCP runbook (TXT)</a></p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Change Log</span></div>
+          <h3>Provisioning Change Record Notes</h3>
+          <p class="proof-summary">Change history, rationale, impact notes, and test context for provisioning automation.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Change record</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md">Review evidence</a>
+        </article>
 
-      <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">TXT</span><span class="proof-filetype">Handoff</span></div>
+          <h3>Operational Handoff Checklist</h3>
+          <p class="proof-summary">Handoff checklist, run cadence, ownership notes, and operational follow-up items.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>TXT</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Handoff notes</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Identity</span></div>
+          <h3>Identity Access Change Record Notes</h3>
+          <p class="proof-summary">Identity change notes, rationale, and follow-up context tied to access administration work.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Change notes</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md">Review evidence</a>
+        </article>
+      </div>
+      <p class="proof-backlinks"><a href="#top">Back to top</a> <span aria-hidden="true">/</span> <a href="#categories">Back to categories</a></p>
     </section>
 
-    <section id="networking" class="section" aria-labelledby="networking-heading">
-      <h2 id="networking-heading">Networking &amp; Segmentation</h2>
-      <p class="category-lead">Runbooks and walkthroughs for routing, VLANs, segmentation, DNS, and DHCP.</p>
+    <section id="troubleshooting" class="section proof-category" aria-labelledby="troubleshooting-heading">
+      <div class="proof-section-head">
+        <span class="proof-section-icon" aria-hidden="true">T</span>
+        <div>
+          <p class="eyebrow">Service Desk Evidence</p>
+          <h2 id="troubleshooting-heading">Troubleshooting and RCA</h2>
+          <p class="category-lead">Incident records and playbooks focused on symptoms, investigation steps, resolution context, and verification.</p>
+        </div>
+      </div>
 
-      <article class="artifact">
-        <h3>VLAN Architecture — Walkthrough (2026)</h3>
-        <a href="/evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md" aria-describedby="net-vlan-desc">VLAN architecture walkthrough</a>
-        <span id="net-vlan-desc" class="sr-only">Opens the VLAN architecture walkthrough Markdown file.</span>
-        <p class="meta">Format: MD · Summary: VLAN numbering, routing, and filtering decisions.</p>
-        <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">pfSense segmentation diagram (SVG)</a>, <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">DNS/DHCP runbook (TXT)</a></p>
-      </article>
-      <article class="artifact">
-        <h3>pfSense — Segmentation Notes (2026)</h3>
-        <a href="/evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md" aria-describedby="net-pfsense-md-desc">pfSense segmentation notes (MD)</a>
-        <span id="net-pfsense-md-desc" class="sr-only">Opens pfSense segmentation notes Markdown file.</span>
-        <p class="meta">Format: MD · Summary: firewall rules, interface mapping, and configuration notes.</p>
-        <p class="meta">Related: <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">Segmentation diagram (SVG)</a></p>
-      </article>
+      <div class="proof-evidence-grid">
+        <article class="proof-evidence-card featured-proof">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">TXT</span><span class="proof-filetype">RCA</span></div>
+          <h3>Troubleshooting RCA Incident Log</h3>
+          <p class="proof-summary">Incident timeline, mitigation notes, and root-cause analysis context for support workflows.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>TXT</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Evidence type</dt><dd>Incident record</dd></div></dl>
+          <a class="button primary proof-review-link" href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>DNS/DHCP — Operational Runbook (2026) — Skills</h3>
-        <a href="/evidence-library/skills/dns-dhcp/dns-dhcp-operational-runbook-2026.md" aria-describedby="net-dnsdhcp-skill-desc">DNS/DHCP operational runbook (skills)</a>
-        <span id="net-dnsdhcp-skill-desc" class="sr-only">Opens the DNS/DHCP operational runbook in skills folder.</span>
-        <p class="meta">Format: MD · Summary: checks, backup routines, and recovery commands.</p>
-        <p class="meta">Related: <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">DNS/DHCP runbook (TXT)</a></p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Runbook</span></div>
+          <h3>DNS Authentication Playbook</h3>
+          <p class="proof-summary">DNS authentication checks, remediation steps, verification commands, and escalation notes.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Troubleshooting playbook</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/troubleshooting-rca/dns-authentication-playbook-2026.md">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>DNS/DHCP — Operational Runbook (2026)</h3>
-        <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt" aria-describedby="net-dnsdhcp-desc">DNS/DHCP operational runbook</a>
-        <span id="net-dnsdhcp-desc" class="sr-only">Opens the DNS/DHCP operational runbook text file.</span>
-        <p class="meta">Format: TXT · Purpose: maintenance, backup, recovery, lease review, and scope validation.</p>
-      </article>
-
-      <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Workflow</span></div>
+          <h3>Service Desk Network Troubleshooting Workflow</h3>
+          <p class="proof-summary">Preserved workflow notes for network troubleshooting intake, checks, and escalation.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Support workflow</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/skills/service-desk-support/service-desk-network-troubleshooting-workflow-2026.md">Review evidence</a>
+        </article>
+      </div>
+      <p class="proof-backlinks"><a href="#top">Back to top</a> <span aria-hidden="true">/</span> <a href="#categories">Back to categories</a></p>
     </section>
 
-    <section id="miscellaneous" class="section" aria-labelledby="misc-heading">
-      <h2 id="misc-heading">Reference Files</h2>
-      <p class="category-lead">Indexes, maps, screenshots, and reference files to help reviewers find and interpret the library.</p>
+    <section id="networking" class="section proof-category" aria-labelledby="networking-heading">
+      <div class="proof-section-head">
+        <span class="proof-section-icon" aria-hidden="true">N</span>
+        <div>
+          <p class="eyebrow">Network Operations</p>
+          <h2 id="networking-heading">Networking and Segmentation</h2>
+          <p class="category-lead">Runbooks and walkthroughs for VLANs, firewall segmentation, DNS, DHCP, and operational review.</p>
+        </div>
+      </div>
 
-      <article class="artifact">
-        <h3>Evidence — Source Map (CSV)</h3>
-        <a href="/evidence-library/evidence-source-map.csv" aria-describedby="misc-sourcemap-desc">Evidence source map (CSV)</a>
-        <span id="misc-sourcemap-desc" class="sr-only">Opens the evidence source map CSV file.</span>
-        <p class="meta">Format: CSV · Summary: maps originals to preserved files.</p>
-      </article>
+      <div class="proof-evidence-grid">
+        <article class="proof-evidence-card featured-proof">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">VLANs</span></div>
+          <h3>VLAN Architecture Walkthrough</h3>
+          <p class="proof-summary">VLAN numbering, routing, filtering decisions, and segmentation notes for review.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Architecture walkthrough</dd></div></dl>
+          <a class="button primary proof-review-link" href="/evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Evidence — Search Index (JSON)</h3>
-        <a href="/evidence-library/evidence-search-index.json" aria-describedby="misc-index-desc">Evidence search index (JSON)</a>
-        <span id="misc-index-desc" class="sr-only">Opens the evidence search index JSON file.</span>
-        <p class="meta">Format: JSON · Summary: search index for the proof library.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Firewall</span></div>
+          <h3>pfSense Segmentation Notes</h3>
+          <p class="proof-summary">Firewall rule, interface mapping, and configuration notes that support the segmentation diagram.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Segmentation notes</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Evidence — Relationships (JSON)</h3>
-        <a href="/evidence-library/evidence-relationships.json" aria-describedby="misc-rel-desc">Evidence relationships (JSON)</a>
-        <span id="misc-rel-desc" class="sr-only">Opens the evidence relationships JSON file.</span>
-        <p class="meta">Format: JSON · Summary: relationship map between files.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">TXT</span><span class="proof-filetype">DNS/DHCP</span></div>
+          <h3>DNS/DHCP Operational Runbook</h3>
+          <p class="proof-summary">Maintenance, backup, recovery, lease review, and scope validation procedures.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>TXT</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Operational runbook</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Repository — Evidence README (2026)</h3>
-        <a href="/evidence-library/README.md" aria-describedby="misc-readme-desc">Evidence library README (MD)</a>
-        <span id="misc-readme-desc" class="sr-only">Opens the evidence library README file.</span>
-        <p class="meta">Format: MD · Summary: overview and guidance for the evidence library.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">DNS/DHCP</span></div>
+          <h3>DNS/DHCP Skill Runbook</h3>
+          <p class="proof-summary">Skill-focused runbook covering checks, backup routines, and recovery commands.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Evidence type</dt><dd>Skill evidence</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/skills/dns-dhcp/dns-dhcp-operational-runbook-2026.md">Review evidence</a>
+        </article>
+      </div>
+      <p class="proof-backlinks"><a href="#top">Back to top</a> <span aria-hidden="true">/</span> <a href="#categories">Back to categories</a></p>
+    </section>
 
-      <article class="artifact">
-        <h3>Certifications — LPI Badge (2026)</h3>
-        <a href="/evidence-library/certifications/certification-lpi-badge-2026.png" aria-describedby="misc-cert-desc">LPI certification badge (PNG)</a>
-        <span id="misc-cert-desc" class="sr-only">Opens the LPI certification badge image.</span>
-        <p class="meta">Format: PNG · Summary: certification evidence.</p>
-      </article>
+    <section id="reference" class="section proof-category" aria-labelledby="reference-heading">
+      <div class="proof-section-head">
+        <span class="proof-section-icon" aria-hidden="true">R</span>
+        <div>
+          <p class="eyebrow">Library Controls</p>
+          <h2 id="reference-heading">Reference and Index Files</h2>
+          <p class="category-lead">Indexes, source maps, screenshots, and supporting reference files that help reviewers navigate the evidence set.</p>
+        </div>
+      </div>
 
-      <article class="artifact">
-        <h3>Experience — Resume (2026)</h3>
-        <a href="/evidence-library/experience/jeremy-fontenot-resume-2026.pdf" aria-describedby="misc-resume-desc">Resume (PDF)</a>
-        <span id="misc-resume-desc" class="sr-only">Opens the resume PDF.</span>
-        <p class="meta">Format: PDF · Summary: condensed professional summary.</p>
-      </article>
+      <div class="proof-evidence-grid compact-proof-grid">
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">HTML</span><span class="proof-filetype">Index</span></div>
+          <h3>Evidence Library Index</h3>
+          <p class="proof-summary">Browser-readable index for the preserved evidence library.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>HTML</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/index.html">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Home Lab — Preserved Portfolio (PDF)</h3>
-        <a href="/evidence-library/projects/home-lab/lab-portfolio-preserved.pdf" aria-describedby="misc-homelab-desc">Lab portfolio preserved (PDF)</a>
-        <span id="misc-homelab-desc" class="sr-only">Opens the preserved lab portfolio PDF.</span>
-        <p class="meta">Format: PDF · Summary: consolidated lab summary.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">JSON</span><span class="proof-filetype">Search</span></div>
+          <h3>Evidence Search Index</h3>
+          <p class="proof-summary">Static JSON index used to support proof-library retrieval and review.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>JSON</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/evidence-search-index.json">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Evidence — Index HTML</h3>
-        <a href="/evidence-library/index.html" aria-describedby="misc-indexhtml-desc">Evidence index HTML</a>
-        <span id="misc-indexhtml-desc" class="sr-only">Opens the evidence library index HTML.</span>
-        <p class="meta">Format: HTML · Summary: browser view of the evidence library.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">CSV</span><span class="proof-filetype">Map</span></div>
+          <h3>Evidence Source Map</h3>
+          <p class="proof-summary">CSV map connecting source context to preserved evidence files.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>CSV</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/evidence-source-map.csv">Review evidence</a>
+        </article>
 
-      <article class="artifact">
-        <h3>Screenshots — Portfolio Visual (2026)</h3>
-        <a href="/evidence-library/screenshots/portfolio-visual-screenshot-2026.png" aria-describedby="misc-snap-desc">Portfolio visual screenshot (PNG)</a>
-        <span id="misc-snap-desc" class="sr-only">Opens the portfolio visual screenshot image.</span>
-        <p class="meta">Format: PNG · Summary: visual reference for the portfolio.</p>
-      </article>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">JSON</span><span class="proof-filetype">Map</span></div>
+          <h3>Evidence Relationships</h3>
+          <p class="proof-summary">Relationship map between proof files and project contexts.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>JSON</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/evidence-relationships.json">Review evidence</a>
+        </article>
 
-      <p class="meta"><a href="#top">Back to top</a> · <a href="#categories">Back to categories</a></p>
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">README</span></div>
+          <h3>Evidence Library README</h3>
+          <p class="proof-summary">Repository guidance and overview for the evidence library.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/README.md">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">PDF</span><span class="proof-filetype">Resume</span></div>
+          <h3>Resume Evidence File</h3>
+          <p class="proof-summary">Condensed professional summary preserved as a repository PDF.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>PDF</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/experience/jeremy-fontenot-resume-2026.pdf">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">PNG</span><span class="proof-filetype">Certification</span></div>
+          <h3>LPI Badge Evidence File</h3>
+          <p class="proof-summary">Preserved certification badge image included as a direct repository evidence file.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>PNG</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/certifications/certification-lpi-badge-2026.png">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">PDF</span><span class="proof-filetype">Lab</span></div>
+          <h3>Home Lab Preserved Portfolio</h3>
+          <p class="proof-summary">Consolidated preserved lab portfolio file for historical review.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>PDF</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/projects/home-lab/lab-portfolio-preserved.pdf">Review evidence</a>
+        </article>
+
+        <article class="proof-evidence-card">
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">PNG</span><span class="proof-filetype">Visual</span></div>
+          <h3>Portfolio Visual Screenshot</h3>
+          <p class="proof-summary">Visual reference image for the portfolio evidence set.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>PNG</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+          <a class="button proof-review-link" href="/evidence-library/screenshots/portfolio-visual-screenshot-2026.png">Review evidence</a>
+        </article>
+      </div>
+      <p class="proof-backlinks"><a href="#top">Back to top</a> <span aria-hidden="true">/</span> <a href="#categories">Back to categories</a></p>
     </section>
   </main>
 
@@ -315,7 +427,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <p>Jeremy Fontenot</p>
-        <p>Documentation-first portfolio built from preserved work and notes.</p>
+        <p>Documentation-first portfolio built from preserved work and operations notes.</p>
       </div>
       <div>
         <h2 class="footer-heading">Navigate</h2>
