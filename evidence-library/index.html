@@ -3,10 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Evidence Library | Jeremy Fontenot</title>
-  <meta name="description" content="Preserved static files for Jeremy Fontenot's IT support and systems administration portfolio.">
-  <meta http-equiv="refresh" content="0; url=../proof.html">
-  <link rel="canonical" href="https://jeremyfontenot.online/proof.html">
+  <title>Evidence Library Index | Jeremy Fontenot</title>
+  <meta name="description" content="Compatibility index for Jeremy Fontenot's preserved evidence library. The primary reviewer surface is the proof library.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jeremyfontenot.online/evidence-library/">
+  <meta property="og:title" content="Evidence Library Index | Jeremy Fontenot">
+  <meta property="og:description" content="Compatibility index for preserved proof files and the primary proof library.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeremyfontenot.online/evidence-library/">
+  <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="../assets/logos/favicon_64x64.png">
   <link rel="stylesheet" href="../assets/css/site.css">
   <script src="../assets/js/site.js" defer></script>
@@ -15,23 +20,28 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="../index.html"><img src="../assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
+      <a class="brand" href="../index.html"><img src="../assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
       <div class="nav-links" id="primary-menu">
         <a href="../index.html">Home</a>
         <a href="../projects.html">Projects</a>
         <a href="../proof.html" aria-current="page">Proof</a>
+        <a href="../resume.html">Resume</a>
         <a href="../contact.html">Contact</a>
       </div>
     </nav>
   </header>
-  <main id="main" class="page compatibility-page">
-    <section class="page-hero">
-      <div class="hero-glass">
+  <main id="main" class="page">
+    <section class="page-hero" aria-labelledby="library-title">
+      <div class="hero-glass" data-reveal>
         <p class="eyebrow">Evidence Library</p>
-        <h1>Proof library moved.</h1>
-        <p class="lead">The source files remain here. The main review surface now lives on the simplified proof page.</p>
-        <p><a class="button primary" href="../proof.html">Open proof library</a></p>
+        <h1 id="library-title">Preserved source files remain available.</h1>
+        <p class="lead">This directory stores the underlying artifacts. The main reviewer experience is the proof library, which groups the same files by discipline and review purpose.</p>
+        <div class="actions">
+          <a class="button primary" href="../proof.html">Open Proof Library</a>
+          <a class="button" href="./README.md">Open Evidence README</a>
+          <a class="button" href="./evidence-search-index.json">Open Search Index</a>
+        </div>
       </div>
     </section>
   </main>
@@ -39,16 +49,17 @@
     <div class="footer-divider" aria-hidden="true"></div>
     <div class="footer-grid">
       <div class="footer-brand">
-        <p>Jeremy Fontenot</p>
+        <p><strong>Jeremy Fontenot</strong></p>
         <p>Compatibility page for preserved source files.</p>
       </div>
-      <div>
+      <div class="footer-links">
         <h2 class="footer-heading">Navigate</h2>
         <a href="../index.html">Home</a>
         <a href="../projects.html">Projects</a>
+        <a href="../resume.html">Resume</a>
         <a href="../contact.html">Contact</a>
       </div>
-      <div>
+      <div class="footer-links">
         <h2 class="footer-heading">Evidence</h2>
         <a href="../proof.html">Proof library</a>
         <a href="./README.md">Evidence README</a>

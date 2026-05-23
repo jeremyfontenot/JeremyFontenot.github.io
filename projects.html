@@ -4,297 +4,190 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | Jeremy Fontenot</title>
-  <meta name="description" content="Selected IT support, Microsoft 365, PowerShell, and troubleshooting projects with direct proof links.">
+  <meta name="description" content="Selected service desk, Microsoft 365, PowerShell, troubleshooting, networking, and infrastructure projects from Jeremy Fontenot with direct proof links.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jeremyfontenot.online/projects.html">
+  <meta property="og:site_name" content="Jeremy Fontenot">
   <meta property="og:title" content="Projects | Jeremy Fontenot">
-  <meta property="og:description" content="Selected infrastructure and support projects with direct proof links.">
+  <meta property="og:description" content="Evidence-backed infrastructure and support projects with direct proof links.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jeremyfontenot.online/projects.html">
   <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Projects | Jeremy Fontenot">
-  <meta name="twitter:description" content="Selected infrastructure and support projects with direct proof links.">
+  <meta name="twitter:description" content="Evidence-backed infrastructure and support projects with direct proof links.">
   <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="./assets/css/site.css">
   <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
+      <a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
       <div class="nav-links" id="primary-menu">
-        <a href="/">Home</a>
-        <a href="/projects.html" aria-current="page">Projects</a>
-        <a href="/proof.html">Proof</a>
-        <a href="/contact.html">Contact</a>
+        <a href="./index.html">Home</a>
+        <a href="./projects.html" aria-current="page">Projects</a>
+        <a href="./proof.html">Proof</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="main" class="page">
-    <section class="page-hero">
-      <div class="hero-glass">
-        <p class="eyebrow">Selected Work</p>
-        <h1>Projects tied to source-backed work.</h1>
-        <p class="lead">Microsoft 365 administration, PowerShell automation, troubleshooting, and network design presented with direct proof links.</p>
-      </div>
-    </section>
-
-    <section class="section projects-overview" aria-labelledby="projects-overview-heading">
-      <h2 id="projects-overview-heading" class="sr-only">Projects overview</h2>
-      <p class="lead">Each project links to source files that can be inspected directly, including diagrams, runbooks, scripts, notes, and configuration examples.</p>
-    </section>
-    <div class="section-divider" aria-hidden="true"></div>
-
-      <section class="section projects-section" aria-labelledby="projects-list-heading">
-        <h2 id="projects-list-heading" class="sr-only">Project library</h2>
-        <div class="projects-toolbar" aria-hidden="false">
-          <div class="filter-bar" role="group" aria-label="Project categories">
-            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-button" type="button" data-filter="m365" aria-pressed="false">Microsoft 365</button>
-            <button class="filter-button" type="button" data-filter="powershell" aria-pressed="false">PowerShell</button>
-            <button class="filter-button" type="button" data-filter="rca" aria-pressed="false">RCA</button>
-            <button class="filter-button" type="button" data-filter="networking" aria-pressed="false">Networking</button>
+    <section class="page-hero" aria-labelledby="projects-title">
+      <div class="page-hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Selected Work</p>
+          <h1 id="projects-title">Operational projects tied to preserved evidence.</h1>
+          <p class="lead">Microsoft 365, PowerShell automation, service desk RCA, and network segmentation presented as reviewer-ready workstreams with direct source files.</p>
+          <div class="actions">
+            <a class="button primary" href="./proof.html">Browse Proof Library</a>
+            <a class="button" href="./resume.html">View Resume Snapshot</a>
           </div>
         </div>
-        <div class="project-grid">
-          <article class="card project-card featured" aria-labelledby="proj-m365-title" tabindex="0" data-reveal data-reveal-delay="80" data-category="m365">
-          <div class="card-accent" aria-hidden="true"></div>
-          <div class="card-left-glow" aria-hidden="true"></div>
-          <div class="card-body">
-            <span class="badge">Microsoft 365</span>
-            <h3 id="proj-m365-title"><span class="project-icon icon-m365" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"></rect><path d="M7 12h10M7 16h6"/></svg></span>Microsoft 365 Lab Baseline</h3>
-            <p class="meta">Category: Microsoft 365 Administration</p>
-            <p>Microsoft 365 baseline work covering Conditional Access intent, identity architecture, and endpoint administration notes.</p>
-            <ul>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h6"></path></svg></span>
-              <span id="m365-desc-1" class="sr-only">Opens the Conditional Access baseline configuration YAML file</span>
-              <a href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml" aria-describedby="m365-desc-1">Conditional Access baseline configuration (YAML)</a>
-              <p class="meta">Format: YAML — Purpose: baseline policy settings</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"></path><path d="M8 15l3-3 2 2 3-4"></path></svg></span>
-              <span id="m365-desc-2" class="sr-only">Opens the Microsoft 365 lab architecture overview SVG file</span>
-              <a href="/evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" aria-describedby="m365-desc-2">Microsoft 365 lab architecture overview (SVG)</a>
-              <p class="meta">Format: SVG — Purpose: architecture overview</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="m365-desc-3" class="sr-only">Opens the identity and endpoint administration notes file</span>
-              <a href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md" aria-describedby="m365-desc-3">Identity &amp; endpoint administration notes (MD)</a>
-              <p class="meta">Format: MD — Purpose: admin guidance and notes</p>
-            </li>
-            </ul>
+        <div class="integrity-panel" role="group" aria-label="Project review model" data-reveal>
+          <div class="console-top"><span>review model</span><span>direct artifacts</span></div>
+          <div class="console-body">
+            <div class="signal"><span class="signal-code">A</span><p><strong>Objective</strong><span>What the work is intended to demonstrate.</span></p></div>
+            <div class="signal"><span class="signal-code">B</span><p><strong>Implementation</strong><span>How the workflow is structured and documented.</span></p></div>
+            <div class="signal"><span class="signal-code">C</span><p><strong>Proof</strong><span>Repository file links for verification.</span></p></div>
           </div>
-          <div class="card-footer actions">
-            <a class="button primary project-view" href="/evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml" aria-label="Open Microsoft 365 project">View Project</a>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="project-library-title">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Project Library</p>
+        <h2 id="project-library-title">Filter by technical discipline.</h2>
+        <p>Cards are intentionally concise so the source evidence remains the main proof surface.</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Project categories" data-filter-group data-filter-target=".project-card">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="m365" aria-pressed="false">Microsoft 365</button>
+        <button class="filter-button" type="button" data-filter="automation" aria-pressed="false">Automation</button>
+        <button class="filter-button" type="button" data-filter="troubleshooting" aria-pressed="false">Troubleshooting</button>
+        <button class="filter-button" type="button" data-filter="networking" aria-pressed="false">Networking</button>
+        <button class="filter-button" type="button" data-filter="operations" aria-pressed="false">Operations</button>
+      </div>
+
+      <div class="project-grid section-actions">
+        <article class="project-card featured" data-category="m365 operations" data-reveal>
+          <div class="project-card-top"><span class="badge">Microsoft 365</span><span class="proof-filetype">YAML / SVG / MD</span></div>
+          <h3>Microsoft 365 Lab Baseline</h3>
+          <p class="meta">Objective: demonstrate identity, endpoint, and policy administration documentation in a Microsoft ecosystem lab context.</p>
+          <p>Documents conditional access intent, architecture boundaries, and administration notes using sanitized configuration and diagram artifacts.</p>
+          <ul>
+            <li>Conditional Access baseline configuration</li>
+            <li>Identity and endpoint administration notes</li>
+            <li>Architecture overview for reviewer context</li>
+          </ul>
+          <ul class="project-links">
+            <li><a href="./evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml"><span class="link-mark">Proof</span> Conditional Access baseline</a></li>
+            <li><a href="./evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg"><span class="link-mark">Proof</span> Architecture overview</a></li>
+            <li><a href="./evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md"><span class="link-mark">Proof</span> Administration notes</a></li>
+          </ul>
         </article>
 
-        <article class="card project-card" aria-labelledby="proj-ps-title" tabindex="0" data-reveal data-reveal-delay="160" data-category="powershell">
-          <div class="card-accent" aria-hidden="true"></div>
-          <div class="card-left-glow" aria-hidden="true"></div>
-          <div class="card-body">
-            <span class="badge">PowerShell</span>
-            <h3 id="proj-ps-title"><span class="project-icon icon-ps" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M7 6h10M7 18h10"/></svg></span>Provisioning Automation</h3>
-            <p class="meta">Category: PowerShell Automation</p>
-            <p>PowerShell and handoff materials that show repeatable provisioning, change context, and clear notes.</p>
-            <ul>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"></path><path d="M8 10l3 2-3 2M13 15h4"></path></svg></span>
-              <span id="ps-desc-1" class="sr-only">Opens the provisioning automation script PS1 file</span>
-              <a href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-describedby="ps-desc-1">Provisioning automation script v1 (PS1)</a>
-              <p class="meta">Format: PS1 — Purpose: provisioning automation</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="ps-desc-2" class="sr-only">Opens the provisioning change log notes file</span>
-              <a href="/evidence-library/projects/powershell-automation/provisioning-change-log-2026.md" aria-describedby="ps-desc-2">Provisioning change record notes (MD)</a>
-              <p class="meta">Format: MD — Purpose: change log and notes</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 12h6M9 16h6"></path></svg></span>
-              <span id="ps-desc-3" class="sr-only">Opens the operational handoff checklist for provisioning automation</span>
-              <a href="/evidence-library/projects/powershell-automation/operational-handoff-2026.txt" aria-describedby="ps-desc-3">Operational handoff checklist (TXT)</a>
-              <p class="meta">Format: TXT — Purpose: handoff checklist and runbook</p>
-            </li>
+        <article class="project-card" data-category="automation operations" data-reveal>
+          <div class="project-card-top"><span class="badge">PowerShell</span><span class="proof-filetype">PS1 / MD / TXT</span></div>
+          <h3>Provisioning Automation and Handoff</h3>
+          <p class="meta">Objective: show repeatable administrative scripting with change context and handoff documentation.</p>
+          <p>Pairs a PowerShell provisioning sample with a change log and operational handoff checklist so the script is reviewable in context.</p>
+          <ul>
+            <li>Reusable script structure</li>
+            <li>Change record and validation notes</li>
+            <li>Handoff checklist for support continuity</li>
           </ul>
-          </div>
-          <div class="card-footer actions">
-            <a class="button project-view" href="/evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1" aria-label="Open provisioning automation project">View Project</a>
-          </div>
+          <ul class="project-links">
+            <li><a href="./evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1"><span class="link-mark">Proof</span> Provisioning script</a></li>
+            <li><a href="./evidence-library/projects/powershell-automation/provisioning-change-log-2026.md"><span class="link-mark">Proof</span> Change record</a></li>
+            <li><a href="./evidence-library/projects/powershell-automation/operational-handoff-2026.txt"><span class="link-mark">Proof</span> Operational handoff</a></li>
+          </ul>
         </article>
 
-        <article class="card project-card" aria-labelledby="proj-rca-title" tabindex="0" data-reveal data-reveal-delay="240" data-category="rca">
-          <div class="card-accent" aria-hidden="true"></div>
-          <div class="card-left-glow" aria-hidden="true"></div>
-          <div class="card-body">
-            <span class="badge">Troubleshooting</span>
-            <h3 id="proj-rca-title"><span class="project-icon icon-rca" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M3 12h18"/></svg></span>Service Desk RCA Workflow</h3>
-            <p class="meta">Category: Troubleshooting &amp; RCA</p>
-            <p>Sanitized incident records, RCA notes, and validation artifacts organized around symptoms, fixes, validation, and escalation context.</p>
-            <ul>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 12h6M9 16h6"></path></svg></span>
-              <span id="tr-desc-1" class="sr-only">Opens the Troubleshooting RCA incident summary MD file</span>
-              <a href="/evidence-library/projects/troubleshooting-rca/incident-summary.md" aria-describedby="tr-desc-1">Troubleshooting RCA incident summary (MD)</a>
-              <p class="meta">Format: MD — Purpose: issue summary and RCA overview</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="tr-desc-2" class="sr-only">Opens the Troubleshooting RCA incident log TXT file</span>
-              <a href="/evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt" aria-describedby="tr-desc-2">Troubleshooting RCA incident log (TXT)</a>
-              <p class="meta">Format: TXT — Purpose: sanitized incident timeline</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="tr-desc-3" class="sr-only">Opens the Troubleshooting RCA report MD file</span>
-              <a href="/evidence-library/projects/troubleshooting-rca/rca-report.md" aria-describedby="tr-desc-3">Troubleshooting RCA report (MD)</a>
-              <p class="meta">Format: MD — Purpose: formal root cause analysis</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="tr-desc-4" class="sr-only">Opens the troubleshooting notes MD file</span>
-              <a href="/evidence-library/projects/troubleshooting-rca/troubleshooting-notes.md" aria-describedby="tr-desc-4">Troubleshooting notes (MD)</a>
-              <p class="meta">Format: MD — Purpose: triage notes and evidence capture</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="tr-desc-5" class="sr-only">Opens the remediation plan MD file</span>
-              <a href="/evidence-library/projects/troubleshooting-rca/remediation-plan.md" aria-describedby="tr-desc-5">Remediation plan (MD)</a>
-              <p class="meta">Format: MD — Purpose: corrective actions and prevention</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="tr-desc-6" class="sr-only">Opens the validation checklist MD file</span>
-              <a href="/evidence-library/projects/troubleshooting-rca/validation-checklist.md" aria-describedby="tr-desc-6">Validation checklist (MD)</a>
-              <p class="meta">Format: MD — Purpose: post-change verification</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="tr-desc-7" class="sr-only">Opens the post-incident review MD file</span>
-              <a href="/evidence-library/projects/troubleshooting-rca/post-incident-review.md" aria-describedby="tr-desc-7">Post-incident review (MD)</a>
-              <p class="meta">Format: MD — Purpose: lessons learned and follow-up</p>
-            </li>
+        <article class="project-card" data-category="troubleshooting operations" data-reveal>
+          <div class="project-card-top"><span class="badge">Service Desk RCA</span><span class="proof-filetype">MD / TXT</span></div>
+          <h3>Mail Flow Troubleshooting RCA</h3>
+          <p class="meta">Objective: demonstrate incident thinking from symptom report through recovery validation and follow-up.</p>
+          <p>Sanitized records capture scope, suspected cause, queue review, transport rule analysis, remediation, and post-incident review.</p>
+          <ul>
+            <li>Incident summary and timeline</li>
+            <li>Root cause report and remediation plan</li>
+            <li>Validation checklist and post-incident review</li>
           </ul>
-          </div>
-          <div class="card-footer actions">
-            <a class="button project-view" href="/evidence-library/projects/troubleshooting-rca/incident-summary.md" aria-label="Open troubleshooting project">View Project</a>
-          </div>
+          <ul class="project-links">
+            <li><a href="./evidence-library/projects/troubleshooting-rca/incident-summary.md"><span class="link-mark">Proof</span> Incident summary</a></li>
+            <li><a href="./evidence-library/projects/troubleshooting-rca/rca-report.md"><span class="link-mark">Proof</span> RCA report</a></li>
+            <li><a href="./evidence-library/projects/troubleshooting-rca/validation-checklist.md"><span class="link-mark">Proof</span> Validation checklist</a></li>
+          </ul>
         </article>
 
-        <article class="card project-card" aria-labelledby="proj-net-title" tabindex="0" data-reveal data-reveal-delay="320" data-category="networking">
-          <div class="card-accent" aria-hidden="true"></div>
-          <div class="card-left-glow" aria-hidden="true"></div>
-          <div class="card-body">
-            <span class="badge">Networking</span>
-            <h3 id="proj-net-title"><span class="project-icon icon-net" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg></span>Infrastructure &amp; Network Segmentation</h3>
-            <p class="meta">Category: Networking &amp; Segmentation</p>
-            <p>Segmentation diagrams and runbooks covering VLANs, firewalls, DNS, DHCP, and validation workflows.</p>
-            <ul>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"></path><path d="M8 15l3-3 2 2 3-4"></path></svg></span>
-              <span id="net-desc-1" class="sr-only">Opens the pfSense network segmentation diagram SVG file</span>
-              <a href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-describedby="net-desc-1">pfSense network segmentation diagram (SVG)</a>
-              <p class="meta">Format: SVG — Purpose: segmentation topology</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6M9 17h4"></path></svg></span>
-              <span id="net-desc-2" class="sr-only">Opens the VLAN architecture walkthrough MD file</span>
-              <a href="/evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md" aria-describedby="net-desc-2">VLAN architecture walkthrough (MD)</a>
-              <p class="meta">Format: MD — Purpose: VLAN design and notes</p>
-            </li>
-            <li>
-              <span class="proof-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 12h6M9 16h6"></path></svg></span>
-              <span id="net-desc-3" class="sr-only">Opens the DNS/DHCP operational runbook TXT file</span>
-              <a href="/evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt" aria-describedby="net-desc-3">DNS/DHCP operational runbook (TXT)</a>
-              <p class="meta">Format: TXT — Purpose: DNS/DHCP procedures</p>
-            </li>
+        <article class="project-card" data-category="networking security operations" data-reveal>
+          <div class="project-card-top"><span class="badge">Networking</span><span class="proof-filetype">SVG / MD / TXT</span></div>
+          <h3>Infrastructure and Network Segmentation</h3>
+          <p class="meta">Objective: document segmentation thinking across VLANs, firewall zones, DNS, DHCP, and validation workflows.</p>
+          <p>Combines topology evidence, walkthrough notes, and a DNS/DHCP runbook for practical infrastructure review.</p>
+          <ul>
+            <li>pfSense segmentation diagram</li>
+            <li>VLAN architecture walkthrough</li>
+            <li>DNS/DHCP operational runbook</li>
           </ul>
-          </div>
-          <div class="card-footer actions">
-            <a class="button project-view" href="/evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" aria-label="Open networking project">View Project</a>
-          </div>
+          <ul class="project-links">
+            <li><a href="./evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg"><span class="link-mark">Proof</span> Segmentation diagram</a></li>
+            <li><a href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md"><span class="link-mark">Proof</span> VLAN walkthrough</a></li>
+            <li><a href="./evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt"><span class="link-mark">Proof</span> DNS/DHCP runbook</a></li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="operations security" data-reveal>
+          <div class="project-card-top"><span class="badge">Monitoring</span><span class="proof-filetype">MD</span></div>
+          <h3>Monitoring and Alerting Overview</h3>
+          <p class="meta">Objective: show operational awareness around thresholds, alert tuning, and actionable response notes.</p>
+          <p>Documents monitoring scope, alert categories, tuning considerations, and follow-up logic in a sanitized operations format.</p>
+          <ul class="project-links">
+            <li><a href="./evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md"><span class="link-mark">Proof</span> Monitoring overview</a></li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="operations security" data-reveal>
+          <div class="project-card-top"><span class="badge">Recovery</span><span class="proof-filetype">MD</span></div>
+          <h3>Backup and Restore Validation Workflow</h3>
+          <p class="meta">Objective: present recovery thinking without claiming unverified production restore results.</p>
+          <p>Outlines backup scope, verification approach, restore checkpoints, and documentation expectations for a lab-safe recovery workflow.</p>
+          <ul class="project-links">
+            <li><a href="./evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md"><span class="link-mark">Proof</span> Recovery workflow</a></li>
+          </ul>
         </article>
       </div>
     </section>
-    <script>
-    // Projects filter + reveal script (vanilla JS)
-    (function(){
-      const buttons = document.querySelectorAll('.filter-bar .filter-button');
-      const cards = document.querySelectorAll('.project-card');
-      function setFilter(filter){
-        cards.forEach((c, i) => {
-          const cat = c.getAttribute('data-category') || 'all';
-          const matches = filter === 'all' || cat === filter;
-          if(matches){
-            c.style.display = '';
-            // stagger reveal
-            const delay = 80 + i * 80;
-            c.dataset.revealDelay = delay;
-            setTimeout(()=> c.classList.add('is-visible'), delay);
-          } else {
-            c.classList.remove('is-visible');
-            c.style.display = 'none';
-          }
-        });
-      }
-      buttons.forEach(btn => btn.addEventListener('click', () => {
-        const f = btn.getAttribute('data-filter');
-        buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
-        btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
-        setFilter(f);
-      }));
-
-      // initial reveal on scroll (and respects reduced-motion)
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if(!prefersReduced){
-        const io = new IntersectionObserver((entries)=>{
-          entries.forEach(entry=>{
-            if(entry.isIntersecting){
-              entry.target.classList.add('is-visible');
-              io.unobserve(entry.target);
-            }
-          });
-        }, {threshold: 0.12});
-        document.querySelectorAll('.project-card').forEach(c=> io.observe(c));
-        // reveal first two cards immediately so users see content on load
-        document.addEventListener('DOMContentLoaded', ()=>{
-          const first = Array.from(document.querySelectorAll('.project-card')).slice(0,2);
-          first.forEach((c,i)=> setTimeout(()=> c.classList.add('is-visible'), 120 + i*120));
-        });
-      } else {
-        document.querySelectorAll('.project-card').forEach(c=> c.classList.add('is-visible'));
-      }
-
-    })();
-    </script>
   </main>
 
   <footer class="site-footer" aria-label="Site footer">
     <div class="footer-divider" aria-hidden="true"></div>
     <div class="footer-grid">
       <div class="footer-brand">
-        <p>Jeremy Fontenot</p>
-        <p>Documentation-first portfolio built from preserved work and operations notes.</p>
+        <p><strong>Jeremy Fontenot</strong></p>
+        <p>Projects are summarized for quick review and linked to preserved evidence.</p>
       </div>
-      <div>
+      <div class="footer-links">
         <h2 class="footer-heading">Navigate</h2>
-        <a href="/">Home</a>
-        <a href="/proof.html">Proof library</a>
-        <a href="/contact.html">Contact</a>
+        <a href="./index.html">Home</a>
+        <a href="./proof.html">Proof</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact</a>
       </div>
-      <div>
+      <div class="footer-links">
         <h2 class="footer-heading">Evidence</h2>
-        <a href="/evidence-library/index.html">Evidence library</a>
-        <a href="/assets/Jeremy-Fontenot-Resume.pdf">Resume</a>
+        <a href="./evidence-library/index.html">Evidence library</a>
+        <a href="./evidence-library/README.md">Evidence README</a>
       </div>
     </div>
-    <p class="footer-meta">IT Support · Systems Administration · Microsoft 365 · PowerShell</p>
+    <p class="footer-meta">Microsoft 365 / PowerShell / RCA / Networking / Recovery / Monitoring</p>
   </footer>
 </body>
 </html>
