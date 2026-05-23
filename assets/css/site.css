@@ -96,6 +96,8 @@ h3 {
 
 p {
   color: var(--muted);
+  /* 24px between paragraphs */
+  margin-bottom: 1.5rem;
 }
 
 ul {
@@ -356,8 +358,9 @@ ul {
 .hero-fade-5 { animation-delay: 380ms; }
 
 .section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  /* 64px above and below each major section */
+  padding-top: 4rem; /* 64px */
+  padding-bottom: 4rem; /* 64px */
 }
 
 .home-page .section + .section {
@@ -394,7 +397,8 @@ ul {
 
 .section-head {
   max-width: 820px;
-  margin-bottom: 1.5rem;
+  /* 32px below each section header */
+  margin-bottom: 2rem;
 }
 
 .section-head h2 {
@@ -1199,6 +1203,42 @@ ul {
   .project-card li::before {
     display: none;
   }
+
+/* Additional spacing and badge styles added 2026-05-23 */
+/* 16px between bullets */
+ul li {
+  margin-bottom: 1rem;
+}
+
+.home-page .section + .section::before {
+  /* subtle 1px divider between major sections */
+  content: "";
+  display: block;
+  max-width: var(--max);
+  height: 1px;
+  margin: 0 auto 2.5rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.55), rgba(217, 70, 239, 0.5), transparent);
+  opacity: 0.6;
+}
+
+/* Hero positioning line under the name */
+.hero-position {
+  color: var(--muted);
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+}
+
+/* Proof filetype badge: small rounded pill using brand colors */
+.proof-filetype .badge {
+  background: linear-gradient(90deg, rgba(34,211,238,0.09), rgba(217,70,239,0.06));
+  border-color: rgba(34,211,238,0.18);
+  padding: 0.28rem 0.5rem;
+  font-size: 0.78rem;
+  border-radius: 999px;
+}
+
 
   .project-card li .meta {
     grid-column: 1;
