@@ -132,7 +132,7 @@
   {
     "id": "projects-troubleshooting-rca-troubleshooting-rca-incident-log-2025",
     "title": "Troubleshooting RCA Incident Log",
-    "summary": "Preserved troubleshooting record used as historical RCA evidence.",
+    "summary": "Sanitized incident timeline and RCA evidence for service desk troubleshooting.",
     "path": "evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt",
     "originalSourcePath": "evidence/public/incident-2025-02-10-logs.txt",
     "category": "projects",
@@ -147,6 +147,132 @@
       "service-desk"
     ],
     "fileType": "txt",
+    "confidenceLevel": "reviewed-preserve",
+    "preservationStatus": "CONFIRMED VALID PROOF"
+  },
+  {
+    "id": "projects-troubleshooting-rca-incident-summary-2025",
+    "title": "Troubleshooting RCA Incident Summary",
+    "summary": "Sanitized incident summary with issue, scope, validation, and lessons learned.",
+    "path": "evidence-library/projects/troubleshooting-rca/incident-summary.md",
+    "originalSourcePath": "evidence-library/projects/troubleshooting-rca/incident-summary.md",
+    "category": "projects",
+    "subcategory": "troubleshooting-rca",
+    "proofType": "incident-summary",
+    "status": "AUTHORITATIVE",
+    "relatedProject": "Troubleshooting / RCA",
+    "relatedSkill": "Service Desk Support",
+    "tags": [
+      "troubleshooting",
+      "rca",
+      "incident-summary"
+    ],
+    "fileType": "md",
+    "confidenceLevel": "reviewed-preserve",
+    "preservationStatus": "CONFIRMED VALID PROOF"
+  },
+  {
+    "id": "projects-troubleshooting-rca-rca-report-2025",
+    "title": "Troubleshooting RCA Report",
+    "summary": "Formal root cause report covering triage, remediation, and prevention steps.",
+    "path": "evidence-library/projects/troubleshooting-rca/rca-report.md",
+    "originalSourcePath": "evidence-library/projects/troubleshooting-rca/rca-report.md",
+    "category": "projects",
+    "subcategory": "troubleshooting-rca",
+    "proofType": "rca-report",
+    "status": "AUTHORITATIVE",
+    "relatedProject": "Troubleshooting / RCA",
+    "relatedSkill": "Service Desk Support",
+    "tags": [
+      "troubleshooting",
+      "rca",
+      "root-cause-analysis"
+    ],
+    "fileType": "md",
+    "confidenceLevel": "reviewed-preserve",
+    "preservationStatus": "CONFIRMED VALID PROOF"
+  },
+  {
+    "id": "projects-troubleshooting-rca-troubleshooting-notes-2025",
+    "title": "Troubleshooting Notes",
+    "summary": "Sanitized triage notes showing queue review, rule checks, and controlled testing.",
+    "path": "evidence-library/projects/troubleshooting-rca/troubleshooting-notes.md",
+    "originalSourcePath": "evidence-library/projects/troubleshooting-rca/troubleshooting-notes.md",
+    "category": "projects",
+    "subcategory": "troubleshooting-rca",
+    "proofType": "troubleshooting-notes",
+    "status": "AUTHORITATIVE",
+    "relatedProject": "Troubleshooting / RCA",
+    "relatedSkill": "Service Desk Support",
+    "tags": [
+      "troubleshooting",
+      "rca",
+      "triage"
+    ],
+    "fileType": "md",
+    "confidenceLevel": "reviewed-preserve",
+    "preservationStatus": "CONFIRMED VALID PROOF"
+  },
+  {
+    "id": "projects-troubleshooting-rca-remediation-plan-2025",
+    "title": "Remediation Plan",
+    "summary": "Corrective action plan for transport rule review, rollback planning, and prevention.",
+    "path": "evidence-library/projects/troubleshooting-rca/remediation-plan.md",
+    "originalSourcePath": "evidence-library/projects/troubleshooting-rca/remediation-plan.md",
+    "category": "projects",
+    "subcategory": "troubleshooting-rca",
+    "proofType": "remediation-plan",
+    "status": "AUTHORITATIVE",
+    "relatedProject": "Troubleshooting / RCA",
+    "relatedSkill": "Service Desk Support",
+    "tags": [
+      "troubleshooting",
+      "rca",
+      "remediation"
+    ],
+    "fileType": "md",
+    "confidenceLevel": "reviewed-preserve",
+    "preservationStatus": "CONFIRMED VALID PROOF"
+  },
+  {
+    "id": "projects-troubleshooting-rca-validation-checklist-2025",
+    "title": "Validation Checklist",
+    "summary": "Post-change validation checklist for queue drainage, delivery checks, and recovery.",
+    "path": "evidence-library/projects/troubleshooting-rca/validation-checklist.md",
+    "originalSourcePath": "evidence-library/projects/troubleshooting-rca/validation-checklist.md",
+    "category": "projects",
+    "subcategory": "troubleshooting-rca",
+    "proofType": "validation-checklist",
+    "status": "AUTHORITATIVE",
+    "relatedProject": "Troubleshooting / RCA",
+    "relatedSkill": "Service Desk Support",
+    "tags": [
+      "troubleshooting",
+      "rca",
+      "validation"
+    ],
+    "fileType": "md",
+    "confidenceLevel": "reviewed-preserve",
+    "preservationStatus": "CONFIRMED VALID PROOF"
+  },
+  {
+    "id": "projects-troubleshooting-rca-post-incident-review-2025",
+    "title": "Post-Incident Review",
+    "summary": "Lessons learned and follow-up notes for the sanitized RCA scenario.",
+    "path": "evidence-library/projects/troubleshooting-rca/post-incident-review.md",
+    "originalSourcePath": "evidence-library/projects/troubleshooting-rca/post-incident-review.md",
+    "category": "projects",
+    "subcategory": "troubleshooting-rca",
+    "proofType": "post-incident-review",
+    "status": "AUTHORITATIVE",
+    "relatedProject": "Troubleshooting / RCA",
+    "relatedSkill": "Service Desk Support",
+    "tags": [
+      "troubleshooting",
+      "rca",
+      "lessons-learned"
+    ],
+    "fileType": "md",
     "confidenceLevel": "reviewed-preserve",
     "preservationStatus": "CONFIRMED VALID PROOF"
   },

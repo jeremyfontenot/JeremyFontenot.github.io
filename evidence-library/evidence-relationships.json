@@ -65,6 +65,48 @@
       "note": "Monitoring and alerting guidance provides adjacent operational context for the RCA record."
     },
     {
+      "sourceId": "projects-troubleshooting-rca-troubleshooting-rca-incident-log-2025",
+      "targetId": "projects-troubleshooting-rca-incident-summary-2025",
+      "relationshipType": "supports-documentation",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The incident log and incident summary present the same sanitized troubleshooting event at different levels of detail."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-incident-summary-2025",
+      "targetId": "projects-troubleshooting-rca-rca-report-2025",
+      "relationshipType": "same-project",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The summary and RCA report are paired artifacts for the same sanitized incident."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-rca-report-2025",
+      "targetId": "projects-troubleshooting-rca-troubleshooting-notes-2025",
+      "relationshipType": "supports-documentation",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The RCA report is supported by the service desk triage notes captured during investigation."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-rca-report-2025",
+      "targetId": "projects-troubleshooting-rca-remediation-plan-2025",
+      "relationshipType": "remediation-path",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The remediation plan captures the corrective actions described in the RCA report."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-remediation-plan-2025",
+      "targetId": "projects-troubleshooting-rca-validation-checklist-2025",
+      "relationshipType": "validation-path",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The checklist verifies the corrective actions documented in the remediation plan."
+    },
+    {
+      "sourceId": "projects-troubleshooting-rca-validation-checklist-2025",
+      "targetId": "projects-troubleshooting-rca-post-incident-review-2025",
+      "relationshipType": "post-review",
+      "confidenceLevel": "reviewed-preserve",
+      "note": "The review captures lessons learned after the validation checklist confirmed recovery."
+    },
+    {
       "sourceId": "architecture-diagrams-home-lab-network-topology-diagram-2026",
       "targetId": "projects-infrastructure-networking-vlan-architecture-walkthrough-2026",
       "relationshipType": "network-design",
