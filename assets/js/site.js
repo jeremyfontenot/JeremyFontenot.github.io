@@ -1,3 +1,7 @@
+if (window.location.hostname.startsWith("www.")) {
+  window.location.replace(`${window.location.protocol}//${window.location.hostname.slice(4)}${window.location.pathname}${window.location.search}${window.location.hash}`);
+}
+
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 
