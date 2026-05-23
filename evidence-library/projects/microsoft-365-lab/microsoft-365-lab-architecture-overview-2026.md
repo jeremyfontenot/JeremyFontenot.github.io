@@ -103,4 +103,3 @@ Before live migration, each Microsoft 365 artifact should be reviewed for:
 - Tenant-safe screenshots or exports if available.
 - Validation checklist results for policy behavior.
 - Troubleshooting notes for failed or corrected configurations.
-

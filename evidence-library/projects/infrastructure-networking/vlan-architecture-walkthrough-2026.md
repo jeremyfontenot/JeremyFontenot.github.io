@@ -27,7 +27,7 @@ The main benefit is not complexity. The benefit is predictable boundaries for tr
 A preservation-safe segmentation model should start with a small number of clear zones:
 
 | Segment | Purpose | Review Focus |
-|---|---|---|
+| --- | --- | --- |
 | Management | Firewall, switch, hypervisor, and administrator access | Access control, MFA/VPN restrictions, logging |
 | Workstation | Admin workstation and general endpoint testing | DNS, DHCP, internet access, support workflow validation |
 | Server | AD DS, DNS, DHCP, internal services | Service reachability, authentication, name resolution |
@@ -122,4 +122,3 @@ Future expansion candidates:
 - DHCP scope mapping.
 - Firewall rule review.
 - Validation checklist results for gateway, DNS, DHCP, and VPN reachability.
-
