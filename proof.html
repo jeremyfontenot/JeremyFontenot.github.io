@@ -44,7 +44,7 @@
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">Preserved Proof Library</p>
           <h1 id="proof-title">Evidence that can be opened, inspected, and traced.</h1>
-          <p class="lead">A curated review surface for diagrams, scripts, runbooks, validation records, and sanitized technical documentation. Every card links to an existing repository file.</p>
+          <p class="lead">A curated review surface for diagrams, scripts, runbooks, validation records, RCA notes, recovery workflows, and sanitized technical documentation. Every card links to an existing repository file.</p>
           <nav class="proof-jump" aria-label="Proof category links">
             <a href="#architecture">Architecture</a>
             <a href="#operations">Operations</a>
@@ -75,28 +75,28 @@
         <article class="proof-evidence-card featured-proof" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Microsoft 365</span></div>
           <h3>Microsoft 365 Lab Architecture Overview</h3>
-          <p class="proof-summary">Service placement and identity boundary overview for Microsoft 365 lab documentation.</p>
+          <p class="proof-summary">Maps Microsoft 365 identity, endpoint, and administration boundaries so reviewers can inspect how policy scope and service placement were documented.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Architecture</dd></div></dl>
           <a class="button primary" href="./evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Networking</span></div>
           <h3>pfSense Network Segmentation Diagram</h3>
-          <p class="proof-summary">VLAN, firewall-zone, NAT, and DMZ segmentation record for infrastructure networking work.</p>
+          <p class="proof-summary">Documents VLAN, firewall-zone, NAT, DMZ, and management-boundary logic for pfSense-oriented network segmentation review.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Network</dd></div></dl>
           <a class="button" href="./evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Identity</span></div>
           <h3>Identity Access AD Migration Diagram</h3>
-          <p class="proof-summary">Migration planning diagram for identity flow, coexistence, and access transition context.</p>
+          <p class="proof-summary">Preserves identity migration planning logic, coexistence boundaries, access transition points, and rollback awareness.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Identity</dd></div></dl>
           <a class="button" href="./evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Support</span></div>
           <h3>Service Desk Network Troubleshooting Flow</h3>
-          <p class="proof-summary">Troubleshooting decision flow for service desk network symptoms and escalation context.</p>
+          <p class="proof-summary">Shows the service desk path for isolating endpoint, DNS, DHCP, gateway, VPN, and firewall symptoms before escalation.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Workflow</dd></div></dl>
           <a class="button" href="./evidence-library/architecture-diagrams/service-desk-network-troubleshooting-flow-2026.svg">Review Evidence</a>
         </article>
@@ -113,28 +113,28 @@
         <article class="proof-evidence-card featured-proof" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">YML</span><span class="proof-filetype">Microsoft 365</span></div>
           <h3>Conditional Access Baseline Configuration</h3>
-          <p class="proof-summary">Configuration sample documenting baseline Conditional Access intent and policy structure.</p>
+          <p class="proof-summary">Records tenant-safe Conditional Access policy intent, target scope, control logic, exception handling, and validation considerations.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>YAML</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Configuration</dd></div></dl>
           <a class="button primary" href="./evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Validation</span></div>
           <h3>Network Validation Checklist</h3>
-          <p class="proof-summary">Validation criteria, expected outcomes, and remediation notes for network review work.</p>
+          <p class="proof-summary">Defines gateway, VLAN, DNS, DHCP, firewall, VPN, and service checks with evidence collection and rollback expectations.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Checklist</dd></div></dl>
           <a class="button" href="./evidence-library/validation-reports/network-validation-checklist-2026.md">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">CSV</span><span class="proof-filetype">Validation</span></div>
-          <h3>Network Validation Raw Results</h3>
-          <p class="proof-summary">Structured CSV output supporting the network validation checklist record.</p>
-          <dl class="proof-meta"><div><dt>Format</dt><dd>CSV</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Raw Data</dd></div></dl>
+          <h3>Network Validation Checklist CSV</h3>
+          <p class="proof-summary">Provides structured planned-validation rows for recording source segment, destination, command, result, evidence reference, and reviewer notes.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>CSV</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Planned Validation Rows</dd></div></dl>
           <a class="button" href="./evidence-library/validation-reports/network-validation-checklist-2026.csv">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Recovery</span></div>
           <h3>Backup and Restore Validation Workflow</h3>
-          <p class="proof-summary">Backup and restore workflow with verification steps and documented validation context.</p>
+          <p class="proof-summary">Defines non-destructive restore testing, integrity checks, rollback checkpoints, evidence capture, and recovery documentation requirements.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Recovery</dd></div></dl>
           <a class="button" href="./evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md">Review Evidence</a>
         </article>
@@ -151,28 +151,28 @@
         <article class="proof-evidence-card featured-proof" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">PS1</span><span class="proof-filetype">PowerShell</span></div>
           <h3>Provisioning Automation Script v1</h3>
-          <p class="proof-summary">PowerShell provisioning logic with practical structure for repeatable administrative workflows.</p>
+          <p class="proof-summary">Preserves PowerShell provisioning logic for parameter review, idempotent checks, dry-run validation, logging, and controlled account changes.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>PS1</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Script</dd></div></dl>
           <a class="button primary" href="./evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Change</span></div>
           <h3>Provisioning Change Record Notes</h3>
-          <p class="proof-summary">Change history, rationale, impact notes, and test context for provisioning automation.</p>
+          <p class="proof-summary">Records automation change scope, review rationale, validation method, rollback notes, and evidence required before broader reuse.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Change Record</dd></div></dl>
           <a class="button" href="./evidence-library/projects/powershell-automation/provisioning-change-log-2026.md">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">TXT</span><span class="proof-filetype">Handoff</span></div>
           <h3>Operational Handoff Checklist</h3>
-          <p class="proof-summary">Handoff checklist, run cadence, ownership notes, and operational follow-up items.</p>
+          <p class="proof-summary">Defines run prerequisites, review steps, log capture, rollback expectations, and operator handoff notes for provisioning automation.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Text</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Handoff</dd></div></dl>
           <a class="button" href="./evidence-library/projects/powershell-automation/operational-handoff-2026.txt">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Identity</span></div>
           <h3>Identity Access Change Record Notes</h3>
-          <p class="proof-summary">Identity change notes, rationale, and follow-up context tied to access administration work.</p>
+          <p class="proof-summary">Documents OU and identity-access change planning, rollback preparation, GPO review, and validation criteria without claiming unsupported scale.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Change Notes</dd></div></dl>
           <a class="button" href="./evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md">Review Evidence</a>
         </article>
@@ -189,28 +189,28 @@
         <article class="proof-evidence-card featured-proof" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Summary</span></div>
           <h3>Troubleshooting RCA Incident Summary</h3>
-          <p class="proof-summary">Sanitized incident summary with scope, symptoms, impact, triage, corrective actions, and validation context.</p>
+          <p class="proof-summary">Sanitized incident summary covering impact, affected workflow, queue review, transport rule triage, corrective action, and validation evidence.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Type</dt><dd>Incident</dd></div></dl>
           <a class="button primary" href="./evidence-library/projects/troubleshooting-rca/incident-summary.md">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">TXT</span><span class="proof-filetype">Log</span></div>
           <h3>Troubleshooting RCA Incident Log</h3>
-          <p class="proof-summary">Sanitized incident timeline showing queue review, transport rule analysis, controlled testing, and recovery.</p>
+          <p class="proof-summary">Sanitized timeline showing intake, queue-state checks, transport rule review, controlled retesting, and recovery confirmation.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Text</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Type</dt><dd>Timeline</dd></div></dl>
           <a class="button" href="./evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">RCA</span></div>
           <h3>Troubleshooting RCA Report</h3>
-          <p class="proof-summary">Formal root cause report with scope, triage steps, impact, remediation, and prevention guidance.</p>
+          <p class="proof-summary">Formal RCA record with scope, user impact, repeatability checks, root cause, remediation sequence, validation, and prevention controls.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Type</dt><dd>RCA</dd></div></dl>
           <a class="button" href="./evidence-library/projects/troubleshooting-rca/rca-report.md">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Plan</span></div>
           <h3>Remediation Plan</h3>
-          <p class="proof-summary">Corrective action plan covering rule order review, rollback checkpoints, and post-change validation.</p>
+          <p class="proof-summary">Corrective action plan covering rule-order review, rollback checkpoints, queue-health checks, test delivery, and post-change validation.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2025</dd></div><div><dt>Type</dt><dd>Remediation</dd></div></dl>
           <a class="button" href="./evidence-library/projects/troubleshooting-rca/remediation-plan.md">Review Evidence</a>
         </article>
@@ -227,14 +227,14 @@
         <article class="proof-evidence-card featured-proof" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">VLANs</span></div>
           <h3>VLAN Architecture Walkthrough</h3>
-          <p class="proof-summary">VLAN numbering, routing, filtering decisions, and segmentation notes for review.</p>
+          <p class="proof-summary">Documents VLAN purpose, trunk/access behavior, pfSense routing boundaries, Proxmox bridge review, and troubleshooting sequence.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Walkthrough</dd></div></dl>
           <a class="button primary" href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">TXT</span><span class="proof-filetype">DNS/DHCP</span></div>
           <h3>DNS/DHCP Operational Runbook</h3>
-          <p class="proof-summary">Maintenance, backup, recovery, lease review, and scope validation procedures.</p>
+          <p class="proof-summary">Runbook for DNS/DHCP health checks, lease review, reservation validation, service restart sequencing, backup, recovery, and escalation notes.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Text</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Runbook</dd></div></dl>
           <a class="button" href="./evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">Review Evidence</a>
         </article>

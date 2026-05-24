@@ -8,6 +8,19 @@ Evidence type: RCA report
 
 This report documents a sanitized root cause analysis for a short outbound mail delay observed in a portfolio scenario. The record is intentionally free of customer names, ticket numbers, private system names, IPs, and credentials.
 
+## Objective
+
+Preserve the troubleshooting method used to move from symptom report to rule review, corrective action, validation, and prevention notes without exposing private environment details.
+
+## Technical Areas Demonstrated
+
+- Service desk intake and impact scoping.
+- Mail transport workflow triage.
+- Queue state review and controlled test submission.
+- Change review for transport rule precedence.
+- Remediation sequencing and rollback awareness.
+- Post-change validation and RCA documentation.
+
 ## Scope
 
 - One mail transport workflow.
@@ -41,6 +54,8 @@ This report documents a sanitized root cause analysis for a short outbound mail 
 - Checked queue depth before and after the review.
 - Reviewed recent rule changes and their order of execution.
 - Validated that the mail path itself remained available.
+- Separated service availability from rule-processing delay so the incident was not misclassified as a full outage.
+- Preserved the timeline and validation notes as sanitized evidence for future review.
 
 ## Root Cause
 

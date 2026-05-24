@@ -1,12 +1,26 @@
 # Network Validation Checklist 2026
 
-Status: Validation checklist template  
-Scope: Home lab network, VLAN, DNS, DHCP, firewall, and VPN validation  
+Status: Sanitized validation methodology
+Scope: Home lab network, VLAN, DNS, DHCP, firewall, and VPN validation
 Evidence type: Planned validation checklist
 
 ## Purpose
 
-This checklist defines a repeatable validation method for the home lab network. It is designed to produce real evidence after checks are performed. Until results are recorded, this document is a planned validation template and should not be represented as completed validation.
+This checklist defines a repeatable validation method for the home lab network. It is designed to produce real evidence after checks are performed. Until results are recorded, this document is a planned validation methodology and should not be represented as completed validation.
+
+## Objective
+
+Provide a controlled network verification workflow for gateway reachability, VLAN boundaries, DNS, DHCP, firewall behavior, VPN access, and service availability.
+
+## Technical Areas Demonstrated
+
+- pfSense firewall and gateway validation.
+- VLAN access/trunk review.
+- DNS and DHCP client verification.
+- VPN route and resolver testing.
+- Windows and Linux endpoint troubleshooting.
+- Change rollback checkpoints.
+- Evidence capture and reviewer documentation.
 
 ## Evidence Collection Rules
 
@@ -15,6 +29,15 @@ This checklist defines a repeatable validation method for the home lab network. 
 - Save command output only when it was actually run.
 - Mark failed checks honestly and document remediation steps.
 - Preserve rollback checkpoints before firewall, VLAN, DHCP, or DNS changes.
+
+## Validation Sequence
+
+1. Record the source endpoint, segment, expected gateway, and expected DNS/DHCP behavior.
+2. Verify local adapter state before changing network settings.
+3. Validate gateway reachability before testing external services.
+4. Validate DNS and DHCP independently so name resolution issues are not confused with routing issues.
+5. Validate firewall rules with one allowed path and one restricted path.
+6. Record failures as useful evidence with remediation notes.
 
 ## Gateway Validation
 

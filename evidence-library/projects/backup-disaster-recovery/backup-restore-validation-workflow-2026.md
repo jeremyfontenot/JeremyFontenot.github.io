@@ -1,12 +1,36 @@
 # Backup/Restore Validation Workflow 2026
 
-Status: Draft operational workflow  
-Scope: Home lab backup and restore validation planning  
+Status: Sanitized operational workflow
+Scope: Home lab backup and restore validation planning
 Evidence type: Runbook and validation guidance
 
 ## Purpose
 
-This workflow documents how backup and restore validation should be performed and recorded in the lab. It does not claim a restore test has already been completed. Completed validation should be recorded separately with actual evidence, dates, systems, and outcomes.
+This workflow documents how backup and restore validation should be performed and recorded in the lab. It does not claim a restore test has already been completed. Completed validation must be recorded separately with actual evidence, dates, systems, and outcomes.
+
+## Objective
+
+Define a repeatable recovery validation process that confirms whether a backup can be located, restored to a safe target, checked for integrity, and documented without risking active systems.
+
+## Technical Areas Demonstrated
+
+- Backup and recovery planning.
+- Non-destructive restore testing.
+- Windows and Linux file/service verification concepts.
+- Virtualized lab recovery using isolated targets.
+- Rollback planning and change documentation.
+- Evidence capture, reviewer notes, and operational handoff.
+
+## Implementation Workflow
+
+1. Identify the protected system, dataset, or configuration.
+2. Confirm backup schedule, retention, and latest successful job status.
+3. Select a safe restore target, such as an isolated folder, test VM, or disconnected lab system.
+4. Record backup identifier, restore target, reviewer, date, and expected result.
+5. Perform the restore only within the approved test boundary.
+6. Validate restored files, services, or configuration state.
+7. Record limitations, errors, screenshots, logs, hashes, or command output only when actually collected.
+8. Update the runbook if the process exposed missing prerequisites or unclear rollback steps.
 
 ## Backup Verification Methodology
 
@@ -79,7 +103,7 @@ Acceptable evidence:
 - Actual system health check after restore.
 - Actual logs from the backup or restore tool.
 
-Do not create fake restore results. If the validation has not been performed, mark the item as planned.
+Do not create fabricated restore results. If validation has not been performed, mark the item as planned and describe the exact evidence still required.
 
 ## Rollback Concepts
 
@@ -100,10 +124,10 @@ Integrity checks should be appropriate to the artifact:
 - Configuration restore: compare settings before applying to live systems.
 - Database or application restore: use application-level validation where available.
 
-## Future Evidence Needed
+## Associated Proof to Collect
 
-- Actual backup job status.
-- Actual restore test record.
-- Integrity check output.
+- Backup job status or command output from the actual lab tool.
+- Restore test record with date, target, source backup ID, and result.
+- Integrity check output such as hash comparison, file open test, boot/login check, or service status.
 - Screenshots or logs captured from the lab.
 - Review notes explaining whether recovery objectives were met.

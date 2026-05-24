@@ -1,7 +1,7 @@
 # VLAN Architecture Walkthrough 2026
 
-Status: Draft lab architecture documentation  
-Scope: Home lab VLAN segmentation and operational planning  
+Status: Sanitized lab architecture documentation
+Scope: Home lab VLAN segmentation and operational planning
 Evidence type: Network architecture walkthrough
 
 ## Purpose
@@ -9,6 +9,19 @@ Evidence type: Network architecture walkthrough
 This walkthrough documents a practical VLAN segmentation strategy for the home lab. It is intended to strengthen DNS, DHCP, networking, and pfSense evidence by showing how segmentation should be designed, documented, validated, and operated.
 
 This is not a completed deployment claim and does not invent a complete VLAN or IP address inventory.
+
+## Objective
+
+Document a segmentation model that separates management, workstation, server, lab/test, and VPN traffic so firewall rules, troubleshooting, and future validation records have clear boundaries.
+
+## Technical Areas Demonstrated
+
+- VLAN design and switch port planning.
+- pfSense routed interfaces and firewall rule intent.
+- Proxmox bridge and VLAN-aware networking concepts.
+- DNS/DHCP scope and resolver planning.
+- VPN access boundaries.
+- Management-plane isolation and rollback planning.
 
 ## VLAN Purpose
 

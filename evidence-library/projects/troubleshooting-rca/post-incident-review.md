@@ -63,4 +63,4 @@ The root cause was a transport rule precedence issue that added an unnecessary w
 
 - Stable recovery is as important as the original fix.
 - Post-incident reviews should capture what to repeat and what to improve.
-- Sanitized evidence can still demonstrate strong troubleshooting discipline.
+- Sanitized evidence can still preserve strong troubleshooting discipline.

@@ -1,12 +1,26 @@
 # Monitoring and Alerting Overview 2026
 
-Status: Draft operational overview  
-Scope: Home lab monitoring, logging, and alert response planning  
+Status: Sanitized operational overview
+Scope: Home lab monitoring, logging, and alert response planning
 Evidence type: Monitoring documentation
 
 ## Purpose
 
 This overview documents monitoring and alerting practices suitable for the home lab environment. It supports portfolio evidence for operational awareness, validation, and escalation discipline without claiming that a specific monitoring platform or alert result has been deployed unless separately proven.
+
+## Objective
+
+Define how lab monitoring should identify service availability, network path failures, recurring system health issues, backup uncertainty, and security-boundary events that require escalation.
+
+## Technical Areas Demonstrated
+
+- Proxmox host health review.
+- pfSense interface, gateway, VPN, and firewall event monitoring.
+- DNS/DHCP service health checks.
+- Windows and Linux log review.
+- Backup job status review.
+- Alert prioritization, escalation, and RCA triggers.
+- Evidence capture for troubleshooting and validation.
 
 ## Monitoring Philosophy
 

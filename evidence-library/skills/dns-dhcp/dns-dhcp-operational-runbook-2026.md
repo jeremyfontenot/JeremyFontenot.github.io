@@ -1,7 +1,7 @@
 # DNS/DHCP Operational Runbook 2026
 
-Status: Draft operational runbook  
-Scope: Home lab DNS and DHCP administration practices  
+Status: Sanitized operational runbook
+Scope: Home lab DNS and DHCP administration practices
 Evidence type: Runbook and validation guidance
 
 ## Purpose
@@ -9,6 +9,18 @@ Evidence type: Runbook and validation guidance
 This runbook documents DNS and DHCP operating practices for the home lab. It is intended to strengthen the DNS / DHCP evidence area with practical procedures, troubleshooting logic, audit considerations, and validation steps.
 
 This document does not claim that every validation item has already been performed. Completed checks should be recorded separately with date, system, command output, and reviewer notes.
+
+## Objective
+
+Maintain a repeatable DNS/DHCP administration workflow that supports endpoint troubleshooting, Active Directory name resolution, DHCP lease validation, rollback planning, and evidence capture.
+
+## Technical Areas Demonstrated
+
+- Windows DNS and DHCP administration concepts.
+- Linux DNS/DHCP service review where applicable.
+- Active Directory service record awareness.
+- DHCP scope, reservation, lease, gateway, and DNS option validation.
+- Troubleshooting documentation and escalation criteria.
 
 ## DNS Role Overview
 

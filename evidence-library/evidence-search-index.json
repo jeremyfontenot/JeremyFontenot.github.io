@@ -2,7 +2,7 @@
   {
     "id": "architecture-diagrams-identity-access-ad-migration-diagram-2026",
     "title": "Identity Access AD Migration Diagram",
-    "summary": "Preserved architecture diagram supporting identity and access documentation.",
+    "summary": "Preserved identity architecture diagram documenting AD migration flow, access boundaries, coexistence planning, and rollback awareness.",
     "path": "evidence-library/architecture-diagrams/identity-access-ad-migration-diagram-2026.svg",
     "originalSourcePath": "assets/evidence/ad-migration-diagram.svg",
     "category": "architecture-diagrams",
@@ -24,7 +24,7 @@
   {
     "id": "architecture-diagrams-home-lab-network-topology-diagram-2026",
     "title": "Home Lab Network Topology Diagram",
-    "summary": "Preserved topology diagram for the documented home lab environment.",
+    "summary": "Preserved topology diagram documenting lab network roles, infrastructure boundaries, and reviewer context for systems and networking evidence.",
     "path": "evidence-library/architecture-diagrams/home-lab-network-topology-diagram-2026.svg",
     "originalSourcePath": "historical home lab diagram asset",
     "category": "architecture-diagrams",
@@ -46,7 +46,7 @@
   {
     "id": "projects-microsoft-365-lab-microsoft-365-lab-conditional-access-baseline-configuration-2026",
     "title": "Microsoft 365 Conditional Access Baseline Configuration",
-    "summary": "Preserved YAML configuration artifact documenting conditional access baseline intent.",
+    "summary": "Tenant-safe YAML artifact documenting Conditional Access baseline purpose, target scope, control logic, exceptions, and validation considerations.",
     "path": "evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml",
     "originalSourcePath": "docs/projects/m365-lab/artifacts/conditional-access-baseline.yaml",
     "category": "projects",
@@ -68,7 +68,7 @@
   {
     "id": "architecture-diagrams-microsoft-365-lab-architecture-diagram-2026",
     "title": "Microsoft 365 Lab Architecture Diagram",
-    "summary": "Preserved architecture diagram for Microsoft 365 lab workflows and identity concepts.",
+    "summary": "Preserved Microsoft 365 architecture diagram mapping identity, endpoint, administration, and policy review boundaries.",
     "path": "evidence-library/architecture-diagrams/microsoft-365-lab-architecture-diagram-2026.svg",
     "originalSourcePath": "assets/evidence/m365-lab-architecture.svg",
     "category": "architecture-diagrams",
@@ -90,7 +90,7 @@
   {
     "id": "scripts-powershell-automation-provisioning-script-v1",
     "title": "PowerShell Provisioning Script",
-    "summary": "Preserved PowerShell automation artifact used as source evidence for repeatable administration.",
+    "summary": "Preserved PowerShell artifact for parameterized provisioning, idempotent checks, dry-run review, logging, and controlled administrative changes.",
     "path": "evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1",
     "originalSourcePath": "docs/projects/ad-migration/artifacts/provisioning.ps1",
     "category": "scripts",
@@ -111,7 +111,7 @@
   {
     "id": "projects-identity-access-identity-access-change-record-notes-2026",
     "title": "Identity Access Change Record Notes",
-    "summary": "Preserved change documentation supporting identity and access administration evidence.",
+    "summary": "Sanitized identity change record documenting OU planning, GPO scope review, rollback preparation, and validation criteria.",
     "path": "evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md",
     "originalSourcePath": "docs/projects/ad-migration/artifacts/change-record.md",
     "category": "projects",
@@ -132,7 +132,7 @@
   {
     "id": "projects-troubleshooting-rca-troubleshooting-rca-incident-log-2025",
     "title": "Troubleshooting RCA Incident Log",
-    "summary": "Sanitized incident timeline and RCA evidence for service desk troubleshooting.",
+    "summary": "Sanitized incident timeline preserving intake, queue review, transport rule analysis, controlled retesting, and recovery confirmation.",
     "path": "evidence-library/projects/troubleshooting-rca/troubleshooting-rca-incident-log-2025.txt",
     "originalSourcePath": "evidence/public/incident-2025-02-10-logs.txt",
     "category": "projects",
@@ -153,7 +153,7 @@
   {
     "id": "projects-troubleshooting-rca-incident-summary-2025",
     "title": "Troubleshooting RCA Incident Summary",
-    "summary": "Sanitized incident summary with issue, scope, validation, and lessons learned.",
+    "summary": "Sanitized incident summary covering objective, impact, affected workflow, triage sequence, corrective action, validation, and lessons learned.",
     "path": "evidence-library/projects/troubleshooting-rca/incident-summary.md",
     "originalSourcePath": "evidence-library/projects/troubleshooting-rca/incident-summary.md",
     "category": "projects",
@@ -174,7 +174,7 @@
   {
     "id": "projects-troubleshooting-rca-rca-report-2025",
     "title": "Troubleshooting RCA Report",
-    "summary": "Formal root cause report covering triage, remediation, and prevention steps.",
+    "summary": "Formal RCA record covering scope, user impact, repeatability checks, root cause, remediation sequence, validation, and prevention controls.",
     "path": "evidence-library/projects/troubleshooting-rca/rca-report.md",
     "originalSourcePath": "evidence-library/projects/troubleshooting-rca/rca-report.md",
     "category": "projects",
@@ -195,7 +195,7 @@
   {
     "id": "projects-troubleshooting-rca-troubleshooting-notes-2025",
     "title": "Troubleshooting Notes",
-    "summary": "Sanitized triage notes showing queue review, rule checks, and controlled testing.",
+    "summary": "Sanitized triage notes documenting queue review, rule-precedence checks, controlled test messages, and evidence capture.",
     "path": "evidence-library/projects/troubleshooting-rca/troubleshooting-notes.md",
     "originalSourcePath": "evidence-library/projects/troubleshooting-rca/troubleshooting-notes.md",
     "category": "projects",
@@ -216,7 +216,7 @@
   {
     "id": "projects-troubleshooting-rca-remediation-plan-2025",
     "title": "Remediation Plan",
-    "summary": "Corrective action plan for transport rule review, rollback planning, and prevention.",
+    "summary": "Corrective action plan for transport rule review, rollback checkpoints, queue-health validation, and prevention notes.",
     "path": "evidence-library/projects/troubleshooting-rca/remediation-plan.md",
     "originalSourcePath": "evidence-library/projects/troubleshooting-rca/remediation-plan.md",
     "category": "projects",
@@ -237,7 +237,7 @@
   {
     "id": "projects-troubleshooting-rca-validation-checklist-2025",
     "title": "Validation Checklist",
-    "summary": "Post-change validation checklist for queue drainage, delivery checks, and recovery.",
+    "summary": "Post-change validation checklist for queue drainage, delivery verification, stability observation, and RCA closure.",
     "path": "evidence-library/projects/troubleshooting-rca/validation-checklist.md",
     "originalSourcePath": "evidence-library/projects/troubleshooting-rca/validation-checklist.md",
     "category": "projects",
@@ -258,7 +258,7 @@
   {
     "id": "projects-troubleshooting-rca-post-incident-review-2025",
     "title": "Post-Incident Review",
-    "summary": "Lessons learned and follow-up notes for the sanitized RCA scenario.",
+    "summary": "Post-incident review preserving lessons learned, follow-up actions, change-review improvements, and future validation expectations.",
     "path": "evidence-library/projects/troubleshooting-rca/post-incident-review.md",
     "originalSourcePath": "evidence-library/projects/troubleshooting-rca/post-incident-review.md",
     "category": "projects",
@@ -340,7 +340,7 @@
   {
     "id": "architecture-diagrams-pfsense-network-segmentation-diagram-2026",
     "title": "Pfsense Network Segmentation Diagram 2026",
-    "summary": "Document conceptual firewall segmentation and security zones. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Documents pfSense segmentation zones, firewall boundary intent, NAT/DMZ considerations, and security review points without claiming completed validation.",
     "path": "evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg",
     "originalSourcePath": "generated-gap-evidence/pfsense-network-segmentation-diagram-2026.svg",
     "category": "architecture-diagrams",
@@ -355,13 +355,13 @@
       "svg-diagram"
     ],
     "fileType": "svg",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "projects-infrastructure-networking-pfsense-network-segmentation-diagram-2026",
     "title": "Pfsense Network Segmentation Diagram 2026",
-    "summary": "Explain segmentation goals and firewall policy intent. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Explains segmentation goals, firewall policy intent, management isolation, troubleshooting paths, and validation evidence still required.",
     "path": "evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md",
     "originalSourcePath": "generated-gap-evidence/pfsense-network-segmentation-diagram-2026.md",
     "category": "projects",
@@ -376,13 +376,13 @@
       "architecture-documentation"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "projects-infrastructure-networking-vlan-architecture-walkthrough-2026",
     "title": "Vlan Architecture Walkthrough 2026",
-    "summary": "Document VLAN strategy and operational troubleshooting. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Documents VLAN strategy, trunk/access review, pfSense routing boundaries, Proxmox bridge planning, and operational troubleshooting sequence.",
     "path": "evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md",
     "originalSourcePath": "generated-gap-evidence/vlan-architecture-walkthrough-2026.md",
     "category": "projects",
@@ -397,13 +397,13 @@
       "architecture-walkthrough"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "skills-dns-dhcp-dns-dhcp-operational-runbook-2026",
     "title": "Dns Dhcp Operational Runbook 2026",
-    "summary": "Document DNS and DHCP operations troubleshooting and validation. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Documents DNS/DHCP health checks, lease review, reservation validation, service restart sequencing, backup, recovery, and escalation notes.",
     "path": "evidence-library/skills/dns-dhcp/dns-dhcp-operational-runbook-2026.md",
     "originalSourcePath": "generated-gap-evidence/dns-dhcp-operational-runbook-2026.md",
     "category": "skills",
@@ -418,19 +418,19 @@
       "runbook"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "validation-reports-network-validation-checklist-2026",
     "title": "Network Validation Checklist 2026",
-    "summary": "Define planned network validation methodology. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Defines network validation methodology for gateway, VLAN, DNS, DHCP, firewall, VPN, evidence capture, and rollback checkpoints.",
     "path": "evidence-library/validation-reports/network-validation-checklist-2026.md",
     "originalSourcePath": "generated-gap-evidence/network-validation-checklist-2026.md",
     "category": "validation-reports",
     "subcategory": "dns-dhcp",
     "proofType": "Validation checklist",
-    "status": "MANUAL REVIEW",
+    "status": "METHODOLOGY",
     "relatedProject": "Change Management and Validation",
     "relatedSkill": "Validation / Audit",
     "tags": [
@@ -440,19 +440,19 @@
       "validation-checklist"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "validation-reports-network-validation-checklist-2026",
     "title": "Network Validation Checklist 2026",
-    "summary": "Provide structured planned validation rows. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Provides structured validation rows for source segment, destination, command, result, evidence reference, reviewer note, and remediation tracking.",
     "path": "evidence-library/validation-reports/network-validation-checklist-2026.csv",
     "originalSourcePath": "generated-gap-evidence/network-validation-checklist-2026.csv",
     "category": "validation-reports",
     "subcategory": "dns-dhcp",
     "proofType": "Validation checklist CSV",
-    "status": "MANUAL REVIEW",
+    "status": "METHODOLOGY",
     "relatedProject": "Change Management and Validation",
     "relatedSkill": "Validation / Audit",
     "tags": [
@@ -462,13 +462,13 @@
       "validation-checklist-csv"
     ],
     "fileType": "csv",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "skills-service-desk-support-service-desk-network-troubleshooting-workflow-2026",
     "title": "Service Desk Network Troubleshooting Workflow 2026",
-    "summary": "Document service desk network triage and escalation workflow. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Documents service desk network triage for endpoint, DNS, DHCP, gateway, VPN, VLAN, firewall, escalation, and RCA triggers.",
     "path": "evidence-library/skills/service-desk-support/service-desk-network-troubleshooting-workflow-2026.md",
     "originalSourcePath": "generated-gap-evidence/service-desk-network-troubleshooting-workflow-2026.md",
     "category": "skills",
@@ -483,13 +483,13 @@
       "runbook"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "architecture-diagrams-service-desk-network-troubleshooting-flow-2026",
     "title": "Service Desk Network Troubleshooting Flow 2026",
-    "summary": "Visualize service desk troubleshooting flow. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Visualizes the service desk decision path for isolating endpoint, DNS, DHCP, VPN, VLAN, firewall, and service-health symptoms.",
     "path": "evidence-library/architecture-diagrams/service-desk-network-troubleshooting-flow-2026.svg",
     "originalSourcePath": "generated-gap-evidence/service-desk-network-troubleshooting-flow-2026.svg",
     "category": "architecture-diagrams",
@@ -504,13 +504,13 @@
       "svg-flow-diagram"
     ],
     "fileType": "svg",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "projects-backup-disaster-recovery-backup-restore-validation-workflow-2026",
     "title": "Backup Restore Validation Workflow 2026",
-    "summary": "Document backup restore validation methodology. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Documents backup and restore validation methodology, non-destructive testing, integrity checks, rollback checkpoints, and evidence capture requirements.",
     "path": "evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md",
     "originalSourcePath": "generated-gap-evidence/backup-restore-validation-workflow-2026.md",
     "category": "projects",
@@ -525,13 +525,13 @@
       "runbook"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "projects-monitoring-logging-monitoring-alerting-overview-2026",
     "title": "Monitoring Alerting Overview 2026",
-    "summary": "Document monitoring and alerting practices. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Documents monitoring scope, alert priority, log review, pfSense/DNS/DHCP/system-health checks, escalation, and RCA triggers.",
     "path": "evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md",
     "originalSourcePath": "generated-gap-evidence/monitoring-alerting-overview-2026.md",
     "category": "projects",
@@ -546,13 +546,13 @@
       "operational-overview"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "projects-microsoft-365-lab-microsoft-365-lab-architecture-overview-2026",
     "title": "Microsoft 365 Lab Architecture Overview 2026",
-    "summary": "Connect identity endpoint automation and validation concepts. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Connects Microsoft 365 identity, endpoint management, Conditional Access planning, automation, rollback awareness, and validation methodology.",
     "path": "evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md",
     "originalSourcePath": "generated-gap-evidence/microsoft-365-lab-architecture-overview-2026.md",
     "category": "projects",
@@ -567,13 +567,13 @@
       "architecture-overview"
     ],
     "fileType": "md",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "architecture-diagrams-microsoft-365-lab-architecture-overview-2026",
     "title": "Microsoft 365 Lab Architecture Overview 2026",
-    "summary": "Visualize Microsoft 365 lab architecture concepts. This is truthful review-ready documentation and does not claim completed validation without separate evidence.",
+    "summary": "Visualizes Microsoft 365 lab identity, endpoint, administration, and policy boundaries for reviewer orientation.",
     "path": "evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg",
     "originalSourcePath": "generated-gap-evidence/microsoft-365-lab-architecture-overview-2026.svg",
     "category": "architecture-diagrams",
@@ -588,8 +588,8 @@
       "svg-diagram"
     ],
     "fileType": "svg",
-    "confidenceLevel": "manual-review-required",
-    "preservationStatus": "MANUAL REVIEW REQUIRED"
+    "confidenceLevel": "reviewed-methodology",
+    "preservationStatus": "REVIEWED METHODOLOGY DOCUMENTATION"
   },
   {
     "id": "projects-home-lab-lab-portfolio-preserved",
@@ -613,4 +613,3 @@
     "preservationStatus": "PRESERVED PROOF"
   }
 ]
-

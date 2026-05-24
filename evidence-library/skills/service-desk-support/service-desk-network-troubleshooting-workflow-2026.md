@@ -1,14 +1,27 @@
 # Service Desk Network Troubleshooting Workflow 2026
 
-Status: Draft service desk workflow  
-Scope: Endpoint, DNS, DHCP, VPN, VLAN, and firewall triage  
+Status: Sanitized service desk workflow
+Scope: Endpoint, DNS, DHCP, VPN, VLAN, and firewall triage
 Evidence type: Troubleshooting runbook
 
 ## Purpose
 
-This workflow provides a practical service desk approach for network troubleshooting in the home lab. It is designed to demonstrate methodical troubleshooting, escalation judgment, ticket documentation, and root cause analysis discipline.
+This workflow provides a practical service desk approach for network troubleshooting in the home lab. It documents methodical troubleshooting, escalation judgment, ticket documentation, and root cause analysis discipline.
 
 This is not a fabricated incident record. It is a reusable troubleshooting workflow for future real tickets, lab faults, or validation exercises.
+
+## Objective
+
+Standardize the first-response process for endpoint, DNS, DHCP, VPN, VLAN, and firewall symptoms so evidence is captured before settings are changed.
+
+## Technical Areas Demonstrated
+
+- Windows endpoint troubleshooting with `ipconfig`, route checks, DNS tests, and service-specific validation.
+- Linux/network troubleshooting concepts such as interface state, gateway reachability, and DNS resolver checks.
+- DNS/DHCP validation and lease review.
+- VLAN and pfSense firewall path isolation.
+- VPN route, authentication, and DNS behavior review.
+- Ticket triage, escalation criteria, RCA triggers, and evidence handoff.
 
 ## Triage Workflow
 
@@ -22,6 +35,15 @@ This is not a fabricated incident record. It is a reusable troubleshooting workf
 8. Validate service-specific access.
 9. Review VPN or firewall path if remote access is involved.
 10. Escalate with evidence when the issue crosses system, network, or security boundaries.
+
+## Verification Method
+
+- Record the expected network path before testing.
+- Capture current IP configuration before renewals, DNS flushes, or adapter resets.
+- Test gateway, DNS, and service reachability separately.
+- Use a known-good endpoint or segment only after documenting the affected endpoint state.
+- Preserve screenshots or command output only from actual systems.
+- Document the final result, unresolved risk, and escalation owner or next action.
 
 ## Layer 1 to Layer 7 Reasoning
 

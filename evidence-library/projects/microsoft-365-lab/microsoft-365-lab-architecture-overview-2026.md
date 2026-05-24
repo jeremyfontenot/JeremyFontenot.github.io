@@ -1,14 +1,28 @@
 # Microsoft 365 Lab Architecture Overview 2026
 
-Status: Draft lab architecture overview  
-Scope: Microsoft 365 administration concepts connected to the home lab portfolio  
+Status: Sanitized lab architecture overview
+Scope: Microsoft 365 administration concepts connected to the home lab portfolio
 Evidence type: Architecture documentation
 
 ## Purpose
 
-This document summarizes how Microsoft 365 lab concepts connect to identity, endpoint management, automation, security baselines, and validation workflows. It is intended as honest supporting documentation for portfolio migration planning.
+This document records how Microsoft 365 lab concepts connect to identity, endpoint management, automation, security baselines, and validation workflows. It is intended as honest supporting documentation for portfolio review and migration planning.
 
 This document does not claim enterprise tenant ownership, client work, completed deployment, or completed validation beyond evidence available elsewhere in the repository.
+
+## Objective
+
+Create a tenant-safe architecture record that explains how identity, endpoint policy, access control, automation, and validation would be organized in a Microsoft ecosystem support workflow.
+
+## Technical Areas Demonstrated
+
+- Microsoft 365 administration and tenant-safe documentation.
+- Entra ID and Conditional Access planning.
+- Active Directory and hybrid administration fundamentals.
+- Intune and endpoint policy review.
+- PowerShell automation for repeatable administrative tasks.
+- Security baseline planning and rollback awareness.
+- Documentation, change review, and validation methodology.
 
 ## Architecture Themes
 
@@ -18,27 +32,27 @@ This document does not claim enterprise tenant ownership, client work, completed
 - PowerShell automation for repeatable administrative tasks.
 - Documentation and validation as evidence of operational maturity.
 
-## Identity Concepts
+## Identity Implementation Workflow
 
-Microsoft 365 administration depends on strong identity practices:
+Microsoft 365 administration depends on controlled identity practices. A reviewer-ready workflow should record:
 
-- User lifecycle documentation.
-- Conditional access planning.
-- MFA and sign-in risk awareness.
-- Role-based administrative access.
-- Audit and change tracking.
+- User lifecycle intake, group assignment, and account deprovisioning criteria.
+- Conditional Access policy purpose, target scope, exclusions, and expected user impact.
+- MFA and sign-in risk awareness for privileged and standard users.
+- Role-based administrative access and least-privilege review.
+- Audit and change tracking for policy or group membership updates.
 
 Future evidence should use real tenant configuration exports, screenshots, or policy documentation when available.
 
-## Endpoint Management Concepts
+## Endpoint Management Workflow
 
-Endpoint management documentation should describe:
+Endpoint management documentation should describe the implementation sequence:
 
-- Device enrollment goals.
-- Baseline policy intent.
-- Compliance evaluation.
-- Application or configuration deployment process.
-- Troubleshooting workflow for failed policy application.
+- Define device enrollment goals and supported ownership model.
+- Document baseline policy intent before deployment.
+- Review compliance evaluation criteria and user impact.
+- Record application or configuration deployment process.
+- Troubleshoot failed policy application using device status, assignment scope, sync timing, and event logs.
 
 Do not present a policy as deployed unless it is backed by actual lab evidence.
 
@@ -77,9 +91,9 @@ Security baseline documentation should include:
 - Validation method.
 - Rollback or exception process.
 
-## Operational Workflow Concepts
+## Operational Workflow
 
-A strong Microsoft 365 lab evidence package should show:
+A strong Microsoft 365 lab evidence package should preserve:
 
 1. Planning and policy intent.
 2. Configuration or script artifact.
@@ -90,12 +104,20 @@ A strong Microsoft 365 lab evidence package should show:
 
 ## Validation Considerations
 
-Before live migration, each Microsoft 365 artifact should be reviewed for:
+Before any public claim or future migration, each Microsoft 365 artifact should be reviewed for:
 
 - Whether it is source documentation, generated export, screenshot, or configuration.
 - Whether it includes real evidence or planned documentation.
 - Whether tenant-specific sensitive data has been removed.
-- Whether claims are limited to lab or learning context.
+- Whether claims are limited to lab, preserved, or planning context.
+
+## Verification Checklist
+
+- Confirm configuration files contain no tenant secrets, private IDs, or credentials.
+- Confirm policy descriptions include purpose, scope, control, exception, and rollback notes.
+- Confirm diagrams match the written administration boundaries.
+- Confirm proof links resolve from the public portfolio pages.
+- Confirm claims do not imply enterprise tenant ownership or customer work.
 
 ## Evidence Still Needed
 

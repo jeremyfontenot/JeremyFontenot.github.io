@@ -3,9 +3,21 @@ DNS/DHCP Operational Runbook — 2026
 Purpose:
 Provide step-by-step operational procedures for verifying, troubleshooting, and maintaining DNS and DHCP services used in the lab environment.
 
+Objective:
+Maintain a repeatable DNS/DHCP support workflow that separates endpoint configuration issues, resolver failures, DHCP scope problems, and upstream routing or firewall symptoms.
+
+Technical areas:
+- Windows DNS and DHCP service review.
+- Linux DNS resolver and DHCP service concepts.
+- Active Directory name resolution checks when domain services are in scope.
+- DHCP scope, reservation, option, and lease validation.
+- Change documentation, rollback preparation, and evidence capture.
+
 Routine checks:
 - Verify DNS service is running on authoritative servers: `systemctl status named` or check Windows DNS service.
 - Confirm DHCP scope utilization and active leases; export leases for change audits.
+- Confirm endpoint DNS server assignment before changing resolver settings.
+- Confirm gateway and DNS options match the intended VLAN or network segment.
 
 Common tasks:
 1. Verify DNS zone integrity and replication. On Windows: `repadmin /showrepl` and check DNS event logs.
@@ -14,10 +26,16 @@ Common tasks:
 4. Validate client-facing DNS: `nslookup`, `dig +trace` and confirm expected A/CNAME records.
 5. For DHCP reservation issues, confirm MAC address and reservation mapping; test by forcing DHCP renew on client.
 
+Validation:
+- Record the affected endpoint, source VLAN, expected scope, assigned address, gateway, DNS server, and test result.
+- Validate DNS by testing internal records and external resolution separately.
+- Validate DHCP by releasing/renewing a lab client lease only after recording current state.
+- Record failures with remediation notes instead of replacing them with passing results.
+
 Rollback and change notes:
 - Before any change, export the current configuration and DHCP leases to the evidence store.
 - If an automated change causes outage, restore the exported configuration and restart services in the correct order.
 
 Contact and escalation:
-- Primary: Jeremy Fontenot (owner)
-- Escalation: Network admin on call — refer to incident runbook.
+- Owner: Jeremy Fontenot
+- Escalation guidance: preserve command output, record affected scope, and use the incident runbook if the issue affects multiple systems or a security boundary.

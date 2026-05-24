@@ -1,14 +1,27 @@
 # pfSense Network Segmentation Diagram 2026
 
-Status: Draft lab architecture documentation  
-Scope: Home lab network segmentation planning and operational reference  
+Status: Sanitized lab architecture documentation
+Scope: Home lab network segmentation planning and operational reference
 Evidence type: Architecture documentation and firewall policy intent
 
 ## Purpose
 
-This document explains the pfSense-based network segmentation model intended for the home lab environment. It is designed as portfolio-quality operational documentation, not as a claim that every rule or VLAN has already been validated in production.
+This document explains the pfSense-based network segmentation model intended for the home lab environment. It is designed as portfolio-quality operational documentation, not as a claim that every rule or VLAN has already been validated on live systems.
 
 The diagram supports future evidence-library migration by describing how WAN, LAN, VLANs, VPN access, and lab service zones should be separated and reviewed.
+
+## Objective
+
+Document the firewall segmentation model, management boundaries, VPN access path, and validation evidence required before any broader lab migration.
+
+## Technical Areas Demonstrated
+
+- pfSense firewall and routing concepts.
+- VLAN zone design and default-deny policy intent.
+- VPN access boundaries.
+- DNS/DHCP service placement.
+- Proxmox and lab workload separation.
+- Firewall rule review, logging, rollback planning, and validation methodology.
 
 ## Known Lab Context
 

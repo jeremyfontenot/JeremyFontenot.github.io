@@ -1,7 +1,27 @@
 # Evidence Library
 
-This folder is the home for curated portfolio evidence, including sanitized troubleshooting RCA material.
+This folder stores curated, sanitized portfolio evidence for Jeremy Fontenot's IT support, systems administration, networking, automation, and documentation work.
 
-The library follows a preservation-first approach: authoritative proof, supporting archive material, and historical context should be reviewed before any cleanup or consolidation occurs.
+The library is preservation-first. Source files, supporting archive material, and historical context should be reviewed before cleanup or consolidation so useful proof is not removed accidentally.
 
-Approved evidence should be added in small reviewed batches with validation after each batch.
+## Evidence Standard
+
+Each reviewer-facing artifact should make the following clear:
+
+- **Objective:** the support problem, administrative task, validation need, or operational workflow being addressed.
+- **Technical areas:** the systems and skills involved, such as Microsoft 365, Active Directory fundamentals, Windows support, PowerShell, DNS/DHCP, pfSense, VLANs, backup/recovery, monitoring, or RCA.
+- **Implementation or workflow:** the configuration logic, troubleshooting sequence, operational steps, or documentation process.
+- **Validation method:** the commands, checklist items, syntax checks, link checks, service tests, rollback points, or review steps used to verify integrity.
+- **Environment:** whether the evidence is from a lab, preserved historical material, generated documentation, or a compatibility record.
+- **Proof boundary:** what the artifact proves and what it does not prove.
+
+## Safety Rules
+
+- Do not invent employers, customers, enterprise access, certifications, or incident metrics.
+- Do not expose secrets, private system names, local machine paths, credentials, or customer data.
+- Do not claim completed validation unless the file contains actual results, dates, systems, and evidence references.
+- Mark planned validation, reusable runbooks, and methodology documents honestly.
+
+## Review Process
+
+Approved evidence should be added in small reviewed batches. After each batch, validate local links, proof references, file paths, draft-only language, and consistency with the public portfolio pages.
