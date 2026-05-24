@@ -17,6 +17,10 @@
   --radius: 8px;
   --max: 1180px;
   --pad: clamp(1rem, 3vw, 1.5rem);
+  --space-section-top: 64px;
+  --space-header-bottom: 32px;
+  --space-paragraph: 24px;
+  --space-bullets: 16px;
 }
 
 *,
@@ -310,6 +314,12 @@ li + li {
   text-transform: uppercase;
 }
 
+.positioning {
+  margin-bottom: 0.55rem;
+  color: var(--muted-strong);
+  font-weight: 800;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -359,6 +369,95 @@ li + li {
   background: linear-gradient(180deg, rgba(30, 41, 59, 0.86), rgba(15, 23, 42, 0.92));
   box-shadow: var(--shadow);
   overflow: hidden;
+}
+
+/* Reviewer Console: subtle left accent and padding for visual separation */
+.hero-console {
+  border-left: 3px solid rgba(56, 189, 248, 0.06);
+  padding-left: 0.9rem;
+}
+
+/* Global spacing rhythm */
+.section {
+  padding-block-start: var(--space-section-top);
+  padding-block-end: calc(var(--space-section-top) * 0.6);
+}
+
+.section-head {
+  max-width: 760px;
+  margin-bottom: var(--space-header-bottom);
+}
+
+/* Paragraph and list spacing */
+p {
+  margin-bottom: var(--space-paragraph);
+}
+
+li + li {
+  margin-top: var(--space-bullets);
+}
+
+/* Section dividers: subtle 1px line */
+.section + .section {
+  border-top: 1px solid rgba(148, 163, 184, 0.06);
+}
+
+/* Focus grid: ensure card-like appearance and interactions */
+.focus-grid .card {
+  padding: 1.12rem;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.focus-grid .card h3 {
+  font-weight: 900;
+}
+
+.focus-grid .card p {
+  color: var(--muted-strong);
+}
+
+/* Increase visual weight and letter spacing for section headers */
+.section-head h2 {
+  font-weight: 940;
+  letter-spacing: 0.02em;
+}
+
+/* Operating Rhythm specific emphasis */
+#workflow-title {
+  font-weight: 950;
+}
+
+/* Micro-interactions: subtle hover lifts for cards only; protect hero/featured/project controls */
+.card:hover,
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Keep hero and featured action button behavior unchanged */
+.hero .button:hover,
+.section-actions .button:hover {
+  transform: translateY(-1px);
+}
+
+/* Ensure project links and specific proof/project controls do not get lifted */
+.project-links a:hover,
+.proof-jump a:hover {
+  transform: none;
+}
+
+/* Ensure footer credibility line styling */
+.credibility {
+  color: var(--muted-strong);
+  margin: 0 0 0.5rem 0;
+  font-weight: 800;
+}
+
+/* Responsive adjustments to preserve mobile layout */
+@media (max-width: 620px) {
+  :root {
+    --space-section-top: 40px;
+  }
+  p { margin-bottom: 18px; }
 }
 
 .console-top {
@@ -421,16 +520,17 @@ li + li {
 }
 
 .section {
-  padding-block: clamp(3rem, 7vw, 5.5rem);
+  padding-block-start: var(--space-section-top);
+  padding-block-end: calc(var(--space-section-top) * 0.6);
 }
 
 .section + .section {
-  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  border-top: 1px solid rgba(148, 163, 184, 0.06);
 }
 
 .section-head {
   max-width: 760px;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-header-bottom);
 }
 
 .split {
