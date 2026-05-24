@@ -28,7 +28,10 @@
   <text x="118" y="244" class="small">MFA and conditional access planning</text>
 
   <rect x="480" y="150" width="240" height="125" class="endpoint"/>
-  <text x="525" y="190" class="text">Endpoint Management</text>
+  <text x="600" y="184" class="text" text-anchor="middle">
+    <tspan x="600">Endpoint</tspan>
+    <tspan x="600" dy="24">Management</tspan>
+  </text>
   <text x="508" y="220" class="small">Intune baseline concepts</text>
   <text x="508" y="244" class="small">Compliance and deployment review</text>
 
