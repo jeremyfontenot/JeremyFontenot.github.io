@@ -1089,9 +1089,9 @@ li + li {
 .what-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0.6rem; color: var(--muted-strong); margin-top: 0.6rem; }
 .featured-projects .featured-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 1rem; align-items: stretch; }
 .featured-card { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; background: linear-gradient(180deg, rgba(30,41,59,0.6), rgba(15,23,42,0.6)); border: 1px solid rgba(148,163,184,0.06); padding: 1rem; border-radius: calc(var(--radius) + 4px); box-shadow: 0 18px 40px rgba(2,6,23,0.36); overflow: hidden; }
-.featured-card .featured-media { min-height: 160px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 6px; background: rgba(15,23,42,0.45); }
-.featured-card .svg-preview { width: 100%; aspect-ratio: 16 / 10; padding: 0.5rem; overflow: hidden; }
-.featured-card .svg-preview img { display: block; width: 100%; max-width: 100%; height: 100%; object-fit: contain; object-position: center; filter: saturate(0.95) contrast(0.98); }
+.featured-card .featured-media { display: block; overflow: hidden; border-radius: 6px; background: rgba(15,23,42,0.45); }
+.featured-card .svg-preview { width: 100%; padding: 0.5rem; overflow: hidden; }
+.featured-card .svg-preview img { display: block; width: 100%; max-width: 100%; height: auto; object-fit: contain; object-position: center; filter: saturate(0.95) contrast(0.98); }
 .featured-card .featured-body { padding: 0.25rem 0.5rem; }
 .featured-card h3 { margin-top: 0; margin-bottom: 0.35rem; font-size: 1.15rem; }
 .featured-card .featured-meta { list-style: none; margin: 0.6rem 0 0; padding: 0; color: var(--muted); display: grid; gap: 0.25rem; }
@@ -1102,7 +1102,6 @@ li + li {
   .featured-projects .featured-grid { grid-template-columns: 1fr; }
   .featured-card { grid-template-columns: 1fr; }
   .what-list { grid-template-columns: 1fr; }
-  .featured-card .svg-preview { aspect-ratio: 16 / 11; }
 }
 
 /* Featured evidence stage */
