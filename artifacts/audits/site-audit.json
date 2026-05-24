@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-05-20T19:11:40.365Z",
+  "scannedHtmlFiles": 78,
+  "inventoryDrift": {
+    "previousCount": 78,
+    "currentCount": 78,
+    "newlyDiscovered": [],
+    "removedOrMissing": [],
+    "previouslyListedButNoLongerPresent": []
+  },
+  "findingsByType": {},
+  "findings": []
+}
