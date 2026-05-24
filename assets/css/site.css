@@ -960,3 +960,128 @@ li + li {
     grid-template-columns: 1fr;
   }
 }
+
+/* Projects page specific adjustments: spacing, dividers, cards, filter, proof chips, footer credibility */
+
+/* Section divider used between major blocks */
+.section-divider {
+  height: 1px;
+  background: rgba(148, 163, 184, 0.06);
+  margin: 32px 0;
+}
+
+/* Ensure page-hero and sections follow the 64px top rhythm */
+.page-hero,
+.section {
+  padding-block-start: var(--space-section-top);
+}
+
+/* Add subtle divider/visual separation between hero copy and review model */
+.integrity-panel {
+  padding: 1rem;
+  border-left: 3px solid rgba(148, 163, 184, 0.03);
+}
+
+/* Review model: make each signal a distinct padded block */
+.console-body {
+  gap: 1rem;
+}
+.signal {
+  padding: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.06);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.44), rgba(15, 23, 42, 0.6));
+}
+.signal strong {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 0.35rem;
+}
+
+/* Filter bar spacing and interactivity */
+.filter-bar {
+  margin-block: 32px;
+}
+.filter-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+.filter-button.active {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.44);
+  color: var(--text);
+}
+
+/* Project card visual polish */
+.project-card {
+  padding: 1.4rem;
+  gap: 0.9rem;
+  border-radius: calc(var(--radius) + 2px);
+}
+
+/* Divider between cards (visual rhythm) */
+.project-grid > .project-card {
+  border-top: 1px solid rgba(148, 163, 184, 0.04);
+  padding-top: 1.25rem;
+}
+.project-grid > .project-card:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Spacing inside a project card */
+.project-card h3 { margin-bottom: 0.35rem; }
+.project-card .meta { margin-bottom: 0.5rem; }
+.project-card p + ul { margin-top: 0.9rem; }
+.project-card ul + .proof-section,
+.project-card .proof-section { margin-top: 0.9rem; }
+
+/* Proof links as chips */
+.proof-section { margin-top: 0.6rem; }
+.proof-label {
+  margin: 0 0 0.45rem 0;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.86rem;
+}
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.project-links li { margin: 0; }
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.38rem 0.6rem;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.08);
+  border-radius: 999px;
+  color: var(--muted-strong);
+  font-weight: 820;
+}
+.project-links a:hover {
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--text);
+  border-color: rgba(56, 189, 248, 0.34);
+}
+
+/* Footer spacing and credibility line */
+.site-footer {
+  padding-block-start: var(--space-section-top);
+}
+.footer-cred {
+  color: var(--muted-strong);
+  margin: 0 0 0.5rem 0;
+  font-weight: 800;
+}
+
+/* Respect mobile layout */
+@media (max-width: 900px) {
+  .project-grid > .project-card { padding-top: 1rem; }
+  .filter-bar { margin-block: 20px; }
+}
+
