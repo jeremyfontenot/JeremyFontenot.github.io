@@ -45,7 +45,7 @@
   </script>
   <script src="./assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
@@ -103,9 +103,14 @@
           </div>
         </div>
       </div>
+      <div class="hero-topology" aria-hidden="true">
+        <span class="topology-node node-a"></span>
+        <span class="topology-node node-b"></span>
+        <span class="topology-node node-c"></span>
+      </div>
     </section>
 
-    <section class="section" aria-labelledby="trust-title">
+    <section class="section section-telemetry" aria-labelledby="trust-title">
       <div class="split">
         <div class="section-head" data-reveal>
           <p class="eyebrow">Portfolio Standard</p>
@@ -120,7 +125,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="focus-title">
+    <section class="section section-focus" aria-labelledby="focus-title">
       <div class="section-head" data-reveal>
         <p class="eyebrow">Technical Focus</p>
         <h2 id="focus-title">Operational skills mapped to real reviewer paths.</h2>
@@ -128,39 +133,39 @@
       </div>
       <div class="focus-grid">
         <article class="card" data-reveal>
-          <span class="badge">Service Desk</span>
+          <div class="card-topline"><span class="card-icon" aria-hidden="true">SD</span><span class="badge">Service Desk</span></div>
           <h3>Intake and Troubleshooting</h3>
           <p>Ticket framing, impact assessment, endpoint checks, DNS/DHCP review, escalation context, closure notes, and evidence capture.</p>
         </article>
         <article class="card" data-reveal>
-          <span class="badge">Systems</span>
+          <div class="card-topline"><span class="card-icon" aria-hidden="true">MS</span><span class="badge">Systems</span></div>
           <h3>Microsoft Administration</h3>
           <p>Microsoft 365, identity, Conditional Access intent, Active Directory fundamentals, endpoint policy documentation, and tenant-safe change records.</p>
         </article>
         <article class="card" data-reveal>
-          <span class="badge">Infrastructure</span>
+          <div class="card-topline"><span class="card-icon" aria-hidden="true">NW</span><span class="badge">Infrastructure</span></div>
           <h3>Networking and Security</h3>
           <p>DNS, DHCP, VLAN segmentation, pfSense firewall boundaries, VPN access paths, validation checklists, and secure operations framing.</p>
         </article>
         <article class="card" data-reveal>
-          <span class="badge">Automation</span>
+          <div class="card-topline"><span class="card-icon" aria-hidden="true">PS</span><span class="badge">Automation</span></div>
           <h3>PowerShell and Handoff</h3>
           <p>Reusable provisioning logic, dry-run review, structured logging expectations, change records, validation notes, and operational handoff checklists.</p>
         </article>
         <article class="card" data-reveal>
-          <span class="badge">Documentation</span>
+          <div class="card-topline"><span class="card-icon" aria-hidden="true">RC</span><span class="badge">Documentation</span></div>
           <h3>Runbooks and RCA</h3>
           <p>Incident summaries, remediation plans, post-incident reviews, network runbooks, and validation records written for repeatable operations.</p>
         </article>
         <article class="card" data-reveal>
-          <span class="badge">DevOps Discipline</span>
+          <div class="card-topline"><span class="card-icon" aria-hidden="true">QA</span><span class="badge">DevOps Discipline</span></div>
           <h3>Static Delivery and QA</h3>
           <p>Performance-aware static pages, source-controlled evidence, link validation, accessibility checks, metadata review, and deployment readiness.</p>
         </article>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="featured-title">
+    <section class="section section-featured" aria-labelledby="featured-title">
       <div class="section-head" data-reveal>
           <p class="eyebrow">Featured Work</p>
         <h2 id="featured-title">Project evidence with direct source access.</h2>
@@ -171,6 +176,20 @@
           <div class="project-card-top">
             <span class="badge">Microsoft 365</span>
             <span class="proof-filetype">Identity / Endpoint</span>
+          </div>
+          <div class="project-visual" aria-hidden="true">
+            <div class="project-visual-top"><span>Topology preview</span><span>Validated</span></div>
+            <div class="project-visual-map">
+              <span class="project-node node-core"></span>
+              <span class="project-node node-identity"></span>
+              <span class="project-node node-endpoint"></span>
+              <span class="project-node node-policy"></span>
+            </div>
+            <div class="project-visual-foot">
+              <span>Identity</span>
+              <span>Endpoint</span>
+              <span>Policy</span>
+            </div>
           </div>
           <h3>Microsoft 365 Lab Baseline</h3>
           <p>Preserved records for conditional access intent, identity boundaries, endpoint administration notes, and architecture review.</p>
@@ -198,7 +217,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="workflow-title">
+    <section class="section section-workflow" aria-labelledby="workflow-title">
       <div class="section-head" data-reveal>
         <p class="eyebrow">Operating Rhythm</p>
         <h2 id="workflow-title">A support workflow recruiters can understand and engineers can respect.</h2>
