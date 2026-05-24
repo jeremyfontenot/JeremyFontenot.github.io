@@ -271,6 +271,14 @@ li + li {
   padding-inline: var(--pad);
 }
 
+.hero,
+.page-hero,
+.section,
+.site-footer,
+[id] {
+  scroll-margin-top: 6rem;
+}
+
 .hero {
   min-height: calc(100svh - 74px);
   display: grid;
@@ -456,6 +464,14 @@ li + li {
 
 /* Responsive adjustments to preserve mobile layout */
 @media (max-width: 620px) {
+  .hero,
+  .page-hero,
+  .section,
+  .site-footer,
+  [id] {
+    scroll-margin-top: 5.25rem;
+  }
+
   :root {
     --space-section-top: 40px;
   }
@@ -1741,5 +1757,3 @@ li + li {
     display: none;
   }
 }
-
-
