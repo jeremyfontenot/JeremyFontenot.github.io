@@ -1,4 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" aria-labelledby="title desc" viewBox="0 0 1200 760"><title id="title">Microsoft 365 Lab Architecture Overview 2026</title><desc id="desc">Conceptual Microsoft 365 lab architecture showing identity, endpoint management, automation, validation, and documentation workflows.</desc><defs><marker id="arrow" markerHeight="10" markerWidth="10" orient="auto" refX="7" refY="3"><path fill="#38bdf8" d="M0 0v6l8-3z"/></marker><style>.card{fill:#111827;stroke:#38bdf8;stroke-width:2;rx:14}.small,.text{font-family:Arial,sans-serif}.text{fill:#e5e7eb;font-size:18px;font-weight:700}.small{fill:#cbd5e1;font-size:14px}.line{stroke:#38bdf8;stroke-width:2.5;fill:none;marker-end:url(#arrow)}</style></defs><path d="M0 0h1200v760H0z" style="fill:#0f172a"/><text x="52" y="52" style="fill:#fff;font-family:Arial,sans-serif;font-size:26px;font-weight:700">Microsoft 365 Lab Architecture Overview</text><text x="52" y="82" class="small">Conceptual lab model for identity, endpoint management, automation, security baselines, and validation evidence.</text><path d="M90 150h240v125H90z" style="fill:#172554;stroke:#60a5fa"/><text x="153" y="190" class="text">Identity</text><text x="118" y="220" class="small">Entra ID concepts</text><text x="118" y="244" class="small">MFA and conditional access planning</text><path d="M480 150h240v125H480z" style="fill:#312e81;stroke:#a78bfa"/><text x="600" y="184" class="text" text-anchor="middle">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" aria-labelledby="title desc" viewBox="0 0 1200 760">
+  <title id="title">Microsoft 365 Lab Architecture Overview 2026</title>
+  <desc id="desc">Conceptual Microsoft 365 lab architecture showing identity, endpoint management, automation, validation, and documentation workflows.</desc>
+  <defs>
+    <marker id="arrow" markerHeight="10" markerWidth="10" orient="auto" refX="7" refY="3"><path fill="#38bdf8" d="M0 0v6l8-3z"/></marker>
+    <style>
+      .card{fill:#111827;stroke:#38bdf8;stroke-width:2;rx:14}
+      .small,.text{font-family:Arial,sans-serif}
+      .text{fill:#e5e7eb;font-size:18px;font-weight:700}
+      .small{fill:#cbd5e1;font-size:14px}
+      .line{stroke:#38bdf8;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <path d="M0 0h1200v760H0z" style="fill:#0f172a"/>
+  <text x="52" y="52" style="fill:#fff;font-family:Arial,sans-serif;font-size:26px;font-weight:700">Microsoft 365 Lab Architecture Overview</text>
+  <text x="52" y="82" class="small">Conceptual lab model for identity, endpoint management, automation, security baselines, and validation evidence.</text>
+
+  <path d="M90 150h240v125H90z" style="fill:#172554;stroke:#60a5fa"/>
+  <text x="153" y="190" class="text">Identity</text>
+  <text x="118" y="220" class="small">Entra ID concepts</text>
+  <text x="118" y="244" class="small">
+    <tspan x="118" y="244">MFA and conditional</tspan>
+    <tspan x="118" dy="18">access planning</tspan>
+  </text>
+
+  <path d="M480 150h240v125H480z" style="fill:#312e81;stroke:#a78bfa"/>
+  <text x="600" y="184" class="text" text-anchor="middle">
     <tspan x="600">Endpoint</tspan>
     <tspan x="600" dy="24">Management</tspan>
-  </text><text x="508" y="220" class="small">Intune baseline concepts</text><text x="508" y="244" class="small">Compliance and deployment review</text><path d="M870 150h240v125H870z" class="card"/><text x="926" y="190" class="text">Home Lab</text><text x="898" y="220" class="small">Windows, AD, DNS, DHCP</text><text x="898" y="244" class="small">Hybrid administration context</text><path d="M285 390h260v125H285z" style="fill:#123524;stroke:#22c55e"/><text x="360" y="430" class="text">Automation</text><text x="312" y="460" class="small">PowerShell and repeatable checks</text><text x="312" y="484" class="small">Safe evidence collection</text><path d="M655 390h260v125H655z" style="fill:#3b1f2b;stroke:#f472b6"/><text x="724" y="430" class="text">Validation</text><text x="682" y="460" class="small">Checklists, reports, review notes</text><text x="682" y="484" class="small">Migration-ready documentation</text><path d="M380 610h440v78H380z" class="card"/><text x="502" y="642" class="text">Portfolio Evidence Package</text><text x="425" y="668" class="small">Source docs, scripts, diagrams, validation notes, and archive support</text><path d="M330 212h150" class="line"/><path d="M720 212h150" class="line"/><path d="M600 275c-30 55-100 70-175 115" class="line"/><path d="M600 275c35 55 110 70 185 115" class="line"/><path d="M415 515c45 50 105 75 185 95" class="line"/><path d="M785 515c-45 50-105 75-185 95" class="line"/></svg>
+  </text>
+  <text x="508" y="220" class="small">Intune baseline concepts</text>
+  <text x="508" y="244" class="small">Compliance and deployment review</text>
+
+  <path d="M870 150h240v125H870z" class="card"/>
+  <text x="926" y="190" class="text">Home Lab</text>
+  <text x="898" y="220" class="small">Windows, AD, DNS, DHCP</text>
+  <text x="898" y="244" class="small">Hybrid administration context</text>
+
+  <path d="M285 390h260v125H285z" style="fill:#123524;stroke:#22c55e"/>
+  <text x="360" y="430" class="text">Automation</text>
+  <text x="312" y="460" class="small">PowerShell and repeatable checks</text>
+  <text x="312" y="484" class="small">Safe evidence collection</text>
+
+  <path d="M655 390h260v125H655z" style="fill:#3b1f2b;stroke:#f472b6"/>
+  <text x="724" y="430" class="text">Validation</text>
+  <text x="682" y="460" class="small">Checklists, reports, review notes</text>
+  <text x="682" y="484" class="small">Migration-ready documentation</text>
+
+  <path d="M380 610h440v78H380z" class="card"/>
+  <text x="502" y="642" class="text">Portfolio Evidence Package</text>
+  <text x="425" y="668" class="small">
+    <tspan x="425" y="668">Source docs, scripts, diagrams,</tspan>
+    <tspan x="425" dy="18">validation notes, and archive support</tspan>
+  </text>
+
+  <path d="M330 212h150" class="line"/>
+  <path d="M720 212h150" class="line"/>
+  <path d="M600 275c-30 55-100 70-175 115" class="line"/>
+  <path d="M600 275c35 55 110 70 185 115" class="line"/>
+  <path d="M415 515c45 50 105 75 185 95" class="line"/>
+  <path d="M785 515c-45 50-105 75-185 95" class="line"/>
+</svg>
