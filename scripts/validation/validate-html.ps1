@@ -1,28 +1,38 @@
-Write-Host "Validating HTML files..."
+Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
 
-$HtmlFiles = Get-ChildItem -Path . -Recurse -Filter "*.html" -File | Where-Object {
-  $_.DirectoryName -notmatch "node_modules"
+Write-Host 'Validating HTML files...'
+
+$HtmlFiles = Get-ChildItem -Path . -Recurse -Filter '*.html' -File | Where-Object {
+  $_.FullName -notmatch '[\\/]node_modules[\\/]'
 }
 
 if (-not $HtmlFiles) {
-  Write-Host "No HTML files found." -ForegroundColor Red
+  Write-Host 'No HTML files found.' -ForegroundColor Red
   exit 1
 }
 
-$Failures = @()
+$Failures = [System.Collections.Generic.List[string]]::new()
 
 foreach ($File in $HtmlFiles) {
-  $Content = Get-Content $File.FullName -Raw
-
-  if ($Content -notmatch "<html") {
-    $Failures += $File.FullName
-    Write-Host "Missing html tag: $($File.FullName)" -ForegroundColor Red
+  try {
+    $Content = Get-Content -Path $File.FullName -Raw -ErrorAction Stop
+  } catch {
+    $Failures.Add($File.FullName)
+    Write-Host "Unable to read file: $($File.FullName)" -ForegroundColor Red
+    Write-Host "  $($_.Exception.Message)" -ForegroundColor Red
     continue
   }
 
-  if ($Content -notmatch "</html>") {
-    $Failures += $File.FullName
-    Write-Host "Missing closing html tag: $($File.FullName)" -ForegroundColor Red
+  if ($Content -notmatch '<html') {
+    $Failures.Add($File.FullName)
+    Write-Host "Missing <html tag in: $($File.FullName)" -ForegroundColor Red
+    continue
+  }
+
+  if ($Content -notmatch '</html>') {
+    $Failures.Add($File.FullName)
+    Write-Host "Missing </html> tag in: $($File.FullName)" -ForegroundColor Red
     continue
   }
 
@@ -30,10 +40,10 @@ foreach ($File in $HtmlFiles) {
 }
 
 if ($Failures.Count -gt 0) {
-  Write-Host ""
-  Write-Host "HTML validation failed." -ForegroundColor Red
+  Write-Host ''
+  Write-Host ("HTML validation failed for {0} file(s)." -f $Failures.Count) -ForegroundColor Red
   exit 1
 }
 
-Write-Host ""
-Write-Host "HTML validation passed." -ForegroundColor Green
+Write-Host ''
+Write-Host 'HTML validation passed.' -ForegroundColor Green

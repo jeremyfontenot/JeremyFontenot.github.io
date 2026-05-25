@@ -38,10 +38,10 @@ For JavaScript files, run:
 node --check .\path\to\script.js
 ```
 
-For PowerShell files, run:
+For PowerShell files, run syntax validation:
 
 ```powershell
-Get-Command .\path\to\script.ps1
+pwsh -NoProfile -File .\scripts\validation\validate-powershell.ps1
 ```
 
 ## Naming Standard
