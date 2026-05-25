@@ -1,20 +1,34 @@
 Operational Handoff: Provisioning Automation v1
 
 Overview:
-This file documents the operational handoff checklist for the provisioning automation maintained in the lab environment. It is intended for on-call engineers and operators receiving ownership of the automation workflow.
+This file documents the review checklist for the lab-safe provisioning script
+published in the portfolio evidence library. It is intended to show how an
+operator would review inputs, dry-run output, logs, and rollback notes before
+any controlled test execution.
 
 Owner: Jeremy Fontenot
-Contact: jeremy@example.com
+Scope: Lab and portfolio review artifact only. Do not treat this as a live
+enterprise onboarding workflow.
 
 Checklist:
-- Confirm service account credentials are stored in the vault and accessible to the operator.
-- Review `powershell-automation-provisioning-script-v1.ps1` for scheduled tasks and parameter defaults.
-- Validate logging location: `evidence-library/scripts/logs/` and confirm retention policy.
-- Test a dry-run: `.\powershell-automation-provisioning-script-v1.ps1 -WhatIf` (use dry-run flag as configured).
-- Run a scoped live test: create one test user in staging OU, verify group assignments and license provisioning.
-- Confirm monitoring: check scheduled task health and alerting configuration for failures.
-- Confirm rollback steps: run `Remove-TestUsers` helper and restore group membership from exported CSV.
+- Confirm the target OU is a lab or staging OU, not a production directory path.
+- Review required parameters: DisplayName, SamAccountName, UserPrincipalName,
+  TargetOu, Department, Groups, TicketId, and LogPath.
+- Run the script without -Apply first and verify that it reports dry-run mode.
+- Inspect the generated JSON plan for expected OU placement, group list, and
+  ticket reference.
+- Confirm the structured JSONL log contains no passwords, tenant secrets, or
+  private identifiers before preserving it as evidence.
+- Use -Apply only in an authorized lab context with the ActiveDirectory module
+  available and a temporary password provided as a SecureString.
+- If a test account was created, verify the expected user attributes and group
+  membership, then record the validation result in the change log.
+- Roll back only the exact lab objects created during the controlled test run.
 
 Handoff Notes:
-- Escalation: On failure, notify the owner and create an incident with logs attached.
-- Maintenance windows: Coordinate changes during scheduled maintenance with backups exported prior to changes.
+- The default workflow is review-only; write actions require the explicit
+  -Apply switch and PowerShell ShouldProcess confirmation support.
+- The script includes an existing-account check so repeated runs do not
+  overwrite an account with the same SamAccountName.
+- Preserve logs for review, but sanitize environment-specific values before
+  publishing them in portfolio material.
