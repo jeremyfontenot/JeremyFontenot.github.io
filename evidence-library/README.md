@@ -25,3 +25,11 @@ Each reviewer-facing artifact should make the following clear:
 ## Review Process
 
 Approved evidence should be added in small reviewed batches. After each batch, validate local links, proof references, file paths, draft-only language, and consistency with the public portfolio pages.
+
+## Folder Guidance
+
+- `evidence-library/` is for curated, public-facing evidence, diagrams, and supporting documentation that are intentionally referenced by the site.
+- `assets/` is for shared public branding, imagery, styles, and scripts used directly by the portfolio pages.
+- `artifacts/` is for local audits, validation exports, and transient screenshots created during maintenance work.
+- `artifacts/screenshots/` is local-only validation output and should not accumulate permanent production assets.
+- Generated preview images should remain ignored unless they are intentionally promoted to a published evidence asset.
