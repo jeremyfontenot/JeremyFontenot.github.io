@@ -29,6 +29,10 @@ jobs:
         shell: pwsh
         run: .\scripts\validation\validate-json.ps1
 
+      - name: Validate evidence metadata
+        shell: pwsh
+        run: .\scripts\validation\validate-evidence-metadata.ps1
+
       - name: Validate public content quality
         shell: pwsh
         run: .\scripts\validation\validate-content.ps1
