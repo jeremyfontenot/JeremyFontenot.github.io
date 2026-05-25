@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Microsoft 365 Lab Baseline Architecture Preview</title>
+  <desc id="desc">Enterprise-style diagram showing identity, endpoint management, home lab, automation, and validation connected to a Microsoft 365 lab baseline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#111c31"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#18294c"/>
+      <stop offset="100%" stop-color="#101a30"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#38bdf8"/>
+    </marker>
+    <style>
+      .title{font:700 30px 'Segoe UI',Arial,sans-serif; fill:#f8fafc}
+      .subtitle{font:400 14px 'Segoe UI',Arial,sans-serif; fill:#cbd5e1}
+      .boxTitle{font:700 18px 'Segoe UI',Arial,sans-serif; fill:#f8fafc}
+      .boxText{font:400 13px 'Segoe UI',Arial,sans-serif; fill:#dbeafe}
+      .stroke{stroke:#38bdf8; stroke-width:2.5}
+      .mutedStroke{stroke:#7dd3fc; stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect x="36" y="36" width="1128" height="688" rx="24" fill="rgba(15,23,42,0.5)" stroke="rgba(56,189,248,0.25)"/>
+  <text x="60" y="78" class="title">Microsoft 365 Lab Architecture Overview</text>
+  <text x="60" y="102" class="subtitle">Identity, endpoint management, automation, validation, and documentation in a single operational baseline.</text>
+
+  <rect x="466" y="160" width="268" height="92" rx="16" fill="url(#panel)" stroke="#a78bfa" class="stroke"/>
+  <text x="600" y="198" text-anchor="middle" class="boxTitle">Microsoft 365 Lab Baseline</text>
+  <text x="600" y="221" text-anchor="middle" class="boxText">Central review point for policies, controls, and evidence</text>
+
+  <g fill="none" class="stroke" marker-end="url(#arrow)">
+    <path d="M466 206H322"/>
+    <path d="M734 206H878"/>
+    <path d="M600 252V342"/>
+    <path d="M600 252C600 290 430 296 395 332"/>
+    <path d="M600 252C600 290 770 296 805 332"/>
+  </g>
+
+  <g>
+    <rect x="110" y="132" width="212" height="126" rx="14" fill="#172554" stroke="#60a5fa" class="stroke"/>
+    <text x="216" y="170" text-anchor="middle" class="boxTitle">Identity</text>
+    <text x="216" y="198" text-anchor="middle" class="boxText">Entra ID concepts</text>
+    <text x="216" y="219" text-anchor="middle" class="boxText">Conditional Access planning</text>
+  </g>
+
+  <g>
+    <rect x="878" y="132" width="212" height="126" rx="14" fill="#312e81" stroke="#a78bfa" class="stroke"/>
+    <text x="984" y="170" text-anchor="middle" class="boxTitle">Endpoint Management</text>
+    <text x="984" y="198" text-anchor="middle" class="boxText">Intune baseline concepts</text>
+    <text x="984" y="219" text-anchor="middle" class="boxText">Compliance and deployment review</text>
+  </g>
+
+  <g>
+    <rect x="110" y="392" width="236" height="132" rx="14" fill="#123524" stroke="#22c55e" class="stroke"/>
+    <text x="228" y="430" text-anchor="middle" class="boxTitle">Automation</text>
+    <text x="228" y="458" text-anchor="middle" class="boxText">PowerShell and repeatable checks</text>
+    <text x="228" y="479" text-anchor="middle" class="boxText">Safe evidence collection</text>
+  </g>
+
+  <g>
+    <rect x="854" y="392" width="236" height="132" rx="14" fill="#3b1f2b" stroke="#f472b6" class="stroke"/>
+    <text x="972" y="430" text-anchor="middle" class="boxTitle">Validation</text>
+    <text x="972" y="458" text-anchor="middle" class="boxText">Checklists, reports, review notes</text>
+    <text x="972" y="479" text-anchor="middle" class="boxText">Migration-ready documentation</text>
+  </g>
+
+  <g>
+    <rect x="446" y="568" width="308" height="82" rx="14" fill="#0f172a" stroke="#38bdf8" class="stroke"/>
+    <text x="600" y="603" text-anchor="middle" class="boxTitle">Portfolio Evidence Package</text>
+    <text x="600" y="627" text-anchor="middle" class="boxText">Source docs, scripts, diagrams, validation notes</text>
+  </g>
+
+  <g fill="none" class="stroke" marker-end="url(#arrow)">
+    <path d="M216 258V314"/>
+    <path d="M984 258V314"/>
+    <path d="M228 392C264 356 390 344 466 290"/>
+    <path d="M972 392C936 356 810 344 734 290"/>
+    <path d="M228 524C292 568 418 590 446 603"/>
+    <path d="M972 524C908 568 782 590 754 603"/>
+  </g>
+
+  <g stroke="#1d4ed8" stroke-width="1" opacity="0.18">
+    <path d="M72 122H1128"/>
+    <path d="M72 352H1128"/>
+  </g>
+</svg>

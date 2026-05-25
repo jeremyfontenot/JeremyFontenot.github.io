@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">pfSense Network Segmentation Preview</title>
+  <desc id="desc">Enterprise topology diagram showing WAN, pfSense perimeter, VLANs, services, VPN access, and administrative validation zones.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#111c31"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#38bdf8"/>
+    </marker>
+    <style>
+      .title{font:700 30px 'Segoe UI',Arial,sans-serif; fill:#f8fafc}
+      .subtitle{font:400 14px 'Segoe UI',Arial,sans-serif; fill:#cbd5e1}
+      .boxTitle{font:700 18px 'Segoe UI',Arial,sans-serif; fill:#f8fafc}
+      .boxText{font:400 13px 'Segoe UI',Arial,sans-serif; fill:#dbeafe}
+      .stroke{stroke:#38bdf8; stroke-width:2.5}
+      .thin{stroke:#7dd3fc; stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect x="36" y="36" width="1128" height="688" rx="24" fill="rgba(15,23,42,0.5)" stroke="rgba(56,189,248,0.25)"/>
+  <text x="60" y="78" class="title">Infrastructure and Network Segmentation</text>
+  <text x="60" y="102" class="subtitle">Layered perimeter, service, and access boundaries for a clean review-ready lab topology.</text>
+
+  <g>
+    <rect x="78" y="176" width="160" height="116" rx="14" fill="#172554" stroke="#60a5fa" class="stroke"/>
+    <text x="158" y="214" text-anchor="middle" class="boxTitle">WAN</text>
+    <text x="158" y="240" text-anchor="middle" class="boxText">Internet edge</text>
+  </g>
+
+  <g>
+    <rect x="318" y="150" width="256" height="168" rx="16" fill="#111827" stroke="#38bdf8" class="stroke"/>
+    <text x="446" y="190" text-anchor="middle" class="boxTitle">pfSense Perimeter</text>
+    <text x="446" y="218" text-anchor="middle" class="boxText">Routing, firewall policy, NAT, and logging</text>
+    <text x="446" y="243" text-anchor="middle" class="boxText">Default-deny boundaries and review checkpoints</text>
+  </g>
+
+  <g>
+    <rect x="664" y="128" width="210" height="88" rx="14" fill="#312e81" stroke="#a78bfa" class="stroke"/>
+    <text x="769" y="163" text-anchor="middle" class="boxTitle">VLAN Boundaries</text>
+    <text x="769" y="187" text-anchor="middle" class="boxText">Policy segmentation</text>
+  </g>
+
+  <g>
+    <rect x="904" y="128" width="210" height="88" rx="14" fill="#123524" stroke="#22c55e" class="stroke"/>
+    <text x="1009" y="163" text-anchor="middle" class="boxTitle">Services</text>
+    <text x="1009" y="187" text-anchor="middle" class="boxText">DNS, DHCP, DNS zones</text>
+  </g>
+
+  <g>
+    <rect x="664" y="274" width="210" height="88" rx="14" fill="#1e293b" stroke="#38bdf8" class="stroke"/>
+    <text x="769" y="309" text-anchor="middle" class="boxTitle">VPN Access</text>
+    <text x="769" y="333" text-anchor="middle" class="boxText">Remote admin and validation</text>
+  </g>
+
+  <g>
+    <rect x="904" y="274" width="210" height="88" rx="14" fill="#3b1f2b" stroke="#f472b6" class="stroke"/>
+    <text x="1009" y="309" text-anchor="middle" class="boxTitle">Admin Review</text>
+    <text x="1009" y="333" text-anchor="middle" class="boxText">Topology notes and runbooks</text>
+  </g>
+
+  <g>
+    <rect x="430" y="504" width="340" height="92" rx="14" fill="#0f172a" stroke="#38bdf8" class="stroke"/>
+    <text x="600" y="541" text-anchor="middle" class="boxTitle">Validation and Documentation</text>
+    <text x="600" y="566" text-anchor="middle" class="boxText">Evidence links, runbooks, and topology checks</text>
+  </g>
+
+  <g fill="none" class="stroke" marker-end="url(#arrow)">
+    <path d="M238 234H318"/>
+    <path d="M574 234H664"/>
+    <path d="M874 172H904"/>
+    <path d="M874 318H904"/>
+    <path d="M446 318C446 392 540 420 600 504"/>
+    <path d="M769 362C742 410 676 444 634 504"/>
+    <path d="M1009 362C980 408 900 444 668 504"/>
+    <path d="M158 292C198 354 300 430 430 522"/>
+  </g>
+
+  <g stroke="#1d4ed8" stroke-width="1" opacity="0.18">
+    <path d="M72 118H1128"/>
+    <path d="M72 390H1128"/>
+  </g>
+</svg>
