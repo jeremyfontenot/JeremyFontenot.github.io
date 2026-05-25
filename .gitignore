@@ -6,15 +6,36 @@ proof-staging/
 sorted-documents/
 legacy-site-backup/
 
+# Local tooling, caches, and temporary output
+node_modules/
+.tmp-*
+test-output/
+playwright-report/
+screenshots/temp/
+**/.cache/
+**/cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
 # Local OS/editor clutter
 Thumbs.db
 .DS_Store
+.idea/
+.vscode-test/
 *.tmp
 *.temp
 *.bak
 *.orig
 *.swp
 *.swo
+
+# Generated preview and screenshot artifacts
+artifacts/screenshots/*.png
+artifacts/*.png
+evidence-library/architecture-diagrams/*.png
 
 # SEO remediation artifacts
 ahrefs_verification_report.json
@@ -34,7 +55,3 @@ artifacts/generated-image-skipped.csv
 artifacts/generated-image-status.csv
 artifacts/site-audit.json
 artifacts/core-page-diff-review.txt
-Code
-legacy-site-backup/
-Code
-legacy-site-backup/
