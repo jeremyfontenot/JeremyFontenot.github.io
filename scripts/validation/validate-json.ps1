@@ -1,26 +1,35 @@
-Write-Host "Validating JSON files..."
+Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
 
-$JsonFiles = Get-ChildItem -Path . -Recurse -Filter "*.json" -File | Where-Object {
-  $_.DirectoryName -notmatch "node_modules"
+Write-Host 'Validating JSON files...'
+
+$JsonFiles = Get-ChildItem -Path . -Recurse -Filter '*.json' -File | Where-Object {
+  $_.FullName -notmatch '[\\/]node_modules[\\/]'
 }
 
-$Failures = @()
+if (-not $JsonFiles) {
+  Write-Host 'No JSON files found.' -ForegroundColor Yellow
+  exit 0
+}
+
+$Failures = [System.Collections.Generic.List[string]]::new()
 
 foreach ($File in $JsonFiles) {
   try {
-    Get-Content $File.FullName -Raw | ConvertFrom-Json -AsHashtable | Out-Null
+    Get-Content -Path $File.FullName -Raw -ErrorAction Stop | ConvertFrom-Json -AsHashtable -ErrorAction Stop | Out-Null
     Write-Host "Valid: $($File.FullName)"
   } catch {
-    $Failures += $File.FullName
-    Write-Host "Invalid: $($File.FullName)" -ForegroundColor Red
+    $Failures.Add($File.FullName)
+    Write-Host "Invalid JSON: $($File.FullName)" -ForegroundColor Red
+    Write-Host "  $($_.Exception.Message)" -ForegroundColor Red
   }
 }
 
 if ($Failures.Count -gt 0) {
-  Write-Host ""
-  Write-Host "JSON validation failed." -ForegroundColor Red
+  Write-Host ''
+  Write-Host ("JSON validation failed for {0} file(s)." -f $Failures.Count) -ForegroundColor Red
   exit 1
 }
 
-Write-Host ""
-Write-Host "JSON validation passed." -ForegroundColor Green
+Write-Host ''
+Write-Host 'JSON validation passed.' -ForegroundColor Green

@@ -1,42 +1,50 @@
-Write-Host "Validating internal links..."
+Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
 
-$HtmlFiles = Get-ChildItem -Path . -Recurse -Filter "*.html" -File | Where-Object {
-  $_.DirectoryName -notmatch "node_modules"
+Write-Host 'Validating internal links...'
+
+$HtmlFiles = Get-ChildItem -Path . -Recurse -Filter '*.html' -File | Where-Object {
+  $_.FullName -notmatch '[\\/]node_modules[\\/]'
 }
 
-$Failures = @()
+if (-not $HtmlFiles) {
+  Write-Host 'No HTML files found for link validation.' -ForegroundColor Red
+  exit 1
+}
+
+$Failures = [System.Collections.Generic.List[string]]::new()
 
 foreach ($File in $HtmlFiles) {
-
   $Matches = Select-String -Path $File.FullName -Pattern '(?:href|src)="([^"]+)"' -AllMatches
 
   foreach ($Match in $Matches.Matches) {
-
-    $RelativePath = ($Match.Groups[1].Value -split "\?")[0]
+    $RelativePath = ($Match.Groups[1].Value -split '\?')[0]
 
     if (
-      $RelativePath.StartsWith("http") -or
-      $RelativePath.StartsWith("#") -or
-      $RelativePath.StartsWith("mailto:") -or
-      $RelativePath.StartsWith("tel:")
+      [string]::IsNullOrWhiteSpace($RelativePath) -or
+      $RelativePath.StartsWith('http') -or
+      $RelativePath.StartsWith('#') -or
+      $RelativePath.StartsWith('mailto:') -or
+      $RelativePath.StartsWith('tel:') -or
+      $RelativePath.StartsWith('//')
     ) {
       continue
     }
 
-    $ResolvedPath = Join-Path $File.DirectoryName $RelativePath
+    $ResolvedPath = Join-Path -Path $File.DirectoryName -ChildPath $RelativePath
 
-    if (-not (Test-Path $ResolvedPath)) {
-      $Failures += $ResolvedPath
-      Write-Host "Missing: $ResolvedPath" -ForegroundColor Red
+    if (-not (Test-Path -Path $ResolvedPath)) {
+      $Failures.Add("$($File.FullName) => $RelativePath")
+      Write-Host "Missing reference in $($File.FullName): $RelativePath" -ForegroundColor Red
     }
   }
 }
 
 if ($Failures.Count -gt 0) {
-  Write-Host ""
-  Write-Host "Link validation failed." -ForegroundColor Red
+  Write-Host ''
+  Write-Host ("Link validation failed for {0} reference(s)." -f $Failures.Count) -ForegroundColor Red
   exit 1
 }
 
-Write-Host ""
-Write-Host "Link validation passed." -ForegroundColor Green
+Write-Host ''
+Write-Host 'Link validation passed.' -ForegroundColor Green

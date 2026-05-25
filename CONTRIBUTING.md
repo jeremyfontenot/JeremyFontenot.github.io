@@ -18,6 +18,9 @@ git diff --check
 For JavaScript:
 node --check .\path\to\file.js
 
+For PowerShell:
+pwsh -NoProfile -File .\scripts\validation\validate-powershell.ps1
+
 ## Commit Standard
 
 Use clear commit messages.
