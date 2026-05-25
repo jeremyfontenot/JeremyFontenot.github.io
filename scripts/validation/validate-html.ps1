@@ -1,15 +1,39 @@
 Write-Host "Validating HTML files..."
 
-$HtmlFiles = Get-ChildItem -Path . -Filter "*.html" -File
+$HtmlFiles = Get-ChildItem -Path . -Recurse -Filter "*.html" -File | Where-Object {
+  $_.DirectoryName -notmatch "node_modules"
+}
 
 if (-not $HtmlFiles) {
-  Write-Host "No root HTML files found." -ForegroundColor Yellow
+  Write-Host "No HTML files found." -ForegroundColor Red
   exit 1
 }
 
-$HtmlFiles | ForEach-Object {
-  Write-Host "Found: $($_.Name)"
+$Failures = @()
+
+foreach ($File in $HtmlFiles) {
+  $Content = Get-Content $File.FullName -Raw
+
+  if ($Content -notmatch "<html") {
+    $Failures += $File.FullName
+    Write-Host "Missing html tag: $($File.FullName)" -ForegroundColor Red
+    continue
+  }
+
+  if ($Content -notmatch "</html>") {
+    $Failures += $File.FullName
+    Write-Host "Missing closing html tag: $($File.FullName)" -ForegroundColor Red
+    continue
+  }
+
+  Write-Host "Valid: $($File.FullName)"
+}
+
+if ($Failures.Count -gt 0) {
+  Write-Host ""
+  Write-Host "HTML validation failed." -ForegroundColor Red
+  exit 1
 }
 
 Write-Host ""
-Write-Host "HTML file inventory validation passed." -ForegroundColor Green
+Write-Host "HTML validation passed." -ForegroundColor Green
