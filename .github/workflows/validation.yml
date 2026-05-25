@@ -29,6 +29,10 @@ jobs:
         shell: pwsh
         run: .\scripts\validation\validate-json.ps1
 
+      - name: Validate public content quality
+        shell: pwsh
+        run: .\scripts\validation\validate-content.ps1
+
       - name: Validate HTML files
         shell: pwsh
         run: .\scripts\validation\validate-html.ps1
