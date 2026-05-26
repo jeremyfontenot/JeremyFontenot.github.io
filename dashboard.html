@@ -1,42 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Repository Health Dashboard | Jeremy Fontenot</title>
   <meta name="description" content="Repository health dashboard showing validation coverage, Lighthouse scores, evidence integrity, and governance status.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jeremyfontenot.online/dashboard.html">
+  <meta property="og:site_name" content="Jeremy Fontenot">
   <meta property="og:title" content="Repository Health Dashboard | Jeremy Fontenot">
   <meta property="og:description" content="Governance dashboard for CI/CD validation, evidence integrity, Lighthouse scores, and repository health.">
-  <link rel="stylesheet" href="./assets/css/site.css">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeremyfontenot.online/dashboard.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Repository Health Dashboard | Jeremy Fontenot">
+  <meta name="twitter:description" content="Operational dashboard for repository validation and governance.">
+  <link rel="icon" href="./assets/logos/favicon_64x64.png">
+  <link rel="stylesheet" href="./assets/css/site.css?v=dashboard-20260525">
+  <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
-  <main class="section">
-    <div class="container">
-      <p class="eyebrow">Repository Governance</p>
-      <h1>Repository Health Dashboard</h1>
-      <p class="lead">Operational view of validation coverage, evidence integrity, Lighthouse quality scores, and CI/CD governance.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <div class="nav-links" id="primary-menu">
+        <a href="./index.html">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./proof.html">Proof</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-      <section class="proof-grid">
-        <article class="proof-card"><h2>Validation Scripts</h2><p class="metric">15</p><p>Automated governance checks.</p></article>
-        <article class="proof-card"><h2>Lighthouse Reports</h2><p class="metric">11</p><p>Performance and quality audits.</p></article>
-        <article class="proof-card"><h2>Evidence Entries</h2><p class="metric">29</p><p>Indexed proof artifacts.</p></article>
-        <article class="proof-card"><h2>Integrity Hashes</h2><p class="metric">70</p><p>SHA-256 evidence fingerprints.</p></article>
-      </section>
+  <main id="main" class="page">
+    <section class="page-hero" aria-labelledby="dashboard-title">
+      <div class="page-hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Repository Governance</p>
+          <h1 id="dashboard-title">Repository health, validation, and evidence integrity at a glance.</h1>
+          <p class="lead">A live governance surface summarizing CI/CD validation coverage, Lighthouse quality signals, evidence fingerprints, and repository health controls.</p>
+          <nav class="proof-jump" aria-label="Dashboard sections">
+            <a href="#metrics">Metrics</a>
+            <a href="#coverage">Coverage</a>
+            <a href="#lighthouse">Lighthouse</a>
+            <a href="#integrity">Integrity</a>
+          </nav>
+        </div>
+        <div class="integrity-panel" role="group" aria-label="Repository health summary" data-reveal>
+          <div class="console-top"><span>governance model</span><span>active</span></div>
+          <div class="console-body">
+            <div class="signal"><span class="signal-code">CI</span><p><strong>Validation gates</strong><span>Automated checks run through GitHub Actions.</span></p></div>
+            <div class="signal"><span class="signal-code">SHA</span><p><strong>Evidence integrity</strong><span>Proof artifacts are tracked with SHA-256 fingerprints.</span></p></div>
+            <div class="signal"><span class="signal-code">LH</span><p><strong>Quality signals</strong><span>Lighthouse reports track performance, SEO, and accessibility.</span></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="proof-section">
-        <h2>Governance Coverage</h2>
-        <ul>
-          <li>Accessibility validation</li>
-          <li>Lighthouse score enforcement</li>
-          <li>SEO regression detection</li>
-          <li>Screenshot validation</li>
-          <li>Evidence hash integrity validation</li>
-          <li>Evidence claim and metadata validation</li>
-          <li>HTML, JSON, PowerShell, sitemap, and link validation</li>
-        </ul>
-      </section>
-    </div>
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <section id="metrics" class="proof-section">
+      <div class="section-heading">
+        <p class="eyebrow">Operational Metrics</p>
+        <h2>Repository health snapshot</h2>
+        <p>Current governance counts generated from validation scripts, Lighthouse reports, and evidence inventories.</p>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card"><div class="proof-card-top"><span class="proof-type-icon">15</span><span class="proof-filetype">Checks</span></div><h3>Validation Scripts</h3><p class="proof-summary">Automated governance checks covering code, content, metadata, evidence, and deployment quality.</p></article>
+        <article class="proof-card"><div class="proof-card-top"><span class="proof-type-icon">11</span><span class="proof-filetype">Reports</span></div><h3>Lighthouse Reports</h3><p class="proof-summary">Performance, accessibility, best-practices, and SEO quality snapshots.</p></article>
+        <article class="proof-card"><div class="proof-card-top"><span class="proof-type-icon">29</span><span class="proof-filetype">Artifacts</span></div><h3>Evidence Entries</h3><p class="proof-summary">Indexed proof artifacts mapped to projects, skills, and review categories.</p></article>
+        <article class="proof-card"><div class="proof-card-top"><span class="proof-type-icon">70</span><span class="proof-filetype">Hashes</span></div><h3>Integrity Fingerprints</h3><p class="proof-summary">SHA-256 evidence fingerprints used for integrity and drift detection.</p></article>
+      </div>
+    </section>
+
+    <section id="coverage" class="proof-section">
+      <div class="section-heading">
+        <p class="eyebrow">Governance Coverage</p>
+        <h2>Validation domains currently enforced</h2>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card"><h3>Accessibility</h3><p class="proof-summary">Checks page titles, language attributes, image alternatives, and basic accessible controls.</p></article>
+        <article class="proof-card"><h3>SEO</h3><p class="proof-summary">Validates titles, descriptions, canonicals, Open Graph metadata, sitemap, and crawl readiness.</p></article>
+        <article class="proof-card"><h3>Evidence Governance</h3><p class="proof-summary">Validates evidence existence, claim alignment, metadata consistency, and hash integrity.</p></article>
+        <article class="proof-card"><h3>Visual Validation</h3><p class="proof-summary">Captures screenshots for key pages to support visual regression review.</p></article>
+      </div>
+    </section>
   </main>
 </body>
 </html>
