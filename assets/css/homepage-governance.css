@@ -174,22 +174,7 @@
 }
 
 
-.governance-platform-section > .section-heading {
-  display: grid;
-  grid-template-columns: minmax(0, .95fr) minmax(360px, .7fr);
-  gap: 3rem;
-  align-items: center;
-}
-
-.governance-platform-section .section-heading > p,
-.governance-platform-section .section-heading > h2,
-.governance-platform-section .section-heading > .metric-live {
-  grid-column: 1;
-}
-
 .governance-console {
-  grid-column: 2;
-  grid-row: 1 / span 4;
   background:
     linear-gradient(180deg, rgba(15,23,42,.92), rgba(15,23,42,.72)),
     radial-gradient(circle at top right, rgba(56,189,248,.18), transparent 45%);
