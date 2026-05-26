@@ -57,6 +57,10 @@ jobs:
         shell: pwsh
         run: .\scripts\lighthouse\validate-lighthouse-scores.ps1
 
+      - name: Validate SEO metadata
+        shell: pwsh
+        run: .\scripts\validation\validate-seo.ps1
+
       - name: Validate sitemap
         shell: pwsh
         run: .\scripts\validation\validate-sitemap.ps1
