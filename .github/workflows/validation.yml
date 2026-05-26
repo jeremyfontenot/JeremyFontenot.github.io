@@ -21,6 +21,10 @@ jobs:
         shell: pwsh
         run: .\scripts\validation\validate-powershell.ps1
 
+      - name: Generate repository health dashboard
+        shell: pwsh
+        run: .\scripts\audits\generate-repository-health-dashboard.ps1
+
       - name: Validate repository structure
         shell: pwsh
         run: .\scripts\validation\validate-repo-structure.ps1
