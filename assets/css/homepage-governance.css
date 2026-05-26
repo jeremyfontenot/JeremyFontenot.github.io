@@ -216,18 +216,6 @@
   min-width: 58px;
 }
 
-@media (max-width: 1050px) {
-  .governance-platform-section > .section-heading {
-    grid-template-columns: 1fr;
-  }
-
-  .governance-console {
-    grid-column: 1;
-    grid-row: auto;
-  }
-}
-
-
 .governance-platform-section {
   display: grid;
   grid-template-columns: minmax(0, .9fr) minmax(360px, .72fr);
@@ -372,4 +360,3 @@
     0 18px 46px rgba(14,165,233,.24),
     0 0 24px rgba(217,70,239,.22);
 }
-
