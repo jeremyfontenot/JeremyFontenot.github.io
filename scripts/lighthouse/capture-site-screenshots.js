@@ -19,7 +19,7 @@ fs.mkdirSync(outputDir, { recursive: true });
 
   for (const target of pages) {
     console.log(`Capturing ${target.name}: ${target.url}`);
-    await page.goto(target.url, { waitUntil: "networkidle" });
+    await page.goto(target.url, { waitUntil: "load", timeout: 60000 });
     await page.screenshot({
       path: path.join(outputDir, `${target.name}.png`),
       fullPage: true
