@@ -175,22 +175,7 @@
 }
 
 
-.governance-platform-section > .section-heading {
-  display: grid;
-  grid-template-columns: minmax(0, .95fr) minmax(360px, .7fr);
-  gap: 3rem;
-  align-items: center;
-}
-
-.governance-platform-section .section-heading > p,
-.governance-platform-section .section-heading > h2,
-.governance-platform-section .section-heading > .metric-live {
-  grid-column: 1;
-}
-
 .governance-console {
-  grid-column: 2;
-  grid-row: 1 / span 4;
   background:
     linear-gradient(180deg, rgba(15,23,42,.92), rgba(15,23,42,.72)),
     radial-gradient(circle at top right, rgba(56,189,248,.18), transparent 45%);
@@ -231,18 +216,6 @@
 .governance-console .signal-code {
   min-width: 58px;
 }
-
-@media (max-width: 1050px) {
-  .governance-platform-section > .section-heading {
-    grid-template-columns: 1fr;
-  }
-
-  .governance-console {
-    grid-column: 1;
-    grid-row: auto;
-  }
-}
-
 
 .governance-platform-section {
   display: grid;
@@ -316,7 +289,7 @@
 }
 
 
-.home .section-telemetry,
+.home-page .section-telemetry,
 .governance-platform-section {
   border-top: 1px solid rgba(217, 70, 239, .18);
 }
@@ -404,4 +377,3 @@
     0 18px 46px rgba(14,165,233,.24),
     0 0 24px rgba(217,70,239,.22);
 }
-
