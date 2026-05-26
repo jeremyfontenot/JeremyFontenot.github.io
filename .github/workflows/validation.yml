@@ -53,6 +53,10 @@ jobs:
         shell: pwsh
         run: .\scripts\validation\validate-html.ps1
 
+      - name: Validate screenshots
+        shell: pwsh
+        run: .\scripts\validation\validate-screenshots.ps1
+
       - name: Validate Lighthouse scores
         shell: pwsh
         run: .\scripts\lighthouse\validate-lighthouse-scores.ps1
