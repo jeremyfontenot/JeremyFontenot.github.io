@@ -5,6 +5,11 @@ Write-Host "Validating screenshot capture..."
 
 node .\scripts\lighthouse\capture-site-screenshots.js
 
+if ($LASTEXITCODE -ne 0) {
+  Write-Host "Screenshot capture failed." -ForegroundColor Red
+  exit 1
+}
+
 $RequiredScreenshots = @(
   ".\artifacts\screenshots\current\home.png",
   ".\artifacts\screenshots\current\projects.png",

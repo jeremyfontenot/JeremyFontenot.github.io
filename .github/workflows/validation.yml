@@ -53,6 +53,10 @@ jobs:
         shell: pwsh
         run: .\scripts\validation\validate-html.ps1
 
+      - name: Install screenshot dependencies
+        shell: pwsh
+        run: npm install playwright
+
       - name: Validate screenshots
         shell: pwsh
         run: .\scripts\validation\validate-screenshots.ps1
