@@ -41,6 +41,10 @@ jobs:
         shell: pwsh
         run: .\scripts\validation\validate-evidence-metadata.ps1
 
+      - name: Validate accessibility
+        shell: pwsh
+        run: .\scripts\validation\validate-accessibility.ps1
+
       - name: Validate public content quality
         shell: pwsh
         run: .\scripts\validation\validate-content.ps1
