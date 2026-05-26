@@ -216,12 +216,6 @@
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
   {
-    "path": "evidence-library\\projects\\powershell-automation\\operational-handoff-2026.txt",
-    "sha256": "75FF9852121F723B87A1C963A14435649870910C99F78E8EC9E18C134A3CBB1C",
-    "size": 1755,
-    "lastModified": "2026-05-25T02:34:09.4499720Z"
-  },
-  {
     "path": "evidence-library\\projects\\powershell-automation\\provisioning-change-log-2026.md",
     "sha256": "B2953394032CE961D0B9D14AFF5049D22818F0F7DFCFF0F12CB585F0C68B7EDB",
     "size": 2141,
@@ -298,12 +292,6 @@
     "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\scripts\\powershell-automation-provisioning-script-v1.ps1",
-    "sha256": "FF0CFE1538926A71158B4391CA26F32F02EDE0C2A8449854376D08896089F7D7",
-    "size": 5376,
-    "lastModified": "2026-05-25T02:34:09.4499720Z"
   },
   {
     "path": "evidence-library\\skills\\README.md",
