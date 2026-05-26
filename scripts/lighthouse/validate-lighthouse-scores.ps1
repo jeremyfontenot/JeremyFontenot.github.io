@@ -10,7 +10,12 @@ if (-not $ReportFiles) {
   exit 0
 }
 
-$MinimumScore = 0.65
+$MinimumScores = @{
+  "performance" = 0.65
+  "accessibility" = 0.90
+  "best-practices" = 0.70
+  "seo" = 0.90
+}
 $Failures = @()
 
 foreach ($File in $ReportFiles) {
@@ -23,7 +28,7 @@ foreach ($File in $ReportFiles) {
       $Score = [double]$Report.categories.$Category.score
       Write-Host "$($File.Name) [$Category] score: $Score"
 
-      if ($Score -lt $MinimumScore) {
+      if ($Score -lt $MinimumScores[$Category]) {
         $Failures += "$($File.Name) [$Category] below threshold: $Score"
         Write-Host "Below threshold: $($File.Name) [$Category] = $Score" -ForegroundColor Red
       }
