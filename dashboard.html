@@ -17,6 +17,17 @@
   <meta name="twitter:description" content="Operational dashboard for repository validation and governance.">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
   <link rel="stylesheet" href="./assets/css/site.css?v=dashboard-20260525">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jeremyfontenot.online/dashboard.html#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jeremyfontenot.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Dashboard", "item": "https://jeremyfontenot.online/dashboard.html" }
+    ]
+  }
+  </script>
   <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
@@ -50,7 +61,7 @@
             <a href="#integrity">Integrity</a>
           </nav>
         </div>
-        <div class="integrity-panel" role="group" aria-label="Repository health summary" data-reveal role="status" aria-live="polite">
+        <div class="integrity-panel" role="status" aria-label="Repository health summary" data-reveal aria-live="polite">
           <div class="console-top"><span>governance model</span><span>active</span></div>
           <div class="console-body">
             <div class="signal"><span class="signal-code">CI</span><p><strong>Validation gates</strong><span>Automated checks run through GitHub Actions.</span></p></div>
@@ -124,5 +135,3 @@
 
 </body>
 </html>
-
-

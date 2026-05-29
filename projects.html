@@ -19,6 +19,17 @@
   <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
   <link rel="stylesheet" href="./assets/css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jeremyfontenot.online/projects.html#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jeremyfontenot.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://jeremyfontenot.online/projects.html" }
+    ]
+  }
+  </script>
   <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
@@ -87,6 +98,46 @@
         </ul>
       </div>
 
+      <section class="section" aria-labelledby="case-study-title">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Case Study Paths</p>
+          <h2 id="case-study-title">Deeper recruiter review without duplicate project listings.</h2>
+          <p>These pages expand existing project summaries into case-study format and point back to this project library and the proof hub.</p>
+        </div>
+        <div class="case-study-grid">
+          <article class="case-study-card" data-reveal>
+            <span class="badge">Microsoft 365</span>
+            <h3>Microsoft 365 Lab Baseline</h3>
+            <p>Identity, endpoint policy, Conditional Access intent, automation context, and validation planning.</p>
+            <a class="button" href="./case-studies/microsoft-365-lab-baseline.html">Open Case Study</a>
+          </article>
+          <article class="case-study-card" data-reveal>
+            <span class="badge">Networking</span>
+            <h3>pfSense Network Segmentation</h3>
+            <p>VLAN boundaries, firewall policy intent, DNS/DHCP placement, VPN access review, and validation methodology.</p>
+            <a class="button" href="./case-studies/pfsense-network-segmentation.html">Open Case Study</a>
+          </article>
+          <article class="case-study-card" data-reveal>
+            <span class="badge">Home Lab</span>
+            <h3>Proxmox Home Lab</h3>
+            <p>Virtualization context, lab topology, infrastructure boundaries, and preserved portfolio evidence.</p>
+            <a class="button" href="./case-studies/proxmox-home-lab.html">Open Case Study</a>
+          </article>
+          <article class="case-study-card" data-reveal>
+            <span class="badge">Identity</span>
+            <h3>Active Directory Infrastructure</h3>
+            <p>OU planning, GPO scope review, migration awareness, rollback preparation, and validation criteria.</p>
+            <a class="button" href="./case-studies/active-directory-infrastructure.html">Open Case Study</a>
+          </article>
+          <article class="case-study-card" data-reveal>
+            <span class="badge">Automation</span>
+            <h3>PowerShell Automation</h3>
+            <p>Provisioning logic, dry-run review, logging, rollback context, and operational handoff notes.</p>
+            <a class="button" href="./case-studies/powershell-automation.html">Open Case Study</a>
+          </article>
+        </div>
+      </section>
+
       <div class="section-divider" aria-hidden="true"></div>
 
       <section class="featured-projects" aria-labelledby="featured-projects-title">
@@ -115,6 +166,7 @@
                 <ul class="project-links">
                   <li><a href="./evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml"><span class="link-mark">Proof</span> Conditional Access baseline</a></li>
                   <li><a href="./evidence-library/architecture-diagrams/m365-lab-baseline-preview.svg"><span class="link-mark">Proof</span> Architecture overview</a></li>
+                  <li><a href="./case-studies/microsoft-365-lab-baseline.html"><span class="link-mark">Case</span> Recruiter case study</a></li>
                 </ul>
               </div>
             </div>
@@ -136,8 +188,10 @@
               <div class="proof-section">
                 <h4 class="proof-label">Related Evidence</h4>
                 <ul class="project-links">
-                  <li><a href="./evidence-library/architecture-diagrams/pfsense-network-segmentation-preview.svg"><span class="link-mark">Proof</span> Segmentation diagram</a></li>
+                  <li><a href="./evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md"><span class="link-mark">Proof</span> Segmentation write-up</a></li>
+                  <li><a href="./evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg"><span class="link-mark">Proof</span> Segmentation diagram</a></li>
                   <li><a href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md"><span class="link-mark">Proof</span> VLAN walkthrough</a></li>
+                  <li><a href="./case-studies/pfsense-network-segmentation.html"><span class="link-mark">Case</span> Recruiter case study</a></li>
                 </ul>
               </div>
             </div>
@@ -189,6 +243,7 @@
               <li><a href="./evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1?v=provisioning-review-20260524"><span class="link-mark">Proof</span> Provisioning script</a></li>
               <li><a href="./evidence-library/projects/powershell-automation/provisioning-change-log-2026.md"><span class="link-mark">Proof</span> Change record</a></li>
               <li><a href="./evidence-library/projects/powershell-automation/operational-handoff-2026.txt"><span class="link-mark">Proof</span> Operational handoff</a></li>
+              <li><a href="./case-studies/powershell-automation.html"><span class="link-mark">Case</span> Recruiter case study</a></li>
             </ul>
           </div>
         </article>
@@ -244,9 +299,11 @@
         <a href="./contact.html">Contact</a>
       </div>
       <div class="footer-links">
-        <h2 class="footer-heading">Evidence</h2>
+        <h2 class="footer-heading">Case Studies</h2>
+        <a href="./case-studies/microsoft-365-lab-baseline.html">Microsoft 365 lab</a>
+        <a href="./case-studies/pfsense-network-segmentation.html">pfSense segmentation</a>
+        <a href="./case-studies/powershell-automation.html">PowerShell automation</a>
         <a href="./evidence-library/index.html">Evidence library</a>
-        <a href="./evidence-library/README.md">Evidence README</a>
       </div>
     </div>
     <p class="footer-cred">Built with verifiable artifacts — no simulated labs.</p>
@@ -254,4 +311,3 @@
   </footer>
 </body>
 </html>
-

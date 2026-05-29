@@ -18,6 +18,17 @@
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
   <link rel="preload" as="image" href="./evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">
   <link rel="stylesheet" href="./assets/css/site.css?v=proof-layout-20260524">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://jeremyfontenot.online/proof.html#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jeremyfontenot.online/" },
+      { "@type": "ListItem", "position": 2, "name": "Proof Library", "item": "https://jeremyfontenot.online/proof.html" }
+    ]
+  }
+  </script>
   <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
@@ -104,6 +115,8 @@
               <h3>pfSense Network Segmentation Diagram</h3>
               <p class="proof-summary">Segmentation, VLAN mapping, and firewall zone relationships with links to VLAN walkthroughs and runbooks.</p>
               <div class="proof-meta-row">
+                <a class="button primary" href="./evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md">Open Write-up</a>
+                <a class="button" href="./evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">Open Diagram</a>
                 <a class="button" href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">VLAN Walkthrough</a>
               </div>
             </div>
@@ -153,6 +166,7 @@
           <h3>pfSense Network Segmentation Diagram</h3>
           <p class="proof-summary">Documents VLAN, firewall-zone, NAT, DMZ, and management-boundary logic for pfSense-oriented network segmentation review.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>SVG</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Network</dd></div></dl>
+          <a class="button" href="./evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg">Review Evidence</a>
         </article>
         <article class="proof-evidence-card" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">SVG</span><span class="proof-filetype">Identity</span></div>
@@ -293,6 +307,13 @@
       </div>
       <div class="proof-evidence-grid">
         <article class="proof-evidence-card featured-proof" data-reveal>
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">pfSense</span></div>
+          <h3>pfSense Network Segmentation Write-up</h3>
+          <p class="proof-summary">Architecture documentation for segmentation goals, firewall policy intent, management isolation, troubleshooting paths, and validation evidence still required.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Architecture</dd></div></dl>
+          <a class="button primary" href="./evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md">Review Evidence</a>
+        </article>
+        <article class="proof-evidence-card featured-proof" data-reveal>
           <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">VLANs</span></div>
           <h3>VLAN Architecture Walkthrough</h3>
           <p class="proof-summary">Documents VLAN purpose, trunk/access behavior, pfSense routing boundaries, Proxmox bridge review, and troubleshooting sequence.</p>
@@ -305,6 +326,13 @@
           <p class="proof-summary">Runbook for DNS/DHCP health checks, lease review, reservation validation, service restart sequencing, backup, recovery, and escalation notes.</p>
           <dl class="proof-meta"><div><dt>Format</dt><dd>Text</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Runbook</dd></div></dl>
           <a class="button" href="./evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">Review Evidence</a>
+        </article>
+        <article class="proof-evidence-card" data-reveal>
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">CASE</span><span class="proof-filetype">Networking</span></div>
+          <h3>pfSense Case Study</h3>
+          <p class="proof-summary">Recruiter-facing expansion that connects segmentation evidence to objective, environment, architecture, implementation approach, validation process, and lessons learned.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>HTML</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Case Study</dd></div></dl>
+          <a class="button" href="./case-studies/pfsense-network-segmentation.html">Open Case Study</a>
         </article>
       </div>
     </section>
@@ -344,6 +372,13 @@
           <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Reference</dd></div></dl>
           <a class="button" href="./evidence-library/README.md">Review Evidence</a>
         </article>
+        <article class="proof-evidence-card" data-reveal>
+          <div class="proof-card-top"><span class="proof-type-icon" aria-hidden="true">MD</span><span class="proof-filetype">Automation</span></div>
+          <h3>Automation Commit Artifact</h3>
+          <p class="proof-summary">Public-facing automation change note surfaced from the proof hub to improve crawl discovery without duplicating project content.</p>
+          <dl class="proof-meta"><div><dt>Format</dt><dd>Markdown</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Type</dt><dd>Generated Artifact</dd></div></dl>
+          <a class="button" href="./evidence/public/automation-commit-abc123.md">Review Evidence</a>
+        </article>
       </div>
       <p class="footer-meta"><a href="#top">Back to top</a></p>
     </section>
@@ -375,4 +410,3 @@
   </footer>
 </body>
 </html>
-

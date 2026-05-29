@@ -167,7 +167,7 @@
       </div>
     </section>
 
-    
+
     <section class="section section-telemetry governance-platform-section" aria-labelledby="governance-title">
       <div class="section-heading">
         <p class="eyebrow">Repository Governance Platform</p>
@@ -175,7 +175,7 @@
         <h2 id="governance-title">Enterprise-style validation and deployment governance.</h2>
         <p>This repository operates as a governed DevSecOps-style engineering platform with automated CI/CD validation, evidence integrity enforcement, Lighthouse auditing, screenshot verification, SEO governance, and operational telemetry reporting.</p>
       </div>
-      <aside class="governance-console" aria-label="Live repository governance status" role="status" aria-live="polite">
+      <div class="governance-console" aria-label="Live repository governance status" role="status" aria-live="polite">
         <div class="console-top"><span>repository health</span><span>online</span></div>
         <div class="console-body">
           <div class="signal"><span class="signal-code">PASS</span><p><strong>CI validation</strong><span>GitHub Actions quality gate active.</span></p></div>
@@ -183,7 +183,7 @@
           <div class="signal"><span class="signal-code"><span class="count" data-count="70">70</span></span><p><strong>Integrity fingerprints</strong><span>SHA-256 evidence hashes tracked.</span></p></div>
           <div class="signal"><span class="signal-code"><span class="count" data-count="29">29</span></span><p><strong>Evidence entries</strong><span>Indexed proof artifacts mapped to claims.</span></p></div>
         </div>
-      </aside>
+      </div>
 
       <div class="proof-grid governance-grid">
         <article class="proof-card">
@@ -249,6 +249,7 @@
           <h3>Microsoft 365 Lab Baseline</h3>
           <p>Preserved records for conditional access intent, identity boundaries, endpoint administration notes, and architecture review.</p>
           <ul class="project-links">
+            <li><a href="./case-studies/microsoft-365-lab-baseline.html"><span class="link-mark">Case</span> Microsoft 365 case study</a></li>
             <li><a href="./evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml"><span class="link-mark">Open</span> Conditional Access baseline</a></li>
             <li><a href="./evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg"><span class="link-mark">Open</span> Architecture diagram</a></li>
           </ul>
@@ -268,6 +269,7 @@
       </div>
       <div class="actions section-actions">
         <a class="button primary" href="./projects.html">View All Projects</a>
+        <a class="button" href="./case-studies/pfsense-network-segmentation.html">Network Case Study</a>
         <a class="button" href="./proof.html">Browse Evidence</a>
       </div>
     </section>
@@ -312,7 +314,7 @@
 
   <footer class="site-footer" aria-label="Site footer">
     <div class="footer-divider" aria-hidden="true"></div>
-    <div class="footer-status" aria-label="Repository operations status">
+    <div class="footer-status" role="group" aria-label="Repository operations status">
       <span><strong>CI/CD</strong> passing</span>
       <span><strong>Evidence</strong> fingerprinted</span>
       <span><strong>Lighthouse</strong> enforced</span>

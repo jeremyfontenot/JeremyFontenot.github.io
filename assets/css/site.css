@@ -768,6 +768,100 @@ li + li {
   font-weight: 820;
 }
 
+.case-study-grid,
+.evidence-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.case-study-grid {
+  margin-top: 1rem;
+}
+
+.case-study-card {
+  position: relative;
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.72), rgba(15, 23, 42, 0.82));
+  box-shadow: var(--shadow-soft);
+  padding: 1.05rem;
+}
+
+.case-study-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.9), rgba(217, 70, 239, 0.65), transparent);
+}
+
+.case-study-card h3,
+.case-study-card p,
+.case-study-card ul {
+  margin-bottom: 0;
+}
+
+.case-study-card .project-links {
+  margin-top: 0.15rem;
+}
+
+.case-study-visual {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: var(--radius);
+  background: rgba(15, 23, 42, 0.54);
+  padding: 0.75rem;
+}
+
+.case-study-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.case-study-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.case-study-nav a {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 999px;
+  background: rgba(30, 41, 59, 0.62);
+  color: var(--muted-strong);
+  padding: 0.5rem 0.72rem;
+  font-weight: 820;
+}
+
+.case-study-nav a:hover,
+.case-study-nav a:focus-visible {
+  border-color: rgba(56, 189, 248, 0.48);
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 760;
+}
+
+.breadcrumb a {
+  color: var(--muted-strong);
+}
+
 .link-mark {
   color: var(--accent);
   font-weight: 900;
@@ -930,7 +1024,9 @@ li + li {
   .project-grid,
   .proof-evidence-grid,
   .metric-grid,
-  .focus-grid {
+  .focus-grid,
+  .case-study-grid,
+  .evidence-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -964,6 +1060,8 @@ li + li {
   .proof-evidence-grid,
   .metric-grid,
   .focus-grid,
+  .case-study-grid,
+  .evidence-card-grid,
   .proof-meta {
     grid-template-columns: 1fr;
   }
@@ -1815,4 +1913,3 @@ li + li {
   color: #F1F5F9;
   transform: translateX(4px);
 }
-
