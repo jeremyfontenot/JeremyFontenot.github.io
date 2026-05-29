@@ -19,9 +19,13 @@
 }
 
 .proof-card {
+  min-width: 0;
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(148,163,184,.18);
+  background:
+    linear-gradient(180deg, rgba(30,41,59,.8), rgba(15,23,42,.84)),
+    radial-gradient(circle at top right, rgba(217,70,239,.08), transparent 44%);
   box-shadow:
     0 10px 30px rgba(0,0,0,.28),
     inset 0 1px 0 rgba(255,255,255,.04);
@@ -98,6 +102,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
+  align-items: center;
 }
 
 .hero .integrity-panel,
@@ -180,7 +185,7 @@
     linear-gradient(180deg, rgba(15,23,42,.92), rgba(15,23,42,.72)),
     radial-gradient(circle at top right, rgba(56,189,248,.18), transparent 45%);
   border: 1px solid rgba(56,189,248,.26);
-  border-radius: 24px;
+  border-radius: var(--radius);
   overflow: hidden;
   box-shadow:
     0 24px 55px rgba(0,0,0,.36),
@@ -209,7 +214,7 @@
 .governance-console .signal {
   background: rgba(15,23,42,.72);
   border: 1px solid rgba(148,163,184,.14);
-  border-radius: 16px;
+  border-radius: var(--radius);
   padding: .95rem;
 }
 
@@ -222,6 +227,7 @@
   grid-template-columns: minmax(0, .9fr) minmax(360px, .72fr);
   gap: 3rem;
   align-items: start;
+  overflow: clip;
 }
 
 .governance-platform-section > .section-heading {
@@ -257,6 +263,7 @@
   grid-template-columns: 72px minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
+  min-width: 0;
 }
 
 .governance-console .signal p {
@@ -383,10 +390,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: space-between;
   margin-bottom: 2rem;
   padding: 1rem 1.25rem;
   border: 1px solid rgba(217,70,239,.18);
-  border-radius: 18px;
+  border-radius: var(--radius);
   background:
     linear-gradient(180deg, rgba(15,23,42,.92), rgba(15,23,42,.72)),
     radial-gradient(circle at top right, rgba(217,70,239,.12), transparent 45%);
@@ -399,6 +407,8 @@
   display: inline-flex;
   align-items: center;
   gap: .5rem;
+  flex: 1 1 180px;
+  justify-content: center;
   padding: .45rem .8rem;
   border-radius: 999px;
   background: rgba(15,23,42,.82);
@@ -464,6 +474,32 @@
 .home-page .footer-links a:hover {
   color: #F1F5F9;
   transform: translateX(4px);
+}
+
+@media (max-width: 620px) {
+  .footer-grid,
+  .home-page .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .governance-console .signal {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: .75rem;
+  }
+
+  .governance-console .signal-code {
+    width: 48px;
+    min-width: 48px;
+  }
+
+  .footer-status {
+    gap: .65rem;
+    padding: .85rem;
+  }
+
+  .footer-status span {
+    flex-basis: 100%;
+  }
 }
 
 
