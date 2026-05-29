@@ -1177,7 +1177,10 @@ li + li {
 .project-links li { margin: 0; }
 .project-links a {
   display: inline-flex;
+  max-width: 100%;
+  min-width: 0;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.45rem;
   padding: 0.38rem 0.6rem;
   background: rgba(30, 41, 59, 0.5);
@@ -1185,6 +1188,11 @@ li + li {
   border-radius: 999px;
   color: var(--muted-strong);
   font-weight: 820;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.project-links a .link-mark {
+  flex: 0 0 auto;
 }
 .project-links a:hover {
   background: rgba(56, 189, 248, 0.12);
@@ -1206,6 +1214,14 @@ li + li {
 @media (max-width: 900px) {
   .project-grid > .project-card { padding-top: 1rem; }
   .filter-bar { margin-block: 20px; }
+}
+
+@media (max-width: 620px) {
+  .project-links,
+  .project-links li,
+  .project-links a {
+    width: 100%;
+  }
 }
 
 /* --- Premium featured layouts and evidence stage --- */
@@ -1982,4 +1998,15 @@ li + li {
 .footer-links a:hover {
   color: #F1F5F9;
   transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand,
+  .footer-links {
+    width: 100%;
+  }
 }
