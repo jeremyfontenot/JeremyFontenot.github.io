@@ -35,6 +35,7 @@ Thumbs.db
 # Generated preview and screenshot artifacts
 artifacts/screenshots/*.png
 artifacts/*.png
+artifacts/**/*.png
 evidence-library/architecture-diagrams/*.png
 
 # SEO remediation artifacts
