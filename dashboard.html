@@ -16,7 +16,7 @@
   <meta name="twitter:title" content="Repository Health Dashboard | Jeremy Fontenot">
   <meta name="twitter:description" content="Operational dashboard for repository validation and governance.">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="./assets/css/site.css?v=dashboard-20260525">
+  <link rel="stylesheet" href="./assets/css/site.css?v=20260529-visual-pass">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,7 +30,7 @@
   </script>
   <script src="./assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="dashboard-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
@@ -81,10 +81,10 @@
         <p>Current governance counts generated from validation scripts, Lighthouse reports, and evidence inventories.</p>
       </div>
       <div class="proof-grid">
-        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="15">15</span></span><span class="proof-filetype">Checks</span></div><h3>Validation Scripts</h3><p class="proof-summary">Automated governance checks covering code, content, metadata, evidence, and deployment quality.</p></article>
-        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="11">11</span></span><span class="proof-filetype">Reports</span></div><h3>Lighthouse Reports</h3><p class="proof-summary">Performance, accessibility, best-practices, and SEO quality snapshots.</p></article>
-        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="29">29</span></span><span class="proof-filetype">Artifacts</span></div><h3>Evidence Entries</h3><p class="proof-summary">Indexed proof artifacts mapped to projects, skills, and review categories.</p></article>
-        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="70">70</span></span><span class="proof-filetype">Hashes</span></div><h3>Integrity Fingerprints</h3><p class="proof-summary">SHA-256 evidence fingerprints used for integrity and drift detection.</p></article>
+        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="15">15</span></span><span class="proof-filetype">Checks</span></div><h3>Validation Scripts</h3><p class="proof-summary">Automated governance checks covering code, content, metadata, evidence, and deployment quality.</p><p class="meta">Source: scripts/validation and CI workflows.</p></article>
+        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="11">11</span></span><span class="proof-filetype">Reports</span></div><h3>Lighthouse Reports</h3><p class="proof-summary">Performance, accessibility, best-practices, and SEO quality snapshots.</p><p class="meta">Source: artifacts/lighthouse snapshots.</p></article>
+        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="29">29</span></span><span class="proof-filetype">Artifacts</span></div><h3>Evidence Entries</h3><p class="proof-summary">Indexed proof artifacts mapped to projects, skills, and review categories.</p><p class="meta">Source: evidence index and source map.</p></article>
+        <article class="proof-card" tabindex="0"><div class="proof-card-top"><span class="proof-type-icon"><span class="count" data-count="70">70</span></span><span class="proof-filetype">Hashes</span></div><h3>Integrity Fingerprints</h3><p class="proof-summary">SHA-256 evidence fingerprints used for integrity and drift detection.</p><p class="meta">Source: integrity validation reports.</p></article>
       </div>
     </section>
 
@@ -98,6 +98,30 @@
         <article class="proof-card"><h3>SEO</h3><p class="proof-summary">Validates titles, descriptions, canonicals, Open Graph metadata, sitemap, and crawl readiness.</p></article>
         <article class="proof-card"><h3>Evidence Governance</h3><p class="proof-summary">Validates evidence existence, claim alignment, metadata consistency, and hash integrity.</p></article>
         <article class="proof-card"><h3>Visual Validation</h3><p class="proof-summary">Captures screenshots for key pages to support visual regression review.</p></article>
+      </div>
+    </section>
+
+    <section id="lighthouse" class="proof-section">
+      <div class="section-heading">
+        <p class="eyebrow">Lighthouse Status</p>
+        <h2>Recent quality snapshots</h2>
+        <p>Representative report files used to monitor score drift and page-level quality changes.</p>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card"><h3>Home and Projects</h3><p class="proof-summary">Desktop and mobile report snapshots are preserved for trend comparison and review baselines.</p><a class="button" href="./artifacts/lighthouse/lighthouse_home_after.json">Open Home Report</a></article>
+        <article class="proof-card"><h3>Proof Page</h3><p class="proof-summary">Proof page reports are tracked across iterations to guard containment, accessibility, and performance.</p><a class="button" href="./artifacts/lighthouse/lighthouse_proof_desktop_latest.json">Open Proof Report</a></article>
+      </div>
+    </section>
+
+    <section id="integrity" class="proof-section">
+      <div class="section-heading">
+        <p class="eyebrow">Evidence Integrity</p>
+        <h2>Repository verification controls</h2>
+        <p>Evidence indexing, relationship mapping, and integrity verification files remain available for independent review.</p>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card"><h3>Evidence Relationship Map</h3><p class="proof-summary">Tracks claim-to-artifact relationships across projects and skills to preserve review traceability.</p><a class="button" href="./evidence-library/evidence-relationships.json">Open Relationship Map</a></article>
+        <article class="proof-card"><h3>Repository Health Summary</h3><p class="proof-summary">Operational status notes summarize governance domains, validation cadence, and known action items.</p><a class="button" href="./artifacts/dashboard/repository-health.md">Open Health Summary</a></article>
       </div>
     </section>
   </main>

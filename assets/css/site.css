@@ -575,6 +575,12 @@ li + li {
   gap: 1rem;
 }
 
+.metric-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .project-grid,
 .proof-evidence-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1899,7 +1905,7 @@ li + li {
 
 @media (max-width: 900px) {
   .home-page .hero {
-    min-height: auto;
+    min-height: unset;
     padding-block: 3rem 2.5rem;
   }
 
@@ -2136,5 +2142,335 @@ li + li {
   .proof-page .proof-jump a {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ===== Visual QA + typography normalization pass (2026-05-29) ===== */
+
+/* Containment guardrails for public pages */
+main,
+section,
+article,
+.section,
+.page,
+.page-hero,
+.hero-grid,
+.page-hero-grid,
+.project-grid,
+.proof-grid,
+.metric-grid,
+.card-grid,
+.footer-grid,
+.featured-grid,
+.featured-card,
+.proof-evidence-grid,
+.proof-evidence-card,
+.project-card,
+.hero-copy,
+.integrity-panel,
+.contact-panel,
+.hero-panel,
+.hero-glass,
+.project-visual,
+.project-visual-map {
+  min-width: 0;
+}
+
+.project-links a,
+.proof-jump a,
+.filter-button,
+.button,
+.badge,
+.meta,
+.proof-summary,
+.proof-filetype,
+.footer-links a,
+.contact-list a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Typographic consistency */
+h1 {
+  font-size: clamp(2.2rem, 4.6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: clamp(1.55rem, 2.5vw, 2.5rem);
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: clamp(1.12rem, 1.45vw, 1.42rem);
+  line-height: 1.25;
+}
+
+p,
+li {
+  font-size: clamp(0.98rem, 1.02vw, 1.05rem);
+  line-height: 1.68;
+}
+
+.meta,
+.proof-summary,
+.proof-filetype,
+.footer-meta,
+.footer-heading,
+.badge,
+.proof-meta dt,
+.proof-meta dd,
+.button,
+.filter-button {
+  font-size: clamp(0.82rem, 0.86vw, 0.94rem);
+  line-height: 1.35;
+}
+
+.page-hero h1 {
+  max-width: 14ch;
+}
+
+/* Reusable recruiter scan rows */
+.recruiter-highlights,
+.validation-strip,
+.artifact-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.95rem;
+}
+
+.recruiter-highlights .badge,
+.validation-strip .badge,
+.artifact-indicators .badge {
+  margin: 0;
+  border-color: rgba(217, 70, 239, 0.28);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(217, 70, 239, 0.13));
+  color: #e2e8f0;
+  box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.08);
+}
+
+.artifact-indicators {
+  margin-top: 0.2rem;
+}
+
+/* Improve card hierarchy and hover containment */
+.project-card,
+.proof-card,
+.proof-evidence-card,
+.featured-card,
+.card,
+.contact-panel {
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.project-card:hover,
+.proof-card:hover,
+.proof-evidence-card:hover,
+.featured-card:hover,
+.card:hover,
+.contact-panel:hover {
+  border-color: rgba(56, 189, 248, 0.44);
+  box-shadow: 0 20px 40px rgba(2, 6, 23, 0.3), 0 0 18px rgba(217, 70, 239, 0.12);
+}
+
+.project-card::after,
+.proof-card::after,
+.proof-evidence-card::after,
+.card::after {
+  content: "";
+  position: absolute;
+  inset: auto 1rem 0.8rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.28), rgba(217, 70, 239, 0.3), transparent);
+  pointer-events: none;
+}
+
+.button.primary {
+  background: linear-gradient(135deg, #0ea5e9, #d946ef);
+}
+
+.button:hover,
+.button:focus-visible {
+  box-shadow: 0 16px 30px rgba(2, 6, 23, 0.28), 0 0 18px rgba(217, 70, 239, 0.16);
+}
+
+/* Page identities: unified system with distinct visual layers */
+.projects-page .page-hero,
+.dashboard-page .page-hero,
+.resume-page .page-hero,
+.contact-page .page-hero,
+.evidence-index-page .page-hero,
+.legacy-evidence-page .page-hero,
+.proof-page .page-hero {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: calc(var(--radius) + 8px);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  background: linear-gradient(160deg, rgba(30, 41, 59, 0.72), rgba(15, 23, 42, 0.92));
+}
+
+.projects-page .page-hero::before,
+.dashboard-page .page-hero::before,
+.resume-page .page-hero::before,
+.contact-page .page-hero::before,
+.evidence-index-page .page-hero::before,
+.legacy-evidence-page .page-hero::before,
+.proof-page .page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.projects-page .page-hero::before {
+  background: radial-gradient(circle at 86% 14%, rgba(56, 189, 248, 0.16), transparent 34%), radial-gradient(circle at 18% 82%, rgba(217, 70, 239, 0.14), transparent 40%);
+}
+
+.dashboard-page .page-hero::before {
+  background: radial-gradient(circle at 14% 22%, rgba(56, 189, 248, 0.18), transparent 36%), linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: auto, 28px 28px;
+}
+
+.resume-page .page-hero::before {
+  background: radial-gradient(circle at 78% 12%, rgba(217, 70, 239, 0.14), transparent 32%), linear-gradient(180deg, rgba(56, 189, 248, 0.08), transparent 42%);
+}
+
+.contact-page .page-hero::before {
+  background: radial-gradient(circle at 82% 26%, rgba(217, 70, 239, 0.18), transparent 30%), radial-gradient(circle at 16% 70%, rgba(56, 189, 248, 0.12), transparent 35%);
+}
+
+.evidence-index-page .page-hero::before,
+.legacy-evidence-page .page-hero::before {
+  background: linear-gradient(110deg, rgba(56, 189, 248, 0.1), transparent 42%, rgba(217, 70, 239, 0.09) 74%, transparent);
+}
+
+/* Dashboard telemetry styling */
+.dashboard-page .proof-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.dashboard-page .proof-card {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.15rem;
+}
+
+.dashboard-page .proof-card .meta {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.dashboard-page .proof-type-icon {
+  border-color: rgba(217, 70, 239, 0.32);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.18), rgba(217, 70, 239, 0.14));
+}
+
+/* Resume and contact scan readability */
+.resume-page .metric-grid,
+.contact-page .metric-grid {
+  margin-top: 1rem;
+}
+
+.resume-page .stat,
+.contact-page .stat,
+.proof-page .proof-metrics .stat {
+  min-height: 118px;
+}
+
+.resume-page .stat strong,
+.contact-page .stat strong,
+.proof-page .proof-metrics .stat strong {
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+}
+
+.contact-page .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-page .contact-list a {
+  align-items: center;
+}
+
+/* Proof page: metrics strip and evidence scan polish */
+.proof-page .proof-metrics {
+  padding-top: 1.2rem;
+}
+
+.proof-page .proof-metrics .metric-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.proof-page .proof-metrics .stat {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.84), rgba(15, 23, 42, 0.86));
+}
+
+.proof-page .proof-metrics .stat span {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #cbd5e1;
+}
+
+/* Projects featured card hierarchy */
+.projects-page .featured-card {
+  border-color: rgba(148, 163, 184, 0.16);
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.76), rgba(15, 23, 42, 0.86));
+}
+
+.projects-page .featured-card .proof-section {
+  margin-top: 0.3rem;
+}
+
+.projects-page .featured-card .project-links a {
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+.projects-page .featured-card:hover .project-links a {
+  border-color: rgba(56, 189, 248, 0.38);
+}
+
+/* Evidence index pages keep compact and centered */
+.evidence-index-page .hero-glass,
+.legacy-evidence-page .hero-glass {
+  max-width: 900px;
+  margin-inline: auto;
+  border-color: rgba(56, 189, 248, 0.28);
+}
+
+@media (max-width: 1024px) {
+  .proof-page .proof-metrics .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-page .proof-grid,
+  .contact-page .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: clamp(2.05rem, 10vw, 2.38rem);
+  }
+
+  .recruiter-highlights,
+  .validation-strip,
+  .artifact-indicators {
+    gap: 0.4rem;
+  }
+
+  .recruiter-highlights .badge,
+  .validation-strip .badge,
+  .artifact-indicators .badge {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .proof-page .proof-metrics .metric-grid {
+    grid-template-columns: 1fr;
   }
 }
