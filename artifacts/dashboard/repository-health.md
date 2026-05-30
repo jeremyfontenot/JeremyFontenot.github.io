@@ -1,6 +1,6 @@
 # Repository Health Dashboard
 
-Generated: 2026-05-30 00:02:57 UTC
+Generated: 2026-05-30 00:07:08 UTC
 
 ## Governance Coverage
 
@@ -9,7 +9,7 @@ Generated: 2026-05-30 00:02:57 UTC
 | Validation scripts | 15 |
 | Lighthouse reports | 11 |
 | Evidence index entries | 29 |
-| Evidence hash entries | 70 |
+| Evidence hash entries | 72 |
 
 ## Validation Scripts
 

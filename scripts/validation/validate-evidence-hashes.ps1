@@ -5,6 +5,34 @@ Write-Host "Validating evidence hash integrity..."
 
 $HashInventory = ".\evidence-library\integrity\evidence-hashes.json"
 
+$TextExtensions = @(
+  ".md", ".txt", ".csv", ".json", ".yaml", ".yml", ".ps1", ".svg", ".html", ".xml", ".gitkeep"
+)
+
+function Get-NormalizedSha256 {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Path
+  )
+
+  $Extension = [System.IO.Path]::GetExtension($Path).ToLowerInvariant()
+
+  if ($TextExtensions -contains $Extension) {
+    $Text = Get-Content -LiteralPath $Path -Raw
+    $Normalized = $Text -replace "`r`n", "`n"
+    $Bytes = [System.Text.Encoding]::UTF8.GetBytes($Normalized)
+  } else {
+    $Bytes = [System.IO.File]::ReadAllBytes($Path)
+  }
+
+  $Sha = [System.Security.Cryptography.SHA256]::Create()
+  try {
+    return ([System.BitConverter]::ToString($Sha.ComputeHash($Bytes))).Replace("-", "")
+  } finally {
+    $Sha.Dispose()
+  }
+}
+
 if (-not (Test-Path $HashInventory)) {
   Write-Host "Missing evidence hash inventory." -ForegroundColor Red
   exit 1
@@ -20,9 +48,9 @@ foreach ($Entry in $Entries) {
     continue
   }
 
-  $CurrentHash = Get-FileHash $Entry.path -Algorithm SHA256
+  $CurrentHash = Get-NormalizedSha256 -Path $Entry.path
 
-  if ($CurrentHash.Hash -ne $Entry.sha256) {
+  if ($CurrentHash -ne $Entry.sha256) {
     $Failures += "Hash mismatch: $($Entry.path)"
     Write-Host "Hash mismatch: $($Entry.path)" -ForegroundColor Red
     continue

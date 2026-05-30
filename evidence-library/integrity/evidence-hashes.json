@@ -1,7 +1,7 @@
 [
   {
     "path": "evidence-library\\evidence-source-map.csv",
-    "sha256": "F64276261D09C7DA0EDE6C66DA87E054BDC0A72E9AA4A181C5F9E0EFD076CE07",
+    "sha256": "E25A4DE98C3C5CB5907BC38BD1558D9CC623BAD361DAEAEC9B4CAE9BC2C52F7D",
     "size": 6668,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
@@ -19,13 +19,13 @@
   },
   {
     "path": "evidence-library\\architecture-diagrams\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9027027Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\home-lab-network-topology-diagram-2026.svg",
-    "sha256": "D06575DC9DBE668302EE69123634262B8108CC707184521D8F519E3BBDEA3C65",
+    "sha256": "C0D137FF0184D4FE5257EB8885F1EBC762B5E0EB37622092EE804B36B38D1872",
     "size": 704,
     "lastModified": "2026-05-29T17:00:25.9190099Z"
   },
@@ -37,25 +37,25 @@
   },
   {
     "path": "evidence-library\\architecture-diagrams\\m365-lab-baseline-preview.svg",
-    "sha256": "B1C509BDED4ECD11BEC59F97303F20DB6045857372344318B2B63688F7A66E08",
+    "sha256": "060040A9FCD215F0C2B458BBD9C6F5D936580C0551EEE8D6B0CA8597BD980B00",
     "size": 4787,
     "lastModified": "2026-05-25T01:46:15.9199747Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\mail-flow-troubleshooting-preview.svg",
-    "sha256": "C8EE56846A6B6D8A8682DFEB077AACC7CF1A0075D9EFAC23A0D2CEC2ECC6FCF9",
+    "sha256": "0B6F2B943FD4AA8C322DDDCA5334AE7399C3C56918BCFA32D2AD476ADD9B1DD7",
     "size": 3916,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-diagram-2026.svg",
-    "sha256": "B3A2B9C41C39460667AD862711368A36EB01FF1A7AAE0D8F8EDD921724D14671",
+    "sha256": "1FFF1F562C16D0B4356728086CE1048B6D57AD8EA7445B001ABB6625F790876B",
     "size": 2003,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-overview-2026.svg",
-    "sha256": "1E44F0B547FFCECC2745AFCE800F26D31C6F7A01604FDEFDE6B36DFA67C61316",
+    "sha256": "4E89C54C689BA07B9ABC8175A7907868B2511F6BD6A3469E5C964349CE1C21E8",
     "size": 3455,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
@@ -67,13 +67,13 @@
   },
   {
     "path": "evidence-library\\architecture-diagrams\\pfsense-network-segmentation-preview.svg",
-    "sha256": "D7B377FB2B197F9D747345ED912BEA9FE86726D68F83D210C0052FE74AC04B95",
+    "sha256": "66D79A01565CFB6C0631F4DF28B4ECCCEB6035D18C2CD2D50C0FB5D0910159AF",
     "size": 4335,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\service-desk-network-troubleshooting-flow-2026.svg",
-    "sha256": "F00A5B4B65C31FF72D62CAEE57CB819E01433CD24B8FB48A55D3FE522938E46B",
+    "sha256": "26CA8C3612E806EB6D664EEDB498D6D27FD49D3EEC868584D9F234188C170651",
     "size": 3578,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
@@ -85,7 +85,7 @@
   },
   {
     "path": "evidence-library\\certifications\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
@@ -97,7 +97,7 @@
   },
   {
     "path": "evidence-library\\experience\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
@@ -115,7 +115,7 @@
   },
   {
     "path": "evidence-library\\projects\\backup-disaster-recovery\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -127,13 +127,13 @@
   },
   {
     "path": "evidence-library\\projects\\endpoint-management\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
   {
     "path": "evidence-library\\projects\\home-lab\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -145,7 +145,7 @@
   },
   {
     "path": "evidence-library\\projects\\identity-access\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -157,13 +157,13 @@
   },
   {
     "path": "evidence-library\\projects\\infrastructure-networking\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
   {
     "path": "evidence-library\\projects\\infrastructure-networking\\dns-dhcp-runbook-2026.txt",
-    "sha256": "24720E333C8FA478DAECDBCF241FDB965AF6E9427802D18A93142C7A2F0BB9C5",
+    "sha256": "D7D1E2BAD7D48C9CE048D39B288C6F1CA4D664C3F36CD71CADC13D0CECA23786",
     "size": 2517,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -181,7 +181,7 @@
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -193,13 +193,13 @@
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml",
-    "sha256": "1549C3BDF4D8660AD02BCBB69C9A163B32E213F6EB64AF7AF2347896CAC214C0",
+    "sha256": "7CE07405BFE1816142A4DD0CB0E37C33F18DC69A5705BC6748C91B5073DEC5B5",
     "size": 1273,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
   {
     "path": "evidence-library\\projects\\monitoring-logging\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -211,7 +211,7 @@
   },
   {
     "path": "evidence-library\\projects\\powershell-automation\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -229,7 +229,7 @@
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9334868Z"
   },
@@ -271,7 +271,7 @@
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\troubleshooting-rca-incident-log-2025.txt",
-    "sha256": "BB5FAD60E74F5258B631A609862CB972F33E0481E7F87AC477F74BC0BC8D027C",
+    "sha256": "4E2BF4850B2C3CDFD894E41782D89C5B7AEB1A7A66074F04D9B0104F9A164218",
     "size": 1107,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
@@ -283,7 +283,7 @@
   },
   {
     "path": "evidence-library\\screenshots\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
@@ -295,7 +295,7 @@
   },
   {
     "path": "evidence-library\\scripts\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
@@ -313,19 +313,19 @@
   },
   {
     "path": "evidence-library\\skills\\active-directory\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
   {
     "path": "evidence-library\\skills\\automation\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
   {
     "path": "evidence-library\\skills\\dns-dhcp\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
@@ -337,61 +337,61 @@
   },
   {
     "path": "evidence-library\\skills\\documentation\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
   {
     "path": "evidence-library\\skills\\entra-identity\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
   {
     "path": "evidence-library\\skills\\github-pages-operations\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\intune-endpoint-management\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\microsoft-365-administration\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\networking-vlans\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\pfsense-firewall\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\powershell\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\security-baselines\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\service-desk-support\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
@@ -403,25 +403,25 @@
   },
   {
     "path": "evidence-library\\skills\\validation-audit\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\skills\\windows-support\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\validation-reports\\.gitkeep",
-    "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
   {
     "path": "evidence-library\\validation-reports\\network-validation-checklist-2026.csv",
-    "sha256": "628C751C822D4ABE99599B18BB062CF1DE61C8B750EBEA124B0282EE28616B88",
+    "sha256": "F2173B5376B48998E2CA92BC761BEBA11B6D0E3F47CE1A6D41742E2983520F10",
     "size": 2635,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
   },
