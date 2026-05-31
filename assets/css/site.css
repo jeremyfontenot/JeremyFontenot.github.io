@@ -510,7 +510,7 @@ li + li {
 
 .signal {
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
+  grid-template-columns: 4.25rem 1fr;
   gap: 0.75rem;
   align-items: start;
   border: 1px solid rgba(148, 163, 184, 0.16);
@@ -533,7 +533,8 @@ li + li {
 .proof-type-icon,
 .timeline-step {
   display: inline-flex;
-  width: 2.5rem;
+  width: 4.25rem;
+  min-width: 4.25rem;
   height: 2.5rem;
   align-items: center;
   justify-content: center;
@@ -627,6 +628,134 @@ li + li {
   border-color: rgba(56, 189, 248, 0.34);
   transform: translateY(-2px);
   transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.certifications-section {
+  position: relative;
+}
+
+.certifications-section::before {
+  content: "";
+  position: absolute;
+  inset: 2.8rem var(--pad) auto;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.5), rgba(217, 70, 239, 0.28), transparent);
+  opacity: 0.72;
+}
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.certification-card {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(30, 41, 59, 0.74), rgba(15, 23, 42, 0.86)),
+    radial-gradient(circle at 18% 0%, rgba(56, 189, 248, 0.1), transparent 12rem);
+  box-shadow: var(--shadow-soft);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.certification-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.88), rgba(217, 70, 239, 0.68), transparent);
+}
+
+.certification-card:hover,
+.certification-card:focus-within {
+  border-color: rgba(56, 189, 248, 0.42);
+  box-shadow: 0 18px 44px rgba(2, 6, 23, 0.3), 0 0 0 1px rgba(56, 189, 248, 0.06) inset;
+  transform: translateY(-3px);
+}
+
+.certification-card-featured {
+  background:
+    linear-gradient(180deg, rgba(14, 165, 233, 0.14), rgba(15, 23, 42, 0.9)),
+    radial-gradient(circle at 20% 0%, rgba(217, 70, 239, 0.16), transparent 11rem);
+}
+
+.certification-media {
+  display: grid;
+  min-height: 132px;
+  place-items: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  background:
+    radial-gradient(circle at 50% 32%, rgba(56, 189, 248, 0.14), transparent 6rem),
+    rgba(15, 23, 42, 0.44);
+  padding: 1rem;
+}
+
+.certification-media picture,
+.certification-media img {
+  display: block;
+}
+
+.certification-media img {
+  width: clamp(76px, 8vw, 104px);
+  height: clamp(76px, 8vw, 104px);
+  object-fit: contain;
+  filter: drop-shadow(0 12px 22px rgba(2, 6, 23, 0.32));
+}
+
+.certification-body {
+  display: grid;
+  min-width: 0;
+  gap: 0.55rem;
+  padding: 1rem;
+}
+
+.certification-body .badge,
+.certification-body h3,
+.certification-body p {
+  margin-bottom: 0;
+}
+
+.certification-body h3,
+.certification-body p,
+.certification-link {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.certification-body p {
+  color: var(--muted-strong);
+  font-size: 0.94rem;
+}
+
+.certification-link {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.08);
+  color: #bae6fd;
+  padding: 0.42rem 0.62rem;
+  font-size: 0.82rem;
+  font-weight: 860;
+  line-height: 1.15;
+}
+
+.certification-link:hover,
+.certification-link:focus-visible {
+  border-color: rgba(56, 189, 248, 0.48);
+  background: rgba(56, 189, 248, 0.14);
+  color: var(--text);
+  text-decoration: none;
 }
 
 .badge {
@@ -1039,6 +1168,7 @@ li + li {
   .proof-evidence-grid,
   .metric-grid,
   .focus-grid,
+  .certification-grid,
   .case-study-grid,
   .evidence-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1074,10 +1204,27 @@ li + li {
   .proof-evidence-grid,
   .metric-grid,
   .focus-grid,
+  .certification-grid,
   .case-study-grid,
   .evidence-card-grid,
   .proof-meta {
     grid-template-columns: 1fr;
+  }
+
+  .certification-card {
+    grid-template-columns: 86px minmax(0, 1fr);
+  }
+
+  .certification-media {
+    min-height: 100%;
+    border-right: 1px solid rgba(148, 163, 184, 0.12);
+    border-bottom: 0;
+    padding: 0.75rem;
+  }
+
+  .certification-media img {
+    width: 58px;
+    height: 58px;
   }
 
   .proof-jump a,

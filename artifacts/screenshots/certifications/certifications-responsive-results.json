@@ -1,0 +1,62 @@
+[
+  {
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1100
+    },
+    "screenshotPath": "C:\\Users\\jeremy\\Documents\\projects\\jeremyfontenot\\artifacts\\screenshots\\certifications\\certifications-desktop.png",
+    "consoleErrors": [],
+    "titleVisible": true,
+    "certificationCards": 10,
+    "documentOverflow": false,
+    "sectionWidth": 1180,
+    "gridColumns": 5,
+    "cardOverflows": [],
+    "textOverflows": [],
+    "missingAlt": 0,
+    "h1Count": 1,
+    "hasMain": true,
+    "hasSkipLink": true
+  },
+  {
+    "viewport": {
+      "name": "tablet",
+      "width": 768,
+      "height": 1000
+    },
+    "screenshotPath": "C:\\Users\\jeremy\\Documents\\projects\\jeremyfontenot\\artifacts\\screenshots\\certifications\\certifications-tablet.png",
+    "consoleErrors": [],
+    "titleVisible": true,
+    "certificationCards": 10,
+    "documentOverflow": false,
+    "sectionWidth": 768,
+    "gridColumns": 2,
+    "cardOverflows": [],
+    "textOverflows": [],
+    "missingAlt": 0,
+    "h1Count": 1,
+    "hasMain": true,
+    "hasSkipLink": true
+  },
+  {
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 920
+    },
+    "screenshotPath": "C:\\Users\\jeremy\\Documents\\projects\\jeremyfontenot\\artifacts\\screenshots\\certifications\\certifications-mobile.png",
+    "consoleErrors": [],
+    "titleVisible": true,
+    "certificationCards": 10,
+    "documentOverflow": false,
+    "sectionWidth": 390,
+    "gridColumns": 1,
+    "cardOverflows": [],
+    "textOverflows": [],
+    "missingAlt": 0,
+    "h1Count": 1,
+    "hasMain": true,
+    "hasSkipLink": true
+  }
+]
