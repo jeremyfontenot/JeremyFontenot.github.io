@@ -1717,11 +1717,13 @@ li + li {
 
 .home-page .metric-grid {
   gap: 0.9rem;
+  align-items: stretch;
 }
 
 .home-page .stat {
   position: relative;
   min-height: 132px;
+  height: 100%;
   display: grid;
   align-content: space-between;
   gap: 0.35rem;
@@ -1772,6 +1774,7 @@ li + li {
   display: grid;
   gap: 0.65rem;
   min-width: 0;
+  height: 100%;
   padding: 1.2rem 1.1rem 1.15rem 1.2rem;
   border-color: rgba(148, 163, 184, 0.14);
   position: relative;
@@ -1838,6 +1841,10 @@ li + li {
 .home-page .section-featured .project-grid {
   grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
   align-items: stretch;
+}
+
+.home-page .section-featured .project-grid > .project-card {
+  height: 100%;
 }
 
 .home-page .section-featured .project-card.featured {
@@ -1951,7 +1958,7 @@ li + li {
 }
 
 .home-page .section-featured .project-card:not(.featured) {
-  margin-top: 1rem;
+  margin-top: 0;
   border-color: rgba(148, 163, 184, 0.14);
 }
 
@@ -2038,11 +2045,13 @@ li + li {
 
 .home-page .footer-grid {
   position: relative;
+  align-items: stretch;
 }
 
 .home-page .footer-brand,
 .home-page .footer-links {
   position: relative;
+  height: 100%;
   border: 1px solid rgba(148, 163, 184, 0.12);
   border-radius: calc(var(--radius) + 4px);
   background: linear-gradient(180deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.82));
@@ -2641,8 +2650,8 @@ li {
   }
 
   .lab-topology {
-    width: 720px;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
     min-height: 260px;
   }
 
