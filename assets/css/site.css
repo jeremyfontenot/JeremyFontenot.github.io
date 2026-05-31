@@ -489,12 +489,29 @@ li + li {
 .console-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
   border-bottom: 1px solid var(--line);
   padding: 0.85rem 1rem;
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 800;
+}
+
+.console-top > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Allow the left header to shrink and the right header to stay pinned */
+.console-top > span:first-child {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.console-top > span:last-child {
+  flex: 0 0 auto;
+  margin-left: auto;
+  text-align: right;
 }
 
 .console-body {
@@ -515,8 +532,18 @@ li + li {
   align-items: start;
   border: 1px solid rgba(148, 163, 184, 0.16);
   border-radius: var(--radius);
+
+/* Add space between the badge and the title text to avoid overlap */
+.signal p {
+  padding-left: 0.6rem;
+}
   background: rgba(15, 23, 42, 0.56);
   padding: 0.85rem;
+  overflow: hidden;
+}
+
+.signal p {
+  min-width: 0;
 }
 
 .signal strong {
@@ -1605,21 +1632,29 @@ li + li {
   margin-bottom: 0;
 }
 
+/* Ensure pseudo-elements and glows are clipped inside each signal card on homepage and integrity panels */
+.home-page .signal,
+.integrity-panel .signal {
+  overflow: hidden;
+}
+
 .home-page .signal-code {
   position: relative;
   box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.08), 0 0 24px rgba(56, 189, 248, 0.12);
+  z-index: 1;
 }
 
 .home-page .signal-code::after {
   content: "";
   position: absolute;
-  right: -0.36rem;
+  left: 0.18rem;
   top: 50%;
-  width: 0.42rem;
-  height: 0.42rem;
+  width: 0.34rem;
+  height: 0.34rem;
   border-radius: 999px;
   background: #34d399;
-  box-shadow: 0 0 12px rgba(52, 211, 153, 0.8);
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.7);
+  z-index: 2;
   transform: translateY(-50%);
   animation: telemetry-blink 4s ease-in-out infinite;
 }
