@@ -2352,9 +2352,9 @@ li {
 
 .lab-zone text {
   fill: #bae6fd;
-  font-size: 18px;
+  font-size: 16px;
   text-anchor: start;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -2395,7 +2395,7 @@ li {
 }
 
 .lab-node text {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .lab-node-link:hover .lab-node circle,
@@ -2500,11 +2500,11 @@ li {
   }
 
   .lab-zone text {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .lab-node text {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .lab-details {

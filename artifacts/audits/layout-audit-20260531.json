@@ -1,0 +1,739 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/projects.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/proof.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/dashboard.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/resume.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/contact.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/evidence-library/index.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/evidence/public/index.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/proxmox-home-lab.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/pfsense-network-segmentation.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/active-directory-infrastructure.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/microsoft-365-lab-baseline.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/powershell-automation.html",
+      "viewport": "desktop",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/projects.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/proof.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/dashboard.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/resume.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/contact.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/evidence-library/index.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/evidence/public/index.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/proxmox-home-lab.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/pfsense-network-segmentation.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/active-directory-infrastructure.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/microsoft-365-lab-baseline.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/powershell-automation.html",
+      "viewport": "tablet",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [
+        {
+          "selector": "a",
+          "text": "Proxmox virtualization host for Windows Server, Linux, and service workloads ProxmoxCompute",
+          "left": 326,
+          "right": 410,
+          "width": 84
+        },
+        {
+          "selector": "a",
+          "text": "Active Directory domain services, Group Policy planning, and identity boundary review ActiveDirectory",
+          "left": 423,
+          "right": 491,
+          "width": 68
+        },
+        {
+          "selector": "a",
+          "text": "DNS and DHCP service placement, lease review, and name-resolution troubleshooting DNSDHCP",
+          "left": 426,
+          "right": 487,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "VLAN segmentation for management, server, client, and lab traffic VLANsZones",
+          "left": 514,
+          "right": 574,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "Windows Server workload for identity, management, and support validation WindowsServer",
+          "left": 582,
+          "right": 648,
+          "width": 66
+        },
+        {
+          "selector": "a",
+          "text": "Linux workload for service hosting, package administration, logging, and network checks LinuxServices",
+          "left": 583,
+          "right": 647,
+          "width": 63
+        },
+        {
+          "selector": "a",
+          "text": "IDS/IPS monitoring concept for traffic visibility and alert review IDSIPS",
+          "left": 569,
+          "right": 633,
+          "width": 63
+        }
+      ],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/projects.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/proof.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/dashboard.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/resume.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/contact.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/evidence-library/index.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/evidence/public/index.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/proxmox-home-lab.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [
+        {
+          "selector": "a",
+          "text": "Proxmox virtualization host for Windows Server, Linux, and service workloadsProxmoxCompute",
+          "left": 342,
+          "right": 426,
+          "width": 84
+        },
+        {
+          "selector": "a",
+          "text": "Active Directory domain services, Group Policy planning, and identity boundary reviewActiveDirectory",
+          "left": 439,
+          "right": 507,
+          "width": 68
+        },
+        {
+          "selector": "a",
+          "text": "DNS and DHCP service placement, lease review, and name-resolution troubleshootingDNSDHCP",
+          "left": 442,
+          "right": 503,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "VLAN segmentation for management, server, client, and lab trafficVLANsZones",
+          "left": 530,
+          "right": 590,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "Windows Server workload for identity, management, and support validationWindowsServer",
+          "left": 598,
+          "right": 664,
+          "width": 66
+        },
+        {
+          "selector": "a",
+          "text": "Linux workload for service hosting, package administration, logging, and network checksLinuxServices",
+          "left": 599,
+          "right": 663,
+          "width": 63
+        },
+        {
+          "selector": "a",
+          "text": "IDS/IPS monitoring concept for traffic visibility and alert reviewIDSIPS",
+          "left": 585,
+          "right": 649,
+          "width": 63
+        }
+      ],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/pfsense-network-segmentation.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/active-directory-infrastructure.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/microsoft-365-lab-baseline.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/powershell-automation.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [],
+      "clippedText": [],
+      "consoleErrors": []
+    }
+  ],
+  "failures": [
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [
+        {
+          "selector": "a",
+          "text": "Proxmox virtualization host for Windows Server, Linux, and service workloads ProxmoxCompute",
+          "left": 326,
+          "right": 410,
+          "width": 84
+        },
+        {
+          "selector": "a",
+          "text": "Active Directory domain services, Group Policy planning, and identity boundary review ActiveDirectory",
+          "left": 423,
+          "right": 491,
+          "width": 68
+        },
+        {
+          "selector": "a",
+          "text": "DNS and DHCP service placement, lease review, and name-resolution troubleshooting DNSDHCP",
+          "left": 426,
+          "right": 487,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "VLAN segmentation for management, server, client, and lab traffic VLANsZones",
+          "left": 514,
+          "right": 574,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "Windows Server workload for identity, management, and support validation WindowsServer",
+          "left": 582,
+          "right": 648,
+          "width": 66
+        },
+        {
+          "selector": "a",
+          "text": "Linux workload for service hosting, package administration, logging, and network checks LinuxServices",
+          "left": 583,
+          "right": 647,
+          "width": 63
+        },
+        {
+          "selector": "a",
+          "text": "IDS/IPS monitoring concept for traffic visibility and alert review IDSIPS",
+          "left": 569,
+          "right": 633,
+          "width": 63
+        }
+      ],
+      "clippedText": [],
+      "consoleErrors": []
+    },
+    {
+      "route": "/case-studies/proxmox-home-lab.html",
+      "viewport": "mobile",
+      "status": "ok",
+      "h1Count": 1,
+      "hasMain": true,
+      "skipTarget": true,
+      "horizontalPageOverflow": false,
+      "missingAlt": [],
+      "overflowElements": [
+        {
+          "selector": "a",
+          "text": "Proxmox virtualization host for Windows Server, Linux, and service workloadsProxmoxCompute",
+          "left": 342,
+          "right": 426,
+          "width": 84
+        },
+        {
+          "selector": "a",
+          "text": "Active Directory domain services, Group Policy planning, and identity boundary reviewActiveDirectory",
+          "left": 439,
+          "right": 507,
+          "width": 68
+        },
+        {
+          "selector": "a",
+          "text": "DNS and DHCP service placement, lease review, and name-resolution troubleshootingDNSDHCP",
+          "left": 442,
+          "right": 503,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "VLAN segmentation for management, server, client, and lab trafficVLANsZones",
+          "left": 530,
+          "right": 590,
+          "width": 61
+        },
+        {
+          "selector": "a",
+          "text": "Windows Server workload for identity, management, and support validationWindowsServer",
+          "left": 598,
+          "right": 664,
+          "width": 66
+        },
+        {
+          "selector": "a",
+          "text": "Linux workload for service hosting, package administration, logging, and network checksLinuxServices",
+          "left": 599,
+          "right": 663,
+          "width": 63
+        },
+        {
+          "selector": "a",
+          "text": "IDS/IPS monitoring concept for traffic visibility and alert reviewIDSIPS",
+          "left": 585,
+          "right": 649,
+          "width": 63
+        }
+      ],
+      "clippedText": [],
+      "consoleErrors": []
+    }
+  ]
+}
