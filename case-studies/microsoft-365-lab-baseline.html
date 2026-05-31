@@ -1,137 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Microsoft 365 Lab Baseline Case Study | Jeremy Fontenot</title>
-  <meta name="description" content="Recruiter-facing Microsoft 365 lab case study covering identity, endpoint policy, Conditional Access intent, automation context, and preserved evidence.">
+  <meta name="description" content="First-person case study for Microsoft 365 Lab Baseline, covering objective, environment, architecture, implementation, validation, lessons learned, skills, and related proof.">
   <meta name="robots" content="index, follow">
   <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://jeremyfontenot.online/case-studies/microsoft-365-lab-baseline.html">
   <meta property="og:site_name" content="Jeremy Fontenot">
   <meta property="og:title" content="Microsoft 365 Lab Baseline Case Study | Jeremy Fontenot">
-  <meta property="og:description" content="Evidence-backed Microsoft 365 administration case study with direct proof links.">
+  <meta property="og:description" content="First-person case study for Microsoft 365 Lab Baseline, covering objective, environment, architecture, implementation, validation, lessons learned, skills, and related proof.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://jeremyfontenot.online/case-studies/microsoft-365-lab-baseline.html">
   <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Microsoft 365 Lab Baseline Case Study | Jeremy Fontenot">
-  <meta name="twitter:description" content="Evidence-backed Microsoft 365 administration case study with direct proof links.">
+  <meta name="twitter:description" content="First-person case study for Microsoft 365 Lab Baseline, covering objective, environment, architecture, implementation, validation, lessons learned, skills, and related proof.">
   <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="../assets/logos/favicon_64x64.png">
   <link rel="manifest" href="../assets/site.webmanifest">
   <link rel="apple-touch-icon" href="../assets/logos/favicon_128x128.png">
-  <link rel="stylesheet" href="../assets/css/site.css?v=20260531-enterprise-opt">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "TechArticle",
-        "@id": "https://jeremyfontenot.online/case-studies/microsoft-365-lab-baseline.html#article",
-        "headline": "Microsoft 365 Lab Baseline Case Study",
-        "description": "Case study documenting Microsoft 365 identity, endpoint, Conditional Access, automation, and validation planning with preserved proof artifacts.",
-        "author": { "@id": "https://jeremyfontenot.online/#person" },
-        "publisher": { "@id": "https://jeremyfontenot.online/#person" },
-        "mainEntityOfPage": "https://jeremyfontenot.online/case-studies/microsoft-365-lab-baseline.html",
-        "proficiencyLevel": "Beginner to Intermediate",
-        "dependencies": "Microsoft 365, Entra ID concepts, Intune concepts, PowerShell, documentation controls"
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://jeremyfontenot.online/case-studies/microsoft-365-lab-baseline.html#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jeremyfontenot.online/" },
-          { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://jeremyfontenot.online/projects.html" },
-          { "@type": "ListItem", "position": 3, "name": "Microsoft 365 Lab Baseline", "item": "https://jeremyfontenot.online/case-studies/microsoft-365-lab-baseline.html" }
-        ]
-      }
-    ]
-  }
-  </script>
-  <script src="../assets/js/site.js" defer></script>
+  <link rel="stylesheet" href="../assets/css/site.css?v=20260531-clean-rebuild">
+  <script src="../assets/js/site.js?v=20260531-clean-rebuild" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="../index.html"><img src="../assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><span class="brand-underline" aria-hidden="true"></span></a>
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="../index.html">
+        <img src="../assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async">
+        <span>Jeremy Fontenot</span>
+      </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-      <div class="nav-links" id="primary-menu">
+      <div class="nav-links" id="primary-menu"><a href="../index.html">Home</a><a href="../projects.html" aria-current="page">Projects</a><a href="../proof.html">Proof</a><a href="../dashboard.html">Dashboard</a><a href="../resume.html">Resume</a><a href="../contact.html">Contact</a></div>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="case-title"><div class="page-grid"><div class="stack" data-reveal><p class="eyebrow">Case Study / Microsoft 365</p><h1 id="case-title">Microsoft 365 Lab Baseline</h1><p class="lead">Identity, endpoint policy, Conditional Access intent, automation context, rollback awareness, and validation planning.</p><div class="actions"><a class="button primary" href="../projects.html">Back to Projects</a><a class="button" href="../proof.html">Open Proof Library</a></div></div><div class="panel" data-reveal><div class="media-box"><img src="../evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" alt="Microsoft 365 Lab Baseline evidence diagram" width="1200" height="760" loading="eager" decoding="async"></div></div></div></section>
+    <section class="section" aria-labelledby="case-sections"><div class="section-head"><p class="eyebrow">Case Study Structure</p><h2 id="case-sections">Business objective through validation.</h2></div><div class="case-grid"><article class="case-card" data-reveal><span class="badge">Executive Summary</span><h3>Executive Summary</h3><p>I use this case study to make Microsoft 365 Lab Baseline reviewable without implying unsupported production ownership.</p></article><article class="case-card" data-reveal><span class="badge">Business Objective</span><h3>Business Objective</h3><p>Create a clear hiring-review path from practical support work to systems administration concepts and preserved evidence.</p></article><article class="case-card" data-reveal><span class="badge">Technical Environment</span><h3>Technical Environment</h3><p>The environment is framed around microsoft 365 concepts, sanitized files, lab-safe documentation, and repository-local proof.</p></article><article class="case-card" data-reveal><span class="badge">Architecture Overview</span><h3>Architecture Overview</h3><p>The diagram and written records show boundaries, roles, dependencies, and review context before implementation claims.</p></article><article class="case-card" data-reveal><span class="badge">Implementation Approach</span><h3>Implementation Approach</h3><p>I document intent, scope, prerequisites, validation method, rollback context, and handoff notes before describing completion.</p></article><article class="case-card" data-reveal><span class="badge">Validation Process</span><h3>Validation Process</h3><p>I verify links, sanitize proof, check diagrams against written records, and keep unsupported activity framed as methodology or planning.</p></article><article class="case-card" data-reveal><span class="badge">Lessons Learned</span><h3>Lessons Learned</h3><p>The strongest portfolio evidence is concise, source-linked, and explicit about what has been validated.</p></article><article class="case-card" data-reveal><span class="badge">Skills Demonstrated</span><h3>Skills Demonstrated</h3><p>Microsoft 365 administration concepts; Entra ID and Conditional Access planning; Intune and endpoint policy review; PowerShell-supported administrative workflow</p></article></div></section>
+    <section class="section" aria-labelledby="evidence-title"><div class="section-head"><p class="eyebrow">Related Evidence</p><h2 id="evidence-title">Open the source artifacts.</h2></div><div class="proof-grid"><article class="proof-card" data-reveal><h3>Architecture overview</h3><p>Repository-local evidence for this case study.</p><a class="button" href="../evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md">Open Evidence</a></article><article class="proof-card" data-reveal><h3>Conditional Access baseline</h3><p>Repository-local evidence for this case study.</p><a class="button" href="../evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">Open Evidence</a></article><article class="proof-card" data-reveal><h3>Architecture diagram</h3><p>Repository-local evidence for this case study.</p><a class="button" href="../evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">Open Evidence</a></article></div></section>
+  </main>
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="52" height="52" decoding="async">
+        <p><strong>Jeremy Fontenot</strong></p>
+        <p>Evidence-backed portfolio for enterprise service desk, IT support, and systems administration growth.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h2>Navigate</h2>
         <a href="../index.html">Home</a>
-        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../projects.html">Projects</a>
         <a href="../proof.html">Proof</a>
         <a href="../dashboard.html">Dashboard</a>
         <a href="../resume.html">Resume</a>
         <a href="../contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main" class="page">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../projects.html">Projects</a><span>/</span><span>Microsoft 365 Lab Baseline</span></nav>
-    <section class="page-hero" aria-labelledby="case-title">
-      <div class="page-hero-grid">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Case Study</p>
-          <h1 id="case-title">Microsoft 365 Lab Baseline.</h1>
-          <p class="lead">A tenant-safe documentation case study connecting Microsoft 365 administration concepts, identity boundaries, endpoint policy planning, Conditional Access intent, PowerShell support, and validation controls.</p>
-          <div class="actions">
-            <a class="button primary" href="../projects.html">Back to Projects</a>
-            <a class="button" href="../proof.html">Open Proof Library</a>
-          </div>
-        </div>
-        <div class="case-study-visual" data-reveal>
-          <img src="../evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg" alt="Microsoft 365 lab architecture overview diagram" width="1200" height="760" loading="eager" decoding="async">
-        </div>
-      </div>
-      <nav class="case-study-nav" aria-label="Case study sections">
-        <a href="#summary">Summary</a><a href="#objective">Objective</a><a href="#environment">Environment</a><a href="#architecture">Architecture</a><a href="#implementation">Implementation</a><a href="#validation">Validation</a><a href="#evidence">Evidence</a>
       </nav>
-    </section>
-
-    <section id="summary" class="section" aria-labelledby="summary-title">
-      <div class="section-head"><p class="eyebrow">Executive Summary</p><h2 id="summary-title">Microsoft administration presented through safe, reviewable artifacts.</h2><p>This case study documents planning and evidence for Microsoft 365 identity, endpoint, and policy administration. It is intentionally framed as lab and methodology documentation, not as a claim of enterprise tenant ownership or completed production deployment.</p></div>
-    </section>
-    <section id="objective" class="section" aria-labelledby="objective-title">
-      <div class="case-study-grid">
-        <article class="case-study-card"><span class="badge">Business Objective</span><h2 id="objective-title">Create a recruiter-readable Microsoft ecosystem review path.</h2><p>Show how identity, endpoint policy, access control, automation, rollback awareness, and validation notes fit together in a practical support workflow.</p></article>
-        <article class="case-study-card"><span class="badge">Skills Demonstrated</span><ul><li>Microsoft 365 administration concepts</li><li>Entra ID and Conditional Access planning</li><li>Intune and endpoint policy review</li><li>PowerShell-supported administrative workflow</li><li>Change documentation and validation discipline</li></ul></article>
-      </div>
-    </section>
-    <section id="environment" class="section" aria-labelledby="environment-title">
-      <div class="section-head"><p class="eyebrow">Technical Environment</p><h2 id="environment-title">Documented Microsoft ecosystem boundaries.</h2><p>The evidence references Microsoft 365, Entra ID concepts, Intune concepts, Conditional Access policy planning, Active Directory fundamentals, Windows endpoint support, and PowerShell automation. Sensitive tenant identifiers, credentials, and private environment details are not exposed.</p></div>
-    </section>
-    <section id="architecture" class="section" aria-labelledby="architecture-title">
-      <div class="section-head"><p class="eyebrow">Architecture Overview</p><h2 id="architecture-title">Identity, endpoint, policy, automation, and validation layers.</h2><p>The architecture overview connects identity lifecycle planning, endpoint policy assignment, Conditional Access scope, PowerShell-assisted operations, and evidence collection. The diagram is used as reviewer orientation, while the configuration and markdown files provide the technical context.</p></div>
-    </section>
-    <section id="implementation" class="section" aria-labelledby="implementation-title">
-      <div class="section-head"><p class="eyebrow">Implementation Approach</p><h2 id="implementation-title">Plan first, scope carefully, validate before claiming completion.</h2><p>I start the documented workflow with policy purpose and target scope, then record exceptions, expected user impact, rollback notes, validation considerations, and supporting automation. This keeps the portfolio useful without overstating live deployment status.</p></div>
-    </section>
-    <section id="validation" class="section" aria-labelledby="validation-title">
-      <div class="case-study-grid">
-        <article class="case-study-card"><span class="badge">Validation Process</span><p>Review configuration files for secrets, confirm diagrams match written boundaries, check proof links from public pages, and treat policy behavior as planned unless backed by tenant-safe exports or screenshots.</p></article>
-        <article class="case-study-card"><span class="badge">Lessons Learned</span><p>Microsoft 365 portfolio evidence is strongest when policy intent, target scope, exceptions, user impact, rollback path, and verification method are captured together.</p></article>
-      </div>
-    </section>
-    <section id="evidence" class="section" aria-labelledby="evidence-title">
-      <div class="section-head"><p class="eyebrow">Related Evidence</p><h2 id="evidence-title">Open the source artifacts.</h2></div>
-      <div class="evidence-card-grid">
-        <article class="case-study-card"><h3>Architecture overview</h3><p>Markdown architecture record for Microsoft 365 lab concepts.</p><a class="button primary" href="../evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md">Open Evidence</a></article>
-        <article class="case-study-card"><h3>Architecture diagram</h3><p>Visual map for identity, endpoint, administration, and policy boundaries.</p><a class="button" href="../evidence-library/architecture-diagrams/microsoft-365-lab-architecture-overview-2026.svg">Open Diagram</a></article>
-        <article class="case-study-card"><h3>Conditional Access baseline</h3><p>Tenant-safe YAML configuration record for policy intent and controls.</p><a class="button" href="../evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">Open Configuration</a></article>
-        <article class="case-study-card"><h3>Automation support</h3><p>PowerShell artifact supporting repeatable administrative workflow review.</p><a class="button" href="../evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1">Open Script</a></article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" aria-label="Site footer">
-    <div class="footer-divider" aria-hidden="true"></div>
-    <div class="footer-grid">
-      <div class="footer-brand"><img src="../assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="56" height="56" decoding="async"><p><strong>Jeremy Fontenot</strong></p><p>Evidence-backed case study for Microsoft ecosystem support review.</p></div>
-      <div class="footer-links"><h2 class="footer-heading">Navigate</h2><a href="../projects.html">Projects</a><a href="../proof.html">Proof</a><a href="../resume.html">Resume</a><a href="../contact.html">Contact</a></div>
-      <div class="footer-links"><h2 class="footer-heading">Case Studies</h2><a href="./pfsense-network-segmentation.html">pfSense segmentation</a><a href="./active-directory-infrastructure.html">Active Directory planning</a><a href="./powershell-automation.html">PowerShell automation</a></div>
+      <nav class="footer-links" aria-label="Evidence links">
+        <h2>Evidence</h2>
+        <a href="../evidence-library/index.html">Evidence library</a>
+        <a href="../assets/resume/jeremy-fontenot-resume.pdf">Resume PDF</a>
+        <a href="../sitemap.xml">Sitemap</a>
+      </nav>
     </div>
+    <p class="footer-meta">Service Desk / Microsoft 365 / Active Directory / PowerShell / Networking / Documentation</p>
   </footer>
 </body>
 </html>

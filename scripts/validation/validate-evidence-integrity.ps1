@@ -11,24 +11,26 @@ $HtmlFiles = Get-ChildItem -Path . -Recurse -Filter "*.html" -File | Where-Objec
 $Failures = @()
 
 foreach ($File in $HtmlFiles) {
-  $Matches = Select-String -Path $File.FullName -Pattern '(?:href|src)="([^"]*(?:evidence|proof)[^"]*)"' -AllMatches
+  $References = Select-String -Path $File.FullName -Pattern '(?:href|src)="([^"]*(?:evidence|proof)[^"]*)"' -AllMatches
 
-  foreach ($Match in $Matches.Matches) {
-    $RawPath = $Match.Groups[1].Value
-    $RelativePath = ($RawPath -split "\?")[0]
+  foreach ($Reference in $References) {
+    foreach ($Match in $Reference.Matches) {
+      $RawPath = $Match.Groups[1].Value
+      $RelativePath = ($RawPath -split "\?")[0]
 
-    if ($RelativePath.StartsWith("http") -or $RelativePath.StartsWith("#")) {
-      continue
-    }
+      if ($RelativePath.StartsWith("http") -or $RelativePath.StartsWith("#")) {
+        continue
+      }
 
-    $ResolvedPath = Join-Path $File.DirectoryName $RelativePath
+      $ResolvedPath = Join-Path $File.DirectoryName $RelativePath
 
-    if (-not (Test-Path $ResolvedPath)) {
-      $Failures += "$($File.FullName) references missing evidence artifact: $RawPath"
-      Write-Host "Missing evidence artifact: $RawPath" -ForegroundColor Red
-      Write-Host "Referenced by: $($File.FullName)" -ForegroundColor Red
-    } else {
-      Write-Host "Verified evidence artifact: $RawPath"
+      if (-not (Test-Path $ResolvedPath)) {
+        $Failures += "$($File.FullName) references missing evidence artifact: $RawPath"
+        Write-Host "Missing evidence artifact: $RawPath" -ForegroundColor Red
+        Write-Host "Referenced by: $($File.FullName)" -ForegroundColor Red
+      } else {
+        Write-Host "Verified evidence artifact: $RawPath"
+      }
     }
   }
 }
