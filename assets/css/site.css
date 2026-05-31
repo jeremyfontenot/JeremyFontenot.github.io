@@ -2445,6 +2445,20 @@ li {
   align-items: center;
 }
 
+.resume-page .signal-status {
+  display: block;
+  margin: 0.3rem 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-page .signal p {
+  margin: 0;
+}
+
 /* Proof page: metrics strip and evidence scan polish */
 .proof-page .proof-metrics {
   padding-top: 1.2rem;
@@ -2517,20 +2531,6 @@ li {
     font-size: clamp(0.92rem, 0.94vw, 0.99rem);
     line-height: 1.55;
     max-width: 52ch;
-  }
-
-  .resume-page .signal-status {
-    display: block;
-    margin: 0.3rem 0 0.35rem;
-    color: var(--accent);
-    font-size: 0.75rem;
-    font-weight: 900;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  .resume-page .signal p {
-    margin: 0;
   }
 
   .recruiter-highlights,
