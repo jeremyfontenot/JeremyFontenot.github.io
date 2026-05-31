@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jeremy Fontenot | Enterprise Service Desk and IT Support Portfolio</title>
-  <meta name="description" content="Jeremy Fontenot's documentation-first portfolio for enterprise service desk, IT support, Microsoft 365, endpoint troubleshooting, and evidence-backed systems administration growth.">
+  <meta name="description" content="My documentation-first portfolio for enterprise service desk, IT support, Microsoft 365, endpoint troubleshooting, and evidence-backed systems administration growth.">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://jeremyfontenot.online/">
   <meta property="og:site_name" content="Jeremy Fontenot">
   <meta property="og:title" content="Jeremy Fontenot | Enterprise Service Desk and IT Support Portfolio">
@@ -18,8 +20,10 @@
   <meta name="twitter:description" content="Evidence-backed portfolio covering enterprise support operations, Microsoft 365 exposure, PowerShell automation, troubleshooting, and documented systems growth.">
   <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="./assets/css/site.css?v=20260531-positioning">
-  <link rel="stylesheet" href="./assets/css/homepage-governance.css?v=20260529-visual-pass">
+  <link rel="manifest" href="./assets/site.webmanifest">
+  <link rel="apple-touch-icon" href="./assets/logos/favicon_128x128.png">
+  <link rel="stylesheet" href="./assets/css/site.css?v=20260531-enterprise-opt">
+  <link rel="stylesheet" href="./assets/css/homepage-governance.css?v=20260531-enterprise-opt">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,7 +94,7 @@
           </div>
         </div>
 
-        <div class="hero-console" role="group" aria-label="Portfolio operating model" data-reveal>
+        <div class="hero-console" role="group" aria-label="My portfolio operating model" data-reveal>
           <div class="console-top">
             <span>reviewer console</span>
             <span>evidence-backed</span>
@@ -123,9 +127,9 @@
     <section class="section section-telemetry" aria-labelledby="trust-title">
       <div class="split">
         <div class="section-head" data-reveal>
-          <p class="eyebrow">Portfolio Standard</p>
+          <p class="eyebrow">My Portfolio Standard</p>
           <h2 id="trust-title">Built for recruiter review, technical screening, and accurate positioning.</h2>
-          <p>This site presents proven support experience alongside preserved lab records, sanitized documentation, diagrams, scripts, runbooks, and validation notes. Each major project identifies the objective, technical area, implementation workflow, validation method, and associated proof artifact.</p>
+          <p>I present proven support experience alongside preserved lab records, sanitized documentation, diagrams, scripts, runbooks, and validation notes. Each major project identifies the objective, technical area, implementation workflow, validation method, and associated proof artifact.</p>
         </div>
         <div class="metric-grid" data-reveal>
           <div class="stat"><strong>5</strong><span>core recruiter pages</span></div>
@@ -139,7 +143,7 @@
       <div class="section-head" data-reveal>
         <p class="eyebrow">Technical Focus</p>
         <h2 id="focus-title">Operational skills mapped to real reviewer paths.</h2>
-        <p>Each capability is paired with project evidence, documentation, or a validation artifact so the portfolio remains useful for both hiring managers and technical screeners.</p>
+        <p>I pair each capability with project evidence, documentation, or a validation artifact so the portfolio remains useful for both hiring managers and technical screeners.</p>
       </div>
       <div class="focus-grid">
         <article class="card" data-reveal>
@@ -175,13 +179,177 @@
       </div>
     </section>
 
+    <section class="section homelab-section" aria-labelledby="homelab-title" data-lab-topology>
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Interactive Home Lab</p>
+        <h2 id="homelab-title">Virtualization, network segmentation, identity, and remote access in one reviewable topology.</h2>
+        <p>I use this preserved lab model to explain how Proxmox, pfSense, Active Directory, DNS, DHCP, VPN access, VLANs, Windows Server, Linux workloads, and IDS/IPS concepts relate in a realistic support and systems administration environment.</p>
+      </div>
+
+      <div class="lab-grid">
+        <div class="lab-map-card" data-reveal>
+          <div class="console-top"><span>home lab topology</span><span data-lab-status>Focused on Proxmox virtualization</span></div>
+          <svg class="lab-topology" viewBox="0 0 1120 680" role="group" aria-labelledby="lab-svg-title lab-svg-desc">
+            <title id="lab-svg-title">Interactive home lab topology with Proxmox, pfSense, Active Directory, VLANs, VPN, and IDS/IPS nodes</title>
+            <desc id="lab-svg-desc">Clickable topology showing internet edge, firewall, virtualization host, identity services, network services, Windows Server, Linux, VPN access, VLAN segments, and IDS/IPS monitoring flows.</desc>
+            <g class="lab-zone zone-edge">
+              <rect x="36" y="54" width="252" height="560" rx="22"></rect>
+              <text x="62" y="92">Edge and Remote Access</text>
+            </g>
+            <g class="lab-zone zone-core">
+              <rect x="330" y="54" width="430" height="560" rx="22"></rect>
+              <text x="356" y="92">Virtualization and Core Services</text>
+            </g>
+            <g class="lab-zone zone-services">
+              <rect x="802" y="54" width="282" height="560" rx="22"></rect>
+              <text x="828" y="92">Workloads</text>
+            </g>
+
+            <path class="lab-flow flow-internet" d="M156 178 C230 178 246 178 330 178"></path>
+            <path class="lab-flow flow-vlan" d="M546 258 C638 258 686 322 824 322"></path>
+            <path class="lab-flow flow-identity" d="M546 258 C610 350 652 430 824 438"></path>
+            <path class="lab-flow flow-dns" d="M546 258 C582 314 608 358 686 358"></path>
+            <path class="lab-flow flow-vpn" d="M160 500 C230 448 250 396 330 330"></path>
+            <path class="lab-flow flow-ids" d="M546 258 C660 192 764 188 914 210"></path>
+
+            <a href="./case-studies/pfsense-network-segmentation.html" class="lab-node-link" data-node="internet" aria-label="Internet uplink and WAN ingress">
+              <g class="lab-node" transform="translate(156 178)">
+                <title>Internet and WAN ingress path</title>
+                <circle r="48"></circle><text y="-5">WAN</text><text y="18">Internet</text>
+              </g>
+            </a>
+            <a href="./case-studies/pfsense-network-segmentation.html" class="lab-node-link" data-node="pfsense" aria-label="pfSense firewall, NAT, VLAN gateway, and VPN edge">
+              <g class="lab-node" transform="translate(330 178)">
+                <title>pfSense firewall, NAT, VLAN gateway, WireGuard, and OpenVPN edge</title>
+                <circle r="58"></circle><text y="-8">pfSense</text><text y="18">Firewall</text>
+              </g>
+            </a>
+            <a href="./case-studies/proxmox-home-lab.html" class="lab-node-link is-active" data-node="proxmox" aria-label="Proxmox virtualization host for Windows and Linux lab workloads">
+              <g class="lab-node node-primary" transform="translate(546 258)">
+                <title>Proxmox virtualization host for Windows Server, Linux, and service workloads</title>
+                <circle r="66"></circle><text y="-10">Proxmox</text><text y="18">Compute</text>
+              </g>
+            </a>
+            <a href="./case-studies/active-directory-infrastructure.html" class="lab-node-link" data-node="ad" aria-label="Active Directory domain services on Windows Server">
+              <g class="lab-node" transform="translate(686 438)">
+                <title>Active Directory domain services, Group Policy planning, and identity boundary review</title>
+                <circle r="54"></circle><text y="-6">Active</text><text y="18">Directory</text>
+              </g>
+            </a>
+            <a href="./proof.html" class="lab-node-link" data-node="dnsdhcp" aria-label="DNS and DHCP network service role">
+              <g class="lab-node" transform="translate(686 358)">
+                <title>DNS and DHCP service placement, lease review, and name-resolution troubleshooting</title>
+                <circle r="48"></circle><text y="-5">DNS</text><text y="18">DHCP</text>
+              </g>
+            </a>
+            <a href="./proof.html" class="lab-node-link" data-node="vlans" aria-label="VLAN segmentation for management, server, client, and lab traffic">
+              <g class="lab-node" transform="translate(824 322)">
+                <title>VLAN segmentation for management, server, client, and lab traffic</title>
+                <circle r="48"></circle><text y="-5">VLANs</text><text y="18">Zones</text>
+              </g>
+            </a>
+            <a href="./case-studies/active-directory-infrastructure.html" class="lab-node-link" data-node="windows" aria-label="Windows Server lab workload">
+              <g class="lab-node" transform="translate(936 438)">
+                <title>Windows Server workload for identity, management, and support validation</title>
+                <circle r="52"></circle><text y="-5">Windows</text><text y="18">Server</text>
+              </g>
+            </a>
+            <a href="./proof.html" class="lab-node-link" data-node="linux" aria-label="Linux lab workload for services and administration practice">
+              <g class="lab-node" transform="translate(936 322)">
+                <title>Linux workload for service hosting, package administration, logging, and network checks</title>
+                <circle r="50"></circle><text y="-5">Linux</text><text y="18">Services</text>
+              </g>
+            </a>
+            <a href="./proof.html" class="lab-node-link" data-node="vpn" aria-label="WireGuard and OpenVPN remote access path">
+              <g class="lab-node" transform="translate(160 500)">
+                <title>WireGuard and OpenVPN remote access path into controlled lab segments</title>
+                <circle r="52"></circle><text y="-5">VPN</text><text y="18">WG / OVPN</text>
+              </g>
+            </a>
+            <a href="./proof.html" class="lab-node-link" data-node="ids" aria-label="IDS and IPS monitoring concept">
+              <g class="lab-node" transform="translate(914 210)">
+                <title>IDS/IPS monitoring concept for traffic visibility and alert review</title>
+                <circle r="50"></circle><text y="-5">IDS</text><text y="18">IPS</text>
+              </g>
+            </a>
+          </svg>
+          <div class="lab-flow-controls" role="group" aria-label="Network flow visualization">
+            <button class="filter-button active" type="button" data-flow="all" aria-pressed="true">All Flows</button>
+            <button class="filter-button" type="button" data-flow="internet" aria-pressed="false">WAN to Firewall</button>
+            <button class="filter-button" type="button" data-flow="identity" aria-pressed="false">Identity</button>
+            <button class="filter-button" type="button" data-flow="dns" aria-pressed="false">DNS / DHCP</button>
+            <button class="filter-button" type="button" data-flow="vpn" aria-pressed="false">VPN</button>
+            <button class="filter-button" type="button" data-flow="ids" aria-pressed="false">IDS / IPS</button>
+          </div>
+        </div>
+
+        <div class="lab-details" id="lab-service-panel" aria-live="polite" data-reveal>
+          <article class="lab-service-card is-active" data-node-card="proxmox">
+            <span class="badge">Virtualization</span>
+            <h3>Proxmox</h3>
+            <p>I use Proxmox as the virtualization layer for lab workloads, service isolation, snapshot-aware practice, and infrastructure documentation.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="pfsense">
+            <span class="badge">Firewall</span>
+            <h3>pfSense</h3>
+            <p>pfSense represents the routing, firewall, NAT, VLAN gateway, WireGuard, OpenVPN, and segmentation-control boundary.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="ad">
+            <span class="badge">Identity</span>
+            <h3>Active Directory</h3>
+            <p>Active Directory supports domain-service planning, OU structure, Group Policy scope, authentication context, and Windows administration practice.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="dnsdhcp">
+            <span class="badge">Core Network Services</span>
+            <h3>DNS and DHCP</h3>
+            <p>DNS and DHCP provide name resolution, lease assignment, reservation review, gateway checks, and common service desk troubleshooting paths.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="vpn">
+            <span class="badge">Remote Access</span>
+            <h3>WireGuard and OpenVPN</h3>
+            <p>WireGuard and OpenVPN model controlled remote access, tunnel validation, firewall rules, and client connectivity troubleshooting.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="vlans">
+            <span class="badge">Segmentation</span>
+            <h3>VLANs</h3>
+            <p>VLANs separate management, server, client, lab, and monitoring traffic so routing and firewall policy remain reviewable.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="windows">
+            <span class="badge">Server Administration</span>
+            <h3>Windows Server</h3>
+            <p>Windows Server anchors identity, management, service validation, and endpoint support workflows.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="linux">
+            <span class="badge">Linux</span>
+            <h3>Linux Workloads</h3>
+            <p>Linux workloads support service hosting, package administration, network checks, logging practice, and cross-platform troubleshooting.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="ids">
+            <span class="badge">Security Monitoring</span>
+            <h3>IDS/IPS</h3>
+            <p>IDS/IPS concepts provide traffic visibility, alert-review context, and segmentation validation without claiming live production monitoring.</p>
+          </article>
+          <article class="lab-service-card" data-node-card="internet">
+            <span class="badge">Edge</span>
+            <h3>WAN Ingress</h3>
+            <p>The WAN edge shows where outside connectivity reaches the firewall before controlled routing into lab segments.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="section-actions">
+        <a class="button primary" href="./case-studies/proxmox-home-lab.html">Open Home Lab Case Study</a>
+        <a class="button" href="./case-studies/pfsense-network-segmentation.html">Review Segmentation Case Study</a>
+      </div>
+    </section>
+
 
     <section class="section section-telemetry governance-platform-section" aria-labelledby="governance-title">
       <div class="section-heading">
         <p class="eyebrow">Repository Governance Platform</p>
         <div class="metric-live">Validation Systems Operational</div>
         <h2 id="governance-title">Enterprise-style validation and deployment governance.</h2>
-        <p>This repository operates as a governed DevSecOps-style engineering platform with automated CI/CD validation, evidence integrity enforcement, Lighthouse auditing, screenshot verification, SEO governance, and operational telemetry reporting.</p>
+          <p>I operate this repository as a governed DevSecOps-style engineering platform with automated CI/CD validation, evidence integrity enforcement, Lighthouse auditing, screenshot verification, SEO governance, and operational telemetry reporting.</p>
       </div>
       <div class="governance-console" aria-label="Live repository governance status" role="status" aria-live="polite">
         <div class="console-top"><span>repository health</span><span>online</span></div>

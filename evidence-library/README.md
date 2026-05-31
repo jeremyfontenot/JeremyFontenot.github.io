@@ -1,6 +1,6 @@
 # Evidence Library
 
-This folder stores curated, sanitized portfolio evidence for Jeremy Fontenot's IT support, systems administration, networking, automation, and documentation work.
+This folder stores curated, sanitized portfolio evidence for my IT support, systems administration, networking, automation, and documentation work.
 
 The library is preservation-first. Source files, supporting archive material, and historical context should be reviewed before cleanup or consolidation so useful proof is not removed accidentally.
 

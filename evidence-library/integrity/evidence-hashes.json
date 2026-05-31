@@ -1,434 +1,434 @@
 [
-  {
-    "path": "evidence-library\\evidence-source-map.csv",
-    "sha256": "F7B2EF5654579487963B7B60C5CD259320B68C1CD377DFDA6919B3DD1285614F",
-    "size": 6674,
-    "lastModified": "2026-05-31T01:40:11.9202957Z"
-  },
-  {
-    "path": "evidence-library\\index.html",
-    "sha256": "34D7F4B937F915744FCE52AEECFE5549797BDA2D003E4152C280DBA5A277392E",
-    "size": 3554,
-    "lastModified": "2026-05-31T02:21:38.0736969Z"
-  },
-  {
-    "path": "evidence-library\\README.md",
-    "sha256": "833E7153CE0DD8FA6ABA47B289C01720D3390AACB027D4C835F91BA79F87A8FE",
-    "size": 2547,
-    "lastModified": "2026-05-25T01:46:15.9027027Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9027027Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\home-lab-network-topology-diagram-2026.svg",
-    "sha256": "C0D137FF0184D4FE5257EB8885F1EBC762B5E0EB37622092EE804B36B38D1872",
-    "size": 704,
-    "lastModified": "2026-05-29T17:00:25.9190099Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\identity-access-ad-migration-diagram-2026.svg",
-    "sha256": "196148522A652D1DDA1A9F5DA553A5D1CB33F193DD2B6FB7357DC5CA4DD8973B",
-    "size": 2203,
-    "lastModified": "2026-05-25T01:46:15.9186976Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\m365-lab-baseline-preview.svg",
-    "sha256": "060040A9FCD215F0C2B458BBD9C6F5D936580C0551EEE8D6B0CA8597BD980B00",
-    "size": 4787,
-    "lastModified": "2026-05-25T01:46:15.9199747Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\mail-flow-troubleshooting-preview.svg",
-    "sha256": "0B6F2B943FD4AA8C322DDDCA5334AE7399C3C56918BCFA32D2AD476ADD9B1DD7",
-    "size": 3916,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-diagram-2026.svg",
-    "sha256": "1FFF1F562C16D0B4356728086CE1048B6D57AD8EA7445B001ABB6625F790876B",
-    "size": 2003,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-overview-2026.svg",
-    "sha256": "4E89C54C689BA07B9ABC8175A7907868B2511F6BD6A3469E5C964349CE1C21E8",
-    "size": 3455,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\pfsense-network-segmentation-diagram-2026.svg",
-    "sha256": "1A792E151C8A9CCB32425123CD42F33744E3418B24DC2C9199EFBB55230486AD",
-    "size": 4303,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\pfsense-network-segmentation-preview.svg",
-    "sha256": "66D79A01565CFB6C0631F4DF28B4ECCCEB6035D18C2CD2D50C0FB5D0910159AF",
-    "size": 4335,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\architecture-diagrams\\service-desk-network-troubleshooting-flow-2026.svg",
-    "sha256": "26CA8C3612E806EB6D664EEDB498D6D27FD49D3EEC868584D9F234188C170651",
-    "size": 3578,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\archive\\README.md",
-    "sha256": "168A5ABC5FB94EBAE5E96723BAB8F9425069958FAF3E6DC60C9BD0C3971784D6",
-    "size": 536,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\certifications\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\certifications\\certification-lpi-badge-2026.png",
-    "sha256": "1E3F58142EF4311EE7A3D0438DFA99F99F55A8FFCA6872BDC384F58DB3D75FFF",
-    "size": 27505,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\experience\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9209058Z"
-  },
-  {
-    "path": "evidence-library\\experience\\jeremy-fontenot-resume-2026.pdf",
-    "sha256": "F2BD2107FCEBCBC8583ABF1FB4734D8209394CC29DA81F49DFDB71BA089DD8D6",
-    "size": 76612,
-    "lastModified": "2026-05-31T02:21:07.6199566Z"
-  },
-  {
-    "path": "evidence-library\\projects\\README.md",
-    "sha256": "1021A819EBEDE8B30656872F424AF927671D0F2A935054AF87A79407EA794CEF",
-    "size": 1379,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\backup-disaster-recovery\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\backup-disaster-recovery\\backup-restore-validation-workflow-2026.md",
-    "sha256": "FCE1F8B62F9A5528C647855DE3FEDCE71934F467C6FCAEE5BDE9E97F1FDE08E9",
-    "size": 4988,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\endpoint-management\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\home-lab\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\home-lab\\lab-portfolio-preserved.pdf",
-    "sha256": "44D9015528D94276674B77E1930C7307F2451E9F90ACA4B37E6EB583A86BC9BA",
-    "size": 72973,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\identity-access\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\identity-access\\identity-access-change-record-notes-2026.md",
-    "sha256": "DDDAC6455D61208DDA3A4340E93B4A02C1EDD04B10FD6F3A4CAE7CE34546356B",
-    "size": 1521,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\infrastructure-networking\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\infrastructure-networking\\dns-dhcp-runbook-2026.txt",
-    "sha256": "D7D1E2BAD7D48C9CE048D39B288C6F1CA4D664C3F36CD71CADC13D0CECA23786",
-    "size": 2517,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\infrastructure-networking\\pfsense-network-segmentation-diagram-2026.md",
-    "sha256": "6A062DB595FD02A1232C0F16F0A7E7945BA12A6251E2EBA7EC88F76A27F366AE",
-    "size": 4420,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\infrastructure-networking\\vlan-architecture-walkthrough-2026.md",
-    "sha256": "58A331C6A691866883FA435FE1D0FC58366E589B95899D5C5644FE3B84B6A402",
-    "size": 5426,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\microsoft-365-lab\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\microsoft-365-lab\\microsoft-365-lab-architecture-overview-2026.md",
-    "sha256": "50CF5E0C99328A536277AE5B13F9CE354A1C6ACE7B5193D146EA9772E4ED9335",
-    "size": 5275,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\microsoft-365-lab\\microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml",
-    "sha256": "7CE07405BFE1816142A4DD0CB0E37C33F18DC69A5705BC6748C91B5073DEC5B5",
-    "size": 1273,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\monitoring-logging\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\monitoring-logging\\monitoring-alerting-overview-2026.md",
-    "sha256": "C0FE4CE7F87AD4BCA36C0E77022A6D38F84B14C5DA9AB471E9FCFA40E14398B1",
-    "size": 3945,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\powershell-automation\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\powershell-automation\\operational-handoff-2026.txt",
-    "sha256": "75FF9852121F723B87A1C963A14435649870910C99F78E8EC9E18C134A3CBB1C",
-    "size": 1755,
-    "lastModified": "2026-05-25T02:34:09.4499720Z"
-  },
-  {
-    "path": "evidence-library\\projects\\powershell-automation\\provisioning-change-log-2026.md",
-    "sha256": "B2953394032CE961D0B9D14AFF5049D22818F0F7DFCFF0F12CB585F0C68B7EDB",
-    "size": 2141,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\dns-authentication-playbook-2026.md",
-    "sha256": "177E336D0E6FB55A472D2F0D1CB1035E88CB662021C7888DB098206452B954A3",
-    "size": 1259,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\incident-summary.md",
-    "sha256": "96535502861EE70F5191C1F1C99D45842E4DBF8A0285A28FB4BB843168B38191",
-    "size": 3272,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\post-incident-review.md",
-    "sha256": "D316FA38E8DE58E5267DA1BB23CD9B59F3EC6CBFB7D34972D08C3F360E93CD24",
-    "size": 1838,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\rca-report.md",
-    "sha256": "76409C00919BEF420265BC426627F6DBC67CC263E21F93433E9FD8A883311753",
-    "size": 3259,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\remediation-plan.md",
-    "sha256": "1CE8610D068FAC10FE334A0A271DD09F3935DCE027CBF7689902D3AD8AFB2C03",
-    "size": 2381,
-    "lastModified": "2026-05-25T01:46:15.9334868Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\troubleshooting-notes.md",
-    "sha256": "560FA1DD7C1AB3470AF7C5AEB41858986D426783B4156371543B0FAFF2A0ACFC",
-    "size": 2068,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\troubleshooting-rca-incident-log-2025.txt",
-    "sha256": "4E2BF4850B2C3CDFD894E41782D89C5B7AEB1A7A66074F04D9B0104F9A164218",
-    "size": 1107,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\projects\\troubleshooting-rca\\validation-checklist.md",
-    "sha256": "333DAF7C4418FC5451783E5F7BDF91DEC33FC5CB7A6D5186E7B27A482C082BF7",
-    "size": 1970,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\screenshots\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\screenshots\\portfolio-visual-screenshot-2026.png",
-    "sha256": "4741989FC6D4314D5503DEB5AB5FB90FD6839030068EDEEAC148200B985A6463",
-    "size": 2469061,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\scripts\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\scripts\\powershell-automation-provisioning-script-v1.ps1",
-    "sha256": "FF0CFE1538926A71158B4391CA26F32F02EDE0C2A8449854376D08896089F7D7",
-    "size": 5376,
-    "lastModified": "2026-05-25T02:34:09.4499720Z"
-  },
-  {
-    "path": "evidence-library\\skills\\README.md",
-    "sha256": "F8CBA1B9C6C2F5B892996B848083F23B9ADC7077530997DCA206259022B51868",
-    "size": 498,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\skills\\active-directory\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\skills\\automation\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\skills\\dns-dhcp\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\skills\\dns-dhcp\\dns-dhcp-operational-runbook-2026.md",
-    "sha256": "2F482512B5AD7FF14836745C9A2AA3226C7615E76E4AB54602B241F51E4C28CF",
-    "size": 6267,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\skills\\documentation\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\skills\\entra-identity\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9491798Z"
-  },
-  {
-    "path": "evidence-library\\skills\\github-pages-operations\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\intune-endpoint-management\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\microsoft-365-administration\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\networking-vlans\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\pfsense-firewall\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\powershell\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\security-baselines\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\service-desk-support\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\service-desk-support\\service-desk-network-troubleshooting-workflow-2026.md",
-    "sha256": "FF373A6A898BBC91EAB4C6FDA217D7D0CF10DF8062C4AF16E7FA74AE6118B0A0",
-    "size": 5231,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\validation-audit\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\skills\\windows-support\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\validation-reports\\.gitkeep",
-    "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
-    "size": 2,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\validation-reports\\network-validation-checklist-2026.csv",
-    "sha256": "F2173B5376B48998E2CA92BC761BEBA11B6D0E3F47CE1A6D41742E2983520F10",
-    "size": 2635,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  },
-  {
-    "path": "evidence-library\\validation-reports\\network-validation-checklist-2026.md",
-    "sha256": "4EC60F326B36243D0041C0178D8952C3DE17A159714F83B582209AF5B5D47684",
-    "size": 4597,
-    "lastModified": "2026-05-25T01:46:15.9648907Z"
-  }
+    {
+        "path":  "evidence-library\\evidence-source-map.csv",
+        "sha256":  "F7B2EF5654579487963B7B60C5CD259320B68C1CD377DFDA6919B3DD1285614F",
+        "size":  6674,
+        "lastModified":  "2026-05-31T01:40:11.9202957Z"
+    },
+    {
+        "path":  "evidence-library\\index.html",
+        "sha256":  "162576138005E8F671E75BEC76152B8E934D0CAEC50C1AA21D7542E078E2D3EF",
+        "size":  4096,
+        "lastModified":  "2026-05-31T18:58:20.1228635Z"
+    },
+    {
+        "path":  "evidence-library\\README.md",
+        "sha256":  "17C538A912D226C6D83C836D29C858AF55E5994649972A0971683B4E038D3956",
+        "size":  2532,
+        "lastModified":  "2026-05-31T18:58:20.1278610Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9027027Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\home-lab-network-topology-diagram-2026.svg",
+        "sha256":  "C0D137FF0184D4FE5257EB8885F1EBC762B5E0EB37622092EE804B36B38D1872",
+        "size":  704,
+        "lastModified":  "2026-05-29T17:00:25.9190099Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\identity-access-ad-migration-diagram-2026.svg",
+        "sha256":  "196148522A652D1DDA1A9F5DA553A5D1CB33F193DD2B6FB7357DC5CA4DD8973B",
+        "size":  2203,
+        "lastModified":  "2026-05-25T01:46:15.9186976Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\m365-lab-baseline-preview.svg",
+        "sha256":  "060040A9FCD215F0C2B458BBD9C6F5D936580C0551EEE8D6B0CA8597BD980B00",
+        "size":  4787,
+        "lastModified":  "2026-05-25T01:46:15.9199747Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\mail-flow-troubleshooting-preview.svg",
+        "sha256":  "0B6F2B943FD4AA8C322DDDCA5334AE7399C3C56918BCFA32D2AD476ADD9B1DD7",
+        "size":  3916,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-diagram-2026.svg",
+        "sha256":  "1FFF1F562C16D0B4356728086CE1048B6D57AD8EA7445B001ABB6625F790876B",
+        "size":  2003,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-overview-2026.svg",
+        "sha256":  "4E89C54C689BA07B9ABC8175A7907868B2511F6BD6A3469E5C964349CE1C21E8",
+        "size":  3455,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\pfsense-network-segmentation-diagram-2026.svg",
+        "sha256":  "1A792E151C8A9CCB32425123CD42F33744E3418B24DC2C9199EFBB55230486AD",
+        "size":  4303,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\pfsense-network-segmentation-preview.svg",
+        "sha256":  "66D79A01565CFB6C0631F4DF28B4ECCCEB6035D18C2CD2D50C0FB5D0910159AF",
+        "size":  4335,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\architecture-diagrams\\service-desk-network-troubleshooting-flow-2026.svg",
+        "sha256":  "26CA8C3612E806EB6D664EEDB498D6D27FD49D3EEC868584D9F234188C170651",
+        "size":  3578,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\archive\\README.md",
+        "sha256":  "168A5ABC5FB94EBAE5E96723BAB8F9425069958FAF3E6DC60C9BD0C3971784D6",
+        "size":  536,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\certifications\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\certifications\\certification-lpi-badge-2026.png",
+        "sha256":  "1E3F58142EF4311EE7A3D0438DFA99F99F55A8FFCA6872BDC384F58DB3D75FFF",
+        "size":  27505,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\experience\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9209058Z"
+    },
+    {
+        "path":  "evidence-library\\experience\\jeremy-fontenot-resume-2026.pdf",
+        "sha256":  "F2BD2107FCEBCBC8583ABF1FB4734D8209394CC29DA81F49DFDB71BA089DD8D6",
+        "size":  76612,
+        "lastModified":  "2026-05-31T02:21:07.6199566Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\README.md",
+        "sha256":  "1021A819EBEDE8B30656872F424AF927671D0F2A935054AF87A79407EA794CEF",
+        "size":  1379,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\backup-disaster-recovery\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\backup-disaster-recovery\\backup-restore-validation-workflow-2026.md",
+        "sha256":  "FCE1F8B62F9A5528C647855DE3FEDCE71934F467C6FCAEE5BDE9E97F1FDE08E9",
+        "size":  4988,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\endpoint-management\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\home-lab\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\home-lab\\lab-portfolio-preserved.pdf",
+        "sha256":  "44D9015528D94276674B77E1930C7307F2451E9F90ACA4B37E6EB583A86BC9BA",
+        "size":  72973,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\identity-access\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\identity-access\\identity-access-change-record-notes-2026.md",
+        "sha256":  "DDDAC6455D61208DDA3A4340E93B4A02C1EDD04B10FD6F3A4CAE7CE34546356B",
+        "size":  1521,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\infrastructure-networking\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\infrastructure-networking\\dns-dhcp-runbook-2026.txt",
+        "sha256":  "4D3BD464C561D3D86D0F02BF2C188EFE6B4F5D2D38973EE7AD90C8902474DBFA",
+        "size":  2517,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\infrastructure-networking\\pfsense-network-segmentation-diagram-2026.md",
+        "sha256":  "6A062DB595FD02A1232C0F16F0A7E7945BA12A6251E2EBA7EC88F76A27F366AE",
+        "size":  4420,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\infrastructure-networking\\vlan-architecture-walkthrough-2026.md",
+        "sha256":  "58A331C6A691866883FA435FE1D0FC58366E589B95899D5C5644FE3B84B6A402",
+        "size":  5426,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\microsoft-365-lab\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\microsoft-365-lab\\microsoft-365-lab-architecture-overview-2026.md",
+        "sha256":  "50CF5E0C99328A536277AE5B13F9CE354A1C6ACE7B5193D146EA9772E4ED9335",
+        "size":  5275,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\microsoft-365-lab\\microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml",
+        "sha256":  "7CE07405BFE1816142A4DD0CB0E37C33F18DC69A5705BC6748C91B5073DEC5B5",
+        "size":  1273,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\monitoring-logging\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\monitoring-logging\\monitoring-alerting-overview-2026.md",
+        "sha256":  "C0FE4CE7F87AD4BCA36C0E77022A6D38F84B14C5DA9AB471E9FCFA40E14398B1",
+        "size":  3945,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\powershell-automation\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\powershell-automation\\operational-handoff-2026.txt",
+        "sha256":  "75FF9852121F723B87A1C963A14435649870910C99F78E8EC9E18C134A3CBB1C",
+        "size":  1755,
+        "lastModified":  "2026-05-25T02:34:09.4499720Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\powershell-automation\\provisioning-change-log-2026.md",
+        "sha256":  "D9526387F471C4C041FDAD15E38F4B683AC566478402422CD3AB44208AC0D5E8",
+        "size":  2141,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\dns-authentication-playbook-2026.md",
+        "sha256":  "AFFF1CAA6B355CB95E9F468DB832B2881C9E5C0E4E5ED934046872C94B1B6634",
+        "size":  1259,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\incident-summary.md",
+        "sha256":  "96535502861EE70F5191C1F1C99D45842E4DBF8A0285A28FB4BB843168B38191",
+        "size":  3272,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\post-incident-review.md",
+        "sha256":  "D316FA38E8DE58E5267DA1BB23CD9B59F3EC6CBFB7D34972D08C3F360E93CD24",
+        "size":  1838,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\rca-report.md",
+        "sha256":  "76409C00919BEF420265BC426627F6DBC67CC263E21F93433E9FD8A883311753",
+        "size":  3259,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\remediation-plan.md",
+        "sha256":  "1CE8610D068FAC10FE334A0A271DD09F3935DCE027CBF7689902D3AD8AFB2C03",
+        "size":  2381,
+        "lastModified":  "2026-05-25T01:46:15.9334868Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\troubleshooting-notes.md",
+        "sha256":  "560FA1DD7C1AB3470AF7C5AEB41858986D426783B4156371543B0FAFF2A0ACFC",
+        "size":  2068,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\troubleshooting-rca-incident-log-2025.txt",
+        "sha256":  "4E2BF4850B2C3CDFD894E41782D89C5B7AEB1A7A66074F04D9B0104F9A164218",
+        "size":  1107,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\projects\\troubleshooting-rca\\validation-checklist.md",
+        "sha256":  "333DAF7C4418FC5451783E5F7BDF91DEC33FC5CB7A6D5186E7B27A482C082BF7",
+        "size":  1970,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\screenshots\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\screenshots\\portfolio-visual-screenshot-2026.png",
+        "sha256":  "4741989FC6D4314D5503DEB5AB5FB90FD6839030068EDEEAC148200B985A6463",
+        "size":  2469061,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\scripts\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\scripts\\powershell-automation-provisioning-script-v1.ps1",
+        "sha256":  "FF0CFE1538926A71158B4391CA26F32F02EDE0C2A8449854376D08896089F7D7",
+        "size":  5376,
+        "lastModified":  "2026-05-25T02:34:09.4499720Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\README.md",
+        "sha256":  "F8CBA1B9C6C2F5B892996B848083F23B9ADC7077530997DCA206259022B51868",
+        "size":  498,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\active-directory\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\automation\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\dns-dhcp\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\dns-dhcp\\dns-dhcp-operational-runbook-2026.md",
+        "sha256":  "2F482512B5AD7FF14836745C9A2AA3226C7615E76E4AB54602B241F51E4C28CF",
+        "size":  6267,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\documentation\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\entra-identity\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9491798Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\github-pages-operations\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\intune-endpoint-management\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\microsoft-365-administration\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\networking-vlans\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\pfsense-firewall\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\powershell\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\security-baselines\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\service-desk-support\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\service-desk-support\\service-desk-network-troubleshooting-workflow-2026.md",
+        "sha256":  "FF373A6A898BBC91EAB4C6FDA217D7D0CF10DF8062C4AF16E7FA74AE6118B0A0",
+        "size":  5231,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\validation-audit\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\skills\\windows-support\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\validation-reports\\.gitkeep",
+        "sha256":  "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+        "size":  2,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\validation-reports\\network-validation-checklist-2026.csv",
+        "sha256":  "F2173B5376B48998E2CA92BC761BEBA11B6D0E3F47CE1A6D41742E2983520F10",
+        "size":  2635,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    },
+    {
+        "path":  "evidence-library\\validation-reports\\network-validation-checklist-2026.md",
+        "sha256":  "4EC60F326B36243D0041C0178D8952C3DE17A159714F83B582209AF5B5D47684",
+        "size":  4597,
+        "lastModified":  "2026-05-25T01:46:15.9648907Z"
+    }
 ]

@@ -39,6 +39,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--text);
+  background-color: var(--bg);
   background:
     radial-gradient(circle at 18% 0%, rgba(56, 189, 248, 0.18), transparent 28rem),
     radial-gradient(circle at 82% 14%, rgba(217, 70, 239, 0.14), transparent 24rem),
@@ -2300,6 +2301,221 @@ li {
   margin-top: 0.2rem;
 }
 
+/* Interactive home lab topology */
+.homelab-section {
+  position: relative;
+}
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(1rem, 3vw, 1.5rem);
+  align-items: stretch;
+}
+
+.lab-map-card,
+.lab-details {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.72), rgba(15, 23, 42, 0.84));
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.lab-topology {
+  display: block;
+  width: 100%;
+  min-height: 390px;
+  padding: 0.35rem;
+  background:
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 48% 45%, rgba(56, 189, 248, 0.12), transparent 48%);
+  background-size: 32px 32px, 32px 32px, auto;
+}
+
+.lab-zone rect {
+  fill: rgba(15, 23, 42, 0.42);
+  stroke: rgba(148, 163, 184, 0.2);
+  stroke-width: 2;
+}
+
+.lab-zone text,
+.lab-node text {
+  fill: #e2e8f0;
+  font-family: "Aptos", "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  font-weight: 900;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.lab-zone text {
+  fill: #bae6fd;
+  font-size: 18px;
+  text-anchor: start;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lab-flow {
+  fill: none;
+  stroke: rgba(56, 189, 248, 0.52);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 14 14;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.28));
+  opacity: 0.58;
+}
+
+.flow-vlan,
+.flow-identity {
+  stroke: rgba(217, 70, 239, 0.58);
+}
+
+.flow-vpn {
+  stroke: rgba(34, 211, 238, 0.72);
+}
+
+.flow-ids {
+  stroke: rgba(251, 191, 36, 0.68);
+}
+
+.lab-node-link {
+  cursor: pointer;
+  outline: none;
+}
+
+.lab-node circle {
+  fill: rgba(15, 23, 42, 0.92);
+  stroke: rgba(56, 189, 248, 0.62);
+  stroke-width: 3;
+  filter: drop-shadow(0 0 18px rgba(56, 189, 248, 0.18));
+  transition: fill 180ms ease, stroke 180ms ease, filter 180ms ease, transform 180ms ease;
+}
+
+.lab-node text {
+  font-size: 18px;
+}
+
+.lab-node-link:hover .lab-node circle,
+.lab-node-link:focus-visible .lab-node circle,
+.lab-node-link.is-active .lab-node circle {
+  fill: rgba(14, 165, 233, 0.24);
+  stroke: rgba(217, 70, 239, 0.88);
+  filter: drop-shadow(0 0 22px rgba(217, 70, 239, 0.32));
+}
+
+.lab-node-link:focus-visible .lab-node circle {
+  stroke-width: 5;
+}
+
+.node-primary circle {
+  fill: rgba(14, 165, 233, 0.2);
+  stroke: rgba(56, 189, 248, 0.9);
+}
+
+.lab-flow-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 1rem;
+}
+
+.lab-details {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+  padding: 1rem;
+}
+
+.lab-service-card {
+  display: grid;
+  gap: 0.45rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: var(--radius);
+  background: rgba(15, 23, 42, 0.52);
+  padding: 0.9rem;
+}
+
+.lab-service-card h3,
+.lab-service-card p {
+  margin: 0;
+}
+
+.lab-service-card.is-active {
+  order: -1;
+  border-color: rgba(56, 189, 248, 0.5);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.18), rgba(217, 70, 239, 0.12));
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.08) inset, 0 16px 32px rgba(2, 6, 23, 0.24);
+}
+
+.lab-service-card .badge {
+  margin-bottom: 0;
+}
+
+.homelab-section[data-flow="internet"] .lab-flow:not(.flow-internet),
+.homelab-section[data-flow="vlan"] .lab-flow:not(.flow-vlan),
+.homelab-section[data-flow="identity"] .lab-flow:not(.flow-identity),
+.homelab-section[data-flow="dns"] .lab-flow:not(.flow-dns),
+.homelab-section[data-flow="vpn"] .lab-flow:not(.flow-vpn),
+.homelab-section[data-flow="ids"] .lab-flow:not(.flow-ids) {
+  opacity: 0.12;
+}
+
+.homelab-section[data-flow="internet"] .flow-internet,
+.homelab-section[data-flow="vlan"] .flow-vlan,
+.homelab-section[data-flow="identity"] .flow-identity,
+.homelab-section[data-flow="dns"] .flow-dns,
+.homelab-section[data-flow="vpn"] .flow-vpn,
+.homelab-section[data-flow="ids"] .flow-ids {
+  opacity: 1;
+  stroke-width: 9;
+}
+
+.homelab-section[data-flow="all"] .lab-flow {
+  opacity: 0.68;
+}
+
+@media (max-width: 1024px) {
+  .lab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .lab-map-card {
+    overflow-x: auto;
+  }
+
+  .lab-topology {
+    width: 720px;
+    max-width: none;
+    min-height: 260px;
+  }
+
+  .lab-zone text {
+    font-size: 15px;
+  }
+
+  .lab-node text {
+    font-size: 16px;
+  }
+
+  .lab-details {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-flow-controls .filter-button {
+    width: 100%;
+  }
+}
+
 /* Improve card hierarchy and hover containment */
 .project-card,
 .proof-card,
@@ -2512,6 +2728,91 @@ li {
   .dashboard-page .proof-grid,
   .contact-page .card-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Enterprise optimization layer: performance containment, touch targets, and stable media boxes. */
+html {
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.site-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 560px;
+}
+
+.card,
+.project-card,
+.proof-card,
+.proof-evidence-card,
+.featured-card,
+.case-study-card,
+.timeline-item,
+.stat,
+.contact-panel,
+.integrity-panel,
+.hero-console {
+  contain: layout paint;
+}
+
+.brand img,
+.footer-brand img {
+  flex: 0 0 auto;
+}
+
+.featured-media,
+.hero-media,
+.case-study-visual,
+.project-visual,
+.project-visual-map {
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+}
+
+.featured-media img,
+.hero-media img,
+.case-study-visual img,
+.project-visual img,
+.project-visual-map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button,
+.filter-button,
+.nav-links a,
+.contact-list a,
+.proof-jump a {
+  min-height: 44px;
+}
+
+.button,
+.filter-button,
+.proof-jump a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    max-height: min(70vh, 28rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .nav-links a {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 

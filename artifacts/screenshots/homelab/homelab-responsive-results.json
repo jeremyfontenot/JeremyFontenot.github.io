@@ -1,0 +1,61 @@
+[
+  {
+    "page": "home",
+    "viewport": "desktop",
+    "h1Count": 1,
+    "hasMain": true,
+    "skipTarget": true,
+    "overflow": false,
+    "missingAlt": [],
+    "activeCard": "pfSense",
+    "firstCard": "Proxmox",
+    "activeFlow": "vpn",
+    "nodeCount": 10,
+    "cardCount": 10,
+    "errors": []
+  },
+  {
+    "page": "home",
+    "viewport": "tablet",
+    "h1Count": 1,
+    "hasMain": true,
+    "skipTarget": true,
+    "overflow": false,
+    "missingAlt": [],
+    "activeCard": "pfSense",
+    "firstCard": "Proxmox",
+    "activeFlow": "vpn",
+    "nodeCount": 10,
+    "cardCount": 10,
+    "errors": []
+  },
+  {
+    "page": "home",
+    "viewport": "mobile",
+    "h1Count": 1,
+    "hasMain": true,
+    "skipTarget": true,
+    "overflow": false,
+    "missingAlt": [],
+    "activeCard": "pfSense",
+    "firstCard": "Proxmox",
+    "activeFlow": "vpn",
+    "nodeCount": 10,
+    "cardCount": 10,
+    "errors": []
+  },
+  {
+    "page": "proxmox-case-study",
+    "viewport": "desktop",
+    "h1Count": 1,
+    "hasMain": true,
+    "skipTarget": true,
+    "overflow": false,
+    "activeCard": "IDS/IPS",
+    "firstCard": "Proxmox",
+    "activeFlow": "ids",
+    "nodeCount": 10,
+    "cardCount": 10,
+    "errors": []
+  }
+]

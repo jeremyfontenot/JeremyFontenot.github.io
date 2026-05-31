@@ -6,6 +6,8 @@
   <title>Proxmox Home Lab Case Study | Jeremy Fontenot</title>
   <meta name="description" content="Recruiter-facing Proxmox home lab case study covering lab topology, virtualization context, infrastructure documentation, and preserved evidence.">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://jeremyfontenot.online/case-studies/proxmox-home-lab.html">
   <meta property="og:site_name" content="Jeremy Fontenot">
   <meta property="og:title" content="Proxmox Home Lab Case Study | Jeremy Fontenot">
@@ -18,7 +20,9 @@
   <meta name="twitter:description" content="Evidence-backed home lab case study with topology and preserved portfolio evidence.">
   <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="../assets/logos/favicon_64x64.png">
-  <link rel="stylesheet" href="../assets/css/site.css?v=20260531-positioning">
+  <link rel="manifest" href="../assets/site.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/logos/favicon_128x128.png">
+  <link rel="stylesheet" href="../assets/css/site.css?v=20260531-enterprise-opt">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,13 +42,58 @@
     <section class="page-hero" aria-labelledby="case-title">
       <div class="page-hero-grid">
         <div class="hero-copy" data-reveal><p class="eyebrow">Case Study</p><h1 id="case-title">Proxmox Home Lab.</h1><p class="lead">A preserved infrastructure case study for virtualization, lab topology, Windows/Linux administration practice, and documentation-first operations.</p><div class="actions"><a class="button primary" href="../projects.html">Back to Projects</a><a class="button" href="../proof.html">Open Proof Library</a></div></div>
-        <div class="case-study-visual" data-reveal><img src="../evidence-library/architecture-diagrams/home-lab-network-topology-diagram-2026.svg" alt="Home lab network topology diagram" loading="eager" decoding="async"></div>
+        <div class="case-study-visual" data-reveal><img src="../evidence-library/architecture-diagrams/home-lab-network-topology-diagram-2026.svg" alt="Home lab network topology diagram" width="1200" height="600" loading="eager" decoding="async"></div>
       </div>
-      <nav class="case-study-nav" aria-label="Case study sections"><a href="#summary">Summary</a><a href="#objective">Objective</a><a href="#environment">Environment</a><a href="#architecture">Architecture</a><a href="#implementation">Implementation</a><a href="#validation">Validation</a><a href="#evidence">Evidence</a></nav>
+      <nav class="case-study-nav" aria-label="Case study sections"><a href="#summary">Summary</a><a href="#objective">Objective</a><a href="#environment">Environment</a><a href="#interactive-topology">Interactive Topology</a><a href="#architecture">Architecture</a><a href="#implementation">Implementation</a><a href="#validation">Validation</a><a href="#evidence">Evidence</a></nav>
     </section>
     <section id="summary" class="section" aria-labelledby="summary-title"><div class="section-head"><p class="eyebrow">Executive Summary</p><h2 id="summary-title">A lab foundation for practical systems administration review.</h2><p>This case study ties the preserved home lab PDF and topology diagram to infrastructure learning outcomes: virtualization, service placement, network boundaries, documentation quality, and operational troubleshooting context.</p></div></section>
     <section id="objective" class="section" aria-labelledby="objective-title"><div class="case-study-grid"><article class="case-study-card"><span class="badge">Business Objective</span><h2 id="objective-title">Show a realistic practice environment for support and infrastructure skills.</h2><p>Give recruiters and technical reviewers a concise route from project summary to preserved lab evidence without overstating production experience.</p></article><article class="case-study-card"><span class="badge">Skills Demonstrated</span><ul><li>Proxmox and virtualization concepts</li><li>Windows and Linux lab workload awareness</li><li>Network topology documentation</li><li>Infrastructure boundary mapping</li><li>Evidence preservation and reviewer handoff</li></ul></article></div></section>
     <section id="environment" class="section" aria-labelledby="environment-title"><div class="section-head"><p class="eyebrow">Technical Environment</p><h2 id="environment-title">Preserved home lab infrastructure context.</h2><p>The evidence references a Dell R710 and lab workloads, Proxmox concepts, network switching, Active Directory-style services, DNS/DHCP context, Microsoft administration concepts, and PowerShell-supported operations.</p></div></section>
+    <section id="interactive-topology" class="section homelab-section" aria-labelledby="interactive-topology-title" data-lab-topology>
+      <div class="section-head">
+        <p class="eyebrow">Interactive Topology</p>
+        <h2 id="interactive-topology-title">Click a node or isolate a flow to review the lab service model.</h2>
+        <p>This interactive diagram keeps the home lab evidence understandable for recruiters while still showing the technical relationships between virtualization, firewalling, identity, network services, VPN access, segmentation, and monitoring.</p>
+      </div>
+      <div class="lab-grid">
+        <div class="lab-map-card">
+          <div class="console-top"><span>case study topology</span><span data-lab-status>Focused on Proxmox virtualization</span></div>
+          <svg class="lab-topology" viewBox="0 0 1120 680" role="group" aria-labelledby="case-lab-svg-title case-lab-svg-desc">
+            <title id="case-lab-svg-title">Interactive Proxmox home lab topology</title>
+            <desc id="case-lab-svg-desc">Clickable topology showing pfSense, Proxmox, Active Directory, DNS, DHCP, WireGuard, OpenVPN, VLANs, Windows Server, Linux, and IDS/IPS relationships.</desc>
+            <g class="lab-zone zone-edge"><rect x="36" y="54" width="252" height="560" rx="22"></rect><text x="62" y="92">Edge and Remote Access</text></g>
+            <g class="lab-zone zone-core"><rect x="330" y="54" width="430" height="560" rx="22"></rect><text x="356" y="92">Virtualization and Core Services</text></g>
+            <g class="lab-zone zone-services"><rect x="802" y="54" width="282" height="560" rx="22"></rect><text x="828" y="92">Workloads</text></g>
+            <path class="lab-flow flow-internet" d="M156 178 C230 178 246 178 330 178"></path><path class="lab-flow flow-vlan" d="M546 258 C638 258 686 322 824 322"></path><path class="lab-flow flow-identity" d="M546 258 C610 350 652 430 824 438"></path><path class="lab-flow flow-dns" d="M546 258 C582 314 608 358 686 358"></path><path class="lab-flow flow-vpn" d="M160 500 C230 448 250 396 330 330"></path><path class="lab-flow flow-ids" d="M546 258 C660 192 764 188 914 210"></path>
+            <a href="../case-studies/pfsense-network-segmentation.html" class="lab-node-link" data-node="internet" aria-label="Internet uplink and WAN ingress"><g class="lab-node" transform="translate(156 178)"><title>Internet and WAN ingress path</title><circle r="48"></circle><text y="-5">WAN</text><text y="18">Internet</text></g></a>
+            <a href="../case-studies/pfsense-network-segmentation.html" class="lab-node-link" data-node="pfsense" aria-label="pfSense firewall, NAT, VLAN gateway, and VPN edge"><g class="lab-node" transform="translate(330 178)"><title>pfSense firewall, NAT, VLAN gateway, WireGuard, and OpenVPN edge</title><circle r="58"></circle><text y="-8">pfSense</text><text y="18">Firewall</text></g></a>
+            <a href="../case-studies/proxmox-home-lab.html" class="lab-node-link is-active" data-node="proxmox" aria-label="Proxmox virtualization host"><g class="lab-node node-primary" transform="translate(546 258)"><title>Proxmox virtualization host for Windows Server, Linux, and service workloads</title><circle r="66"></circle><text y="-10">Proxmox</text><text y="18">Compute</text></g></a>
+            <a href="../case-studies/active-directory-infrastructure.html" class="lab-node-link" data-node="ad" aria-label="Active Directory domain services on Windows Server"><g class="lab-node" transform="translate(686 438)"><title>Active Directory domain services, Group Policy planning, and identity boundary review</title><circle r="54"></circle><text y="-6">Active</text><text y="18">Directory</text></g></a>
+            <a href="../proof.html" class="lab-node-link" data-node="dnsdhcp" aria-label="DNS and DHCP network service role"><g class="lab-node" transform="translate(686 358)"><title>DNS and DHCP service placement, lease review, and name-resolution troubleshooting</title><circle r="48"></circle><text y="-5">DNS</text><text y="18">DHCP</text></g></a>
+            <a href="../proof.html" class="lab-node-link" data-node="vlans" aria-label="VLAN segmentation"><g class="lab-node" transform="translate(824 322)"><title>VLAN segmentation for management, server, client, and lab traffic</title><circle r="48"></circle><text y="-5">VLANs</text><text y="18">Zones</text></g></a>
+            <a href="../case-studies/active-directory-infrastructure.html" class="lab-node-link" data-node="windows" aria-label="Windows Server lab workload"><g class="lab-node" transform="translate(936 438)"><title>Windows Server workload for identity, management, and support validation</title><circle r="52"></circle><text y="-5">Windows</text><text y="18">Server</text></g></a>
+            <a href="../proof.html" class="lab-node-link" data-node="linux" aria-label="Linux lab workload"><g class="lab-node" transform="translate(936 322)"><title>Linux workload for service hosting, package administration, logging, and network checks</title><circle r="50"></circle><text y="-5">Linux</text><text y="18">Services</text></g></a>
+            <a href="../proof.html" class="lab-node-link" data-node="vpn" aria-label="WireGuard and OpenVPN remote access path"><g class="lab-node" transform="translate(160 500)"><title>WireGuard and OpenVPN remote access path into controlled lab segments</title><circle r="52"></circle><text y="-5">VPN</text><text y="18">WG / OVPN</text></g></a>
+            <a href="../proof.html" class="lab-node-link" data-node="ids" aria-label="IDS and IPS monitoring concept"><g class="lab-node" transform="translate(914 210)"><title>IDS/IPS monitoring concept for traffic visibility and alert review</title><circle r="50"></circle><text y="-5">IDS</text><text y="18">IPS</text></g></a>
+          </svg>
+          <div class="lab-flow-controls" role="group" aria-label="Network flow visualization">
+            <button class="filter-button active" type="button" data-flow="all" aria-pressed="true">All Flows</button><button class="filter-button" type="button" data-flow="internet" aria-pressed="false">WAN to Firewall</button><button class="filter-button" type="button" data-flow="identity" aria-pressed="false">Identity</button><button class="filter-button" type="button" data-flow="dns" aria-pressed="false">DNS / DHCP</button><button class="filter-button" type="button" data-flow="vpn" aria-pressed="false">VPN</button><button class="filter-button" type="button" data-flow="ids" aria-pressed="false">IDS / IPS</button>
+          </div>
+        </div>
+        <div class="lab-details" aria-live="polite">
+          <article class="lab-service-card is-active" data-node-card="proxmox"><span class="badge">Virtualization</span><h3>Proxmox</h3><p>I use Proxmox as the virtualization layer for lab workloads, service isolation, snapshot-aware practice, and infrastructure documentation.</p></article>
+          <article class="lab-service-card" data-node-card="pfsense"><span class="badge">Firewall</span><h3>pfSense</h3><p>pfSense represents routing, firewall, NAT, VLAN gateway, WireGuard, OpenVPN, and segmentation-control boundaries.</p></article>
+          <article class="lab-service-card" data-node-card="ad"><span class="badge">Identity</span><h3>Active Directory</h3><p>Active Directory supports domain-service planning, OU structure, Group Policy scope, authentication context, and Windows administration practice.</p></article>
+          <article class="lab-service-card" data-node-card="dnsdhcp"><span class="badge">Core Network Services</span><h3>DNS and DHCP</h3><p>DNS and DHCP provide name resolution, lease assignment, reservation review, gateway checks, and common service desk troubleshooting paths.</p></article>
+          <article class="lab-service-card" data-node-card="vpn"><span class="badge">Remote Access</span><h3>WireGuard and OpenVPN</h3><p>WireGuard and OpenVPN model controlled remote access, tunnel validation, firewall rules, and client connectivity troubleshooting.</p></article>
+          <article class="lab-service-card" data-node-card="vlans"><span class="badge">Segmentation</span><h3>VLANs</h3><p>VLANs separate management, server, client, lab, and monitoring traffic so routing and firewall policy remain reviewable.</p></article>
+          <article class="lab-service-card" data-node-card="windows"><span class="badge">Server Administration</span><h3>Windows Server</h3><p>Windows Server anchors identity, management, service validation, and endpoint support workflows.</p></article>
+          <article class="lab-service-card" data-node-card="linux"><span class="badge">Linux</span><h3>Linux Workloads</h3><p>Linux workloads support service hosting, package administration, network checks, logging practice, and cross-platform troubleshooting.</p></article>
+          <article class="lab-service-card" data-node-card="ids"><span class="badge">Security Monitoring</span><h3>IDS/IPS</h3><p>IDS/IPS concepts provide traffic visibility, alert-review context, and segmentation validation without claiming live production monitoring.</p></article>
+          <article class="lab-service-card" data-node-card="internet"><span class="badge">Edge</span><h3>WAN Ingress</h3><p>The WAN edge shows where outside connectivity reaches the firewall before controlled routing into lab segments.</p></article>
+        </div>
+      </div>
+    </section>
     <section id="architecture" class="section" aria-labelledby="architecture-title"><div class="section-head"><p class="eyebrow">Architecture Overview</p><h2 id="architecture-title">Topology evidence supports project orientation.</h2><p>The home lab topology diagram provides a quick visual path for reviewers. The preserved PDF remains supporting evidence for the broader lab portfolio and should be treated as historical proof rather than a current production environment claim.</p></div></section>
     <section id="implementation" class="section" aria-labelledby="implementation-title"><div class="section-head"><p class="eyebrow">Implementation Approach</p><h2 id="implementation-title">Use lab evidence as context for operational workflows.</h2><p>The lab supports the surrounding case studies by giving a practical environment for identity, networking, DNS/DHCP, automation, and troubleshooting documentation. Claims stay scoped to preserved lab evidence and documented methodology.</p></div></section>
     <section id="validation" class="section" aria-labelledby="validation-title"><div class="case-study-grid"><article class="case-study-card"><span class="badge">Validation Process</span><p>Review topology, proof-library index entries, PDF accessibility from public pages, and related evidence links. Avoid implying current uptime, production traffic, or enterprise service ownership.</p></article><article class="case-study-card"><span class="badge">Lessons Learned</span><p>A home lab is most valuable to employers when it is translated into clear diagrams, support workflows, validation notes, and reusable documentation.</p></article></div></section>

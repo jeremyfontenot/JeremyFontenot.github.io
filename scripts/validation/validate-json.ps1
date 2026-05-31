@@ -3,6 +3,25 @@ $ErrorActionPreference = 'Stop'
 
 Write-Host 'Validating JSON files...'
 
+function Test-JsonSyntax {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Json
+  )
+
+  $JsonDocumentType = [System.Type]::GetType('System.Text.Json.JsonDocument, System.Text.Json')
+  if ($JsonDocumentType) {
+    $Document = $JsonDocumentType::Parse($Json)
+    $Document.Dispose()
+    return
+  }
+
+  Add-Type -AssemblyName System.Web.Extensions
+  $Serializer = [System.Web.Script.Serialization.JavaScriptSerializer]::new()
+  $Serializer.MaxJsonLength = [int]::MaxValue
+  $Serializer.DeserializeObject($Json) | Out-Null
+}
+
 $JsonFiles = Get-ChildItem -Path . -Recurse -Filter '*.json' -File | Where-Object {
   $_.FullName -notmatch '[\\/]node_modules[\\/]'
 }
@@ -16,7 +35,8 @@ $Failures = [System.Collections.Generic.List[string]]::new()
 
 foreach ($File in $JsonFiles) {
   try {
-    Get-Content -Path $File.FullName -Raw -ErrorAction Stop | ConvertFrom-Json -AsHashtable -ErrorAction Stop | Out-Null
+    $RawJson = Get-Content -Path $File.FullName -Raw -ErrorAction Stop
+    Test-JsonSyntax -Json $RawJson
     Write-Host "Valid: $($File.FullName)"
   } catch {
     $Failures.Add($File.FullName)

@@ -63,23 +63,36 @@ const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 
 if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
+  const setMenuState = (isOpen) => {
+    navLinks.classList.toggle("open", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  setMenuState(false);
+
+  navToggle.addEventListener("click", () => {
+    setMenuState(!navLinks.classList.contains("open"));
   });
 
   navLinks.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
-      navLinks.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
+      setMenuState(false);
     }
   });
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-      navLinks.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
+      setMenuState(false);
+      navToggle.focus();
     }
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof Node)) return;
+    if (!navLinks.classList.contains("open")) return;
+    if (navLinks.contains(target) || navToggle.contains(target)) return;
+    setMenuState(false);
   });
 }
 
@@ -110,6 +123,60 @@ filterGroups.forEach((group) => {
       });
     });
   });
+});
+
+document.querySelectorAll("[data-lab-topology]").forEach((topology) => {
+  const nodeLinks = [...topology.querySelectorAll("[data-node]")];
+  const serviceCards = [...topology.querySelectorAll("[data-node-card]")];
+  const flowButtons = [...topology.querySelectorAll("[data-flow]")];
+  const status = topology.querySelector("[data-lab-status]");
+
+  const setActiveNode = (nodeKey) => {
+    nodeLinks.forEach((node) => {
+      node.classList.toggle("is-active", node.getAttribute("data-node") === nodeKey);
+    });
+
+    serviceCards.forEach((card) => {
+      const isActive = card.getAttribute("data-node-card") === nodeKey;
+      card.classList.toggle("is-active", isActive);
+    });
+
+    const activeCard = serviceCards.find((card) => card.getAttribute("data-node-card") === nodeKey);
+    if (status && activeCard) {
+      const title = activeCard.querySelector("h3")?.textContent?.trim();
+      status.textContent = title ? `Focused on ${title}` : "Service selected";
+    }
+  };
+
+  const setActiveFlow = (flowKey) => {
+    topology.setAttribute("data-flow", flowKey);
+    flowButtons.forEach((button) => {
+      const isActive = button.getAttribute("data-flow") === flowKey;
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  };
+
+  nodeLinks.forEach((node) => {
+    const nodeKey = node.getAttribute("data-node");
+    if (!nodeKey) return;
+
+    node.addEventListener("mouseenter", () => setActiveNode(nodeKey));
+    node.addEventListener("focus", () => setActiveNode(nodeKey));
+    node.addEventListener("click", (event) => {
+      event.preventDefault();
+      setActiveNode(nodeKey);
+    });
+  });
+
+  flowButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      setActiveFlow(button.getAttribute("data-flow") || "all");
+    });
+  });
+
+  setActiveNode("proxmox");
+  setActiveFlow("all");
 });
 
 const revealNodes = [...document.querySelectorAll("[data-reveal]")];
