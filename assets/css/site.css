@@ -2517,6 +2517,8 @@ li {
 .lab-topology {
   display: block;
   width: 100%;
+  height: auto;
+  aspect-ratio: 1120 / 680;
   min-height: 390px;
   padding: 0.35rem;
   background:
@@ -2681,7 +2683,7 @@ li {
 
 @media (max-width: 620px) {
   .lab-map-card {
-    overflow-x: auto;
+    overflow: hidden;
   }
 
   .lab-topology {
