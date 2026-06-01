@@ -7,15 +7,21 @@
   },
   {
     "path": "evidence-library\\index.html",
-    "sha256": "E2D2036009A2A9111A30DBA66BAB8C551A1E4C4BA6E07EA2695EFE9CB1A4FA63",
-    "size": 10631,
-    "lastModified": "2026-05-31T23:45:47.3359033Z"
+    "sha256": "402569B2E496B0925C88DB7102F3CBDCF9801AD21B6FF0103F2A99B2AD5E2540",
+    "size": 9533,
+    "lastModified": "2026-06-01T20:12:01.9993192Z"
   },
   {
     "path": "evidence-library\\README.md",
     "sha256": "17C538A912D226C6D83C836D29C858AF55E5994649972A0971683B4E038D3956",
     "size": 2532,
     "lastModified": "2026-05-31T18:58:20.1278610Z"
+  },
+  {
+    "path": "evidence-library\\architecture\\microsoft-365-architecture-overview.md",
+    "sha256": "DD516E3A4397385BC257FB0421A8125180635A102E6B43F215D70D18C62168BC",
+    "size": 601,
+    "lastModified": "2026-06-01T20:05:08.8303767Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\.gitkeep",
@@ -84,6 +90,24 @@
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
   {
+    "path": "evidence-library\\automation\\automation-framework-evidence.md",
+    "sha256": "A0ADBD70119CC8E596361E4BA316FD3C17B80ED261E4FED59218D61F2D390A57",
+    "size": 272,
+    "lastModified": "2026-06-01T20:05:08.8393440Z"
+  },
+  {
+    "path": "evidence-library\\automation\\provisioning-change-record-evidence.md",
+    "sha256": "81D9F27CBE21DF703EAA9D3340468F6F58180A252248737B22473284C3DE6308",
+    "size": 419,
+    "lastModified": "2026-06-01T20:05:08.8383138Z"
+  },
+  {
+    "path": "evidence-library\\automation\\provisioning-script-evidence.md",
+    "sha256": "3E0D973A5D919B256E6E043F58F1C8EEC43D1CA4B3581E0AA2A03E54A23BB2AE",
+    "size": 298,
+    "lastModified": "2026-06-01T20:05:08.8373042Z"
+  },
+  {
     "path": "evidence-library\\certifications\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
@@ -96,6 +120,12 @@
     "lastModified": "2026-05-25T01:46:15.9209058Z"
   },
   {
+    "path": "evidence-library\\conditional-access\\conditional-access-baseline-evidence.md",
+    "sha256": "BA0051344210257E6B536B65BA658047711CB8E8481383FDF48196D9CD563C6C",
+    "size": 504,
+    "lastModified": "2026-06-01T20:05:08.8360027Z"
+  },
+  {
     "path": "evidence-library\\experience\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
@@ -106,6 +136,30 @@
     "sha256": "F2BD2107FCEBCBC8583ABF1FB4734D8209394CC29DA81F49DFDB71BA089DD8D6",
     "size": 76612,
     "lastModified": "2026-05-31T02:21:07.6199566Z"
+  },
+  {
+    "path": "evidence-library\\incidents\\incident-summary-evidence.md",
+    "sha256": "C311F45BA26C429C71C398B74306DE0C476D6730ED724EE90DEE2DF632B2A9A0",
+    "size": 506,
+    "lastModified": "2026-06-01T20:05:08.8488899Z"
+  },
+  {
+    "path": "evidence-library\\network\\dhcp-dns-evidence.md",
+    "sha256": "1A6E24D3EEAC6403A80431D1DB64B6D244369C5AC222EC35F1904EEA358D6473",
+    "size": 254,
+    "lastModified": "2026-06-01T20:05:08.8417881Z"
+  },
+  {
+    "path": "evidence-library\\network\\firewall-rules-evidence.md",
+    "sha256": "60E513124DAB3CA45B84C805FA6FF593A72C0E4281A6FE1CB378E032586D5732",
+    "size": 250,
+    "lastModified": "2026-06-01T20:05:08.8448187Z"
+  },
+  {
+    "path": "evidence-library\\network\\network-validation-lab-notes.md",
+    "sha256": "536C4F2F8C3CA7FD06589A456B9E7D54DD220EBA672070D78072B159A542A657",
+    "size": 520,
+    "lastModified": "2026-06-01T20:05:08.8393440Z"
   },
   {
     "path": "evidence-library\\projects\\README.md",
@@ -282,6 +336,12 @@
     "lastModified": "2026-05-25T01:46:15.9491798Z"
   },
   {
+    "path": "evidence-library\\proxmox\\proxmox-host-evidence.md",
+    "sha256": "3F3074203EDB2752501B169F7B3C0B4A40F736AE3BF6921D0F4346B14C04AADF",
+    "size": 343,
+    "lastModified": "2026-06-01T20:05:08.8468744Z"
+  },
+  {
     "path": "evidence-library\\screenshots\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
@@ -430,5 +490,17 @@
     "sha256": "4EC60F326B36243D0041C0178D8952C3DE17A159714F83B582209AF5B5D47684",
     "size": 4597,
     "lastModified": "2026-05-25T01:46:15.9648907Z"
+  },
+  {
+    "path": "evidence-library\\vpn\\vpn-configuration-evidence.md",
+    "sha256": "8DF430BF63496333B3F6DE01A0B03104C356D1D2CF0A1FD99BA0F7C248A49E66",
+    "size": 212,
+    "lastModified": "2026-06-01T20:05:08.8478944Z"
+  },
+  {
+    "path": "evidence-library\\windows-server\\windows-server-evidence.md",
+    "sha256": "6CC9BE25CB8E595E75D377CF32144CB45DC66A7ACCA58D58F130486ECD2BADB2",
+    "size": 299,
+    "lastModified": "2026-06-01T20:05:08.8458019Z"
   }
 ]
