@@ -16,9 +16,9 @@ Provide a repeatable workflow for isolating authentication issues that may be ca
 ## Validation Commands
 
 ```powershell
-Resolve-DnsName -Name _ldap._tcp.dc._msdcs.lab.local -Type SRV
-Test-NetConnection dc01.lab.local -Port 389
-nltest /dsgetdc:lab.local
+Resolve-DnsName -Name _ldap._tcp.dc._msdcs.ad.jeremyfontenot -Type SRV
+Test-NetConnection dc01.ad.jeremyfontenot -Port 389
+nltest /dsgetdc:ad.jeremyfontenot
 ```
 
 ## Evidence Required

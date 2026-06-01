@@ -7,7 +7,7 @@ DNS: 10.20.20.10
 Code
 
 ## 2. Connectivity Tests
-Ping server01.lab.local → Success
+Ping server01.ad.jeremyfontenot -> Success
 Ping IoT device → Blocked
 
 Code

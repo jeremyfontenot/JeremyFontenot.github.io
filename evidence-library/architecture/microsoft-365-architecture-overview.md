@@ -2,6 +2,7 @@
 
 ## 1. Identity Architecture
 Entra ID tenant identifier: jeremyfontenot
+On-prem Active Directory domain: ad.jeremyfontenot
 Authentication: MFA enforced
 Conditional Access: Baseline policies active
 

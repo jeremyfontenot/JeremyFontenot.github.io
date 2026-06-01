@@ -2,7 +2,7 @@
 
 ## 1. Dry-Run Output
 Plan generated
-UserPrincipalName: arivera@lab.local
+UserPrincipalName: arivera@ad.jeremyfontenot
 ApplyMode: False
 
 Code

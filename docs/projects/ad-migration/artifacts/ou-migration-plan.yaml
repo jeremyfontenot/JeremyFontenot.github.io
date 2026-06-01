@@ -1,4 +1,4 @@
-domain: lab.local
+domain: ad.jeremyfontenot
 change_id: CHG-AD-2023-0621
 classification: redacted_portfolio_evidence
 objective: Move from a flat identity structure to delegated OUs and role-based groups.

@@ -19,9 +19,9 @@
   },
   {
     "path": "evidence-library\\architecture\\microsoft-365-architecture-overview.md",
-    "sha256": "243543A1EDD94C0BEA70E72FA56D79823FC6986F3171EC51247587E781AF1DF4",
-    "size": 607,
-    "lastModified": "2026-06-01T21:23:40.1318417Z"
+    "sha256": "FBA4596B3166F0BC90417FCCFAAAAA10C5544DCC2449EE803142FFEB05CCE411",
+    "size": 658,
+    "lastModified": "2026-06-01T21:27:26.8327049Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\.gitkeep",
@@ -37,9 +37,9 @@
   },
   {
     "path": "evidence-library\\architecture-diagrams\\identity-access-ad-migration-diagram-2026.svg",
-    "sha256": "196148522A652D1DDA1A9F5DA553A5D1CB33F193DD2B6FB7357DC5CA4DD8973B",
-    "size": 2203,
-    "lastModified": "2026-05-25T01:46:15.9186976Z"
+    "sha256": "826D50C52D646E240A3D47BE799A39F6BB4E59E01DC620C99C92F5B393DD85CF",
+    "size": 2230,
+    "lastModified": "2026-06-01T21:27:26.8592510Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\m365-lab-baseline-preview.svg",
@@ -133,9 +133,9 @@
   },
   {
     "path": "evidence-library\\automation\\provisioning-script-evidence.md",
-    "sha256": "3E0D973A5D919B256E6E043F58F1C8EEC43D1CA4B3581E0AA2A03E54A23BB2AE",
-    "size": 298,
-    "lastModified": "2026-06-01T20:05:08.8373042Z"
+    "sha256": "6F1EDA84BA14164CD453B0E52C139E77DBE8420DE4806FD57B0AA4CACBEB351D",
+    "size": 306,
+    "lastModified": "2026-06-01T21:27:26.8490106Z"
   },
   {
     "path": "evidence-library\\certifications\\.gitkeep",
@@ -175,9 +175,9 @@
   },
   {
     "path": "evidence-library\\network\\dhcp-dns-evidence.md",
-    "sha256": "1A6E24D3EEAC6403A80431D1DB64B6D244369C5AC222EC35F1904EEA358D6473",
-    "size": 254,
-    "lastModified": "2026-06-01T20:05:08.8417881Z"
+    "sha256": "0E4281E05D78C8CFD42E4EEBB3546CF348F7B78857D289E39F03BF4AD45E2A62",
+    "size": 261,
+    "lastModified": "2026-06-01T21:27:26.8490106Z"
   },
   {
     "path": "evidence-library\\network\\firewall-rules-evidence.md",
@@ -187,9 +187,9 @@
   },
   {
     "path": "evidence-library\\network\\network-validation-lab-notes.md",
-    "sha256": "536C4F2F8C3CA7FD06589A456B9E7D54DD220EBA672070D78072B159A542A657",
-    "size": 520,
-    "lastModified": "2026-06-01T20:05:08.8393440Z"
+    "sha256": "C3F33385F0A5687612FB62C6043541078B598966BFDA870388C7DDD744E24729",
+    "size": 527,
+    "lastModified": "2026-06-01T21:27:26.8490106Z"
   },
   {
     "path": "evidence-library\\projects\\README.md",
@@ -391,9 +391,9 @@
   },
   {
     "path": "evidence-library\\scripts\\powershell-automation-provisioning-script-v1.ps1",
-    "sha256": "FF0CFE1538926A71158B4391CA26F32F02EDE0C2A8449854376D08896089F7D7",
-    "size": 5376,
-    "lastModified": "2026-05-25T02:34:09.4499720Z"
+    "sha256": "E2973C825D16813E67CD1437B6AD7761138744EA6EB32E7DAD5DEECCF20D2774",
+    "size": 5392,
+    "lastModified": "2026-06-01T21:27:26.8570286Z"
   },
   {
     "path": "evidence-library\\skills\\README.md",
@@ -523,14 +523,14 @@
   },
   {
     "path": "evidence-library\\vpn\\vpn-configuration-evidence.md",
-    "sha256": "8DF430BF63496333B3F6DE01A0B03104C356D1D2CF0A1FD99BA0F7C248A49E66",
-    "size": 212,
-    "lastModified": "2026-06-01T20:05:08.8478944Z"
+    "sha256": "3465C0488E05D3922E73DA87EDE96DDEC415AB70873490D497CA478A350162C4",
+    "size": 219,
+    "lastModified": "2026-06-01T21:27:26.8556041Z"
   },
   {
     "path": "evidence-library\\windows-server\\windows-server-evidence.md",
-    "sha256": "6CC9BE25CB8E595E75D377CF32144CB45DC66A7ACCA58D58F130486ECD2BADB2",
-    "size": 299,
-    "lastModified": "2026-06-01T20:05:08.8458019Z"
+    "sha256": "620890CDE8567BBF1071DC9591636BEAD215AA67D8BA747F7B517F6EFE7294BA",
+    "size": 307,
+    "lastModified": "2026-06-01T21:27:26.8490106Z"
   }
 ]

@@ -7,7 +7,7 @@ repadmin → No errors
 Code
 
 ## 2. DNS Role Validation
-Forward lookup zones: lab.local
+Forward lookup zones: ad.jeremyfontenot
 Reverse lookup zones: 10.20.20.x
 
 Code

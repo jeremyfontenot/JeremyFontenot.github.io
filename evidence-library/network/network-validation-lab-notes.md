@@ -23,7 +23,7 @@ Forwarding to 10.20.20.10
 Code
 
 ## 4. DNS Resolution Tests
-nslookup server01.lab.local → 10.20.20.10
+nslookup server01.ad.jeremyfontenot -> 10.20.20.10
 nslookup microsoft.com → 20.112.x.x
 
 Code

@@ -15,7 +15,7 @@ enterprise onboarding system.
 .\provisioning.ps1 `
   -DisplayName "Alex Rivera" `
   -SamAccountName "arivera" `
-  -UserPrincipalName "arivera@lab.local" `
+  -UserPrincipalName "arivera@ad.jeremyfontenot" `
   -TargetOu "OU=Users,OU=Corp,DC=lab,DC=local" `
   -Groups "Helpdesk-Trainees","VPN-Users" `
   -Department "IT Support" `
@@ -27,7 +27,7 @@ Builds a provisioning plan and writes a dry-run log without changing Active Dire
 .\provisioning.ps1 `
   -DisplayName "Alex Rivera" `
   -SamAccountName "arivera" `
-  -UserPrincipalName "arivera@lab.local" `
+  -UserPrincipalName "arivera@ad.jeremyfontenot" `
   -TargetOu "OU=Users,OU=Corp,DC=lab,DC=local" `
   -Groups "Helpdesk-Trainees","VPN-Users" `
   -Department "IT Support" `
