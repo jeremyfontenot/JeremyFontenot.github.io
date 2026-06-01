@@ -1094,6 +1094,11 @@ p {
   padding: 1rem;
 }
 
+.hiring-snapshot {
+  border-color: rgba(217, 70, 239, 0.3);
+  box-shadow: 0 28px 80px rgba(217, 70, 239, 0.12), 0 22px 64px rgba(0, 0, 0, 0.28);
+}
+
 .project-command dl {
   display: grid;
   gap: 0.75rem;
@@ -1165,6 +1170,32 @@ p {
 
 .enterprise-project-card[hidden] {
   display: none;
+}
+
+.enterprise-project-card.is-featured {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1.15fr);
+  grid-template-rows: none;
+  border-color: rgba(217, 70, 239, 0.34);
+  box-shadow: 0 28px 90px rgba(217, 70, 239, 0.14), 0 22px 64px rgba(0, 0, 0, 0.28);
+}
+
+.enterprise-project-card.is-featured .project-visual {
+  min-height: 100%;
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+}
+
+.enterprise-project-card.is-featured .project-visual svg {
+  min-height: 340px;
+}
+
+.enterprise-project-card.is-featured .project-card-body {
+  padding: clamp(1rem, 3vw, 1.45rem);
+}
+
+.enterprise-project-card.is-featured .project-card-body h3 {
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
 }
 
 .project-visual {
@@ -1247,6 +1278,141 @@ p {
   color: var(--soft);
 }
 
+.architecture-panel,
+.capability-matrix,
+.technology-grid span {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(30, 41, 59, 0.82), rgba(15, 23, 42, 0.84));
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
+}
+
+.architecture-panel {
+  overflow: hidden;
+}
+
+.architecture-map {
+  width: 100%;
+  min-height: 420px;
+  background:
+    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    rgba(15, 23, 42, 0.72);
+  background-size: 28px 28px;
+  padding: 1rem;
+}
+
+.architecture-map .arch-node rect {
+  fill: url(#projectNodeGradient);
+  stroke: rgba(56, 189, 248, 0.56);
+  stroke-width: 2;
+}
+
+.architecture-map .accent-node rect,
+.architecture-map .featured-node rect {
+  stroke: rgba(217, 70, 239, 0.72);
+}
+
+.architecture-map .arch-lines path {
+  fill: none;
+  stroke: rgba(56, 189, 248, 0.72);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.architecture-map .arch-vlans path {
+  fill: none;
+  stroke: rgba(244, 114, 182, 0.78);
+  stroke-width: 3;
+  stroke-dasharray: 8 10;
+}
+
+.architecture-map text {
+  fill: #f1f5f9;
+  font-size: 16px;
+  font-weight: 850;
+  text-anchor: middle;
+}
+
+.architecture-map .arch-node text + text,
+.architecture-map .arch-label text {
+  fill: #94a3b8;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.architecture-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+  padding: 1rem;
+}
+
+.architecture-notes article {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: var(--radius);
+  background: rgba(15, 23, 42, 0.55);
+  padding: 0.95rem;
+}
+
+.architecture-notes span {
+  color: var(--cyan);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.architecture-notes p {
+  margin-top: 0.45rem;
+  font-size: 0.88rem;
+}
+
+.capability-matrix {
+  overflow-x: auto;
+}
+
+.capability-matrix table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+.capability-matrix th,
+.capability-matrix td {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.capability-matrix thead th {
+  color: var(--cyan);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.capability-matrix tbody th {
+  color: #fff;
+  font-size: 0.94rem;
+}
+
+.capability-matrix td {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.capability-matrix tr:last-child th,
+.capability-matrix tr:last-child td {
+  border-bottom: 0;
+}
+
 .skills-map {
   display: flex;
   flex-wrap: wrap;
@@ -1264,7 +1430,8 @@ p {
   font-weight: 850;
 }
 
-.journey-timeline {
+.journey-timeline,
+.journey-flow {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
@@ -1273,7 +1440,8 @@ p {
   list-style: none;
 }
 
-.journey-timeline li {
+.journey-timeline li,
+.journey-flow li {
   position: relative;
   min-width: 0;
   border: 1px solid var(--line);
@@ -1283,21 +1451,24 @@ p {
   padding: 1rem;
 }
 
-.journey-timeline li::after {
+.journey-timeline li::after,
+.journey-flow li::after {
   content: "";
   position: absolute;
   top: 29px;
-  right: -0.75rem;
-  width: 0.5rem;
+  left: calc(100% - 0.1rem);
+  width: 1.2rem;
   height: 2px;
   background: linear-gradient(90deg, var(--cyan), var(--magenta));
 }
 
-.journey-timeline li:last-child::after {
+.journey-timeline li:last-child::after,
+.journey-flow li:last-child::after {
   display: none;
 }
 
-.journey-timeline span {
+.journey-timeline span,
+.journey-flow span {
   display: inline-grid;
   place-items: center;
   width: 36px;
@@ -1309,15 +1480,51 @@ p {
   font-weight: 900;
 }
 
-.journey-timeline strong {
+.journey-timeline strong,
+.journey-flow strong {
   display: block;
   margin-top: 0.85rem;
   color: #fff;
 }
 
-.journey-timeline p {
+.journey-timeline p,
+.journey-flow p {
   margin-top: 0.45rem;
   font-size: 0.88rem;
+}
+
+.journey-flow li {
+  border-color: rgba(56, 189, 248, 0.22);
+}
+
+.journey-flow li:nth-child(4) {
+  border-color: rgba(217, 70, 239, 0.34);
+  box-shadow: 0 22px 70px rgba(217, 70, 239, 0.1);
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.technology-grid span {
+  display: grid;
+  min-height: 76px;
+  place-items: center;
+  padding: 0.75rem;
+  color: var(--soft);
+  font-size: 0.84rem;
+  font-weight: 850;
+  text-align: center;
+}
+
+.technology-grid span:nth-child(3n) {
+  border-color: rgba(217, 70, 239, 0.26);
+}
+
+.projects-footer-grid {
+  grid-template-columns: minmax(220px, 1fr) repeat(4, minmax(150px, 0.72fr));
 }
 
 [data-reveal] {
@@ -1364,9 +1571,26 @@ p {
   .cert-grid,
   .skill-orbit,
   .timeline,
+  .architecture-notes,
   .enterprise-project-grid,
-  .journey-timeline {
+  .journey-timeline,
+  .journey-flow,
+  .technology-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .enterprise-project-card.is-featured,
+  .projects-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enterprise-project-card.is-featured .project-visual {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .journey-flow li::after {
+    display: none;
   }
 
   h1 {
@@ -1396,8 +1620,11 @@ p {
   .cert-grid,
   .skill-orbit,
   .timeline,
+  .architecture-notes,
   .enterprise-project-grid,
-  .journey-timeline {
+  .journey-timeline,
+  .journey-flow,
+  .technology-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1429,6 +1656,29 @@ p {
 
   .journey-timeline li::after {
     display: none;
+  }
+
+  .journey-flow li::after {
+    top: auto;
+    right: auto;
+    left: 1.55rem;
+    bottom: -1rem;
+    width: 2px;
+    height: 1rem;
+  }
+
+  .architecture-map {
+    min-height: 260px;
+    padding: 0.35rem;
+  }
+
+  .architecture-map text {
+    font-size: 18px;
+  }
+
+  .architecture-map .arch-node text + text,
+  .architecture-map .arch-label text {
+    font-size: 14px;
   }
 
   .actions {
