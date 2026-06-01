@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1600 1100" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">VLAN architecture evidence diagram</title>
+  <desc id="desc">Evidence diagram for the VLAN Architecture Walkthrough project showing switch port mapping, pfSense VLAN interfaces, Proxmox bridges, DHCP ownership, Active Directory services, firewall boundaries, validation coverage, and documentation references.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f172a"/>
+    </marker>
+    <marker id="arrow-cyan" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0ea5e9"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}
+      .panel{fill:#ffffff;stroke:#cbd5e1;stroke-width:2}
+      .panel-soft{fill:#eef6ff;stroke:#bae6fd;stroke-width:2}
+      .title{font:800 34px Inter,Segoe UI,Arial,sans-serif;fill:#0f172a}
+      .subtitle{font:600 17px Inter,Segoe UI,Arial,sans-serif;fill:#475569}
+      .h{font:800 20px Inter,Segoe UI,Arial,sans-serif;fill:#0f172a}
+      .h2{font:800 16px Inter,Segoe UI,Arial,sans-serif;fill:#0f172a}
+      .t{font:600 14px Inter,Segoe UI,Arial,sans-serif;fill:#334155}
+      .small{font:600 12px Inter,Segoe UI,Arial,sans-serif;fill:#475569}
+      .tiny{font:700 10px Inter,Segoe UI,Arial,sans-serif;fill:#64748b;letter-spacing:.06em}
+      .node{fill:#ffffff;stroke:#38bdf8;stroke-width:2}
+      .node-pink{fill:#fdf2f8;stroke:#f472b6;stroke-width:2}
+      .node-mag{fill:#faf5ff;stroke:#d946ef;stroke-width:2}
+      .node-green{fill:#f0fdf4;stroke:#22c55e;stroke-width:2}
+      .line{fill:none;stroke:#0f172a;stroke-width:3;marker-end:url(#arrow)}
+      .line-cyan{fill:none;stroke:#0ea5e9;stroke-width:3;marker-end:url(#arrow-cyan)}
+      .line-block{fill:none;stroke:#d946ef;stroke-width:3;stroke-dasharray:10 8}
+      .trust{fill:none;stroke:#d946ef;stroke-width:2;stroke-dasharray:6 7}
+      .badge{fill:#0ea5e9}
+      .badge2{fill:#d946ef}
+      .badge3{fill:#f472b6}
+      .badgeText{font:800 11px Inter,Segoe UI,Arial,sans-serif;fill:#ffffff;letter-spacing:.08em}
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="1100"/>
+  <text class="title" x="60" y="58">VLAN Architecture Walkthrough - Evidence Diagram</text>
+  <text class="subtitle" x="60" y="88">Primary visual evidence artifact: switch mapping, pfSense VLANs, Proxmox bridges, DHCP ownership, AD services, firewall policy, validation, and documentation chain.</text>
+
+  <rect class="panel" x="45" y="120" width="1510" height="700" rx="18"/>
+  <text class="h" x="70" y="154">Segmented Home Lab Architecture</text>
+
+  <rect class="node" x="70" y="190" width="170" height="82" rx="10"/>
+  <text class="h2" x="155" y="222" text-anchor="middle">Internet / ISP</text>
+  <text class="small" x="155" y="248" text-anchor="middle">WAN upstream</text>
+
+  <rect class="node-pink" x="310" y="168" width="250" height="150" rx="12"/>
+  <text class="h2" x="435" y="198" text-anchor="middle">pfSense Firewall</text>
+  <text class="t" x="335" y="226">WAN: igb0</text>
+  <text class="t" x="335" y="250">LAN Parent: igb1</text>
+  <text class="t" x="335" y="274">Firewall enforcement point</text>
+  <text class="t" x="335" y="298">Routing boundaries</text>
+
+  <rect class="node" x="650" y="158" width="300" height="178" rx="12"/>
+  <text class="h2" x="800" y="188" text-anchor="middle">Managed Switch</text>
+  <text class="t" x="675" y="218">Port 1 -&gt; pfSense Trunk</text>
+  <text class="t" x="675" y="242">Port 2 -&gt; Proxmox Management</text>
+  <text class="t" x="675" y="266">Port 3 -&gt; Proxmox VM Trunk</text>
+  <text class="t" x="675" y="290">Port 4 -&gt; Windows Server</text>
+  <text class="t" x="675" y="314">Port 8 -&gt; Wireless AP Trunk</text>
+
+  <rect class="node-mag" x="1035" y="158" width="265" height="178" rx="12"/>
+  <text class="h2" x="1168" y="188" text-anchor="middle">Proxmox Bridges</text>
+  <text class="t" x="1060" y="218">vmbr0 - Management bridge</text>
+  <text class="t" x="1060" y="242">vmbr1 - Server / Client bridge</text>
+  <text class="t" x="1060" y="266">vmbr2 - IoT / Guest bridge</text>
+  <text class="t" x="1060" y="290">vmbr999 - Internal isolated</text>
+  <text class="small" x="1060" y="314">Bridge-to-VLAN mapping documented</text>
+
+  <rect class="node-green" x="1360" y="178" width="150" height="118" rx="12"/>
+  <text class="h2" x="1435" y="210" text-anchor="middle">Wireless AP</text>
+  <text class="small" x="1435" y="236" text-anchor="middle">Port 8 trunk</text>
+  <text class="small" x="1435" y="258" text-anchor="middle">IoT + Guest SSIDs</text>
+  <text class="small" x="1435" y="280" text-anchor="middle">VLAN 40 / 50</text>
+
+  <path class="line" d="M240 231 H310"/>
+  <path class="line-cyan" d="M560 245 H650"/>
+  <path class="line-cyan" d="M950 218 H1035"/>
+  <path class="line-cyan" d="M950 266 H1035"/>
+  <path class="line-cyan" d="M1300 248 H1360"/>
+
+  <g>
+    <rect class="panel-soft" x="70" y="395" width="230" height="235" rx="12"/>
+    <text class="h2" x="185" y="425" text-anchor="middle">VLAN 10 Management</text>
+    <text class="t" x="95" y="455">Gateway: 10.10.10.1</text>
+    <text class="t" x="95" y="480">Switch mgmt</text>
+    <text class="t" x="95" y="505">Proxmox mgmt</text>
+    <text class="t" x="95" y="530">Admin interfaces</text>
+    <text class="t" x="95" y="555">Mgmt -&gt; Mgmt only</text>
+    <text class="small" x="95" y="590">Isolation boundary enforced</text>
+  </g>
+  <g>
+    <rect class="panel-soft" x="330" y="395" width="230" height="235" rx="12"/>
+    <text class="h2" x="445" y="425" text-anchor="middle">VLAN 20 Servers</text>
+    <text class="t" x="355" y="455">Gateway: 10.20.20.1</text>
+    <text class="t" x="355" y="480">Windows Server</text>
+    <text class="t" x="355" y="505">AD / DNS / DHCP</text>
+    <text class="t" x="355" y="530">DHCP relay -&gt; 10.20.20.10</text>
+    <text class="small" x="355" y="590">Trusted infrastructure VLAN</text>
+  </g>
+  <g>
+    <rect class="panel-soft" x="590" y="395" width="230" height="235" rx="12"/>
+    <text class="h2" x="705" y="425" text-anchor="middle">VLAN 30 Clients</text>
+    <text class="t" x="615" y="455">Gateway: 10.30.30.1</text>
+    <text class="t" x="615" y="480">Workstations</text>
+    <text class="t" x="615" y="505">AD/DNS only path</text>
+    <text class="t" x="615" y="530">DHCP relay -&gt; 10.20.20.10</text>
+    <text class="small" x="615" y="590">Trusted client VLAN</text>
+  </g>
+  <g>
+    <rect class="panel-soft" x="850" y="395" width="230" height="235" rx="12"/>
+    <text class="h2" x="965" y="425" text-anchor="middle">VLAN 40 IoT</text>
+    <text class="t" x="875" y="455">Gateway: 10.40.40.1</text>
+    <text class="t" x="875" y="480">pfSense DHCP</text>
+    <text class="t" x="875" y="505">IoT -&gt; Internet only</text>
+    <text class="t" x="875" y="530">Blocked from trusted LAN</text>
+    <text class="small" x="875" y="590">Untrusted isolated VLAN</text>
+  </g>
+  <g>
+    <rect class="panel-soft" x="1110" y="395" width="230" height="235" rx="12"/>
+    <text class="h2" x="1225" y="425" text-anchor="middle">VLAN 50 Guest</text>
+    <text class="t" x="1135" y="455">Gateway: 10.50.50.1</text>
+    <text class="t" x="1135" y="480">pfSense DHCP</text>
+    <text class="t" x="1135" y="505">Guest -&gt; Internet only</text>
+    <text class="t" x="1135" y="530">No LAN access</text>
+    <text class="small" x="1135" y="590">Guest isolation boundary</text>
+  </g>
+
+  <rect class="node-green" x="1365" y="400" width="150" height="230" rx="12"/>
+  <text class="h2" x="1440" y="430" text-anchor="middle">Core Services</text>
+  <text class="t" x="1390" y="465">Windows Server</text>
+  <text class="t" x="1390" y="490">Active Directory</text>
+  <text class="t" x="1390" y="515">DNS</text>
+  <text class="t" x="1390" y="540">DHCP</text>
+  <text class="t" x="1390" y="565">Authentication</text>
+  <text class="t" x="1390" y="590">Domain services</text>
+
+  <path class="line-cyan" d="M445 395 V318"/>
+  <path class="line-cyan" d="M705 395 V336"/>
+  <path class="line-cyan" d="M965 395 V336"/>
+  <path class="line-cyan" d="M1225 395 V336"/>
+  <path class="line-cyan" d="M1300 500 H1365"/>
+  <path class="line-block" d="M965 635 C960 705 720 715 445 635"/>
+  <path class="line-block" d="M1225 635 C1220 725 720 740 185 635"/>
+  <path class="trust" d="M60 370 H1525 V655 H60 Z"/>
+  <text class="tiny" x="75" y="685">ZERO-TRUST SEGMENTATION: management isolation, IoT isolation, guest isolation, firewall-enforced routing boundaries, least-privilege access paths.</text>
+
+  <rect class="panel" x="70" y="705" width="505" height="92" rx="12"/>
+  <text class="h2" x="95" y="735">DHCP Ownership</text>
+  <text class="t" x="95" y="762">Windows Server DHCP owns trusted VLAN 20 and VLAN 30 through relay.</text>
+  <text class="t" x="95" y="784">pfSense DHCP owns untrusted VLAN 40 and VLAN 50 locally.</text>
+
+  <rect class="panel" x="610" y="705" width="450" height="92" rx="12"/>
+  <text class="h2" x="635" y="735">Traffic Matrix Callout</text>
+  <text class="t" x="635" y="762">Management -&gt; Management only | Clients -&gt; AD/DNS only</text>
+  <text class="t" x="635" y="784">IoT -&gt; Internet only | Guest -&gt; Internet only</text>
+
+  <rect class="panel" x="1095" y="705" width="420" height="92" rx="12"/>
+  <text class="h2" x="1120" y="735">Firewall Policy Model</text>
+  <text class="t" x="1120" y="762">Allowed paths are explicit; blocked paths enforce trust boundaries.</text>
+  <text class="t" x="1120" y="784">Administrative, guest, IoT, and client boundaries are separated.</text>
+
+  <rect class="panel" x="45" y="850" width="485" height="205" rx="18"/>
+  <text class="h" x="70" y="885">Validation Coverage</text>
+  <text class="t" x="75" y="922">✓ Gateway Reachability</text>
+  <text class="t" x="75" y="950">✓ DHCP Validation</text>
+  <text class="t" x="75" y="978">✓ DNS Resolution</text>
+  <text class="t" x="75" y="1006">✓ Firewall Segmentation</text>
+  <text class="t" x="300" y="922">✓ Internet Connectivity</text>
+  <text class="t" x="300" y="950">✓ VPN Reachability</text>
+  <text class="t" x="300" y="978">✓ Routing Validation</text>
+
+  <rect class="panel" x="560" y="850" width="470" height="205" rx="18"/>
+  <text class="h" x="585" y="885">Technical Areas Demonstrated</text>
+  <text class="t" x="590" y="922">✓ VLAN Design</text>
+  <text class="t" x="590" y="950">✓ Network Segmentation</text>
+  <text class="t" x="590" y="978">✓ pfSense Administration</text>
+  <text class="t" x="590" y="1006">✓ DHCP / DNS Architecture</text>
+  <text class="t" x="815" y="922">✓ Active Directory</text>
+  <text class="t" x="815" y="950">✓ Virtualization Networking</text>
+  <text class="t" x="815" y="978">✓ Firewall Policy Design</text>
+  <text class="t" x="815" y="1006">✓ VPN Access Control</text>
+  <text class="t" x="815" y="1034">✓ Infrastructure Documentation</text>
+
+  <rect class="panel" x="1060" y="850" width="495" height="205" rx="18"/>
+  <text class="h" x="1085" y="885">Documentation References</text>
+  <text class="t" x="1090" y="922">• Switch Port Map</text>
+  <text class="t" x="1090" y="950">• pfSense VLAN Interface Export</text>
+  <text class="t" x="1090" y="978">• Proxmox Bridge Mapping</text>
+  <text class="t" x="1090" y="1006">• DHCP Scope Mapping</text>
+  <text class="t" x="1325" y="922">• Firewall Rule Review</text>
+  <text class="t" x="1325" y="950">• Validation Checklist Results</text>
+  <text class="small" x="1325" y="995">Evidence package references are linked</text>
+  <text class="small" x="1325" y="1015">from the proof and project surfaces.</text>
+</svg>

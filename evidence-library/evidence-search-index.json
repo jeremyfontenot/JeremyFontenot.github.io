@@ -382,7 +382,7 @@
   {
     "id": "projects-infrastructure-networking-vlan-architecture-walkthrough-2026",
     "title": "Vlan Architecture Walkthrough 2026",
-    "summary": "Documents VLAN strategy, trunk/access review, pfSense routing boundaries, Proxmox bridge planning, and operational troubleshooting sequence.",
+    "summary": "Flagship VLAN architecture case study documenting pfSense routing, Proxmox bridge mapping, Windows Server services, DHCP ownership, firewall segmentation, VPN reachability, validation methodology, and evidence-chain mapping.",
     "path": "evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md",
     "originalSourcePath": "generated-gap-evidence/vlan-architecture-walkthrough-2026.md",
     "category": "projects",

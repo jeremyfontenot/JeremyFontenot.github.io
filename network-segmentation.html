@@ -31,21 +31,26 @@
           <p class="eyebrow">Networking / pfSense</p>
           <p class="subhead">Firewall administration, segmentation, and VPN concepts.</p>
           <h1 id="net-title">Network segmentation validation.</h1>
-          <p class="lead">This project demonstrates firewall boundary planning, VLAN segmentation, DNS/DHCP placement, VPN concepts, and validation methodology using verified home lab infrastructure.</p>
+          <p class="lead">This project demonstrates firewall boundary planning, VLAN segmentation, DNS/DHCP placement, VPN concepts, Proxmox bridge mapping, switch port documentation, and validation methodology using verified home lab infrastructure.</p>
           <div class="actions">
-            <a class="button primary" href="./evidence-library/network/network-validation-lab-notes.md">Open Network Validation Notes</a>
+            <a class="button primary" href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">Open VLAN Case Study</a>
+            <a class="button" href="./evidence-library/architecture-diagrams/vlan-architecture-diagram-dark.svg">Open Architecture Diagram</a>
+            <a class="button" href="./evidence-library/network/network-validation-lab-notes.md">Network Validation Notes</a>
             <a class="button" href="./evidence-library/network/firewall-rules-evidence.md">Firewall Rule Evidence</a>
-            <a class="button" href="./evidence-library/vpn/vpn-configuration-evidence.md">VPN Evidence</a>
           </div>
         </div>
-        <aside class="diagram-card">
+        <div class="diagram-card">
           <div class="diagram-head"><span>Segmentation</span><span>Verified</span></div>
-          <img src="./evidence-library/architecture-diagrams/pfsense-network-segmentation-diagram-2026.svg" alt="pfSense network segmentation diagram" width="1200" height="760">
-        </aside>
+          <img src="./evidence-library/architecture-diagrams/vlan-architecture-diagram-dark.svg" alt="VLAN architecture evidence diagram showing switch port mapping, pfSense VLAN interfaces, Proxmox bridge mapping, DHCP ownership, firewall boundaries, validation coverage, and documentation references." width="1600" height="1100">
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="network-evidence-title">
+      <div class="section-head">
+        <p class="eyebrow">Evidence Map</p>
+        <h2 id="network-evidence-title">Architecture, environment, and validation evidence.</h2>
+      </div>
       <div class="focus-grid">
         <article class="focus-card">
           <div class="tag-row"><span>FW</span><small>Problem</small></div>
@@ -58,6 +63,7 @@
           <p>pfSense, D-Link managed switch, VLANs, WireGuard, OpenVPN, DNS, DHCP, Suricata, Snort, and 192.168.0.0/24 lab network context.</p>
           <div class="project-links">
             <a href="./evidence-library/network/network-validation-lab-notes.md">Switch and VLAN notes</a>
+            <a href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">VLAN architecture case study</a>
             <a href="./evidence-library/vpn/vpn-configuration-evidence.md">VPN configuration evidence</a>
           </div>
         </article>

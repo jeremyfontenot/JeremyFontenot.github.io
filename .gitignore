@@ -12,6 +12,7 @@ node_modules/
 test-output/
 playwright-report/
 screenshots/temp/
+validation-screenshots/
 **/.cache/
 **/cache/
 *.log

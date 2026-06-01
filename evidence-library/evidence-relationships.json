@@ -114,6 +114,13 @@
       "note": "The topology diagram and VLAN walkthrough document the same preserved network design intent."
     },
     {
+      "sourceId": "architecture-diagrams-vlan-architecture-diagram",
+      "targetId": "projects-infrastructure-networking-vlan-architecture-walkthrough-2026",
+      "relationshipType": "primary-architecture-evidence",
+      "confidenceLevel": "reviewed-methodology",
+      "note": "The VLAN architecture diagram is the primary visual evidence artifact for the expanded walkthrough."
+    },
+    {
       "sourceId": "architecture-diagrams-pfsense-network-segmentation-diagram-2026",
       "targetId": "projects-infrastructure-networking-pfsense-network-segmentation-diagram-2026",
       "relationshipType": "same-project",
