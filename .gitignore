@@ -51,6 +51,7 @@ scripts/verify_pass3.ps1
 
 # Generated audit artifacts
 artifacts/active-html-files.txt
+artifacts/lighthouse/clean-rebuild-*/
 artifacts/generated-image-fixes.patch
 artifacts/generated-image-skipped.csv
 artifacts/generated-image-status.csv
