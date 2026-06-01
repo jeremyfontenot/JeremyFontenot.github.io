@@ -1,7 +1,7 @@
 # Microsoft 365 Architecture Overview — Evidence Notes (2026)
 
 ## 1. Identity Architecture
-Entra ID tenant: lab.onmicrosoft.com
+Entra ID tenant identifier: jeremyfontenot
 Authentication: MFA enforced
 Conditional Access: Baseline policies active
 
