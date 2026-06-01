@@ -1,72 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Repository Health Dashboard | Jeremy Fontenot</title>
-  <meta name="description" content="Repository governance dashboard for validation coverage, evidence integrity, Lighthouse reports, and portfolio deployment readiness.">
+  <title>Repository Dashboard | Jeremy Fontenot</title>
+  <meta name="description" content="Repository governance dashboard summarizing validation, evidence integrity, deployment readiness, and portfolio quality controls.">
   <meta name="robots" content="index, follow">
-  <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://jeremyfontenot.online/dashboard.html">
   <meta property="og:site_name" content="Jeremy Fontenot">
-  <meta property="og:title" content="Repository Health Dashboard | Jeremy Fontenot">
-  <meta property="og:description" content="Repository governance dashboard for validation coverage, evidence integrity, Lighthouse reports, and portfolio deployment readiness.">
+  <meta property="og:title" content="Repository Dashboard | Jeremy Fontenot">
+  <meta property="og:description" content="Governance and validation dashboard for the Jeremy Fontenot portfolio repository.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jeremyfontenot.online/dashboard.html">
   <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Repository Health Dashboard | Jeremy Fontenot">
-  <meta name="twitter:description" content="Repository governance dashboard for validation coverage, evidence integrity, Lighthouse reports, and portfolio deployment readiness.">
-  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
-  <link rel="manifest" href="./assets/site.webmanifest">
   <link rel="apple-touch-icon" href="./assets/logos/favicon_128x128.png">
-  <link rel="stylesheet" href="./assets/css/site.css?v=20260531-clean-rebuild">
-  <script src="./assets/js/site.js?v=20260531-clean-rebuild" defer></script>
+  <link rel="stylesheet" href="./assets/css/site.css?v=manual-enterprise">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav-shell" aria-label="Primary navigation">
-      <a class="brand" href="./index.html">
-        <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async">
-        <span>Jeremy Fontenot</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
-      <div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html">Proof</a><a href="./dashboard.html" aria-current="page">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div>
-    </nav>
-  </header>
+  <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44"><span>Jeremy Fontenot</span></a><div class="nav-links"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html">Proof</a><a href="./dashboard.html" aria-current="page">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div></nav></header>
   <main id="main">
-
-    <section class="page-hero" aria-labelledby="dashboard-title"><div class="page-grid"><div class="stack" data-reveal><p class="eyebrow">Repository Governance</p><h1 id="dashboard-title">Validation and evidence integrity at a glance.</h1><p class="lead">I use this page to summarize the quality controls behind the portfolio: HTML validation, accessibility checks, link checks, image checks, Lighthouse reports, evidence hashes, and deployment verification.</p></div><div class="panel" data-reveal><h2>Governance Status</h2><p>Public pages are validated locally before commit, pushed to main, and verified on GitHub Pages after deployment.</p></div></div></section>
-    <section class="section" aria-labelledby="metrics-title"><div class="section-head"><p class="eyebrow">Controls</p><h2 id="metrics-title">Validation domains.</h2></div><div class="card-grid"><article class="card" data-reveal><span class="badge">Control</span><h3>HTML and metadata</h3><p>Tracked as part of the release readiness workflow for the static portfolio.</p></article><article class="card" data-reveal><span class="badge">Control</span><h3>Links and proof paths</h3><p>Tracked as part of the release readiness workflow for the static portfolio.</p></article><article class="card" data-reveal><span class="badge">Control</span><h3>Images and SVG containment</h3><p>Tracked as part of the release readiness workflow for the static portfolio.</p></article><article class="card" data-reveal><span class="badge">Control</span><h3>Accessibility</h3><p>Tracked as part of the release readiness workflow for the static portfolio.</p></article><article class="card" data-reveal><span class="badge">Control</span><h3>Lighthouse</h3><p>Tracked as part of the release readiness workflow for the static portfolio.</p></article><article class="card" data-reveal><span class="badge">Control</span><h3>GitHub Pages deployment</h3><p>Tracked as part of the release readiness workflow for the static portfolio.</p></article></div></section>
-    <section class="section" aria-labelledby="governance-links"><div class="section-head"><p class="eyebrow">Repository Files</p><h2 id="governance-links">Open validation references.</h2></div><div class="proof-grid"><article class="proof-card" data-reveal><h3>Repository Health Summary</h3><p>Repository-local governance file.</p><a class="button" href="./artifacts/dashboard/repository-health.md">Open File</a></article><article class="proof-card" data-reveal><h3>Evidence Hash Inventory</h3><p>Repository-local governance file.</p><a class="button" href="./evidence-library/integrity/evidence-hashes.json">Open File</a></article><article class="proof-card" data-reveal><h3>Evidence Search Index</h3><p>Repository-local governance file.</p><a class="button" href="./evidence-library/evidence-search-index.json">Open File</a></article><article class="proof-card" data-reveal><h3>Evidence Relationship Map</h3><p>Repository-local governance file.</p><a class="button" href="./evidence-library/evidence-relationships.json">Open File</a></article></div></section>
+    <section class="hero" aria-labelledby="dashboard-title"><div class="hero-grid"><div class="hero-copy"><div class="accent-line" aria-hidden="true"></div><p class="eyebrow">Repository Governance</p><p class="subhead">Validation, evidence integrity, and deployment readiness.</p><h1 id="dashboard-title">Enterprise-style portfolio governance.</h1><p class="lead">This page summarizes the operational quality controls behind the public portfolio: link checks, metadata, evidence hashing, accessibility review, Lighthouse, screenshots, and deployment verification.</p><div class="actions"><a class="button primary" href="./proof.html">Review Proof Library</a><a class="button" href="./artifacts/dashboard/repository-health.md">Repository health file</a></div></div><aside class="health-card"><div class="health-head"><span>Governance</span><strong>Tracked</strong></div><dl><div><dt>CI</dt><dd><strong>Validation</strong><span>Repository checks remain part of release readiness.</span></dd></div><div><dt>SHA</dt><dd><strong>Evidence hashes</strong><span>Public evidence files are fingerprinted.</span></dd></div><div><dt>SEO</dt><dd><strong>Metadata</strong><span>Canonical, Open Graph, and recruiter keywords are maintained.</span></dd></div></dl></aside></div></section>
+    <section class="section" aria-labelledby="controls-title"><div class="section-head"><p class="eyebrow">Quality Controls</p><h2 id="controls-title">Validation domains.</h2></div><div class="governance-cards"><article><span>HTML</span><small>Structure</small><h3>Semantic pages</h3><p>Public pages use semantic sections, headings, metadata, canonical URLs, and accessible link text.</p></article><article><span>AXE</span><small>Access</small><h3>Accessibility</h3><p>Pages are checked for keyboard access, contrast, image alt text, and responsive containment.</p></article><article><span>LINK</span><small>Proof</small><h3>Evidence paths</h3><p>Resume downloads, proof documents, diagrams, scripts, and public evidence links are treated as release blockers.</p></article></div></section>
   </main>
-  <footer class="site-footer" aria-label="Site footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="52" height="52" decoding="async">
-        <p><strong>Jeremy Fontenot</strong></p>
-        <p>Evidence-backed portfolio for enterprise service desk, IT support, and systems administration growth.</p>
-      </div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <h2>Navigate</h2>
-        <a href="./index.html">Home</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./proof.html">Proof</a>
-        <a href="./dashboard.html">Dashboard</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
-      <nav class="footer-links" aria-label="Evidence links">
-        <h2>Evidence</h2>
-        <a href="./evidence-library/index.html">Evidence library</a>
-        <a href="./assets/resume/jeremy-fontenot-resume.pdf">Resume PDF</a>
-        <a href="./sitemap.xml">Sitemap</a>
-      </nav>
-    </div>
-    <p class="footer-meta">Service Desk / Microsoft 365 / Active Directory / PowerShell / Networking / Documentation</p>
-  </footer>
+  <footer class="site-footer"><div class="footer-panel"><p><strong>Jeremy Fontenot</strong> - repository governance and validation dashboard.</p></div></footer>
 </body>
 </html>
