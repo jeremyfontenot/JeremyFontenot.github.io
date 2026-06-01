@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | Jeremy Fontenot</title>
-  <meta name="description" content="Portfolio projects mapped to service desk, systems administration, infrastructure, Microsoft 365, Active Directory, PowerShell automation, networking, and troubleshooting roles.">
+  <meta name="description" content="Verified systems administration, infrastructure operations, Microsoft 365, Active Directory, networking, and PowerShell automation projects by Jeremy Fontenot.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jeremyfontenot.online/projects.html">
   <meta property="og:site_name" content="Jeremy Fontenot">
   <meta property="og:title" content="Projects | Jeremy Fontenot">
-  <meta property="og:description" content="Source-backed project evidence for enterprise service desk, IT support, and systems administration progression.">
+  <meta property="og:description" content="Enterprise project portfolio showing verified infrastructure, Microsoft 365, Active Directory, pfSense, Proxmox, and PowerShell work.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jeremyfontenot.online/projects.html">
   <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects | Jeremy Fontenot">
+  <meta name="twitter:description" content="Verified infrastructure and systems administration projects for enterprise IT support and administrator progression.">
+  <meta name="twitter:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
   <link rel="icon" href="./assets/logos/favicon_64x64.png">
   <link rel="apple-touch-icon" href="./assets/logos/favicon_128x128.png">
-  <link rel="stylesheet" href="./assets/css/site.css?v=manual-enterprise">
+  <link rel="stylesheet" href="./assets/css/site.css?v=enterprise-projects">
+  <script src="./assets/js/site.js?v=enterprise-projects" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -33,96 +38,263 @@
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="projects-title">
-      <div class="hero-grid">
-        <div class="hero-copy">
+  <main id="main" class="projects-main">
+    <section class="projects-hero" aria-labelledby="projects-title">
+      <div class="projects-hero-grid">
+        <div data-reveal>
           <div class="accent-line" aria-hidden="true"></div>
-          <p class="eyebrow">Service Desk / Systems Administration / Infrastructure</p>
-          <p class="subhead">Projects organized around the roles hiring teams are actually filling.</p>
-          <h1 id="projects-title">Technical work mapped to IT support and administrator readiness.</h1>
-          <p class="lead">These projects show how I approach Service Desk operations, Microsoft 365 administration, Active Directory fundamentals, infrastructure troubleshooting, networking, PowerShell automation, and documentation-driven handoff.</p>
+          <p class="eyebrow">Infrastructure / Systems Administration / Enterprise Support</p>
+          <h1 id="projects-title">Projects that demonstrate infrastructure thinking.</h1>
+          <p class="lead">These verified projects show how I approach systems administration, infrastructure operations, networking, automation, and enterprise support concepts through documented implementations and lab environments.</p>
           <div class="actions">
-            <a class="button primary" href="./proof.html">Browse Proof Library</a>
-            <a class="button" href="./infrastructure.html">Infrastructure Experience</a>
+            <a class="button primary" href="#featured-projects">Review Featured Projects</a>
+            <a class="button" href="./proof.html">Open Evidence Library</a>
           </div>
         </div>
-        <aside class="console-card" aria-label="Project review model">
-          <div class="console-head"><span>Review Model</span><span>Role-mapped</span></div>
-          <ol class="console-list">
-            <li><span>01</span><div><strong>Service Desk</strong><p>Troubleshooting, ticket context, user impact, escalation, and closure quality.</p></div></li>
-            <li><span>02</span><div><strong>Systems Administration</strong><p>Microsoft 365, identity, Windows Server, endpoint support, and admin workflow readiness.</p></div></li>
-            <li><span>03</span><div><strong>Infrastructure and automation</strong><p>Networking, virtualization, firewall concepts, PowerShell, and repeatable documentation.</p></div></li>
-          </ol>
+        <aside class="project-command" aria-label="Project review summary" data-reveal>
+          <div class="console-head"><span>Review Lens</span><span>Verified Work</span></div>
+          <dl>
+            <div><dt>Built</dt><dd>Microsoft 365, AD, Proxmox, pfSense, and PowerShell project paths.</dd></div>
+            <div><dt>Validated</dt><dd>Identity, DNS, DHCP, VLANs, VPN concepts, automation, and support workflows.</dd></div>
+            <div><dt>Progression</dt><dd>Service Desk to Infrastructure Validation to Systems Administration to Infrastructure Operations.</dd></div>
+          </dl>
         </aside>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="project-list">
-      <div class="section-head">
-        <p class="eyebrow">Featured Projects</p>
-        <h2 id="project-list">Projects aligned to recruiter search paths.</h2>
-        <p>The project set is intentionally organized around Service Desk, Systems Administration, Infrastructure, Microsoft 365, and Automation so hiring teams can quickly connect the work to open support and junior administrator roles.</p>
+    <section class="section project-filter-section" aria-labelledby="filter-title">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Project Categories</p>
+        <h2 id="filter-title">Filter by technical review path.</h2>
+        <p>Each category maps to a realistic hiring screen: infrastructure, Microsoft 365, Active Directory, networking, automation, or service desk operations.</p>
       </div>
-      <div class="focus-grid">
-        <article class="focus-card">
-          <div class="tag-row"><span>M5</span><small>Microsoft 365</small></div>
-          <h3>Microsoft 365 Administration Lab</h3>
-          <p>Historical tenant administration covering user lifecycle, identity administration, MFA concepts, tenant validation, and administrative workflow documentation. The tenant was intentionally retired; evidence remains preserved.</p>
-          <div class="project-links">
-            <a href="./microsoft-365-lab.html">Open project page</a>
-            <a href="./evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">Conditional Access baseline</a>
+      <div class="project-filters" data-reveal>
+        <button class="filter-button is-active" type="button" data-project-filter="all">All</button>
+        <button class="filter-button" type="button" data-project-filter="infrastructure">Infrastructure</button>
+        <button class="filter-button" type="button" data-project-filter="microsoft-365">Microsoft 365</button>
+        <button class="filter-button" type="button" data-project-filter="active-directory">Active Directory</button>
+        <button class="filter-button" type="button" data-project-filter="networking">Networking</button>
+        <button class="filter-button" type="button" data-project-filter="automation">Automation</button>
+        <button class="filter-button" type="button" data-project-filter="service-desk">Service Desk</button>
+      </div>
+    </section>
+
+    <section class="section" id="featured-projects" aria-labelledby="featured-title">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Featured Projects</p>
+        <h2 id="featured-title">Verified work with architecture, skills, and evidence.</h2>
+      </div>
+      <div class="enterprise-project-grid">
+        <article class="enterprise-project-card" data-reveal data-project-card data-categories="infrastructure networking active-directory">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 420 230" role="img">
+              <rect x="22" y="34" width="104" height="58" rx="8"></rect>
+              <rect x="158" y="34" width="104" height="58" rx="8"></rect>
+              <rect x="294" y="34" width="104" height="58" rx="8"></rect>
+              <rect x="90" y="138" width="104" height="58" rx="8"></rect>
+              <rect x="226" y="138" width="104" height="58" rx="8"></rect>
+              <path d="M126 63h32M262 63h32M210 92v46M142 138l68-46M278 138l-68-46"></path>
+              <circle cx="210" cy="92" r="6"></circle>
+            </svg>
+          </div>
+          <div class="project-card-body">
+            <div class="project-kicker"><span>Infrastructure</span><span>Proxmox</span></div>
+            <h3>Proxmox Home Lab</h3>
+            <p><strong>Overview:</strong> Dell PowerEdge R710 home lab used to practice virtualization, infrastructure boundaries, Windows Server, Linux, pfSense, DNS/DHCP, and operational support workflows.</p>
+            <p><strong>Technologies Used:</strong> Dell R710, Proxmox, Windows Server, Linux, pfSense, VLANs, VPN access, DNS, DHCP.</p>
+            <p><strong>Skills Validated:</strong> Virtualization, resource planning, infrastructure management, service boundaries, and operational documentation.</p>
+            <p><strong>Career Relevance:</strong> Supports progression from service desk troubleshooting into junior systems administration and infrastructure operations.</p>
+            <div class="project-links">
+              <a href="./infrastructure.html">Open project page</a>
+              <a href="./evidence-library/projects/home-lab/lab-portfolio-preserved.pdf">Preserved home lab PDF</a>
+            </div>
           </div>
         </article>
-        <article class="focus-card">
-          <div class="tag-row"><span>AD</span><small>Identity</small></div>
-          <h3>Active Directory Administration Lab</h3>
-          <p>Windows Server, Active Directory, DNS, DHCP, Group Policy concepts, authentication boundaries, and administration workflow validation in a lab-supported infrastructure context.</p>
-          <div class="project-links">
-            <a href="./active-directory-lab.html">Open project page</a>
-            <a href="./evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md">Change record notes</a>
+
+        <article class="enterprise-project-card" data-reveal data-project-card data-categories="active-directory infrastructure">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 420 230" role="img">
+              <rect x="44" y="42" width="120" height="62" rx="8"></rect>
+              <rect x="256" y="42" width="120" height="62" rx="8"></rect>
+              <rect x="150" y="142" width="120" height="62" rx="8"></rect>
+              <path d="M164 73h92M210 104v38M104 104l106 38M316 104l-106 38"></path>
+              <circle cx="104" cy="73" r="7"></circle>
+              <circle cx="316" cy="73" r="7"></circle>
+              <circle cx="210" cy="173" r="7"></circle>
+            </svg>
+          </div>
+          <div class="project-card-body">
+            <div class="project-kicker"><span>Identity</span><span>Windows Server</span></div>
+            <h3>Active Directory Infrastructure</h3>
+            <p><strong>Overview:</strong> Lab-supported Active Directory administration path covering Windows Server, authentication boundaries, DNS, DHCP, Group Policy concepts, and administration workflow validation.</p>
+            <p><strong>Technologies Used:</strong> Active Directory, Windows Server, DNS, DHCP, Group Policy concepts, client administration, identity workflows.</p>
+            <p><strong>Skills Validated:</strong> DNS, DHCP, Group Policy, user administration, authentication concepts, and change documentation.</p>
+            <p><strong>Career Relevance:</strong> Demonstrates administrator readiness for identity support, account workflows, and Windows infrastructure troubleshooting.</p>
+            <div class="project-links">
+              <a href="./active-directory-lab.html">Open project page</a>
+              <a href="./evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md">Change record notes</a>
+            </div>
           </div>
         </article>
-        <article class="focus-card">
-          <div class="tag-row"><span>PX</span><small>Infrastructure</small></div>
-          <h3>Proxmox Home Lab</h3>
-          <p>Dell PowerEdge R710, Proxmox, Windows Server, Linux, pfSense, VLANs, VPN access, DNS/DHCP, and infrastructure operations practice with preserved evidence.</p>
-          <div class="project-links">
-            <a href="./infrastructure.html">Open infrastructure page</a>
-            <a href="./evidence-library/projects/home-lab/lab-portfolio-preserved.pdf">Preserved home lab PDF</a>
+
+        <article class="enterprise-project-card" data-reveal data-project-card data-categories="microsoft-365 active-directory">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 420 230" role="img">
+              <rect x="52" y="52" width="88" height="54" rx="8"></rect>
+              <rect x="166" y="32" width="88" height="54" rx="8"></rect>
+              <rect x="280" y="52" width="88" height="54" rx="8"></rect>
+              <rect x="166" y="142" width="88" height="54" rx="8"></rect>
+              <path d="M140 79h26M254 59l26 20M210 86v56M96 106l114 36M324 106l-114 36"></path>
+              <circle cx="210" cy="114" r="8"></circle>
+            </svg>
+          </div>
+          <div class="project-card-body">
+            <div class="project-kicker"><span>Microsoft 365</span><span>Entra ID</span></div>
+            <h3>Microsoft 365 Administration Lab</h3>
+            <p><strong>Overview:</strong> Historical tenant administration lab covering identity administration, user lifecycle, MFA concepts, tenant-safe configuration review, and Microsoft operations documentation.</p>
+            <p><strong>Technologies Used:</strong> Microsoft 365, Entra ID, MFA concepts, account lifecycle workflows, Conditional Access intent, administrative documentation.</p>
+            <p><strong>Skills Validated:</strong> Identity administration, MFA concepts, account lifecycle management, Entra ID, and Microsoft 365 support context.</p>
+            <p><strong>Career Relevance:</strong> Supports Microsoft 365 administrator readiness while clearly preserving the historical tenant context.</p>
+            <div class="project-links">
+              <a href="./microsoft-365-lab.html">Open project page</a>
+              <a href="./evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">Conditional Access baseline</a>
+            </div>
           </div>
         </article>
-        <article class="focus-card">
-          <div class="tag-row"><span>FW</span><small>Networking</small></div>
-          <h3>pfSense Network Segmentation</h3>
-          <p>Firewall administration, VLAN segmentation, WireGuard, OpenVPN, DNS/DHCP placement, Suricata, Snort, and network validation methodology.</p>
-          <div class="project-links">
-            <a href="./network-segmentation.html">Open project page</a>
-            <a href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">VLAN walkthrough</a>
+
+        <article class="enterprise-project-card" data-reveal data-project-card data-categories="networking infrastructure">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 420 230" role="img">
+              <rect x="32" y="48" width="84" height="54" rx="8"></rect>
+              <rect x="168" y="38" width="84" height="74" rx="8"></rect>
+              <rect x="304" y="48" width="84" height="54" rx="8"></rect>
+              <rect x="86" y="148" width="84" height="48" rx="8"></rect>
+              <rect x="250" y="148" width="84" height="48" rx="8"></rect>
+              <path d="M116 75h52M252 75h52M210 112v36M128 148l82-36M292 148l-82-36"></path>
+              <path class="magenta-line" d="M128 196c40 24 124 24 164 0"></path>
+            </svg>
+          </div>
+          <div class="project-card-body">
+            <div class="project-kicker"><span>Networking</span><span>pfSense</span></div>
+            <h3>pfSense Network Segmentation</h3>
+            <p><strong>Overview:</strong> Network segmentation project covering firewall boundaries, VLAN planning, VPN concepts, DNS/DHCP placement, and repeatable network validation.</p>
+            <p><strong>Technologies Used:</strong> pfSense, VLANs, D-Link managed switching, WireGuard, OpenVPN, DNS, DHCP, Suricata, Snort.</p>
+            <p><strong>Skills Validated:</strong> Firewall administration, VPN concepts, network segmentation, DNS/DHCP review, and troubleshooting methodology.</p>
+            <p><strong>Career Relevance:</strong> Shows infrastructure thinking around service boundaries, access paths, and operational network support.</p>
+            <div class="project-links">
+              <a href="./network-segmentation.html">Open project page</a>
+              <a href="./evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">VLAN walkthrough</a>
+            </div>
           </div>
         </article>
-        <article class="focus-card">
-          <div class="tag-row"><span>PS</span><small>Automation</small></div>
-          <h3>PowerShell Operational Automation</h3>
-          <p>PowerShell scripting used to improve operational consistency, repeatability, validation, and handoff readiness without exaggerating production scale.</p>
-          <div class="project-links">
-            <a href="./powershell-automation.html">Open project page</a>
-            <a href="./evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1">Provisioning script</a>
+
+        <article class="enterprise-project-card" data-reveal data-project-card data-categories="automation service-desk">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 420 230" role="img">
+              <rect x="48" y="48" width="104" height="52" rx="8"></rect>
+              <rect x="158" y="118" width="104" height="52" rx="8"></rect>
+              <rect x="268" y="48" width="104" height="52" rx="8"></rect>
+              <path d="M152 74c40 0 46 70 6 70M262 144c-40 0-46-70 6-70"></path>
+              <path class="magenta-line" d="M100 100v76h220v-76"></path>
+              <circle cx="100" cy="74" r="7"></circle>
+              <circle cx="210" cy="144" r="7"></circle>
+              <circle cx="320" cy="74" r="7"></circle>
+            </svg>
           </div>
-        </article>
-        <article class="focus-card">
-          <div class="tag-row"><span>RC</span><small>Service Desk</small></div>
-          <h3>Service Desk RCA Workflow</h3>
-          <p>Incident documentation supporting troubleshooting consistency, escalation quality, remediation planning, validation, and repeatable support workflows.</p>
-          <div class="project-links">
-            <a href="./service-desk-rca.html">Open project page</a>
-            <a href="./evidence-library/projects/troubleshooting-rca/rca-report.md">RCA report</a>
+          <div class="project-card-body">
+            <div class="project-kicker"><span>Automation</span><span>PowerShell</span></div>
+            <h3>PowerShell Automation</h3>
+            <p><strong>Overview:</strong> Operational automation project focused on repeatable support tasks, dry-run review, structured notes, logging expectations, and handoff readiness.</p>
+            <p><strong>Technologies Used:</strong> PowerShell, Git, provisioning logic, operational handoff notes, change logs, and support documentation.</p>
+            <p><strong>Skills Validated:</strong> Automation, operational efficiency, repeatability, validation context, and documentation discipline.</p>
+            <p><strong>Career Relevance:</strong> Demonstrates how service desk work can mature into repeatable systems administration support practices.</p>
+            <div class="project-links">
+              <a href="./powershell-automation.html">Open project page</a>
+              <a href="./evidence-library/scripts/powershell-automation-provisioning-script-v1.ps1">Provisioning script</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
+
+    <section class="section skills-map-section" aria-labelledby="skills-map-title">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Skills Validated</p>
+        <h2 id="skills-map-title">Infrastructure skills mapped to verified projects.</h2>
+      </div>
+      <div class="skills-map">
+        <span data-reveal>Active Directory</span>
+        <span data-reveal>Microsoft 365</span>
+        <span data-reveal>Entra ID</span>
+        <span data-reveal>DNS</span>
+        <span data-reveal>DHCP</span>
+        <span data-reveal>VLANs</span>
+        <span data-reveal>PowerShell</span>
+        <span data-reveal>Proxmox</span>
+        <span data-reveal>pfSense</span>
+        <span data-reveal>Virtualization</span>
+      </div>
+    </section>
+
+    <section class="section journey-section" aria-labelledby="journey-title">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Infrastructure Journey</p>
+        <h2 id="journey-title">Progression from support execution to infrastructure operations.</h2>
+      </div>
+      <ol class="journey-timeline">
+        <li data-reveal><span>01</span><div><strong>Service Desk</strong><p>User impact, ticket ownership, endpoint support, clear notes, and escalation discipline.</p></div></li>
+        <li data-reveal><span>02</span><div><strong>Infrastructure Validation</strong><p>Lab-backed checks for DNS, DHCP, VLANs, VPN concepts, identity workflows, and service boundaries.</p></div></li>
+        <li data-reveal><span>03</span><div><strong>Systems Administration</strong><p>Windows Server, Active Directory, Microsoft 365 administration exposure, PowerShell, and documentation.</p></div></li>
+        <li data-reveal><span>04</span><div><strong>Infrastructure Operations</strong><p>Operational thinking across virtualization, networking, firewall boundaries, repeatability, and handoff.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section final-cta" aria-labelledby="projects-cta-title">
+      <div data-reveal>
+        <p class="eyebrow">Hiring Manager Review</p>
+        <h2 id="projects-cta-title">Start with the infrastructure work, then verify the proof.</h2>
+        <p>These projects are intentionally practical: they show what was built, why it matters, which technologies were used, and how the work supports systems administration and infrastructure operations progression.</p>
+        <div class="actions">
+          <a class="button primary" href="./proof.html">Open Proof Library</a>
+          <a class="button" href="./resume.html">Review Resume</a>
+          <a class="button" href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><div class="footer-panel"><p><strong>Jeremy Fontenot</strong> - project evidence for IT support and systems administration progression.</p></div></footer>
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <div class="footer-status">
+        <span>Infrastructure</span>
+        <span>Microsoft 365</span>
+        <span>Active Directory</span>
+        <span>Networking</span>
+        <span>PowerShell</span>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44">
+          <p><strong>Jeremy Fontenot</strong></p>
+          <p>Verified project portfolio for service desk, systems administration, and infrastructure operations progression.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h2>Navigate</h2>
+          <a href="./index.html">Home</a>
+          <a href="./proof.html">Proof</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="./resume.html">Resume</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <nav aria-label="Evidence navigation">
+          <h2>Evidence</h2>
+          <a href="./evidence-library/index.html">Evidence library</a>
+          <a href="./assets/resume/jeremy-fontenot-resume.pdf">Resume PDF</a>
+          <a href="./sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+      <p class="footer-meta">Proxmox / Active Directory / Microsoft 365 / pfSense / PowerShell / Infrastructure Operations</p>
+    </div>
+  </footer>
 </body>
 </html>
