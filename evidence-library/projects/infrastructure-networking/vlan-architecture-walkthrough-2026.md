@@ -314,11 +314,11 @@ Each evidence item supports one part of the architecture. Together, they form th
 
 | Artifact | Purpose | What it demonstrates | Why it matters | Skills validated |
 | --- | --- | --- | --- | --- |
-| [Switch Port Map](../../network/network-validation-lab-notes.md) | Documents physical switch relationships and port mode intent. | pfSense trunk, Proxmox management, Proxmox VM trunk, Windows Server access, Wireless AP trunk. | Physical traceability improves troubleshooting and reduces guesswork during changes. | Network documentation, Layer 1/Layer 2 troubleshooting, port mapping. |
-| [pfSense VLAN Interface Export](../../network/network-validation-lab-notes.md) | Captures the VLAN interface model and gateway role. | WAN, LAN parent, VLAN gateways, firewall enforcement point, routing boundaries. | Interface evidence supports segmentation review and firewall policy validation. | pfSense administration, routing, VLAN design. |
-| [Proxmox Bridge Mapping](../../proxmox/proxmox-host-evidence.md) | Documents virtualization network boundaries. | Bridge-to-VLAN relationships and management/workload separation. | Virtual networking must align with switch and firewall expectations. | Proxmox administration, virtualization networking, infrastructure planning. |
-| [DHCP Scope Mapping](../../network/dhcp-dns-evidence.md) | Defines ownership for trusted and untrusted address assignment. | Windows Server DHCP for VLAN 20/30 and pfSense DHCP for VLAN 40/50. | Clear DHCP ownership prevents conflicting scopes and speeds lease troubleshooting. | DHCP administration, DNS/DHCP operations, service ownership. |
-| [Firewall Rule Review](../../network/firewall-rules-evidence.md) | Preserves firewall policy intent and segmentation behavior. | Allowed paths, blocked paths, guest isolation, IoT isolation, and administrative separation. | Firewall policy is the enforcement layer behind VLAN design. | Firewall management, security fundamentals, rule review. |
+| [Switch Port Map](../../network/network-infrastructure-validation-report-2026.md) | Documents physical switch relationships and port mode intent. | pfSense trunk, Proxmox management, Proxmox VM trunk, Windows Server access, Wireless AP trunk. | Physical traceability improves troubleshooting and reduces guesswork during changes. | Network documentation, Layer 1/Layer 2 troubleshooting, port mapping. |
+| [pfSense VLAN Interface Export](../../network/network-infrastructure-validation-report-2026.md) | Captures the VLAN interface model and gateway role. | WAN, LAN parent, VLAN gateways, firewall enforcement point, routing boundaries. | Interface evidence supports segmentation review and firewall policy validation. | pfSense administration, routing, VLAN design. |
+| [Proxmox Bridge Mapping](../../proxmox/proxmox-host-validation-report-2026.md) | Documents virtualization network boundaries. | Bridge-to-VLAN relationships and management/workload separation. | Virtual networking must align with switch and firewall expectations. | Proxmox administration, virtualization networking, infrastructure planning. |
+| [DHCP Scope Mapping](../../network/dhcp-dns-validation-report-2026.md) | Defines ownership for trusted and untrusted address assignment. | Windows Server DHCP for VLAN 20/30 and pfSense DHCP for VLAN 40/50. | Clear DHCP ownership prevents conflicting scopes and speeds lease troubleshooting. | DHCP administration, DNS/DHCP operations, service ownership. |
+| [Firewall Rule Review](../../network/firewall-rule-validation-report-2026.md) | Preserves firewall policy intent and segmentation behavior. | Allowed paths, blocked paths, guest isolation, IoT isolation, and administrative separation. | Firewall policy is the enforcement layer behind VLAN design. | Firewall management, security fundamentals, rule review. |
 | [Validation Checklist Results](../../validation-reports/network-validation-checklist-2026.md) | Provides repeatable testing methodology. | Gateway, DHCP, DNS, firewall, VPN, routing, and internet connectivity checks. | Validation evidence turns architecture into reviewable operational proof. | Troubleshooting, validation planning, technical documentation. |
 
 ## Security Architecture
@@ -419,9 +419,9 @@ This project demonstrates that I can work across infrastructure layers: physical
 Related internal links:
 
 - [Evidence Library](../../index.html)
-- [Network Validation Lab Notes](../../network/network-validation-lab-notes.md)
-- [Firewall Rule Evidence](../../network/firewall-rules-evidence.md)
-- [DHCP and DNS Evidence](../../network/dhcp-dns-evidence.md)
+- [Network Validation Lab Notes](../../network/network-infrastructure-validation-report-2026.md)
+- [Firewall Rule Evidence](../../network/firewall-rule-validation-report-2026.md)
+- [DHCP and DNS Evidence](../../network/dhcp-dns-validation-report-2026.md)
 - [Network Validation Checklist](../../validation-reports/network-validation-checklist-2026.md)
 
 </main>
@@ -445,3 +445,4 @@ Related internal links:
 
 </aside>
 </div>
+
