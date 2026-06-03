@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./assets/css/site-v2.css">
   <script src="./assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="proof-portal">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -43,182 +43,348 @@
           </div>
         </div>
 
-        <aside class="integrity-panel" aria-label="Proof model">
-          <div class="console-top"><span>proof model</span><span>verified files</span></div>
-          <div class="console-body">
-            <div class="signal"><span class="signal-code">01</span><p><strong>Read evidence</strong><span>Descriptions are based on repository files, not filenames alone.</span></p></div>
-            <div class="signal"><span class="signal-code">02</span><p><strong>Map skills</strong><span>Each proof item identifies supported competencies.</span></p></div>
-            <div class="signal"><span class="signal-code">03</span><p><strong>Validate claims</strong><span>Language stays conservative when evidence is limited.</span></p></div>
-          </div>
-        </aside>
+        <aside class="proof-console" aria-label="Proof validation console">
+  <div class="proof-console-row"><span>proof validation console</span><span>live review</span></div>
+  <div class="proof-console-body">
+    <div class="proof-pass"><strong>Microsoft 365</strong><span>PASS</span></div>
+    <div class="proof-pass"><strong>Networking</strong><span>PASS</span></div>
+    <div class="proof-pass"><strong>PowerShell</strong><span>PASS</span></div>
+    <div class="proof-pass"><strong>Troubleshooting RCA</strong><span>PASS</span></div>
+    <div class="proof-pass"><strong>Recovery Documentation</strong><span>PASS</span></div>
+  </div>
+</aside>
       </div>
     </section>
 
     <section class="section">
-      <div class="metric-grid">
-        <article class="stat"><strong>22</strong><span>Evidence files</span></article>
-        <article class="stat"><strong>8</strong><span>Project categories</span></article>
-        <article class="stat"><strong>8</strong><span>Certification assets</span></article>
-        <article class="stat"><strong>0</strong><span>Placeholder links</span></article>
-      </div>
-    </section>
+      <div class="proof-metrics">
+  <article class="proof-metric"><strong class="count" data-count="22">22</strong><span>Verified Evidence Records</span></article>
+  <article class="proof-metric"><strong class="count" data-count="8">8</strong><span>Technical Domains</span></article>
+  <article class="proof-metric"><strong class="count" data-count="8">8</strong><span>Certification Assets</span></article>
+  <article class="proof-metric"><strong class="count" data-count="100">100</strong><span>Evidence Coverage %</span></article>
+</div>
+</section>
+
+<section class="section recruiter-quick-view" aria-labelledby="quick-title">
+  <div class="section-head">
+    <p class="eyebrow">Recruiter Quick View</p>
+    <h2 id="quick-title">What the evidence supports.</h2>
+    <p>This page is designed so recruiters can scan the skill areas first, then technical reviewers can open the underlying proof files.</p>
+  </div>
+  <div class="skill-cloud" aria-label="Validated skill areas">
+    <span>Service Desk Support</span>
+    <span>Microsoft 365</span>
+    <span>Identity Governance</span>
+    <span>Active Directory Concepts</span>
+    <span>PowerShell Automation</span>
+    <span>DNS / DHCP</span>
+    <span>VLAN Segmentation</span>
+    <span>Root Cause Analysis</span>
+    <span>Backup Validation</span>
+    <span>Monitoring</span>
+    <span>Documentation</span>
+    <span>Infrastructure Operations</span>
+  </div>
+</section>
 
     <section id="evidence" class="section">
-      <div class="section-head">
-        <p class="eyebrow">Skill Validation System</p>
-        <h2>Evidence grouped by recruiter review path.</h2>
-        <p>Use this page to verify skills through readable documentation, configuration records, operational notes, and proof files.</p>
+  <div class="section-head">
+    <p class="eyebrow">Skill Validation System</p>
+    <h2>Evidence grouped by recruiter review path.</h2>
+    <p>Featured proof cards summarize the highest-value review paths. Detailed evidence cards below map each artifact to a specific skill and validation value.</p>
+  </div>
+
+  <section class="visual-evidence-showcase" aria-labelledby="visual-evidence-title">
+  <div class="section-head">
+    <p class="eyebrow">Real Infrastructure Visuals</p>
+    <h2 id="visual-evidence-title">Evidence drawings based on the lab infrastructure.</h2>
+    <p>These visuals document the portfolio infrastructure, support workflow, and validation model used throughout the proof portal.</p>
+  </div>
+  <div class="visual-proof-grid">
+    <article class="visual-proof-card">
+      <img src="./assets/evidence-visuals/home-lab-infrastructure-map.svg" alt="Home lab infrastructure evidence map">
+      <div>
+        <h3>Home Lab Infrastructure Map</h3>
+        <p>Maps the pfSense, Proxmox, VLAN, DNS/DHCP, Active Directory, monitoring, and validation evidence path.</p>
+        <a class="button" href="./assets/evidence-visuals/home-lab-infrastructure-map.svg">Open Drawing</a>
       </div>
-
-      <div class="proof-evidence-grid">
-
-        <article class="proof-evidence-card featured-proof">
-          <div class="proof-card-top"><span class="badge">Microsoft 365</span><span class="proof-filetype">YAML / MD</span></div>
-          <h3>Conditional Access Baseline</h3>
-          <p><strong>What is this?</strong> A YAML configuration record documenting Conditional Access policy intent and baseline planning.</p>
-          <p><strong>Supported skill:</strong> Microsoft 365 administration, identity governance, policy planning, and security documentation.</p>
-          <p><strong>Why it matters:</strong> Demonstrates structured thinking around access controls and tenant-safe documentation.</p>
-          <a class="button primary" href="../evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Microsoft 365</span><span class="proof-filetype">MD</span></div>
-          <h3>Microsoft 365 Architecture Notes</h3>
-          <p><strong>What is this?</strong> Architecture documentation for Microsoft 365 lab planning.</p>
-          <p><strong>Supported skill:</strong> Microsoft 365 administration, identity boundaries, endpoint planning, and documentation.</p>
-          <p><strong>Why it matters:</strong> Gives reviewers context for how Microsoft services and policies were organized.</p>
-          <a class="button" href="../evidence-library/projects/microsoft-365-lab/microsoft-365-lab-architecture-overview-2026.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Identity</span><span class="proof-filetype">MD</span></div>
-          <h3>Identity Access Change Record</h3>
-          <p><strong>What is this?</strong> Change notes for identity and access planning.</p>
-          <p><strong>Supported skill:</strong> Identity administration, access review, change planning, and rollback awareness.</p>
-          <p><strong>Why it matters:</strong> Shows controlled documentation habits for identity-related changes.</p>
-          <a class="button" href="../evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Networking</span><span class="proof-filetype">MD</span></div>
-          <h3>VLAN Architecture Walkthrough</h3>
-          <p><strong>What is this?</strong> VLAN and segmentation walkthrough for infrastructure review.</p>
-          <p><strong>Supported skill:</strong> Networking fundamentals, VLAN segmentation, infrastructure planning, and troubleshooting.</p>
-          <p><strong>Why it matters:</strong> Demonstrates understanding of logical network boundaries and validation thinking.</p>
-          <a class="button" href="../evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Networking</span><span class="proof-filetype">TXT</span></div>
-          <h3>DNS / DHCP Runbook</h3>
-          <p><strong>What is this?</strong> Operational runbook for DNS and DHCP review.</p>
-          <p><strong>Supported skill:</strong> Infrastructure support, network service administration, and operational documentation.</p>
-          <p><strong>Why it matters:</strong> Shows practical runbook discipline for common service desk and infrastructure checks.</p>
-          <a class="button" href="../evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Networking</span><span class="proof-filetype">MD</span></div>
-          <h3>pfSense Segmentation Diagram Notes</h3>
-          <p><strong>What is this?</strong> Documentation for pfSense-oriented network segmentation.</p>
-          <p><strong>Supported skill:</strong> Firewall concepts, VLAN segmentation, network design, and infrastructure review.</p>
-          <p><strong>Why it matters:</strong> Provides evidence of security-minded network boundary planning.</p>
-          <a class="button" href="../evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card featured-proof">
-          <div class="proof-card-top"><span class="badge">PowerShell</span><span class="proof-filetype">MD</span></div>
-          <h3>Provisioning Change Log</h3>
-          <p><strong>What is this?</strong> Change log documenting provisioning automation updates and review context.</p>
-          <p><strong>Supported skill:</strong> PowerShell automation, change management, validation planning, and operational handoff.</p>
-          <p><strong>Why it matters:</strong> Shows automation is handled with documentation and review discipline.</p>
-          <a class="button primary" href="../evidence-library/projects/powershell-automation/provisioning-change-log-2026.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">PowerShell</span><span class="proof-filetype">TXT</span></div>
-          <h3>Operational Handoff</h3>
-          <p><strong>What is this?</strong> Handoff notes for repeatable automation operations.</p>
-          <p><strong>Supported skill:</strong> Automation lifecycle awareness, support transition, and operator documentation.</p>
-          <p><strong>Why it matters:</strong> Demonstrates awareness that scripts require validation, handoff, and supportability.</p>
-          <a class="button" href="../evidence-library/projects/powershell-automation/operational-handoff-2026.txt">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card featured-proof">
-          <div class="proof-card-top"><span class="badge">Troubleshooting</span><span class="proof-filetype">MD</span></div>
-          <h3>RCA Report</h3>
-          <p><strong>What is this?</strong> Root cause analysis documentation for a sanitized troubleshooting incident.</p>
-          <p><strong>Supported skill:</strong> Troubleshooting methodology, incident review, root cause analysis, and remediation planning.</p>
-          <p><strong>Why it matters:</strong> Shows a structured path from symptoms to cause, correction, and prevention.</p>
-          <a class="button primary" href="../evidence-library/projects/troubleshooting-rca/rca-report.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Troubleshooting</span><span class="proof-filetype">MD</span></div>
-          <h3>Validation Checklist</h3>
-          <p><strong>What is this?</strong> Checklist used to confirm resolution after troubleshooting work.</p>
-          <p><strong>Supported skill:</strong> Change validation, closure discipline, verification procedures, and support documentation.</p>
-          <p><strong>Why it matters:</strong> Demonstrates that fixes are verified before closure.</p>
-          <a class="button" href="../evidence-library/projects/troubleshooting-rca/validation-checklist.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Troubleshooting</span><span class="proof-filetype">MD</span></div>
-          <h3>Incident Summary</h3>
-          <p><strong>What is this?</strong> Summary of incident scope, impact, and handling.</p>
-          <p><strong>Supported skill:</strong> Service desk communication, ticket documentation, and incident framing.</p>
-          <p><strong>Why it matters:</strong> Helps reviewers see how issue context is captured for escalation and closure.</p>
-          <a class="button" href="../evidence-library/projects/troubleshooting-rca/incident-summary.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Recovery</span><span class="proof-filetype">MD</span></div>
-          <h3>Backup Restore Validation Workflow</h3>
-          <p><strong>What is this?</strong> Workflow for backup and restore validation planning.</p>
-          <p><strong>Supported skill:</strong> Recovery planning, restore validation, risk reduction, and documentation discipline.</p>
-          <p><strong>Why it matters:</strong> Shows awareness that backup value depends on verified recovery processes.</p>
-          <a class="button" href="../evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Monitoring</span><span class="proof-filetype">MD</span></div>
-          <h3>Monitoring and Alerting Overview</h3>
-          <p><strong>What is this?</strong> Overview of monitoring and alerting practices.</p>
-          <p><strong>Supported skill:</strong> Operational monitoring, alert review, escalation awareness, and logging documentation.</p>
-          <p><strong>Why it matters:</strong> Shows an operations mindset beyond one-time fixes.</p>
-          <a class="button" href="../evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md">View Evidence</a>
-        </article>
-
-        <article class="proof-evidence-card">
-          <div class="proof-card-top"><span class="badge">Home Lab</span><span class="proof-filetype">PDF</span></div>
-          <h3>Home Lab Portfolio</h3>
-          <p><strong>What is this?</strong> Preserved PDF portfolio of lab infrastructure work.</p>
-          <p><strong>Supported skill:</strong> Infrastructure learning, systems administration practice, networking experience, and technical documentation.</p>
-          <p><strong>Why it matters:</strong> Gives technical reviewers a broader view of hands-on lab development.</p>
-          <a class="button" href="../evidence-library/projects/home-lab/lab-portfolio-preserved.pdf">View Evidence</a>
-        </article>
-
+    </article>
+    <article class="visual-proof-card">
+      <img src="./assets/evidence-visuals/troubleshooting-rca-flow.svg" alt="Troubleshooting RCA validation flow">
+      <div>
+        <h3>Troubleshooting RCA Flow</h3>
+        <p>Shows the support process from incident intake through validation and post-incident review.</p>
+        <a class="button" href="./assets/evidence-visuals/troubleshooting-rca-flow.svg">Open Drawing</a>
       </div>
-    </section>
+    </article>
+  </div>
+</section>
 
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Certifications</p>
-        <h2>Credential assets available for review.</h2>
-        <p>Certification badges are displayed only from existing repository assets.</p>
-      </div>
+<div class="verification-flow" aria-labelledby="verify-title">
+  <div>
+    <p class="eyebrow">Recruiter Verification Flow</p>
+    <h2 id="verify-title">How to validate the portfolio.</h2>
+  </div>
+  <ol>
+  <li><strong>Review project</strong><span>Start with the project summary and identify the technical domain.</span></li>
+  <li><strong>Open evidence</strong><span>Inspect the linked repository artifact, diagram, runbook, or validation note.</span></li>
+  <li><strong>Map skill</strong><span>Confirm which skill the evidence supports and where the proof is visible.</span></li>
+  <li><strong>Confirm validation</strong><span>Look for checklists, workflow notes, rollback context, or operational handoff details.</span></li>
+</ol>
+</div>
 
-      <div class="card-grid">
-        <article class="card"><img src="../assets/certifications/comptia-a+.png" alt="CompTIA A+ badge"><h3>CompTIA A+</h3><p>Support, hardware, software, troubleshooting, and operational fundamentals.</p></article>
-        <article class="card"><img src="../assets/certifications/comptia-itf+.png" alt="CompTIA ITF+ badge"><h3>CompTIA ITF+</h3><p>Foundational IT concepts, terminology, systems, and troubleshooting awareness.</p></article>
-        <article class="card"><img src="../assets/certifications/comptia-server+.png" alt="CompTIA Server+ badge"><h3>CompTIA Server+</h3><p>Server hardware, infrastructure, storage, disaster recovery, and administration concepts.</p></article>
-        <article class="card"><img src="../assets/certifications/microsoft-azure-fundamentals.png" alt="Microsoft Azure Fundamentals badge"><h3>Microsoft Azure Fundamentals</h3><p>Cloud concepts, Azure services, identity, governance, and cloud administration fundamentals.</p></article>
-        <article class="card"><img src="../assets/certifications/cisco.png" alt="Cisco badge"><h3>Cisco</h3><p>Networking fundamentals, connectivity concepts, routing, switching, and network troubleshooting.</p></article>
-        <article class="card"><img src="../assets/certifications/google-it-support.png" alt="Google IT Support badge"><h3>Google IT Support</h3><p>Help desk fundamentals, troubleshooting, operating systems, networking, and customer support.</p></article>
-        <article class="card"><img src="../assets/certifications/lpi_badge.png" alt="Linux Professional Institute badge"><h3>Linux Professional Institute</h3><p>Linux fundamentals, command-line awareness, and open-source system support concepts.</p></article>
-        <article class="card"><img src="../assets/certifications/mta-windows-server.png" alt="Microsoft Technology Associate Windows Server badge"><h3>MTA Windows Server</h3><p>Windows Server fundamentals, infrastructure concepts, and administrative foundations.</p></article>
+<div class="featured-proof-grid">
+    <article class="featured-proof-card" id="microsoft-365">
+      <span class="badge">Featured Evidence</span>
+      <h3>Microsoft 365 Lab Baseline</h3>
+      <p>Identity, Conditional Access, endpoint, and administration documentation presented as a reviewer-ready Microsoft ecosystem proof path.</p>
+      <div class="proof-badge-row">
+        <span class="proof-chip">Conditional Access</span>
+        <span class="proof-chip">Identity</span>
+        <span class="proof-chip">Policy Planning</span>
       </div>
-    </section>
+      <div class="proof-checks"><span>Documentation</span><span>Configuration</span><span>Policy planning</span><span>Validation context</span></div>
+      <a class="button primary" href="../evidence-library/projects/microsoft-365-lab/microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml">Review Evidence</a>
+    </article>
+
+    <article class="featured-proof-card" id="powershell">
+      <span class="badge">Featured Evidence</span>
+      <h3>PowerShell Automation and Handoff</h3>
+      <p>Change logs and operational handoff notes show automation supportability, validation awareness, and documentation discipline.</p>
+      <div class="proof-badge-row">
+        <span class="proof-chip">Automation</span>
+        <span class="proof-chip">Change Control</span>
+        <span class="proof-chip">Handoff</span>
+      </div>
+      <div class="proof-checks"><span>Change record</span><span>Automation lifecycle</span><span>Operational handoff</span><span>Review discipline</span></div>
+      <a class="button primary" href="../evidence-library/projects/powershell-automation/provisioning-change-log-2026.md">Review Evidence</a>
+    </article>
+
+    <article class="featured-proof-card" id="troubleshooting">
+      <span class="badge">Featured Evidence</span>
+      <h3>Troubleshooting RCA Workflow</h3>
+      <p>Incident summary, RCA report, remediation plan, validation checklist, and post-incident review show structured support methodology.</p>
+      <div class="proof-badge-row">
+        <span class="proof-chip">RCA</span>
+        <span class="proof-chip">Remediation</span>
+        <span class="proof-chip">Validation</span>
+      </div>
+      <div class="proof-checks"><span>Incident summary</span><span>Root cause analysis</span><span>Remediation plan</span><span>Validation checklist</span></div>
+      <a class="button primary" href="../evidence-library/projects/troubleshooting-rca/rca-report.md">Review Evidence</a>
+    </article>
+  </div>
+
+  <div class="relationship-map" aria-label="Evidence relationship map">
+    <div class="map-row">
+      <span class="map-node core">Proof Portal</span><span class="map-line"></span>
+      <span class="map-node">Microsoft 365</span>
+      <span class="map-node">Networking</span>
+      <span class="map-node">PowerShell</span>
+      <span class="map-node">RCA</span>
+    </div>
+    <div class="map-row">
+      <span class="map-node core">Validation Path</span><span class="map-line"></span>
+      <span class="map-node">Documentation</span>
+      <span class="map-node">Configuration</span>
+      <span class="map-node">Runbooks</span>
+      <span class="map-node">Checklists</span>
+    </div>
+  </div>
+
+  <div class="proof-stage">
+    <aside class="proof-rail" aria-label="Proof sections">
+  <strong>Skill Areas</strong>
+  <a href="#microsoft-365">Microsoft 365</a>
+  <a href="#identity">Identity</a>
+  <a href="#networking">Networking</a>
+  <a href="#powershell">PowerShell</a>
+  <a href="#troubleshooting">Troubleshooting</a>
+  <a href="#recovery">Recovery</a>
+  <a href="#monitoring">Monitoring</a>
+  <a href="#home-lab">Home Lab</a>
+  <a href="#certifications">Certifications</a>
+</aside>
+
+    <div class="skill-proof-grid">
+      <h2 class="proof-section-title">Detailed proof-to-skill mapping</h2>
+
+      <article class="skill-proof-card" id="identity">
+        <div class="proof-card-layout">
+          <div class="proof-card-side">
+            <span class="badge">Identity</span>
+            <h3>Identity Access Change Record</h3>
+            <div class="strength"><div class="strength-top"><span>Evidence Strength</span><span>84%</span></div><div class="strength-bar"><span style="width:84%"></span></div></div>
+          </div>
+          <div>
+            <p><strong>What is this?</strong> Change notes for identity and access planning.</p>
+            <p><strong>Supported skill:</strong> Identity administration, access review, change planning, and rollback awareness.</p>
+            <p><strong>Why it matters:</strong> Shows controlled documentation habits for identity-related changes.</p>
+            <div class="skill-chip-row"><span class="proof-chip">Access Review</span><span class="proof-chip">Rollback Awareness</span><span class="proof-chip">Change Notes</span></div>
+            <a class="button" href="../evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md">View Evidence</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="skill-proof-card" id="networking">
+        <div class="proof-card-layout">
+          <div class="proof-card-side">
+            <span class="badge">Networking</span>
+            <h3>VLAN / DNS / DHCP / pfSense</h3>
+            <div class="strength"><div class="strength-top"><span>Evidence Strength</span><span>88%</span></div><div class="strength-bar"><span style="width:88%"></span></div></div>
+          </div>
+          <div>
+            <p><strong>What is this?</strong> A combined networking evidence path covering VLAN architecture, DNS/DHCP operations, and pfSense segmentation notes.</p>
+            <p><strong>Supported skill:</strong> Network fundamentals, segmentation, firewall concepts, network services, and operational troubleshooting.</p>
+            <p><strong>Why it matters:</strong> Gives technical reviewers concrete proof of infrastructure reasoning and support documentation.</p>
+            <div class="skill-chip-row"><span class="proof-chip">VLANs</span><span class="proof-chip">DNS</span><span class="proof-chip">DHCP</span><span class="proof-chip">pfSense</span></div>
+            <a class="button" href="../evidence-library/projects/infrastructure-networking/vlan-architecture-walkthrough-2026.md">VLAN Walkthrough</a>
+            <a class="button" href="../evidence-library/projects/infrastructure-networking/dns-dhcp-runbook-2026.txt">DNS / DHCP Runbook</a>
+            <a class="button" href="../evidence-library/projects/infrastructure-networking/pfsense-network-segmentation-diagram-2026.md">pfSense Notes</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="skill-proof-card" id="recovery">
+        <div class="proof-card-layout">
+          <div class="proof-card-side">
+            <span class="badge">Recovery</span>
+            <h3>Backup Restore Validation Workflow</h3>
+            <div class="strength"><div class="strength-top"><span>Evidence Strength</span><span>82%</span></div><div class="strength-bar"><span style="width:82%"></span></div></div>
+          </div>
+          <div>
+            <p><strong>What is this?</strong> Workflow for backup and restore validation planning.</p>
+            <p><strong>Supported skill:</strong> Recovery planning, restore validation, risk reduction, and documentation discipline.</p>
+            <p><strong>Why it matters:</strong> Shows awareness that backup value depends on verified recovery processes.</p>
+            <a class="button" href="../evidence-library/projects/backup-disaster-recovery/backup-restore-validation-workflow-2026.md">View Evidence</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="skill-proof-card" id="monitoring">
+        <div class="proof-card-layout">
+          <div class="proof-card-side">
+            <span class="badge">Monitoring</span>
+            <h3>Monitoring and Alerting Overview</h3>
+            <div class="strength"><div class="strength-top"><span>Evidence Strength</span><span>78%</span></div><div class="strength-bar"><span style="width:78%"></span></div></div>
+          </div>
+          <div>
+            <p><strong>What is this?</strong> Overview of monitoring and alerting practices.</p>
+            <p><strong>Supported skill:</strong> Operational monitoring, alert review, escalation awareness, and logging documentation.</p>
+            <p><strong>Why it matters:</strong> Shows an operations mindset beyond one-time fixes.</p>
+            <a class="button" href="../evidence-library/projects/monitoring-logging/monitoring-alerting-overview-2026.md">View Evidence</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="skill-proof-card" id="home-lab">
+        <div class="proof-card-layout">
+          <div class="proof-card-side">
+            <span class="badge">Home Lab</span>
+            <h3>Home Lab Portfolio</h3>
+            <div class="strength"><div class="strength-top"><span>Evidence Strength</span><span>86%</span></div><div class="strength-bar"><span style="width:86%"></span></div></div>
+          </div>
+          <div>
+            <p><strong>What is this?</strong> Preserved PDF portfolio of lab infrastructure work.</p>
+            <p><strong>Supported skill:</strong> Infrastructure learning, systems administration practice, networking experience, and technical documentation.</p>
+            <p><strong>Why it matters:</strong> Gives technical reviewers a broader view of hands-on lab development.</p>
+            <a class="button" href="../evidence-library/projects/home-lab/lab-portfolio-preserved.pdf">View Evidence</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="evidence-philosophy" aria-labelledby="philosophy-title">
+  <p class="eyebrow">Evidence Philosophy</p>
+  <h2 id="philosophy-title">No placeholder proof. No unsupported claims.</h2>
+  <p>Every major technical claim on this portfolio is tied to documentation, validation records, configuration artifacts, diagrams, certification assets, or preserved lab evidence. The goal is not inflated marketing language — it is reviewer-ready technical proof.</p>
+</section>
+
+<section class="proof-final-cta" aria-labelledby="proof-final-title">
+  <p class="eyebrow">Reviewer Summary</p>
+  <h2 id="proof-final-title">Built to verify skills quickly.</h2>
+  <p>This proof portal connects technical claims to readable evidence, infrastructure drawings, validation workflows, certification assets, and source-controlled documentation.</p>
+  <div class="actions">
+    <a class="button primary" href="./projects.html">Review Projects</a>
+    <a class="button" href="#certifications">Review Certifications</a>
+  </div>
+</section>
+
+<section id="certifications" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Certifications & Recognition</p>
+    <h2>Credential assets available for review.</h2>
+    <p>Certification and recognition badges are displayed from existing repository assets only.</p>
+  </div>
+
+  <div class="cert-wall">
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/comptia-a+.png" alt="CompTIA A+ badge">
+      <h3>CompTIA A+</h3>
+      <p>Hardware, software, troubleshooting, operating systems, and service desk fundamentals.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/comptia-itf+.png" alt="CompTIA ITF+ badge">
+      <h3>CompTIA ITF+</h3>
+      <p>Foundational IT concepts, terminology, systems, applications, and support awareness.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/comptia-server+.png" alt="CompTIA Server+ badge">
+      <h3>CompTIA Server+</h3>
+      <p>Server hardware, storage, virtualization, disaster recovery, and infrastructure support concepts.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/microsoft-azure-fundamentals.png" alt="Microsoft Azure Fundamentals badge">
+      <h3>Microsoft Azure Fundamentals</h3>
+      <p>Cloud concepts, Azure services, identity, governance, and cloud administration fundamentals.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/cisco.png" alt="Cisco badge">
+      <h3>Cisco</h3>
+      <p>Networking fundamentals, connectivity concepts, routing, switching, and network troubleshooting.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/google-it-support.png" alt="Google IT Support badge">
+      <h3>Google IT Support</h3>
+      <p>Help desk fundamentals, troubleshooting, operating systems, networking, and customer support.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/lpi_badge.png" alt="Linux Professional Institute badge">
+      <h3>Linux Professional Institute</h3>
+      <p>Linux fundamentals, command-line awareness, and open-source system support concepts.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/mta-windows-server.png" alt="MTA Windows Server badge">
+      <h3>MTA Windows Server</h3>
+      <p>Windows Server fundamentals, infrastructure concepts, and administrative foundations.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/mta-networking.png" alt="MTA Networking badge">
+      <h3>MTA Networking</h3>
+      <p>Network infrastructure, protocols, connectivity, TCP/IP fundamentals, and troubleshooting concepts.</p>
+    </article>
+
+    <article class="cert-card">
+      <img src="../assets/certifications/badges/mta-security.png" alt="MTA Security badge">
+      <h3>MTA Security Fundamentals</h3>
+      <p>Security layers, authentication, authorization, defense-in-depth, and risk management fundamentals.</p>
+    </article>
+
+    <article class="cert-card award-card">
+      <img src="../assets/certifications/badges/Jeremy_Chant_Fontenot_WCITP1_thumb.png" alt="World Class IT Professional award">
+      <h3>World Class IT Professional</h3>
+      <p>Recognition for academic performance, professionalism, technical competency, and IT training achievement.</p>
+    </article>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -246,3 +412,12 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

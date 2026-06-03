@@ -536,3 +536,816 @@ section{margin-top:5rem}
   gap: .75rem;
   flex-wrap: wrap;
 }
+/* V2 Proof Portal premium upgrade */
+.proof-portal {
+  --proof-glow: 0 0 34px rgba(56,189,248,.18), 0 0 54px rgba(217,70,239,.12);
+}
+
+.proof-portal .page-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.proof-portal .page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 12% -10% auto auto;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(217,70,239,.22), transparent 70%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.proof-console {
+  border: 1px solid rgba(56,189,248,.32);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(217,70,239,.18), transparent 38%),
+    linear-gradient(180deg, rgba(15,23,42,.96), rgba(30,41,59,.78));
+  box-shadow: 0 28px 70px rgba(0,0,0,.42), var(--proof-glow);
+  overflow: hidden;
+}
+
+.proof-console-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .85rem 1rem;
+  border-bottom: 1px solid rgba(148,163,184,.15);
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #38BDF8;
+}
+
+.proof-console-body {
+  display: grid;
+  gap: .8rem;
+  padding: 1rem;
+}
+
+.proof-pass {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .85rem;
+  border: 1px solid rgba(148,163,184,.16);
+  border-radius: 16px;
+  background: rgba(15,23,42,.64);
+}
+
+.proof-pass strong {
+  color: #f1f5f9;
+}
+
+.proof-pass span {
+  color: #22c55e;
+  font-weight: 900;
+}
+
+.proof-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 1rem;
+}
+
+.proof-metric {
+  position: relative;
+  overflow: hidden;
+  padding: 1.25rem;
+  border: 1px solid rgba(56,189,248,.22);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(30,41,59,.82), rgba(15,23,42,.86));
+  box-shadow: 0 20px 44px rgba(0,0,0,.28);
+}
+
+.proof-metric::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, #38BDF8, #D946EF);
+}
+
+.proof-metric strong {
+  display: block;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1;
+  color: #38BDF8;
+}
+
+.proof-metric span {
+  color: #cbd5e1;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .78rem;
+}
+
+.recruiter-quick-view {
+  display: grid;
+  grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+}
+
+.skill-cloud span {
+  padding: .65rem .85rem;
+  border: 1px solid rgba(56,189,248,.26);
+  border-radius: 999px;
+  background: rgba(56,189,248,.09);
+  color: #e0f2fe;
+  font-weight: 850;
+}
+
+.proof-stage {
+  display: grid;
+  grid-template-columns: 220px minmax(0,1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.proof-rail {
+  position: sticky;
+  top: 92px;
+  border: 1px solid rgba(148,163,184,.16);
+  border-radius: 22px;
+  background: rgba(15,23,42,.82);
+  box-shadow: 0 20px 44px rgba(0,0,0,.25);
+  padding: 1rem;
+}
+
+.proof-rail strong {
+  display: block;
+  margin-bottom: .75rem;
+  color: #f1f5f9;
+}
+
+.proof-rail a {
+  display: block;
+  padding: .55rem .65rem;
+  border-radius: 12px;
+  color: #cbd5e1;
+  font-weight: 800;
+}
+
+.proof-rail a:hover {
+  color: #f1f5f9;
+  background: rgba(56,189,248,.12);
+  text-decoration: none;
+}
+
+.featured-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.featured-proof-card,
+.skill-proof-card,
+.cert-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(148,163,184,.16);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 88% 0%, rgba(217,70,239,.12), transparent 38%),
+    linear-gradient(180deg, rgba(30,41,59,.86), rgba(15,23,42,.88));
+  box-shadow: 0 22px 48px rgba(0,0,0,.28);
+}
+
+.featured-proof-card {
+  padding: 1.25rem;
+  min-height: 100%;
+}
+
+.featured-proof-card::before,
+.skill-proof-card::before,
+.cert-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, #38BDF8, #D946EF);
+}
+
+.featured-proof-card:hover,
+.skill-proof-card:hover,
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56,189,248,.42);
+  box-shadow: 0 30px 70px rgba(0,0,0,.36), var(--proof-glow);
+}
+
+.proof-badge-row,
+.skill-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .85rem 0;
+}
+
+.proof-chip {
+  display: inline-flex;
+  padding: .35rem .55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(56,189,248,.22);
+  color: #bae6fd;
+  background: rgba(56,189,248,.08);
+  font-size: .78rem;
+  font-weight: 850;
+}
+
+.strength {
+  margin: 1rem 0;
+}
+
+.strength-top {
+  display: flex;
+  justify-content: space-between;
+  color: #cbd5e1;
+  font-size: .82rem;
+  font-weight: 850;
+}
+
+.strength-bar {
+  height: 9px;
+  border-radius: 999px;
+  background: rgba(148,163,184,.16);
+  overflow: hidden;
+}
+
+.strength-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #38BDF8, #D946EF);
+}
+
+.skill-proof-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-proof-card {
+  padding: 1.15rem;
+}
+
+.skill-proof-card h3 {
+  font-size: 1.25rem;
+}
+
+.proof-card-layout {
+  display: grid;
+  grid-template-columns: minmax(0,.7fr) minmax(0,1.3fr);
+  gap: 1rem;
+}
+
+.proof-card-side {
+  border-right: 1px solid rgba(148,163,184,.14);
+  padding-right: 1rem;
+}
+
+.proof-section-title {
+  margin-top: 3rem;
+}
+
+.cert-wall {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  padding: 1rem;
+  min-height: 210px;
+}
+
+.cert-card img {
+  display: block;
+  max-height: 86px;
+  object-fit: contain;
+  margin-bottom: .9rem;
+}
+
+.relationship-map {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(56,189,248,.18);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(15,23,42,.9), rgba(30,41,59,.62));
+  box-shadow: 0 22px 48px rgba(0,0,0,.24);
+}
+
+.map-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .8rem;
+}
+
+.map-node {
+  padding: .65rem .8rem;
+  border: 1px solid rgba(56,189,248,.26);
+  border-radius: 999px;
+  background: rgba(56,189,248,.09);
+  color: #e0f2fe;
+  font-weight: 900;
+}
+
+.map-node.core {
+  background: linear-gradient(135deg, #0EA5E9, #D946EF);
+  color: #fff;
+}
+
+.map-line {
+  flex: 1 1 34px;
+  height: 1px;
+  min-width: 34px;
+  background: linear-gradient(90deg, #38BDF8, #D946EF);
+}
+
+@media (max-width: 980px) {
+  .proof-metrics,
+  .featured-proof-grid,
+  .cert-wall {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+
+  .proof-stage,
+  .recruiter-quick-view,
+  .proof-card-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-rail {
+    position: static;
+  }
+
+  .proof-card-side {
+    border-right: 0;
+    border-bottom: 1px solid rgba(148,163,184,.14);
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .proof-metrics,
+  .featured-proof-grid,
+  .cert-wall {
+    grid-template-columns: 1fr;
+  }
+}
+/* Proof Portal final polish */
+.proof-portal {
+  background:
+    radial-gradient(circle at 78% 8%, rgba(217,70,239,.16), transparent 28rem),
+    radial-gradient(circle at 18% 12%, rgba(56,189,248,.13), transparent 26rem),
+    linear-gradient(90deg, rgba(56,189,248,.045) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(56,189,248,.035) 1px, transparent 1px),
+    #0F172A;
+  background-size: auto, auto, 72px 72px, 72px 72px, auto;
+}
+
+.visual-evidence-showcase {
+  margin-bottom: 3rem;
+}
+
+.visual-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 1.25rem;
+}
+
+.visual-proof-card {
+  overflow: hidden;
+  border: 1px solid rgba(56,189,248,.22);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(217,70,239,.14), transparent 38%),
+    linear-gradient(180deg, rgba(30,41,59,.86), rgba(15,23,42,.92));
+  box-shadow: 0 26px 62px rgba(0,0,0,.34);
+}
+
+.visual-proof-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(148,163,184,.16);
+  background: #0F172A;
+}
+
+.visual-proof-card div {
+  padding: 1.25rem;
+}
+
+.visual-proof-card h3 {
+  font-size: 1.35rem;
+}
+
+.verification-flow {
+  display: grid;
+  grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 1px solid rgba(217,70,239,.2);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(56,189,248,.13), transparent 42%),
+    linear-gradient(180deg, rgba(15,23,42,.9), rgba(30,41,59,.64));
+  box-shadow: 0 24px 60px rgba(0,0,0,.3);
+}
+
+.verification-flow ol {
+  counter-reset: verify;
+  display: grid;
+  gap: .9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.verification-flow li {
+  counter-increment: verify;
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: .85rem;
+  align-items: center;
+  padding: .9rem;
+  border: 1px solid rgba(148,163,184,.14);
+  border-radius: 18px;
+  background: rgba(15,23,42,.58);
+}
+
+.verification-flow li::before {
+  content: counter(verify, decimal-leading-zero);
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0EA5E9, #D946EF);
+  color: #fff;
+  font-weight: 900;
+}
+
+.verification-flow strong {
+  display: block;
+  color: #F1F5F9;
+}
+
+.verification-flow span {
+  color: #94A3B8;
+}
+
+.featured-proof-card {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.strength {
+  display: none;
+}
+
+.proof-checks {
+  display: grid;
+  gap: .45rem;
+  margin: 1rem 0;
+}
+
+.proof-checks span {
+  display: inline-flex;
+  gap: .5rem;
+  align-items: center;
+  color: #CBD5E1;
+  font-weight: 800;
+}
+
+.proof-checks span::before {
+  content: "✓";
+  display: inline-flex;
+  width: 1.35rem;
+  height: 1.35rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(34,197,94,.16);
+  color: #22C55E;
+}
+
+.evidence-philosophy {
+  margin: 4rem 0 2rem;
+  padding: clamp(1.5rem,4vw,3rem);
+  border: 1px solid rgba(56,189,248,.22);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(56,189,248,.14), transparent 34%),
+    radial-gradient(circle at 88% 20%, rgba(217,70,239,.16), transparent 38%),
+    linear-gradient(180deg, rgba(30,41,59,.84), rgba(15,23,42,.92));
+  box-shadow: 0 28px 70px rgba(0,0,0,.34);
+}
+
+.evidence-philosophy h2 {
+  max-width: 16ch;
+  font-size: clamp(2.2rem,5vw,4rem);
+}
+
+.evidence-philosophy p {
+  max-width: 78ch;
+  font-size: 1.1rem;
+  color: #CBD5E1;
+}
+
+.cert-card img {
+  max-height: 112px;
+  margin-inline: auto;
+  filter: drop-shadow(0 0 18px rgba(56,189,248,.14));
+}
+
+.cert-card {
+  text-align: center;
+  padding: 1.35rem;
+}
+
+@media (max-width: 900px) {
+  .visual-proof-grid,
+  .verification-flow {
+    grid-template-columns: 1fr;
+  }
+}
+/* Proof Portal visual refinement pass */
+.proof-portal .page,
+.proof-portal .section,
+.proof-portal .site-footer {
+  max-width: 1120px;
+}
+
+.proof-portal .page-hero-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 860px;
+}
+
+.proof-portal .hero-copy h1 {
+  max-width: 15ch;
+  letter-spacing: -0.045em;
+}
+
+.proof-console {
+  max-width: 860px;
+}
+
+.proof-metrics {
+  max-width: 860px;
+}
+
+.recruiter-quick-view {
+  max-width: 860px;
+}
+
+.visual-evidence-showcase,
+.verification-flow,
+.featured-proof-grid,
+.relationship-map,
+.proof-stage,
+.evidence-philosophy,
+.proof-final-cta {
+  max-width: 960px;
+}
+
+.visual-proof-card img {
+  object-fit: contain;
+  padding: .75rem;
+}
+
+.verification-flow {
+  grid-template-columns: minmax(0,.75fr) minmax(0,1.25fr);
+}
+
+.verification-flow ol {
+  gap: 1rem;
+}
+
+.verification-flow li {
+  grid-template-columns: 3rem minmax(0,1fr);
+  align-items: start;
+}
+
+.verification-flow li strong,
+.verification-flow li span {
+  display: block;
+  line-height: 1.45;
+}
+
+.verification-flow li strong {
+  margin-bottom: .25rem;
+  font-size: .98rem;
+}
+
+.verification-flow li span {
+  font-size: .92rem;
+}
+
+.featured-proof-card p,
+.skill-proof-card p,
+.visual-proof-card p,
+.cert-card p {
+  font-size: .95rem;
+  line-height: 1.65;
+}
+
+.proof-stage {
+  grid-template-columns: 180px minmax(0,1fr);
+}
+
+.proof-rail {
+  top: 82px;
+}
+
+.proof-rail a {
+  margin-bottom: .18rem;
+  font-size: .9rem;
+}
+
+.skill-proof-grid {
+  gap: 1.2rem;
+}
+
+.skill-proof-card {
+  border-radius: 20px;
+}
+
+.proof-card-layout {
+  grid-template-columns: minmax(180px,.55fr) minmax(0,1.45fr);
+}
+
+.proof-card-side h3 {
+  font-size: 1.05rem;
+}
+
+.cert-wall {
+  max-width: 960px;
+}
+
+.cert-card {
+  min-height: 230px;
+  display: grid;
+  align-content: start;
+}
+
+.cert-card img {
+  width: auto;
+  max-width: 128px;
+  max-height: 118px;
+}
+
+.proof-final-cta {
+  margin: 3rem 0;
+  padding: clamp(1.5rem,4vw,2.5rem);
+  border: 1px solid rgba(56,189,248,.22);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(56,189,248,.16), transparent 34%),
+    radial-gradient(circle at 90% 15%, rgba(217,70,239,.18), transparent 38%),
+    linear-gradient(180deg, rgba(30,41,59,.86), rgba(15,23,42,.92));
+  box-shadow: 0 28px 70px rgba(0,0,0,.34);
+}
+
+.proof-final-cta h2 {
+  max-width: 15ch;
+  font-size: clamp(2.1rem,4.5vw,3.6rem);
+}
+
+.proof-final-cta p {
+  max-width: 72ch;
+  color: #CBD5E1;
+  font-size: 1.05rem;
+}
+
+.site-footer .footer-grid {
+  align-items: start;
+}
+
+.site-footer .footer-links a {
+  font-size: .9rem;
+}
+
+@media (max-width: 980px) {
+  .proof-stage,
+  .verification-flow,
+  .proof-card-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-rail {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+  }
+
+  .proof-rail strong {
+    flex-basis: 100%;
+  }
+
+  .proof-rail a {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 620px) {
+  .proof-portal .hero-copy h1 {
+    font-size: clamp(2.4rem, 13vw, 3.4rem);
+  }
+
+  .visual-proof-card img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .verification-flow,
+  .evidence-philosophy,
+  .proof-final-cta {
+    border-radius: 24px;
+  }
+}
+
+.cert-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+
+.cert-card {
+    min-height: 260px;
+}
+
+.cert-card h3 {
+    font-size: 1rem;
+    margin-top: .75rem;
+}
+
+.cert-card p {
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+
+/* Certification wall rebuild */
+.cert-wall {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 1.25rem !important;
+  max-width: 1040px;
+}
+
+.cert-card {
+  display: grid !important;
+  align-content: start;
+  min-height: 260px;
+  padding: 1.35rem;
+  text-align: center;
+}
+
+.cert-card img {
+  display: block;
+  width: auto;
+  max-width: 128px;
+  max-height: 120px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
+
+.cert-card h3 {
+  margin-bottom: .55rem;
+  font-size: 1rem;
+}
+
+.cert-card p {
+  margin-bottom: 0;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.award-card {
+  border-color: rgba(217,70,239,.42);
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.34),
+    0 0 24px rgba(217,70,239,.16);
+}
+
