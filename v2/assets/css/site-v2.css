@@ -1349,3 +1349,36 @@ section{margin-top:5rem}
     0 0 24px rgba(217,70,239,.16);
 }
 
+/* Fix recruiter verification flow text wrapping */
+.verification-flow li {
+  grid-template-columns: 3rem minmax(0, 1fr) !important;
+  grid-template-areas:
+    "step title"
+    "step copy" !important;
+  align-items: start !important;
+}
+
+.verification-flow li::before {
+  grid-area: step;
+}
+
+.verification-flow li strong {
+  grid-area: title;
+  min-width: 0;
+}
+
+.verification-flow li span {
+  grid-area: copy;
+  min-width: 0;
+  max-width: 58ch;
+}
+
+@media (max-width: 720px) {
+  .verification-flow li {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "step"
+      "title"
+      "copy" !important;
+  }
+}
