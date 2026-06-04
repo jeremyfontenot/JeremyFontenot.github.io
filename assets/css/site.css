@@ -2252,3 +2252,16 @@ p {
     height: 78px;
   }
 }
+
+.certification-showcase-link {
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+  color: inherit;
+}
+
+.certification-showcase-link:hover,
+.certification-showcase-link:focus-visible {
+  color: var(--text);
+  text-decoration: none;
+}
