@@ -333,36 +333,62 @@
       </div>
     </section>
 
+
     <section class="section" aria-labelledby="skill-matrix">
       <div class="section-head" data-reveal>
         <p class="eyebrow">Proof Mapping</p>
-        <h2 id="skill-matrix">Evidence to Skill Matrix</h2>
-        <p>This matrix connects technical keywords from the resume and projects to the source records a reviewer can open.</p>
+        <h2 id="skill-matrix">Evidence grouped by capability.</h2>
+        <p>Each capability card connects a role-relevant skill area to proof artifacts a recruiter, hiring manager, or technical reviewer can open directly.</p>
       </div>
 
-      <div class="evidence-matrix" data-reveal>
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Skill</th>
-              <th scope="col">Evidence</th>
-              <th scope="col">Primary proof path</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Microsoft 365</th><td data-label="Evidence">Microsoft 365 Lab Records</td><td data-label="Primary proof path"><a href="./evidence-library/architecture/microsoft-365-architecture-overview.md">Open evidence</a></td></tr>
-            <tr><th scope="row">Entra ID</th><td data-label="Evidence">Identity Administration Exercises</td><td data-label="Primary proof path"><a href="./evidence-library/conditional-access/conditional-access-baseline-evidence.md">Open evidence</a></td></tr>
-            <tr><th scope="row">Active Directory</th><td data-label="Evidence">AD Infrastructure Documentation</td><td data-label="Primary proof path"><a href="./evidence-library/windows-server/windows-server-evidence.md">Open evidence</a></td></tr>
-            <tr><th scope="row">DNS</th><td data-label="Evidence">AD Infrastructure Documentation</td><td data-label="Primary proof path"><a href="./evidence-library/network/dhcp-dns-validation-report-2026.md">Open evidence</a></td></tr>
-            <tr><th scope="row">DHCP</th><td data-label="Evidence">AD Infrastructure Documentation</td><td data-label="Primary proof path"><a href="./evidence-library/network/dhcp-dns-validation-report-2026.md">Open evidence</a></td></tr>
-            <tr><th scope="row">PowerShell</th><td data-label="Evidence">Automation Project Records</td><td data-label="Primary proof path"><a href="./evidence-library/automation/provisioning-script-evidence.md">Open evidence</a></td></tr>
-            <tr><th scope="row">Virtualization</th><td data-label="Evidence">Proxmox Home Lab</td><td data-label="Primary proof path"><a href="./evidence-library/proxmox/proxmox-host-validation-report-2026.md">Open evidence</a></td></tr>
-            <tr><th scope="row">Networking</th><td data-label="Evidence">pfSense Segmentation Project</td><td data-label="Primary proof path"><a href="./evidence-library/network/network-infrastructure-validation-report-2026.md">Open evidence</a></td></tr>
-          </tbody>
-        </table>
+      <div class="focus-grid capability-proof-grid">
+        <article class="focus-card" data-reveal>
+          <div class="tag-row"><span>INF</span><small>Systems</small></div>
+          <h3>Infrastructure Administration</h3>
+          <ul class="proof-check-list">
+            <li><a href="./evidence-library/proxmox/proxmox-host-validation-report-2026.md">Proxmox Validation</a></li>
+            <li><a href="./evidence-library/network/network-infrastructure-validation-report-2026.md">Infrastructure Validation Report</a></li>
+          </ul>
+        </article>
+
+        <article class="focus-card" data-reveal>
+          <div class="tag-row"><span>NET</span><small>Network</small></div>
+          <h3>Networking</h3>
+          <ul class="proof-check-list">
+            <li><a href="./evidence-library/network/firewall-rule-validation-report-2026.md">Firewall Validation</a></li>
+            <li><a href="./evidence-library/network/dhcp-dns-validation-report-2026.md">DHCP/DNS Validation</a></li>
+            <li><a href="./evidence-library/network/network-infrastructure-validation-report-2026.md">Network Validation</a></li>
+          </ul>
+        </article>
+
+        <article class="focus-card" data-reveal>
+          <div class="tag-row"><span>AD</span><small>Identity</small></div>
+          <h3>Active Directory</h3>
+          <ul class="proof-check-list">
+            <li><a href="./evidence-library/projects/identity-access/identity-access-change-record-notes-2026.md">AD Evidence</a></li>
+            <li><a href="./evidence-library/windows-server/windows-server-evidence.md">Windows Server Evidence</a></li>
+          </ul>
+        </article>
+
+        <article class="focus-card" data-reveal>
+          <div class="tag-row"><span>PS</span><small>Automation</small></div>
+          <h3>Automation</h3>
+          <ul class="proof-check-list">
+            <li><a href="./evidence-library/automation/provisioning-change-record-2026.md">Provisioning Change Record</a></li>
+            <li><a href="./evidence-library/automation/provisioning-script-evidence.md">PowerShell Evidence</a></li>
+          </ul>
+        </article>
+
+        <article class="focus-card" data-reveal>
+          <div class="tag-row"><span>IR</span><small>Service Desk</small></div>
+          <h3>Incident Response</h3>
+          <ul class="proof-check-list">
+            <li><a href="./evidence-library/incidents/dns-resolution-outage-incident-summary-2026.md">DNS Resolution Incident Summary</a></li>
+            <li><a href="./evidence-library/projects/troubleshooting-rca/rca-report.md">RCA Documentation</a></li>
+          </ul>
+        </article>
       </div>
     </section>
-
     <section class="section" aria-labelledby="architecture-visuals">
       <div class="section-head" data-reveal>
         <p class="eyebrow">Architecture Visualizations</p>
@@ -517,6 +543,7 @@
   <script src="./assets/js/site.js?v=proof-evidence-center" defer></script>
 </body>
 </html>
+
 
 
 
