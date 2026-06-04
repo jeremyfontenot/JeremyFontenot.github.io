@@ -1,33 +1,92 @@
-# Incident Summary — Evidence Notes (2026)
+# DNS Resolution Outage Incident Summary (2026)
 
-## 1. Impact Summary
-Service: DNS resolution
-Impact: 12-minute outage
-Affected: 6 devices
+## Incident Overview
 
-Code
+### Service Affected
 
-## 2. Triage Notes
-Root cause: Misconfigured DNS forwarder
-Detection: User report + monitoring alert
+DNS Resolution Services
 
-Code
+### Impact Duration
 
-## 3. Corrective Action
-Corrected DNS forwarder
-Flushed resolver cache
-Restarted DNS service
+12 Minutes
 
-Code
+### Affected Systems
 
-## 4. Validation
-nslookup internal → Success
-nslookup external → Success
+6 Lab Devices
 
-Code
+## Incident Detection
 
-## 5. Lessons Learned
-Add DNS health check
-Improve change review
+The outage was identified through a combination of user-reported connectivity issues and monitoring alerts indicating failed DNS lookups.
 
-Code
+## Initial Symptoms
+
+* Internal hostnames failed to resolve.
+* External internet domains failed to resolve.
+* Client systems experienced intermittent connectivity symptoms despite active network connections.
+
+## Investigation Activities
+
+```powershell
+Resolve-DnsName server01.ad.jeremyfontenot
+Resolve-DnsName microsoft.com
+Clear-DnsClientCache
+Restart-Service DNS -WhatIf
+```
+
+### Evidence Collected
+
+* Monitoring alerts
+* DNS lookup failures
+* Resolver cache validation
+* Service restart testing
+* Device impact assessment
+
+### Sanitization
+
+All hostnames, IP references, and environment details are lab-safe and do not contain production identifiers, credentials, or sensitive information.
+
+## Root Cause Analysis
+
+### Root Cause
+
+Misconfigured DNS forwarder settings prevented successful external name resolution.
+
+### Contributing Factors
+
+* Configuration drift during testing activities
+* Lack of automated DNS health validation
+
+## Corrective Actions
+
+* Corrected DNS forwarder configuration
+* Cleared DNS resolver cache
+* Validated DNS service status
+* Performed internal and external resolution testing
+
+## Validation
+
+### Internal Resolution Test
+
+```powershell
+Resolve-DnsName server01.ad.jeremyfontenot
+```
+
+Result: Successful
+
+### External Resolution Test
+
+```powershell
+Resolve-DnsName microsoft.com
+```
+
+Result: Successful
+
+## Lessons Learned
+
+* Implement automated DNS health monitoring.
+* Expand configuration review procedures.
+* Validate forwarder configuration after maintenance activities.
+
+## Result
+
+DNS functionality was restored successfully. Internal and external name resolution returned to normal operation and all affected devices resumed expected connectivity.
