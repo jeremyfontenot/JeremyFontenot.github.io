@@ -2194,3 +2194,61 @@ p {
     flex-direction: column;
   }
 }
+
+/* Certification showcase on Proof page */
+.certification-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.certification-showcase-card {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+  justify-items: center;
+  min-height: 180px;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(30, 41, 59, 0.74), rgba(15, 23, 42, 0.82)),
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.1), transparent 58%);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.certification-showcase-card img {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(2, 6, 23, 0.35));
+}
+
+.certification-showcase-card h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 900px) {
+  .certification-showcase-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .certification-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .certification-showcase-card {
+    min-height: 160px;
+  }
+
+  .certification-showcase-card img {
+    width: 78px;
+    height: 78px;
+  }
+}
