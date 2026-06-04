@@ -2265,3 +2265,37 @@ p {
   color: var(--text);
   text-decoration: none;
 }
+
+/* Certification showcase visual polish */
+.certification-showcase-card {
+  align-content: center;
+}
+
+.certification-showcase-link {
+  width: 100%;
+  min-height: 140px;
+  align-content: center;
+}
+
+.certification-showcase-card img {
+  width: 104px;
+  height: 104px;
+  padding: 0.45rem;
+  border-radius: 18px;
+  background: rgba(241, 245, 249, 0.04);
+}
+
+.certification-showcase-card h3 {
+  max-width: 14ch;
+}
+
+@media (max-width: 620px) {
+  .certification-showcase-link {
+    min-height: 132px;
+  }
+
+  .certification-showcase-card img {
+    width: 88px;
+    height: 88px;
+  }
+}
