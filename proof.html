@@ -145,6 +145,43 @@
       </div>
     </section>
 
+    <section class="section validation-environment" aria-labelledby="lab-section">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Home Lab Validation</p>
+        <h2 id="lab-section">Infrastructure Validation Environment</h2>
+        <p>I built the lab to validate systems administration concepts in a controlled environment: virtualization boundaries, Windows Server services, identity services, segmentation, VPN concepts, DNS/DHCP placement, and PowerShell-assisted operations.</p>
+      </div>
+
+      <div class="lab-component-grid" data-reveal>
+        <span>Dell PowerEdge R710</span>
+        <span>Proxmox</span>
+        <span>Windows Server</span>
+        <span>Active Directory</span>
+        <span>pfSense</span>
+        <span>WireGuard</span>
+        <span>OpenVPN</span>
+        <span>VLANs</span>
+        <span>DNS</span>
+        <span>DHCP</span>
+        <span>PowerShell</span>
+      </div>
+
+      <div class="proof-detail-grid">
+        <article class="proof-detail-card" data-reveal>
+          <h3>Why I built it</h3>
+          <p>To move beyond theory and practice how infrastructure services interact across identity, networking, virtualization, and administrative tooling.</p>
+        </article>
+        <article class="proof-detail-card" data-reveal>
+          <h3>Concepts validated</h3>
+          <p>Virtualization, AD dependencies, DNS/DHCP placement, firewall policy boundaries, VPN access models, VLAN segmentation, and operational documentation.</p>
+        </article>
+        <article class="proof-detail-card" data-reveal>
+          <h3>Career relevance</h3>
+          <p>The lab supports service desk escalation readiness and systems administration progression by showing practical infrastructure awareness.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="section proof-feature-section" aria-labelledby="m365-section">
       <div class="proof-section-grid">
         <div class="proof-section-copy" data-reveal>
@@ -194,94 +231,53 @@
       </div>
     </section>
 
-    <section class="section validation-environment" aria-labelledby="lab-section">
-      <div class="section-head" data-reveal>
-        <p class="eyebrow">Home Lab Validation</p>
-        <h2 id="lab-section">Infrastructure Validation Environment</h2>
-        <p>I built the lab to validate systems administration concepts in a controlled environment: virtualization boundaries, Windows Server services, identity services, segmentation, VPN concepts, DNS/DHCP placement, and PowerShell-assisted operations.</p>
-      </div>
 
-      <div class="lab-component-grid" data-reveal>
-        <span>Dell PowerEdge R710</span>
-        <span>Proxmox</span>
-        <span>Windows Server</span>
-        <span>Active Directory</span>
-        <span>pfSense</span>
-        <span>WireGuard</span>
-        <span>OpenVPN</span>
-        <span>VLANs</span>
-        <span>DNS</span>
-        <span>DHCP</span>
-        <span>PowerShell</span>
+
+    <section class="section technical-review-fast-path" aria-labelledby="technical-review-fast-path-title">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Technical Reviewer Fast Path</p>
+        <h2 id="technical-review-fast-path-title">Start with the strongest proof first.</h2>
+        <p>For a quick technical screen, these five artifacts provide the fastest path through infrastructure validation, service troubleshooting, segmentation, virtualization, and automation change control.</p>
       </div>
 
       <div class="proof-detail-grid">
         <article class="proof-detail-card" data-reveal>
-          <h3>Why I built it</h3>
-          <p>To move beyond theory and practice how infrastructure services interact across identity, networking, virtualization, and administrative tooling.</p>
+          <span class="tag-row"><span>01</span><small>Network</small></span>
+          <h3>Validate the infrastructure baseline</h3>
+          <p>Review VLAN roles, switch mapping, DHCP relay, and DNS resolution from the network validation report.</p>
+          <div class="project-links"><a href="./evidence-library/network/network-infrastructure-validation-report-2026.md">Open network report</a></div>
         </article>
+
         <article class="proof-detail-card" data-reveal>
-          <h3>Concepts validated</h3>
-          <p>Virtualization, AD dependencies, DNS/DHCP placement, firewall policy boundaries, VPN access models, VLAN segmentation, and operational documentation.</p>
+          <span class="tag-row"><span>02</span><small>Firewall</small></span>
+          <h3>Confirm segmentation controls</h3>
+          <p>Review allowed and blocked traffic paths across VLAN boundaries and outbound access controls.</p>
+          <div class="project-links"><a href="./evidence-library/network/firewall-rule-validation-report-2026.md">Open firewall report</a></div>
         </article>
+
         <article class="proof-detail-card" data-reveal>
-          <h3>Career relevance</h3>
-          <p>The lab supports service desk escalation readiness and systems administration progression by showing practical infrastructure awareness.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section proof-featured-validation" aria-labelledby="featured-validation-title">
-      <div class="section-head" data-reveal>
-        <p class="eyebrow">Featured Validation Evidence</p>
-        <h2 id="featured-validation-title">High-value proof artifacts for technical reviewers.</h2>
-        <p>These reports show practical infrastructure validation, service troubleshooting, firewall segmentation, virtualization checks, and controlled automation change management.</p>
-      </div>
-
-      <div class="focus-grid">
-        <article class="focus-card" data-reveal>
-          <div class="tag-row"><span>NET</span><small>Infrastructure</small></div>
-          <h3>Network Infrastructure Validation</h3>
-          <p>Documents switch port mapping, VLAN roles, DHCP relay, DNS resolution, and segmented lab network verification.</p>
-          <div class="project-links"><a href="./evidence-library/network/network-infrastructure-validation-report-2026.md">Open network validation report</a></div>
+          <span class="tag-row"><span>03</span><small>Virtualization</small></span>
+          <h3>Inspect Proxmox host validation</h3>
+          <p>Review host health, storage status, bridge configuration, VLAN-aware networking, and VM connectivity.</p>
+          <div class="project-links"><a href="./evidence-library/proxmox/proxmox-host-validation-report-2026.md">Open Proxmox report</a></div>
         </article>
 
-        <article class="focus-card" data-reveal>
-          <div class="tag-row"><span>DNS</span><small>Service Validation</small></div>
-          <h3>DHCP and DNS Validation</h3>
-          <p>Validates DHCP lease assignment and internal/external DNS resolution from a segmented Windows client environment.</p>
-          <div class="project-links"><a href="./evidence-library/network/dhcp-dns-validation-report-2026.md">Open DHCP and DNS report</a></div>
+        <article class="proof-detail-card" data-reveal>
+          <span class="tag-row"><span>04</span><small>Automation</small></span>
+          <h3>Review controlled PowerShell change</h3>
+          <p>Review provisioning change scope, dry-run validation, transcript logging, AD verification, and rollback readiness.</p>
+          <div class="project-links"><a href="./evidence-library/automation/provisioning-change-record-2026.md">Open automation record</a></div>
         </article>
 
-        <article class="focus-card" data-reveal>
-          <div class="tag-row"><span>FW</span><small>Security Boundary</small></div>
-          <h3>Firewall Rule Validation</h3>
-          <p>Shows approved and restricted traffic paths across VLAN boundaries, including outbound access and internal segmentation controls.</p>
-          <div class="project-links"><a href="./evidence-library/network/firewall-rule-validation-report-2026.md">Open firewall validation report</a></div>
-        </article>
-
-        <article class="focus-card" data-reveal>
-          <div class="tag-row"><span>PX</span><small>Virtualization</small></div>
-          <h3>Proxmox Host Validation</h3>
-          <p>Documents host health, storage state, VLAN-aware bridge configuration, and virtual machine connectivity checks.</p>
-          <div class="project-links"><a href="./evidence-library/proxmox/proxmox-host-validation-report-2026.md">Open Proxmox validation report</a></div>
-        </article>
-
-        <article class="focus-card" data-reveal>
-          <div class="tag-row"><span>PS</span><small>Automation</small></div>
-          <h3>Provisioning Change Record</h3>
-          <p>Captures PowerShell provisioning updates, dry-run validation, transcript logging, AD object verification, and rollback readiness.</p>
-          <div class="project-links"><a href="./evidence-library/automation/provisioning-change-record-2026.md">Open provisioning change record</a></div>
-        </article>
-
-        <article class="focus-card" data-reveal>
-          <div class="tag-row"><span>IR</span><small>Incident Response</small></div>
-          <h3>DNS Resolution Incident Summary</h3>
-          <p>Summarizes outage impact, detection, investigation, corrective action, validation, and lessons learned.</p>
+        <article class="proof-detail-card" data-reveal>
+          <span class="tag-row"><span>05</span><small>Incident</small></span>
+          <h3>Evaluate troubleshooting discipline</h3>
+          <p>Review outage impact, detection, investigation, corrective action, validation, and lessons learned.</p>
           <div class="project-links"><a href="./evidence-library/incidents/dns-resolution-outage-incident-summary-2026.md">Open incident summary</a></div>
         </article>
       </div>
     </section>
+
     <section class="section" aria-labelledby="network-proof-artifacts">
       <div class="section-head" data-reveal>
         <p class="eyebrow">Actual Validation Artifacts</p>
@@ -521,5 +517,8 @@
   <script src="./assets/js/site.js?v=proof-evidence-center" defer></script>
 </body>
 </html>
+
+
+
 
 
