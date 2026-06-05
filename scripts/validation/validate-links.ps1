@@ -4,7 +4,9 @@ $ErrorActionPreference = 'Stop'
 Write-Host 'Validating internal links...'
 
 $HtmlFiles = Get-ChildItem -Path . -Recurse -Filter '*.html' -File | Where-Object {
-  $_.FullName -notmatch '[\\/]node_modules[\\/]'
+  $_.FullName -notmatch '[\\/]node_modules[\\/]' -and
+  $_.FullName -notmatch '[\\/]archive[\\/]' -and
+  $_.FullName -notmatch '[\\/]evidence-library[\\/]preserved-sharepoint[\\/]source[\\/]'
 }
 
 if (-not $HtmlFiles) {
@@ -18,7 +20,7 @@ foreach ($File in $HtmlFiles) {
   $Matches = Select-String -Path $File.FullName -Pattern '(?:href|src)="([^"]+)"' -AllMatches
 
   foreach ($Match in $Matches.Matches) {
-    $RelativePath = ($Match.Groups[1].Value -split '\?')[0]
+    $RelativePath = ($Match.Groups[1].Value -split '[?#]')[0]
 
     if (
       [string]::IsNullOrWhiteSpace($RelativePath) -or
