@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Backup and Disaster Recovery</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        ul { line-height: 1.7; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .targets { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Backup and Disaster Recovery</h1>
+        <p><a href="./index.html">Back to Home Lab Documentation Hub</a></p>
+
+        <div class="targets">
+            <p><strong>Recovery Objectives (Target)</strong></p>
+            <ul>
+                <li>Identity core services: RTO 4 hours, RPO 24 hours</li>
+                <li>Monitoring stack: RTO 8 hours, RPO 24 hours</li>
+                <li>Non-critical workloads: RTO 24 hours, RPO 48 hours</li>
+            </ul>
+        </div>
+
+        <h2>Backup Scope</h2>
+        <ul>
+            <li>VM snapshots and configuration exports.</li>
+            <li>Critical configuration backups (firewall, AD metadata, monitoring configs).</li>
+            <li>Documentation and change records in source-controlled copies.</li>
+        </ul>
+
+        <h2>Recovery Sequence</h2>
+        <ul>
+            <li>Recover virtualization host and storage availability first.</li>
+            <li>Restore AD and DNS services to stabilize identity dependencies.</li>
+            <li>Recover firewall/routing policies and validate segmentation.</li>
+            <li>Restore monitoring stack and confirm alert pipeline integrity.</li>
+        </ul>
+
+        <h2>Testing Cadence</h2>
+        <ul>
+            <li>Quarterly partial restore drills.</li>
+            <li>Semi-annual full recovery simulation and runbook updates.</li>
+        </ul>
+    </main>
+</body>
+</html>

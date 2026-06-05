@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Operations Runbook</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        h2 { margin-top: 1.5rem; }
+        ul, ol { line-height: 1.7; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Operations Runbook</h1>
+        <p><a href="./index.html">Back to Home Lab Documentation Hub</a></p>
+
+        <h2>Daily Tasks</h2>
+        <ol>
+            <li>Confirm core services are up and alert queues are clear.</li>
+            <li>Review overnight security events and anomalous traffic.</li>
+            <li>Verify domain controller health and DNS responsiveness.</li>
+        </ol>
+
+        <h2>Weekly Tasks</h2>
+        <ol>
+            <li>Apply non-breaking patch updates to test hosts.</li>
+            <li>Review backup job status and sample restore logs.</li>
+            <li>Check firewall policy drift and unused rule cleanup candidates.</li>
+        </ol>
+
+        <h2>Monthly Tasks</h2>
+        <ol>
+            <li>Validate disaster recovery checkpoints and recovery notes.</li>
+            <li>Run privilege review on high-risk groups/accounts.</li>
+            <li>Update change log and architecture notes with completed improvements.</li>
+        </ol>
+
+        <h2>Incident Triage Flow</h2>
+        <ul>
+            <li>Detect: capture alert context from Zabbix/Wazuh/Graylog.</li>
+            <li>Contain: isolate affected host/segment where required.</li>
+            <li>Remediate: apply fix and verify monitoring returns to baseline.</li>
+            <li>Document: add timeline, root cause, and corrective action.</li>
+        </ul>
+    </main>
+</body>
+</html>
