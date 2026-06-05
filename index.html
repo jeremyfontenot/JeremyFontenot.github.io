@@ -36,12 +36,18 @@
     <div class="hero-grid">
       <div class="hero-copy reveal">
         <p class="eyebrow">IT Support / Service Desk / Systems Administration</p>
-        <h1 id="hero-title">Microsoft 365 and Entra skills backed by inspectable proof.</h1>
-        <p class="lead">I document Microsoft 365 and Entra administration exposure through repository-local evidence: Microsoft Graph PowerShell exports, admin center screenshots, Conditional Access review, identity and group inventory, license review, sign-in and audit logs, and SHA-256 proof records.</p>
+        <h1 id="hero-title">Microsoft 365 and Entra proof you can inspect.</h1>
+        <p class="lead">Repository-local Microsoft 365 and Entra evidence including Microsoft Graph PowerShell exports, admin center screenshots, Conditional Access review records, identity and group inventory, license review, sign-in and audit logs, and SHA-256 proof records.</p>
         <div class="actions">
           <a class="button primary" href="./projects.html">Review Projects</a>
           <a class="button" href="./proof.html">Open Proof Index</a>
           <a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Open M365 Summary</a>
+        </div>
+        <div class="proof-chain" aria-label="Evidence review chain">
+          <span>Claim</span>
+          <span>Source file</span>
+          <span>Evidence type</span>
+          <span>Hash / inventory record</span>
         </div>
       </div>
       <aside class="evidence-console reveal" aria-label="Verified evidence snapshot">
@@ -58,10 +64,14 @@
   <section class="section" aria-labelledby="verified-title">
     <div class="section-head reveal"><p class="eyebrow">Verified Focus Areas</p><h2 id="verified-title">Claims are limited to repository-backed Microsoft 365 and Entra evidence.</h2><p>The public surface stays within personal tenant evidence, documented admin-center review, exported policy records, sanitized inventory, and proof-governance controls.</p></div>
     <div class="capability-grid reveal">
-      <article class="capability-card"><span>Graph PowerShell</span><h3>Read-only evidence capture</h3><p>Captured tenant, identity, application, role, license, device, audit, and sign-in data through Microsoft Graph PowerShell exports.</p><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Open proof</a></article>
-      <article class="capability-card"><span>Identity review</span><h3>Users, groups, roles, and domains</h3><p>Verified tenant identity, two verified domains, seven users, eight groups, and directory role exports.</p><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/tenant-organization-domains-skus.json">Open proof</a></article>
-      <article class="capability-card"><span>Security review</span><h3>Conditional Access and authentication policy</h3><p>Reviewed exported Conditional Access policies, named locations, authentication-method policy, authorization policy, and security defaults state.</p><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-policies.json">Open proof</a></article>
-      <article class="capability-card"><span>Admin center proof</span><h3>Microsoft 365 and Exchange evidence</h3><p>Browser screenshots and CSV exports support Microsoft 365 admin center, domain, license, active user, groups, and Exchange admin center review.</p><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/README.md">Open proof</a></article>
+      <article class="capability-card"><span>Graph PowerShell</span><h3>Read-only evidence capture</h3><p>Captured tenant, identity, application, role, license, device, audit, and sign-in data through Microsoft Graph PowerShell exports.</p>
+          <div class="evidence-chips"><span>CSV</span><span>JSON</span><span>Screenshot</span><span>SHA-256</span></div><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Open Graph Export Evidence</a></article>
+      <article class="capability-card"><span>Identity review</span><h3>Users, groups, roles, and domains</h3><p>Verified tenant identity, two verified domains, seven users, eight groups, and directory role exports.</p>
+          <div class="evidence-chips"><span>Users</span><span>Groups</span><span>Roles</span><span>Domains</span></div><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Open Identity Inventory</a></article>
+      <article class="capability-card"><span>Security review</span><h3>Conditional Access and authentication policy</h3><p>Reviewed exported Conditional Access policies, named locations, authentication-method policy, authorization policy, and security defaults state.</p>
+          <div class="evidence-chips"><span>CA Export</span><span>Auth Methods</span><span>Named Locations</span><span>Security Defaults</span></div><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-policies-summary.csv">Open Conditional Access Review</a></article>
+      <article class="capability-card"><span>Admin center proof</span><h3>Microsoft 365 and Exchange evidence</h3><p>Browser screenshots and CSV exports support Microsoft 365 admin center, domain, license, active user, groups, and Exchange admin center review.</p>
+          <div class="evidence-chips"><span>Admin Center</span><span>Exchange</span><span>Licenses</span><span>Groups</span></div><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/microsoft-365-lab-evidence-manifest-20260605.csv">Open Admin Center Evidence</a></article>
     </div>
   </section>
   <section class="section" aria-labelledby="workflow-title">
@@ -70,8 +80,15 @@
       <li><b>1</b><span>Read project summary and approved wording.</span></li>
       <li><b>2</b><span>Open CSV, JSON, screenshot, transcript, or hash proof.</span></li>
       <li><b>3</b><span>Check limitation notes for Intune, production, and client-scope boundaries.</span></li>
-      <li><b>4</b><span>Confirm links through the proof map and dashboard.</span></li>
+      <li><b>4</b><span>Confirm the file path, evidence summary, and hash/inventory record.</span></li>
     </ol>
+  </section>
+  <section class="section scope-note-section" aria-labelledby="scope-note-title">
+    <div class="scope-note-card reveal">
+      <p class="eyebrow">Evidence Scope</p>
+      <h2 id="scope-note-title">Claims stay inside preserved proof boundaries.</h2>
+      <p>Microsoft 365 and Entra evidence is preserved from a personal cloud lab and repository-local documentation. Claims on this site are limited to available exports, screenshots, summaries, proof maps, and hash records. Unsupported tenant, production, client, or enterprise-scale claims are intentionally excluded.</p>
+    </div>
   </section>
 </main>
 <footer class="site-footer" aria-label="Site footer">
@@ -80,3 +97,8 @@
 </footer>
 </body>
 </html>
+
+
+
+
+
