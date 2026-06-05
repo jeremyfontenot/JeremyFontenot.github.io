@@ -28,7 +28,24 @@
 <main id="main" class="page">
   <section class="page-hero" aria-labelledby="projects-title">
     <div class="page-hero-grid">
-      <div class="hero-copy reveal"><p class="eyebrow">Proof-backed projects</p><h1 id="projects-title">Microsoft 365 / Entra Cloud Administration Evidence Capture</h1><p class="lead">This project presents a personal Microsoft 365 / Entra cloud administration lab using verified repository evidence. It documents tenant inventory, Conditional Access review, security group targeting, application governance, licensing, device inventory, sign-in/audit visibility, admin center evidence, and proof integrity.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Live Proof Summary</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof Inventory</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof Hashes</a></div></div>
+      <div class="hero-copy reveal"><p class="eyebrow">Proof-backed projects</p><h1 id="projects-title">Microsoft 365 / Entra Cloud Administration Evidence Capture</h1><p class="lead">This project presents a personal Microsoft 365 / Entra cloud administration lab using verified repository evidence. It documents tenant inventory, Conditional Access review, security group targeting, application governance, licensing, device inventory, sign-in/audit visibility, admin center evidence, and proof integrity.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Live Proof Summary</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof Inventory</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof Hashes</a></div>
+        <div class="projects-command-center" aria-label="Projects evidence command center">
+          <article>
+            <span>01</span>
+            <strong>Evidence source</strong>
+            <p>Repository-local Microsoft 365 and Entra exports, screenshots, summaries, inventories, and hash records.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Review method</strong>
+            <p>Each workstream separates the claim, proof type, limitation boundary, and direct artifact path.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Proof boundary</strong>
+            <p>Personal tenant evidence only. Unsupported production, client, and enterprise-scale claims are excluded.</p>
+          </article>
+        </div></div>
       <aside class="evidence-rail reveal"><h2>Scope boundaries</h2><ul class="check-list"><li>Personal tenant evidence only</li><li>External organization administration is not claimed</li><li>Operational impact metrics are not claimed</li><li>Intune is limited to documented validation attempts</li><li>Public positioning centers on Microsoft 365 and Entra proof</li></ul></aside>
     </div>
   </section>
@@ -42,6 +59,46 @@
     <article class="project-panel reveal"><div><p class="eyebrow">Audit, sign-in, device, and portal evidence</p><h2>Operational visibility review</h2><p>Evidence includes recent sign-in rows, directory audit rows, device inventory, Microsoft 365 admin center screenshots, Exchange admin center group evidence, and documented Exchange Online PowerShell connection attempt notes.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-signins-last-30-days.csv">Sign-ins CSV</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-directory-audit-last-30-days.csv">Directory audit CSV</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-devices.csv">Device inventory</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/m365-admin-center-homepage-20260605.png">M365 admin center screenshot</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/exchange-admin-center-microsoft-365-groups-20260605.png">Exchange admin center screenshot</a></div></div></article>
   </section>
 </main>
-<footer class="site-footer" aria-label="Site footer"><p class="footer-meta">Project claims are limited to Microsoft 365 / Entra evidence files that exist in this repository.</p><nav class="footer-links" aria-label="Footer navigation"><a href="./proof.html">Proof</a><a href="./dashboard.html">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></nav></footer>
+<footer class="site-footer projects-proof-footer" aria-label="Site footer">
+  <div class="footer-proof-band" aria-label="Projects proof status">
+    <span><strong>Projects</strong> evidence-backed</span>
+    <span><strong>M365 / Entra</strong> source mapped</span>
+    <span><strong>Proof links</strong> repository-local</span>
+    <span><strong>Scope</strong> tenant-safe</span>
+  </div>
+
+  <div class="footer-divider" aria-hidden="true"></div>
+
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="56" height="56" decoding="async">
+      <p><strong>Jeremy Fontenot</strong></p>
+      <p>Proof-backed project portfolio focused on Microsoft 365, Entra ID, identity review, policy inspection, cloud-admin evidence capture, and operational documentation.</p>
+    </div>
+
+    <div class="footer-links">
+      <h2 class="footer-heading">Review Path</h2>
+      <a href="./proof.html">Proof Library</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h2 class="footer-heading">Project Proof</h2>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Live proof summary</a>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Site proof map</a>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof inventory</a>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof hashes</a>
+    </div>
+  </div>
+
+  <div class="footer-proof-callout">
+    <p><strong>Project boundary:</strong> Project claims are limited to repository evidence that can be opened, inspected, and tied to Microsoft 365 / Entra artifacts. Unsupported client, production, and organization-admin claims are intentionally excluded.</p>
+  </div>
+
+  <p class="footer-meta">Microsoft 365 / Entra ID / Conditional Access / Identity Inventory / Evidence Governance</p>
+</footer>
 </body>
 </html>
+
