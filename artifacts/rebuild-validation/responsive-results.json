@@ -1,0 +1,482 @@
+[
+  {
+    "page": "index.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/index-1920.png",
+    "links": 28,
+    "h1": "IT operations portfolio built for evidence-based review."
+  },
+  {
+    "page": "index.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/index-1440.png",
+    "links": 28,
+    "h1": "IT operations portfolio built for evidence-based review."
+  },
+  {
+    "page": "index.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/index-1280.png",
+    "links": 28,
+    "h1": "IT operations portfolio built for evidence-based review."
+  },
+  {
+    "page": "index.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/index-768.png",
+    "links": 28,
+    "h1": "IT operations portfolio built for evidence-based review."
+  },
+  {
+    "page": "index.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/index-430.png",
+    "links": 28,
+    "h1": "IT operations portfolio built for evidence-based review."
+  },
+  {
+    "page": "index.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/index-390.png",
+    "links": 28,
+    "h1": "IT operations portfolio built for evidence-based review."
+  },
+  {
+    "page": "dashboard.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/dashboard-1920.png",
+    "links": 29,
+    "h1": "Operational truth, evidence status, and role fit in one view."
+  },
+  {
+    "page": "dashboard.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/dashboard-1440.png",
+    "links": 29,
+    "h1": "Operational truth, evidence status, and role fit in one view."
+  },
+  {
+    "page": "dashboard.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/dashboard-1280.png",
+    "links": 29,
+    "h1": "Operational truth, evidence status, and role fit in one view."
+  },
+  {
+    "page": "dashboard.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/dashboard-768.png",
+    "links": 29,
+    "h1": "Operational truth, evidence status, and role fit in one view."
+  },
+  {
+    "page": "dashboard.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/dashboard-430.png",
+    "links": 29,
+    "h1": "Operational truth, evidence status, and role fit in one view."
+  },
+  {
+    "page": "dashboard.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/dashboard-390.png",
+    "links": 29,
+    "h1": "Operational truth, evidence status, and role fit in one view."
+  },
+  {
+    "page": "projects.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/projects-1920.png",
+    "links": 32,
+    "h1": "Projects organized as technical operations workstreams."
+  },
+  {
+    "page": "projects.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/projects-1440.png",
+    "links": 32,
+    "h1": "Projects organized as technical operations workstreams."
+  },
+  {
+    "page": "projects.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/projects-1280.png",
+    "links": 32,
+    "h1": "Projects organized as technical operations workstreams."
+  },
+  {
+    "page": "projects.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/projects-768.png",
+    "links": 32,
+    "h1": "Projects organized as technical operations workstreams."
+  },
+  {
+    "page": "projects.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/projects-430.png",
+    "links": 32,
+    "h1": "Projects organized as technical operations workstreams."
+  },
+  {
+    "page": "projects.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/projects-390.png",
+    "links": 32,
+    "h1": "Projects organized as technical operations workstreams."
+  },
+  {
+    "page": "proof.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/proof-1920.png",
+    "links": 47,
+    "h1": "Every major claim routes to evidence that can be inspected."
+  },
+  {
+    "page": "proof.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/proof-1440.png",
+    "links": 47,
+    "h1": "Every major claim routes to evidence that can be inspected."
+  },
+  {
+    "page": "proof.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/proof-1280.png",
+    "links": 47,
+    "h1": "Every major claim routes to evidence that can be inspected."
+  },
+  {
+    "page": "proof.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/proof-768.png",
+    "links": 47,
+    "h1": "Every major claim routes to evidence that can be inspected."
+  },
+  {
+    "page": "proof.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/proof-430.png",
+    "links": 47,
+    "h1": "Every major claim routes to evidence that can be inspected."
+  },
+  {
+    "page": "proof.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/proof-390.png",
+    "links": 47,
+    "h1": "Every major claim routes to evidence that can be inspected."
+  },
+  {
+    "page": "resume.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/resume-1920.png",
+    "links": 24,
+    "h1": "Service desk technician with systems administration direction."
+  },
+  {
+    "page": "resume.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/resume-1440.png",
+    "links": 24,
+    "h1": "Service desk technician with systems administration direction."
+  },
+  {
+    "page": "resume.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/resume-1280.png",
+    "links": 24,
+    "h1": "Service desk technician with systems administration direction."
+  },
+  {
+    "page": "resume.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/resume-768.png",
+    "links": 24,
+    "h1": "Service desk technician with systems administration direction."
+  },
+  {
+    "page": "resume.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/resume-430.png",
+    "links": 24,
+    "h1": "Service desk technician with systems administration direction."
+  },
+  {
+    "page": "resume.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/resume-390.png",
+    "links": 24,
+    "h1": "Service desk technician with systems administration direction."
+  },
+  {
+    "page": "contact.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/contact-1920.png",
+    "links": 23,
+    "h1": "Ready for evidence-based technical screening."
+  },
+  {
+    "page": "contact.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/contact-1440.png",
+    "links": 23,
+    "h1": "Ready for evidence-based technical screening."
+  },
+  {
+    "page": "contact.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/contact-1280.png",
+    "links": 23,
+    "h1": "Ready for evidence-based technical screening."
+  },
+  {
+    "page": "contact.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/contact-768.png",
+    "links": 23,
+    "h1": "Ready for evidence-based technical screening."
+  },
+  {
+    "page": "contact.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/contact-430.png",
+    "links": 23,
+    "h1": "Ready for evidence-based technical screening."
+  },
+  {
+    "page": "contact.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/contact-390.png",
+    "links": 23,
+    "h1": "Ready for evidence-based technical screening."
+  },
+  {
+    "page": "evidence-library/index.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__index-1920.png",
+    "links": 34,
+    "h1": "Source-controlled proof for portfolio review."
+  },
+  {
+    "page": "evidence-library/index.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__index-1440.png",
+    "links": 34,
+    "h1": "Source-controlled proof for portfolio review."
+  },
+  {
+    "page": "evidence-library/index.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__index-1280.png",
+    "links": 34,
+    "h1": "Source-controlled proof for portfolio review."
+  },
+  {
+    "page": "evidence-library/index.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__index-768.png",
+    "links": 34,
+    "h1": "Source-controlled proof for portfolio review."
+  },
+  {
+    "page": "evidence-library/index.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__index-430.png",
+    "links": 34,
+    "h1": "Source-controlled proof for portfolio review."
+  },
+  {
+    "page": "evidence-library/index.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__index-390.png",
+    "links": 34,
+    "h1": "Source-controlled proof for portfolio review."
+  },
+  {
+    "page": "evidence-library/preserved-sharepoint/index.html",
+    "width": 1920,
+    "overflow": false,
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__preserved-sharepoint__index-1920.png",
+    "links": 57,
+    "h1": "Preserved SharePoint exports from the former lab tenant."
+  },
+  {
+    "page": "evidence-library/preserved-sharepoint/index.html",
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__preserved-sharepoint__index-1440.png",
+    "links": 57,
+    "h1": "Preserved SharePoint exports from the former lab tenant."
+  },
+  {
+    "page": "evidence-library/preserved-sharepoint/index.html",
+    "width": 1280,
+    "overflow": false,
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__preserved-sharepoint__index-1280.png",
+    "links": 57,
+    "h1": "Preserved SharePoint exports from the former lab tenant."
+  },
+  {
+    "page": "evidence-library/preserved-sharepoint/index.html",
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__preserved-sharepoint__index-768.png",
+    "links": 57,
+    "h1": "Preserved SharePoint exports from the former lab tenant."
+  },
+  {
+    "page": "evidence-library/preserved-sharepoint/index.html",
+    "width": 430,
+    "overflow": false,
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__preserved-sharepoint__index-430.png",
+    "links": 57,
+    "h1": "Preserved SharePoint exports from the former lab tenant."
+  },
+  {
+    "page": "evidence-library/preserved-sharepoint/index.html",
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "screenshot": "artifacts/rebuild-validation/screenshots/evidence-library__preserved-sharepoint__index-390.png",
+    "links": 57,
+    "h1": "Preserved SharePoint exports from the former lab tenant."
+  }
+]

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Monitoring and Logging</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+        main { max-width: 980px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        h1 { margin-top: 0; }
+        ul { line-height: 1.7; }
+        a { color: #0369a1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Monitoring and Logging Strategy</h1>
+        <p><a href="./index.html">Back to Home Lab Documentation Hub</a></p>
+
+        <h2>Observability Goals</h2>
+        <ul>
+            <li>Detect service degradation before user-impacting failure.</li>
+            <li>Correlate infrastructure, security, and application events.</li>
+            <li>Retain enough telemetry for incident reconstruction and trend review.</li>
+        </ul>
+
+        <h2>Platform Roles</h2>
+        <ul>
+            <li>Zabbix: system health, uptime, and threshold-based alerts.</li>
+            <li>Wazuh: endpoint security events and policy compliance.</li>
+            <li>Graylog: centralized logging, dashboarding, and search.</li>
+        </ul>
+
+        <h2>Operational Review Cadence</h2>
+        <ul>
+            <li>Daily: critical alerts and service availability checks.</li>
+            <li>Weekly: trend review and recurring event analysis.</li>
+            <li>Monthly: tuning of thresholds, false-positive reduction, retention checks.</li>
+        </ul>
+    </main>
+</body>
+</html>
