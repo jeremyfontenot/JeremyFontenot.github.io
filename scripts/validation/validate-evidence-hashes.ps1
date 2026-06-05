@@ -15,14 +15,15 @@ function Get-NormalizedSha256 {
     [string]$Path
   )
 
-  $Extension = [System.IO.Path]::GetExtension($Path).ToLowerInvariant()
+  $ResolvedPath = (Resolve-Path -LiteralPath $Path).Path
+  $Extension = [System.IO.Path]::GetExtension($ResolvedPath).ToLowerInvariant()
 
   if ($TextExtensions -contains $Extension) {
-    $Text = Get-Content -LiteralPath $Path -Raw
+    $Text = Get-Content -LiteralPath $ResolvedPath -Raw
     $Normalized = $Text -replace "`r`n", "`n"
     $Bytes = [System.Text.Encoding]::UTF8.GetBytes($Normalized)
   } else {
-    $Bytes = [System.IO.File]::ReadAllBytes($Path)
+    $Bytes = [System.IO.File]::ReadAllBytes($ResolvedPath)
   }
 
   $Sha = [System.Security.Cryptography.SHA256]::Create()

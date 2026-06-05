@@ -60,14 +60,15 @@ The diagram includes validation coverage for:
 
 This diagram summarizes and cross-references the evidence package:
 
-- Switch Port Map: `../network/network-validation-lab-notes.md`
-- pfSense VLAN Interface Export: `../network/network-validation-lab-notes.md`
-- Proxmox Bridge Mapping: `../proxmox/proxmox-host-evidence.md`
-- DHCP Scope Mapping: `../network/dhcp-dns-evidence.md`
-- Firewall Rule Review: `../network/firewall-rules-evidence.md`
+- Switch Port Map: `../network/network-infrastructure-validation-report-2026.md`
+- pfSense VLAN Interface Export: `../network/network-infrastructure-validation-report-2026.md`
+- Proxmox Bridge Mapping: `../proxmox/proxmox-host-validation-report-2026.md`
+- DHCP Scope Mapping: `../network/dhcp-dns-validation-report-2026.md`
+- Firewall Rule Review: `../network/firewall-rule-validation-report-2026.md`
 - Validation Checklist Results: `../validation-reports/network-validation-checklist-2026.md`
 - VPN Validation: `../vpn/vpn-configuration-evidence.md`
 
 ## Review Use
 
 The artifact is intended for recruiter review, hiring manager review, systems administrator interviews, network administrator interviews, infrastructure engineer interviews, and portfolio evidence validation. It functions as both a technical architecture diagram and a visual evidence summary for the VLAN Architecture Walkthrough project.
+

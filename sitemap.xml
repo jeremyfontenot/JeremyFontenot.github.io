@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://jeremyfontenot.online/</loc></url>
+  <url><loc>https://jeremyfontenot.online/dashboard.html</loc></url>
   <url><loc>https://jeremyfontenot.online/projects.html</loc></url>
   <url><loc>https://jeremyfontenot.online/proof.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/dashboard.html</loc></url>
   <url><loc>https://jeremyfontenot.online/resume.html</loc></url>
   <url><loc>https://jeremyfontenot.online/contact.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/infrastructure.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/microsoft-365-lab.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/active-directory-lab.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/network-segmentation.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/powershell-automation.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/service-desk-rca.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/evidence-library/index.html</loc></url>
-  <url><loc>https://jeremyfontenot.online/evidence/public/index.html</loc></url>
+  <url><loc>https://jeremyfontenot.online/evidence-library/</loc></url>
+  <url><loc>https://jeremyfontenot.online/evidence-library/preserved-sharepoint/</loc></url>
 </urlset>
