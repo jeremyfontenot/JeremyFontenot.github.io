@@ -30,6 +30,7 @@ jobs:
             --exclude='.github' \
             --exclude='legacy-site-backup' \
             --exclude='sorted-documents' \
+            --exclude='site' \
             ./ site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
