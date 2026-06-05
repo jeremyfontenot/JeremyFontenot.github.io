@@ -1,0 +1,19 @@
+{
+  "CreatedDateTime": "2026-02-17T01:44:02.9223181Z",
+  "DisplayName": "Blocked Countries",
+  "Id": "1331547e-646d-4e82-8c75-43c49c3fd631",
+  "ModifiedDateTime": "2026-02-17T01:44:02.9223181Z",
+  "AdditionalProperties": {
+    "@odata.type": "#microsoft.graph.countryNamedLocation",
+    "countriesAndRegions": [
+      "RU",
+      "CN",
+      "KP",
+      "IR",
+      "CU",
+      "SY"
+    ],
+    "includeUnknownCountriesAndRegions": true,
+    "countryLookupMethod": "clientIpAddress"
+  }
+}

@@ -1,0 +1,4 @@
+"Id","DisplayName","State","CreatedDateTime","ModifiedDateTime"
+"b40b535e-70b4-4ed6-9c89-693ec2efd13a","Microsoft-managed: Block legacy authentication","enabled","2/5/2026 6:27:12 AM","2/5/2026 4:13:44 PM"
+"d428d8d9-28b1-4c1b-969b-f11f53d028a8","Microsoft-managed: Require phishing-resistant multifactor authentication for admins","enabled","2/5/2026 6:27:12 AM","2/5/2026 4:12:50 PM"
+"040a5ab2-834c-4d5d-a485-f6bd6ae14d1a","Require MFA for All Users","enabled","2/19/2026 3:24:08 AM","4/6/2026 11:34:59 PM"

@@ -1,0 +1,54 @@
+{
+  "BackgroundColor": "#0A2E5C",
+  "BackgroundImage": null,
+  "BackgroundImageRelativeUrl": "dbd5a2dd-hxagazyq2rfq-u-kl4ekveixrb9fwzpxtab1m1ayb7y/logintenantbranding/0/illustration?ts=639085273145221307",
+  "BannerLogo": null,
+  "BannerLogoRelativeUrl": "dbd5a2dd-hxagazyq2rfq-u-kl4ekveixrb9fwzpxtab1m1ayb7y/logintenantbranding/0/bannerlogo?ts=639085273119457252",
+  "CdnList": [
+    "aadcdn.msftauthimages.net",
+    "aadcdn.msauthimages.net"
+  ],
+  "ContentCustomization": {
+    "AttributeCollection": [],
+    "AttributeCollectionRelativeUrl": null,
+    "RegistrationCampaign": [],
+    "RegistrationCampaignRelativeUrl": null
+  },
+  "CustomAccountResetCredentialsUrl": "https://login.microsoftonline.com",
+  "CustomCannotAccessYourAccountText": "Enter your company email (e.g., name@jeremyfontenot.online)",
+  "CustomCannotAccessYourAccountUrl": null,
+  "CustomCss": null,
+  "CustomCssRelativeUrl": "dbd5a2dd-hxagazyq2rfq-u-kl4ekveixrb9fwzpxtab1m1ayb7y/logintenantbranding/0/customcss?ts=639085273149149850",
+  "CustomForgotMyPasswordText": "Enter your password",
+  "CustomPrivacyAndCookiesText": "Privacy & Cookies",
+  "CustomPrivacyAndCookiesUrl": "https://contoso.com/privacy",
+  "CustomResetItNowText": null,
+  "CustomTermsOfUseText": "Terms of Use",
+  "CustomTermsOfUseUrl": "https://contoso.com/tou",
+  "Favicon": null,
+  "FaviconRelativeUrl": "dbd5a2dd-hxagazyq2rfq-u-kl4ekveixrb9fwzpxtab1m1ayb7y/logintenantbranding/0/favicon?ts=639085273111797149",
+  "HeaderBackgroundColor": null,
+  "HeaderLogo": null,
+  "HeaderLogoRelativeUrl": "dbd5a2dd-hxagazyq2rfq-u-kl4ekveixrb9fwzpxtab1m1ayb7y/logintenantbranding/0/headerlogo?ts=639085273125891265",
+  "Id": "0",
+  "LoginPageLayoutConfiguration": {
+    "IsFooterShown": true,
+    "IsHeaderShown": true,
+    "LayoutTemplateType": "default"
+  },
+  "LoginPageTextVisibilitySettings": {
+    "HideAccountResetCredentials": false,
+    "HideCannotAccessYourAccount": null,
+    "HideForgotMyPassword": null,
+    "HidePrivacyAndCookies": false,
+    "HideResetItNow": null,
+    "HideTermsOfUse": false
+  },
+  "SignInPageText": "Sign in with your company account.",
+  "SquareLogo": null,
+  "SquareLogoDark": null,
+  "SquareLogoDarkRelativeUrl": "dbd5a2dd-hxagazyq2rfq-u-kl4ekveixrb9fwzpxtab1m1ayb7y/logintenantbranding/0/squarelogodark?ts=639085273139021755",
+  "SquareLogoRelativeUrl": "dbd5a2dd-hxagazyq2rfq-u-kl4ekveixrb9fwzpxtab1m1ayb7y/logintenantbranding/0/tilelogo?ts=639085273132997590",
+  "UsernameHintText": "Enter your organization account",
+  "AdditionalProperties": {}
+}
