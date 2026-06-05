@@ -1,0 +1,1110 @@
+[
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "ca823448-c1b8-45b8-854d-e356f10c90be",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-02-13T05:11:54Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "Graph-Automation",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "036a1ef8-785f-4f92-8de8-1d327b1c83e5",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          },
+          {
+            "Id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+            "Type": "Role"
+          },
+          {
+            "Id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+            "Type": "Role"
+          },
+          {
+            "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+            "Type": "Role"
+          },
+          {
+            "Id": "62a82d76-70ea-41e2-9197-370581804d09",
+            "Type": "Role"
+          },
+          {
+            "Id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+            "Type": "Role"
+          },
+          {
+            "Id": "01c0a623-fc9b-48e9-b794-0756f8e8f067",
+            "Type": "Role"
+          },
+          {
+            "Id": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8",
+            "Type": "Role"
+          },
+          {
+            "Id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "63340487-1a4d-4f1d-a815-e8c321d28047",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-02-03T21:46:53Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "P2P Server",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "6c9c011e-74ab-4bce-9636-9432fbc89328",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "c02fe86e-090f-4682-aabd-832b69f3b984",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-02-17T23:18:55Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "M365-Lab-GraphPS",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "78845df3-fe4d-4d8e-9a1b-8066e3fc487a",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "863451e7-0667-486c-a5d6-d135439485f0",
+            "Type": "Scope"
+          },
+          {
+            "Id": "89fe6a52-be36-487e-b7d8-d061c450a026",
+            "Type": "Scope"
+          },
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          },
+          {
+            "Id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+            "Type": "Role"
+          },
+          {
+            "Id": "1138cb37-bd11-4084-a2b7-9f71582aeddb",
+            "Type": "Role"
+          },
+          {
+            "Id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+            "Type": "Role"
+          },
+          {
+            "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+            "Type": "Role"
+          },
+          {
+            "Id": "62a82d76-70ea-41e2-9197-370581804d09",
+            "Type": "Role"
+          },
+          {
+            "Id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+            "Type": "Role"
+          },
+          {
+            "Id": "37730810-e9ba-4e46-b07e-8ca78d182097",
+            "Type": "Role"
+          },
+          {
+            "Id": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8",
+            "Type": "Role"
+          },
+          {
+            "Id": "0c0bf378-bf22-4481-8f81-9e89a9b4960a",
+            "Type": "Role"
+          },
+          {
+            "Id": "9492366f-7969-46a4-8d15-ed1a20078fff",
+            "Type": "Role"
+          },
+          {
+            "Id": "3011c876-62b7-4ada-afa2-506cbbecc68c",
+            "Type": "Role"
+          },
+          {
+            "Id": "df021288-bdef-4463-88db-98f22de89214",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "1ec27675-470a-4e7d-9808-9722242b8f05",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-02-17T18:58:10Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "PnP.PowerShell (Jeremy)",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "99173909-1d05-4629-8f33-735dfa6ddf2a",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "56680e0d-d2a3-4ae1-80d8-3c4f2100e3d0",
+            "Type": "Scope"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0ff1-ce00-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "9b4f8be3-2be4-4efa-ab57-6f3926f16e5b",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-03-23T13:01:41Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "PnP-Classical-Automation",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "b33b389d-54fc-4920-96d7-f036d43c0291",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0ff1-ce00-000000000000"
+      },
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "fd8a5e95-fbeb-404a-b378-9c67231111a8",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-02-23T09:38:56Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "M365-Automation-App",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "b9bb4e96-1635-497b-89a8-e58205527e96",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+            "Type": "Role"
+          },
+          {
+            "Id": "a82116e5-55eb-4c41-a434-62fe8a61c773",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      },
+      {
+        "ResourceAccess": [
+          {
+            "Id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0ff1-ce00-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "5e42da9e-6405-4e7e-b342-5bf88cce47d5",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-02-12T08:45:45Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GraphPS",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "bdae853c-c2f8-4b7b-9ac7-61a2ea509bfa",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": null,
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": null,
+      "Oauth2PermissionScopes": null,
+      "PreAuthorizedApplications": null,
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "b942aeaa-edcd-498b-b1de-f6eea31a962e",
+    "AppManagementPolicies": null,
+    "AppRoles": null,
+    "ApplicationTemplateId": null,
+    "AuthenticationBehaviors": {
+      "BlockAzureAdGraphAccess": null,
+      "RemoveUnverifiedEmailClaim": null,
+      "RequireClientServicePrincipal": null
+    },
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2026-02-12T08:44:08Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GraphPS",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "e49da72c-906b-4f7e-bb11-787bf3f38a6d",
+    "IdentifierUris": null,
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": null,
+    "Logo": null,
+    "NativeAuthenticationApisEnabled": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": null,
+      "LegalAgeGroupRule": null
+    },
+    "PasswordCredentials": null,
+    "PublicClient": {
+      "RedirectUris": null
+    },
+    "PublisherDomain": "jeremyfontenot.online",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": null
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": null,
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": null,
+        "EnableIdTokenIssuance": null
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": null,
+      "RedirectUris": null
+    },
+    "AdditionalProperties": {}
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "DisplayName": "Arturo Torres",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true,
+    "AssignedLicenseCount": 0,
+    "AssignedPlanCount": 0,
+    "AssignedSkuIds": ""
+  },
+  {
+    "DisplayName": "Jeremy Fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true,
+    "AssignedLicenseCount": 0,
+    "AssignedPlanCount": 52,
+    "AssignedSkuIds": ""
+  },
+  {
+    "DisplayName": "jeremy fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true,
+    "AssignedLicenseCount": 3,
+    "AssignedPlanCount": 57,
+    "AssignedSkuIds": "5b631642-bd26-49fe-bd20-1daaa972ef80;f30db892-07e9-47e9-837c-80727f46fd3d;cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+  },
+  {
+    "DisplayName": "Lab Shared Mailbox",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": false,
+    "AssignedLicenseCount": 0,
+    "AssignedPlanCount": 0,
+    "AssignedSkuIds": ""
+  },
+  {
+    "DisplayName": "Passion Fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true,
+    "AssignedLicenseCount": 0,
+    "AssignedPlanCount": 52,
+    "AssignedSkuIds": ""
+  },
+  {
+    "DisplayName": "User One",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true,
+    "AssignedLicenseCount": 0,
+    "AssignedPlanCount": 52,
+    "AssignedSkuIds": ""
+  },
+  {
+    "DisplayName": "User Two",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true,
+    "AssignedLicenseCount": 0,
+    "AssignedPlanCount": 52,
+    "AssignedSkuIds": ""
+  }
+]

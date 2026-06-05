@@ -1,0 +1,67 @@
+**********************
+PowerShell transcript start
+Start time: 20260605043942
+Username: AzureAD\jeremyfontenot
+RunAs User: AzureAD\jeremyfontenot
+Configuration Name: 
+Machine: DESKTOP-MR3F9A1 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -RemoveWorkingDirectoryTrailingCharacter -WorkingDirectory C:\Users\jeremy\Documents\projects\jeremyfontenot! -Command $host.UI.RawUI.WindowTitle = 'PowerShell 7 (x64)'
+Process ID: 48348
+PSVersion: 7.6.2
+PSEdition: Core
+GitCommitId: 7.6.2
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is .\evidence-library\projects\microsoft-365-lab\entra-device-proof-20260605-043942\entra-device-proof-transcript-20260605-043942.txt
+Welcome to Microsoft Graph!
+
+Connected via delegated access using 14d82eec-204b-4c2f-b7e8-296a70dab67e
+Readme: https://aka.ms/graph/sdk/powershell
+SDK Docs: https://aka.ms/graph/sdk/powershell/docs
+API Docs: https://aka.ms/graph/docs
+
+NOTE: You can use the -NoWelcome parameter to suppress this message.
+NOTE: Sign in by Web Account Manager (WAM) is enabled by default on Windows systems and cannot be disabled when using the default ClientId.
+To disable WAM run Set-MgGraphOption -DisableLoginByWAM $true and then use a custom ClientId.
+Get-MgDeviceManagementManagedDevice_List: C:\Users\jeremy\Documents\projects\jeremyfontenot\Export-EntraDeviceProof.ps1:75
+Line |
+  75 |          Get-MgDeviceManagementManagedDevice -All -Property "Id,Device …
+     |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Parsing OData Select and Expand failed: Could not find a property named 'OwnerType' on type 'microsoft.graph.managedDevice'.  Status: 400 (BadRequest) ErrorCode: BadRequest Date: 2026-06-05T09:39:48  Headers: Transfer-Encoding             : chunked Vary                          : Accept-Encoding Strict-Transport-Security     : max-age=31536000 request-id                    : 7fe6aab5-ded1-4dec-9bf6-ad104daf8593 client-request-id             : 37cd7f90-52ca-4a1d-88f5-6b8075ea921e x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"South Central US","Slice":"E","Ring":"5","ScaleUnit":"005","RoleInstance":"SN4PEPF0000000C"}} Date                          : Fri, 05 Jun 2026 09:39:48 GMT  
+
+  Recommendation: See service error codes: https://learn.microsoft.com/graph/errors
+Get-MgDeviceManagementManagedDevice_List: C:\Users\jeremy\Documents\projects\jeremyfontenot\Export-EntraDeviceProof.ps1:75
+Line |
+  75 |          Get-MgDeviceManagementManagedDevice -All -Property "Id,Device …
+     |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Parsing OData Select and Expand failed: Could not find a property named 'OwnerType' on type
+     | 'microsoft.graph.managedDevice'.  Status: 400 (BadRequest) ErrorCode: BadRequest Date: 2026-06-05T09:39:48 
+     | Headers: Transfer-Encoding             : chunked Vary                          : Accept-Encoding
+     | Strict-Transport-Security     : max-age=31536000 request-id                    :
+     | 7fe6aab5-ded1-4dec-9bf6-ad104daf8593 client-request-id             : 37cd7f90-52ca-4a1d-88f5-6b8075ea921e
+     | x-ms-ags-diagnostic           : {"ServerInfo":{"DataCenter":"South Central
+     | US","Slice":"E","Ring":"5","ScaleUnit":"005","RoleInstance":"SN4PEPF0000000C"}} Date                          :
+     | Fri, 05 Jun 2026 09:39:48 GMT
+
+  Recommendation: See service error codes: https://learn.microsoft.com/graph/errors
+
+Name                                              Length LastWriteTime
+----                                              ------ -------------
+device-export-errors.csv                               0 6/5/2026 4:39:47 AM
+entra-device-proof-summary.json                      346 6/5/2026 4:39:47 AM
+entra-device-proof-transcript-20260605-043942.txt   2577 6/5/2026 4:39:47 AM
+entra-directory-devices.csv                         1218 6/5/2026 4:39:47 AM
+entra-directory-devices.json                        2548 6/5/2026 4:39:47 AM
+intune-managed-devices.csv                             0 6/5/2026 4:39:47 AM
+intune-managed-devices.json                            0 6/5/2026 4:39:47 AM
+README.md                                           1176 6/5/2026 4:39:47 AM
+
+**********************
+PowerShell transcript end
+End time: 20260605043947
+**********************

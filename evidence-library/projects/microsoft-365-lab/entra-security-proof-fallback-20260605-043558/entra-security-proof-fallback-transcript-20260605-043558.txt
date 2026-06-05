@@ -1,0 +1,62 @@
+**********************
+PowerShell transcript start
+Start time: 20260605043558
+Username: AzureAD\jeremyfontenot
+RunAs User: AzureAD\jeremyfontenot
+Configuration Name: 
+Machine: DESKTOP-MR3F9A1 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -RemoveWorkingDirectoryTrailingCharacter -WorkingDirectory C:\Users\jeremy\Documents\projects\jeremyfontenot! -Command $host.UI.RawUI.WindowTitle = 'PowerShell 7 (x64)'
+Process ID: 48348
+PSVersion: 7.6.2
+PSEdition: Core
+GitCommitId: 7.6.2
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is .\evidence-library\projects\microsoft-365-lab\entra-security-proof-fallback-20260605-043558\entra-security-proof-fallback-transcript-20260605-043558.txt
+Welcome to Microsoft Graph!
+
+Connected via delegated access using 14d82eec-204b-4c2f-b7e8-296a70dab67e
+Readme: https://aka.ms/graph/sdk/powershell
+SDK Docs: https://aka.ms/graph/sdk/powershell/docs
+API Docs: https://aka.ms/graph/docs
+
+NOTE: You can use the -NoWelcome parameter to suppress this message.
+NOTE: Sign in by Web Account Manager (WAM) is enabled by default on Windows systems and cannot be disabled when using the default ClientId.
+To disable WAM run Set-MgGraphOption -DisableLoginByWAM $true and then use a custom ClientId.
+True
+True
+True
+PS>TerminatingError(Invoke-MgGraphRequest): "GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: 817f9434-6cf3-4f9d-b18e-ccd061e4e434
+client-request-id: 0d54fd72-633e-4650-916f-27537b82effb
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"South Central US","Slice":"E","Ring":"5","ScaleUnit":"004","RoleInstance":"SA2PEPF000004B2"}}
+Date: Fri, 05 Jun 2026 09:36:01 GMT
+Content-Type: application/json
+
+{"error":{"code":"badRequest","message":"Resource not found for segment 'authenticationMethodsPolicy/authenticationMethodConfigurations'.","innerError":{"date":"2026-06-05T09:36:02","request-id":"817f9434-6cf3-4f9d-b18e-ccd061e4e434","client-request-id":"0d54fd72-633e-4650-916f-27537b82effb"}}}"
+False
+
+Name                                                         Length LastWriteTime
+----                                                         ------ -------------
+authentication-method-configurations-graph-request-beta.json    282 6/5/2026 4:36:01 AM
+authentication-method-policy-graph-request.json               10046 6/5/2026 4:36:01 AM
+conditional-access-policies-graph-request-beta.json            7871 6/5/2026 4:36:00 AM
+conditional-access-policies-graph-request.json                 7856 6/5/2026 4:35:59 AM
+entra-security-proof-fallback-summary.json                      293 6/5/2026 4:36:01 AM
+entra-security-proof-fallback-transcript-20260605-043558.txt   2423 6/5/2026 4:36:01 AM
+graph-request-errors.csv                                        241 6/5/2026 4:36:01 AM
+README.md                                                       899 6/5/2026 4:36:01 AM
+
+**********************
+PowerShell transcript end
+End time: 20260605043601
+**********************

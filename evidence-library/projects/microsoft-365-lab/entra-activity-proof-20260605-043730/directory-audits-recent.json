@@ -1,0 +1,2067 @@
+[
+  {
+    "ActivityDateTime": "2026-06-05T09:14:08.8876437Z",
+    "ActivityDisplayName": "Consent to application",
+    "AdditionalDetails": [
+      {
+        "Key": "User-Agent",
+        "Value": "EvoSTS"
+      },
+      {
+        "Key": "AppId",
+        "Value": "14d82eec-204b-4c2f-b7e8-296a70dab67e"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "Other"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "44d2f521-a6b3-4385-a618-4c3470bcff0d",
+    "Id": "Directory_44d2f521-a6b3-4385-a618-4c3470bcff0d_AYFOC_671542",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": "Azure ESTS Service",
+        "IPAddress": "52.237.182.198",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Assign",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Microsoft Graph Command Line Tools",
+        "GroupType": null,
+        "Id": "bba2ec08-c248-445d-aa8b-4e15119a94f6",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "ConsentContext.IsAdminConsent",
+            "NewValue": "\"True\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ConsentContext.IsAppOnly",
+            "NewValue": "\"False\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ConsentContext.OnBehalfOfAll",
+            "NewValue": "\"True\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ConsentContext.Tags",
+            "NewValue": "\"WindowsAzureActiveDirectoryIntegratedApp\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ConsentAction.Permissions",
+            "NewValue": "\"[[Id: COyiu0jCXUSqi04VEZqU9q9yHekl9WhBlUwr4cDqypA, ClientId: bba2ec08-c248-445d-aa8b-4e15119a94f6, PrincipalId: , ResourceId: e91d72af-f525-4168-954c-2be1c0eaca90, ConsentType: AllPrincipals, Scope: User.Read Group.ReadWrite.All openid profile offline_access User.ReadWrite.All Directory.ReadWrite.All RoleManagement.ReadWrite.Directory Policy.ReadWrite.ConditionalAccess Policy.Read.All Application.Read.All Group.Read.All Directory.Read.All email Organization.Read.All Sites.ReadWrite.All Files.ReadWrite.All Sites.Create.All Sites.Read.All User.Read.All AuditLog.Read.All DeviceManagementConfiguration.ReadWrite.All Reports.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All Sites.FullControl.All RoleManagement.Read.Directory Application.ReadWrite.All IdentityRiskEvent.Read.All IdentityRiskyUser.Read.All DeviceManagementConfiguration.Read.All Sites.Manage.All OrganizationalBranding.ReadWrite.All, CreatedDateTime: , LastModifiedDateTime ]] => [[Id: COyiu0jCXUSqi04VEZqU9q9yHekl9WhBlUwr4cDqypA, ClientId: bba2ec08-c248-445d-aa8b-4e15119a94f6, PrincipalId: , ResourceId: e91d72af-f525-4168-954c-2be1c0eaca90, ConsentType: AllPrincipals, Scope: User.Read Group.ReadWrite.All openid profile offline_access User.ReadWrite.All Directory.ReadWrite.All RoleManagement.ReadWrite.Directory Policy.ReadWrite.ConditionalAccess Policy.Read.All Application.Read.All Group.Read.All Directory.Read.All email Organization.Read.All Sites.ReadWrite.All Files.ReadWrite.All Sites.Create.All Sites.Read.All User.Read.All AuditLog.Read.All DeviceManagementConfiguration.ReadWrite.All Reports.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All Sites.FullControl.All RoleManagement.Read.Directory Application.ReadWrite.All IdentityRiskEvent.Read.All IdentityRiskyUser.Read.All DeviceManagementConfiguration.Read.All Sites.Manage.All OrganizationalBranding.ReadWrite.All, CreatedDateTime: , LastModifiedDateTime ]]; \"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T09:14:08.8706432Z",
+    "ActivityDisplayName": "Remove delegated permission grant",
+    "AdditionalDetails": [
+      {
+        "Key": "User-Agent",
+        "Value": "EvoSTS"
+      },
+      {
+        "Key": "AppId",
+        "Value": "00000003-0000-0000-c000-000000000000"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "Other"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "44d2f521-a6b3-4385-a618-4c3470bcff0d",
+    "Id": "Directory_44d2f521-a6b3-4385-a618-4c3470bcff0d_AYFOC_671529",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": "Azure ESTS Service",
+        "IPAddress": "52.237.182.198",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Unassign",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Microsoft Graph",
+        "GroupType": null,
+        "Id": "e91d72af-f525-4168-954c-2be1c0eaca90",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "DelegatedPermissionGrant.Scope",
+            "NewValue": "\"User.Read Group.ReadWrite.All openid profile offline_access User.ReadWrite.All Directory.ReadWrite.All RoleManagement.ReadWrite.Directory Policy.ReadWrite.ConditionalAccess Policy.Read.All Application.Read.All Group.Read.All Directory.Read.All email Organization.Read.All Sites.ReadWrite.All Files.ReadWrite.All Sites.Create.All Sites.Read.All User.Read.All AuditLog.Read.All DeviceManagementConfiguration.ReadWrite.All Reports.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All Sites.FullControl.All RoleManagement.Read.Directory Application.ReadWrite.All IdentityRiskEvent.Read.All IdentityRiskyUser.Read.All DeviceManagementConfiguration.Read.All Sites.Manage.All OrganizationalBranding.ReadWrite.All Device.Read.All EntitlementManagement.Read.All AccessReview.Read.All DeviceManagementApps.Read.All\"",
+            "OldValue": "\"User.Read Group.ReadWrite.All openid profile offline_access User.ReadWrite.All Directory.ReadWrite.All RoleManagement.ReadWrite.Directory Policy.ReadWrite.ConditionalAccess Policy.Read.All Application.Read.All Group.Read.All Directory.Read.All email Organization.Read.All Sites.ReadWrite.All Files.ReadWrite.All Sites.Create.All Sites.Read.All User.Read.All AuditLog.Read.All DeviceManagementConfiguration.ReadWrite.All Reports.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All Sites.FullControl.All RoleManagement.Read.Directory Application.ReadWrite.All IdentityRiskEvent.Read.All IdentityRiskyUser.Read.All DeviceManagementConfiguration.Read.All Sites.Manage.All OrganizationalBranding.ReadWrite.All\""
+          },
+          {
+            "DisplayName": "DelegatedPermissionGrant.ConsentType",
+            "NewValue": "\"AllPrincipals\"",
+            "OldValue": "\"AllPrincipals\""
+          },
+          {
+            "DisplayName": "ServicePrincipal.ObjectID",
+            "NewValue": "\"bba2ec08-c248-445d-aa8b-4e15119a94f6\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ServicePrincipal.DisplayName",
+            "NewValue": null,
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ServicePrincipal.AppId",
+            "NewValue": null,
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ServicePrincipal.Name",
+            "NewValue": null,
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.ServicePrincipalNames",
+            "NewValue": "\"00000003-0000-0000-c000-000000000000/ags.windows.net;00000003-0000-0000-c000-000000000000;https://canary.graph.microsoft.com;https://graph.microsoft.com;https://ags.windows.net;https://graph.microsoft.us;https://graph.microsoft.com/;https://dod-graph.microsoft.us;https://canary.graph.microsoft.com/;https://graph.microsoft.us/;https://dod-graph.microsoft.us/\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      },
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "bba2ec08-c248-445d-aa8b-4e15119a94f6",
+        "ModifiedProperties": [],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T09:14:08.8676438Z",
+    "ActivityDisplayName": "Add delegated permission grant",
+    "AdditionalDetails": [
+      {
+        "Key": "User-Agent",
+        "Value": "EvoSTS"
+      },
+      {
+        "Key": "AppId",
+        "Value": "00000003-0000-0000-c000-000000000000"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "Other"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "44d2f521-a6b3-4385-a618-4c3470bcff0d",
+    "Id": "Directory_44d2f521-a6b3-4385-a618-4c3470bcff0d_AYFOC_671516",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": "Azure ESTS Service",
+        "IPAddress": "52.237.182.198",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Assign",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Microsoft Graph",
+        "GroupType": null,
+        "Id": "e91d72af-f525-4168-954c-2be1c0eaca90",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "DelegatedPermissionGrant.Scope",
+            "NewValue": "\"User.Read Group.ReadWrite.All openid profile offline_access User.ReadWrite.All Directory.ReadWrite.All RoleManagement.ReadWrite.Directory Policy.ReadWrite.ConditionalAccess Policy.Read.All Application.Read.All Group.Read.All Directory.Read.All email Organization.Read.All Sites.ReadWrite.All Files.ReadWrite.All Sites.Create.All Sites.Read.All User.Read.All AuditLog.Read.All DeviceManagementConfiguration.ReadWrite.All Reports.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All Sites.FullControl.All RoleManagement.Read.Directory Application.ReadWrite.All IdentityRiskEvent.Read.All IdentityRiskyUser.Read.All DeviceManagementConfiguration.Read.All Sites.Manage.All OrganizationalBranding.ReadWrite.All Device.Read.All EntitlementManagement.Read.All AccessReview.Read.All DeviceManagementApps.Read.All\"",
+            "OldValue": "\"User.Read Group.ReadWrite.All openid profile offline_access User.ReadWrite.All Directory.ReadWrite.All RoleManagement.ReadWrite.Directory Policy.ReadWrite.ConditionalAccess Policy.Read.All Application.Read.All Group.Read.All Directory.Read.All email Organization.Read.All Sites.ReadWrite.All Files.ReadWrite.All Sites.Create.All Sites.Read.All User.Read.All AuditLog.Read.All DeviceManagementConfiguration.ReadWrite.All Reports.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All Sites.FullControl.All RoleManagement.Read.Directory Application.ReadWrite.All IdentityRiskEvent.Read.All IdentityRiskyUser.Read.All DeviceManagementConfiguration.Read.All Sites.Manage.All OrganizationalBranding.ReadWrite.All\""
+          },
+          {
+            "DisplayName": "DelegatedPermissionGrant.ConsentType",
+            "NewValue": "\"AllPrincipals\"",
+            "OldValue": "\"AllPrincipals\""
+          },
+          {
+            "DisplayName": "ServicePrincipal.ObjectID",
+            "NewValue": "\"bba2ec08-c248-445d-aa8b-4e15119a94f6\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ServicePrincipal.DisplayName",
+            "NewValue": null,
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ServicePrincipal.AppId",
+            "NewValue": null,
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ServicePrincipal.Name",
+            "NewValue": null,
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.ServicePrincipalNames",
+            "NewValue": "\"00000003-0000-0000-c000-000000000000/ags.windows.net;00000003-0000-0000-c000-000000000000;https://canary.graph.microsoft.com;https://graph.microsoft.com;https://ags.windows.net;https://graph.microsoft.us;https://graph.microsoft.com/;https://dod-graph.microsoft.us;https://canary.graph.microsoft.com/;https://graph.microsoft.us/;https://dod-graph.microsoft.us/\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      },
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "bba2ec08-c248-445d-aa8b-4e15119a94f6",
+        "ModifiedProperties": [],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:52:46.883655Z",
+    "ActivityDisplayName": "Validate user authentication",
+    "AdditionalDetails": [
+      {
+        "Key": "targetTenant",
+        "Value": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "Key": "targetEntityType",
+        "Value": "None"
+      },
+      {
+        "Key": "actorIdentityType",
+        "Value": "UPN"
+      },
+      {
+        "Key": "RequestId",
+        "Value": "70984332-e322-4c81-99fa-887486a910d1"
+      }
+    ],
+    "Category": "Authentication",
+    "CorrelationId": "70984332-e322-4c81-99fa-887486a910d1",
+    "Id": "B2C_70984332-e322-4c81-99fa-887486a910d1_53598f56-182f-4762-bd05-4586973fb766_134251231668836550",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": "jeremyfontenot@jeremyfontenot.online",
+        "IPAddress": "40.126.29.99",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "B2C",
+    "OperationType": "Read",
+    "Result": "success",
+    "ResultReason": "Token is valid",
+    "TargetResources": [
+      {
+        "DisplayName": "00000000-0000-0000-0000-000000000000",
+        "GroupType": null,
+        "Id": null,
+        "ModifiedProperties": [],
+        "Type": "Other",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:44:57.3660519Z",
+    "ActivityDisplayName": "Settings_GetSettingsAsync",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "e8671e81-ec7e-48c9-b56d-fdad10a76d25",
+    "Id": "SSGM_e8671e81-ec7e-48c9-b56d-fdad10a76d25_Y4QTH_417063330",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "104.210.141.149",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:44:27.2188778Z",
+    "ActivityDisplayName": "Settings_GetSettingsAsync",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "f10bb3ff-e4e3-43d1-9e32-fd17a87b1d16",
+    "Id": "SSGM_f10bb3ff-e4e3-43d1-9e32-fd17a87b1d16_CR77T_435931474",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "104.210.141.152",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:44:18.4566048Z",
+    "ActivityDisplayName": "Approval_GetAll",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "5e82fe70-9d17-4178-95cc-29ae768df3cc",
+    "Id": "SSGM_5e82fe70-9d17-4178-95cc-29ae768df3cc_MT88I_357332186",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "104.210.141.151",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:44:17.8940965Z",
+    "ActivityDisplayName": "Settings_GetSettingsAsync",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "66caec62-8bac-4e60-8398-25b16e75937e",
+    "Id": "SSGM_66caec62-8bac-4e60-8398-25b16e75937e_GORHR_447375278",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "104.210.141.152",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:44:17.506416Z",
+    "ActivityDisplayName": "Settings_GetSettingsAsync",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "d7f4820a-b082-421a-b713-35ddce0239d0",
+    "Id": "SSGM_d7f4820a-b082-421a-b713-35ddce0239d0_HNDZ9_966097",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "104.210.141.151",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:43:54.2942033Z",
+    "ActivityDisplayName": "User deleted security info",
+    "AdditionalDetails": [
+      {
+        "Key": "InitiatedFrom",
+        "Value": "ADIbizaUX (74658136-14ec-4630-ad9b-26e160ff0fc6)"
+      }
+    ],
+    "Category": "UserManagement",
+    "CorrelationId": "2dce4148-6178-4d5a-8502-308972501771",
+    "Id": "Authentication Methods_2dce4148-6178-4d5a-8502-308972501771_6TNUS_29870809",
+    "InitiatedBy": {
+      "App": {
+        "AppId": "74658136-14ec-4630-ad9b-26e160ff0fc6",
+        "DisplayName": "ADIbizaUX",
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": "jeremy fontenot",
+        "IPAddress": "2600:8807:2941:2500:2d80:7dd2:ace3:ab00",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "Authentication Methods",
+    "OperationType": "ServiceApi",
+    "Result": "clientError",
+    "ResultReason": "User failed to re-register one or many MFA authentication methods.",
+    "TargetResources": [
+      {
+        "DisplayName": "jeremy fontenot",
+        "GroupType": null,
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "ModifiedProperties": [],
+        "Type": "User",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:42:50.160921Z",
+    "ActivityDisplayName": "Validate user authentication",
+    "AdditionalDetails": [
+      {
+        "Key": "targetTenant",
+        "Value": "00000000-0000-0000-0000-000000000000"
+      },
+      {
+        "Key": "targetEntityType",
+        "Value": "None"
+      },
+      {
+        "Key": "actorIdentityType",
+        "Value": "UPN"
+      },
+      {
+        "Key": "RequestId",
+        "Value": "6050062c-73fc-47ca-8359-416387777415"
+      }
+    ],
+    "Category": "Authentication",
+    "CorrelationId": "6050062c-73fc-47ca-8359-416387777415",
+    "Id": "B2C_6050062c-73fc-47ca-8359-416387777415_53598f56-182f-4762-bd05-4586973fb766_134251225701609210",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": "jeremyfontenot@jeremyfontenot.online",
+        "IPAddress": "20.190.157.97",
+        "Id": "6bd62521-b7b1-4139-a2ca-4d6952d27e4c",
+        "UserPrincipalName": "jeremyfontenot@jeremyfontenot.online"
+      }
+    },
+    "LoggedByService": "B2C",
+    "OperationType": "Read",
+    "Result": "success",
+    "ResultReason": "Token is valid",
+    "TargetResources": [
+      {
+        "DisplayName": "00000000-0000-0000-0000-000000000000",
+        "GroupType": null,
+        "Id": null,
+        "ModifiedProperties": [],
+        "Type": "Other",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:34:11.0894604Z",
+    "ActivityDisplayName": "Add service principal",
+    "AdditionalDetails": [
+      {
+        "Key": "AppId",
+        "Value": "d360971a-94de-4558-b764-dfd218a8f5ce"
+      },
+      {
+        "Key": "AppOwnerOrganizationId",
+        "Value": "f8cdef31-a31e-4b4a-93e4-5f571e91255a"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "AzureResourceProvider"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "bbcee678-5d38-481a-9d6c-717f36e02b98",
+    "Id": "Directory_bbcee678-5d38-481a-9d6c-717f36e02b98_8KC49_2898158",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Resource Manager",
+        "ServicePrincipalId": "e2a0a095-f563-4190-839f-0b22ee404606",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Add",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Microsoft PrivateStore",
+        "GroupType": null,
+        "Id": "dbd66814-3d60-4cee-a370-02e371cfe1b3",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "AccountEnabled",
+            "NewValue": "[true]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "AppPrincipalId",
+            "NewValue": "[\"d360971a-94de-4558-b764-dfd218a8f5ce\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "DisplayName",
+            "NewValue": "[\"Microsoft PrivateStore\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "ServicePrincipalName",
+            "NewValue": "[\"d360971a-94de-4558-b764-dfd218a8f5ce\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Credential",
+            "NewValue": "[{\"CredentialType\":2,\"KeyStoreId\":\"291154f0-a9f5-45bb-87be-9c8ee5b6d62c\",\"KeyGroupId\":\"79e0ae3e-63ee-46ab-ac12-f54c45189e08\"}]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"AccountEnabled, AppPrincipalId, DisplayName, ServicePrincipalName, Credential\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:34:11.0762572Z",
+    "ActivityDisplayName": "Add service principal",
+    "AdditionalDetails": [
+      {
+        "Key": "AppId",
+        "Value": "597cd9fe-6340-49a7-a0e3-8af00a7e1730"
+      },
+      {
+        "Key": "AppOwnerOrganizationId",
+        "Value": "f8cdef31-a31e-4b4a-93e4-5f571e91255a"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "AzureResourceProvider"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "b27a10d1-eeaa-4c6d-8be4-10bfb9934ee4",
+    "Id": "Directory_b27a10d1-eeaa-4c6d-8be4-10bfb9934ee4_2BSCB_5777900",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Resource Manager",
+        "ServicePrincipalId": "e2a0a095-f563-4190-839f-0b22ee404606",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Add",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Marketplace Rating and Reviews PROD",
+        "GroupType": null,
+        "Id": "bf42eee6-2578-449d-abee-d3ce36f8a0ff",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "AccountEnabled",
+            "NewValue": "[true]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "AppPrincipalId",
+            "NewValue": "[\"597cd9fe-6340-49a7-a0e3-8af00a7e1730\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "DisplayName",
+            "NewValue": "[\"Marketplace Rating and Reviews PROD\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "ServicePrincipalName",
+            "NewValue": "[\"597cd9fe-6340-49a7-a0e3-8af00a7e1730\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Credential",
+            "NewValue": "[{\"CredentialType\":2,\"KeyStoreId\":\"291154f0-a9f5-45bb-87be-9c8ee5b6d62c\",\"KeyGroupId\":\"6bdb6ec5-2b8d-47da-a0a0-3fc5dc108e9c\"}]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"AccountEnabled, AppPrincipalId, DisplayName, ServicePrincipalName, Credential\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:34:11.0646312Z",
+    "ActivityDisplayName": "Add service principal",
+    "AdditionalDetails": [
+      {
+        "Key": "AppId",
+        "Value": "87df0fbf-e22d-4d7c-bc30-f59ca7460837"
+      },
+      {
+        "Key": "AppOwnerOrganizationId",
+        "Value": "f8cdef31-a31e-4b4a-93e4-5f571e91255a"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "AzureResourceProvider"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "7fe486e9-544c-4e06-8dce-8906561efcdc",
+    "Id": "Directory_7fe486e9-544c-4e06-8dce-8906561efcdc_GSD4Z_3372164",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Resource Manager",
+        "ServicePrincipalId": "e2a0a095-f563-4190-839f-0b22ee404606",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Add",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Microsoft Solution Providers",
+        "GroupType": null,
+        "Id": "59827f3d-5693-4631-8f54-ec1917bef9cd",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "AccountEnabled",
+            "NewValue": "[true]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "AppPrincipalId",
+            "NewValue": "[\"87df0fbf-e22d-4d7c-bc30-f59ca7460837\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "DisplayName",
+            "NewValue": "[\"Microsoft Solution Providers\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "ServicePrincipalName",
+            "NewValue": "[\"87df0fbf-e22d-4d7c-bc30-f59ca7460837\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Credential",
+            "NewValue": "[{\"CredentialType\":2,\"KeyStoreId\":\"291154f0-a9f5-45bb-87be-9c8ee5b6d62c\",\"KeyGroupId\":\"cfd47200-af46-463f-b96e-d5e798af174b\"}]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"AccountEnabled, AppPrincipalId, DisplayName, ServicePrincipalName, Credential\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:34:10.9950167Z",
+    "ActivityDisplayName": "Add service principal",
+    "AdditionalDetails": [
+      {
+        "Key": "AppId",
+        "Value": "a5ce81bb-67c7-4043-952a-22004782adb5"
+      },
+      {
+        "Key": "AppOwnerOrganizationId",
+        "Value": "f8cdef31-a31e-4b4a-93e4-5f571e91255a"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "AzureResourceProvider"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "34d3d180-af7e-4239-9e8e-e6df1cb659a5",
+    "Id": "Directory_34d3d180-af7e-4239-9e8e-e6df1cb659a5_F8B5N_29358678",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Resource Manager",
+        "ServicePrincipalId": "e2a0a095-f563-4190-839f-0b22ee404606",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Add",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Marketplace Catalog",
+        "GroupType": null,
+        "Id": "e5cda4b1-c7a9-447b-bae6-7af569c0f1b7",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "AccountEnabled",
+            "NewValue": "[true]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "AppAddress",
+            "NewValue": "[{\"AddressType\":4,\"Address\":\"https://df.marketplacerp.azure-test.net/logout\",\"ReplyAddressClientType\":0,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false}]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "AppPrincipalId",
+            "NewValue": "[\"a5ce81bb-67c7-4043-952a-22004782adb5\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "DisplayName",
+            "NewValue": "[\"Marketplace Catalog\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "ServicePrincipalName",
+            "NewValue": "[\"a5ce81bb-67c7-4043-952a-22004782adb5\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Credential",
+            "NewValue": "[{\"CredentialType\":2,\"KeyStoreId\":\"291154f0-a9f5-45bb-87be-9c8ee5b6d62c\",\"KeyGroupId\":\"60d599f0-f5a9-49e8-b110-d32e4125b823\"}]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"AccountEnabled, AppAddress, AppPrincipalId, DisplayName, ServicePrincipalName, Credential\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:34:10.9414603Z",
+    "ActivityDisplayName": "Add service principal",
+    "AdditionalDetails": [
+      {
+        "Key": "AppId",
+        "Value": "a0e1e353-1a3e-42cf-a8ea-3a9746eec58c"
+      },
+      {
+        "Key": "AppOwnerOrganizationId",
+        "Value": "f8cdef31-a31e-4b4a-93e4-5f571e91255a"
+      },
+      {
+        "Key": "ServicePrincipalProvisioningType",
+        "Value": "AzureResourceProvider"
+      }
+    ],
+    "Category": "ApplicationManagement",
+    "CorrelationId": "9387f75e-1006-47f6-b7df-1e63fffeb62b",
+    "Id": "Directory_9387f75e-1006-47f6-b7df-1e63fffeb62b_LNHN2_4061248",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Resource Manager",
+        "ServicePrincipalId": "e2a0a095-f563-4190-839f-0b22ee404606",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Add",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Microsoft AppSource",
+        "GroupType": null,
+        "Id": "8a0fbcbd-e788-4157-a88b-719e7ccc3ab2",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "AccountEnabled",
+            "NewValue": "[true]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "AppAddress",
+            "NewValue": "[{\"AddressType\":0,\"Address\":\"https://canary.marketplace.microsoft.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://marketplace.microsoft.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://appsource.microsoft.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://dewc.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://swn.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://koc.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://wus.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus2.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://jea.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://sea.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cus.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://weu.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cin.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://frc.prod.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://appgallery.spza-canary.net/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://wus.canary.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus2.canary.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cus.canary.appsource.azure.com/auth\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://canary.marketplace.microsoft.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://canary.marketplace.microsoft.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://marketplace.microsoft.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://marketplace.microsoft.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://dewc.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://dewc.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://swn.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://swn.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://wus.canary.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://wus.canary.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://koc.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://koc.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://wus.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://wus.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus2.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus2.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://jea.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://jea.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://sea.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://sea.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cus.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cus.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://weu.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://weu.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cin.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cin.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://frc.prod.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://frc.prod.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus2.canary.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://eus2.canary.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cus.canary.appsource.azure.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://cus.canary.appsource.azure.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://appgallery.spza-canary.net/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://appgallery.spza-canary.net/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://appsource.microsoft.com/auth-redirect.html\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false},{\"AddressType\":0,\"Address\":\"https://appsource.microsoft.com/redirect\",\"ReplyAddressClientType\":3,\"ReplyAddressIndex\":null,\"IsReplyAddressDefault\":false}]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "AppPrincipalId",
+            "NewValue": "[\"a0e1e353-1a3e-42cf-a8ea-3a9746eec58c\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "DisplayName",
+            "NewValue": "[\"Microsoft AppSource\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "ServicePrincipalName",
+            "NewValue": "[\"https://spza-canary.net\",\"https://spza-staging.net\",\"https://appsource.microsoft.com\",\"https://spza-prod.net\",\"a0e1e353-1a3e-42cf-a8ea-3a9746eec58c\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Credential",
+            "NewValue": "[{\"CredentialType\":2,\"KeyStoreId\":\"291154f0-a9f5-45bb-87be-9c8ee5b6d62c\",\"KeyGroupId\":\"fc72c244-3e5f-4de1-a9c5-dcc90a64d72a\"}]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "ServicePrincipalTag",
+            "NewValue": "[\"disableAcceptingTenantedPassthroughTokens\",\"disableRequestingTenantedPassthroughTokens\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"AccountEnabled, AppAddress, AppPrincipalId, DisplayName, ServicePrincipalName, Credential, ServicePrincipalTag\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "ServicePrincipal",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-05T08:24:43.0429084Z",
+    "ActivityDisplayName": "Set Company Information",
+    "AdditionalDetails": [
+      {
+        "Key": "User-Agent",
+        "Value": "O365AdminPortal"
+      }
+    ],
+    "Category": "DirectoryManagement",
+    "CorrelationId": "21631c19-164b-49d3-a34b-667a7735bfc0",
+    "Id": "Directory_21631c19-164b-49d3-a34b-667a7735bfc0_4TJXX_84240555",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Microsoft Office 365 Portal",
+        "ServicePrincipalId": "224c99c3-58e1-4e8b-b6be-87c731b669b8",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "jeremy fontenot",
+        "GroupType": null,
+        "Id": "53598f56-182f-4762-bd05-4586973fb766",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ActorId.ServicePrincipalNames",
+            "NewValue": "\"00000006-0000-0ff1-ce00-000000000000;https://sukportal.office.com;https://ejpportal.office.com;https://easportal.office.com;https://wusportal.office.com;https://seaportal.office.com;https://scuportal.office.com;https://eusportal.office.com;https://weuportal.office.com;https://ncuportalprv.office.com;https://scuportalprv.office.com;https://portal.office.com/;https://portal-sdf.office.com/;https://portal.office.com;https://wusportalprv.office.com;https://admin.microsoft.com;https://portal.microsoft.com;https://admin.microsoft365.com;https://admin-sdf.microsoft.com;https://admin-ignite.microsoft.com;https://wukportal.office.com/;https://naprodprv3.office.com;https://m365.admin.cloud.microsoft;api://auth-dc434a28-dc4b-4e7b-9fc2-76aed3dc8a0a/00000006-0000-0ff1-ce00-000000000000;api://auth-afd180b4-6c21-4545-9176-0043b8d68313/00000006-0000-0ff1-ce00-000000000000\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "SPN",
+            "NewValue": "\"00000006-0000-0ff1-ce00-000000000000;https://sukportal.office.com;https://ejpportal.office.com;https://easportal.office.com;https://wusportal.office.com;https://seaportal.office.com;https://scuportal.office.com;https://eusportal.office.com;https://weuportal.office.com;https://ncuportalprv.office.com;https://scuportalprv.office.com;https://portal.office.com/;https://portal-sdf.office.com/;https://portal.office.com;https://wusportalprv.office.com;https://admin.microsoft.com;https://portal.microsoft.com;https://admin.microsoft365.com;https://admin-sdf.microsoft.com;https://admin-ignite.microsoft.com;https://wukportal.office.com/;https://naprodprv3.office.com;https://m365.admin.cloud.microsoft;api://auth-dc434a28-dc4b-4e7b-9fc2-76aed3dc8a0a/00000006-0000-0ff1-ce00-000000000000;api://auth-afd180b4-6c21-4545-9176-0043b8d68313/00000006-0000-0ff1-ce00-000000000000\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Directory",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-06-03T10:51:06.5360192Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "41d6a76f-d818-440e-bd56-ef01b9e7e032",
+    "Id": "SSGM_41d6a76f-d818-440e-bd56-ef01b9e7e032_UGHON_266517775",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "40.126.23.162",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-31T10:41:26.3798107Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "fd3b3ed1-b064-4c18-ac82-2f4cbac17d1c",
+    "Id": "SSGM_fd3b3ed1-b064-4c18-ac82-2f4cbac17d1c_EAMHJ_241253715",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "20.190.190.161",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-28T04:49:28.7116992Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "cccd50ab-e061-400c-9a59-fa9e2e4ca09d",
+    "Id": "SSGM_cccd50ab-e061-400c-9a59-fa9e2e4ca09d_MKY0L_132541470",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "40.126.62.160",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-24T23:02:07.202494Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "0725d124-3056-4b57-826a-1c2cf32181d0",
+    "Id": "SSGM_0725d124-3056-4b57-826a-1c2cf32181d0_H5EI1_40142397",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "20.190.190.224",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-23T10:58:53.7375321Z",
+    "ActivityDisplayName": "Update device",
+    "AdditionalDetails": [
+      {
+        "Key": "DeviceId",
+        "Value": "bb81237e-3293-4a90-b17c-cf5127a04193"
+      },
+      {
+        "Key": "DeviceOSType",
+        "Value": "Windows"
+      },
+      {
+        "Key": "DeviceTrustType",
+        "Value": "AzureAd"
+      }
+    ],
+    "Category": "Device",
+    "CorrelationId": "7b10d32d-f7ba-4184-9e91-dac435911887",
+    "Id": "Directory_7b10d32d-f7ba-4184-9e91-dac435911887_AQVK2_188523626",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Device Registration Service",
+        "ServicePrincipalId": "148e64d9-3a4d-4abc-a341-17fbb018aa6f",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "DESKTOP-MR3F9A1",
+        "GroupType": null,
+        "Id": "ea0c56f4-8ac0-4248-a358-d711070688dc",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceId",
+            "NewValue": "\"bb81237e-3293-4a90-b17c-cf5127a04193\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceOSType",
+            "NewValue": "\"Windows\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceTrustType",
+            "NewValue": "\"AzureAd\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Device",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-21T16:37:31.698572Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "446b1e48-ff1e-4093-ba98-66f27c09fa1b",
+    "Id": "SSGM_446b1e48-ff1e-4093-ba98-66f27c09fa1b_5QG1R_1207964",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "20.190.190.161",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-18T10:03:20.6048889Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "52ad67a5-d58d-491a-8196-0846fe523d81",
+    "Id": "SSGM_52ad67a5-d58d-491a-8196-0846fe523d81_8KQ3X_48790997",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "20.190.190.224",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-18T01:48:51.022373Z",
+    "ActivityDisplayName": "Update device",
+    "AdditionalDetails": [
+      {
+        "Key": "DeviceId",
+        "Value": "1eab1d5f-687b-476d-814c-14e3b3ea7a67"
+      },
+      {
+        "Key": "DeviceOSType",
+        "Value": "Windows"
+      },
+      {
+        "Key": "DeviceTrustType",
+        "Value": "Workplace"
+      }
+    ],
+    "Category": "Device",
+    "CorrelationId": "713ceed0-03c4-4f9f-9d6d-7dcbe606a496",
+    "Id": "Directory_713ceed0-03c4-4f9f-9d6d-7dcbe606a496_AUW6W_19433755",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Device Registration Service",
+        "ServicePrincipalId": "148e64d9-3a4d-4abc-a341-17fbb018aa6f",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "LENOVO-JF-DT01",
+        "GroupType": null,
+        "Id": "6a1f3a84-1b52-4057-bd6e-6a3903ccd746",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceId",
+            "NewValue": "\"1eab1d5f-687b-476d-814c-14e3b3ea7a67\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceOSType",
+            "NewValue": "\"Windows\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceTrustType",
+            "NewValue": "\"Workplace\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Device",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-15T20:38:18.9821758Z",
+    "ActivityDisplayName": "Authentication Methods Policy Update",
+    "AdditionalDetails": [],
+    "Category": "PolicyManagement",
+    "CorrelationId": "19daac45-ce94-4df3-ac83-9910bc33e706",
+    "Id": "Authentication Methods_19daac45-ce94-4df3-ac83-9910bc33e706_G3G43_192750215",
+    "InitiatedBy": {
+      "App": {
+        "AppId": "c08b5691-a358-4030-a1d2-f30d582aa722",
+        "DisplayName": "Microsoft Managed Policy Manager",
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Authentication Methods",
+    "OperationType": "ServiceApi",
+    "Result": "success",
+    "ResultReason": "NoContent",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": null,
+        "ModifiedProperties": [],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      },
+      {
+        "DisplayName": "Authentication Methods Policy",
+        "GroupType": null,
+        "Id": null,
+        "ModifiedProperties": [],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-15T20:38:18.8332287Z",
+    "ActivityDisplayName": "Update policy",
+    "AdditionalDetails": [],
+    "Category": "Policy",
+    "CorrelationId": "bf53cae6-6f62-4747-b5f7-ab22345124d1",
+    "Id": "Directory_bf53cae6-6f62-4747-b5f7-ab22345124d1_7W7O5_122557706",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Credential Configuration Endpoint Service",
+        "ServicePrincipalId": "a7b1e01f-6c2c-4561-97dc-2be93b2e9eda",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Default Policy",
+        "GroupType": null,
+        "Id": "c75b0c63-1d58-42d6-b98a-73c0b3be0d8b",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-15T20:38:18.4830437Z",
+    "ActivityDisplayName": "Update policy",
+    "AdditionalDetails": [],
+    "Category": "Policy",
+    "CorrelationId": "b27d891a-5264-407e-aa2e-b8a9da9ca091",
+    "Id": "Directory_b27d891a-5264-407e-aa2e-b8a9da9ca091_PTEY4_342909747",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Credential Configuration Endpoint Service",
+        "ServicePrincipalId": "a7b1e01f-6c2c-4561-97dc-2be93b2e9eda",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Fido Policy",
+        "GroupType": null,
+        "Id": "34c5e96e-0212-488f-b682-78c1d01957c0",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-15T03:09:18.2930569Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "249b5ead-4bee-4a3a-b859-c5fb548e3572",
+    "Id": "SSGM_249b5ead-4bee-4a3a-b859-c5fb548e3572_QHV3N_16369152",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "20.190.190.224",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-14T23:28:28.777852Z",
+    "ActivityDisplayName": "Authentication Methods Policy Update",
+    "AdditionalDetails": [],
+    "Category": "PolicyManagement",
+    "CorrelationId": "440ec700-a27e-42a0-8bd9-42630fe578d1",
+    "Id": "Authentication Methods_440ec700-a27e-42a0-8bd9-42630fe578d1_ZIDEC_169256943",
+    "InitiatedBy": {
+      "App": {
+        "AppId": "c08b5691-a358-4030-a1d2-f30d582aa722",
+        "DisplayName": "Microsoft Managed Policy Manager",
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Authentication Methods",
+    "OperationType": "ServiceApi",
+    "Result": "success",
+    "ResultReason": "NoContent",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": null,
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Policy.RegistrationEnforcement",
+            "NewValue": "\"{\\\"authenticationMethodsRegistrationCampaign\\\":{\\\"excludeTargets\\\":[],\\\"includeTargets\\\":[{\\\"id\\\":\\\"all_users\\\",\\\"targetType\\\":1,\\\"targetedAuthenticationMethod\\\":\\\"FIDO2\\\"}],\\\"snoozeDurationInDays\\\":1,\\\"enforceRegistrationAfterAllowedSnoozes\\\":false,\\\"state\\\":0}}\"",
+            "OldValue": "\"{\\\"authenticationMethodsRegistrationCampaign\\\":{\\\"excludeTargets\\\":[],\\\"includeTargets\\\":[{\\\"id\\\":\\\"all_users\\\",\\\"targetType\\\":1,\\\"targetedAuthenticationMethod\\\":\\\"microsoftAuthenticator\\\"}],\\\"snoozeDurationInDays\\\":1,\\\"enforceRegistrationAfterAllowedSnoozes\\\":true,\\\"state\\\":0}}\""
+          },
+          {
+            "DisplayName": "Policy.Features",
+            "NewValue": "\"3\"",
+            "OldValue": "\"0\""
+          }
+        ],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      },
+      {
+        "DisplayName": "Authentication Methods Policy",
+        "GroupType": null,
+        "Id": null,
+        "ModifiedProperties": [],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-14T23:28:28.6873957Z",
+    "ActivityDisplayName": "Update policy",
+    "AdditionalDetails": [],
+    "Category": "Policy",
+    "CorrelationId": "3025ca32-59de-4a84-ad12-22e17327aa18",
+    "Id": "Directory_3025ca32-59de-4a84-ad12-22e17327aa18_TFN4C_89240676",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Credential Configuration Endpoint Service",
+        "ServicePrincipalId": "a7b1e01f-6c2c-4561-97dc-2be93b2e9eda",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Default Policy",
+        "GroupType": null,
+        "Id": "c75b0c63-1d58-42d6-b98a-73c0b3be0d8b",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-14T23:28:28.335652Z",
+    "ActivityDisplayName": "Add policy",
+    "AdditionalDetails": [],
+    "Category": "Policy",
+    "CorrelationId": "529b8a42-7d5c-48f9-9c74-3ab997852f57",
+    "Id": "Directory_529b8a42-7d5c-48f9-9c74-3ab997852f57_J237Q_2046920",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Azure Credential Configuration Endpoint Service",
+        "ServicePrincipalId": "a7b1e01f-6c2c-4561-97dc-2be93b2e9eda",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Add",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "Fido Policy",
+        "GroupType": null,
+        "Id": "34c5e96e-0212-488f-b682-78c1d01957c0",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "DisplayName",
+            "NewValue": "[\"Fido Policy\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "PolicyType",
+            "NewValue": "[\"UserCredentialPolicy\"]",
+            "OldValue": "[]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"DisplayName, PolicyType\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Policy",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-12T13:05:33.0591668Z",
+    "ActivityDisplayName": "Device no longer compliant",
+    "AdditionalDetails": [],
+    "Category": "Device",
+    "CorrelationId": "49ac39aa-8001-47e0-81bf-5f2270ba08f6",
+    "Id": "Directory_49ac39aa-8001-47e0-81bf-5f2270ba08f6_KHNCC_12271937",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Intune Compliance Client Prod",
+        "ServicePrincipalId": "596e7288-b1c8-48e3-bcc9-65002ce076f8",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "DESKTOP-MR3F9A1",
+        "GroupType": null,
+        "Id": "ea0c56f4-8ac0-4248-a358-d711070688dc",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "IsCompliant",
+            "NewValue": "[false]",
+            "OldValue": "[true]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"IsCompliant\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceId",
+            "NewValue": "\"bb81237e-3293-4a90-b17c-cf5127a04193\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceOSType",
+            "NewValue": "\"Windows\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceTrustType",
+            "NewValue": "\"AzureAd\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ActorId.ServicePrincipalNames",
+            "NewValue": "\"a882f5bd-2492-44fe-bb55-a811aab59451\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "SPN",
+            "NewValue": "\"a882f5bd-2492-44fe-bb55-a811aab59451\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Device",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-12T13:05:33.0581046Z",
+    "ActivityDisplayName": "Update device",
+    "AdditionalDetails": [
+      {
+        "Key": "DeviceId",
+        "Value": "bb81237e-3293-4a90-b17c-cf5127a04193"
+      },
+      {
+        "Key": "DeviceOSType",
+        "Value": "Windows"
+      },
+      {
+        "Key": "DeviceTrustType",
+        "Value": "AzureAd"
+      }
+    ],
+    "Category": "Device",
+    "CorrelationId": "49ac39aa-8001-47e0-81bf-5f2270ba08f6",
+    "Id": "Directory_49ac39aa-8001-47e0-81bf-5f2270ba08f6_KHNCC_12271930",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Intune Compliance Client Prod",
+        "ServicePrincipalId": "596e7288-b1c8-48e3-bcc9-65002ce076f8",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "DESKTOP-MR3F9A1",
+        "GroupType": null,
+        "Id": "ea0c56f4-8ac0-4248-a358-d711070688dc",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "IsCompliant",
+            "NewValue": "[false]",
+            "OldValue": "[true]"
+          },
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"IsCompliant\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceId",
+            "NewValue": "\"bb81237e-3293-4a90-b17c-cf5127a04193\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceOSType",
+            "NewValue": "\"Windows\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceTrustType",
+            "NewValue": "\"AzureAd\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "ActorId.ServicePrincipalNames",
+            "NewValue": "\"a882f5bd-2492-44fe-bb55-a811aab59451\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "SPN",
+            "NewValue": "\"a882f5bd-2492-44fe-bb55-a811aab59451\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Device",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-11T20:58:12.4684449Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "0ec44bea-e375-4329-b3b3-2a751e24c87b",
+    "Id": "SSGM_0ec44bea-e375-4329-b3b3-2a751e24c87b_HOIKY_171237084",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "20.190.190.224",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-09T07:37:10.50379Z",
+    "ActivityDisplayName": "Update device",
+    "AdditionalDetails": [
+      {
+        "Key": "DeviceId",
+        "Value": "bb81237e-3293-4a90-b17c-cf5127a04193"
+      },
+      {
+        "Key": "DeviceOSType",
+        "Value": "Windows"
+      },
+      {
+        "Key": "DeviceTrustType",
+        "Value": "AzureAd"
+      }
+    ],
+    "Category": "Device",
+    "CorrelationId": "f871a169-c8f8-4b7a-a9ee-00c5d3332397",
+    "Id": "Directory_f871a169-c8f8-4b7a-a9ee-00c5d3332397_2D58U_101894218",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": "Device Registration Service",
+        "ServicePrincipalId": "148e64d9-3a4d-4abc-a341-17fbb018aa6f",
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": null,
+        "Id": null,
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Core Directory",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "",
+    "TargetResources": [
+      {
+        "DisplayName": "DESKTOP-MR3F9A1",
+        "GroupType": null,
+        "Id": "ea0c56f4-8ac0-4248-a358-d711070688dc",
+        "ModifiedProperties": [
+          {
+            "DisplayName": "Included Updated Properties",
+            "NewValue": "\"\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceId",
+            "NewValue": "\"bb81237e-3293-4a90-b17c-cf5127a04193\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceOSType",
+            "NewValue": "\"Windows\"",
+            "OldValue": null
+          },
+          {
+            "DisplayName": "TargetId.DeviceTrustType",
+            "NewValue": "\"AzureAd\"",
+            "OldValue": null
+          }
+        ],
+        "Type": "Device",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  },
+  {
+    "ActivityDateTime": "2026-05-08T15:31:50.1571986Z",
+    "ActivityDisplayName": "GroupLifecyclePolicies_Get",
+    "AdditionalDetails": [],
+    "Category": "GroupManagement",
+    "CorrelationId": "f41818b5-3884-49a7-bdf7-0e2a51140ae0",
+    "Id": "SSGM_f41818b5-3884-49a7-bdf7-0e2a51140ae0_C7GS2_100763461",
+    "InitiatedBy": {
+      "App": {
+        "AppId": null,
+        "DisplayName": null,
+        "ServicePrincipalId": null,
+        "ServicePrincipalName": null
+      },
+      "User": {
+        "DisplayName": null,
+        "IPAddress": "40.126.62.160",
+        "Id": "022870b2-24a4-4946-a144-1f9b27aa21d3",
+        "UserPrincipalName": null
+      }
+    },
+    "LoggedByService": "Self-service Group Management",
+    "OperationType": "Update",
+    "Result": "success",
+    "ResultReason": "OK",
+    "TargetResources": [
+      {
+        "DisplayName": null,
+        "GroupType": null,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "ModifiedProperties": [],
+        "Type": "N/A",
+        "UserPrincipalName": null
+      }
+    ],
+    "AdditionalProperties": {}
+  }
+]

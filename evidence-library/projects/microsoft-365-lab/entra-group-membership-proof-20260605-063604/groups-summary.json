@@ -1,0 +1,82 @@
+[
+  {
+    "DisplayName": "All Users",
+    "Description": "Auto generated group, do not change",
+    "GroupTypes": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "Visibility": null,
+    "CreatedDateTime": "2026-02-20T02:00:14Z",
+    "MemberCount": 7
+  },
+  {
+    "DisplayName": "jeremy fontenot",
+    "Description": null,
+    "GroupTypes": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "Visibility": "Public",
+    "CreatedDateTime": "2026-02-02T18:35:22Z",
+    "MemberCount": 6
+  },
+  {
+    "DisplayName": "Lab-Security-Users",
+    "Description": "Lab security group for access targeting (CA/Intune/tests)",
+    "GroupTypes": "",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "Visibility": null,
+    "CreatedDateTime": "2026-02-19T03:13:04Z",
+    "MemberCount": 2
+  },
+  {
+    "DisplayName": "All Company",
+    "Description": "This is the default group for everyone in the network",
+    "GroupTypes": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "Visibility": "Public",
+    "CreatedDateTime": "2026-02-02T18:41:00Z",
+    "MemberCount": 1
+  },
+  {
+    "DisplayName": "SG-Require-MFA",
+    "Description": "Users required to use MFA",
+    "GroupTypes": "",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "Visibility": null,
+    "CreatedDateTime": "2026-02-13T05:42:37Z",
+    "MemberCount": 0
+  },
+  {
+    "DisplayName": "Group for Answers in Viva Engage – DO NOT DELETE 178272927744",
+    "Description": "Group that stores content and metadata for Answers in Viva Engage in network 178272927744. Deleting this this group will disrupt Answers in Viva Engage.",
+    "GroupTypes": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "Visibility": "Public",
+    "CreatedDateTime": "2026-02-02T19:10:50Z",
+    "MemberCount": 0
+  },
+  {
+    "DisplayName": "SG-Block-Legacy-Auth",
+    "Description": "Block legacy authentication",
+    "GroupTypes": "",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "Visibility": null,
+    "CreatedDateTime": "2026-02-13T05:42:38Z",
+    "MemberCount": 1
+  },
+  {
+    "DisplayName": "Lab-M365-Group",
+    "Description": "Single Microsoft 365 Group for the personal lab (used for Teams later)",
+    "GroupTypes": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "Visibility": "Private",
+    "CreatedDateTime": "2026-02-19T03:17:26Z",
+    "MemberCount": 2
+  }
+]

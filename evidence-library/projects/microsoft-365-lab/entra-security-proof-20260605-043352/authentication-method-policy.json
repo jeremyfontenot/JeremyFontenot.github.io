@@ -1,0 +1,79 @@
+{
+  "AuthenticationMethodConfigurations": [
+    {
+      "ExcludeTargets": [],
+      "Id": "Fido2",
+      "State": "enabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "MicrosoftAuthenticator",
+      "State": "enabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "Sms",
+      "State": "disabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "TemporaryAccessPass",
+      "State": "enabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "SoftwareOath",
+      "State": "enabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "Voice",
+      "State": "disabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "Email",
+      "State": "enabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "X509Certificate",
+      "State": "disabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "VerifiableCredentials",
+      "State": "disabled"
+    },
+    {
+      "ExcludeTargets": [],
+      "Id": "QRCodePin",
+      "State": "disabled"
+    }
+  ],
+  "Description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
+  "DisplayName": "Authentication Methods Policy",
+  "Id": "authenticationMethodsPolicy",
+  "LastModifiedDateTime": "2026-05-15T20:38:18.1044294Z",
+  "PolicyMigrationState": null,
+  "PolicyVersion": "1.5",
+  "ReconfirmationInDays": null,
+  "RegistrationEnforcement": {
+    "AuthenticationMethodsRegistrationCampaign": {
+      "ExcludeTargets": [],
+      "IncludeTargets": [
+        {
+          "Id": "all_users",
+          "TargetType": "group",
+          "TargetedAuthenticationMethod": "FIDO2"
+        }
+      ],
+      "SnoozeDurationInDays": 1,
+      "State": "default"
+    }
+  },
+  "AdditionalProperties": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
+    "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations"
+  }
+}

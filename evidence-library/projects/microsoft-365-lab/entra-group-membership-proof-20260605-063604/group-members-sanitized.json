@@ -1,0 +1,211 @@
+[
+  {
+    "GroupDisplayName": "All Users",
+    "GroupType": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "jeremy fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "All Users",
+    "GroupType": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User One",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "All Users",
+    "GroupType": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User Two",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "All Users",
+    "GroupType": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "Lab Shared Mailbox",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": false
+  },
+  {
+    "GroupDisplayName": "All Users",
+    "GroupType": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "Arturo Torres",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "All Users",
+    "GroupType": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "Passion Fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "All Users",
+    "GroupType": "DynamicMembership",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "Jeremy Fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "jeremy fontenot",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "jeremy fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "jeremy fontenot",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User One",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "jeremy fontenot",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User Two",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "jeremy fontenot",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "Arturo Torres",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "jeremy fontenot",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "Passion Fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "jeremy fontenot",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "Jeremy Fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "Lab-Security-Users",
+    "GroupType": "",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User One",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "Lab-Security-Users",
+    "GroupType": "",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User Two",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "All Company",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "jeremy fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "SG-Block-Legacy-Auth",
+    "GroupType": "",
+    "SecurityEnabled": true,
+    "MailEnabled": false,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "jeremy fontenot",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "Lab-M365-Group",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User One",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  },
+  {
+    "GroupDisplayName": "Lab-M365-Group",
+    "GroupType": "Unified",
+    "SecurityEnabled": false,
+    "MailEnabled": true,
+    "MemberObjectType": "#microsoft.graph.user",
+    "MemberDisplay": "User Two",
+    "UPNDomain": "jeremyfontenot.online",
+    "UserType": "Member",
+    "AccountEnabled": true
+  }
+]

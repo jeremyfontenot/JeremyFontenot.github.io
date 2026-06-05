@@ -1,0 +1,47 @@
+**********************
+PowerShell transcript start
+Start time: 20260605063412
+Username: AzureAD\jeremyfontenot
+RunAs User: AzureAD\jeremyfontenot
+Configuration Name: 
+Machine: DESKTOP-MR3F9A1 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -RemoveWorkingDirectoryTrailingCharacter -WorkingDirectory C:\Users\jeremy\Documents\projects\jeremyfontenot! -Command $host.UI.RawUI.WindowTitle = 'PowerShell 7 (x64)'
+Process ID: 48348
+PSVersion: 7.6.2
+PSEdition: Core
+GitCommitId: 7.6.2
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is .\evidence-library\projects\microsoft-365-lab\entra-license-proof-20260605-063412\entra-license-proof-transcript-20260605-063412.txt
+Welcome to Microsoft Graph!
+
+Connected via delegated access using 14d82eec-204b-4c2f-b7e8-296a70dab67e
+Readme: https://aka.ms/graph/sdk/powershell
+SDK Docs: https://aka.ms/graph/sdk/powershell/docs
+API Docs: https://aka.ms/graph/docs
+
+NOTE: You can use the -NoWelcome parameter to suppress this message.
+NOTE: Sign in by Web Account Manager (WAM) is enabled by default on Windows systems and cannot be disabled when using the default ClientId.
+To disable WAM run Set-MgGraphOption -DisableLoginByWAM $true and then use a custom ClientId.
+
+Name                                               Length LastWriteTime
+----                                               ------ -------------
+entra-license-proof-summary.json                      380 6/5/2026 6:34:13 AM
+entra-license-proof-transcript-20260605-063412.txt    939 6/5/2026 6:34:12 AM
+license-export-errors.csv                               0 6/5/2026 6:34:13 AM
+README.md                                            1143 6/5/2026 6:34:13 AM
+subscribed-sku-service-plans.csv                     5900 6/5/2026 6:34:13 AM
+subscribed-skus-summary.csv                           381 6/5/2026 6:34:13 AM
+subscribed-skus.json                                15960 6/5/2026 6:34:13 AM
+user-license-assignments-sanitized.csv                709 6/5/2026 6:34:13 AM
+user-license-assignments-sanitized.json              1761 6/5/2026 6:34:13 AM
+
+**********************
+PowerShell transcript end
+End time: 20260605063413
+**********************

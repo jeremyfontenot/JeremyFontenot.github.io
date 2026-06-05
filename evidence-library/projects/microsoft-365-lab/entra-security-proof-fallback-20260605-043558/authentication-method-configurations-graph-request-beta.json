@@ -1,0 +1,6 @@
+{
+  "CapturedAt": "2026-06-05 04:36:01 -05:00",
+  "Uri": "https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
+  "Status": "Failed",
+  "Error": "Response status code does not indicate success: BadRequest (Bad Request)."
+}

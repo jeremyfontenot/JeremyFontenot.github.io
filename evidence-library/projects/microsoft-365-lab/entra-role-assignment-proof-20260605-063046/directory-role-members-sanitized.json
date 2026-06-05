@@ -1,0 +1,135 @@
+[
+  {
+    "RoleDisplayName": "User Administrator",
+    "RoleDescription": "Can manage all aspects of users and groups, including resetting passwords for limited admins.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Conditional Access Administrator",
+    "RoleDescription": "Can manage Conditional Access capabilities.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Security Administrator",
+    "RoleDescription": "Security Administrator allows ability to read and manage security configuration and reports.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Cloud Application Administrator",
+    "RoleDescription": "Can create and manage all aspects of app registrations and enterprise apps except App Proxy.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Global Reader",
+    "RoleDescription": "Can read everything that a Global Administrator can, but not update anything.",
+    "MemberType": "#microsoft.graph.user",
+    "MemberDisplay": "Arturo Torres",
+    "UPNDomain": "jeremyfontenot.online"
+  },
+  {
+    "RoleDisplayName": "Azure AD Joined Device Local Administrator",
+    "RoleDescription": "Users assigned to this role are added to the local administrators group on Microsoft Entra joined devices.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Intune Administrator",
+    "RoleDescription": "Can manage all aspects of the Intune product.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Billing Administrator",
+    "RoleDescription": "Can perform common billing related tasks like updating payment information.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Directory Readers",
+    "RoleDescription": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "SharePoint Administrator",
+    "RoleDescription": "Can manage all aspects of the SharePoint service.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Network Administrator",
+    "RoleDescription": "Can manage network locations and review enterprise network design insights for Microsoft 365 Software as a Service applications.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Cloud App Security Administrator",
+    "RoleDescription": "Can manage all aspects of the Cloud App Security product.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Helpdesk Administrator",
+    "RoleDescription": "Can reset passwords for non-administrators and Helpdesk Administrators.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Cloud Device Administrator",
+    "RoleDescription": "Limited access to manage devices in Microsoft Entra ID.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Global Administrator",
+    "RoleDescription": "Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.",
+    "MemberType": "#microsoft.graph.user",
+    "MemberDisplay": "jeremy fontenot",
+    "UPNDomain": "jeremyfontenot.online"
+  },
+  {
+    "RoleDisplayName": "Global Administrator",
+    "RoleDescription": "Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.",
+    "MemberType": "#microsoft.graph.user",
+    "MemberDisplay": "Passion Fontenot",
+    "UPNDomain": "jeremyfontenot.online"
+  },
+  {
+    "RoleDisplayName": "Global Administrator",
+    "RoleDescription": "Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.",
+    "MemberType": "#microsoft.graph.user",
+    "MemberDisplay": "Jeremy Fontenot",
+    "UPNDomain": "jeremyfontenot.online"
+  },
+  {
+    "RoleDisplayName": "Exchange Administrator",
+    "RoleDescription": "Can manage all aspects of the Exchange product.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  },
+  {
+    "RoleDisplayName": "Windows 365 Administrator",
+    "RoleDescription": "Can provision and manage all aspects of Cloud PCs.",
+    "MemberType": "None",
+    "MemberDisplay": "No members returned",
+    "UPNDomain": ""
+  }
+]

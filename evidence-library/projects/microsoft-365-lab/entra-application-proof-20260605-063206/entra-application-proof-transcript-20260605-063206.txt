@@ -1,0 +1,48 @@
+**********************
+PowerShell transcript start
+Start time: 20260605063206
+Username: AzureAD\jeremyfontenot
+RunAs User: AzureAD\jeremyfontenot
+Configuration Name: 
+Machine: DESKTOP-MR3F9A1 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -RemoveWorkingDirectoryTrailingCharacter -WorkingDirectory C:\Users\jeremy\Documents\projects\jeremyfontenot! -Command $host.UI.RawUI.WindowTitle = 'PowerShell 7 (x64)'
+Process ID: 48348
+PSVersion: 7.6.2
+PSEdition: Core
+GitCommitId: 7.6.2
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is .\evidence-library\projects\microsoft-365-lab\entra-application-proof-20260605-063206\entra-application-proof-transcript-20260605-063206.txt
+Welcome to Microsoft Graph!
+
+Connected via delegated access using 14d82eec-204b-4c2f-b7e8-296a70dab67e
+Readme: https://aka.ms/graph/sdk/powershell
+SDK Docs: https://aka.ms/graph/sdk/powershell/docs
+API Docs: https://aka.ms/graph/docs
+
+NOTE: You can use the -NoWelcome parameter to suppress this message.
+NOTE: Sign in by Web Account Manager (WAM) is enabled by default on Windows systems and cannot be disabled when using the default ClientId.
+To disable WAM run Set-MgGraphOption -DisableLoginByWAM $true and then use a custom ClientId.
+
+Name                                                   Length LastWriteTime
+----                                                   ------ -------------
+app-registrations-summary.csv                            1038 6/5/2026 6:32:07 AM
+app-registrations.json                                  31910 6/5/2026 6:32:07 AM
+application-export-errors.csv                               0 6/5/2026 6:32:08 AM
+enterprise-applications-service-principals.json        588291 6/5/2026 6:32:08 AM
+enterprise-applications-summary.csv                     22522 6/5/2026 6:32:08 AM
+entra-application-proof-summary.json                      382 6/5/2026 6:32:08 AM
+entra-application-proof-transcript-20260605-063206.txt    947 6/5/2026 6:32:06 AM
+oauth2-permission-grants-summary.csv                     3648 6/5/2026 6:32:08 AM
+oauth2-permission-grants.json                            6776 6/5/2026 6:32:08 AM
+README.md                                                1144 6/5/2026 6:32:08 AM
+
+**********************
+PowerShell transcript end
+End time: 20260605063208
+**********************

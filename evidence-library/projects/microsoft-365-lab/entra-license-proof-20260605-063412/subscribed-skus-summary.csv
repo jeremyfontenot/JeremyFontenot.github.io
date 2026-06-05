@@ -1,0 +1,4 @@
+"SkuPartNumber","SkuId","CapabilityStatus","ConsumedUnits","EnabledUnits","SuspendedUnits","WarningUnits","ServicePlanCount"
+"FLOW_FREE","f30db892-07e9-47e9-837c-80727f46fd3d","Enabled","1","10000","0","0","3"
+"SPB","cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46","Suspended","1","0","1","0","61"
+"POWERAPPS_DEV","5b631642-bd26-49fe-bd20-1daaa972ef80","Enabled","1","10000","0","0","4"
