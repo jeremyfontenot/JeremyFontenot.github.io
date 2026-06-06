@@ -1233,3 +1233,82 @@ body:has(.projects-proof-footer) .page-hero-grid > .evidence-rail {
     width: 100%;
   }
 }
+
+/* Projects hero two-column restoration */
+.projects-hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(340px, .72fr);
+  align-items: center;
+}
+
+.projects-scope-card {
+  margin-top: clamp(2rem, 5vw, 4rem);
+  align-self: center;
+}
+
+.projects-scope-card h2 {
+  margin-bottom: 1rem;
+}
+
+.projects-hero .command-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin-top: .95rem;
+}
+
+.projects-hero .command-metrics span {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  min-height: 32px;
+  padding: .35rem .65rem;
+  border: 1px solid rgba(148, 163, 184, .16);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, .58);
+  color: var(--muted-strong);
+  font-size: .72rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.projects-hero .command-metrics b {
+  color: var(--accent);
+}
+
+@media (max-width: 980px) {
+  .projects-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-scope-card {
+    margin-top: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-hero .command-metrics span {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+/* Projects hero action spacing final polish */
+.projects-hero .actions {
+  margin-bottom: .85rem;
+}
+
+.projects-hero .command-metrics {
+  padding-top: .15rem;
+}
+
+.projects-hero .command-metrics span {
+  box-shadow:
+    0 8px 20px rgba(2, 6, 23, .18),
+    inset 0 1px 0 rgba(255, 255, 255, .035);
+}
+
+.projects-scope-card {
+  box-shadow:
+    0 24px 56px rgba(2, 6, 23, .34),
+    0 0 26px rgba(217, 70, 239, .10);
+}
