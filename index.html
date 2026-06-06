@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"Person","name":"Jeremy Fontenot","url":"https://jeremyfontenot.online/","jobTitle":"IT Support and Junior Systems Administration Candidate","knowsAbout":["Microsoft 365 administration","Microsoft Entra","Microsoft Graph PowerShell","Conditional Access review","Service desk support","Technical documentation"]}
 </script>
 </head>
-<body>
+<body class="home-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <nav class="nav" aria-label="Primary navigation">
@@ -32,7 +32,7 @@
   </nav>
 </header>
 <main id="main">
-  <section class="hero" aria-labelledby="hero-title">
+  <section class="hero page-shell" aria-labelledby="hero-title">
     <div class="hero-grid">
       <div class="hero-copy reveal">
         <p class="eyebrow">IT Support / Service Desk / Systems Administration</p>
@@ -43,14 +43,14 @@
           <a class="button" href="./proof.html">Open Proof Index</a>
           <a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Open M365 Summary</a>
         </div>
-        <div class="proof-chain" aria-label="Evidence review chain">
+        <div class="proof-chain" role="group" aria-label="Evidence review chain">
           <span>Claim</span>
           <span>Source file</span>
           <span>Evidence type</span>
           <span>Hash / inventory record</span>
         </div>
       </div>
-      <aside class="evidence-console reveal" aria-label="Verified evidence snapshot">
+      <aside class="review-console evidence-console verification-glow reveal" aria-label="Verified evidence snapshot">
         <div class="console-bar"><span>verified proof</span><span>2026-06-05</span></div>
         <div class="signal-stack">
           <a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/tenant-organization-domains-skus.json"><b>01</b><span>Tenant and domain proof</span><em>Tenant ID, organization, verified domains, SKUs</em></a>
@@ -60,11 +60,18 @@
         </div>
       </aside>
     </div>
+    <div class="command-band reveal" role="group" aria-label="Portfolio review status">
+      <span class="status-pill">Evidence-backed claims</span>
+      <span class="status-pill">Microsoft 365 / Entra scoped</span>
+      <span class="status-pill">Proof links inspectable</span>
+      <span class="status-pill">Unsupported impact claims excluded</span>
+    </div>
   </section>
+  <div class="visual-divider" aria-hidden="true"></div>
   <section class="section" aria-labelledby="verified-title">
     <div class="section-head reveal"><p class="eyebrow">Verified Focus Areas</p><h2 id="verified-title">Claims are limited to repository-backed Microsoft 365 and Entra evidence.</h2><p>The public surface stays within personal tenant evidence, documented admin-center review, exported policy records, sanitized inventory, and proof-governance controls.</p></div>
     <div class="capability-grid reveal">
-      <article class="capability-card"><span>Graph PowerShell</span><h3>Read-only evidence capture</h3><p>Captured tenant, identity, application, role, license, device, audit, and sign-in data through Microsoft Graph PowerShell exports.</p>
+      <article class="capability-card feature-card"><span>Graph PowerShell</span><h3>Read-only evidence capture</h3><p>Captured tenant, identity, application, role, license, device, audit, and sign-in data through Microsoft Graph PowerShell exports.</p>
           <div class="evidence-chips"><span>CSV</span><span>JSON</span><span>Screenshot</span><span>SHA-256</span></div><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Open Graph Export Evidence</a></article>
       <article class="capability-card"><span>Identity review</span><h3>Users, groups, roles, and domains</h3><p>Verified tenant identity, two verified domains, seven users, eight groups, and directory role exports.</p>
           <div class="evidence-chips"><span>Users</span><span>Groups</span><span>Roles</span><span>Domains</span></div><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Open Identity Inventory</a></article>
@@ -76,7 +83,7 @@
   </section>
   <section class="section" aria-labelledby="workflow-title">
     <div class="section-head reveal"><p class="eyebrow">Reviewer Path</p><h2 id="workflow-title">A short path from claim to source file.</h2></div>
-    <ol class="pipeline reveal">
+    <ol class="pipeline proof-rail reveal">
       <li><b>1</b><span>Read project summary and approved wording.</span></li>
       <li><b>2</b><span>Open CSV, JSON, screenshot, transcript, or hash proof.</span></li>
       <li><b>3</b><span>Check limitation notes for Intune, production, and client-scope boundaries.</span></li>
@@ -91,8 +98,8 @@
     </div>
   </section>
 </main>
-<footer class="site-footer home-proof-footer" aria-label="Site footer">
-  <div class="footer-proof-band" aria-label="Homepage proof status">
+<footer class="site-footer premium-footer home-proof-footer" aria-label="Site footer">
+  <div class="footer-proof-band" role="group" aria-label="Homepage proof status">
     <span><strong>Evidence</strong> repository-local</span>
     <span><strong>M365 / Entra</strong> proof mapped</span>
     <span><strong>Links</strong> validated</span>

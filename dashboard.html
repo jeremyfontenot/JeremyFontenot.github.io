@@ -19,16 +19,33 @@
 <link rel="stylesheet" href="./assets/css/site.css">
 <script src="./assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="dashboard-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><small>Evidence-first IT portfolio</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button><div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html">Proof</a><a href="./dashboard.html" aria-current="page">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div></nav></header>
-<main id="main" class="page">
+<main id="main" class="page page-shell">
   <section class="page-hero" aria-labelledby="dashboard-title">
-    <div class="hero-copy reveal"><p class="eyebrow">Captured evidence counts</p><h1 id="dashboard-title">Metrics are proof inventory counts, not operational impact claims.</h1><p class="lead">The dashboard summarizes records exported from the personal Microsoft 365 / Entra cloud administration lab and its proof inventory. These counts are evidence records, not employment results, external environment statistics, uptime figures, or impact metrics.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof Inventory CSV</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Hash Records CSV</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Proof Map</a></div></div>
+    <div class="page-hero-grid">
+      <div class="hero-copy reveal"><p class="eyebrow">Captured evidence counts</p><h1 id="dashboard-title">Governance metrics are proof inventory counts.</h1><p class="lead">The dashboard summarizes records exported from the personal Microsoft 365 / Entra cloud administration lab and its proof inventory. These counts are evidence records, not employment results, external environment statistics, uptime figures, or impact metrics.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof Inventory CSV</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Hash Records CSV</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Proof Map</a></div></div>
+      <aside class="review-console evidence-rail reveal" aria-label="Dashboard governance scope">
+        <h2>Dashboard scope</h2>
+        <ul class="check-list">
+          <li>Repository evidence counts only</li>
+          <li>No live telemetry claim</li>
+          <li>No uptime or production impact claim</li>
+          <li>Counts resolve to proof files</li>
+        </ul>
+      </aside>
+    </div>
+    <div class="command-band reveal" role="group" aria-label="Governance validation status">
+      <span class="status-pill">CI/CD surface documented</span>
+      <span class="status-pill">Lighthouse review path</span>
+      <span class="status-pill">Evidence integrity mapped</span>
+      <span class="status-pill">Local links validated</span>
+    </div>
   </section>
   <section class="section" aria-labelledby="counts-title">
     <div class="section-head reveal"><p class="eyebrow">Verified numbers</p><h2 id="counts-title">Repository-backed evidence inventory.</h2></div>
-    <div class="metric-grid reveal">
+    <div class="metric-grid bento-grid reveal">
       <div class="metric"><strong>87</strong><span>indexed proof files</span></div>
       <div class="metric"><strong>87</strong><span>SHA-256 hash records</span></div>
       <div class="metric"><strong>10</strong><span>evidence folders</span></div>
@@ -43,6 +60,15 @@
       <div class="metric"><strong>46</strong><span>directory audit export rows</span></div>
     </div>
   </section>
+  <section class="section" aria-labelledby="governance-title">
+    <div class="section-head reveal"><p class="eyebrow">Repository governance</p><h2 id="governance-title">Validation signals kept honest.</h2></div>
+    <div class="dashboard-grid reveal">
+      <article class="bento-card"><span class="tile-code">CI</span><h2>Static validation posture</h2><p>Repository workflow and local validation paths are treated as quality gates for public HTML, links, and evidence routing.</p></article>
+      <article class="bento-card"><span class="tile-code">LH</span><h2>Lighthouse review language</h2><p>Lighthouse is presented as a validation surface, not as a permanent live performance metric.</p></article>
+      <article class="bento-card"><span class="tile-code">SHA</span><h2>Evidence integrity</h2><p>Hash records provide reviewer inspection support for preserved proof files.</p></article>
+      <article class="bento-card"><span class="tile-code">SEO</span><h2>Recruiter-readable metadata</h2><p>Page titles, descriptions, canonical URLs, and Open Graph metadata support concise professional discovery.</p></article>
+    </div>
+  </section>
   <section class="section" aria-labelledby="source-title">
     <div class="section-head reveal"><p class="eyebrow">Source controls</p><h2 id="source-title">Counts resolve to evidence files.</h2></div>
     <div class="dashboard-grid reveal">
@@ -53,6 +79,6 @@
     </div>
   </section>
 </main>
-<footer class="site-footer" aria-label="Site footer"><p class="footer-meta">Dashboard metrics are captured evidence counts only.</p><nav class="footer-links" aria-label="Footer navigation"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html">Proof</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></nav></footer>
+<footer class="site-footer premium-footer" aria-label="Site footer"><p class="footer-meta">Dashboard metrics are captured evidence counts only; live telemetry and production impact are not claimed.</p><nav class="footer-links" aria-label="Footer navigation"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html">Proof</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></nav></footer>
 </body>
 </html>

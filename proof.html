@@ -22,21 +22,42 @@
 {"@context":"https://schema.org","@type":"CollectionPage","name":"Microsoft 365 and Entra proof index","url":"https://jeremyfontenot.online/proof.html","description":"Proof index linking public claims to Microsoft 365 and Entra repository evidence."}
 </script>
 </head>
-<body>
+<body class="proof-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><small>Evidence-first IT portfolio</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button><div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html" aria-current="page">Proof</a><a href="./dashboard.html">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div></nav></header>
-<main id="main" class="page">
+<main id="main" class="page page-shell">
   <section class="page-hero" aria-labelledby="proof-title">
     <div class="page-hero-grid">
-      <div class="hero-copy reveal"><p class="eyebrow">Authoritative proof index</p><h1 id="proof-title">Open the file behind each public claim.</h1><p class="lead">This proof index groups repository-local Microsoft 365 / Entra evidence by reviewer question. Status labels distinguish verified exports, sanitized exports, screenshots, transcripts, hash records, and documented limitations.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/README.md">Open Export README</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Open Proof Map</a></div></div>
-      <aside class="evidence-rail reveal"><h2>Reviewer warnings</h2><ul class="check-list"><li>Personal Microsoft 365 / Entra evidence only.</li><li>Intune is limited to documented validation attempts.</li><li>Public proof centers on cloud identity and admin evidence.</li><li>Subscription status is limited to exported SKU records.</li><li>External organization administration is not claimed.</li></ul></aside>
+      <div class="hero-copy reveal"><p class="eyebrow">Authoritative proof index</p><h1 id="proof-title">Open the source file behind each public claim.</h1><p class="lead">This proof index groups repository-local Microsoft 365 / Entra evidence by reviewer question. Status labels distinguish verified exports, sanitized exports, screenshots, transcripts, hash records, and documented limitations.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/README.md">Open Export README</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Open Proof Map</a></div></div>
+      <aside class="evidence-rail boundary-card reveal"><h2>Proof boundaries</h2><ul class="check-list"><li>Personal Microsoft 365 / Entra evidence only.</li><li>Intune is limited to documented validation attempts.</li><li>Public proof centers on cloud identity and admin evidence.</li><li>Subscription status is limited to exported SKU records.</li><li>external organization administration is not claimed.</li></ul></aside>
+    </div>
+    <div class="command-band proof-command-band reveal" role="group" aria-label="Proof status">
+      <span class="status-pill">Source files inspectable</span>
+      <span class="status-pill">proof inventory linked</span>
+      <span class="status-pill">SHA-256 hash records linked</span>
+      <span class="status-pill">limitation notes visible</span>
+    </div>
+    <div class="proof-rail proof-chain-rail reveal" role="group" aria-label="Evidence chain">
+      <span>Claim</span>
+      <span>Export</span>
+      <span>Screenshot</span>
+      <span>Inventory</span>
+      <span>Hash</span>
+    </div>
+  </section>
+  <section class="section proof-overview" aria-labelledby="proof-overview-title">
+    <div class="section-head reveal"><p class="eyebrow">Reviewer ground rules</p><h2 id="proof-overview-title">What this page proves.</h2><p>It proves that public Microsoft 365 and Entra claims are routed to repository-local evidence files, including CSV exports, JSON exports, screenshots, transcripts, proof inventory records, and hash records.</p></div>
+    <div class="bento-grid reveal">
+      <article class="bento-card feature-card"><span class="evidence-chip">Validates</span><h3>Repository-local evidence chain</h3><p>Each supported claim resolves to a source file or control file that can be inspected from this repository.</p></article>
+      <article class="bento-card boundary-card"><span class="evidence-chip">Boundary</span><h3>What this page does not claim.</h3><p>External organization administration is not claimed. Production impact metrics are not claimed. Current live telemetry is not claimed. Public claims stop where repository proof stops.</p></article>
+      <article class="bento-card"><span class="evidence-chip">Inspection</span><h3>Source-file review path</h3><p>Use the links below to inspect the export, screenshot, proof inventory, or hash record behind a public statement.</p></article>
     </div>
   </section>
   <section class="section" aria-labelledby="m365-proof-title">
     <div class="section-head reveal"><p class="eyebrow">Microsoft 365 / Entra evidence</p><h2 id="m365-proof-title">Grouped proof links with reviewer notes.</h2></div>
     <div class="proof-stream reveal">
-      <article class="proof-chip verified"><div><span class="chip-kind">Verified export / SHA-256 hash available</span><h3>Evidence control files</h3><p>Inventory, hash records, export manifest, live proof summary, and site proof map control how public claims map back to source files.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Live proof summary</a><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof inventory</a><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof hashes</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/microsoft-365-lab-evidence-manifest-20260605.csv">Export manifest</a><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Site proof map</a></div></div></article>
-      <article class="proof-chip verified"><div><span class="chip-kind">Verified export / Screenshot available</span><h3>Tenant identity, domain, admin center, and subscription visibility</h3><p>Validates tenant ID, organization display name, tenant account, verified domains, subscribed SKU records, and Microsoft 365 admin center access screenshots.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/tenant-organization-domains-skus.json">Tenant organization domains SKUs</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/m365-admin-center-domains-jeremyfontenot-online-20260605.png">Domains screenshot</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/m365-admin-center-licenses-20260605.png">Licenses screenshot</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/m365-admin-center-homepage-20260605.png">Admin center homepage</a></div></div></article>
+      <article class="proof-chip verified"><div><span class="chip-kind">Verified export / SHA-256 hash available</span><div class="proof-chip-row"><span>CSV</span><span>Manifest</span><span>Hash</span></div><h3>Evidence control files</h3><p><strong>What this validates:</strong> Inventory, hash records, export manifest, live proof summary, and site proof map control how public claims map back to source files.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Live proof summary</a><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof inventory</a><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof hashes</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/microsoft-365-lab-evidence-manifest-20260605.csv">Export manifest</a><a href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Site proof map</a></div></div></article>
+      <article class="proof-chip verified"><div><span class="chip-kind">Verified export / Screenshot available</span><div class="proof-chip-row"><span>JSON</span><span>PNG</span><span>Tenant</span></div><h3>Tenant identity, domain, admin center, and subscription visibility</h3><p><strong>What this validates:</strong> Tenant ID, organization display name, tenant account, verified domains, subscribed SKU records, and Microsoft 365 admin center access screenshots.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/tenant-organization-domains-skus.json">Tenant organization domains SKUs</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/m365-admin-center-domains-jeremyfontenot-online-20260605.png">Domains screenshot</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/m365-admin-center-licenses-20260605.png">Licenses screenshot</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/m365-admin-center-homepage-20260605.png">Admin center homepage</a></div></div></article>
       <article class="proof-chip verified"><div><span class="chip-kind">Sanitized export</span><h3>User, group, role, and license review</h3><p>Validates user/license state, group inventory, 19 group membership rows, directory roles, and role assignment review.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-users-license-state.csv">Users license state</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-groups.csv">Groups CSV</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-group-membership.csv">Group membership CSV</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-directory-roles.csv">Directory roles</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-directory-role-assignments.csv">Role assignments</a></div></div></article>
       <article class="proof-chip verified"><div><span class="chip-kind">Verified export</span><h3>Conditional Access, authentication, authorization, and security defaults review</h3><p>Validates exported Conditional Access policy records, named location records, authentication-method policy data, authorization policy data, and security-defaults state.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-policies-summary.csv">Conditional Access summary</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-policies.json">Conditional Access JSON</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-named-locations.json">Named locations</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-authentication-methods-policy.json">Authentication methods policy</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-authorization-policy-security-defaults.json">Authorization policy</a></div></div></article>
       <article class="proof-chip verified"><div><span class="chip-kind">Verified export</span><h3>Security group targeting</h3><p>Validates the SG-Block-Legacy-Auth security group and membership export used for access-control targeting review.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-sg-block-legacy-auth-group.csv">SG group export</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-sg-block-legacy-auth-members.csv">SG members export</a></div></div></article>
@@ -46,6 +67,34 @@
     </div>
   </section>
 </main>
-<footer class="site-footer" aria-label="Site footer"><p class="footer-meta">Proof labels identify what each file validates and where the evidence stops.</p><nav class="footer-links" aria-label="Footer navigation"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./dashboard.html">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></nav></footer>
+<footer class="site-footer premium-footer proof-footer" aria-label="Site footer">
+  <div class="footer-proof-band" role="group" aria-label="Proof footer status">
+    <span><strong>Proof</strong> source-file routed</span>
+    <span><strong>Inventory</strong> linked</span>
+    <span><strong>Hash</strong> linked</span>
+    <span><strong>Claims</strong> bounded</span>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="56" height="56" decoding="async">
+      <p><strong>Jeremy Fontenot</strong></p>
+      <p>Proof labels identify what each source file validates and where the evidence stops.</p>
+    </div>
+    <div class="footer-links">
+      <h2 class="footer-heading">Review Path</h2>
+      <a href="./projects.html">Projects</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="footer-links">
+      <h2 class="footer-heading">Control Files</h2>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof inventory</a>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof hashes</a>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Site proof map</a>
+    </div>
+  </div>
+  <p class="footer-meta">External organization administration is not claimed. Production impact metrics are not claimed. Public claims stop where repository proof stops.</p>
+</footer>
 </body>
 </html>
