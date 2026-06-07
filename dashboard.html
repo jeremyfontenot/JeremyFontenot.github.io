@@ -40,7 +40,7 @@
       <span class="status-pill">CI/CD surface documented</span>
       <span class="status-pill">Lighthouse review path</span>
       <span class="status-pill">Evidence integrity mapped</span>
-      <span class="status-pill">Local links validated</span>
+      <span class="status-pill">Local links reviewed</span>
     </div>
   </section>
   <section class="section" aria-labelledby="counts-title">
@@ -63,10 +63,19 @@
   <section class="section" aria-labelledby="governance-title">
     <div class="section-head reveal"><p class="eyebrow">Repository governance</p><h2 id="governance-title">Validation signals kept honest.</h2></div>
     <div class="dashboard-grid reveal">
-      <article class="bento-card"><span class="tile-code">CI</span><h2>Static validation posture</h2><p>Repository workflow and local validation paths are treated as quality gates for public HTML, links, and evidence routing.</p></article>
-      <article class="bento-card"><span class="tile-code">LH</span><h2>Lighthouse review language</h2><p>Lighthouse is presented as a validation surface, not as a permanent live performance metric.</p></article>
-      <article class="bento-card"><span class="tile-code">SHA</span><h2>Evidence integrity</h2><p>Hash records provide reviewer inspection support for preserved proof files.</p></article>
-      <article class="bento-card"><span class="tile-code">SEO</span><h2>Recruiter-readable metadata</h2><p>Page titles, descriptions, canonical URLs, and Open Graph metadata support concise professional discovery.</p></article>
+      <article class="bento-card"><span class="tile-code">CI</span><h2>Static validation posture</h2><p>Repository workflow and local validation paths are treated as quality gates for public HTML, links, and evidence routing.</p><a class="evidence-link" href="./scripts/validation/validate-html.ps1"><span>script</span>HTML</a></article>
+      <article class="bento-card"><span class="tile-code">LH</span><h2>Lighthouse review language</h2><p>Lighthouse is presented as a validation surface, not as a permanent live performance metric.</p><a class="evidence-link" href="./scripts/lighthouse/validate-lighthouse-scores.ps1"><span>script</span>Lighthouse</a></article>
+      <article class="bento-card"><span class="tile-code">SHA</span><h2>Evidence integrity</h2><p>Hash records provide reviewer inspection support for preserved proof files.</p><a class="evidence-link" href="./scripts/validation/validate-evidence-hashes.ps1"><span>script</span>Hashes</a></article>
+      <article class="bento-card"><span class="tile-code">SEO</span><h2>Recruiter-readable metadata</h2><p>Page titles, descriptions, canonical URLs, Open Graph metadata, and sitemap entries support concise professional discovery.</p><a class="evidence-link" href="./scripts/validation/validate-seo.ps1"><span>script</span>SEO</a></article>
+    </div>
+  </section>
+  <section class="section dashboard-snapshot-section" aria-labelledby="snapshot-title">
+    <div class="section-head reveal"><p class="eyebrow">Repository snapshot data</p><h2 id="snapshot-title">Governance panels are static file-backed signals.</h2><p>These panels point to repository scripts and artifacts. They do not claim live telemetry, active production monitoring, or current external service state.</p></div>
+    <div class="snapshot-grid reveal">
+      <article><span class="tile-code">LINK</span><h3>Link validation</h3><p>Internal links, images, CSS, JavaScript, PDFs, and proof references are checked by the local link validator.</p><a class="evidence-link" href="./scripts/validation/validate-links.ps1"><span>script</span>Open</a></article>
+      <article><span class="tile-code">MAP</span><h3>Evidence claim control</h3><p>Claim wording is compared against repository-local evidence boundaries and approved proof routing.</p><a class="evidence-link" href="./scripts/validation/validate-evidence-claims.ps1"><span>script</span>Open</a></article>
+      <article><span class="tile-code">SITE</span><h3>Sitemap and SEO status</h3><p>The public sitemap lists the six active recruiter pages; retired routes remain outside the indexable sitemap.</p><a class="evidence-link" href="./sitemap.xml"><span>sitemap</span>Open</a></article>
+      <article><span class="tile-code">SHOT</span><h3>Screenshot review</h3><p>Visual review artifacts are captured locally for desktop, tablet, and mobile inspection across the active public surface.</p><a class="evidence-link" href="./scripts/validation/validate-screenshots.ps1"><span>script</span>Open</a></article>
     </div>
   </section>
   <section class="section" aria-labelledby="source-title">

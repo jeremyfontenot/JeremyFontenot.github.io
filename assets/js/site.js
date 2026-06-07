@@ -2,12 +2,13 @@ const navToggle=document.querySelector(".nav-toggle");
 const navLinks=document.querySelector(".nav-links");
 if(navToggle&&navLinks){
   const closeMenu=()=>{navLinks.classList.remove("open");navToggle.setAttribute("aria-expanded","false")};
-  navToggle.addEventListener("click",()=>{const open=navLinks.classList.toggle("open");navToggle.setAttribute("aria-expanded",String(open))});
+  navToggle.addEventListener("click",()=>{const open=navLinks.classList.toggle("open");navToggle.setAttribute("aria-expanded",String(open));if(open){const firstLink=navLinks.querySelector("a");if(firstLink)firstLink.focus()}});
   navLinks.addEventListener("click",event=>{if(event.target instanceof HTMLAnchorElement)closeMenu()});
   document.addEventListener("click",event=>{
     const target=event.target;
     if(target instanceof Node&&!navLinks.contains(target)&&!navToggle.contains(target))closeMenu();
   });
+  window.addEventListener("resize",()=>{if(matchMedia("(min-width: 981px)").matches)closeMenu()});
   document.addEventListener("keydown",event=>{
     if(event.key==="Escape"){
       closeMenu();
