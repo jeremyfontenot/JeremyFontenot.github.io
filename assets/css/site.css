@@ -1615,6 +1615,24 @@ body.proof-page .relationship-grid article span + h3 {
   margin-top: .15rem;
 }
 
+body.resume-page .bento-card .evidence-chip,
+body.resume-page .capability-card > span,
+body.resume-page .route-grid article > span {
+  margin-bottom: .85rem;
+}
+
+body.resume-page .bento-card .evidence-chip + h3,
+body.resume-page .capability-card > span + h3,
+body.resume-page .route-grid article > span + h3 {
+  margin-top: .15rem;
+}
+
+body.contact-page .dashboard-grid.bento-grid { align-items: stretch; }
+
+body.contact-page .dashboard-grid .bento-card { display: flex; flex-direction: column; height: 100%; }
+
+body.contact-page .dashboard-grid .bento-card .evidence-link { margin-top: auto; }
+
 /* Premium proof footer treatment */
 .proof-footer,
 .site-footer {
