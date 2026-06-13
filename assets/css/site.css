@@ -2716,6 +2716,23 @@ body {
   font-style: normal;
 }
 
+body.home-lab-page .bento-card .evidence-chip,
+body.home-lab-page .proof-chip .chip-kind,
+body.home-lab-page .artifact-card span {
+  margin-bottom: .85rem;
+}
+
+body.home-lab-page .bento-card h3,
+body.home-lab-page .proof-chip h3,
+body.home-lab-page .artifact-card strong {
+  margin-top: .15rem;
+}
+
+body.home-lab-page .topology-node,
+body.home-lab-page .topology-bus {
+  gap: .5rem;
+}
+
 @media (max-width: 1180px) {
   .home-lab-page h1 {
     font-size: 3.7rem;
