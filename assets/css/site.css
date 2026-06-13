@@ -1902,7 +1902,34 @@ body.proof-page .page-hero .lead {
   min-height: 100%;
 }
 
+body.projects-page .project-systems,
+body.projects-page .evidence-focus-grid {
+  align-items: stretch;
+}
+
+body.projects-page .evidence-focus-grid article,
+body.projects-page .project-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body.projects-page .project-panel > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+body.projects-page .evidence-focus-grid .evidence-link,
+body.projects-page .project-panel .proof-links {
+  margin-top: auto;
+}
+
 .project-panel[hidden] {
+  display: none;
+}
+
+body.projects-page .project-panel[hidden] {
   display: none;
 }
 
