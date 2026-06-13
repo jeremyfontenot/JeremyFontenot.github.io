@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On-Prem Home Lab | Proxmox, pfSense, Windows Server, AD, GPO Proof</title>
+<meta name="description" content="Evidence-first On-Prem Home Lab case study for Jeremy Fontenot covering Proxmox, pfSense, Windows Server 2022, Active Directory, GPO drive mapping, file services, backups, screenshots, manifests, and SHA256 validation.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jeremyfontenot.online/on-prem-home-lab.html">
+<meta property="og:site_name" content="Jeremy Fontenot">
+<meta property="og:title" content="On-Prem Home Lab | Proxmox, pfSense, Windows Server, AD, GPO Proof">
+<meta property="og:description" content="Personal on-premises SMB-style lab evidence with validated screenshots, manifests, SHA256 hash, backup artifacts, and APA proof documentation.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jeremyfontenot.online/on-prem-home-lab.html">
+<meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="./assets/logos/favicon_64x64.png">
+<link rel="stylesheet" href="./assets/css/site.css">
+<script src="./assets/js/site.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TechArticle","headline":"On-Prem Home Lab","url":"https://jeremyfontenot.online/on-prem-home-lab.html","author":{"@type":"Person","name":"Jeremy Fontenot"},"about":["Proxmox VE","pfSense","Windows Server 2022","Active Directory Domain Services","Group Policy","SMB file services","PowerShell evidence collection"],"description":"Evidence-first personal on-premises home lab proof page with manifests, screenshots, backup validation, and SHA256 integrity records."}
+</script>
+</head>
+<body class="home-lab-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><small>Evidence-first IT portfolio</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+    <div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./on-prem-home-lab.html" aria-current="page">Home Lab</a><a href="./proof.html">Proof</a><a href="./dashboard.html">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div>
+  </nav>
+</header>
+<main id="main" class="page page-shell">
+  <section class="page-hero home-lab-hero" aria-labelledby="home-lab-title">
+    <div class="page-hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Evidence-first infrastructure case study</p>
+        <h1 id="home-lab-title">On-Prem Home Lab</h1>
+        <p class="lead">Proxmox, pfSense, Windows Server, Active Directory, GPO, file services, backups, and evidence validation.</p>
+        <div class="actions">
+          <a class="button primary" href="./evidence-library/projects/on-prem-home-lab/Jeremy_Fontenot_On_Prem_Home_Lab_APA_Proof_Documentation_Updated_2026-06-12.docx">APA Proof Documentation</a>
+          <a class="button" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Export-20260612-184743.zip">Download Evidence ZIP</a>
+          <a class="button" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv">Open Manifest</a>
+        </div>
+      </div>
+      <aside class="review-console evidence-console verification-glow reveal" aria-label="On-prem home lab proof snapshot">
+        <div class="console-bar"><span>home lab proof</span><span>2026-06-12</span></div>
+        <div class="lab-proof-stack">
+          <a href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest-Summary.txt"><b>127</b><span>Files manifested</span><em>60 DC01, 47 WS01, 8 Proxmox files</em></a>
+          <a href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt"><b>SHA</b><span>ZIP integrity validated</span><em>SHA256 matches final evidence record</em></a>
+          <a href="./evidence-library/projects/on-prem-home-lab/screenshots/screenshots-manifest.csv"><b>17</b><span>Screenshot proof set</span><em>Captioned figure manifest included</em></a>
+          <a href="./evidence-library/projects/on-prem-home-lab/on-prem-home-lab-proof-summary.md"><b>APA</b><span>Proof summary and documentation</span><em>Repository-local reviewer path</em></a>
+        </div>
+      </aside>
+    </div>
+    <div class="command-band lab-command-band reveal" role="group" aria-label="On-prem home lab proof status">
+      <span class="status-pill">Evidence Pack Verified</span>
+      <span class="status-pill">127 Files Manifested</span>
+      <span class="status-pill">SHA256 Validated</span>
+      <span class="status-pill">DC01 / WS01 / Proxmox Evidence</span>
+      <span class="status-pill">APA Proof Documentation</span>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="summary-title">
+    <div class="section-head reveal">
+      <p class="eyebrow">Executive summary</p>
+      <h2 id="summary-title">A real on-premises SMB-style lab built around inspectable proof.</h2>
+      <p>This personal lab validates infrastructure operations skills across virtualization, network segmentation, Windows Server administration, identity, file services, endpoint validation, logging, backup, and evidence packaging. The public claims on this page are backed by command output, screenshots, manifests, hashes, backup records, and the APA proof document staged in the repository evidence library.</p>
+    </div>
+    <div class="bento-grid reveal">
+      <article class="bento-card feature-card"><span class="evidence-chip">Scope</span><h3>Personal infrastructure lab</h3><p>Domain <code>ad.jeremyfontenot.online</code> with NetBIOS <code>JFAD</code>. This page does not claim client, employer, or production environment work.</p></article>
+      <article class="bento-card"><span class="evidence-chip">Validation</span><h3>Artifact-backed claims</h3><p>The evidence pack includes manifests, screenshots, command output, backup notes, exported files, and SHA256 validation records.</p></article>
+      <article class="bento-card boundary-card"><span class="evidence-chip">Boundary</span><h3>Reviewer-safe wording</h3><p>The lab is presented as personal proof of systems administration practice, not business impact, uptime, external organization administration, or live production support.</p></article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="architecture-title">
+    <div class="section-head reveal">
+      <p class="eyebrow">Architecture overview</p>
+      <h2 id="architecture-title">Segmented virtual lab with Proxmox, pfSense, DC01, and WS01.</h2>
+    </div>
+    <div class="lab-topology reveal">
+      <div class="topology-node upstream"><span>Cox gateway / upstream LAN</span><strong>192.168.0.0/24</strong></div>
+      <div class="topology-link" aria-hidden="true"></div>
+      <div class="topology-node proxmox"><span>Proxmox VE 9.2.3 host</span><strong>192.168.0.242/24</strong><em>backup-hdd mounted at /mnt/pve/backup-hdd</em></div>
+      <div class="topology-link" aria-hidden="true"></div>
+      <div class="topology-node firewall"><span>pfSense VM 100</span><strong>WAN 192.168.0.205/24</strong><strong>LAN 10.10.20.1/24</strong></div>
+      <div class="topology-bus"><span>Internal lab subnet</span><strong>10.10.20.0/24</strong></div>
+      <div class="topology-endpoints">
+        <div class="topology-node server"><span>DC01 - VM 200</span><strong>Windows Server 2022</strong><em>10.10.20.10/24, AD DS, DNS, DHCP, GPO, file services</em></div>
+        <div class="topology-node workstation"><span>WS01 - VM 300</span><strong>Windows 10 Pro</strong><em>10.10.20.100/24, domain joined validation endpoint</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="timeline-title">
+    <div class="section-head reveal"><p class="eyebrow">Build timeline</p><h2 id="timeline-title">Major phases captured in the evidence pack.</h2></div>
+    <ol class="lab-timeline reveal">
+      <li><b>01</b><span>Proxmox setup and VM administration</span></li>
+      <li><b>02</b><span>pfSense WAN/LAN segmentation</span></li>
+      <li><b>03</b><span>DC01 AD DS, DNS, DHCP, GPO, and file services</span></li>
+      <li><b>04</b><span>OU, user, group, and baseline GPO structure</span></li>
+      <li><b>05</b><span>WS01 rebuild, domain join, and local admin validation</span></li>
+      <li><b>06</b><span>File services, NTFS permissions, SMB access, and GPO mapped drive</span></li>
+      <li><b>07</b><span>Monitoring, logging, time synchronization repair, backups, evidence export, and APA documentation</span></li>
+    </ol>
+  </section>
+
+  <section class="section" aria-labelledby="metrics-title">
+    <div class="section-head reveal"><p class="eyebrow">Evidence metrics</p><h2 id="metrics-title">Manifested proof counts and final ZIP integrity.</h2></div>
+    <div class="metric-grid bento-grid lab-metrics reveal">
+      <div class="metric"><strong>127</strong><span>total files in the validated evidence pack</span></div>
+      <div class="metric"><strong>60</strong><span>DC01 evidence files</span></div>
+      <div class="metric"><strong>47</strong><span>WS01 evidence files</span></div>
+      <div class="metric"><strong>8</strong><span>Proxmox evidence files</span></div>
+      <div class="metric hash-metric"><strong>864CD48F80E08FC45676D30B209D2ADFE8DC9569D32E80ED9BF17236D5893F28</strong><span>final evidence ZIP SHA256</span></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="skills-validation-title">
+    <div class="section-head reveal"><p class="eyebrow">Skill validation</p><h2 id="skills-validation-title">Technical skills grouped by evidence-backed workstream.</h2></div>
+    <div class="capability-grid lab-skill-grid reveal">
+      <article class="capability-card"><span>Virtualization and networking</span><h3>Proxmox, bridge design, pfSense segmentation</h3><p>Validated Proxmox VM administration, virtual networking, pfSense firewall segmentation, internal subnet routing, VM snapshots, and backup target usage.</p></article>
+      <article class="capability-card"><span>Identity and Windows Server</span><h3>AD DS, DNS, DHCP, OU, user, and group administration</h3><p>Built DC01 on Windows Server 2022 with AD DS, DNS, DHCP, Group Policy Management, and operational validation output.</p></article>
+      <article class="capability-card"><span>Group Policy and endpoint control</span><h3>GPO creation, linking, mapped drive deployment</h3><p>Validated domain GPO application to WS01, including <code>GPO - Users - Map IT Share Drive</code> and user-side mapped drive behavior.</p></article>
+      <article class="capability-card"><span>File services and access control</span><h3>SMB, NTFS, AD security groups, least privilege</h3><p>Validated <code>\\DC01\IT</code>, <code>I:</code> drive mapping, <code>JFAD\GG-FS-IT-RW</code>, <code>JFAD\GG-FS-IT-RO</code>, read/write access, and write-denied testing.</p></article>
+      <article class="capability-card"><span>Monitoring, logging, and backup</span><h3>Windows event evidence, PowerShell logging, time repair, Proxmox backups</h3><p>Captured operational logging, time synchronization repair evidence, DC01 and WS01 backup records, and Proxmox storage validation.</p></article>
+      <article class="capability-card"><span>Evidence and documentation</span><h3>Manifesting, hashing, export packaging, APA documentation</h3><p>Packaged 127 evidence files, screenshot manifests, SHA256 validation, proof summary, and APA-formatted technical documentation.</p></article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="file-services-title">
+    <div class="section-head reveal"><p class="eyebrow">File services proof</p><h2 id="file-services-title">Mapped-drive and least-privilege validation from WS01.</h2><p>The file services phase validates the IT share path, mapped drive, security-group access model, GPO deployment, and separate read/write and read-only user outcomes.</p></div>
+    <div class="lab-proof-detail reveal">
+      <article class="proof-chip verified">
+        <span class="chip-kind">Configuration facts</span>
+        <h3>Share and access model</h3>
+        <ul class="lab-fact-list">
+          <li><strong>Share:</strong> <code>\\DC01\IT</code></li>
+          <li><strong>Mapped drive:</strong> <code>I:</code></li>
+          <li><strong>Read/write group:</strong> <code>JFAD\GG-FS-IT-RW</code></li>
+          <li><strong>Read-only group:</strong> <code>JFAD\GG-FS-IT-RO</code></li>
+          <li><strong>Drive map GPO:</strong> <code>GPO - Users - Map IT Share Drive</code></li>
+        </ul>
+        <div class="proof-links"><a href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv">Open evidence manifest</a><a href="./evidence-library/projects/on-prem-home-lab/on-prem-home-lab-proof-summary.md">Open proof summary</a></div>
+      </article>
+      <figure class="screenshot-card">
+        <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-13-sdtech-it-share-read-write-validation.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-13-sdtech-it-share-read-write-validation.png" width="674" height="1100" loading="lazy" decoding="async" alt="WS01 sd.tech validation showing applied GPO, I: mapped drive to DC01 IT share, and read write success."></a>
+        <figcaption><strong>sd.tech read/write validation.</strong> Proves applied GPO, <code>I:</code> mapped drive to <code>\\DC01\IT</code>, and read/write access for the authorized user.</figcaption>
+      </figure>
+      <figure class="screenshot-card">
+        <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-14-standard-user-it-share-read-only-write-denial.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-14-standard-user-it-share-read-only-write-denial.png" width="414" height="1155" loading="lazy" decoding="async" alt="WS01 standard.user validation showing applied GPO, I: mapped drive, read access success, and write denied result."></a>
+        <figcaption><strong>standard.user read-only validation.</strong> Proves mapped-drive access, successful read behavior, and expected write denial for least-privilege testing.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="backup-integrity-title">
+    <div class="section-head reveal"><p class="eyebrow">Backup and integrity proof</p><h2 id="backup-integrity-title">Final backup artifacts and ZIP validation are source-linked.</h2></div>
+    <div class="dashboard-grid lab-integrity-grid reveal">
+      <article class="bento-card feature-card"><span class="tile-code">DC01</span><h3>Final DC01 backup</h3><p><code>vzdump-qemu-200-2026_06_12-20_29_46.vma.zst</code></p><a class="evidence-link" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv"><span>manifest</span>Open</a></article>
+      <article class="bento-card"><span class="tile-code">WS01</span><h3>Final WS01 backup</h3><p><code>vzdump-qemu-300-2026_06_12-20_34_53.vma.zst</code></p><a class="evidence-link" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv"><span>manifest</span>Open</a></article>
+      <article class="bento-card"><span class="tile-code">SHA</span><h3>Final evidence ZIP SHA256</h3><p class="hash-text"><code>864CD48F80E08FC45676D30B209D2ADFE8DC9569D32E80ED9BF17236D5893F28</code></p><a class="evidence-link" href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt"><span>sha file</span>Open</a></article>
+      <article class="bento-card"><span class="tile-code">DOC</span><h3>APA proof documentation</h3><p>Word document staged as the formal narrative proof artifact for the lab build and validation sequence.</p><a class="evidence-link" href="./evidence-library/projects/on-prem-home-lab/Jeremy_Fontenot_On_Prem_Home_Lab_APA_Proof_Documentation_Updated_2026-06-12.docx"><span>docx</span>Open</a></article>
+    </div>
+    <figure class="screenshot-card screenshot-wide reveal">
+      <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-16-final-evidence-zip-manifest-sha256-validation.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-16-final-evidence-zip-manifest-sha256-validation.png" width="975" height="1120" loading="lazy" decoding="async" alt="Final evidence ZIP validation showing manifest counts and SHA256 hash for the exported home lab evidence package."></a>
+      <figcaption><strong>Final evidence ZIP manifest and SHA256 validation.</strong> Proves exported evidence package counts and integrity hash for the public artifact download.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section" aria-labelledby="gallery-title">
+    <div class="section-head reveal"><p class="eyebrow">Evidence gallery</p><h2 id="gallery-title">Selected screenshots used only where they prove a specific claim.</h2></div>
+    <div class="evidence-gallery reveal">
+      <figure class="screenshot-card">
+        <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-04-ws01-dns-dhcp-validation.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-04-ws01-dns-dhcp-validation.png" width="1113" height="1099" loading="lazy" decoding="async" alt="WS01 DNS and DHCP validation output after domain join and DNS registration."></a>
+        <figcaption><strong>WS01 DNS and DHCP validation.</strong> Supports endpoint network configuration and domain-service validation.</figcaption>
+      </figure>
+      <figure class="screenshot-card">
+        <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-05-active-directory-ws01-ou-placement.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-05-active-directory-ws01-ou-placement.png" width="979" height="324" loading="lazy" decoding="async" alt="Active Directory output showing WS01 organizational unit placement after OU movement."></a>
+        <figcaption><strong>Active Directory OU placement.</strong> Supports endpoint organization and AD administration claims.</figcaption>
+      </figure>
+      <figure class="screenshot-card">
+        <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-12-ws01-snapshot-backup-evidence-note.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-12-ws01-snapshot-backup-evidence-note.png" width="1400" height="992" loading="lazy" decoding="async" alt="Proxmox evidence note documenting WS01 snapshot, backup file, scheduled job, VM inventory, and storage status."></a>
+        <figcaption><strong>WS01 snapshot and backup evidence note.</strong> Supports snapshot, backup, job, VM inventory, and storage validation claims.</figcaption>
+      </figure>
+      <figure class="screenshot-card">
+        <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-15-dc01-central-evidence-export-validation.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-15-dc01-central-evidence-export-validation.png" width="972" height="800" loading="lazy" decoding="async" alt="DC01 central evidence export validation showing copied folders and exported file counts."></a>
+        <figcaption><strong>Central evidence export validation.</strong> Supports the repository evidence packaging and file-count claims.</figcaption>
+      </figure>
+      <figure class="screenshot-card">
+        <a href="./evidence-library/projects/on-prem-home-lab/screenshots/figure-17-documentation-source-hash-validation.png"><img src="./evidence-library/projects/on-prem-home-lab/screenshots/figure-17-documentation-source-hash-validation.png" width="1477" height="610" loading="lazy" decoding="async" alt="Documentation source staging validation showing proof summary, manifest files, and final ZIP SHA256 verification."></a>
+        <figcaption><strong>Documentation source hash validation.</strong> Supports the proof summary, manifest files, and SHA256 documentation source chain.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="artifact-title">
+    <div class="section-head reveal"><p class="eyebrow">Proof links and artifact downloads</p><h2 id="artifact-title">Repository-local artifacts for reviewer inspection.</h2></div>
+    <div class="artifact-grid reveal">
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Export-20260612-184743.zip"><span>ZIP</span><strong>HomeLab-Evidence-Export-20260612-184743.zip</strong><em>Final exported evidence package</em></a>
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/Jeremy_Fontenot_On_Prem_Home_Lab_APA_Proof_Documentation_Updated_2026-06-12.docx"><span>DOCX</span><strong>APA Proof Documentation</strong><em>Formal proof documentation</em></a>
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/on-prem-home-lab-proof-summary.md"><span>MD</span><strong>on-prem-home-lab-proof-summary.md</strong><em>Proof summary and evidence counts</em></a>
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv"><span>CSV</span><strong>HomeLab-Evidence-Manifest.csv</strong><em>File-level manifest and hashes</em></a>
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest-Summary.txt"><span>TXT</span><strong>HomeLab-Evidence-Manifest-Summary.txt</strong><em>Folder and file count summary</em></a>
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt"><span>TXT</span><strong>Final-ZIP-SHA256.txt</strong><em>Final ZIP integrity record</em></a>
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/screenshots/README.md"><span>MD</span><strong>screenshots/README.md</strong><em>Screenshot figure index and SHA256 entries</em></a>
+      <a class="artifact-card" href="./evidence-library/projects/on-prem-home-lab/screenshots/screenshots-manifest.csv"><span>CSV</span><strong>screenshots-manifest.csv</strong><em>Screenshot manifest for figure proof</em></a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="reviewer-notes-title">
+    <div class="scope-note-card reveal">
+      <p class="eyebrow">Reviewer notes</p>
+      <h2 id="reviewer-notes-title">This page is a portfolio proof page for a personal lab.</h2>
+      <p>It does not claim client work, employer infrastructure, production service ownership, uptime, enterprise scale, or active managed services. It documents a personal on-premises home lab used to validate systems administration workflows and evidence collection discipline.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cta-title">
+    <div class="section-head reveal"><p class="eyebrow">Review path</p><h2 id="cta-title">Continue through the proof-backed portfolio.</h2></div>
+    <div class="route-grid reveal">
+      <article><span>Proof</span><h3>Open the proof index</h3><p>Review the broader repository evidence library and source-file routing.</p><a class="evidence-link" href="./proof.html"><span>page</span>Proof</a></article>
+      <article><span>Projects</span><h3>Return to project overview</h3><p>Compare the on-prem lab with the Microsoft 365 / Entra proof surface.</p><a class="evidence-link" href="./projects.html"><span>page</span>Projects</a></article>
+      <article><span>Resume</span><h3>Review role positioning</h3><p>See how the lab supports systems administration and service desk readiness.</p><a class="evidence-link" href="./resume.html"><span>page</span>Resume</a></article>
+      <article><span>Contact</span><h3>Contact Jeremy</h3><p>Use the contact page for recruiter or hiring-manager follow-up.</p><a class="evidence-link" href="./contact.html"><span>page</span>Contact</a></article>
+    </div>
+  </section>
+</main>
+<footer class="site-footer premium-footer" aria-label="Site footer">
+  <div class="footer-proof-band" role="group" aria-label="On-prem home lab proof footer status">
+    <span><strong>On-Prem Lab</strong> personal proof</span>
+    <span><strong>127 files</strong> manifested</span>
+    <span><strong>SHA256</strong> validated</span>
+    <span><strong>APA</strong> document linked</span>
+  </div>
+  <div class="footer-divider" aria-hidden="true"></div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="56" height="56" decoding="async">
+      <p><strong>Jeremy Fontenot</strong></p>
+      <p>Evidence-first IT support and systems administration portfolio focused on Microsoft 365, Entra, Windows Server, Active Directory, troubleshooting, automation, and documentation.</p>
+    </div>
+    <div class="footer-links">
+      <h2 class="footer-heading">Primary Navigation</h2>
+      <a href="./index.html">Home</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./on-prem-home-lab.html">On-Prem Home Lab</a>
+      <a href="./proof.html">Proof</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="footer-links">
+      <h2 class="footer-heading">Evidence Links</h2>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Microsoft 365 / Entra proof inventory</a>
+      <a href="./on-prem-home-lab.html">On-Prem Home Lab case study</a>
+      <a href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv">On-Prem Home Lab evidence manifest</a>
+      <a href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt">On-Prem Home Lab SHA256</a>
+    </div>
+  </div>
+  <p class="footer-meta">Personal on-premises home lab proof. Client, employer, production, and external organization administration claims are not made.</p>
+</footer>
+</body>
+</html>

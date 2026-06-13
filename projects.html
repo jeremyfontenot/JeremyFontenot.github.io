@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Microsoft 365 and Entra Evidence</title>
-<meta name="description" content="Proof-backed Microsoft 365 and Entra project workstreams covering tenant inventory, Conditional Access review, security groups, audit logs, applications, licenses, Exchange evidence, and documentation governance.">
+<title>Projects | Evidence-Backed IT Portfolio</title>
+<meta name="description" content="Proof-backed IT project workstreams covering Microsoft 365, Entra, Proxmox, pfSense, Windows Server, Active Directory, Group Policy, file services, backup validation, and documentation governance.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://jeremyfontenot.online/projects.html">
 <meta property="og:site_name" content="Jeremy Fontenot">
-<meta property="og:title" content="Projects | Microsoft 365 and Entra Evidence">
-<meta property="og:description" content="Repository-backed Microsoft 365 and Entra project cards with direct links to proof files.">
+<meta property="og:title" content="Projects | Evidence-Backed IT Portfolio">
+<meta property="og:description" content="Repository-backed Microsoft 365, Entra, and on-prem home lab project cards with direct links to proof files.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jeremyfontenot.online/projects.html">
 <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
@@ -19,22 +19,23 @@
 <link rel="stylesheet" href="./assets/css/site.css">
 <script src="./assets/js/site.js" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CollectionPage","name":"Microsoft 365 and Entra evidence projects","url":"https://jeremyfontenot.online/projects.html","about":["Microsoft 365","Microsoft Entra","Microsoft Graph PowerShell","Conditional Access","Evidence governance"]}
+{"@context":"https://schema.org","@type":"CollectionPage","name":"Evidence-backed IT projects","url":"https://jeremyfontenot.online/projects.html","about":["Microsoft 365","Microsoft Entra","Proxmox","pfSense","Windows Server","Active Directory","Group Policy","Evidence governance"]}
 </script>
 </head>
 <body class="projects-page">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><small>Evidence-first IT portfolio</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button><div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html" aria-current="page">Projects</a><a href="./proof.html">Proof</a><a href="./dashboard.html">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div></nav></header>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><small>Evidence-first IT portfolio</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button><div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html" aria-current="page">Projects</a><a href="./on-prem-home-lab.html">Home Lab</a><a href="./proof.html">Proof</a><a href="./dashboard.html">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div></nav></header>
 <main id="main" class="page page-shell">
     <section class="page-hero projects-hero" aria-labelledby="projects-title">
     <div class="page-hero-grid projects-hero-grid">
       <div class="hero-copy reveal">
         <p class="eyebrow">Proof-backed projects</p>
-        <h1 id="projects-title">Microsoft 365 / Entra Cloud Administration Evidence Capture</h1>
-        <p class="lead">This project presents a personal Microsoft 365 / Entra cloud administration lab using verified repository evidence. It documents tenant inventory, Conditional Access review, security group targeting, application governance, licensing, device inventory, sign-in/audit visibility, admin center evidence, and proof integrity.</p>
+        <h1 id="projects-title">Evidence-backed IT infrastructure and cloud administration projects</h1>
+        <p class="lead">This project surface presents personal lab work only where repository evidence exists. It includes Microsoft 365 / Entra cloud administration proof and an on-premises home lab with Proxmox, pfSense, Windows Server, Active Directory, GPO, file services, backups, manifests, and SHA256 validation.</p>
 
         <div class="actions">
           <a class="button primary" href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Live Proof Summary</a>
+          <a class="button" href="./on-prem-home-lab.html">On-Prem Home Lab</a>
           <a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof Inventory</a>
           <a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof Hashes</a>
         </div>
@@ -52,8 +53,9 @@
           <li>Personal tenant evidence only</li>
           <li>External organization administration is not claimed</li>
           <li>Operational impact metrics are not claimed</li>
+          <li>On-prem lab is framed as personal infrastructure proof</li>
           <li>Intune is limited to documented validation attempts</li>
-          <li>Public positioning centers on Microsoft 365 and Entra proof</li>
+          <li>Public positioning centers on repository-local proof</li>
         </ul>
       </aside>
     </div>
@@ -70,6 +72,7 @@
     <button type="button" class="filter-button" data-filter="security">Security</button>
     <button type="button" class="filter-button" data-filter="governance">Governance</button>
     <button type="button" class="filter-button" data-filter="operations">Operations</button>
+    <button type="button" class="filter-button" data-filter="infrastructure">Infrastructure</button>
   </div>
   <section class="project-evidence-rail" aria-labelledby="evidence-rail-title">
     <div>
@@ -91,10 +94,12 @@
       <article><span class="tile-code">01</span><h3>Tenant and domain baseline</h3><p>Tenant account, tenant ID, organization, verified domains, and SKU records.</p><a class="evidence-link" href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/tenant-organization-domains-skus.json"><span>json export</span>Open</a></article>
       <article><span class="tile-code">02</span><h3>Conditional Access review</h3><p>Policy records, named locations, authentication method policy, and authorization/security-defaults state.</p><a class="evidence-link" href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-policies-summary.csv"><span>csv export</span>Open</a></article>
       <article><span class="tile-code">03</span><h3>Admin center screenshots</h3><p>Microsoft 365 domains, licenses, active users, groups, homepage, and Exchange admin center evidence.</p><a class="evidence-link" href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/microsoft-365-lab-evidence-manifest-20260605.csv"><span>manifest</span>Open</a></article>
+      <article><span class="tile-code">04</span><h3>On-prem home lab evidence</h3><p>127-file evidence pack for Proxmox, pfSense, DC01, WS01, GPO, file services, backups, screenshots, and SHA256 validation.</p><a class="evidence-link" href="./on-prem-home-lab.html"><span>case study</span>Open</a></article>
     </div>
   </section>
   <section class="section project-systems" aria-labelledby="subprojects-title">
     <div class="section-head reveal"><p class="eyebrow">Evidence-backed workstreams</p><h2 id="subprojects-title">Each card links to existing exported proof.</h2></div>
+    <article class="project-panel feature-card reveal" data-project="infrastructure operations security"><div><p class="eyebrow">On-Prem Home Lab</p><div class="proof-chip-row"><span>Proxmox</span><span>pfSense</span><span>Windows Server</span><span>Active Directory</span><span>GPO</span><span>File Services</span><span>Backup Validation</span></div><h2>SMB-style infrastructure lab with manifest-backed proof</h2><p>Personal on-premises lab using Proxmox VE 9.2.3, pfSense VM 100, DC01 Windows Server 2022, WS01 Windows 10 Pro, AD DS, DNS, DHCP, GPO mapped drive deployment, SMB/NTFS permissions, Proxmox backups, and a 127-file validated evidence pack.</p><div class="proof-links"><a href="./on-prem-home-lab.html">Open case study</a><a href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest-Summary.txt">Evidence manifest summary</a><a href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt">Final ZIP SHA256</a><a href="./evidence-library/projects/on-prem-home-lab/Jeremy_Fontenot_On_Prem_Home_Lab_APA_Proof_Documentation_Updated_2026-06-12.docx">APA Proof Documentation</a></div></div></article>
     <article class="project-panel feature-card reveal" data-project="identity governance"><div><p class="eyebrow">Tenant and directory inventory</p><div class="proof-chip-row"><span>JSON</span><span>CSV</span><span>Identity</span></div><h2>Tenant, domain, user, group, and role review</h2><p>Verified tenant account, tenant ID, organization display name, two verified domains, seven users, eight groups, 17 directory roles, and role assignment exports.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/tenant-organization-domains-skus.json">Tenant/domain/SKU JSON</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-users-license-state.csv">Users and license state</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-directory-roles.csv">Directory roles</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-directory-role-assignments.csv">Role assignments</a></div></div></article>
     <article class="project-panel reveal" data-project="security identity governance"><div><p class="eyebrow">Conditional Access and policy review</p><div class="proof-chip-row"><span>Policy</span><span>JSON</span><span>Security</span></div><h2>Security policy and authentication review</h2><p>Reviewed exported Conditional Access policies, named locations, authentication-method policy, authorization policy, and security defaults state. The evidence supports review and configuration visibility, not unsupported client or production claims.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-policies-summary.csv">Conditional Access summary</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-conditional-access-policies.json">Conditional Access JSON</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-authentication-methods-policy.json">Authentication methods policy</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-authorization-policy-security-defaults.json">Authorization/security defaults</a></div></div></article>
     <article class="project-panel reveal" data-project="security identity"><div><p class="eyebrow">Security group targeting</p><div class="proof-chip-row"><span>CSV</span><span>Group</span><span>Targeting</span></div><h2>Legacy authentication block group review</h2><p>Exported group and membership evidence documents the SG-Block-Legacy-Auth security group and a member row for security targeting review.</p><div class="proof-links"><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-sg-block-legacy-auth-group.csv">Security group export</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-sg-block-legacy-auth-members.csv">Security group members</a><a href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/entra-group-membership.csv">Group membership rows</a></div></div></article>
@@ -121,19 +126,22 @@
     </div>
 
     <div class="footer-links">
-      <h2 class="footer-heading">Review Path</h2>
-      <a href="./proof.html">Proof Library</a>
+      <h2 class="footer-heading">Primary Navigation</h2>
+      <a href="./index.html">Home</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./on-prem-home-lab.html">On-Prem Home Lab</a>
+      <a href="./proof.html">Proof</a>
       <a href="./dashboard.html">Dashboard</a>
       <a href="./resume.html">Resume</a>
       <a href="./contact.html">Contact</a>
     </div>
 
     <div class="footer-links">
-      <h2 class="footer-heading">Project Proof</h2>
-      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-live-proof-summary-20260605.md">Live proof summary</a>
-      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Site proof map</a>
-      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof inventory</a>
-      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Proof hashes</a>
+      <h2 class="footer-heading">Evidence Links</h2>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Microsoft 365 / Entra proof inventory</a>
+      <a href="./on-prem-home-lab.html">On-Prem Home Lab case study</a>
+      <a href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv">On-Prem Home Lab evidence manifest</a>
+      <a href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt">On-Prem Home Lab SHA256</a>
     </div>
   </div>
 

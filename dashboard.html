@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Evidence Dashboard | Microsoft 365 and Entra Counts</title>
-<meta name="description" content="Evidence dashboard showing verified Microsoft 365 and Entra proof counts from captured repository exports, not employment, client, or production impact metrics.">
+<title>Evidence Dashboard | Verified Portfolio Proof Counts</title>
+<meta name="description" content="Evidence dashboard showing verified Microsoft 365, Entra, and On-Prem Home Lab proof counts from repository exports, manifests, screenshots, and SHA256 records.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://jeremyfontenot.online/dashboard.html">
 <meta property="og:site_name" content="Jeremy Fontenot">
-<meta property="og:title" content="Evidence Dashboard | Microsoft 365 and Entra Counts">
-<meta property="og:description" content="Verified evidence inventory counts from Microsoft 365 and Entra repository exports.">
+<meta property="og:title" content="Evidence Dashboard | Verified Portfolio Proof Counts">
+<meta property="og:description" content="Verified evidence inventory counts from Microsoft 365, Entra, and On-Prem Home Lab repository exports.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jeremyfontenot.online/dashboard.html">
 <meta property="og:image" content="https://jeremyfontenot.online/assets/og/og-portfolio.png">
@@ -21,11 +21,11 @@
 </head>
 <body class="dashboard-page">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><small>Evidence-first IT portfolio</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button><div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html">Proof</a><a href="./dashboard.html" aria-current="page">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div></nav></header>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="./index.html"><img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="44" height="44" decoding="async"><span>Jeremy Fontenot</span><small>Evidence-first IT portfolio</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button><div class="nav-links" id="primary-menu"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./on-prem-home-lab.html">Home Lab</a><a href="./proof.html">Proof</a><a href="./dashboard.html" aria-current="page">Dashboard</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></div></nav></header>
 <main id="main" class="page page-shell">
   <section class="page-hero" aria-labelledby="dashboard-title">
     <div class="page-hero-grid">
-      <div class="hero-copy reveal"><p class="eyebrow">Captured evidence counts</p><h1 id="dashboard-title">Governance metrics are proof inventory counts.</h1><p class="lead">The dashboard summarizes records exported from the personal Microsoft 365 / Entra cloud administration lab and its proof inventory. These counts are evidence records, not employment results, external environment statistics, uptime figures, or impact metrics.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Proof Inventory CSV</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv">Hash Records CSV</a><a class="button" href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md">Proof Map</a></div></div>
+      <div class="hero-copy reveal"><p class="eyebrow">Captured evidence counts</p><h1 id="dashboard-title">Governance metrics are proof inventory counts.</h1><p class="lead">The dashboard summarizes records exported from the personal Microsoft 365 / Entra cloud administration lab and the On-Prem Home Lab evidence pack. These counts are evidence records, not employment results, external environment statistics, uptime figures, or impact metrics.</p><div class="actions"><a class="button primary" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">M365 Proof Inventory</a><a class="button" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest-Summary.txt">Home Lab Manifest Summary</a><a class="button" href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt">Home Lab SHA256</a></div></div>
       <aside class="review-console evidence-rail reveal" aria-label="Dashboard governance scope">
         <h2>Dashboard scope</h2>
         <ul class="check-list">
@@ -40,6 +40,7 @@
       <span class="status-pill">CI/CD surface documented</span>
       <span class="status-pill">Lighthouse review path</span>
       <span class="status-pill">Evidence integrity mapped</span>
+      <span class="status-pill">On-Prem Home Lab evidence pack</span>
       <span class="status-pill">Local links reviewed</span>
     </div>
   </section>
@@ -58,6 +59,11 @@
       <div class="metric"><strong>68</strong><span>service plans</span></div>
       <div class="metric"><strong>104</strong><span>sign-in export rows</span></div>
       <div class="metric"><strong>46</strong><span>directory audit export rows</span></div>
+      <div class="metric feature-card"><strong>127</strong><span>On-Prem Home Lab evidence files</span></div>
+      <div class="metric"><strong>60</strong><span>DC01 evidence files</span></div>
+      <div class="metric"><strong>47</strong><span>WS01 evidence files</span></div>
+      <div class="metric"><strong>8</strong><span>Proxmox evidence files</span></div>
+      <div class="metric"><strong>SHA256</strong><span>On-Prem Home Lab evidence ZIP validated</span></div>
     </div>
   </section>
   <section class="section" aria-labelledby="governance-title">
@@ -85,9 +91,47 @@
       <article><span class="tile-code">HASH</span><h2>Proof hashes</h2><p>SHA-256 hash records for proof integrity review.</p><a class="evidence-link" href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-hashes-20260605.csv"><span>hash available</span>Open file</a></article>
       <article><span class="tile-code">EXP</span><h2>New export manifest</h2><p>Manifest for the 2026-06-05 Microsoft 365 / Entra export folder.</p><a class="evidence-link" href="./evidence-library/projects/microsoft-365-lab/evidence/entra-exports-20260605-073748/microsoft-365-lab-evidence-manifest-20260605.csv"><span>hash available</span>Open file</a></article>
       <article><span class="tile-code">MAP</span><h2>Site proof map</h2><p>Public claims mapped to files, proof type, supported wording, and wording to avoid.</p><a class="evidence-link" href="./evidence-library/projects/microsoft-365-lab/m365-entra-site-proof-map-20260605.md"><span>control file</span>Open file</a></article>
+      <article><span class="tile-code">LAB</span><h2>On-Prem Home Lab manifest</h2><p>Manifest summary for the 127-file personal lab evidence pack, including DC01, WS01, and Proxmox evidence counts.</p><a class="evidence-link" href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest-Summary.txt"><span>summary</span>Open file</a></article>
+      <article><span class="tile-code">LABSHA</span><h2>On-Prem Home Lab SHA256</h2><p>Final evidence ZIP integrity record for the home lab evidence package.</p><a class="evidence-link" href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt"><span>sha file</span>Open file</a></article>
     </div>
   </section>
 </main>
-<footer class="site-footer premium-footer" aria-label="Site footer"><p class="footer-meta">Dashboard metrics are captured evidence counts only; live telemetry and production impact are not claimed.</p><nav class="footer-links" aria-label="Footer navigation"><a href="./index.html">Home</a><a href="./projects.html">Projects</a><a href="./proof.html">Proof</a><a href="./resume.html">Resume</a><a href="./contact.html">Contact</a></nav></footer>
+<footer class="site-footer premium-footer" aria-label="Site footer">
+  <div class="footer-proof-band" role="group" aria-label="Dashboard footer proof status">
+    <span><strong>Dashboard</strong> evidence counts</span>
+    <span><strong>No live telemetry</strong> claimed</span>
+    <span><strong>M365 / Entra</strong> inventory linked</span>
+    <span><strong>Home Lab</strong> manifest linked</span>
+  </div>
+
+  <div class="footer-divider" aria-hidden="true"></div>
+
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./assets/logos/header_logo_88x88.png" alt="Jeremy Fontenot logo" width="56" height="56" decoding="async">
+      <p><strong>Jeremy Fontenot</strong></p>
+      <p>Evidence-first IT support and systems administration portfolio focused on Microsoft 365, Entra, Windows Server, Active Directory, troubleshooting, automation, and documentation.</p>
+    </div>
+    <div class="footer-links">
+      <h2 class="footer-heading">Primary Navigation</h2>
+      <a href="./index.html">Home</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./on-prem-home-lab.html">On-Prem Home Lab</a>
+      <a href="./proof.html">Proof</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="footer-links">
+      <h2 class="footer-heading">Evidence Links</h2>
+      <a href="./evidence-library/projects/microsoft-365-lab/m365-entra-proof-inventory-20260605.csv">Microsoft 365 / Entra proof inventory</a>
+      <a href="./on-prem-home-lab.html">On-Prem Home Lab case study</a>
+      <a href="./evidence-library/projects/on-prem-home-lab/HomeLab-Evidence-Manifest.csv">On-Prem Home Lab evidence manifest</a>
+      <a href="./evidence-library/projects/on-prem-home-lab/Final-ZIP-SHA256.txt">On-Prem Home Lab SHA256</a>
+    </div>
+  </div>
+
+  <p class="footer-meta">Dashboard metrics are captured evidence counts only; live telemetry and production impact are not claimed.</p>
+</footer>
 </body>
 </html>
