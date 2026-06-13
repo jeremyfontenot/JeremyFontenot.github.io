@@ -1587,6 +1587,34 @@ body.proof-page .page-hero .lead {
   color: #fde68a;
 }
 
+body.proof-page .proof-chip .chip-kind,
+body.proof-page .bento-card .evidence-chip,
+body.proof-page .relationship-grid article span,
+body.proof-page .proof-chip-row {
+  margin-bottom: .85rem;
+}
+
+body.proof-page .proof-chip h3,
+body.proof-page .bento-card h3,
+body.proof-page .relationship-grid h3,
+body.proof-page .proof-summary h3 {
+  margin-top: .15rem;
+}
+
+body.proof-page .proof-chip > div,
+body.proof-page .bento-card,
+body.proof-page .relationship-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+body.proof-page .proof-chip-row + h3,
+body.proof-page .evidence-chip + h3,
+body.proof-page .chip-kind + h3,
+body.proof-page .relationship-grid article span + h3 {
+  margin-top: .15rem;
+}
+
 /* Premium proof footer treatment */
 .proof-footer,
 .site-footer {
