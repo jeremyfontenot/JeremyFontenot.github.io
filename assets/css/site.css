@@ -2,7 +2,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
 body{margin:0;min-height:100vh;color:var(--text);font-family:"Aptos","Segoe UI Variable","Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 16% 0,rgba(56,189,248,.18),transparent 28rem),radial-gradient(circle at 86% 8%,rgba(217,70,239,.13),transparent 26rem),linear-gradient(180deg,var(--bg),#101a2e 48%,#08111f);line-height:1.65;overflow-x:clip}
-body:before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(148,163,184,.045) 1px,transparent 1px),linear-gradient(180deg,rgba(148,163,184,.035) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(180deg,rgba(0,0,0,.7),transparent 76%);pointer-events:none}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(148,163,184,.045) 1px,transparent 1px),linear-gradient(180deg,rgba(148,163,184,.035) 1px,transparent 1px);background-size:58px 58px;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.7),transparent 76%);mask-image:linear-gradient(180deg,rgba(0,0,0,.7),transparent 76%);pointer-events:none}
 a{color:var(--cyan);text-decoration:none}
 a:hover{color:#7dd3fc;text-decoration:underline}
 img{max-width:100%;height:auto}
@@ -17,7 +17,7 @@ p{color:var(--muted);margin-bottom:1rem}
 .skip-link{position:absolute;left:1rem;top:-5rem;z-index:999;background:var(--cyan);color:#06111f;border-radius:999px;padding:.8rem 1rem;font-weight:900}
 .skip-link:focus{top:1rem}
 :focus-visible{outline:3px solid rgba(56,189,248,.9);outline-offset:4px}
-.site-header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.84);border-bottom:1px solid rgba(56,189,248,.22);backdrop-filter:blur(16px);box-shadow:0 10px 30px rgba(2,6,23,.26)}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.84);border-bottom:1px solid rgba(56,189,248,.22);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:0 10px 30px rgba(2,6,23,.26)}
 .site-header:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),var(--magenta),transparent)}
 .nav{max-width:var(--max);margin:auto;padding:.85rem var(--pad);display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:grid;grid-template-columns:44px auto;grid-template-rows:auto auto;gap:0 .75rem;color:var(--text);font-weight:950}
