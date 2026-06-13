@@ -1993,6 +1993,27 @@ body.projects-page .project-panel[hidden] {
   align-content: space-between;
 }
 
+body.dashboard-page .dashboard-grid,
+body.dashboard-page .metric-grid,
+body.dashboard-page .bento-grid {
+  align-items: stretch;
+}
+
+body.dashboard-page .dashboard-grid article,
+body.dashboard-page .metric,
+body.dashboard-page .dashboard-grid .feature-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body.dashboard-page .dashboard-grid .evidence-link,
+body.dashboard-page .metric .evidence-link,
+body.dashboard-page .dashboard-grid article > :last-child,
+body.dashboard-page .metric > :last-child {
+  margin-top: auto;
+}
+
 .premium-footer {
   position: relative;
   overflow: hidden;
