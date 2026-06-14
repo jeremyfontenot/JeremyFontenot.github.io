@@ -7,9 +7,9 @@
   },
   {
     "path": "evidence-library\\index.html",
-    "sha256": "232BBE9896402CA79914C88472C288B03DC4D601D6DC4F5E5E9137E4A0CA3861",
-    "size": 5436,
-    "lastModified": "2026-06-05T14:12:49.9150172Z"
+    "sha256": "DC7BC7F72E694CF07551138C93060AA26D51FBBCEF13A9F10AB9D67ACA15EC21",
+    "size": 5392,
+    "lastModified": "2026-06-13T08:14:31.2018607Z"
   },
   {
     "path": "evidence-library\\README.md",
@@ -199,9 +199,9 @@
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\index.html",
-    "sha256": "95C382F41E45ADC182A1084DCEAE1947563DF0B133B71164FB471C5492E1CE2B",
-    "size": 20569,
-    "lastModified": "2026-06-05T06:41:13.6561606Z"
+    "sha256": "30AE1923FB781D41538BBE43AAFE94862CA85A31D24E4217B39CC9E0B3EEE60B",
+    "size": 20525,
+    "lastModified": "2026-06-13T08:14:31.2018607Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\sharepoint-export-inventory.csv",
@@ -5023,9 +5023,9 @@
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\projects\\collaboration-sharepoint.html",
-    "sha256": "970BF19277FD647BAC52E524FD7FF73E8294DE828C312BDCB69AAD04EEEA2557",
-    "size": 7431,
-    "lastModified": "2026-06-05T06:41:13.9761751Z"
+    "sha256": "462EC8A189DEB1355F78B0F47BBA07145D9101B27343A940545EF80072165FCF",
+    "size": 7381,
+    "lastModified": "2026-06-13T08:14:31.2018607Z"
   },
   {
     "path": "evidence-library\\projects\\README.md",
@@ -5632,6 +5632,162 @@
     "sha256": "C0FE4CE7F87AD4BCA36C0E77022A6D38F84B14C5DA9AB471E9FCFA40E14398B1",
     "size": 3945,
     "lastModified": "2026-05-25T06:46:14.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\Final-ZIP-SHA256.txt",
+    "sha256": "52BC63B27D7F9D020EE03A1B24E0848E1A85F0B2A6FFBC0247D5046175537ECF",
+    "size": 235,
+    "lastModified": "2026-06-13T02:19:08.8981429Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\HomeLab-Evidence-Export-20260612-184743.zip",
+    "sha256": "864CD48F80E08FC45676D30B209D2ADFE8DC9569D32E80ED9BF17236D5893F28",
+    "size": 132508,
+    "lastModified": "2026-06-13T02:01:12.1654490Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\HomeLab-Evidence-Manifest-Summary.txt",
+    "sha256": "384927251DC90CBA68E71E3313D0E92D9F5657028DFE0F74464713BA6A73C17C",
+    "size": 420,
+    "lastModified": "2026-06-13T00:01:02.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\HomeLab-Evidence-Manifest.csv",
+    "sha256": "D09620D1588473EA311FCFC13641C5D56BB323C028469D058F32EED05C7D8C4E",
+    "size": 43522,
+    "lastModified": "2026-06-13T00:01:02.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\Jeremy_Fontenot_Home_Lab_Documentation.docx",
+    "sha256": "FD9C13D633F74DD6880298D50EE45F6E35771A58CBA98490BC119FA86218CAFB",
+    "size": 8685202,
+    "lastModified": "2026-06-14T00:28:07.0524588Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\Jeremy_Fontenot_On_Prem_Home_Lab_APA_Proof_Documentation_Updated_2026-06-12.docx",
+    "sha256": "8D26C2092F32D1388758A82DCD83537C21902B4938FB65E5749DFE841F488265",
+    "size": 2028367,
+    "lastModified": "2026-06-13T02:41:53.0338728Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\on-prem-home-lab-proof-summary.md",
+    "sha256": "007CE7BAF1F594D50C13411DF937D1BF0AD4E600474F14B4766048C1ACACDC54",
+    "size": 2289,
+    "lastModified": "2026-06-13T02:16:29.3749458Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-01-initial-rdp-connection-failure.png",
+    "sha256": "65D5ED79F841CB51F044F1A05185C05AC1271842B0676BC1900B125E84E309DD",
+    "size": 15582,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-02-nla-failure-windows11-client-troubleshooting.png",
+    "sha256": "94F27327B1BF2E0C30EDA831B38B7F49160939403D02BA6E2DEB2E23A5DCF3D4",
+    "size": 8082,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-03-ws01-system-about-identity-hardware.png",
+    "sha256": "26A4A69E33CCA925EEC46064307A14D5C02D1A2CB3E9508705242806F049E63E",
+    "size": 139038,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-04-ws01-dns-dhcp-validation.png",
+    "sha256": "080AAAB4B0A905A92C651911571655E86D2224344BF069AAB5D9FC0476629F1C",
+    "size": 118740,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-05-active-directory-ws01-ou-placement.png",
+    "sha256": "390E466B485DE1BF4CA85F8214F7111FE9D41FECD206CCAC33555333FF45679C",
+    "size": 29401,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-06-ws01-rdp-enable-firewall-network.png",
+    "sha256": "C8846CCC29D972D61D92D4C55E5F664D1E3CA3A0E9A489D4CE66B2327CF4AD04",
+    "size": 178195,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-07-dc01-to-ws01-rdp-dns-validation.png",
+    "sha256": "52EDDD8DFD47C594E444A1DD2875BD40947747128D5093862B93E13972015DF8",
+    "size": 62482,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-08-ws01-proxmox-boot-cleanup.png",
+    "sha256": "FF85B2D61E149607EA8B4EFF5AB842EA6EF2459985472F418C291219FDE46A7C",
+    "size": 110814,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-09-ws01-baseline-snapshot-validation.png",
+    "sha256": "8C3C8CD225B3133FF92B3DD9C607BCD55F189B6DA8834BBC719A2FACD7DB840D",
+    "size": 206855,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-10-ws01-backup-archive-evidence.png",
+    "sha256": "43A66DC24E7E1682B07508ADBC6C274C9867AE9C7975DAE139A8AD1DB4137A50",
+    "size": 35143,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-11-scheduled-backup-job-includes-ws01.png",
+    "sha256": "3889A475A9A1E26380B97BD87A52A0AF76B17DE4ECEC57BCF6954E4A9882D810",
+    "size": 74782,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-12-ws01-snapshot-backup-evidence-note.png",
+    "sha256": "AFCF76FDB5580A7D7E42BB1BADD6EA6007BEAD9E32BA09FCD7C8A41D890F3A7D",
+    "size": 267585,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-13-sdtech-it-share-read-write-validation.png",
+    "sha256": "339A49CC0F07F37E030F11AEFD7D0009EADF7022910490814D7968B7BC2C6BAD",
+    "size": 227622,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-14-standard-user-it-share-read-only-write-denial.png",
+    "sha256": "27F7745FF4230E41B1B946531246870D5CF56F81E7320727CBD91E5BE283F611",
+    "size": 222617,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-15-dc01-central-evidence-export-validation.png",
+    "sha256": "6F04AD70226BB9F16D5850FED88CC6B27067DE3C7EA4F6EAC8A1E90CE6F6242C",
+    "size": 235745,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-16-final-evidence-zip-manifest-sha256-validation.png",
+    "sha256": "D96222651F09ECAE33F45B6280F2F6197E38F5DDD7ABF6278A091AC66C7071D3",
+    "size": 220115,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-17-documentation-source-hash-validation.png",
+    "sha256": "CE77AD3C0ED5F63DC28492391BDBE7AD99C75F6D79469DBCE4DAEB696997EA98",
+    "size": 90247,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\README.md",
+    "sha256": "E80C623CD47C6A9703F0AB4D152598D1047118AD2FC29F3E6E8B5E08C2EEDA1B",
+    "size": 6785,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
+  },
+  {
+    "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\screenshots-manifest.csv",
+    "sha256": "2B6A7C1A35B960A4CC564DB947BEB4F647CEE5331BA6CEF51C3D80B2D7452D0B",
+    "size": 6805,
+    "lastModified": "2026-06-13T07:43:52.0000000Z"
   },
   {
     "path": "evidence-library\\projects\\powershell-automation\\.gitkeep",
