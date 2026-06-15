@@ -3,7 +3,7 @@
     "path": "evidence-library\\evidence-source-map.csv",
     "sha256": "F7B2EF5654579487963B7B60C5CD259320B68C1CD377DFDA6919B3DD1285614F",
     "size": 6674,
-    "lastModified": "2026-05-31T06:40:10.0000000Z"
+    "lastModified": "2026-05-31T06:40:10Z"
   },
   {
     "path": "evidence-library\\index.html",
@@ -15,85 +15,85 @@
     "path": "evidence-library\\README.md",
     "sha256": "17C538A912D226C6D83C836D29C858AF55E5994649972A0971683B4E038D3956",
     "size": 2532,
-    "lastModified": "2026-05-31T23:58:20.0000000Z"
+    "lastModified": "2026-05-31T23:58:20Z"
   },
   {
     "path": "evidence-library\\architecture\\microsoft-365-architecture-overview.md",
     "sha256": "FBA4596B3166F0BC90417FCCFAAAAA10C5544DCC2449EE803142FFEB05CCE411",
     "size": 658,
-    "lastModified": "2026-06-02T02:27:26.0000000Z"
+    "lastModified": "2026-06-02T02:27:26Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\home-lab-network-topology-diagram-2026.svg",
     "sha256": "C0D137FF0184D4FE5257EB8885F1EBC762B5E0EB37622092EE804B36B38D1872",
     "size": 704,
-    "lastModified": "2026-05-29T22:00:24.0000000Z"
+    "lastModified": "2026-05-29T22:00:24Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\identity-access-ad-migration-diagram-2026.svg",
     "sha256": "826D50C52D646E240A3D47BE799A39F6BB4E59E01DC620C99C92F5B393DD85CF",
     "size": 2230,
-    "lastModified": "2026-06-02T02:27:26.0000000Z"
+    "lastModified": "2026-06-02T02:27:26Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\m365-lab-baseline-preview.svg",
     "sha256": "060040A9FCD215F0C2B458BBD9C6F5D936580C0551EEE8D6B0CA8597BD980B00",
     "size": 4787,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\mail-flow-troubleshooting-preview.svg",
     "sha256": "0B6F2B943FD4AA8C322DDDCA5334AE7399C3C56918BCFA32D2AD476ADD9B1DD7",
     "size": 3916,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-diagram-2026.svg",
     "sha256": "1FFF1F562C16D0B4356728086CE1048B6D57AD8EA7445B001ABB6625F790876B",
     "size": 2003,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\microsoft-365-lab-architecture-overview-2026.svg",
     "sha256": "4E89C54C689BA07B9ABC8175A7907868B2511F6BD6A3469E5C964349CE1C21E8",
     "size": 3455,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\pfsense-network-segmentation-diagram-2026.svg",
     "sha256": "1A792E151C8A9CCB32425123CD42F33744E3418B24DC2C9199EFBB55230486AD",
     "size": 4303,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\pfsense-network-segmentation-preview.svg",
     "sha256": "66D79A01565CFB6C0631F4DF28B4ECCCEB6035D18C2CD2D50C0FB5D0910159AF",
     "size": 4335,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\service-desk-network-troubleshooting-flow-2026.svg",
     "sha256": "26CA8C3612E806EB6D664EEDB498D6D27FD49D3EEC868584D9F234188C170651",
     "size": 3578,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\vlan-architecture-diagram-dark.png",
     "sha256": "D7D60AFDBF71796667C4F5C687EF6E97AD3FB5E3FD4BC3B56C6B521CDE7FA91E",
     "size": 201225,
-    "lastModified": "2026-06-02T02:09:40.0000000Z"
+    "lastModified": "2026-06-02T02:09:40Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\vlan-architecture-diagram-dark.svg",
     "sha256": "F9783181830967AA8C8323C22B276FF946189F0F6E53A9383B8FF999DEA131BE",
     "size": 10486,
-    "lastModified": "2026-06-02T02:09:26.0000000Z"
+    "lastModified": "2026-06-02T02:09:26Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\vlan-architecture-diagram-README.md",
@@ -105,25 +105,25 @@
     "path": "evidence-library\\architecture-diagrams\\vlan-architecture-diagram.png",
     "sha256": "5C9552289557D9FDCA178385C2DEDF93874C414B40DAF8B816E027268ADEF9F7",
     "size": 205174,
-    "lastModified": "2026-06-02T02:09:40.0000000Z"
+    "lastModified": "2026-06-02T02:09:40Z"
   },
   {
     "path": "evidence-library\\architecture-diagrams\\vlan-architecture-diagram.svg",
     "sha256": "D106C0FCFA7F813DD709E8E61193E49EA6B5DFEC0E3DE6230AD77FF50B1F9D38",
     "size": 11794,
-    "lastModified": "2026-06-02T02:09:26.0000000Z"
+    "lastModified": "2026-06-02T02:09:26Z"
   },
   {
     "path": "evidence-library\\archive\\README.md",
     "sha256": "168A5ABC5FB94EBAE5E96723BAB8F9425069958FAF3E6DC60C9BD0C3971784D6",
     "size": 536,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\automation\\automation-framework-evidence.md",
     "sha256": "A0ADBD70119CC8E596361E4BA316FD3C17B80ED261E4FED59218D61F2D390A57",
     "size": 272,
-    "lastModified": "2026-06-02T01:05:08.0000000Z"
+    "lastModified": "2026-06-02T01:05:08Z"
   },
   {
     "path": "evidence-library\\automation\\provisioning-change-record-2026.md",
@@ -135,37 +135,37 @@
     "path": "evidence-library\\automation\\provisioning-script-evidence.md",
     "sha256": "6F1EDA84BA14164CD453B0E52C139E77DBE8420DE4806FD57B0AA4CACBEB351D",
     "size": 306,
-    "lastModified": "2026-06-02T02:27:26.0000000Z"
+    "lastModified": "2026-06-02T02:27:26Z"
   },
   {
     "path": "evidence-library\\certifications\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\certifications\\certification-lpi-badge-2026.png",
     "sha256": "1E3F58142EF4311EE7A3D0438DFA99F99F55A8FFCA6872BDC384F58DB3D75FFF",
     "size": 27505,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\conditional-access\\conditional-access-baseline-evidence.md",
     "sha256": "BA0051344210257E6B536B65BA658047711CB8E8481383FDF48196D9CD563C6C",
     "size": 504,
-    "lastModified": "2026-06-02T01:05:08.0000000Z"
+    "lastModified": "2026-06-02T01:05:08Z"
   },
   {
     "path": "evidence-library\\experience\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\experience\\jeremy-fontenot-resume-2026.pdf",
     "sha256": "F2BD2107FCEBCBC8583ABF1FB4734D8209394CC29DA81F49DFDB71BA089DD8D6",
     "size": 76612,
-    "lastModified": "2026-05-31T07:21:06.0000000Z"
+    "lastModified": "2026-05-31T07:21:06Z"
   },
   {
     "path": "evidence-library\\governance\\evidence-claim-governance-standard-2026.md",
@@ -189,13 +189,13 @@
     "path": "evidence-library\\network\\firewall-rule-validation-report-2026.md",
     "sha256": "351103ADB18552A3C8221B4C0D1AD4D74D68E8ED222BDC63A6189CD0F4A0A7F9",
     "size": 1482,
-    "lastModified": "2026-06-05T06:41:13.6549030Z"
+    "lastModified": "2026-06-05T06:41:13.654903Z"
   },
   {
     "path": "evidence-library\\network\\network-infrastructure-validation-report-2026.md",
     "sha256": "A70A0C62E5FFDECF9B9B0AC674506CAB95B6CDA9C9A6919A21105B4E5936F852",
     "size": 1735,
-    "lastModified": "2026-06-05T06:41:13.6549030Z"
+    "lastModified": "2026-06-05T06:41:13.654903Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\index.html",
@@ -225,7 +225,7 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Architecture\\Architecture-90082f35.html",
     "sha256": "3F977DD49F4EB4288B505D2C5B05CC52777310163FFD1F4AFDA37232AEA8D64D",
     "size": 5564,
-    "lastModified": "2026-06-05T06:41:13.6601670Z"
+    "lastModified": "2026-06-05T06:41:13.660167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Architecture\\architecture-and-topology-76e91ed4.html",
@@ -237,7 +237,7 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Architecture\\Architecture-Overview-20260511161108-fea65063.html",
     "sha256": "77A1FFE1928E133A2F12F6AC37A261BD0F63CFC4D892E6C04453AA54AD02348A",
     "size": 3368,
-    "lastModified": "2026-06-05T06:41:13.6601670Z"
+    "lastModified": "2026-06-05T06:41:13.660167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Architecture\\Architecture-Overview-ee08773b.html",
@@ -393,19 +393,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Endpoint-Management-Intune-20260223-0742-20260511161109-1327909b.html",
     "sha256": "D57D77FFBA82C4918F4F9BE774A9964D92C10303D5983D6328BF016C84C88207",
     "size": 3288,
-    "lastModified": "2026-06-05T06:41:13.6731670Z"
+    "lastModified": "2026-06-05T06:41:13.673167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Endpoint-Management-Intune-20260223-0742-79899e7f.html",
     "sha256": "93B9EC8FAF7259BE7F849507AF45FAA0774EEA0C58584A094F9F3C29A3E9C770",
     "size": 3273,
-    "lastModified": "2026-06-05T06:41:13.6731670Z"
+    "lastModified": "2026-06-05T06:41:13.673167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Exchange-20260307-0200-20260511161109-fd40c85b.html",
     "sha256": "3A79F4B1C51E7E8E939950939547BD0B6F35E7D880D5A4F44B55F8E26890A1E5",
     "size": 3257,
-    "lastModified": "2026-06-05T06:41:13.6731670Z"
+    "lastModified": "2026-06-05T06:41:13.673167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Exchange-20260307-0200-a44f8b41.html",
@@ -651,19 +651,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Intune-20260307-0200-9d9e620c.html",
     "sha256": "A0900A1BE38B6F64403FDB8100D7B173C0BB238337ACB36DC1DA54015DD5CDDD",
     "size": 3222,
-    "lastModified": "2026-06-05T06:41:13.6921670Z"
+    "lastModified": "2026-06-05T06:41:13.692167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Lab-Overview-20260307-0200-20260511161110-0b198938.html",
     "sha256": "87AAB4A1EE1E30F7A472AB98A57AA7627B8592BBE8FF9CEFF85DCF0CE0ED82A1",
     "size": 3267,
-    "lastModified": "2026-06-05T06:41:13.6921670Z"
+    "lastModified": "2026-06-05T06:41:13.692167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Lab-Overview-20260307-0200-e61b68d9.html",
     "sha256": "4B8482B3AFB88C7BDD4873B20D601A09C42DF910EDCB5EC863D7FE5C508FB901",
     "size": 3252,
-    "lastModified": "2026-06-05T06:41:13.6921670Z"
+    "lastModified": "2026-06-05T06:41:13.692167Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Log-015181d1.html",
@@ -681,7 +681,7 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\change-management-and-validation-6a9e5753.html",
     "sha256": "545F1F73A6E46AF4231467E6690A5724E5F0CE42E53D185A9A84BAF3DD20B22F",
     "size": 2474,
-    "lastModified": "2026-06-05T06:41:13.7538240Z"
+    "lastModified": "2026-06-05T06:41:13.753824Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-New-Home-20260223-0410-20260511161110-6e7b0160.html",
@@ -1017,13 +1017,13 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Change-Validation-Results-eaf55dbf.html",
     "sha256": "3F05F4BF34058C3E854C12F931313475F15E45FB4E0C65C2D045BA45FF7AF081",
     "size": 2913,
-    "lastModified": "2026-06-05T06:41:13.7173090Z"
+    "lastModified": "2026-06-05T06:41:13.717309Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Cleanup-Summary-20260511161110-a28bc196.html",
     "sha256": "CC0DC1476F761051FA421E48085C8A230B19260411255B3F07743A007A59A98E",
     "size": 3911,
-    "lastModified": "2026-06-05T06:41:13.7173090Z"
+    "lastModified": "2026-06-05T06:41:13.717309Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Cleanup-Summary-b1f1521b.html",
@@ -1167,19 +1167,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Identity-08dfd8a5.html",
     "sha256": "E09A0AB3BB28925DA322750517E365CD631B122E58365BC6D1D17C38D7D6B9E6",
     "size": 5209,
-    "lastModified": "2026-06-05T06:41:13.7263110Z"
+    "lastModified": "2026-06-05T06:41:13.726311Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Identity-20260511161111-134a13eb.html",
     "sha256": "35B62EC7D1AD84BCDB7389406CA04A990F144EF33343A176B5E32E696165D472",
     "size": 5224,
-    "lastModified": "2026-06-05T06:41:13.7263110Z"
+    "lastModified": "2026-06-05T06:41:13.726311Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\identity-and-access-1c65abe0.html",
     "sha256": "3CCC2B590DBAD4C5C18E6676FA9444723F2D486617F29428B8CFFF28567E1705",
     "size": 2644,
-    "lastModified": "2026-06-05T06:41:13.7538240Z"
+    "lastModified": "2026-06-05T06:41:13.753824Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Identity-and-Security-20260511161111-d0563c7c.html",
@@ -1197,7 +1197,7 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Identity-Setup-20260511161111-213ded75.html",
     "sha256": "C7DFF751C050CA29DDD4BBF9FBDFFEFD181CBFC10CBBD2156299247A951A2BE6",
     "size": 3747,
-    "lastModified": "2026-06-05T06:41:13.7263110Z"
+    "lastModified": "2026-06-05T06:41:13.726311Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Identity-Setup-2c1e52e5.html",
@@ -1419,37 +1419,37 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-0e9f25e7-ac4c1283.html",
     "sha256": "2ED1BF3121E5C664CD0B3E88100A41B4BC7745FB4361C19EB29B1B052309CFE9",
     "size": 1346,
-    "lastModified": "2026-06-05T06:41:13.7688220Z"
+    "lastModified": "2026-06-05T06:41:13.768822Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-0f89a92a-0976bba3.html",
     "sha256": "173470BA38BFB5FCECF94A392F2525A7012DF51006ABA41215A7FD0D889D4DD9",
     "size": 1450,
-    "lastModified": "2026-06-05T06:41:13.7688220Z"
+    "lastModified": "2026-06-05T06:41:13.768822Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-10b8193d-3102182e.html",
     "sha256": "DC4FB22E0DDF9AF6F6F1B3E3963DFB70055C51BBC7B8B94F2C8A892CC7F39A46",
     "size": 1247,
-    "lastModified": "2026-06-05T06:41:13.7688220Z"
+    "lastModified": "2026-06-05T06:41:13.768822Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-110043e3-2d50b6cd.html",
     "sha256": "788390FBDBBFB19C1521308650E4C2A4EF8A1E90BFB3B32B34D7C041840E6002",
     "size": 1364,
-    "lastModified": "2026-06-05T06:41:13.7698220Z"
+    "lastModified": "2026-06-05T06:41:13.769822Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-1114b06c-ab3d9ebc.html",
     "sha256": "432A6ADD6A67F131F8BE8F93E1E85668095D865BF7A9112539D0C9236AD0C072",
     "size": 1380,
-    "lastModified": "2026-06-05T06:41:13.7698220Z"
+    "lastModified": "2026-06-05T06:41:13.769822Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-11c6bf67-d51df754.html",
     "sha256": "A25ABA9588D9E1E9880050EA9F07395F5AC8B944D5CB0C9EB4FA4004803B57E7",
     "size": 1421,
-    "lastModified": "2026-06-05T06:41:13.7698220Z"
+    "lastModified": "2026-06-05T06:41:13.769822Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-129ccbf3-80cbb248.html",
@@ -1767,13 +1767,13 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-20260511161134-50427265.html",
     "sha256": "0A0E542335E7509EFF61C6705D60683FA045FBD421A610C3A4000A401EA638D9",
     "size": 1521,
-    "lastModified": "2026-06-05T06:41:13.7905460Z"
+    "lastModified": "2026-06-05T06:41:13.790546Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-20260511161135-bc82ab42.html",
     "sha256": "BD2AF39E8D38C222D902DA497761454346E3C61ED036975F4F502F3B6E8C20C6",
     "size": 1430,
-    "lastModified": "2026-06-05T06:41:13.7905460Z"
+    "lastModified": "2026-06-05T06:41:13.790546Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-20260511161136-bbc4ba6f.html",
@@ -1887,19 +1887,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-2613418c-b1b287ad.html",
     "sha256": "7B6967996BC785ACCA9A62426AA3CB234D50404195FBDC6830C4683C1AF1C338",
     "size": 1391,
-    "lastModified": "2026-06-05T06:41:13.7985440Z"
+    "lastModified": "2026-06-05T06:41:13.798544Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-26a49526-a6f29d6b.html",
     "sha256": "7DEC44735E558467385C9B6F45B2467F2DFAF73BEB1D6E1CD056448460BAD561",
     "size": 1436,
-    "lastModified": "2026-06-05T06:41:13.7985440Z"
+    "lastModified": "2026-06-05T06:41:13.798544Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-26a54e4a-7dd0a297.html",
     "sha256": "EE95EE655C9DA40919228EC00C14B38D801B6A14B6CA1841CA697518AF935776",
     "size": 1440,
-    "lastModified": "2026-06-05T06:41:13.7985440Z"
+    "lastModified": "2026-06-05T06:41:13.798544Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-26d541ac-ddf16b2f.html",
@@ -1953,13 +1953,13 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-2adc2665-fbff6736.html",
     "sha256": "633D2D7F98A72CE4AF9FD6392F0E979BD485089D9BB89732D8D6876EAD4AE8C1",
     "size": 1664,
-    "lastModified": "2026-06-05T06:41:13.8035410Z"
+    "lastModified": "2026-06-05T06:41:13.803541Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-2b1fa5bc-25b9511f.html",
     "sha256": "0473726868C89A15E633C88BC76ADD917E5B37E3945E8BCA10324387858357E7",
     "size": 1601,
-    "lastModified": "2026-06-05T06:41:13.8035410Z"
+    "lastModified": "2026-06-05T06:41:13.803541Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-2b7e88c8-e942e706.html",
@@ -2067,25 +2067,25 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-34fc525d-fc47ff7d.html",
     "sha256": "65ECCB7A44D2C4E27B853D385296F21AF16A87939AA5471ED6AE13151B44C001",
     "size": 1361,
-    "lastModified": "2026-06-05T06:41:13.8105410Z"
+    "lastModified": "2026-06-05T06:41:13.810541Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-35051f44-838656ec.html",
     "sha256": "D305372654D575D685155AEFA4B1452F699FD6A1FF24CDC5589B34C6D4FDE42D",
     "size": 1490,
-    "lastModified": "2026-06-05T06:41:13.8105410Z"
+    "lastModified": "2026-06-05T06:41:13.810541Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-350d900f-2179580e.html",
     "sha256": "AABC42C1E025A1B47E9FDEA4E326BC3CFCC1D3CD000944095E7A48C5E4775C34",
     "size": 1406,
-    "lastModified": "2026-06-05T06:41:13.8105410Z"
+    "lastModified": "2026-06-05T06:41:13.810541Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-3550ff45-e91aad2a.html",
     "sha256": "F6C4E0989A8A57651B7C65957ABBD6670225FCF4C08416251E281729BEF79E67",
     "size": 1502,
-    "lastModified": "2026-06-05T06:41:13.8105410Z"
+    "lastModified": "2026-06-05T06:41:13.810541Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-35ab0041-e0df960c.html",
@@ -2199,25 +2199,25 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-3b31d193-5b116b76.html",
     "sha256": "37EA39CD9CF8D573C872E5C450CB48F7DBE39079AF0250F5EBBC190F3BEE841A",
     "size": 3106,
-    "lastModified": "2026-06-05T06:41:13.8192810Z"
+    "lastModified": "2026-06-05T06:41:13.819281Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-3bd55586-0f3eb516.html",
     "sha256": "36D59397DADB3D9BBC71152A3FC2967FB2CD0C056B9A59D0701FED199459CC3D",
     "size": 1364,
-    "lastModified": "2026-06-05T06:41:13.8192810Z"
+    "lastModified": "2026-06-05T06:41:13.819281Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-3cecee3a-017dff95.html",
     "sha256": "0FD1B60413613C415DF7D75BD1A6ADBE2249279CC626439B0112B1CD0C3748DB",
     "size": 1250,
-    "lastModified": "2026-06-05T06:41:13.8192810Z"
+    "lastModified": "2026-06-05T06:41:13.819281Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-3d362061-d80d1cfb.html",
     "sha256": "53EB582DCB94E6B9329E9C58D4CFEDECB9E7FB93547569D875B2E5D292F1CAA6",
     "size": 1440,
-    "lastModified": "2026-06-05T06:41:13.8192810Z"
+    "lastModified": "2026-06-05T06:41:13.819281Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-3d4db0aa-9949bf37.html",
@@ -2241,19 +2241,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-3fa6d68e-feb25165.html",
     "sha256": "C07943077262431DE145EB1839C19C15C3EDEE55BB44EFA30021FBF32C9C6C96",
     "size": 2072,
-    "lastModified": "2026-06-05T06:41:13.8215450Z"
+    "lastModified": "2026-06-05T06:41:13.821545Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-4072d51a-f446ac52.html",
     "sha256": "C92B50C5677B8D1D07FFCA290A37CBD53BB9D83D49487E687C7B0447E1F33CAD",
     "size": 1390,
-    "lastModified": "2026-06-05T06:41:13.8215450Z"
+    "lastModified": "2026-06-05T06:41:13.821545Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-41935ec3-70d19793.html",
     "sha256": "F13273640C67B82ED02B4106EAC7D87F74DCC631A90CC92A3164355E9EC908B9",
     "size": 1615,
-    "lastModified": "2026-06-05T06:41:13.8215450Z"
+    "lastModified": "2026-06-05T06:41:13.821545Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-419f83a0-5dd9fab3.html",
@@ -2331,25 +2331,25 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-46d10bcb-15e063c9.html",
     "sha256": "DF6E57B625AB17345E910BB24F7E4A96C9C4B98F36A469C679297EEF2F315E57",
     "size": 1390,
-    "lastModified": "2026-06-05T06:41:13.8275700Z"
+    "lastModified": "2026-06-05T06:41:13.82757Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-476fb9dd-848ece63.html",
     "sha256": "AC445597CBAF0C9E4139E4BF79924C90329464C62D66DD238DDB77720CA5FDE1",
     "size": 1390,
-    "lastModified": "2026-06-05T06:41:13.8275700Z"
+    "lastModified": "2026-06-05T06:41:13.82757Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-480a3ce9-f8737df5.html",
     "sha256": "C9BAFFEF8D253F0492C2E1507EA3481A51FF522685784C28DF53A27EB4C98BD0",
     "size": 1455,
-    "lastModified": "2026-06-05T06:41:13.8275700Z"
+    "lastModified": "2026-06-05T06:41:13.82757Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-496159f2-ab3edee4.html",
     "sha256": "C9B28969DC1B084E616A0DA53145C35D881F9F2208EA99CA3E1AD33B3C0A48BD",
     "size": 1706,
-    "lastModified": "2026-06-05T06:41:13.8275700Z"
+    "lastModified": "2026-06-05T06:41:13.82757Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-4a7b8992-ca68fb90.html",
@@ -2391,31 +2391,31 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-4c700668-9bcf9e33.html",
     "sha256": "8EB4905E6487D1122966670CC8791CDBB9E99AD83A774B21CD4216764F72EF0D",
     "size": 1358,
-    "lastModified": "2026-06-05T06:41:13.8320400Z"
+    "lastModified": "2026-06-05T06:41:13.83204Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-4e116bf4-2e081c4b.html",
     "sha256": "A9661A7027F2E18A1222670770BD5836B0EDEF4F3F2DC3A2F79C3EED86313AA3",
     "size": 1367,
-    "lastModified": "2026-06-05T06:41:13.8320400Z"
+    "lastModified": "2026-06-05T06:41:13.83204Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-4e9bda4b-0f454add.html",
     "sha256": "92C914B895A0F8375B0C97BD6816D58338378F93CDD5B615963C6F24F2D4838A",
     "size": 1352,
-    "lastModified": "2026-06-05T06:41:13.8320400Z"
+    "lastModified": "2026-06-05T06:41:13.83204Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-4f587e45-7285e7fd.html",
     "sha256": "E1083AC16FD045AE25D8BDEF0F61E1B82217479796318F4BEC5AEB311622CD0C",
     "size": 1375,
-    "lastModified": "2026-06-05T06:41:13.8320400Z"
+    "lastModified": "2026-06-05T06:41:13.83204Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-4ff72bb6-74a8b800.html",
     "sha256": "7D9E81FEB195DFAD4B13A22BA477D700BD35DC85CA51AA3E7C91817921A0592E",
     "size": 1397,
-    "lastModified": "2026-06-05T06:41:13.8320400Z"
+    "lastModified": "2026-06-05T06:41:13.83204Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-5084c69d-83cf66cd.html",
@@ -2505,19 +2505,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-56a0eab3-cd6ef63f.html",
     "sha256": "2004B9286CE308E7D4222C6EBD908047BF49785840D52F43E9187FD6C79E653F",
     "size": 1386,
-    "lastModified": "2026-06-05T06:41:13.8385480Z"
+    "lastModified": "2026-06-05T06:41:13.838548Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-56f9955d-3f6aa734.html",
     "sha256": "79A250D63C8B0B524DC3E39DA1F883228392EEDBC505F182D8B58B9B2ED6C832",
     "size": 1373,
-    "lastModified": "2026-06-05T06:41:13.8385480Z"
+    "lastModified": "2026-06-05T06:41:13.838548Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-58841920-79fe04b3.html",
     "sha256": "1215C75ACA3900F70E3EE7ED687512BFF2DD1235E6D9D8BDB2412602931DCD33",
     "size": 1685,
-    "lastModified": "2026-06-05T06:41:13.8385480Z"
+    "lastModified": "2026-06-05T06:41:13.838548Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-588d3103-f8e81372.html",
@@ -2727,19 +2727,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-6c83bca2-186cdfe9.html",
     "sha256": "5C75BF8A1478AAD20F1BB9EE7B8A12FB2528E267483E0AE47A08BF3C8C0A6EA6",
     "size": 1403,
-    "lastModified": "2026-06-05T06:41:13.8520190Z"
+    "lastModified": "2026-06-05T06:41:13.852019Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-6c849225-5f9a2b65.html",
     "sha256": "36D3ED409FD3B74A5FD731DB0EE5DB80A8455C5E17EC67C30E902A477A168566",
     "size": 1397,
-    "lastModified": "2026-06-05T06:41:13.8520190Z"
+    "lastModified": "2026-06-05T06:41:13.852019Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-6d3216b0-61004def.html",
     "sha256": "BFC5FC0EBAE9168AA46850E7010F16BE5F18483BE5FA61761A0C188C843DB88B",
     "size": 1456,
-    "lastModified": "2026-06-05T06:41:13.8520190Z"
+    "lastModified": "2026-06-05T06:41:13.852019Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-6e4e7f82-c671885e.html",
@@ -3069,13 +3069,13 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-891269d6-3f2755d3.html",
     "sha256": "8615B075E75D034CB409500E04A3D1CB4C7CA8428302FAD81B7B24CCFB583F5B",
     "size": 1424,
-    "lastModified": "2026-06-05T06:41:13.8724570Z"
+    "lastModified": "2026-06-05T06:41:13.872457Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-894c6d4a-43799571.html",
     "sha256": "E6571495A93B6173032DD4B4B8B151F45A2EF3F144A8FB433CCB2C31D367D388",
     "size": 1706,
-    "lastModified": "2026-06-05T06:41:13.8724570Z"
+    "lastModified": "2026-06-05T06:41:13.872457Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-8a402809-101d8c58.html",
@@ -3207,13 +3207,13 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-9419c4b5-f2133e73.html",
     "sha256": "E7EE486B30EC17A14416396194ABF92B35760AB7A2191B4590D55F84FB861110",
     "size": 1545,
-    "lastModified": "2026-06-05T06:41:13.8798850Z"
+    "lastModified": "2026-06-05T06:41:13.879885Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-946fb694-8636efd7.html",
     "sha256": "81AA0ADCB211BD5C436FEBCC23A0C887C05B372DBF4088FEFA1A3D0F095FAD53",
     "size": 1424,
-    "lastModified": "2026-06-05T06:41:13.8798850Z"
+    "lastModified": "2026-06-05T06:41:13.879885Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-950038ff-66782ea6.html",
@@ -3231,19 +3231,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-958ed7a1-3ebe1dc7.html",
     "sha256": "28B5F6F68DCE7163D5B98631A7494C8C3930FAE2AD819D2CF6C68CA0FDE60F96",
     "size": 1481,
-    "lastModified": "2026-06-05T06:41:13.8819600Z"
+    "lastModified": "2026-06-05T06:41:13.88196Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-95a773b4-cec8b736.html",
     "sha256": "135D9BB4C0EE3055FEA588E215C2A79C804B828723423A50DDF91DDD054691AC",
     "size": 1352,
-    "lastModified": "2026-06-05T06:41:13.8819600Z"
+    "lastModified": "2026-06-05T06:41:13.88196Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-95c0e638-127817af.html",
     "sha256": "B130B5E969356F13CE6896C2D32775E828D8DEA34BC8006887D35DF5B1108BB9",
     "size": 1406,
-    "lastModified": "2026-06-05T06:41:13.8819600Z"
+    "lastModified": "2026-06-05T06:41:13.88196Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-961ac239-83ea9ed1.html",
@@ -3339,19 +3339,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-9af10ef4-3875ebdb.html",
     "sha256": "FAA3B8CD7FD983BCA51CFDDBFE23AE547D4BE5CB51E81764E4AF238595479607",
     "size": 1440,
-    "lastModified": "2026-06-05T06:41:13.8871300Z"
+    "lastModified": "2026-06-05T06:41:13.88713Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-9b5ffd9e-4a4b3d73.html",
     "sha256": "D232176942E7FAAA829EF8A66C98BE619C002FFBF7475FAE7A59EF587B48B34F",
     "size": 1421,
-    "lastModified": "2026-06-05T06:41:13.8871300Z"
+    "lastModified": "2026-06-05T06:41:13.88713Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-9b718a17-094e1b0c.html",
     "sha256": "8BF17543A036E09518531C6959FFD22E4514E891C499D7EC9171B4838EA76DD3",
     "size": 1491,
-    "lastModified": "2026-06-05T06:41:13.8871300Z"
+    "lastModified": "2026-06-05T06:41:13.88713Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-9ba7e699-520ce8d4.html",
@@ -3579,25 +3579,25 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b2bebeef-e0bf4f9b.html",
     "sha256": "76F82F11EF435F346B9C25238AAB25E56B75ADD53BC031C403C85C30B5266264",
     "size": 1373,
-    "lastModified": "2026-06-05T06:41:13.9025460Z"
+    "lastModified": "2026-06-05T06:41:13.902546Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b2e76724-204abfee.html",
     "sha256": "4A1623984CF36D74413A787FA291746E3D56A5374B5810407C37C4ABB14576B7",
     "size": 2345,
-    "lastModified": "2026-06-05T06:41:13.9025460Z"
+    "lastModified": "2026-06-05T06:41:13.902546Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b2fe3a28-2aae7d92.html",
     "sha256": "F75E5CA1B3215A75D69F53288B4505F1AC8AB9CE54732BBAC4EBCEA8C006D96B",
     "size": 1727,
-    "lastModified": "2026-06-05T06:41:13.9025460Z"
+    "lastModified": "2026-06-05T06:41:13.902546Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b332507d-e03498cc.html",
     "sha256": "155253202EC27B4DF69D108D004B3FEBE68FB35E371E197E7C0B7EE1E8D24958",
     "size": 1615,
-    "lastModified": "2026-06-05T06:41:13.9025460Z"
+    "lastModified": "2026-06-05T06:41:13.902546Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b3c98b36-1c20e650.html",
@@ -3645,19 +3645,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b781f5ac-f05b7a3a.html",
     "sha256": "E2F451F3E493AC8421F86CC3FEA86EB880F8F186E4BE0B3F174A2DB98D399B11",
     "size": 1430,
-    "lastModified": "2026-06-05T06:41:13.9067590Z"
+    "lastModified": "2026-06-05T06:41:13.906759Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b7b4563c-0255559e.html",
     "sha256": "1CBE845D2661CC4D415A4282003E7CF2FB7D860B52C89FAE580AEAFB3F785AE9",
     "size": 1379,
-    "lastModified": "2026-06-05T06:41:13.9067590Z"
+    "lastModified": "2026-06-05T06:41:13.906759Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b7bfffae-b247fa33.html",
     "sha256": "038EC198BDF6EA2B0BBC11313597A41109C0EA20BD0C7AF512A79CA1D8D33F41",
     "size": 1400,
-    "lastModified": "2026-06-05T06:41:13.9067590Z"
+    "lastModified": "2026-06-05T06:41:13.906759Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b804f444-4ffd455f.html",
@@ -3681,25 +3681,25 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b91251f9-01fd23f6.html",
     "sha256": "8A3BE52A227EDB3EAEE837D1C113A0F87C98041B1676530DC03C95E919C14D3F",
     "size": 1358,
-    "lastModified": "2026-06-05T06:41:13.9087970Z"
+    "lastModified": "2026-06-05T06:41:13.908797Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b966a74c-800bcf7c.html",
     "sha256": "8C21E176547F3ACD4280071475C8ED6B3C93DCE4D33BC956CB747CEA8809DA88",
     "size": 1401,
-    "lastModified": "2026-06-05T06:41:13.9087970Z"
+    "lastModified": "2026-06-05T06:41:13.908797Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b96f6657-c5689972.html",
     "sha256": "4E2D020694BFED9301354EB3E433262C4FBE4E51E3D0AC4290DEB52F97F4A3EA",
     "size": 1385,
-    "lastModified": "2026-06-05T06:41:13.9087970Z"
+    "lastModified": "2026-06-05T06:41:13.908797Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-b9dfa79c-ff61d7cc.html",
     "sha256": "F6506A01D3D11ABA2FA53B8B9046A62ECA2DE9B02644822E997486BD46F6338D",
     "size": 1433,
-    "lastModified": "2026-06-05T06:41:13.9087970Z"
+    "lastModified": "2026-06-05T06:41:13.908797Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-ba3445fe-af499b8e.html",
@@ -4059,19 +4059,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-d945df23-dcd976e9.html",
     "sha256": "E9DD00FFF8012E4B9CC2A015EECBC117A0F9863BFB8098B6C352E10855F85567",
     "size": 1361,
-    "lastModified": "2026-06-05T06:41:13.9357620Z"
+    "lastModified": "2026-06-05T06:41:13.935762Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-d94be309-3b1dec43.html",
     "sha256": "DA3E10BB1FE77E9563694879409C1AEA79BB07FDA5FBAA2CE38FD3A5EE0D8D83",
     "size": 1390,
-    "lastModified": "2026-06-05T06:41:13.9357620Z"
+    "lastModified": "2026-06-05T06:41:13.935762Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-d9af4580-509ab16a.html",
     "sha256": "E6D3D20A11BD0C2290B702C3FB676C7517F3AD57C93D92A43D6ADA398DBFB4B5",
     "size": 1425,
-    "lastModified": "2026-06-05T06:41:13.9357620Z"
+    "lastModified": "2026-06-05T06:41:13.935762Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-d9bf3c20-fea43602.html",
@@ -4473,19 +4473,19 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-f84bd463-a9f6ec69.html",
     "sha256": "57239F6C3758BFE02047B7A3C2D97829C330F227DE831DA393593D2145D0FA2E",
     "size": 1406,
-    "lastModified": "2026-06-05T06:41:13.9610680Z"
+    "lastModified": "2026-06-05T06:41:13.961068Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-f8b4b870-a8f0c81a.html",
     "sha256": "67B8AB9A96B848E0426596EE9E8F5659CAC424E5F2B707A9A860F535E0F51FA2",
     "size": 1355,
-    "lastModified": "2026-06-05T06:41:13.9610680Z"
+    "lastModified": "2026-06-05T06:41:13.961068Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-f91611fb-16864664.html",
     "sha256": "9FB1CAB8F9C9835469D197ECD4B4F82E57AF912CEE9873DB9541A0B88B5C6501",
     "size": 1608,
-    "lastModified": "2026-06-05T06:41:13.9610680Z"
+    "lastModified": "2026-06-05T06:41:13.961068Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\index-fab5d71c-724ad6d3.html",
@@ -4569,7 +4569,7 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Intune-Setup-5e7f303d.html",
     "sha256": "A2BF8D3FF78ABC696365387F2B771E56D221F2428720F7D7C8F9B068DEA9FAA5",
     "size": 3584,
-    "lastModified": "2026-06-05T06:41:13.7303130Z"
+    "lastModified": "2026-06-05T06:41:13.730313Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Lab-Overview-20260511161111-e74b0eb4.html",
@@ -4821,7 +4821,7 @@
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\SocialMediaKit-a4dd467d-b0bb8749.html",
     "sha256": "EBC58AA64BA1E80EF55F7E1AEF2B1333741BC08D2DF59ECC2C43E20BE88233A0",
     "size": 7175,
-    "lastModified": "2026-06-05T06:41:13.7468230Z"
+    "lastModified": "2026-06-05T06:41:13.746823Z"
   },
   {
     "path": "evidence-library\\preserved-sharepoint\\source\\docs\\business\\sharepoint\\Artifacts\\Start-Here-20260511161111-98a9efc0.html",
@@ -5031,31 +5031,31 @@
     "path": "evidence-library\\projects\\README.md",
     "sha256": "1021A819EBEDE8B30656872F424AF927671D0F2A935054AF87A79407EA794CEF",
     "size": 1379,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\backup-disaster-recovery\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\backup-disaster-recovery\\backup-restore-validation-workflow-2026.md",
     "sha256": "FCE1F8B62F9A5528C647855DE3FEDCE71934F467C6FCAEE5BDE9E97F1FDE08E9",
     "size": 4988,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\endpoint-management\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\home-lab\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\home-lab\\historical-home-lab-summary-2026.md",
@@ -5067,37 +5067,37 @@
     "path": "evidence-library\\projects\\home-lab\\lab-portfolio-preserved.pdf",
     "sha256": "44D9015528D94276674B77E1930C7307F2451E9F90ACA4B37E6EB583A86BC9BA",
     "size": 72973,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\identity-access\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\identity-access\\identity-access-change-record-notes-2026.md",
     "sha256": "DDDAC6455D61208DDA3A4340E93B4A02C1EDD04B10FD6F3A4CAE7CE34546356B",
     "size": 1521,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\infrastructure-networking\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\infrastructure-networking\\dns-dhcp-runbook-2026.txt",
     "sha256": "D7D1E2BAD7D48C9CE048D39B288C6F1CA4D664C3F36CD71CADC13D0CECA23786",
     "size": 2517,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\infrastructure-networking\\pfsense-network-segmentation-diagram-2026.md",
     "sha256": "6A062DB595FD02A1232C0F16F0A7E7945BA12A6251E2EBA7EC88F76A27F366AE",
     "size": 4420,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\infrastructure-networking\\vlan-architecture-walkthrough-2026.md",
@@ -5109,7 +5109,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\historical-microsoft-365-tenant-summary-2026.md",
@@ -5137,21 +5137,21 @@
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\m365-entra-site-proof-map-20260605.md",
-    "sha256": "062C97F78CD7D6338AACAB184F33E12FFE23F48E925E1145B67DD525B96190E6",
-    "size": 8314,
-    "lastModified": "2026-06-05T14:08:26.4036495Z"
+    "sha256": "7D8A4025EAF5DFD2FFE6ED50DD8679BC5372279E5F3A3FF9527DB8371347771B",
+    "size": 14328,
+    "lastModified": "2026-06-15T03:01:44.8630248Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\microsoft-365-lab-architecture-overview-2026.md",
     "sha256": "50CF5E0C99328A536277AE5B13F9CE354A1C6ACE7B5193D146EA9772E4ED9335",
     "size": 5275,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\microsoft-365-lab-conditional-access-baseline-configuration-2026.yaml",
     "sha256": "7CE07405BFE1816142A4DD0CB0E37C33F18DC69A5705BC6748C91B5073DEC5B5",
     "size": 1273,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-activity-proof-20260605-043730\\activity-export-errors.csv",
@@ -5187,13 +5187,13 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-application-proof-20260605-063206\\app-registrations-summary.csv",
     "sha256": "A177E6EDDCCFDA9C13C17CED1CFB685FE237A7E8B2619B13B7B7983D21640690",
     "size": 1038,
-    "lastModified": "2026-06-05T11:32:07.9889800Z"
+    "lastModified": "2026-06-05T11:32:07.98898Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-application-proof-20260605-063206\\application-export-errors.csv",
     "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
     "size": 0,
-    "lastModified": "2026-06-05T11:32:08.0394140Z"
+    "lastModified": "2026-06-05T11:32:08.039414Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-application-proof-20260605-063206\\enterprise-applications-summary.csv",
@@ -5211,7 +5211,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-application-proof-20260605-063206\\oauth2-permission-grants-summary.csv",
     "sha256": "B7ABE144794AE8EEB1D9B56EDB3032EC29A76F34458723BDF6E306CD849D8106",
     "size": 3648,
-    "lastModified": "2026-06-05T11:32:08.0394140Z"
+    "lastModified": "2026-06-05T11:32:08.039414Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-application-proof-20260605-063206\\README.md",
@@ -5265,7 +5265,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-group-membership-proof-20260605-063604\\group-membership-export-errors.csv",
     "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
     "size": 0,
-    "lastModified": "2026-06-05T11:36:08.2780760Z"
+    "lastModified": "2026-06-05T11:36:08.278076Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-group-membership-proof-20260605-063604\\groups-summary.csv",
@@ -5319,13 +5319,13 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-live-proof-20260605-042550\\enterprise-apps-sanitized.csv",
     "sha256": "5F3CB421F4FEB00B5C93690A6276A2D8D208294452B78E2AD07634C1BC233F9E",
     "size": 12618,
-    "lastModified": "2026-06-05T09:26:07.1762350Z"
+    "lastModified": "2026-06-05T09:26:07.176235Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-live-proof-20260605-042550\\entra-directory-roles.csv",
     "sha256": "121CB055FED51623BE50CE44D4705E99673D7AD29F81F95965F2F8BDEA62B38D",
     "size": 1850,
-    "lastModified": "2026-06-05T09:26:07.1504600Z"
+    "lastModified": "2026-06-05T09:26:07.15046Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\entra-live-proof-20260605-042550\\entra-groups.csv",
@@ -5463,7 +5463,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\evidence\\entra-exports-20260605-073748\\entra-devices.csv",
     "sha256": "4BDF6AF831777346016E0913147E8CACC8D2040B4B0CBA89220911F52F8219C0",
     "size": 592,
-    "lastModified": "2026-06-05T12:47:32.8616270Z"
+    "lastModified": "2026-06-05T12:47:32.861627Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\evidence\\entra-exports-20260605-073748\\entra-directory-audit-last-30-days.csv",
@@ -5535,7 +5535,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\evidence\\entra-exports-20260605-073748\\exchange-admin-center-microsoft-365-groups-export-20260605.csv",
     "sha256": "5B97D46877E161D9EAFC09DDD6D7BE17D556049DD0AB925C23D6D3EE4B9ED086",
     "size": 2576,
-    "lastModified": "2026-06-05T13:03:48.2996780Z"
+    "lastModified": "2026-06-05T13:03:48.299678Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\evidence\\entra-exports-20260605-073748\\exchange-mail-enabled-security-group-check.md",
@@ -5571,7 +5571,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\evidence\\entra-exports-20260605-073748\\m365-admin-center-homepage-20260605.png",
     "sha256": "7144702C3BD20F8565562E0DC2E949636067524F02763EFF49CA7F8668610982",
     "size": 184656,
-    "lastModified": "2026-06-05T13:13:17.5572450Z"
+    "lastModified": "2026-06-05T13:13:17.557245Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\evidence\\entra-exports-20260605-073748\\m365-admin-center-licenses-20260605.png",
@@ -5601,7 +5601,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\intune-managed-device-proof-fallback-20260605-044051\\intune-managed-device-errors.csv",
     "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
     "size": 0,
-    "lastModified": "2026-06-05T09:40:52.4426020Z"
+    "lastModified": "2026-06-05T09:40:52.442602Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\intune-managed-device-proof-fallback-20260605-044051\\intune-managed-device-proof-fallback-transcript-20260605-044051.txt",
@@ -5613,7 +5613,7 @@
     "path": "evidence-library\\projects\\microsoft-365-lab\\intune-managed-device-proof-fallback-20260605-044051\\intune-managed-devices-sanitized.csv",
     "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
     "size": 0,
-    "lastModified": "2026-06-05T09:40:52.4426020Z"
+    "lastModified": "2026-06-05T09:40:52.442602Z"
   },
   {
     "path": "evidence-library\\projects\\microsoft-365-lab\\intune-managed-device-proof-fallback-20260605-044051\\README.md",
@@ -5625,13 +5625,13 @@
     "path": "evidence-library\\projects\\monitoring-logging\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\monitoring-logging\\monitoring-alerting-overview-2026.md",
     "sha256": "C0FE4CE7F87AD4BCA36C0E77022A6D38F84B14C5DA9AB471E9FCFA40E14398B1",
     "size": 3945,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\Final-ZIP-SHA256.txt",
@@ -5643,19 +5643,19 @@
     "path": "evidence-library\\projects\\on-prem-home-lab\\HomeLab-Evidence-Export-20260612-184743.zip",
     "sha256": "864CD48F80E08FC45676D30B209D2ADFE8DC9569D32E80ED9BF17236D5893F28",
     "size": 132508,
-    "lastModified": "2026-06-13T02:01:12.1654490Z"
+    "lastModified": "2026-06-13T02:01:12.165449Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\HomeLab-Evidence-Manifest-Summary.txt",
     "sha256": "384927251DC90CBA68E71E3313D0E92D9F5657028DFE0F74464713BA6A73C17C",
     "size": 420,
-    "lastModified": "2026-06-13T00:01:02.0000000Z"
+    "lastModified": "2026-06-13T00:01:02Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\HomeLab-Evidence-Manifest.csv",
     "sha256": "D09620D1588473EA311FCFC13641C5D56BB323C028469D058F32EED05C7D8C4E",
     "size": 43522,
-    "lastModified": "2026-06-13T00:01:02.0000000Z"
+    "lastModified": "2026-06-13T00:01:02Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\Jeremy_Fontenot_Home_Lab_Documentation.docx",
@@ -5679,187 +5679,187 @@
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-01-initial-rdp-connection-failure.png",
     "sha256": "65D5ED79F841CB51F044F1A05185C05AC1271842B0676BC1900B125E84E309DD",
     "size": 15582,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-02-nla-failure-windows11-client-troubleshooting.png",
     "sha256": "94F27327B1BF2E0C30EDA831B38B7F49160939403D02BA6E2DEB2E23A5DCF3D4",
     "size": 8082,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-03-ws01-system-about-identity-hardware.png",
     "sha256": "26A4A69E33CCA925EEC46064307A14D5C02D1A2CB3E9508705242806F049E63E",
     "size": 139038,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-04-ws01-dns-dhcp-validation.png",
     "sha256": "080AAAB4B0A905A92C651911571655E86D2224344BF069AAB5D9FC0476629F1C",
     "size": 118740,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-05-active-directory-ws01-ou-placement.png",
     "sha256": "390E466B485DE1BF4CA85F8214F7111FE9D41FECD206CCAC33555333FF45679C",
     "size": 29401,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-06-ws01-rdp-enable-firewall-network.png",
     "sha256": "C8846CCC29D972D61D92D4C55E5F664D1E3CA3A0E9A489D4CE66B2327CF4AD04",
     "size": 178195,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-07-dc01-to-ws01-rdp-dns-validation.png",
     "sha256": "52EDDD8DFD47C594E444A1DD2875BD40947747128D5093862B93E13972015DF8",
     "size": 62482,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-08-ws01-proxmox-boot-cleanup.png",
     "sha256": "FF85B2D61E149607EA8B4EFF5AB842EA6EF2459985472F418C291219FDE46A7C",
     "size": 110814,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-09-ws01-baseline-snapshot-validation.png",
     "sha256": "8C3C8CD225B3133FF92B3DD9C607BCD55F189B6DA8834BBC719A2FACD7DB840D",
     "size": 206855,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-10-ws01-backup-archive-evidence.png",
     "sha256": "43A66DC24E7E1682B07508ADBC6C274C9867AE9C7975DAE139A8AD1DB4137A50",
     "size": 35143,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-11-scheduled-backup-job-includes-ws01.png",
     "sha256": "3889A475A9A1E26380B97BD87A52A0AF76B17DE4ECEC57BCF6954E4A9882D810",
     "size": 74782,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-12-ws01-snapshot-backup-evidence-note.png",
     "sha256": "AFCF76FDB5580A7D7E42BB1BADD6EA6007BEAD9E32BA09FCD7C8A41D890F3A7D",
     "size": 267585,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-13-sdtech-it-share-read-write-validation.png",
     "sha256": "339A49CC0F07F37E030F11AEFD7D0009EADF7022910490814D7968B7BC2C6BAD",
     "size": 227622,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-14-standard-user-it-share-read-only-write-denial.png",
     "sha256": "27F7745FF4230E41B1B946531246870D5CF56F81E7320727CBD91E5BE283F611",
     "size": 222617,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-15-dc01-central-evidence-export-validation.png",
     "sha256": "6F04AD70226BB9F16D5850FED88CC6B27067DE3C7EA4F6EAC8A1E90CE6F6242C",
     "size": 235745,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-16-final-evidence-zip-manifest-sha256-validation.png",
     "sha256": "D96222651F09ECAE33F45B6280F2F6197E38F5DDD7ABF6278A091AC66C7071D3",
     "size": 220115,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\figure-17-documentation-source-hash-validation.png",
     "sha256": "CE77AD3C0ED5F63DC28492391BDBE7AD99C75F6D79469DBCE4DAEB696997EA98",
     "size": 90247,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\README.md",
     "sha256": "E80C623CD47C6A9703F0AB4D152598D1047118AD2FC29F3E6E8B5E08C2EEDA1B",
     "size": 6785,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\on-prem-home-lab\\screenshots\\screenshots-manifest.csv",
     "sha256": "2B6A7C1A35B960A4CC564DB947BEB4F647CEE5331BA6CEF51C3D80B2D7452D0B",
     "size": 6805,
-    "lastModified": "2026-06-13T07:43:52.0000000Z"
+    "lastModified": "2026-06-13T07:43:52Z"
   },
   {
     "path": "evidence-library\\projects\\powershell-automation\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\powershell-automation\\operational-handoff-2026.txt",
     "sha256": "75FF9852121F723B87A1C963A14435649870910C99F78E8EC9E18C134A3CBB1C",
     "size": 1755,
-    "lastModified": "2026-05-25T07:34:08.0000000Z"
+    "lastModified": "2026-05-25T07:34:08Z"
   },
   {
     "path": "evidence-library\\projects\\powershell-automation\\provisioning-change-log-2026.md",
     "sha256": "B2953394032CE961D0B9D14AFF5049D22818F0F7DFCFF0F12CB585F0C68B7EDB",
     "size": 2141,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\dns-authentication-playbook-2026.md",
     "sha256": "177E336D0E6FB55A472D2F0D1CB1035E88CB662021C7888DB098206452B954A3",
     "size": 1259,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\incident-summary.md",
     "sha256": "96535502861EE70F5191C1F1C99D45842E4DBF8A0285A28FB4BB843168B38191",
     "size": 3272,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\post-incident-review.md",
     "sha256": "D316FA38E8DE58E5267DA1BB23CD9B59F3EC6CBFB7D34972D08C3F360E93CD24",
     "size": 1838,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\rca-report.md",
     "sha256": "76409C00919BEF420265BC426627F6DBC67CC263E21F93433E9FD8A883311753",
     "size": 3259,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\remediation-plan.md",
     "sha256": "1CE8610D068FAC10FE334A0A271DD09F3935DCE027CBF7689902D3AD8AFB2C03",
     "size": 2381,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\troubleshooting-notes.md",
     "sha256": "560FA1DD7C1AB3470AF7C5AEB41858986D426783B4156371543B0FAFF2A0ACFC",
     "size": 2068,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\troubleshooting-rca-incident-log-2025.txt",
     "sha256": "4E2BF4850B2C3CDFD894E41782D89C5B7AEB1A7A66074F04D9B0104F9A164218",
     "size": 1107,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\projects\\troubleshooting-rca\\validation-checklist.md",
     "sha256": "333DAF7C4418FC5451783E5F7BDF91DEC33FC5CB7A6D5186E7B27A482C082BF7",
     "size": 1970,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\proxmox\\proxmox-host-validation-report-2026.md",
@@ -5871,162 +5871,162 @@
     "path": "evidence-library\\screenshots\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\screenshots\\portfolio-visual-screenshot-2026.png",
     "sha256": "4741989FC6D4314D5503DEB5AB5FB90FD6839030068EDEEAC148200B985A6463",
     "size": 2469061,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\scripts\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\scripts\\powershell-automation-provisioning-script-v1.ps1",
     "sha256": "E2973C825D16813E67CD1437B6AD7761138744EA6EB32E7DAD5DEECCF20D2774",
     "size": 5392,
-    "lastModified": "2026-06-02T02:27:26.0000000Z"
+    "lastModified": "2026-06-02T02:27:26Z"
   },
   {
     "path": "evidence-library\\skills\\README.md",
     "sha256": "F8CBA1B9C6C2F5B892996B848083F23B9ADC7077530997DCA206259022B51868",
     "size": 498,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\active-directory\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\automation\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\dns-dhcp\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\dns-dhcp\\dns-dhcp-operational-runbook-2026.md",
     "sha256": "2F482512B5AD7FF14836745C9A2AA3226C7615E76E4AB54602B241F51E4C28CF",
     "size": 6267,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\documentation\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\entra-identity\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\github-pages-operations\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\intune-endpoint-management\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\microsoft-365-administration\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\networking-vlans\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\pfsense-firewall\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\powershell\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\security-baselines\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\service-desk-support\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\service-desk-support\\service-desk-network-troubleshooting-workflow-2026.md",
     "sha256": "FF373A6A898BBC91EAB4C6FDA217D7D0CF10DF8062C4AF16E7FA74AE6118B0A0",
     "size": 5231,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\validation-audit\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\skills\\windows-support\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\validation-reports\\.gitkeep",
     "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
     "size": 2,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\validation-reports\\network-validation-checklist-2026.csv",
     "sha256": "F2173B5376B48998E2CA92BC761BEBA11B6D0E3F47CE1A6D41742E2983520F10",
     "size": 2635,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\validation-reports\\network-validation-checklist-2026.md",
     "sha256": "4EC60F326B36243D0041C0178D8952C3DE17A159714F83B582209AF5B5D47684",
     "size": 4597,
-    "lastModified": "2026-05-25T06:46:14.0000000Z"
+    "lastModified": "2026-05-25T06:46:14Z"
   },
   {
     "path": "evidence-library\\vpn\\vpn-configuration-evidence.md",
     "sha256": "3465C0488E05D3922E73DA87EDE96DDEC415AB70873490D497CA478A350162C4",
     "size": 219,
-    "lastModified": "2026-06-02T02:27:26.0000000Z"
+    "lastModified": "2026-06-02T02:27:26Z"
   },
   {
     "path": "evidence-library\\windows-server\\windows-server-evidence.md",
     "sha256": "620890CDE8567BBF1071DC9591636BEAD215AA67D8BA747F7B517F6EFE7294BA",
     "size": 307,
-    "lastModified": "2026-06-02T02:27:26.0000000Z"
+    "lastModified": "2026-06-02T02:27:26Z"
   }
 ]
