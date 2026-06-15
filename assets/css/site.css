@@ -2739,11 +2739,12 @@ body {
 
 .artifact-card {
   position: relative;
-  display: grid;
-  gap: .4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   min-width: 0;
   min-height: 100%;
-  padding: 1rem;
+  padding: 1.1rem;
   border: 1px solid rgba(148, 163, 184, .16);
   border-radius: 18px;
   background:
@@ -2774,13 +2775,18 @@ body {
 }
 
 .artifact-card strong {
+  display: block;
   overflow-wrap: anywhere;
-  line-height: 1.35;
+  word-break: normal;
+  line-height: 1.42;
 }
 
 .artifact-card em {
+  display: block;
+  margin-top: .5rem;
   color: var(--muted-strong);
   font-style: normal;
+  line-height: 1.5;
 }
 
 body.home-lab-page .bento-card .evidence-chip,
@@ -2798,6 +2804,31 @@ body.home-lab-page .artifact-card strong {
 body.home-lab-page .topology-node,
 body.home-lab-page .topology-bus {
   gap: .5rem;
+}
+
+body.home-page .home-lab-highlight-section .evidence-focus-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.1rem;
+}
+
+body.home-page .home-lab-highlight-section .tile-code {
+  margin-bottom: .85rem;
+}
+
+body.home-page .home-lab-highlight-section h3 {
+  margin-bottom: .65rem;
+  line-height: 1.22;
+}
+
+body.home-page .home-lab-highlight-section p {
+  margin-bottom: 1rem;
+}
+
+body.home-page .home-lab-highlight-section .evidence-link {
+  width: 100%;
+  margin-top: auto;
 }
 
 @media (max-width: 1180px) {
