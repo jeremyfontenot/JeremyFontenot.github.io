@@ -2763,8 +2763,12 @@ body {
 }
 
 .artifact-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
-  padding: .25rem .55rem;
+  min-height: 1.55rem;
+  padding: 0 .6rem;
   border: 1px solid rgba(56, 189, 248, .24);
   border-radius: 999px;
   background: rgba(56, 189, 248, .08);
@@ -2772,6 +2776,7 @@ body {
   font-size: .72rem;
   font-weight: 950;
   letter-spacing: .08em;
+  line-height: 1;
 }
 
 .artifact-card strong {
